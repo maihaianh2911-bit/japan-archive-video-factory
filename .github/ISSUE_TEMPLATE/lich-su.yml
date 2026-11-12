@@ -1,0 +1,35 @@
+name: 🏛️ Video lịch sử / truyền thuyết (tư liệu thật)
+description: Dán kịch bản → máy làm video dọc có giọng Nhật, ảnh khai quật / hiện vật / bản đồ / tranh cổ thật và phụ đề theo giọng
+title: "[Lịch sử] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Cách dùng:** dán kịch bản rồi bấm **Create**. Không cần làm gì thêm: Claude chia lời theo cảnh và tìm tư liệu, máy tạo giọng đọc tiếng Nhật, Claude xem và chọn ảnh hợp từng câu (khoanh vòng, phóng chi tiết khi cần), máy dựng video theo bố cục bản mẫu Göbekli Tepe, Claude kiểm tra lại từng cảnh. Link video hiện ở bình luận cuối.
+        Muốn sửa gì thì viết bình luận (ví dụ "cảnh 3 đổi ảnh khác", "khoanh đúng vòng đá bên trái").
+  - type: input
+    id: topic
+    attributes:
+      label: Chủ đề (không bắt buộc)
+      description: Tên di tích, sự kiện hay truyền thuyết, để tìm tư liệu đúng hơn
+      placeholder: Göbekli Tepe — Thổ Nhĩ Kỳ
+  - type: textarea
+    id: script
+    attributes:
+      label: Kịch bản (bắt buộc)
+      description: Tiếng Việt hoặc tiếng Nhật. Nếu là tiếng Việt, Claude dịch sang tiếng Nhật tự nhiên để đọc.
+    validations:
+      required: true
+  - type: dropdown
+    id: voice
+    attributes:
+      label: Giọng đọc
+      options:
+        - clone_190 — kể chuyện (mặc định)
+        - clone_461 — tin tức
+  - type: textarea
+    id: notes
+    attributes:
+      label: Ghi chú (không bắt buộc)
+      description: Độ dài mong muốn, tư liệu nên có hoặc nên tránh… Có thể kéo thả ảnh riêng (có nguồn) vào đây.

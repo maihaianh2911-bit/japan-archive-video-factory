@@ -1,0 +1,13 @@
+{"images": {
+  "site":   {"src": "1/1-1.jpg"},
+  "pano":   {"src": "1/2-1.jpg"},
+  "aerial": {"src": "1/5-1.jpg", "rotate": 90},
+  "p27":    {"src": "1/3-1.jpg"},
+  "p43":    {"src": "1/4-1.jpg"}},
+ "scenes": [
+  {"shots": [{"img": "site", "label": "ギョベクリ・テペの発掘現場", "credit": "Volker Höhfeld / CC BY-SA 4.0"}]},
+  {"shots": [{"img": "pano", "label": "トルコ南東部", "detail": {"view": [0.2, 0.48, 0.7, 1.0]}, "credit": "Rolfcosar / CC BY-SA 3.0"}]},
+  {"shots": [{"img": "aerial", "label": "発掘現場の航空写真", "credit": "E. Kücük / German Archaeological Institute / CC BY 4.0",
+              "marks": [{"at": 3.3, "box": [0.58, 0.18, 0.78, 0.5]}, {"at": 3.3, "box": [0.44, 0.42, 0.62, 0.72]}]}]},
+  {"shots": [{"img": "p27", "view": [0.03, 0.17, 0.98, 0.98], "label": "ギョベクリ・テペ / 石柱 P27", "caption": "石柱から浮かび上がる動物の彫刻", "credit": "Dosseman / CC BY-SA 4.0"}]},
+  {"shots": [{"img": "p43", "label": "ギョベクリ・テペ / 石柱 P43", "credit": "Klaus-Peter Simon / CC BY-SA 3.0"}]}]}

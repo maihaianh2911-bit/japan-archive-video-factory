@@ -1,0 +1,14 @@
+{"title": "ギョベクリ・テペ", "voice": "clone_190",
+ "lines": ["この遺跡は、約1万2千年前に造られた。", "トルコ南東部のギョベクリ・テペ。", "T字形の石柱が、円を描くように並んでいる。", "石には、動物の姿が刻まれている。", "人々は、なぜここに石柱を建てたのか？"],
+ "tts": {"2": "トルコなんとうぶのギョベクリ・テペ。"},
+ "scenes": [
+  {"lines": [1, 1], "title": "約1万2千年前"},
+  {"lines": [2, 2], "title": "ギョベクリ・テペ"},
+  {"lines": [3, 3], "title": "円形に並ぶ石柱"},
+  {"lines": [4, 4], "title": "石に刻まれた動物"},
+  {"lines": [5, 5], "title": "なぜ、ここに石柱を？"}],
+ "music": {"key": "D", "mode": "minor", "bpm": 60, "energy": 0.2},
+ "queries": ["Gobekli Tepe", "Gobekli Tepe excavation", "Gobekli Tepe pillar relief", "Neolithic Anatolia stone pillar", "commons: incategory:\"Göbekli Tepe\""],
+ "urls": [{"url": "https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0215214.g001",
+           "page": "https://doi.org/10.1371/journal.pone.0215214.g001", "title": "Göbekli Tepe, aerial view of the main excavation area (PLOS ONE 2019, Fig 1)",
+           "artist": "E. Kücük, German Archaeological Institute", "license": "CC BY 4.0", "date": "2019"}]}
