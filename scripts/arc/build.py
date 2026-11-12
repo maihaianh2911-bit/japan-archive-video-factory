@@ -24,6 +24,7 @@ lines = json.load(open(f'{pub}/{base}/voice/lines.json', encoding='utf-8'))
 dur = {r['i']: r['duration'] for r in lines}
 text = {r['i']: r['text'] for r in lines}
 os.makedirs(out, exist_ok=True)
+STYLE = spec.get('style', 'warm')   # warm (default) | paper | classic — see src/arc/ArcV.tsx
 scenes_in = spec['scenes']
 if len(picks['scenes']) != len(scenes_in):
     raise SystemExit(f'picks.json có {len(picks["scenes"])} cảnh, script.json có {len(scenes_in)} cảnh')
@@ -70,7 +71,7 @@ for sc in scenes_in:
         done = 0
         for cu in parts:   # cues share the line's time in proportion to their length; a line's first cue comes in with the cut
             cs = t + dur[i] * done / n_all - (0.15 if done == 0 else 0); done += len(''.join(cu)); ce = t + dur[i] * done / n_all
-            subs.append({'s': round(cs, 3), 'e': round(ce, 3), 'text': '\n'.join(cu)})
+            subs.append({'s': round(cs, 3), 'e': round(ce, 3), 'text': '\n'.join(cu), 'hl': spec.get('hl', {}).get(str(i), [])})
         t += dur[i] + (0.45 if text[i].endswith(('。', '」', '？', '！')) else 0.25)
 total = round(t - 0.25 + TAIL, 3)
 # a cue stays until the next one (no flicker between lines of one scene); the last one until the end
@@ -104,7 +105,8 @@ for si, (sc, ps) in enumerate(zip(scenes_in, picks['scenes'])):
         boxes = []
         for q, box, asp in zip(pics, lay['boxes'], aspects):
             w, h = img_size(q['img'])
-            boxes.append({'src': f"{base}/img/{q['img']}.jpg", 'w': w, 'h': h, 'box': box, 'view': q['view']})
+            boxes.append({'src': f"{base}/img/{q['img']}.jpg", 'w': w, 'h': h, 'box': box, 'view': q['view'],
+                          'drift': 0 if p.get('still') or STYLE == 'classic' else p.get('drift', 0.05)})   # slow push-in
         z = p.get('zoom')
         if z:   # slow push into a detail of the main picture (e.g. the southern edge of a map)
             w, h = img_size(p['img'])
@@ -113,6 +115,7 @@ for si, (sc, ps) in enumerate(zip(scenes_in, picks['scenes'])):
         marks = [{'s': round(at_time(m['at']) if m.get('at') else s, 3), 'box': m['box'], 'shape': m.get('shape', 'ellipse'),
                   'on': m.get('on', 0)} for m in p.get('marks', [])]
         title = p.get('title', sc.get('title', ''))
+        if z: boxes[0]['drift'] = 0
         shots.append({'s': round(s, 3), 'e': round(e, 3), 'scene': si + 1, 'shot': j + 1,
                       'label': p.get('label', sc.get('label', '')), 'title': title, 'titleSize': L.title_size(title, opening=not shots),
                       'caption': p.get('caption', ''), 'credit': p.get('credit', ''), 'bar': lay['bar'], 'captionY': lay['caption'],
@@ -124,7 +127,7 @@ music = mg.render([{'from': 0, 'to': total, **mu}], lambda v: v, total)
 bed = music / (np.abs(music).max() or 1) * 0.8
 mg.write_wav(f'{pub}/{base}/bed.wav', bed)
 
-plan = {'duration': total, 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
+plan = {'duration': total, 'theme': STYLE, 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
         'musicVolume': spec.get('music_volume', 0.16), 'fonts': []}
 json.dump(plan, open(f'{out}/plan.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

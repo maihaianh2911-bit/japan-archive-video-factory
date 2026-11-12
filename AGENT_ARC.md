@@ -3,10 +3,11 @@
 The owner (Vietnamese, not technical) opens an issue `[Lịch sử] …` with a script (Vietnamese or Japanese). The
 result is a vertical short (1080×1920, 30 fps) laid out exactly as the approved sample
 `00-video-mau/MAU-EDIT-20S.mp4` (Göbekli Tepe; the owner's guide is `00-video-mau/HUONG-DAN-EDIT.md`, the same
-video as data is `docs/vi-du-gobekli/`): dark brown background, gold bar + small gold label (place or kind of
+video as data is `docs/vi-du-gobekli/`): gold bar + small gold label (place or kind of
 document), large cream title, **the real document in the middle** with a thin border, gold rings that appear at the
 moment the voice names a detail, the subtitle under the picture, the credit at the foot. Hard cuts, ~3–5 s per
-shot, quiet music under a Japanese voice.
+shot, quiet music under a Japanese voice. Default look `warm` (§1 `style`): the picture blurred behind itself, a slow
+push-in, rings drawn round when named, the header easing in on a new idea.
 
 **The point of this format: every shot shows the real document of what the viewer is hearing at that moment.**
 You choose and check every picture by looking at it. Machine steps run in `.github/workflows/arc.yml` →
@@ -54,6 +55,12 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
 - Length: the voice reads ~8.3 characters/s; each line adds ~0.4 s. Shorts allow 3 min ≈ 1250 characters;
   20–60 s suits this format. Longer without the owner asking → keep it and offer a shorter cut in your comment.
 - `tts`: kana for names and rare readings the voice may misread (`prompts/readings.json` is applied to every line).
+- `style`: `warm` (default: the shot's own picture, blurred and darkened, fills the background; the picture floats
+  with a shadow and a gold frame), `paper` (ivory archive paper, ink text, the picture as a print with a white mat),
+  `classic` (the flat dark brown of the first sample, no motion). The owner found the flat dark background dull
+  (12/11): use `warm` unless the issue asks for another.
+- `hl`: 1–2 key words per line (exact substrings), shown in colour in the subtitle: the thing the picture shows
+  (`{"3": ["円を描く"]}`).
 - `music`: quiet documentary bed (`key`, `mode`, `bpm`, `energy` 0.1–0.3). `music_volume` (default 0.16) only if
   the owner asks.
 - `queries`: 12–20 searches of open archives (see §2 "Where pictures come from"), at least one for every place,
@@ -91,8 +98,9 @@ Commit `[arc #<N>] kịch bản`, push. Remove `arc-busy`. (Voice ~10 min; you a
      the kind of picture and its date (`版画（1866年）`, `写本挿絵（15世紀）`), and the real artefact when the voice
      names it (the Flood tablet when Gilgamesh is named).
    - **A question / mystery** (the closing line) → the most striking real picture of the subject (the sample: P43).
-   - Ring or zoom only when there is a specific detail to point at (owner's guide). Otherwise the picture stands
-     still: no camera moves, no fades — cut on the idea.
+   - Ring or zoom only when there is a specific detail to point at (owner's guide). Otherwise the picture only
+     drifts in slowly (5 % over the shot; `drift` 0–0.1 per shot, `"still": true` for none — maps and text pages
+     often read better still). Cut on the idea, no fades.
    - **Never**: AI pictures, modern reconstructions or artists' impressions of the site, re-enactments, stock
      scenes (the guide: no "farmer digs up the ruin" scenes), pictures of a different site passed off as this one,
      watermarks, captions burnt in, nudity, gore.

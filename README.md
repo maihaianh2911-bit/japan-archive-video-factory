@@ -2,7 +2,9 @@
 
 Dây chuyền làm **video lịch sử và truyền thuyết tiếng Nhật** khổ dọc 9:16 (1080×1920) cho Shorts, bằng **tư liệu thật**: ảnh khai quật, ảnh hiện vật, bản đồ gốc, bản scan, tranh khắc và tranh cổ có nguồn (không dùng ảnh AI hay ảnh tái dựng). Giọng đọc và phụ đề tiếng Nhật. Chạy hoàn toàn trên GitHub.
 
-Cách dựng theo bản mẫu đã duyệt **Göbekli Tepe**: [`00-video-mau/MAU-EDIT-20S.mp4`](00-video-mau/MAU-EDIT-20S.mp4), hướng dẫn [`00-video-mau/HUONG-DAN-EDIT.md`](00-video-mau/HUONG-DAN-EDIT.md). Nền nâu đen, chữ vàng nhỏ ở trên (địa điểm / loại tư liệu), tiêu đề Nhật màu kem, ảnh ở giữa có viền mảnh, phụ đề dưới ảnh, ghi công ở chân khung. Hình đổi theo câu đọc: toàn cảnh khi nói về địa điểm, ảnh từ trên cao và **khoanh vòng** đúng lúc nói về bố cục, ảnh cận khi nói về phù điêu, **phóng** vào đúng chỗ trên bản đồ. Cắt thẳng, nhạc nền nhỏ hơn giọng.
+Bố cục theo bản mẫu đã duyệt **Göbekli Tepe**: [`00-video-mau/MAU-EDIT-20S.mp4`](00-video-mau/MAU-EDIT-20S.mp4), hướng dẫn [`00-video-mau/HUONG-DAN-EDIT.md`](00-video-mau/HUONG-DAN-EDIT.md). Chữ vàng nhỏ ở trên (địa điểm / loại tư liệu), tiêu đề Nhật màu kem, ảnh ở giữa có viền mảnh, phụ đề dưới ảnh, ghi công ở chân khung. Hình đổi theo câu đọc: toàn cảnh khi nói về địa điểm, ảnh từ trên cao và **khoanh vòng** đúng lúc nói về bố cục, ảnh cận khi nói về phù điêu, **phóng** vào đúng chỗ trên bản đồ. Cắt thẳng, nhạc nền nhỏ hơn giọng.
+
+Kiểu hình (ghi trong Ghi chú của phiếu nếu muốn đổi): **Ấm** (mặc định — nền là chính bức ảnh làm mờ nên mỗi cảnh có màu riêng, ảnh trôi chậm, vòng khoanh vẽ dần), **Giấy cổ** (nền giấy ngà, ảnh như tấm ảnh in), **Cổ điển** (nền nâu đen phẳng như bản mẫu đầu tiên).
 
 ## Làm một video
 
