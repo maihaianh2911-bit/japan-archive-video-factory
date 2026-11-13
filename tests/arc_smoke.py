@@ -76,7 +76,7 @@ b0 = sh[0]['pics'][0]['box']; assert abs(b0[2] - layout.MAX_W) < 1 and abs(b0[0]
 bt = sh[3]['pics'][0]['box']; assert abs(bt[3] - layout.MAX_H) < 1 or bt[3] + 2 * layout.CAPTION_H > layout.MAX_H - 200   # portrait: tall
 for x in sh: assert x['pics'][-1]['box'][1] + x['pics'][-1]['box'][3] < x['subY'] < 1600 and x['bar'] >= 140
 assert sh[4]['pics'][0]['zoom']['to'][0] > 0.3 and sh[4]['pics'][0]['drift'] == 0
-assert sh[0]['pics'][0]['drift'] > 0 and sh[2]['pics'][0]['drift'] == 0 and plan['theme'] == 'warm'          # slow push-in unless still/zoom
+assert sh[0]['pics'][0]['drift'] > 0 and sh[2]['pics'][0]['drift'] == 0 and plan['theme'] == 'paper'          # slow push-in unless still/zoom
 assert any(s['hl'] == ['円を描く'] for s in plan['subs'])
 for sb in plan['subs']:
     r = sb['text'].split('\n'); assert len(r) <= 2 and max(map(len, r)) <= 19, sb['text']
@@ -97,10 +97,10 @@ if '--still' in sys.argv:
     a = np.asarray(Image.open(os.path.join(out, f'still_{t_ring - 0.3:.2f}.png')).convert('RGB')).astype(int)
     b = np.asarray(Image.open(os.path.join(out, f'still_{t_ring + 0.6:.2f}.png')).convert('RGB')).astype(int)
     assert a.shape[:2] == (960, 540), a.shape
-    assert 15 < a[5:60, 5:60].mean() < 160, a[5:60, 5:60].mean()                    # backdrop: the picture, blurred and darkened
+    assert abs(a[5:60, 5:60].mean(axis=(0, 1)) - np.array([228, 214, 184])).max() < 30, a[5:60, 5:60].mean(axis=(0, 1))   # ivory paper
     bx = sh[2]['pics'][0]['box']; y0, y1, x0, x1 = int(bx[1] / 2) + 6, int((bx[1] + bx[3]) / 2) - 6, int(bx[0] / 2) + 6, int((bx[0] + bx[2]) / 2) - 6
     assert a[y0:y1, x0:x1].std() > 15, 'picture missing'
     assert (np.abs(a[y0:y1, x0:x1] - b[y0:y1, x0:x1]).sum(axis=2) > 80).sum() > 300, 'ring was not drawn'
     sy = int(sh[2]['subY'] / 2)
-    assert (a[sy:sy + 80] > 200).all(axis=2).mean() > 0.003, 'no subtitle text'
+    assert (a[sy:sy + 80] < 70).all(axis=2).mean() > 0.003, 'no subtitle text'   # dark ink on paper
 print('arc smoke test OK:', round(plan['duration'], 1), 's,', len(plan['subs']), 'cues,', tmp)

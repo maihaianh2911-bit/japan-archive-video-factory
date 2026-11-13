@@ -20,7 +20,8 @@ Bố cục đo từ bản mẫu (720×1280, phóng ×1,5): `scripts/arc/layout.p
 
 - 12/11 (hướng dẫn `00-video-mau/HUONG-DAN-EDIT.md`): dùng ảnh thật, bản đồ gốc, bản scan, ảnh hiện vật, tranh cổ có nguồn; ghi rõ tranh minh họa và niên đại; **không** hình AI, ảnh tái dựng, cảnh "người nông dân đào ra di tích". Hình đi theo câu đọc; chỉ khoanh hoặc phóng khi có chi tiết cụ thể cần chỉ. Cắt thẳng ~3–5 s mỗi cảnh. Nhạc nhỏ hơn giọng. Diễn giải chưa xác nhận giữ ở mức giả thuyết. Thiếu ảnh phù hợp → tư liệu thật liên quan trực tiếp, hoặc sửa câu đọc cho khớp phần có thể minh họa.
 - 12/11: mỗi cảnh lưu câu đọc, phụ đề, ảnh, trang nguồn, ghi công, khung cắt, mốc khoanh → `sources.json`; xuất MP4, SRT, danh sách nguồn.
-- 12/11: *"Phần dựng hình, bố cục làm cho đẹp hơn đc ko, tao thấy đang hơi đơn điệu và màu đen ko bắt mắt lắm"* → thêm kiểu `warm` (nền là chính ảnh làm mờ, ảnh nổi có bóng và viền vàng, ảnh trôi chậm, vòng khoanh vẽ dần, tiêu đề hiện mượt, từ khóa phụ đề tô màu) và `paper` (nền giấy ngà); `warm` là mặc định, `classic` giữ đúng bản mẫu cũ. Bố cục (vị trí chữ, ảnh, phụ đề) giữ theo mẫu.
+- 12/11: *"Phần dựng hình, bố cục làm cho đẹp hơn đc ko, tao thấy đang hơi đơn điệu và màu đen ko bắt mắt lắm"* → thêm kiểu `warm` (nền là chính ảnh làm mờ, ảnh nổi có bóng và viền vàng, ảnh trôi chậm, vòng khoanh vẽ dần, tiêu đề hiện mượt, từ khóa phụ đề tô màu) và `paper` (nền giấy ngà); `classic` giữ đúng bản mẫu cũ. Bố cục (vị trí chữ, ảnh, phụ đề) giữ theo mẫu.
+- 13/11: chủ kênh xem 2 video thử, chọn **Giấy cổ** (`paper`) làm mặc định.
 - 12/11: *"Tìm ảnh tự do, k cần ảnh wiki"* → máy tìm ở các kho ảnh mở (Openverse/Flickr, The Met, Art Institute of Chicago, Cleveland Museum of Art, Europeana, Thư viện Quốc hội Mỹ) và trang có giấy phép rõ ràng; Wikimedia không phải nguồn mặc định (chỉ dùng khi viết rõ `commons:`).
 
 ## Trạng thái (12/11/2026)

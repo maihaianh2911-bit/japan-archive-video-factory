@@ -48,9 +48,9 @@ def backdrop(src):
     return ImageEnhance.Brightness(ImageEnhance.Color(im).enhance(1.45)).enhance(0.55)
 
 
-def draw(shot, t, sub, img_of, theme='warm'):
+def draw(shot, t, sub, img_of, theme='paper'):
     """Full 1080×1920 frame of `shot` at time t. img_of(src) → PIL image of a prepared picture."""
-    th = THEMES.get(theme, THEMES['warm'])
+    th = THEMES.get(theme, THEMES['paper'])
     im = backdrop(img_of(shot['pics'][0]['src'])) if th['backdrop'] else Image.new('RGB', (1080, 1920), th['bg'])
     d = ImageDraw.Draw(im)
     b = shot['bar']

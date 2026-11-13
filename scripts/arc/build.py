@@ -24,7 +24,7 @@ lines = json.load(open(f'{pub}/{base}/voice/lines.json', encoding='utf-8'))
 dur = {r['i']: r['duration'] for r in lines}
 text = {r['i']: r['text'] for r in lines}
 os.makedirs(out, exist_ok=True)
-STYLE = spec.get('style', 'warm')   # warm (default) | paper | classic — see src/arc/ArcV.tsx
+STYLE = spec.get('style', 'paper')   # paper (default, owner 13/11) | warm | classic — see src/arc/ArcV.tsx
 scenes_in = spec['scenes']
 if len(picks['scenes']) != len(scenes_in):
     raise SystemExit(f'picks.json có {len(picks["scenes"])} cảnh, script.json có {len(scenes_in)} cảnh')

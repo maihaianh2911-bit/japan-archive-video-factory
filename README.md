@@ -4,7 +4,7 @@ Dây chuyền làm **video lịch sử và truyền thuyết tiếng Nhật** kh
 
 Bố cục theo bản mẫu đã duyệt **Göbekli Tepe**: [`00-video-mau/MAU-EDIT-20S.mp4`](00-video-mau/MAU-EDIT-20S.mp4), hướng dẫn [`00-video-mau/HUONG-DAN-EDIT.md`](00-video-mau/HUONG-DAN-EDIT.md). Chữ vàng nhỏ ở trên (địa điểm / loại tư liệu), tiêu đề Nhật màu kem, ảnh ở giữa có viền mảnh, phụ đề dưới ảnh, ghi công ở chân khung. Hình đổi theo câu đọc: toàn cảnh khi nói về địa điểm, ảnh từ trên cao và **khoanh vòng** đúng lúc nói về bố cục, ảnh cận khi nói về phù điêu, **phóng** vào đúng chỗ trên bản đồ. Cắt thẳng, nhạc nền nhỏ hơn giọng.
 
-Kiểu hình (ghi trong Ghi chú của phiếu nếu muốn đổi): **Ấm** (mặc định — nền là chính bức ảnh làm mờ nên mỗi cảnh có màu riêng, ảnh trôi chậm, vòng khoanh vẽ dần), **Giấy cổ** (nền giấy ngà, ảnh như tấm ảnh in), **Cổ điển** (nền nâu đen phẳng như bản mẫu đầu tiên).
+Kiểu hình (ghi trong Ghi chú của phiếu nếu muốn đổi): **Giấy cổ** (mặc định — nền giấy ngà, chữ nâu mực, ảnh như tấm ảnh in có viền trắng, ảnh trôi chậm, vòng khoanh đỏ vẽ dần), **Ấm** (nền là chính bức ảnh làm mờ nên mỗi cảnh có màu riêng), **Cổ điển** (nền nâu đen phẳng như bản mẫu đầu tiên).
 
 ## Làm một video
 

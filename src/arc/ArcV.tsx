@@ -5,9 +5,10 @@ import { AbsoluteFill, Audio, Img, Sequence, cancelRender, continueRender, delay
 // (00-video-mau/MAU-EDIT-20S.mp4): gold bar + small label (place / kind of document), large title, the picture in
 // the middle, rings that are drawn when the voice names a detail, the subtitle under the picture, the credit at the
 // foot. Cuts on the idea. Positions come from scripts/arc/layout.py via build.py.
-// Themes (script.json "style"): "warm" (default: the picture itself, blurred and darkened, fills the background, so
-// every shot has its own colour; the picture floats with a shadow and a gold frame), "paper" (ivory archive paper,
-// ink text, the picture as a print with a white mat), "classic" (the flat dark brown of the sample).
+// Themes (script.json "style"): "paper" (default, chosen by the owner 13/11: ivory archive paper, ink text, the picture
+// as a print with a white mat, red rings), "warm" (the picture itself, blurred and darkened, fills the background, so
+// every shot has its own colour; the picture floats with a shadow and a gold frame), "classic" (the flat dark brown of
+// the sample).
 type View = [number, number, number, number];
 export type PicBox = { src: string; w: number; h: number; box: [number, number, number, number]; view: View;
   zoom?: { to: View; s: number; e: number }; drift?: number };
@@ -115,7 +116,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const t = frame / fps;
-  const th = THEMES[plan.theme || 'warm'] || THEMES.warm;
+  const th = THEMES[plan.theme || 'paper'] || THEMES.paper;
   if (!plan.shots.length) return <AbsoluteFill style={{ backgroundColor: th.bg }} />;
   const idx = Math.max(0, plan.shots.findIndex((s) => t >= s.s && t < s.e));
   const sh = plan.shots.find((s) => t >= s.s && t < s.e) || plan.shots[plan.shots.length - 1];

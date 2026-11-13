@@ -34,7 +34,7 @@ for sh in plan['shots']:
     late = [m['s'] + 0.2 for m in sh['marks']] + [p['zoom']['e'] + 0.05 for p in sh['pics'] if p.get('zoom')]
     if late: times.append(min(sh['e'] - 0.05, max(late)))
     for t in times:
-        f = frame.draw(sh, t, sub_at(t), img_of, plan.get('theme', 'warm')).resize((TW, TH), Image.LANCZOS)
+        f = frame.draw(sh, t, sub_at(t), img_of, plan.get('theme', 'paper')).resize((TW, TH), Image.LANCZOS)
         tile = Image.new('RGB', (TW, TH + 24), (10, 10, 12)); tile.paste(f, (0, 24))
         ImageDraw.Draw(tile).text((4, 6), f"{sh['scene']}-{sh['shot']}  {t:.1f}s{'  ring/zoom' if t != times[0] else ''}", fill=(255, 210, 90))
         tiles.append(tile)

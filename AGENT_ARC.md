@@ -6,8 +6,8 @@ result is a vertical short (1080×1920, 30 fps) laid out exactly as the approved
 video as data is `docs/vi-du-gobekli/`): gold bar + small gold label (place or kind of
 document), large cream title, **the real document in the middle** with a thin border, gold rings that appear at the
 moment the voice names a detail, the subtitle under the picture, the credit at the foot. Hard cuts, ~3–5 s per
-shot, quiet music under a Japanese voice. Default look `warm` (§1 `style`): the picture blurred behind itself, a slow
-push-in, rings drawn round when named, the header easing in on a new idea.
+shot, quiet music under a Japanese voice. Default look `paper` (§1 `style`): ivory archive paper, ink text, the picture as
+a print with a white mat, a slow push-in, red rings drawn round when named, the header easing in on a new idea.
 
 **The point of this format: every shot shows the real document of what the viewer is hearing at that moment.**
 You choose and check every picture by looking at it. Machine steps run in `.github/workflows/arc.yml` →
@@ -55,10 +55,10 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
 - Length: the voice reads ~8.3 characters/s; each line adds ~0.4 s. Shorts allow 3 min ≈ 1250 characters;
   20–60 s suits this format. Longer without the owner asking → keep it and offer a shorter cut in your comment.
 - `tts`: kana for names and rare readings the voice may misread (`prompts/readings.json` is applied to every line).
-- `style`: `warm` (default: the shot's own picture, blurred and darkened, fills the background; the picture floats
-  with a shadow and a gold frame), `paper` (ivory archive paper, ink text, the picture as a print with a white mat),
-  `classic` (the flat dark brown of the first sample, no motion). The owner found the flat dark background dull
-  (12/11): use `warm` unless the issue asks for another.
+- `style`: `paper` (default, chosen by the owner 13/11: ivory archive paper, ink-brown text, the picture as a print
+  with a white mat and soft shadow, red rings), `warm` (the shot's own picture, blurred and darkened, fills the
+  background; the picture floats with a gold frame), `classic` (the flat dark brown of the first sample, no motion).
+  Use `paper` unless the issue asks for another ("nền tối", "kiểu ấm", "như bản mẫu cũ").
 - `hl`: 1–2 key words per line (exact substrings), shown in colour in the subtitle: the thing the picture shows
   (`{"3": ["円を描く"]}`).
 - `music`: quiet documentary bed (`key`, `mode`, `bpm`, `energy` 0.1–0.3). `music_volume` (default 0.16) only if
