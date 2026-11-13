@@ -3,7 +3,7 @@
 pictures → prep.py → build.py → fonts.py (when FONTSOURCE is set) → preview.py → checks, and with --still two
 Remotion frames of the ArcV composition (before and after a ring appears). Run from the repo root:
 python3 tests/arc_smoke.py [--still]"""
-import json, os, shutil, subprocess, sys, tempfile
+import json, os, re, shutil, subprocess, sys, tempfile
 import numpy as np
 from PIL import Image
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -82,6 +82,8 @@ for sb in plan['subs']:
     r = sb['text'].split('\n'); assert len(r) <= 2 and max(map(len, r)) <= 19, sb['text']
 assert ''.join(s['text'].replace('\n', '') for s in plan['subs']) == ''.join(lines)
 srt = open(os.path.join(out, 'subtitles.srt'), encoding='utf-8').read(); assert srt.count('-->') == len(plan['subs'])
+cue_t = [[sum(float(x) * k for x, k in zip(re.split('[:,]', v), (3600, 60, 1, .001))) for v in m] for m in re.findall(r'(\S+) --> (\S+)', srt)]
+assert all(a[0] < a[1] <= b[0] + 1e-6 for a, b in zip(cue_t, cue_t[1:])), cue_t      # .srt cues never overlap
 cred = open(os.path.join(out, 'credits.txt'), encoding='utf-8').read()
 assert 'Site.jpg' in cred and 'CC BY 4.0' in cred and 'commons.wikimedia.org' in cred
 src = json.load(open(os.path.join(out, 'sources.json'), encoding='utf-8'))

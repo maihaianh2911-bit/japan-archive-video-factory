@@ -1,17 +1,22 @@
-# Hourly run (Claude Code) — entry point
+# Claude task (started by GitHub) — entry point for history issues
 
 You run unattended for `maihaianh2911-bit/japan-archive-video-factory`: vertical Japanese history and legend
-shorts made from real archive documents, a Japanese voice and subtitles timed to it. Nobody will answer questions. You are started once an
-hour and whenever GitHub calls this task's API trigger, so a run that hit the usage limit is simply continued by
-a later one.
+shorts made from real archive documents, a Japanese voice and subtitles timed to it. Nobody will answer questions.
 
-**First action of every run, before anything else** (one API call, no clone):
+This repo has no Claude task of its own: the owner's shared task (the one of `japan-video-factory`, whose
+`AGENT_NIGHTLY.md` checks every channel) also serves it, since 13/11/2026. This repo's workflows wake that task
+through the secrets `CLAUDE_TASK_URL` / `CLAUDE_TASK_TOKEN` (same values as in `japan-video-factory`): after each
+machine step, an owner comment, a failure, or the owner's button "Gọi Claude ngay" (`wake.yml`). There is no
+hourly run (owner, 13/11/2026). So finish what you were woken for; a run that hits the usage limit is continued
+only when the owner presses "Gọi Claude ngay" or works in a chat.
+
+The shared task lists this repo's open issues waiting for Claude with:
 ```bash
 R=maihaianh2911-bit/japan-archive-video-factory
 echo "arc: $(gh api "repos/$R/issues?state=open&labels=arc&per_page=50" --jq '[.[] | select(any(.labels[]; .name | test("^arc-(plan|pick|check|fix|failed)$"))) | .number]')"
 ```
-- `arc` is `[]` → stop immediately: no clone, no reading, no comments.
-- Otherwise → follow `AGENT_ARC.md` for those issues, oldest first, one step per issue.
+- `arc` is `[]` → nothing to do in this repo.
+- Otherwise → read §0 below, then follow `AGENT_ARC.md` for those issues, oldest first, one step per issue.
 
 Write all GitHub comments in **Vietnamese** and start every comment with `🤖` (your comments are posted from the
 owner's account; the 🤖 tells the workflows they are not the owner's change requests). The owner is not

@@ -71,6 +71,9 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
 - `urls`: pictures you found yourself on a page that states a free licence (journal figures under CC BY, a museum
   open-access page, a government archive): direct image URL + page + title + author + licence. Check the licence on
   the page before adding it.
+  Once round 1 exists (`img/1/` on renders), never change `queries`/`urls` again: a new search renumbers round 1
+  and the picks would point at other pictures (the machine then stops at `arc-pick`). Add searches with
+  `search-<r>.json`.
 Commit `[arc #<N>] kịch bản`, push. Remove `arc-busy`. (Voice ~10 min; you are woken at `arc-pick`.)
 
 ## 2. `arc-pick` → `arc/<N>/picks.json`
@@ -78,7 +81,8 @@ Commit `[arc #<N>] kịch bản`, push. Remove `arc-busy`. (Voice ~10 min; you a
    `tts` (only changed lines are read again) and the word in `prompts/readings.json`. Whisper mishearings (katakana
    names, digits) are dismissed.
 2. Open every `img/<r>/sheet_<k>.jpg` (tiles: `#n 1024x683 CC BY 2.0` + source + date; `img/<r>/index.json` has
-   titles, authors, dates, licences, pages). A scene without a fitting picture → write `arc/<N>/search-<r>.json`
+   titles, authors, dates, licences, pages). A query whose search failed has an `"error"` in `index.json` and no
+   sheet: repeat it in the next round. A scene without a fitting picture → write `arc/<N>/search-<r>.json`
    `{"queries": […], "urls": […]}` (r = 2, 3…), push, poll the renders branch for `arc/<N>/img/<r>/index.json`
    (every 30 s, ≤ 10 min), view it.
 3. Open the full picture (`img/<r>/<k>-<n>.jpg`) before choosing a view, a detail or a ring: you must see the very
@@ -169,4 +173,5 @@ all fixes in one push. Otherwise remove `arc-check`, add `arc-done` and comment 
   `gh api repos/…/actions/jobs/<job>/logs`), fix the cause (your JSON, or `scripts/arc/*` tested locally with
   `python3 tests/arc_smoke.py --still`), re-run
   `gh api -X POST repos/maihaianh2911-bit/japan-archive-video-factory/actions/workflows/arc.yml/dispatches -f ref=main -f 'inputs[issue]=<N>' -f 'inputs[steps]=render'`
-  (or `prepare`, `search`), remove `arc-failed`.
+  (or `prepare`, `search`), remove `arc-failed`. When the fix is a push under `arc/<N>/` (script.json, picks.json,
+  search-<r>.json, own/), that push already starts the run: do not dispatch it by hand as well.

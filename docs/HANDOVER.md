@@ -22,11 +22,13 @@ Bố cục đo từ bản mẫu (720×1280, phóng ×1,5): `scripts/arc/layout.p
 - 12/11: mỗi cảnh lưu câu đọc, phụ đề, ảnh, trang nguồn, ghi công, khung cắt, mốc khoanh → `sources.json`; xuất MP4, SRT, danh sách nguồn.
 - 12/11: *"Phần dựng hình, bố cục làm cho đẹp hơn đc ko, tao thấy đang hơi đơn điệu và màu đen ko bắt mắt lắm"* → thêm kiểu `warm` (nền là chính ảnh làm mờ, ảnh nổi có bóng và viền vàng, ảnh trôi chậm, vòng khoanh vẽ dần, tiêu đề hiện mượt, từ khóa phụ đề tô màu) và `paper` (nền giấy ngà); `classic` giữ đúng bản mẫu cũ. Bố cục (vị trí chữ, ảnh, phụ đề) giữ theo mẫu.
 - 13/11: chủ kênh xem 2 video thử, chọn **Giấy cổ** (`paper`) làm mặc định.
+- 13/11: bỏ lượt chạy Claude mỗi giờ (như repo văn học): Claude chỉ làm khi GitHub gọi, hoặc khi chủ kênh bấm **Gọi Claude ngay** / làm trong chat. Repo này dùng chung tác vụ Claude của `japan-video-factory`.
 - 12/11: *"Tìm ảnh tự do, k cần ảnh wiki"* → máy tìm ở các kho ảnh mở (Openverse/Flickr, The Met, Art Institute of Chicago, Cleveland Museum of Art, Europeana, Thư viện Quốc hội Mỹ) và trang có giấy phép rõ ràng; Wikimedia không phải nguồn mặc định (chỉ dùng khi viết rõ `commons:`).
 
-## Trạng thái (12/11/2026)
+## Trạng thái (13/11/2026)
 
-- Mã đã viết và thử: bài thử `tests/arc_smoke.py --still` chạy được; dựng lại bản mẫu Göbekli Tepe bằng ảnh thật cho khung hình gần như trùng bản đã duyệt. Chưa chạy trên GitHub (cần secrets và tác vụ Claude hằng giờ, xem README "Cấu hình").
+- Mã đã viết và thử: bài thử `tests/arc_smoke.py --still` chạy được; dựng lại bản mẫu Göbekli Tepe bằng ảnh thật cho khung hình gần như trùng bản đã duyệt. Chưa chạy trên GitHub (cần secrets `VN11_API_KEY`, `CLAUDE_TASK_URL`, `CLAUDE_TASK_TOKEN`, xem README "Cấu hình").
+- 13/11: đưa sang các sửa lỗi của repo văn học (12/11): giọng đọc được lưu lên nhánh `renders` ngay khi xong, trước khi tìm ảnh; nhãn thêm trước rồi mới bỏ, lỗi thì thử lại; đẩy lên `renders` thử lại từ bản mới nhất; máy dừng giữa chừng thì phiếu được đánh `arc-failed`; video trên 95 MB tự nén lại cho dưới giới hạn 100 MB của GitHub; đổi từ khóa ảnh đợt 1 khi đã có `picks.json` thì chờ Claude chọn lại; từ khóa tìm lỗi được ghi `"error"` trong `index.json`.
 - Video mẫu: 720×1280; máy dựng 1080×1920 cùng tỉ lệ.
 
 ## Lưu ý kỹ thuật

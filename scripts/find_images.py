@@ -20,7 +20,9 @@ museum page …): {"url": "<direct image url>", "page": "<page that states the l
 For every query: up to 8 pictures, keeping only licences that allow use in a monetised video, dropping files under
 400 px and duplicate scans of the same picture (also across earlier rounds listed in FIND_SEEN). Writes
 <out_dir>/<k>-<n>.jpg (up to 4000 px), <out_dir>/index.json (query, source, page, licence, author, date, size) and
-<out_dir>/sheet_<k>.jpg (contact sheet with numbers and source) so Claude can choose. Stdlib + Pillow.
+<out_dir>/sheet_<k>.jpg (contact sheet with numbers and source) so Claude can choose. A query whose search fails
+(every source down, a timeout …) is logged and kept with no results and an "error" in index.json; only when every
+query fails does the script exit with an error. Stdlib + Pillow.
 """
 import io, json, os, re, sys, time, urllib.parse, urllib.request
 from PIL import Image, ImageDraw
@@ -186,10 +188,12 @@ def search(q):
     m = re.match(r'^(\w+):\s*(.+)$', q)
     if m and m.group(1).lower() in FIND:
         return FIND[m.group(1).lower()](m.group(2), 12)
-    per, lists = 8, []
+    per, lists, errors = 8, [], []
     for s in SOURCES:   # one source down or slow must not stop the search
         try: lists.append(FIND[s](q, per))
-        except Exception as e: print(f'  {s}: {str(e)[:100]}')
+        except Exception as e: print(f'  {s}: {str(e)[:100]}'); errors.append(f'{s}: {str(e)[:60]}')
+    if not lists:       # every source failed: the query is recorded as failed, not as "nothing found"
+        raise RuntimeError('; '.join(errors))
     mixed = []
     for i in range(per):
         mixed += [l[i] for l in lists if i < len(l)]
@@ -256,10 +260,11 @@ def main():
     index, kept_hashes, dropped = [], seen_hashes(), {'small': 0, 'duplicate': 0}
     for k, q in enumerate(queries, 1):
         exact = isinstance(q, dict) or q.startswith('File:')
+        err = None
         try:
             found = [outside(q)] if isinstance(q, dict) else search(q)
         except Exception as e:
-            print(f'{k}. {q}: lỗi {str(e)[:120]}'); found = []
+            err = str(e)[:200]; print(f'{k}. {q}: lỗi {err[:120]}'); found = []
         if isinstance(q, dict): q = q.get('title') or q['url']
         kept = []   # [(result, image, hash)] in search order; a duplicate inside this query keeps the bigger file
         for r in found:
@@ -295,9 +300,11 @@ def main():
             labels[p] = f"#{n}  {im.width}x{im.height}  {lic}"[:40] + f"\n{r['source']}  {r['date']}"[:42]
         kept_hashes += [h for _, _, h in kept]
         sheet(files, f'{out}/sheet_{k}.jpg', labels)
-        index.append({'k': k, 'query': q, 'results': results})
+        index.append({'k': k, 'query': q, 'results': results, **({'error': err} if err else {})})
         print(f'{k}. {q}: {len(results)} kept ({", ".join(sorted({r["source"] for r in results}))})')
     json.dump(index, open(f'{out}/index.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    if index and all(e.get('error') for e in index):
+        raise SystemExit('tìm ảnh: mọi từ khóa đều lỗi (mạng hoặc các kho ảnh không trả lời)')
     print(f"dropped: {dropped['small']} too small, {dropped['duplicate']} duplicates")
 
 

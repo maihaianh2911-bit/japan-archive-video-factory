@@ -36,8 +36,8 @@ Nhánh **`renders`**, thư mục `arc/<số phiếu>/`: `video.mp4`, `subtitles.
 
 ## Cấu hình (làm một lần)
 
-- **Secrets** (Settings → Secrets and variables → Actions): `VN11_API_KEY` (giọng đọc 11labs, giống repo văn học), `CLAUDE_TASK_URL` + `CLAUDE_TASK_TOKEN` (để GitHub gọi Claude ngay khi có việc; thiếu thì Claude chỉ làm ở lượt chạy mỗi giờ).
-- Một tác vụ Claude chạy mỗi giờ cho repo này, đọc [`AGENT_NIGHTLY.md`](AGENT_NIGHTLY.md).
+- **Secrets** (Settings → Secrets and variables → Actions): `VN11_API_KEY` (giọng đọc 11labs, giống repo văn học), `CLAUDE_TASK_URL` + `CLAUDE_TASK_TOKEN` (để GitHub gọi Claude khi có việc; dùng **cùng giá trị** như repo văn học `japan-video-factory`). Không có lượt chạy mỗi giờ: thiếu hai secret này thì phiếu chờ đến khi làm trong chat.
+- Repo này không có tác vụ Claude riêng: tác vụ Claude chung của các kênh (tác vụ của `japan-video-factory`) làm luôn phiếu lịch sử, đọc [`AGENT_NIGHTLY.md`](AGENT_NIGHTLY.md).
 - Giọng: `clone_190` (kể chuyện, mặc định) hoặc `clone_461` (tin tức), chọn trong phiếu.
 
 ## Chạy tay (tab **Actions**)
@@ -45,8 +45,8 @@ Nhánh **`renders`**, thư mục `arc/<số phiếu>/`: `video.mp4`, `subtitles.
 | Workflow | Làm gì |
 |---|---|
 | **Video lịch sử (tư liệu thật)** | Chạy lại một bước cho một phiếu: `prepare` (giọng + ảnh), `search` (tìm thêm ảnh), `render` (dựng) |
-| **Gọi Claude ngay** | Cho Claude bắt đầu ngay, không chờ lượt chạy mỗi giờ |
+| **Gọi Claude ngay** | Gọi Claude làm tiếp khi phiếu đang chờ (ví dụ sau khi hết hạn mức) |
 | **Tìm ảnh (kho ảnh mở)** | Tìm ảnh miễn bản quyền theo từ khóa |
 | **Dọn video cũ (nhánh renders)** | Dọn file của phiếu cũ (tự chạy mỗi tuần) |
 
-Hướng dẫn cho Claude: [`AGENT_NIGHTLY.md`](AGENT_NIGHTLY.md) (điểm vào của lượt chạy mỗi giờ) và [`AGENT_ARC.md`](AGENT_ARC.md) (các bước làm video). Bàn giao và các quyết định của chủ kênh: [`docs/HANDOVER.md`](docs/HANDOVER.md).
+Hướng dẫn cho Claude: [`AGENT_NIGHTLY.md`](AGENT_NIGHTLY.md) (điểm vào khi GitHub gọi Claude) và [`AGENT_ARC.md`](AGENT_ARC.md) (các bước làm video). Bàn giao và các quyết định của chủ kênh: [`docs/HANDOVER.md`](docs/HANDOVER.md).

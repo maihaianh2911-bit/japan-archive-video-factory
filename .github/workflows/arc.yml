@@ -95,20 +95,22 @@ jobs:
             S=""; for s in $IN_STEPS; do case "$s" in prepare|search|render) S="$S $s";; esac; done
             echo "$IN_ISSUE$S" > /tmp/todo.txt
           else
-            # files changed by this push (only the last commit's when the old head cannot be fetched)
-            git fetch -q --depth 1 origin "$BEFORE" 2>/dev/null && FILES=$(git diff --name-only "$BEFORE" HEAD -- arc/) || FILES=$(git show --name-only --format= HEAD -- arc/)
-            printf '%s\n' "$FILES" | python3 -c '
+            # files changed by this push (only the last commit's when the old head cannot be fetched); NUL-separated
+            # and unquoted, so names with spaces or accents survive
+            { git fetch -q --depth 1 origin "$BEFORE" 2>/dev/null && git -c core.quotePath=false diff -z --name-only "$BEFORE" HEAD -- arc/ > /tmp/files.txt; } \
+              || git -c core.quotePath=false show -z --name-only --format= HEAD -- arc/ > /tmp/files.txt
+            python3 -c '
           import re, sys, collections
           todo = collections.OrderedDict()
-          for f in sys.stdin.read().split():
-              m = re.match(r"arc/(\d+)/(.+)$", f)
+          for f in sys.stdin.buffer.read().decode("utf-8", "replace").split("\0"):
+              m = re.match(r"arc/(\d+)/(.+)$", f.strip("\n"))
               if not m: continue
               n, rest = m.groups()
               s = todo.setdefault(n, [])
               step = "prepare" if rest == "script.json" else "search" if re.match(r"search-\w+\.json$", rest) else "render" if rest == "picks.json" or rest.startswith("own/") else None
               if step and step not in s: s.append(step)
           order = ["prepare", "search", "render"]
-          print("\n".join(n + " " + " ".join(sorted(s, key=order.index)) for n, s in todo.items() if s))' > /tmp/todo.txt
+          print("\n".join(n + " " + " ".join(sorted(s, key=order.index)) for n, s in todo.items() if s))' < /tmp/files.txt > /tmp/todo.txt
           fi
           cat /tmp/todo.txt
           [ -s /tmp/todo.txt ] && echo "TODO=1" >> "$GITHUB_ENV" || echo "Không có việc."
@@ -124,14 +126,32 @@ jobs:
         if: env.TODO == '1'
         run: |
           FAIL=0
+          : > /tmp/handled.txt
           while read -r N STEPS; do
             echo "::group::phiếu #$N: $STEPS"
-            if ! python3 scripts/arc/run.py "$N" $STEPS; then
+            # < /dev/null: nothing inside run.py may read the rest of the to-do list from the loop's stdin
+            if ! python3 scripts/arc/run.py "$N" $STEPS < /dev/null; then
               FAIL=1
-              gh issue edit "$N" --add-label arc-failed --remove-label arc-voice --remove-label arc-render || true
-              gh issue comment "$N" --body "🤖 Máy gặp lỗi ở bước \`$STEPS\` — xem nhật ký: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID . Claude sẽ xem và sửa." || true
-              bash scripts/wake_claude.sh "Phiếu lịch sử số $N bị lỗi ở bước $STEPS." || true
+              gh issue edit "$N" --add-label arc-failed --remove-label arc-voice --remove-label arc-render < /dev/null || true
+              gh issue comment "$N" --body "🤖 Máy gặp lỗi ở bước \`$STEPS\` — xem nhật ký: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID . Claude sẽ xem và sửa." < /dev/null || true
+              bash scripts/wake_claude.sh "Phiếu lịch sử số $N bị lỗi ở bước $STEPS." < /dev/null || true
             fi
+            echo "$N" >> /tmp/handled.txt
             echo "::endgroup::"
           done < /tmp/todo.txt
           exit $FAIL
+      # The job stopped outside run.py (tools failed to install, time limit, cancelled): issues the loop did not reach
+      # would keep arc-voice/arc-render forever, so they are marked failed here.
+      - name: Báo lỗi cho phiếu chưa chạy
+        if: (failure() || cancelled()) && env.TODO == '1'
+        run: |
+          touch /tmp/handled.txt
+          while read -r N STEPS; do
+            [ -n "$N" ] || continue
+            grep -qx "$N" /tmp/handled.txt && continue
+            gh issue edit "$N" --add-label arc-failed < /dev/null || true
+            gh issue edit "$N" --remove-label arc-voice --remove-label arc-render < /dev/null || true
+            gh issue comment "$N" --body "🤖 Máy dừng giữa chừng trước khi làm xong bước \`$STEPS\` (lỗi cài đặt, quá giờ hoặc bị hủy) — xem nhật ký: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID . Claude sẽ xem và chạy lại." < /dev/null || true
+            bash scripts/wake_claude.sh "Phiếu lịch sử số $N: máy dừng giữa chừng ở bước $STEPS." < /dev/null || true
+          done < /tmp/todo.txt
+          true
