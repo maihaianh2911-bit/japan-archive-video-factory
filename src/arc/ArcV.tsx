@@ -82,7 +82,8 @@ const PicView: React.FC<{ p: PicBox; t: number; sh: Shot; th: Theme; marks: Mark
               filter: 'drop-shadow(0 0 4px rgba(0,0,0,.6))' };
             return mk.shape === 'rect'
               ? <rect key={i} pathLength={1} x={X(a)} y={Y(b)} width={X(c) - X(a)} height={Y(d) - Y(b)} rx={6} style={st} />
-              : <ellipse key={i} pathLength={1} cx={(X(a) + X(c)) / 2} cy={(Y(b) + Y(d)) / 2} rx={(X(c) - X(a)) / 2} ry={(Y(d) - Y(b)) / 2}
+              // turned by -90° so the ring starts drawing at the top: its radii are swapped to keep the box's shape
+              : <ellipse key={i} pathLength={1} cx={(X(a) + X(c)) / 2} cy={(Y(b) + Y(d)) / 2} rx={(Y(d) - Y(b)) / 2} ry={(X(c) - X(a)) / 2}
                   transform={`rotate(-90 ${(X(a) + X(c)) / 2} ${(Y(b) + Y(d)) / 2})`} style={st} />;
           })}
         </svg>
