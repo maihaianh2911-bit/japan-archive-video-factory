@@ -7,7 +7,8 @@
   render   pictures from picks.json, plan, fonts, Remotion render, loudness, shot sheet
            → renders/arc/<N>/video.mp4, subtitles.srt, credits.txt, sources.json, sheet.jpg
 After prepare/search the issue waits for Claude (arc-pick) unless picks.json exists, then render runs too; not when
-prepare searched round 1 again with changed queries (the picks would point at other pictures).
+prepare searched round 1 again with changed queries (the picks would point at other pictures). Without picks.json
+the render step is skipped with a log line (a push of own/ alone), not failed.
 A video over 95 MB is encoded again at a bitrate that lands ~90 MB (GitHub refuses files over 100 MB).
 Needs GH_TOKEN, GITHUB_REPOSITORY; prepare needs VN11_API_KEY.
 """
@@ -158,6 +159,7 @@ def search():
             json.dump(q, open(os.path.join(d, 'queries.json'), 'w', encoding='utf-8'), ensure_ascii=False)
             did.append(f'img/{r}')
     if did: publish(did, 'tìm thêm ảnh')
+    return did
 
 
 MAX_MB, TARGET_MB = 95, 90   # GitHub refuses files over 100 MB
@@ -206,6 +208,10 @@ def wake(why):
 
 if __name__ == '__main__':
     fetch_renders()
+    if 'render' in steps and not os.path.exists(os.path.join(JOB, 'picks.json')):
+        # e.g. a push of own/ (the owner's pictures) before Claude wrote picks.json: nothing to render yet, not a failure
+        print(f'arc/{N}: chưa có picks.json — bỏ qua bước dựng (render). Ảnh trong own/ sẽ được dùng khi có picks.json.', flush=True)
+        steps.remove('render')
     if 'prepare' in steps:
         rows, requeried = prepare()
         flagged = sum(1 for r in rows if r.get('diff'))
@@ -225,9 +231,11 @@ if __name__ == '__main__':
         elif 'render' not in steps:
             steps.append('render')
     if 'search' in steps:
-        search()
+        did = search()
         if 'render' not in steps:
             labels(add=['arc-pick'], remove=['arc-voice'])
+            if did:   # Claude may have stopped polling for the new round: wake it like after the other steps
+                wake(f'Phiếu lịch sử số {N}: đã tìm thêm ảnh (đợt {", ".join(d.split("/")[-1] for d in did)}), chờ chọn ảnh.')
     if 'render' in steps:
         if not os.path.exists(os.path.join(WORK, 'voice', 'lines.json')):
             raise SystemExit('chưa có giọng đọc cho phiếu này (cần script.json)')

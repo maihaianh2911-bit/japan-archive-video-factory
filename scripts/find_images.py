@@ -9,7 +9,8 @@ Sources (the owner, 12/11: free pictures, Wikipedia/Wikimedia is not needed):
   aic        Art Institute of Chicago (public domain works)
   cleveland  Cleveland Museum of Art, open access (CC0)
   europeana  Europeana: European libraries, archives, museums (CC0, public domain, CC BY, CC BY-SA)
-  loc        Library of Congress, photos, prints and maps ("No known restrictions on publication" only)
+  loc        Library of Congress, photos and prints (loc.gov/photos/ only, not its maps collection;
+             "No known restrictions on publication" only)
   commons    Wikimedia Commons (only when asked for with this prefix)
 A query without prefix searches all sources except commons and mixes the results; `met: Gilgamesh` searches one.
 Write queries in English (or the language of the archive). `File:<name>` fetches one exact Commons file.
@@ -24,16 +25,18 @@ For every query: up to 8 pictures, keeping only licences that allow use in a mon
 (every source down, a timeout …) is logged and kept with no results and an "error" in index.json; only when every
 query fails does the script exit with an error. Stdlib + Pillow.
 """
-import io, json, os, re, sys, time, urllib.parse, urllib.request
+import http.client, io, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 from PIL import Image, ImageDraw
 
 UA = 'JapanArchiveVideoFactory/0.1 (https://github.com/maihaianh2911-bit/japan-archive-video-factory; licence-checked picture search)'
 SOURCES = ('openverse', 'met', 'aic', 'cleveland', 'europeana', 'loc')
 MIN_SIDE = 400   # shorter side in pixels: smaller files only look blurred in the video
 KEEP = 8         # pictures kept per query
+NET = (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException)   # network errors worth a retry
 
 
 def get(url, tries=4, raw=True):
+    """GET with retries: 429/5xx (rate limits, busy servers) and network errors (timeout, reset, cut-off reply)."""
     for i in range(tries):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=60) as r:
@@ -43,9 +46,9 @@ def get(url, tries=4, raw=True):
             if e.code in (429, 500, 502, 503, 504) and i < tries - 1:
                 time.sleep(8 * (i + 1)); continue
             raise
-        except (urllib.error.URLError, TimeoutError):
+        except NET:
             if i < tries - 1:
-                time.sleep(5); continue
+                time.sleep(5 * (i + 1)); continue
             raise
 
 

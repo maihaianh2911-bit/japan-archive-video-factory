@@ -3,14 +3,17 @@
 You run unattended for `maihaianh2911-bit/japan-archive-video-factory`: vertical Japanese history and legend
 shorts made from real archive documents, a Japanese voice and subtitles timed to it. Nobody will answer questions.
 
-This repo has no Claude task of its own: the owner's shared task (the one of `japan-video-factory`, whose
-`AGENT_NIGHTLY.md` checks every channel) also serves it, since 13/11/2026. This repo's workflows wake that task
-through the secrets `CLAUDE_TASK_URL` / `CLAUDE_TASK_TOKEN` (same values as in `japan-video-factory`): after each
-machine step, an owner comment, a failure, or the owner's button "Gọi Claude ngay" (`wake.yml`). There is no
-hourly run (owner, 13/11/2026). So finish what you were woken for; a run that hits the usage limit is continued
-only when the owner presses "Gọi Claude ngay" or works in a chat.
+You are one of two kinds of Claude task, and this file is the same for both: the owner's shared task (the one of
+`japan-video-factory`, whose `AGENT_NIGHTLY.md` checks every channel and sends you here for this repo; it serves
+this repo since 13/11/2026), or this repo's own task when each repo has its own Claude seat (its prompt: "Làm theo
+AGENT_NIGHTLY.md của repo maihaianh2911-bit/japan-archive-video-factory."; then work only on this repo's `arc-*`
+issues). This repo's workflows wake whichever task the secrets `CLAUDE_TASK_URL` / `CLAUDE_TASK_TOKEN` point to
+(the shared task: same values as in `japan-video-factory`): after each machine step, an owner comment, a failure,
+or the owner's button "Gọi Claude ngay" (`wake.yml`). There is no hourly run (owner, 13/11/2026). So finish what
+you were woken for; a run that hits the usage limit is continued only when the owner presses "Gọi Claude ngay" or
+works in a chat.
 
-The shared task lists this repo's open issues waiting for Claude with:
+List this repo's open issues waiting for Claude with:
 ```bash
 R=maihaianh2911-bit/japan-archive-video-factory
 echo "arc: $(gh api "repos/$R/issues?state=open&labels=arc&per_page=50" --jq '[.[] | select(any(.labels[]; .name | test("^arc-(plan|pick|check|fix|failed)$"))) | .number]')"

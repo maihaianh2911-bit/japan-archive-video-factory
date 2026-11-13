@@ -26,6 +26,22 @@ text = {r['i']: r['text'] for r in lines}
 os.makedirs(out, exist_ok=True)
 STYLE = spec.get('style', 'paper')   # paper (default, owner 13/11) | warm | classic — see src/arc/ArcV.tsx
 scenes_in = spec['scenes']
+if len(lines) != len(spec['lines']):
+    raise SystemExit(f'giọng đọc có {len(lines)} câu, script.json có {len(spec["lines"])} câu: chạy lại bước prepare')
+# scenes[].lines must cover 1..len(lines) in order, without gap or overlap: a line left out would be dropped silently
+span = lambda a, b: f'câu {a}' if a == b else f'câu {a}–{b}'
+nxt = 1
+for si, sc in enumerate(scenes_in, 1):
+    r = sc.get('lines')
+    if not (isinstance(r, list) and len(r) == 2 and all(type(x) is int for x in r) and r[0] <= r[1]):
+        raise SystemExit(f'script.json cảnh {si}: "lines" phải là [câu đầu, câu cuối] (số nguyên), đang là {r!r}')
+    if r[0] != nxt:
+        raise SystemExit(f'script.json cảnh {si}: "lines" {r} phải bắt đầu ở câu {nxt} '
+                         + (f'({span(nxt, r[0] - 1)} không thuộc cảnh nào)' if r[0] > nxt else '(trùng với cảnh trước)'))
+    nxt = r[1] + 1
+if nxt != len(lines) + 1:
+    raise SystemExit(f'script.json: các cảnh phủ câu 1–{nxt - 1}, nhưng có {len(lines)} câu '
+                     + (f'({span(nxt, len(lines))} không thuộc cảnh nào)' if nxt <= len(lines) else '(cảnh trỏ tới câu không có)'))
 if len(picks['scenes']) != len(scenes_in):
     raise SystemExit(f'picks.json có {len(picks["scenes"])} cảnh, script.json có {len(scenes_in)} cảnh')
 

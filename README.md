@@ -29,6 +29,7 @@ Máy tìm ở các kho ảnh mở, chỉ lấy ảnh được phép dùng trong 
 | `arc-done` | Video xong (link ở bình luận cuối) |
 | `arc-fix` | Bạn yêu cầu sửa, Claude sẽ làm |
 | `arc-failed` | Máy gặp lỗi, Claude sẽ xem |
+| `arc-busy` | Claude đang làm phiếu này (trong chat hoặc tác vụ tự động), tác vụ khác không làm chồng lên |
 
 ## File kết quả
 
@@ -36,8 +37,8 @@ Nhánh **`renders`**, thư mục `arc/<số phiếu>/`: `video.mp4`, `subtitles.
 
 ## Cấu hình (làm một lần)
 
-- **Secrets** (Settings → Secrets and variables → Actions): `VN11_API_KEY` (giọng đọc 11labs, giống repo văn học), `CLAUDE_TASK_URL` + `CLAUDE_TASK_TOKEN` (để GitHub gọi Claude khi có việc; dùng **cùng giá trị** như repo văn học `japan-video-factory`). Không có lượt chạy mỗi giờ: thiếu hai secret này thì phiếu chờ đến khi làm trong chat.
-- Repo này không có tác vụ Claude riêng: tác vụ Claude chung của các kênh (tác vụ của `japan-video-factory`) làm luôn phiếu lịch sử, đọc [`AGENT_NIGHTLY.md`](AGENT_NIGHTLY.md).
+- **Secrets** (Settings → Secrets and variables → Actions): `VN11_API_KEY` (giọng đọc 11labs, giống repo văn học), `CLAUDE_TASK_URL` + `CLAUDE_TASK_TOKEN` (để GitHub gọi Claude khi có việc; dùng **cùng giá trị** như repo văn học `japan-video-factory` khi dùng tác vụ chung). Không có lượt chạy mỗi giờ: thiếu hai secret này thì phiếu chờ đến khi làm trong chat.
+- Tác vụ Claude: tác vụ chung của các kênh (tác vụ của `japan-video-factory`) làm luôn phiếu lịch sử; nếu mỗi repo có tác vụ Claude riêng thì tác vụ của repo này làm (lời nhắn: "Làm theo AGENT_NIGHTLY.md của repo maihaianh2911-bit/japan-archive-video-factory."). Cả hai đều đọc [`AGENT_NIGHTLY.md`](AGENT_NIGHTLY.md).
 - Giọng: `clone_190` (kể chuyện, mặc định) hoặc `clone_461` (tin tức), chọn trong phiếu.
 
 ## Chạy tay (tab **Actions**)
