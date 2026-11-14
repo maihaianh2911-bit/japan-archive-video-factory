@@ -182,12 +182,18 @@ all fixes in one push. Otherwise remove `arc-check`, add `arc-done` and comment 
   its length;
 - `subtitles.srt`, `credits.txt` (to paste into the video description) and `sources.json` (per shot: line,
   picture, page, credit, view, ring times);
-- one line on the documents used; "bình luận nếu muốn sửa".
+- one line on the documents used; "bình luận nếu muốn sửa";
+- one line on keeping it: "Nên tải video về máy: các link này chỉ còn dùng được đến khi phiếu ngừng hoạt động
+  quá 14 ngày (máy tự dọn file cũ mỗi tuần)."
 
 ## 4. `arc-fix` and `arc-failed`
 - `arc-fix`: the request = owner comments after your last `🤖` comment. Text → `script.json` (changed lines are
   read again, the rest reused); pictures, rings, crops → `picks.json` (+ `search-<r>.json`). Push, one-line 🤖
   comment, remove `arc-fix`. Keep working in the same issue.
+  An old issue (quiet for more than 14 days) has no files on `renders` any more (weekly clean-up): run `prepare`
+  again (dispatch below, or your `script.json` push). The voice is read again, round 1 is searched again and the
+  machine stops at `arc-pick`: choose the pictures again from the new sheets (the new search numbers them anew,
+  the old `picks.json` must not be reused as it is), and repeat your `search-<r>.json` rounds with step `search`.
 - `arc-failed`: read the failed run's log (link in the issue; `gh api repos/…/actions/runs/<id>/jobs`, then
   `gh api repos/…/actions/jobs/<job>/logs`), fix the cause (your JSON, or `scripts/arc/*` tested locally with
   `python3 tests/arc_smoke.py --still`), re-run

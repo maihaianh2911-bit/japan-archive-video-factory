@@ -9,8 +9,10 @@
   render   pictures from picks.json, plan, fonts, Remotion render, loudness, shot sheet
            → renders/arc/<N>/video.mp4, subtitles.srt, credits.txt, sources.json, sheet.jpg
 After prepare/search the issue waits for Claude (arc-pick) unless picks.json exists, then render runs too; not when
-prepare searched round 1 again with changed queries (the picks would point at other pictures). Without picks.json
-the render step is skipped with a log line (a push of own/ alone), not failed.
+prepare searched round 1 again (changed queries, or the round was no longer on renders: the weekly clean-up removes
+the files of issues quiet for 14 days) — a new search numbers the pictures anew and the picks would point at other
+pictures. Without picks.json the render step is skipped with a log line (a push of own/ alone), not failed. A
+render whose picks name a picture that is not on renders stops with a clear message instead of a file error.
 A video over 95 MB is encoded again at a bitrate that lands ~90 MB (GitHub refuses files over 100 MB).
 Needs GH_TOKEN, GITHUB_REPOSITORY; prepare needs VN11_API_KEY.
 """
@@ -113,8 +115,9 @@ def link(p):
 
 
 def prepare():
-    """Voice, then picture search round 1. Returns (lines.json rows, True when round 1 was searched again with
-    changed queries, i.e. the pictures behind existing picks changed)."""
+    """Voice, then picture search round 1. Returns (lines.json rows, why round 1 was searched in this run: ''
+    not searched, 'changed' its queries changed, 'new' it was not on renders — first run, or cleaned up). After
+    any new search, picks made before it point at other pictures."""
     global voice_unchecked
     script = json.load(open(os.path.join(JOB, 'script.json'), encoding='utf-8'))
     labels(add=['arc-voice'], remove=['arc-plan', 'arc-failed'])
@@ -141,9 +144,9 @@ def prepare():
     q = (script.get('queries') or []) + (script.get('urls') or [])
     old = os.path.join(WORK, 'img', '1', 'queries.json')
     had = os.path.exists(old)
-    requeried = False
+    requeried = ''
     if q and (not had or json.load(open(old, encoding='utf-8')) != q):
-        requeried = had
+        requeried = 'changed' if had else 'new'
         d = os.path.join(WORK, 'img', '1'); shutil.rmtree(d, ignore_errors=True)
         find(d, q)
         json.dump(q, open(os.path.join(d, 'queries.json'), 'w', encoding='utf-8'), ensure_ascii=False)
@@ -236,6 +239,17 @@ def render():
     return plan['duration']
 
 
+def missing_pictures():
+    """Pictures named in picks.json "images" that are neither on renders (img/<round>/…) nor in arc/<N>/own/."""
+    try:
+        images = json.load(open(os.path.join(JOB, 'picks.json'), encoding='utf-8'))['images']
+        srcs = [str(it['src']) for it in images.values()]
+    except Exception:
+        return []   # a malformed picks.json is reported by prep.py / build.py
+    return sorted({s for s in srcs if not os.path.isfile(os.path.join(WORK, 'img', s))
+                   and not (s.startswith('own/') and os.path.isfile(os.path.join(JOB, s)))})
+
+
 def wake(why, say=False):
     """Call the Claude task for this issue. Returns '' when Claude was called (or a Claude chat holds the issue with
     a fresh arc-busy), else one Vietnamese sentence telling the owner how to call Claude: the caller puts it into
@@ -258,17 +272,20 @@ if __name__ == '__main__':
         flagged = sum(1 for r in rows if r.get('diff'))
         speech = sum(r['duration'] for r in rows)
         has_picks = os.path.exists(os.path.join(JOB, 'picks.json'))
-        requeried = requeried and has_picks
+        requeried = requeried if has_picks else ''
         if not has_picks or requeried:
-            # changed round-1 queries renumber the pictures: existing picks would now point at other pictures
+            # a new round-1 search renumbers the pictures: existing picks would now point at other pictures
             if 'render' in steps: steps.remove('render')
             labels(add=['arc-pick'], remove=['arc-voice'])
-            note = wake(f'Phiếu lịch sử số {N}: ' + ('từ khóa ảnh đợt 1 đã đổi, phải chọn lại ảnh.' if requeried
+            note = wake(f'Phiếu lịch sử số {N}: ' + ('ảnh đợt 1 vừa được tìm lại, phải chọn lại ảnh (picks.json cũ không còn đúng).' if requeried
                                                     else 'giọng và ảnh đã sẵn sàng, chờ chọn ảnh.'))
             comment(f'🤖 Giọng đọc xong: {len(rows)} câu, {speech:.0f} giây lời đọc'
                     f'{f" ({flagged} câu cần Claude nghe lại cách đọc)" if flagged else ""}'
                     f'{" (máy nghe lại bị lỗi nên chưa kiểm tra được cách đọc)" if voice_unchecked else ""}. '
                     + ('Từ khóa tìm tư liệu đã đổi nên ảnh đợt 1 là ảnh mới: phải chọn lại ảnh trước khi dựng video.'
+                       if requeried == 'changed' else
+                       'Ảnh cũ của phiếu này không còn được lưu (file của phiếu không hoạt động quá 14 ngày được dọn) nên máy đã tìm lại; '
+                       'ảnh tìm lại có thể khác ảnh cũ: phải chọn lại ảnh trước khi dựng video.'
                        if requeried else 'Tư liệu đã tìm xong.')
                     + ' ' + (note or 'Claude sẽ xem và chọn ảnh cho từng cảnh.'))
         elif 'render' not in steps:
@@ -281,7 +298,14 @@ if __name__ == '__main__':
                 wake(f'Phiếu lịch sử số {N}: đã tìm thêm ảnh (đợt {", ".join(d.split("/")[-1] for d in did)}), chờ chọn ảnh.', say=True)
     if 'render' in steps:
         if not os.path.exists(os.path.join(WORK, 'voice', 'lines.json')):
-            raise SystemExit('chưa có giọng đọc cho phiếu này (cần script.json)')
+            raise SystemExit(f'arc/{N}: chưa có giọng đọc trên nhánh renders (chưa chạy bước prepare, hoặc file của phiếu đã được dọn '
+                             'sau 14 ngày không hoạt động). Chạy lại bước prepare; máy sẽ dừng ở arc-pick để chọn lại ảnh.')
+        gone = missing_pictures()
+        if gone:
+            raise SystemExit(f'arc/{N}: picks.json dùng ảnh không có trên nhánh renders: {", ".join(gone[:8])}'
+                             f'{" …" if len(gone) > 8 else ""}. Đợt tìm ảnh đó chưa xong (đợi rồi chạy lại bước render), '
+                             'hoặc file của phiếu đã được dọn sau 14 ngày không hoạt động (chạy lại prepare / search rồi chọn lại ảnh: '
+                             'ảnh tìm lại được đánh số mới, không dựng bằng picks.json cũ).')
         length = render()
         labels(add=['arc-check'], remove=['arc-render', 'arc-voice'])
         m, s = divmod(round(length), 60)
