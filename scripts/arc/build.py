@@ -4,7 +4,9 @@
 Usage: build.py <job_dir arc/N> <public_dir> <N> <img_src_dir> <out_dir>
 Reads <job_dir>/script.json (lines, scenes), <job_dir>/picks.json (shots per scene), <public_dir>/arc/<N>/voice/
 lines.json (measured line lengths) and the prepared pictures in <public_dir>/arc/<N>/img/. Writes
-<out_dir>/plan.json, subtitles.srt, credits.txt, sources.json and <public_dir>/arc/<N>/bed.wav.
+<out_dir>/plan.json, subtitles.srt, credits.txt, sources.json, edits.md and <public_dir>/arc/<N>/bed.wav.
+A shot of picks.json may name an edit of the catalogue ("edit", see edits.py): it fills defaults for the shot's
+fields; edits.md lists every shot with its line, picture, edit and reason, for the owner.
 Timing: every line starts after the previous one plus a pause (0.45 s after a sentence end, 0.25 s otherwise);
 a shot that starts on a line ("at", fractional = part-way through the line) cuts in just before it is spoken;
 a mark ("at") appears at that moment of the voice. Cuts are hard, as in the sample, unless script.json "fade" (seconds)
@@ -16,6 +18,7 @@ from PIL import Image
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import music_gen as mg
 import layout as L
+import edits as E
 
 job, pub, N, imgsrc, out = sys.argv[1:6]
 base = f'arc/{N}'
@@ -45,6 +48,8 @@ if nxt != len(lines) + 1:
                      + (f'({span(nxt, len(lines))} không thuộc cảnh nào)' if nxt <= len(lines) else '(cảnh trỏ tới câu không có)'))
 if len(picks['scenes']) != len(scenes_in):
     raise SystemExit(f'picks.json có {len(picks["scenes"])} cảnh, script.json có {len(scenes_in)} cảnh')
+# named edits → plain shot fields (a shot without "edit" comes back as it is); unknown names and missing boxes stop here
+picked = [[E.expand(p, f'cảnh {si}, ảnh {j}') for j, p in enumerate(ps['shots'], 1)] for si, ps in enumerate(picks['scenes'], 1)]
 
 # ---- subtitles: a spoken line becomes one cue of up to two rows, or two cues when it is too long
 ROW = 17   # characters per row (50 px)
@@ -106,7 +111,7 @@ for si, (sc, ps) in enumerate(zip(scenes_in, picks['scenes'])):
     e0 = total if si == len(scenes_in) - 1 else starts[scenes_in[si + 1]['lines'][0]] - 0.15
     n = len(ps['shots'])
     bounds = [s0] + [at_time(p['at']) - 0.15 if p.get('at') else s0 + (e0 - s0) * j / n for j, p in enumerate(ps['shots'][1:], 1)] + [e0]
-    for j, p in enumerate(ps['shots']):
+    for j, (p, when) in enumerate(picked[si]):
         s, e = bounds[j], bounds[j + 1]
         if e - s < 0.5: raise SystemExit(f'cảnh {si + 1}, ảnh {j + 1}: chỉ hiện {e - s:.2f} s (kiểm tra "at")')
         pics = []
@@ -127,16 +132,18 @@ for si, (sc, ps) in enumerate(zip(scenes_in, picks['scenes'])):
         z = p.get('zoom')
         if z:   # slow push into a detail of the main picture (e.g. the southern edge of a map)
             w, h = img_size(p['img'])
-            zs = at_time(z['at']) if z.get('at') else s + 0.4
+            zs = at_time(z['at']) if z.get('at') else E.moment(s, e, when['zoom'], 2.5) if when['zoom'] else s + 0.4
             boxes[0]['zoom'] = {'to': L.fit_view(z['to'], aspects[0], w, h), 's': round(zs, 3), 'e': round(zs + z.get('dur', 1.4), 3)}
-        marks = [{'s': round(at_time(m['at']) if m.get('at') else s, 3), 'box': m['box'], 'shape': m.get('shape', 'ellipse'),
+        ring = E.moment(s, e, when['ring'], 1.5) if when['ring'] else s   # a ring without "at"
+        marks = [{'s': round(at_time(m['at']) if m.get('at') else ring, 3), 'box': m['box'], 'shape': m.get('shape', 'ellipse'),
                   'on': m.get('on', 0)} for m in p.get('marks', [])]
         title = p.get('title', sc.get('title', ''))
         if z: boxes[0]['drift'] = 0
         shots.append({'s': round(s, 3), 'e': round(e, 3), 'scene': si + 1, 'shot': j + 1,
                       'label': p.get('label', sc.get('label', '')), 'title': title, 'titleSize': L.title_size(title, opening=not shots),
                       'caption': p.get('caption', ''), 'credit': p.get('credit', ''), 'bar': lay['bar'], 'captionY': lay['caption'],
-                      'subY': lay['sub'], 'pics': boxes, 'marks': marks})
+                      'subY': lay['sub'], 'pics': boxes, 'marks': marks,
+                      **({'edit': p['edit']} if p.get('edit') else {})})   # only read by the preview and the shot sheet
 
 # ---- music bed: a quiet score made for this length (sample: ~11 dB under the voice)
 mu = {'style': 'documentary', 'key': 'D', 'mode': 'minor', 'bpm': 60, 'energy': 0.2, **spec.get('music', {})}
@@ -179,13 +186,17 @@ for name, it in picks['images'].items():
 open(f'{out}/credits.txt', 'w', encoding='utf-8').write(
     'Nguồn ảnh (ảnh CC BY và CC BY-SA phải ghi tên tác giả và giấy phép trong mô tả video):\n\n' + '\n'.join(rows) + '\n')
 # per shot: line, subtitle, picture, page, credit, view, mark times (the record the guide asks for)
-shot_rows = []
-for sh, ps in zip(shots, [p for sc in picks['scenes'] for p in sc['shots']]):
+shot_rows = []; edit_rows = []
+for sh, ps in zip(shots, [p for sc in picked for p, _ in sc]):
     said = [sb['text'].replace('\n', '') for sb in subs if sh['s'] - 0.01 <= sb['s'] < sh['e']]
+    edit_rows.append({'n': len(edit_rows) + 1, 'scene': sh['scene'], 'shot': sh['shot'], 'start': sh['s'], 'said': said, 'image': ps['img'],
+                      'label': sh['label'], 'edit': ps.get('edit'), 'why': ps.get('why'), 'auto': E.describe(ps)})
     shot_rows.append({'scene': sh['scene'], 'shot': sh['shot'], 'start': sh['s'], 'end': sh['e'], 'said': said,
                       'label': sh['label'], 'title': sh['title'], 'image': ps['img'],
                       'page': next((x['page'] for x in src_rows if x['name'] == ps['img']), ''),
                       'credit': sh['credit'], 'view': ps.get('view'), 'detail': ps.get('detail'), 'zoom': ps.get('zoom'),
-                      'marks': [{'at_s': m['s'], 'box': m['box']} for m in sh['marks']]})
+                      'marks': [{'at_s': m['s'], 'box': m['box']} for m in sh['marks']],
+                      **({k: ps[k] for k in ('edit', 'why') if ps.get(k)})})
 json.dump({'pictures': src_rows, 'shots': shot_rows}, open(f'{out}/sources.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+open(f'{out}/edits.md', 'w', encoding='utf-8').write(E.table(edit_rows))
 print(f'total {total} s; {len(shots)} shots; ' + ', '.join(f"{x['scene']}-{x['shot']}:{x['s']:.1f}–{x['e']:.1f}" for x in shots))

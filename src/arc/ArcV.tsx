@@ -15,7 +15,8 @@ export type PicBox = { src: string; w: number; h: number; box: [number, number, 
   zoom?: { to: View; s: number; e: number }; drift?: number };
 export type Mark = { s: number; box: View; shape: 'ellipse' | 'rect'; on: number };
 export type Shot = { s: number; e: number; scene: number; shot: number; label: string; title: string; titleSize: number;
-  caption: string; credit: string; bar: number; captionY: number | null; subY: number; pics: PicBox[]; marks: Mark[]; newScene?: boolean };
+  caption: string; credit: string; bar: number; captionY: number | null; subY: number; pics: PicBox[]; marks: Mark[]; newScene?: boolean;
+  edit?: string /* name of the catalogue edit (scripts/arc/edits.py): for the preview and the shot sheet, not drawn */ };
 export type Sub = { s: number; e: number; text: string; hl?: string[] };
 type FontChunk = { family: string; file: string; range: string };
 export type PlanA = { duration: number; shots: Shot[]; subs: Sub[]; voice: { s: number; src: string }[]; music: string | null;

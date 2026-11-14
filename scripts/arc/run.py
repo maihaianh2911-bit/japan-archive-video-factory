@@ -7,7 +7,7 @@
            (Whisper) cannot run, the voice is published all the same and check.md says so.
   search   every arc/<N>/search-<r>.json whose round is not on renders yet → renders/arc/<N>/img/<r>/
   render   pictures from picks.json, plan, fonts, Remotion render, loudness, shot sheet
-           → renders/arc/<N>/video.mp4, subtitles.srt, credits.txt, sources.json, sheet.jpg
+           → renders/arc/<N>/video.mp4, subtitles.srt, credits.txt, sources.json, sheet.jpg, edits.md
 After prepare/search the issue waits for Claude (arc-pick) unless picks.json exists, then render runs too; not when
 prepare searched round 1 again (changed queries, or the round was no longer on renders: the weekly clean-up removes
 the files of issues quiet for 14 days) — a new search numbers the pictures anew and the picks would point at other
@@ -264,8 +264,8 @@ def render():
         print(f'video now {mb:.1f} MB', flush=True)
         if mb > 100: raise SystemExit(f'video {mb:.1f} MB, vẫn quá 100 MB')
     sh(sys.executable, os.path.join(HERE, 'sheet.py'), video, os.path.join(out, 'plan.json'), os.path.join(WORK, 'sheet.jpg'))
-    for f in ('subtitles.srt', 'credits.txt', 'sources.json', 'plan.json'): shutil.copy(os.path.join(out, f), os.path.join(WORK, f))
-    publish(['video.mp4', 'sheet.jpg', 'subtitles.srt', 'credits.txt', 'sources.json', 'plan.json'], 'video')
+    for f in ('subtitles.srt', 'credits.txt', 'sources.json', 'plan.json', 'edits.md'): shutil.copy(os.path.join(out, f), os.path.join(WORK, f))
+    publish(['video.mp4', 'sheet.jpg', 'subtitles.srt', 'credits.txt', 'sources.json', 'plan.json', 'edits.md'], 'video')
     return plan['duration'], waiting
 
 

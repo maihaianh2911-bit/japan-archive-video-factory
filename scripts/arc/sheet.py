@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Shot sheet of the finished video for the final check: the full frame of every shot (just after it starts, and
-after its last ring / zoom), labelled scene-shot and time. Usage: sheet.py <video.mp4> <plan.json> <out.jpg>"""
+after its last ring / zoom), labelled shot number, scene-shot, time and the name of its edit. Usage: sheet.py <video.mp4> <plan.json> <out.jpg>"""
 import json, sys, tempfile
 from PIL import Image, ImageDraw
 import os
@@ -15,14 +15,14 @@ def grab(t):
     return Image.open(f'{tmp}/f.png').convert('RGB')
 tiles = []
 TW, TH = 270, 480
-for sh in plan['shots']:
+for k, sh in enumerate(plan['shots'], 1):
     times = [min(sh['e'] - 0.1, sh['s'] + 0.4)]
     late = [m['s'] + 0.3 for m in sh['marks']] + [p['zoom']['e'] + 0.1 for p in sh['pics'] if p.get('zoom')]
     if late: times.append(min(sh['e'] - 0.1, max(late)))
     for t in times:
         im = grab(t).resize((TW, TH), Image.LANCZOS)
         tile = Image.new('RGB', (TW, TH + 24), (10, 10, 12)); tile.paste(im, (0, 24))
-        ImageDraw.Draw(tile).text((4, 6), f"{sh['scene']}-{sh['shot']}  {t:.1f}s", fill=(255, 210, 90))
+        ImageDraw.Draw(tile).text((4, 6), f"#{k} {sh['scene']}-{sh['shot']} {t:.1f}s {sh.get('edit', '')}", fill=(255, 210, 90))
         tiles.append(tile)
 cols = 6; rows = (len(tiles) + cols - 1) // cols
 s = Image.new('RGB', (cols * (TW + 8), rows * (TH + 32)), (12, 12, 14))

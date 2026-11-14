@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Smoke test of the archive pipeline on made-up data (no 11labs, no picture search, no network):
 pictures → prep.py → build.py → fonts.py (when FONTSOURCE is set) → preview.py → checks, and with --still two
-Remotion frames of the ArcV composition (before and after a ring appears). Run from the repo root:
+Remotion frames of the ArcV composition (before and after a ring appears). The picks use named edits of the
+catalogue (scripts/arc/edits.py) next to a plain shot; wrong edits must be refused. Run from the repo root:
 python3 tests/arc_smoke.py [--still]"""
 import json, os, re, shutil, subprocess, sys, tempfile
 import numpy as np
@@ -44,12 +45,12 @@ json.dump({'title': 'ギョベクリ・テペ', 'voice': 'clone_190', 'lines': l
            'hl': {'3': ['円を描く']}, 'queries': ['test'], 'fade': 0.6}, open(os.path.join(job, 'script.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 json.dump({'images': {'site': {'src': '1/1-1.jpg'}, 'pano': {'src': '1/1-2.jpg'}, 'pillar': {'src': '1/1-3.jpg', 'mode': 'bw'}},
            'scenes': [
-               {'shots': [{'img': 'site', 'label': 'ギョベクリ・テペの発掘現場', 'credit': 'A / CC BY-SA 4.0'}]},
-               {'shots': [{'img': 'pano', 'label': 'トルコ南東部', 'detail': {'view': [0.3, 0.3, 0.75, 1.0]}, 'credit': 'B / CC BY-SA 3.0'}]},
-               {'shots': [{'img': 'site', 'label': '発掘現場の航空写真', 'credit': 'A / CC BY-SA 4.0', 'still': True,
-                           'marks': [{'at': 3.3, 'box': [0.55, 0.2, 0.8, 0.5]}, {'at': 3.3, 'box': [0.4, 0.45, 0.6, 0.75]}]}]},
-               {'shots': [{'img': 'pillar', 'label': 'ギョベクリ・テペ / 石柱 P43', 'credit': 'C / CC BY 4.0', 'caption': '石柱の浮き彫り'},
-                          {'at': 4.5, 'img': 'site', 'view': [0, 0, 1, 1], 'zoom': {'to': [0.5, 0.5, 0.9, 0.9]}, 'credit': 'A / CC BY-SA 4.0'}]}]},
+               {'shots': [{'img': 'site', 'edit': 'toan-canh', 'why': 'câu nhắc cả di tích', 'label': 'ギョベクリ・テペの発掘現場', 'credit': 'A / CC BY-SA 4.0'}]},
+               {'shots': [{'img': 'pano', 'edit': 'toan-canh-chi-tiet', 'label': 'トルコ南東部', 'detail': {'view': [0.3, 0.3, 0.75, 1.0]}, 'credit': 'B / CC BY-SA 3.0'}]},
+               {'shots': [{'img': 'site', 'edit': 'khoanh', 'why': 'giọng đọc chỉ vào hai vòng cột', 'label': '発掘現場の航空写真', 'credit': 'A / CC BY-SA 4.0',
+                           'marks': [{'box': [0.55, 0.2, 0.8, 0.5]}, {'box': [0.4, 0.45, 0.6, 0.75]}]}]},   # no "at", no "still": the edit sets them
+               {'shots': [{'img': 'pillar', 'label': 'ギョベクリ・テペ / 石柱 P43', 'credit': 'C / CC BY 4.0', 'caption': '石柱の浮き彫り'},   # plain shot, no edit
+                          {'at': 4.5, 'img': 'site', 'edit': 'tai-lieu-zoom', 'view': [0, 0, 1, 1], 'zoom': {'to': [0.5, 0.5, 0.9, 0.9]}, 'credit': 'A / CC BY-SA 4.0'}]}]},
           open(os.path.join(job, 'picks.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 
 S = os.path.join(ROOT, 'scripts', 'arc')
@@ -69,7 +70,24 @@ sh = plan['shots']
 assert [(x['scene'], x['shot']) for x in sh] == [(1, 1), (2, 1), (3, 1), (4, 1), (4, 2)]
 assert sh[0]['s'] == 0 and sh[-1]['e'] == plan['duration'] and all(a['e'] == b['s'] for a, b in zip(sh, sh[1:]))   # no gaps
 v = {x['s']: x for x in plan['voice']}; v3 = plan['voice'][2]['s']
-assert abs(sh[2]['marks'][0]['s'] - (v3 + 0.3 * rows[2]['duration'])) < 0.01                    # ring at 30 % of line 3
+assert abs(sh[2]['marks'][0]['s'] - (sh[2]['s'] + 0.3 * (sh[2]['e'] - sh[2]['s']))) < 0.01 and sh[2]['marks'][0]['s'] > v3   # "khoanh": ring 30 % into the shot
+assert [x.get('edit') for x in sh] == ['toan-canh', 'toan-canh-chi-tiet', 'khoanh', None, 'tai-lieu-zoom']
+z4 = sh[4]['pics'][0]['zoom']; assert abs(z4['s'] - (sh[4]['s'] + 0.4 * (sh[4]['e'] - sh[4]['s']))) < 0.01 and abs(z4['e'] - z4['s'] - 1.6) < 0.01   # whole document first
+ed = open(os.path.join(out, 'edits.md'), encoding='utf-8').read()
+assert '| 3 |' in ed and '`khoanh` — Khoanh chi tiết' in ed and 'giọng đọc chỉ vào hai vòng cột' in ed and '(tự đặt: chú thích)' in ed and '`ket`' in ed
+assert open(os.path.join(out, 'preview.jpg.edits.md'), encoding='utf-8').read() == ed
+# a wrong edit stops the build with a message Claude can act on: an unknown name lists the valid ones, a missing box is named
+good = json.load(open(os.path.join(job, 'picks.json'), encoding='utf-8'))
+def refused(change):
+    bad = json.loads(json.dumps(good)); change(bad['scenes'])
+    bj = os.path.join(tmp, 'badjob'); shutil.rmtree(bj, ignore_errors=True); os.makedirs(bj)
+    shutil.copy(os.path.join(job, 'script.json'), bj); json.dump(bad, open(os.path.join(bj, 'picks.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+    r = subprocess.run([sys.executable, os.path.join(S, 'build.py'), bj, pub, N, imgsrc, os.path.join(tmp, 'badout')], cwd=ROOT, capture_output=True, text=True)
+    assert r.returncode != 0, 'a wrong edit was accepted'
+    return r.stderr
+e1 = refused(lambda sc: sc[0]['shots'][0].update(edit='xoay-vong')); assert 'xoay-vong' in e1 and 'khoanh' in e1 and 'tai-lieu-zoom' in e1, e1
+e2 = refused(lambda sc: sc[2]['shots'][0].pop('marks')); assert 'khoanh' in e2 and 'marks' in e2 and 'cảnh 3' in e2, e2
+e3 = refused(lambda sc: sc[3]['shots'][1].pop('zoom')); assert 'zoom.to' in e3, e3
 assert sh[4]['s'] > plan['voice'][3]['s'] + 1                                                       # at 4.5 = mid-line 4
 assert len(sh[1]['pics']) == 2 and sh[1]['pics'][1]['box'][2] < sh[1]['pics'][0]['box'][2]          # detail below, narrower
 b0 = sh[0]['pics'][0]['box']; assert abs(b0[2] - layout.MAX_W) < 1 and abs(b0[0] - layout.MARGIN) < 1  # landscape: full width

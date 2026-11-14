@@ -4,7 +4,9 @@ frame at its start and, when it has rings or a zoom, a frame after the last ring
 times. Catches wrong pictures, cut subjects and misplaced rings before a 20-minute render.
 
 Usage: preview.py <arc/N dir with script.json + picks.json> <renders arc/N dir with voice/ and img/> <out.jpg>
-Also writes <out>.plan.json (timings of every shot and ring) next to the sheet."""
+Every tile is headed "#<shot number> <scene>-<shot> <time> <edit name>" ("*" = the frame after the ring / zoom).
+Also writes next to the sheet <out>.plan.json (timings of every shot and ring) and <out>.edits.md (per shot: line,
+picture, edit, reason — the list the owner gets in the closing comment)."""
 import json, os, shutil, subprocess, sys, tempfile
 from PIL import Image, ImageDraw
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
@@ -29,14 +31,14 @@ def sub_at(t):
 
 tiles = []
 TW, TH = 270, 480
-for sh in plan['shots']:
+for k, sh in enumerate(plan['shots'], 1):
     times = [sh['s'] + 0.05]
     late = [m['s'] + 0.2 for m in sh['marks']] + [p['zoom']['e'] + 0.05 for p in sh['pics'] if p.get('zoom')]
     if late: times.append(min(sh['e'] - 0.05, max(late)))
     for t in times:
         f = frame.draw(sh, t, sub_at(t), img_of, plan.get('theme', 'paper')).resize((TW, TH), Image.LANCZOS)
         tile = Image.new('RGB', (TW, TH + 24), (10, 10, 12)); tile.paste(f, (0, 24))
-        ImageDraw.Draw(tile).text((4, 6), f"{sh['scene']}-{sh['shot']}  {t:.1f}s{'  ring/zoom' if t != times[0] else ''}", fill=(255, 210, 90))
+        ImageDraw.Draw(tile).text((4, 6), f"#{k} {sh['scene']}-{sh['shot']} {t:.1f}s{'*' if t != times[0] else ''} {sh.get('edit', '')}", fill=(255, 210, 90))
         tiles.append(tile)
 cols = 6; rows = (len(tiles) + cols - 1) // cols
 sheet = Image.new('RGB', (cols * (TW + 8), rows * (TH + 32)), (0, 0, 0))
@@ -44,5 +46,6 @@ for i, t in enumerate(tiles): sheet.paste(t, ((i % cols) * (TW + 8), (i // cols)
 sheet.save(out, quality=85)
 json.dump({'duration': plan['duration'], 'shots': [{k: sh[k] for k in ('scene', 'shot', 's', 'e', 'label', 'title')} | {'marks': [m['s'] for m in sh['marks']]} for sh in plan['shots']]},
           open(out + '.plan.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+shutil.copy(os.path.join(tmp, 'out', 'edits.md'), out + '.edits.md')
 print(out, len(tiles), 'frames', f"{plan['duration']:.1f}s")
 shutil.rmtree(tmp, ignore_errors=True)
