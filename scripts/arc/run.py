@@ -49,6 +49,11 @@ def labels(add=(), remove=()):
         if l not in add: gh('issue', 'edit', N, '--remove-label', l, tries=2)
 
 
+def has_label(name):
+    r = gh('api', f'repos/{REPO}/issues/{N}/labels?per_page=100', '--jq', '.[].name')
+    return r.returncode == 0 and name in r.stdout.split()
+
+
 def comment(body):
     gh('issue', 'comment', N, '--body', body)
 
@@ -120,7 +125,9 @@ def prepare():
     any new search, picks made before it point at other pictures."""
     global voice_unchecked
     script = json.load(open(os.path.join(JOB, 'script.json'), encoding='utf-8'))
-    labels(add=['arc-voice'], remove=['arc-plan', 'arc-failed'])
+    # the earlier step labels go too (a voice step run again on an issue that was at arc-pick / arc-check /
+    # arc-done), so the issue never shows two steps at once; arc-fix stays, Claude removes it
+    labels(add=['arc-voice'], remove=['arc-plan', 'arc-pick', 'arc-check', 'arc-done', 'arc-failed'])
     prev = os.path.join(WORK, 'voice')
     cache = os.path.join(WORK, 'voice-cache')   # lines paid for in a run that failed before the voice was complete
     new = os.path.join(ROOT, 'out', f'voice-{N}')
@@ -315,7 +322,11 @@ if __name__ == '__main__':
             steps.append('render')
     if 'search' in steps:
         did = search()
-        if 'render' not in steps:
+        if 'render' not in steps and has_label('arc-render'):
+            # another run is rendering this issue right now (picks pushed while this search was running): it ends
+            # at arc-check or arc-failed by itself; arc-pick added here would stay next to that label
+            print(f'arc/{N}: đang có lượt dựng video khác cho phiếu này — không đổi nhãn', flush=True)
+        elif 'render' not in steps:
             labels(add=['arc-pick'], remove=['arc-voice'])
             if did:   # Claude may have stopped polling for the new round: wake it like after the other steps
                 wake(f'Phiếu lịch sử số {N}: đã tìm thêm ảnh (đợt {", ".join(d.split("/")[-1] for d in did)}), chờ chọn ảnh.', say=True)
@@ -330,7 +341,7 @@ if __name__ == '__main__':
                              'hoặc file của phiếu đã được dọn sau 14 ngày không hoạt động (chạy lại prepare / search rồi chọn lại ảnh: '
                              'ảnh tìm lại được đánh số mới, không dựng bằng picks.json cũ).')
         length, waiting = render()
-        labels(add=['arc-check'], remove=['arc-render', 'arc-voice'])
+        labels(add=['arc-check'], remove=['arc-render', 'arc-voice', 'arc-pick'])
         m, s = divmod(round(length), 60)
         note = wake(f'Phiếu lịch sử số {N}: video đã dựng, chờ kiểm tra.'
                     + (' Nhãn arc-fix còn trên phiếu: đọc lại bình luận của chủ kênh, có thể có yêu cầu sửa chưa làm.' if waiting else ''))

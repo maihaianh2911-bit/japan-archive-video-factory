@@ -90,7 +90,13 @@ jobs:
   work:
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
-    timeout-minutes: 150   # no concurrency group: a pending run would be dropped when a third push arrives
+    # No concurrency group, on purpose. Each run does only what its own push changed, and GitHub keeps one pending
+    # run per group: a third push would cancel the pending one and its step (a search round, the voice) would
+    # never run. The issue number is also only known after the "Việc cần làm" step, too late for a job-level
+    # group. Two runs on one issue are made safe in run.py instead: publishing starts again from the fresh tip of
+    # renders, a render whose pictures are not published yet stops with a clear message, and step labels are
+    # not set over a render that is running.
+    timeout-minutes: 150
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
