@@ -202,8 +202,15 @@ def render():
     return plan['duration']
 
 
-def wake(why):
-    subprocess.run(['bash', os.path.join(ROOT, 'scripts', 'wake_claude.sh'), why])
+def wake(why, say=False):
+    """Call the Claude task for this issue. Returns '' when Claude was called (or a Claude chat holds the issue with
+    a fresh arc-busy), else one Vietnamese sentence telling the owner how to call Claude: the caller puts it into
+    its comment instead of promising "Claude sẽ…" (say=True: wake_claude.sh posts it as its own comment)."""
+    out = os.path.join(ROOT, 'out', f'wake-{N}'); os.makedirs(out, exist_ok=True)
+    subprocess.run(['bash', os.path.join(ROOT, 'scripts', 'wake_claude.sh'), why, N],
+                   env={**os.environ, 'WAKE_OUT': out, 'WAKE_COMMENT': '1' if say else '0'})
+    try: return open(os.path.join(out, 'wake_note'), encoding='utf-8').read().strip()
+    except OSError: return ''
 
 
 if __name__ == '__main__':
@@ -222,12 +229,13 @@ if __name__ == '__main__':
             # changed round-1 queries renumber the pictures: existing picks would now point at other pictures
             if 'render' in steps: steps.remove('render')
             labels(add=['arc-pick'], remove=['arc-voice'])
+            note = wake(f'Phiếu lịch sử số {N}: ' + ('từ khóa ảnh đợt 1 đã đổi, phải chọn lại ảnh.' if requeried
+                                                    else 'giọng và ảnh đã sẵn sàng, chờ chọn ảnh.'))
             comment(f'🤖 Giọng đọc xong: {len(rows)} câu, {speech:.0f} giây lời đọc'
                     f'{f" ({flagged} câu cần Claude nghe lại cách đọc)" if flagged else ""}. '
-                    + ('Từ khóa tìm tư liệu đã đổi nên ảnh đợt 1 là ảnh mới: Claude phải chọn lại ảnh trước khi dựng video.'
-                       if requeried else 'Tư liệu đã tìm xong. Claude sẽ xem và chọn ảnh cho từng cảnh.'))
-            wake(f'Phiếu lịch sử số {N}: ' + ('từ khóa ảnh đợt 1 đã đổi, phải chọn lại ảnh.' if requeried
-                                             else 'giọng và ảnh đã sẵn sàng, chờ chọn ảnh.'))
+                    + ('Từ khóa tìm tư liệu đã đổi nên ảnh đợt 1 là ảnh mới: phải chọn lại ảnh trước khi dựng video.'
+                       if requeried else 'Tư liệu đã tìm xong.')
+                    + ' ' + (note or 'Claude sẽ xem và chọn ảnh cho từng cảnh.'))
         elif 'render' not in steps:
             steps.append('render')
     if 'search' in steps:
@@ -235,13 +243,14 @@ if __name__ == '__main__':
         if 'render' not in steps:
             labels(add=['arc-pick'], remove=['arc-voice'])
             if did:   # Claude may have stopped polling for the new round: wake it like after the other steps
-                wake(f'Phiếu lịch sử số {N}: đã tìm thêm ảnh (đợt {", ".join(d.split("/")[-1] for d in did)}), chờ chọn ảnh.')
+                wake(f'Phiếu lịch sử số {N}: đã tìm thêm ảnh (đợt {", ".join(d.split("/")[-1] for d in did)}), chờ chọn ảnh.', say=True)
     if 'render' in steps:
         if not os.path.exists(os.path.join(WORK, 'voice', 'lines.json')):
             raise SystemExit('chưa có giọng đọc cho phiếu này (cần script.json)')
         length = render()
         labels(add=['arc-check'], remove=['arc-render', 'arc-voice'])
         m, s = divmod(round(length), 60)
-        comment(f'🤖 Đã dựng xong bản video ({m} phút {s:02d} giây). Claude đang kiểm tra lại từng cảnh trước khi giao.\n\n'
-                f'- Video: {link("video.mp4")}\n- Ảnh các cảnh: {link("sheet.jpg")}')
-        wake(f'Phiếu lịch sử số {N}: video đã dựng, chờ kiểm tra.')
+        note = wake(f'Phiếu lịch sử số {N}: video đã dựng, chờ kiểm tra.')
+        comment(f'🤖 Đã dựng xong bản video ({m} phút {s:02d} giây). '
+                + ('Claude đang kiểm tra lại từng cảnh trước khi giao.' if not note else f'Bản này chưa được Claude kiểm tra lại. {note}')
+                + f'\n\n- Video: {link("video.mp4")}\n- Ảnh các cảnh: {link("sheet.jpg")}')
