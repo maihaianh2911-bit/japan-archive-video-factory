@@ -26,11 +26,11 @@ questions, so do not ask; comments go on the issues (🤖, Vietnamese).
    <main idea>`, body with the sections of `docs/CHATGPT.md` (Chủ đề / Kịch bản = the script exactly as pasted /
    Giọng đọc `clone_190 — kể chuyện (mặc định)` / Ghi chú = wishes from the chat). No labels: the workflow adds them.
 2. Right after creating the issue, add `arc-busy` to it: opening the issue wakes the Claude task at once, and the
-   label tells it the issue is taken (`AGENT_ARC.md` §0). Keep `arc-busy` while you work and wait in the chat (the
-   task, woken after each machine step, then leaves the issue to you; the claim counts for 2 hours from when the
-   label was added, so remove and add it again on a longer chat). Do Claude's steps of `AGENT_ARC.md` for that issue
-   right away instead of waiting for the task: `script.json` → wait for the voice and pictures (~15–25 min) →
-   `picks.json`, with the framing preview → wait for the render (~10–20 min) → check the shot sheet → closing
+   label tells it the issue is taken (`AGENT_ARC.md` §0). Keep `arc-busy` while you work and wait in the chat (while
+   the label is under 2 hours old the machine does not call the task for this issue, and a task leaves it to you;
+   the claim counts for 2 hours from when the label was added, so remove and add it again on a longer chat). Do Claude's steps of `AGENT_ARC.md` for that issue
+   right away instead of waiting for the task: `script.json` → wait for the voice and pictures (~10–25 min; 13 min for 19 lines) →
+   `picks.json`, with the framing preview → wait for the render (~4–10 min; 4–5 min for a 1-minute video) → check the shot sheet → closing
    comment, then remove `arc-busy`. While a machine step runs, say so in one line and wait; if the owner does not
    want to wait, stop right after one of your pushes (while a machine step runs) and remove `arc-busy`: the Claude
    task continues from the labels when GitHub calls it after that step.

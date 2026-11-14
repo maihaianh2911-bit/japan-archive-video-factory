@@ -26,9 +26,11 @@ Bố cục đo từ bản mẫu (720×1280, phóng ×1,5): `scripts/arc/layout.p
 - 14/11 (phiếu 1, tượng Dogū): *"dựng liền mạch ấy, đừng có chia ra từng cảnh"* → thêm `fade` trong `script.json` (ảnh sau hiện mờ dần trên ảnh trước thay vì cắt thẳng) và gom câu thành ít ý lớn (~10 s mỗi ý, tiêu đề giữ nguyên khi ảnh đổi). Mặc định vẫn cắt thẳng; dùng `fade` khi chủ kênh muốn liền mạch.
 - 12/11: *"Tìm ảnh tự do, k cần ảnh wiki"* → máy tìm ở các kho ảnh mở (Openverse/Flickr, The Met, Art Institute of Chicago, Cleveland Museum of Art, Europeana, Thư viện Quốc hội Mỹ) và trang có giấy phép rõ ràng; Wikimedia không phải nguồn mặc định (chỉ dùng khi viết rõ `commons:`).
 
-## Trạng thái (13/11/2026)
+## Trạng thái (14/11/2026)
 
-- Mã đã viết và thử: bài thử `tests/arc_smoke.py --still` chạy được; dựng lại bản mẫu Göbekli Tepe bằng ảnh thật cho khung hình gần như trùng bản đã duyệt. Chưa chạy trên GitHub (cần secrets `VN11_API_KEY`, `CLAUDE_TASK_URL`, `CLAUDE_TASK_TOKEN`, xem README "Cấu hình").
+- Đã chạy thật trên GitHub: phiếu 1 (tượng Dogū, 19 câu, video 66 giây) xong trong 30 phút, làm trong chat. Thời gian đo được: giọng + kiểm tra giọng + tìm ảnh ~13 phút (17 từ khóa), dựng ~4–5 phút. Bài thử `tests/arc_smoke.py --still` chạy được.
+- Secret `VN11_API_KEY` đã có. **`CLAUDE_TASK_URL` và `CLAUDE_TASK_TOKEN` chưa có trong repo này** (nhật ký ngày 14/11: mọi lần gọi Claude đều báo thiếu) → hiện chỉ có video khi làm trong chat; thêm hai khóa này (README "Cấu hình") thì mở phiếu là Claude tự làm.
+- 14/11, sau đợt rà soát: gọi Claude thử lại 3 lần, không gọi được thì máy ghi ngay trên phiếu cách gọi lại (nút **Gọi Claude ngay**) và không còn viết "Claude sẽ…" khi chưa gọi được; câu đã đọc (đã trả tiền) được giữ ở `voice-cache/` khi bước giọng lỗi giữa chừng, lỗi máy nghe lại (Whisper) không làm mất giọng; không dựng bằng `picks.json` cũ trên ảnh vừa tìm lại; yêu cầu sửa viết trong lúc máy đang dựng không bị mất (giữ nhãn `arc-fix`); bình luận giao video nhắc link chỉ giữ đến khi phiếu ngừng hoạt động quá 14 ngày (máy dọn mỗi tuần — cách làm có từ đầu, ghi trong README; chủ kênh chưa nói gì khác).
 - 13/11: đưa sang các sửa lỗi của repo văn học (12/11): giọng đọc được lưu lên nhánh `renders` ngay khi xong, trước khi tìm ảnh; nhãn thêm trước rồi mới bỏ, lỗi thì thử lại; đẩy lên `renders` thử lại từ bản mới nhất; máy dừng giữa chừng thì phiếu được đánh `arc-failed`; video trên 95 MB tự nén lại cho dưới giới hạn 100 MB của GitHub; đổi từ khóa ảnh đợt 1 khi đã có `picks.json` thì chờ Claude chọn lại; từ khóa tìm lỗi được ghi `"error"` trong `index.json`.
 - Video mẫu: 720×1280; máy dựng 1080×1920 cùng tỉ lệ.
 
