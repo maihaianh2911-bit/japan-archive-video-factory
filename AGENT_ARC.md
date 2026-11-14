@@ -12,7 +12,7 @@ a print with a white mat, a slow push-in, red rings drawn round when named, the 
 **The point of this format: every shot shows the real document of what the viewer is hearing at that moment.**
 You choose and check every picture by looking at it. Machine steps run in `.github/workflows/arc.yml` →
 `scripts/arc/run.py`; files land on the `renders` branch in `arc/<N>/` (`voice/`, `img/<round>/`, `video.mp4`,
-`sheet.jpg`, `subtitles.srt`, `credits.txt`, `sources.json`).
+`sheet.jpg`, `subtitles.srt`, `credits.txt`, `sources.json`, `edits.md`).
 
 Steps (labels): `arc-plan` → you write `arc/<N>/script.json` → `arc-voice` (machine: voice, voice check,
 picture search) → `arc-pick` → you write `arc/<N>/picks.json` → `arc-render` (machine) → `arc-check` → you check
@@ -102,25 +102,43 @@ lines and 17 queries, ~30 s more per line; you are woken at `arc-pick`.)
    (or marks the issue `arc-failed`).
 3. Open the full picture (`img/<r>/<k>-<n>.jpg`) before choosing a view, a detail or a ring: you must see the very
    thing the line names (the two round enclosures, the fox on the pillar, the southern edge of the map).
-4. **What each line needs** (owner's guide, `00-video-mau/HUONG-DAN-EDIT.md`):
-   - **A place / site** named → the overall view (excavation, landscape, aerial photo) so the viewer sees its scale.
-     A wide panorama may carry a **detail** of itself below it (`detail`), as the sample's second shot.
-   - **A layout / arrangement** (circles of pillars, the plan of a city) → a photo from above or a plan, and a
-     **ring** on exactly the named structure, appearing when the voice names it (`marks`, `at` part-way into the
-     line: the sample rings at 30 % of the line).
-   - **A carving, inscription, object** → a close-up sharp enough to recognise the animal / sign / object; a crop
-     (`view`) to the relevant part. Put a short gold `caption` under it when the label alone does not say what it
-     is (`石柱から浮かび上がる動物の彫刻`).
-   - **A map, manuscript, tablet** → the whole document first (the viewer sees what it is), then a slow `zoom` to
-     exactly the part the voice names (Piri Reis: the whole map, then its southern edge).
-   - **A legend / myth** (flood, gods, heroes) → old engravings, paintings, manuscripts of that legend, labelled with
-     the kind of picture and its date (`版画（1866年）`, `写本挿絵（15世紀）`), and the real artefact when the voice
-     names it (the Flood tablet when Gilgamesh is named).
-   - **A question / mystery** (the closing line) → the most striking real picture of the subject (the sample: P43).
-   - Ring or zoom only when there is a specific detail to point at (owner's guide). Otherwise the picture only
-     drifts in slowly (5 % over the shot; `drift` 0–0.1 per shot, `"still": true` for none — maps and text pages
-     often read better still). Cut on the idea; no fades, unless the owner asked for a seamless edit (`fade` in
-     `script.json`, §1).
+4. **Choose the edit of every shot from the catalogue** (owner, 14/11: read each line, then pick a fitting way to
+   show it). The catalogue is built from the moves of the approved sample (`00-video-mau/MAU-EDIT-20S.mp4`: whole
+   picture at full width → wide picture with a detail box below → aerial photo with rings appearing when the voice
+   says "円を描く" → close crop with a gold caption → tall picture for the closing question) plus the document moves
+   of the owner's guide. A shot names its edit with `"edit": "<name>"` and says why in `"why"` (short Vietnamese,
+   never drawn). The edit sets how and when; **where** (a ring's box, the zoom target, the detail view, the crop)
+   you always give yourself after opening the picture. Fields you write win over the edit. Code: `scripts/arc/edits.py`.
+
+   | `edit` | What the viewer sees | Use it when the line… | You must give |
+   |---|---|---|---|
+   | `toan-canh` | whole picture, full width, very slow drift | names a **place**, site, building: show its scale | — |
+   | `toan-canh-chi-tiet` | wide picture, a detail box of it below (sample, shot 2) | says where, then what is there; a very wide panorama | `detail.view` |
+   | `khoanh` | still picture, ring drawn when the voice names the thing (sample, shot 3) | points at a **layout or structure**: circles of pillars, a room on a plan, a mark on a map, a missing part | `marks[].box` |
+   | `can-canh` | close crop, gold caption under it (sample, shot 4) | names a **carving, inscription, part of an object**: it must be recognisable | `view`, `caption` |
+   | `tai-lieu-zoom` | the whole document first, then a slow push into the named part | is about a **map, manuscript, tablet, page**: what it is, then the place the voice names | `zoom.to` |
+   | `dung-yen` | whole picture, no motion | shows a map, text page or plan that needs reading time; also a rest between two moving shots | — |
+   | `troi-cham` | whole picture, a slightly stronger slow drift | tells a **legend or myth** over an old engraving, painting, manuscript picture (label: kind + date) | — |
+   | `chan-dung` | portrait kept whole, name and years as caption | names a real **person**: their real portrait | `caption` |
+   | `so-lieu` | the large title becomes the figure or year, still picture | gives a **number, date, size**, or **jumps in time** ("1887年", "三千年前") | `title` |
+   | `so-sanh` | two different pictures stacked, still | **compares** two things ("…に似ている", before / after) | `detail.img` |
+   | `ket` | the most striking picture of the subject, slow drift to the end (sample, shot 5) | is the **closing question** or mystery | — |
+
+   Rules:
+   - **Read the line first, choose by its meaning**, then look for the picture that makes that edit possible (no
+     picture of the named thing → another search round, not another edit).
+   - **Vary neighbouring shots**: not the same edit three times in a row (`edits.md` warns); after a `khoanh` or a
+     `tai-lieu-zoom`, a calm shot (`toan-canh`, `dung-yen`).
+   - **Ring or zoom only when the voice points at something** in the picture (owner's guide). No ring "to make it
+     lively".
+   - Timing the edit sets: a ring without `at` appears 30 % into the shot (at most 1.5 s, as the sample), a zoom
+     without `at` starts 40 % into the shot. When the shot covers more than one line and the thing is named in a
+     later line, give `at` (line number, fractional) so it lands on the word.
+   - An unknown name or a missing required field stops the preview and the render with a message that lists the
+     valid names / the field.
+   - A shot without `edit` still works as before (plain fields), but then `edits.md` shows no name for the owner:
+     name the edit on every new shot.
+   - Cut on the idea; no fades, unless the owner asked for a seamless edit (`fade` in `script.json`, §1).
    - **Never**: AI pictures, modern reconstructions or artists' impressions of the site, re-enactments, stock
      scenes (the guide: no "farmer digs up the ruin" scenes), pictures of a different site passed off as this one,
      watermarks, captions burnt in, nudity, gore.
@@ -135,11 +153,11 @@ lines and 17 queries, ~30 s more per line; you are woken at `arc-pick`.)
 {"images": {"site": {"src": "1/1-1.jpg"}, "aerial": {"src": "1/5-1.jpg", "rotate": 90},
             "map": {"src": "2/1-3.jpg", "crop": [0.02, 0.03, 0.98, 0.97], "mode": "keep"}},
  "scenes": [
-  {"shots": [{"img": "site", "label": "ギョベクリ・テペの発掘現場", "credit": "Volker Höhfeld / CC BY-SA 4.0"}]},
-  {"shots": [{"img": "pano", "label": "トルコ南東部", "detail": {"view": [0.2, 0.48, 0.7, 1.0]}, "credit": "Rolfcosar / CC BY-SA 3.0"}]},
-  {"shots": [{"img": "aerial", "label": "発掘現場の航空写真", "credit": "E. Kücük / German Archaeological Institute / CC BY 4.0",
-              "marks": [{"at": 3.3, "box": [0.58, 0.18, 0.78, 0.5]}, {"at": 3.3, "box": [0.44, 0.42, 0.62, 0.72]}]}]},
-  {"shots": [{"img": "map", "label": "ピーリー・レイスの地図（1513年）", "credit": "…",
+  {"shots": [{"img": "site", "edit": "toan-canh", "why": "câu nhắc cả di tích", "label": "ギョベクリ・テペの発掘現場", "credit": "Volker Höhfeld / CC BY-SA 4.0"}]},
+  {"shots": [{"img": "pano", "edit": "toan-canh-chi-tiet", "why": "nói ở đâu, rồi cho thấy các cột", "label": "トルコ南東部", "detail": {"view": [0.2, 0.48, 0.7, 1.0]}, "credit": "Rolfcosar / CC BY-SA 3.0"}]},
+  {"shots": [{"img": "aerial", "edit": "khoanh", "why": "giọng đọc nói các cột xếp thành vòng", "label": "発掘現場の航空写真", "credit": "E. Kücük / German Archaeological Institute / CC BY 4.0",
+              "marks": [{"box": [0.58, 0.18, 0.78, 0.5]}, {"box": [0.44, 0.42, 0.62, 0.72]}]}]},
+  {"shots": [{"img": "map", "edit": "tai-lieu-zoom", "why": "cả bản đồ rồi tới mép phía nam", "label": "ピーリー・レイスの地図（1513年）", "credit": "…",
               "zoom": {"to": [0.0, 0.55, 0.6, 1.0], "at": 7.4}},
              {"at": 8, "img": "…", "label": "…"}]}]}
 ```
@@ -154,6 +172,8 @@ lines and 17 queries, ~30 s more per line; you are woken at `arc-pick`.)
      landscape box, as the sample). `crop`
      removes borders, colour charts, burnt-in captions. `mode`: `keep` (default, true colours), `bw` (neutral black
      and white for faded scans), `warm`.
+   - `edit` + `why` on every shot (table in step 4): the edit fills `still`, `drift` and the moment of a ring or
+     zoom; any of the fields below written in the shot wins over it.
    - `scenes[i].shots` in order, one list per scene of `script.json`. The first shot starts with the scene; `at` =
      line where the next shot cuts in (fractional: 13.5 = halfway through line 13).
    - `view` [x0, y0, x1, y1] (fractions of the picture, default whole) = the region shown; the box takes its
@@ -169,7 +189,9 @@ lines and 17 queries, ~30 s more per line; you are woken at `arc-pick`.)
 7. **Preview before pushing** (a wrong ring or crop found after the render costs another render and another check):
    `pip install -q numpy pillow scipy` if missing, then
    `python3 scripts/arc/preview.py arc/<N> /tmp/r/arc/<N> /tmp/preview.jpg` (~20 s) and open the sheet: every
-   shot as the video frames it, at its start and after its ring / zoom, with times. Check: the picture is the thing
+   shot as the video frames it, at its start and after its ring / zoom (`*`), headed `#<shot number> <scene>-<shot>
+   <time> <edit>`. Next to it, `/tmp/preview.jpg.edits.md` lists per shot the line, the picture, the edit and your
+   reason: read it once as the owner would (does each edit follow from its line? three alike in a row?). Check: the picture is the thing
    the line names, the ring sits on exactly the named structure, nothing important is cut, the subtitle does not
    cover the picture, labels and titles fit on one row. Fix and run again until all are right.
 8. Commit `picks.json` together with any `script.json`/readings fixes in **one** push as `[arc #<N>] chọn ảnh`
@@ -189,6 +211,9 @@ all fixes in one push. Otherwise remove `arc-check`, add `arc-done` and comment 
   its length;
 - `subtitles.srt`, `credits.txt` (to paste into the video description) and `sources.json` (per shot: line,
   picture, page, credit, view, ring times);
+- the table "Cách edit từng cảnh" pasted from `edits.md` (on `renders`, `arc/<N>/edits.md`; only its first table,
+  up to the catalogue heading, plus the link to the file for the list of edits): shot number, line, picture, edit,
+  reason — so the owner can answer "cảnh 5 đổi sang kiểu khoanh";
 - one line on the documents used; "bình luận nếu muốn sửa";
 - one line on keeping it: "Nên tải video về máy: các link này chỉ còn dùng được đến khi phiếu ngừng hoạt động
   quá 14 ngày (máy tự dọn file cũ mỗi tuần)."
@@ -197,7 +222,8 @@ all fixes in one push. Otherwise remove `arc-check`, add `arc-done` and comment 
 - `arc-fix`: the request = owner comments after your last `🤖` comment (the machine's comments, by
   `github-actions[bot]`, are not yours: a request written just before "Đã dựng xong bản video" still counts). No
   such comment (the label was only kept to be safe) → just remove `arc-fix`. Text → `script.json` (changed lines are
-  read again, the rest reused); pictures, rings, crops → `picks.json` (+ `search-<r>.json`). Push, one-line 🤖
+  read again, the rest reused); pictures, rings, crops → `picks.json` (+ `search-<r>.json`); "cảnh 5 đổi sang kiểu X" = shot number 5 of
+  `edits.md` gets `"edit": "X"` (and the box that edit needs). Push, one-line 🤖
   comment, remove `arc-fix`. Keep working in the same issue.
   An old issue (quiet for more than 14 days) has no files on `renders` any more (weekly clean-up): run `prepare`
   again (dispatch below, or your `script.json` push). The voice is read again, round 1 is searched again and the
