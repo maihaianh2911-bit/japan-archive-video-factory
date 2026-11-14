@@ -128,7 +128,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
   const prev = idx > 0 ? plan.shots[idx - 1] : null;
   const head = prev && prev.title === sh.title && prev.label === sh.label ? 1 : easeOut((t - sh.s) / 0.45);
   const lift = (1 - head) * 18;
-  // dissolve: the last shot's pictures (and credit) stay under the new ones while these fade in
+  // dissolve: the last shot's pictures (caption, credit) stay under the new ones while these fade in
   const fade = plan.fade || 0;
   const same = (a: Shot, b: Shot) => a.pics.length === b.pics.length && a.pics.every((p, i) => p.src === b.pics[i].src && p.box.join() === b.pics[i].box.join());
   const mix = prev && fade > 0 && t < sh.s + fade && !same(prev, sh) ? ease((t - sh.s) / fade) : 1;
@@ -149,8 +149,11 @@ export const ArcV: React.FC<PlanA> = (plan) => {
       <AbsoluteFill style={{ opacity: mix }}>
         {sh.pics.map((p, i) => <PicView key={i} p={p} t={t} sh={sh} th={th} marks={sh.marks.filter((m) => m.on === i)} />)}
       </AbsoluteFill>
+      {out && out.caption && out.captionY !== null ? (
+        <div style={{ position: 'absolute', left: M + 3, top: out.captionY + (th.mat ? th.mat : 0), opacity: 1 - mix, fontFamily: SANS, fontWeight: 500, fontSize: 38, lineHeight: 1.3, color: th.label, textShadow: th.titleShadow }}>{out.caption}</div>
+      ) : null}
       {sh.caption && sh.captionY !== null ? (
-        <div style={{ position: 'absolute', left: M + 3, top: sh.captionY + (th.mat ? th.mat : 0), fontFamily: SANS, fontWeight: 500, fontSize: 38, lineHeight: 1.3, color: th.label, textShadow: th.titleShadow }}>{sh.caption}</div>
+        <div style={{ position: 'absolute', left: M + 3, top: sh.captionY + (th.mat ? th.mat : 0), opacity: mix, fontFamily: SANS, fontWeight: 500, fontSize: 38, lineHeight: 1.3, color: th.label, textShadow: th.titleShadow }}>{sh.caption}</div>
       ) : null}
       {sub ? (
         <div style={{ position: 'absolute', left: 50, right: 50, top: sh.subY, textAlign: 'center' }}>
