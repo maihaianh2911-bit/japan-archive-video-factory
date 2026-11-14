@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Voice for an archive video: one 11labs job per script line, so every subtitle shows exactly while its line is
-spoken. Usage: tts_lines.py <arc/N/script.json> <out_dir> [--prev <dir of an earlier run>]
+spoken. Usage: tts_lines.py <arc/N/script.json> <out_dir> [--prev <dir of an earlier run>] [--prev <dir> ...]
 
 The text sent to 11labs is script.json "tts"[line] when given, else the line with prompts/readings.json applied
 (kana for words the voice misreads, e.g. 刑場 → けいじょう). Lines whose spoken text did not change are copied
-from --prev instead of being read again (saves credits when only a few lines are fixed).
-Writes <out_dir>/line_XX.mp3 (silence trimmed at both ends) and lines.json [{i, text, tts, file, duration}].
+from a --prev folder instead of being read again (saves credits when only a few lines are fixed; the first --prev
+that has the line wins). Writes <out_dir>/line_XX.mp3 (silence trimmed at both ends) and lines.json
+[{i, text, tts, file, duration}]; lines.json is written again after every line, so when a later line fails the
+folder still describes every line already paid for and run.py can keep it for the next run.
 """
 import argparse, json, os, shutil, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -31,22 +33,27 @@ def spoken(script):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('script'); ap.add_argument('out'); ap.add_argument('--prev')
+    ap.add_argument('script'); ap.add_argument('out'); ap.add_argument('--prev', action='append', default=[])
     a = ap.parse_args()
     script = json.load(open(a.script, encoding='utf-8'))
     voice = script.get('voice') or 'clone_190'
-    prev = {}
-    if a.prev and os.path.exists(os.path.join(a.prev, 'lines.json')):
-        prev = {(r['tts'], voice): r for r in json.load(open(os.path.join(a.prev, 'lines.json'), encoding='utf-8')) if r.get('voice', 'clone_190') == voice}
+    prev = {}   # (spoken text, voice) → mp3 of an earlier run
+    for d in a.prev:
+        try: old_rows = json.load(open(os.path.join(d, 'lines.json'), encoding='utf-8'))
+        except (OSError, ValueError): continue
+        for r in old_rows:
+            f = os.path.join(d, r.get('file', ''))
+            if r.get('voice', 'clone_190') == voice and r.get('tts') and os.path.isfile(f) and os.path.getsize(f) > 0:
+                prev.setdefault((r['tts'], voice), f)
     os.makedirs(a.out, exist_ok=True)
     rows, read = [], 0
     for i, (text, tts) in enumerate(zip(script['lines'], spoken(script)), 1):
         dst = os.path.join(a.out, f'line_{i:02d}.mp3')
         old = prev.get((tts, voice))
-        reuse = bool(old) and os.path.exists(os.path.join(a.prev, old['file']))
+        reuse = bool(old)
         if reuse:
-            if os.path.abspath(os.path.join(a.prev, old['file'])) != os.path.abspath(dst):
-                shutil.copy(os.path.join(a.prev, old['file']), dst)
+            if os.path.abspath(old) != os.path.abspath(dst):
+                shutil.copy(old, dst)
         else:
             work = os.path.join(a.out, f'job_{i:02d}'); os.makedirs(work, exist_ok=True)
             tf = os.path.join(work, 'text.txt'); open(tf, 'w', encoding='utf-8').write(tts)
@@ -55,7 +62,7 @@ def main():
             shutil.rmtree(work, ignore_errors=True); read += 1
         rows.append({'i': i, 'text': text, 'tts': tts, 'voice': voice, 'file': os.path.basename(dst), 'duration': round(ff.duration(dst), 3)})
         print(f'line {i}: {rows[-1]["duration"]} s{"" if reuse else " (new)"}', flush=True)
-    json.dump(rows, open(os.path.join(a.out, 'lines.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        json.dump(rows, open(os.path.join(a.out, 'lines.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f'{read} lines read, {len(rows) - read} reused; {sum(r["duration"] for r in rows):.1f} s of speech')
 
 

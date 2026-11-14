@@ -2,7 +2,9 @@
 """Machine steps of an archive video (GitHub Actions). Usage: run.py <N> <step> [<step> ...]
 
   prepare  voice (one 11labs job per line, unchanged lines reused), voice check, picture search round 1
-           (only when the queries changed) → renders/arc/<N>/voice/, img/1/
+           (only when the queries changed) → renders/arc/<N>/voice/, img/1/. When a line fails, the lines already
+           read (paid) are kept in renders/arc/<N>/voice-cache/ and reused by the next run; when the voice check
+           (Whisper) cannot run, the voice is published all the same and check.md says so.
   search   every arc/<N>/search-<r>.json whose round is not on renders yet → renders/arc/<N>/img/<r>/
   render   pictures from picks.json, plan, fonts, Remotion render, loudness, shot sheet
            → renders/arc/<N>/video.mp4, subtitles.srt, credits.txt, sources.json, sheet.jpg
@@ -113,13 +115,27 @@ def link(p):
 def prepare():
     """Voice, then picture search round 1. Returns (lines.json rows, True when round 1 was searched again with
     changed queries, i.e. the pictures behind existing picks changed)."""
+    global voice_unchecked
     script = json.load(open(os.path.join(JOB, 'script.json'), encoding='utf-8'))
     labels(add=['arc-voice'], remove=['arc-plan', 'arc-failed'])
     prev = os.path.join(WORK, 'voice')
+    cache = os.path.join(WORK, 'voice-cache')   # lines paid for in a run that failed before the voice was complete
     new = os.path.join(ROOT, 'out', f'voice-{N}')
     shutil.rmtree(new, ignore_errors=True)
-    sh(sys.executable, os.path.join(HERE, 'tts_lines.py'), os.path.join(JOB, 'script.json'), new, '--prev', prev)
-    sh(sys.executable, os.path.join(HERE, 'voice_check.py'), new, os.path.join(new, 'check.md'))
+    try:
+        sh(sys.executable, os.path.join(HERE, 'tts_lines.py'), os.path.join(JOB, 'script.json'), new, '--prev', prev, '--prev', cache)
+    except subprocess.CalledProcessError:
+        keep_paid_lines(new, cache)
+        raise
+    try:
+        sh(sys.executable, os.path.join(HERE, 'voice_check.py'), new, os.path.join(new, 'check.md'))
+    except subprocess.CalledProcessError as e:
+        # the audio is paid for and complete: a broken checker (model download, Whisper) must not throw it away
+        print(f'::warning::kiểm tra giọng đọc (Whisper) không chạy được ({e.returncode}): giọng đọc vẫn được lưu', flush=True)
+        voice_unchecked = True
+        open(os.path.join(new, 'check.md'), 'w', encoding='utf-8').write(
+            '# Kiểm tra giọng đọc: chưa chạy được\n\nMáy nghe lại (Whisper) gặp lỗi ở lượt này nên chưa câu nào được kiểm tra. '
+            'Giọng đọc đã có đủ. Claude tự nghe các tên riêng và từ khó, hoặc chạy lại bước `prepare` (các câu đã đọc được dùng lại, không tốn thêm).\n')
     shutil.rmtree(prev, ignore_errors=True); shutil.copytree(new, prev)
     publish(['voice'], 'giọng đọc')   # before the picture search: the paid voice is kept even if the search fails
     q = (script.get('queries') or []) + (script.get('urls') or [])
@@ -134,6 +150,24 @@ def prepare():
         publish(['img/1'], 'ảnh')
     rows = json.load(open(os.path.join(prev, 'lines.json'), encoding='utf-8'))
     return rows, requeried
+
+
+voice_unchecked = False   # set by prepare() when the Whisper check could not run
+
+
+def keep_paid_lines(new, cache):
+    """The voice step failed part-way: publish the lines read so far (tts_lines.py keeps lines.json up to date) as
+    voice-cache/, so the next run reuses them instead of paying for them again. Never raises: the caller reports
+    the original failure."""
+    try:
+        rows = json.load(open(os.path.join(new, 'lines.json'), encoding='utf-8'))
+        if not rows: return
+        shutil.rmtree(cache, ignore_errors=True); os.makedirs(cache)
+        for r in rows: shutil.copy(os.path.join(new, r['file']), os.path.join(cache, r['file']))
+        shutil.copy(os.path.join(new, 'lines.json'), os.path.join(cache, 'lines.json'))
+        publish(['voice-cache'], f'giọng đọc dở ({len(rows)} câu đã đọc, giữ lại cho lượt sau)')
+    except (Exception, SystemExit) as e:
+        print(f'::warning::không giữ được các câu đã đọc: {e}', file=sys.stderr, flush=True)
 
 
 def find(d, q, env=None):
@@ -232,7 +266,8 @@ if __name__ == '__main__':
             note = wake(f'Phiếu lịch sử số {N}: ' + ('từ khóa ảnh đợt 1 đã đổi, phải chọn lại ảnh.' if requeried
                                                     else 'giọng và ảnh đã sẵn sàng, chờ chọn ảnh.'))
             comment(f'🤖 Giọng đọc xong: {len(rows)} câu, {speech:.0f} giây lời đọc'
-                    f'{f" ({flagged} câu cần Claude nghe lại cách đọc)" if flagged else ""}. '
+                    f'{f" ({flagged} câu cần Claude nghe lại cách đọc)" if flagged else ""}'
+                    f'{" (máy nghe lại bị lỗi nên chưa kiểm tra được cách đọc)" if voice_unchecked else ""}. '
                     + ('Từ khóa tìm tư liệu đã đổi nên ảnh đợt 1 là ảnh mới: phải chọn lại ảnh trước khi dựng video.'
                        if requeried else 'Tư liệu đã tìm xong.')
                     + ' ' + (note or 'Claude sẽ xem và chọn ảnh cho từng cảnh.'))

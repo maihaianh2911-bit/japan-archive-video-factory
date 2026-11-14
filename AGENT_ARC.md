@@ -88,7 +88,9 @@ queries; you are woken at `arc-pick`.)
 ## 2. `arc-pick` → `arc/<N>/picks.json`
 1. `voice/check.md` lists lines where Whisper heard different readings. Real misreadings: kana in `script.json`
    `tts` (only changed lines are read again) and the word in `prompts/readings.json`. Whisper mishearings (katakana
-   names, digits) are dismissed.
+   names, digits) are dismissed. If `check.md` says the check could not run ("chưa chạy được": Whisper failed, the
+   voice itself is complete), look at the names and rare words yourself and give them kana in `tts`. After a voice
+   step that failed part-way, the lines already read wait in `voice-cache/` and the next `prepare` reuses them.
 2. Open every `img/<r>/sheet_<k>.jpg` (tiles: `#n 1024x683 CC BY 2.0` + source + date; `img/<r>/index.json` has
    titles, authors, dates, licences, pages). A query whose search failed has an `"error"` in `index.json` and no
    sheet: repeat it in the next round. A scene without a fitting picture → write `arc/<N>/search-<r>.json`
