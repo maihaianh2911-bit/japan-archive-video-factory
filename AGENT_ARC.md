@@ -174,6 +174,10 @@ queries; you are woken at `arc-pick`.)
    at `arc-check`.)
 
 ## 3. `arc-check` → done
+First read the issue's comments again: the owner may have asked for a change while the machine was working. An
+owner comment newer than your last `🤖` comment (comments by `github-actions[bot]` do not count as yours) is a
+request not done yet — the machine keeps `arc-fix` on the issue for it — so do it as §4 in the same step, before
+anything is called done.
 Open `sheet.jpg` (every shot as a full frame, after its ring/zoom too). Push a corrected `picks.json` only for a
 real fault (wrong document for the line, a ring off its target, a cut subject, a blurred picture, a watermark),
 all fixes in one push. Otherwise remove `arc-check`, add `arc-done` and comment (🤖, short, Vietnamese):
@@ -187,7 +191,9 @@ all fixes in one push. Otherwise remove `arc-check`, add `arc-done` and comment 
   quá 14 ngày (máy tự dọn file cũ mỗi tuần)."
 
 ## 4. `arc-fix` and `arc-failed`
-- `arc-fix`: the request = owner comments after your last `🤖` comment. Text → `script.json` (changed lines are
+- `arc-fix`: the request = owner comments after your last `🤖` comment (the machine's comments, by
+  `github-actions[bot]`, are not yours: a request written just before "Đã dựng xong bản video" still counts). No
+  such comment (the label was only kept to be safe) → just remove `arc-fix`. Text → `script.json` (changed lines are
   read again, the rest reused); pictures, rings, crops → `picks.json` (+ `search-<r>.json`). Push, one-line 🤖
   comment, remove `arc-fix`. Keep working in the same issue.
   An old issue (quiet for more than 14 days) has no files on `renders` any more (weekly clean-up): run `prepare`

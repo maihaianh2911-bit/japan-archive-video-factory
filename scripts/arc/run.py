@@ -208,8 +208,31 @@ def encode(raw, dst, rate):
            '-af', 'loudnorm=I=-15:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '160k', '-ar', '48000', '-movflags', '+faststart', dst)
 
 
+def fix_pending():
+    """True when the owner asked for a change after the push that is being rendered: arc-fix was put on the issue
+    (by the fix job, on an owner comment) later than the last commit under arc/<N>/ of this run's commit. That
+    request is not in this render, so the label must stay for Claude. Also True when GitHub cannot be asked:
+    a label kept for nothing costs Claude one look at the comments, a label lost drops the owner's request."""
+    sha = os.environ.get('GITHUB_SHA', '')
+    c = gh('api', f'repos/{REPO}/commits?path=arc/{N}&per_page=1' + (f'&sha={sha}' if sha else ''), '--jq', '.[0].commit.committer.date')
+    e = gh('api', f'repos/{REPO}/issues/{N}/events?per_page=100', '--paginate',
+           '--jq', '.[] | select(.event == "labeled" and .label.name == "arc-fix") | .created_at')
+    if c.returncode or e.returncode or not c.stdout.strip():
+        return True
+    asked = e.stdout.split()
+    if not asked:
+        return False
+    from datetime import datetime
+    t = lambda x: datetime.fromisoformat(x.strip().replace('Z', '+00:00'))
+    try: return t(asked[-1]) > t(c.stdout)
+    except ValueError: return True
+
+
 def render():
-    labels(add=['arc-render'], remove=['arc-pick', 'arc-check', 'arc-done', 'arc-fix', 'arc-failed'])
+    """Returns (video length in seconds, True when an owner request newer than this push still waits: arc-fix kept)."""
+    waiting = fix_pending()
+    if waiting: print(f'arc/{N}: nhãn arc-fix được giữ lại (yêu cầu sửa của chủ kênh mới hơn lần đẩy đang dựng, hoặc không kiểm tra được)', flush=True)
+    labels(add=['arc-render'], remove=['arc-pick', 'arc-check', 'arc-done', 'arc-failed'] + ([] if waiting else ['arc-fix']))
     pub = os.path.join(PUB, 'arc', N); shutil.rmtree(pub, ignore_errors=True)
     shutil.copytree(os.path.join(WORK, 'voice'), os.path.join(pub, 'voice'))
     imgsrc = os.path.join(WORK, 'img')
@@ -236,7 +259,7 @@ def render():
     sh(sys.executable, os.path.join(HERE, 'sheet.py'), video, os.path.join(out, 'plan.json'), os.path.join(WORK, 'sheet.jpg'))
     for f in ('subtitles.srt', 'credits.txt', 'sources.json', 'plan.json'): shutil.copy(os.path.join(out, f), os.path.join(WORK, f))
     publish(['video.mp4', 'sheet.jpg', 'subtitles.srt', 'credits.txt', 'sources.json', 'plan.json'], 'video')
-    return plan['duration']
+    return plan['duration'], waiting
 
 
 def missing_pictures():
@@ -306,10 +329,11 @@ if __name__ == '__main__':
                              f'{" …" if len(gone) > 8 else ""}. Đợt tìm ảnh đó chưa xong (đợi rồi chạy lại bước render), '
                              'hoặc file của phiếu đã được dọn sau 14 ngày không hoạt động (chạy lại prepare / search rồi chọn lại ảnh: '
                              'ảnh tìm lại được đánh số mới, không dựng bằng picks.json cũ).')
-        length = render()
+        length, waiting = render()
         labels(add=['arc-check'], remove=['arc-render', 'arc-voice'])
         m, s = divmod(round(length), 60)
-        note = wake(f'Phiếu lịch sử số {N}: video đã dựng, chờ kiểm tra.')
+        note = wake(f'Phiếu lịch sử số {N}: video đã dựng, chờ kiểm tra.'
+                    + (' Nhãn arc-fix còn trên phiếu: đọc lại bình luận của chủ kênh, có thể có yêu cầu sửa chưa làm.' if waiting else ''))
         comment(f'🤖 Đã dựng xong bản video ({m} phút {s:02d} giây). '
                 + ('Claude đang kiểm tra lại từng cảnh trước khi giao.' if not note else f'Bản này chưa được Claude kiểm tra lại. {note}')
                 + f'\n\n- Video: {link("video.mp4")}\n- Ảnh các cảnh: {link("sheet.jpg")}')
