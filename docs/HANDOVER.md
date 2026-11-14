@@ -23,6 +23,7 @@ Bố cục đo từ bản mẫu (720×1280, phóng ×1,5): `scripts/arc/layout.p
 - 12/11: *"Phần dựng hình, bố cục làm cho đẹp hơn đc ko, tao thấy đang hơi đơn điệu và màu đen ko bắt mắt lắm"* → thêm kiểu `warm` (nền là chính ảnh làm mờ, ảnh nổi có bóng và viền vàng, ảnh trôi chậm, vòng khoanh vẽ dần, tiêu đề hiện mượt, từ khóa phụ đề tô màu) và `paper` (nền giấy ngà); `classic` giữ đúng bản mẫu cũ. Bố cục (vị trí chữ, ảnh, phụ đề) giữ theo mẫu.
 - 13/11: chủ kênh xem 2 video thử, chọn **Giấy cổ** (`paper`) làm mặc định.
 - 13/11: bỏ lượt chạy Claude mỗi giờ (như repo văn học): Claude chỉ làm khi GitHub gọi, hoặc khi chủ kênh bấm **Gọi Claude ngay** / làm trong chat. Repo này dùng chung tác vụ Claude của `japan-video-factory`.
+- 14/11 (phiếu 1, tượng Dogū): *"dựng liền mạch ấy, đừng có chia ra từng cảnh"* → thêm `fade` trong `script.json` (ảnh sau hiện mờ dần trên ảnh trước thay vì cắt thẳng) và gom câu thành ít ý lớn (~10 s mỗi ý, tiêu đề giữ nguyên khi ảnh đổi). Mặc định vẫn cắt thẳng; dùng `fade` khi chủ kênh muốn liền mạch.
 - 12/11: *"Tìm ảnh tự do, k cần ảnh wiki"* → máy tìm ở các kho ảnh mở (Openverse/Flickr, The Met, Art Institute of Chicago, Cleveland Museum of Art, Europeana, Thư viện Quốc hội Mỹ) và trang có giấy phép rõ ràng; Wikimedia không phải nguồn mặc định (chỉ dùng khi viết rõ `commons:`).
 
 ## Trạng thái (13/11/2026)

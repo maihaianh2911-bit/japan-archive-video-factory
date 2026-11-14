@@ -7,7 +7,8 @@ lines.json (measured line lengths) and the prepared pictures in <public_dir>/arc
 <out_dir>/plan.json, subtitles.srt, credits.txt, sources.json and <public_dir>/arc/<N>/bed.wav.
 Timing: every line starts after the previous one plus a pause (0.45 s after a sentence end, 0.25 s otherwise);
 a shot that starts on a line ("at", fractional = part-way through the line) cuts in just before it is spoken;
-a mark ("at") appears at that moment of the voice. Cuts are hard, as in the sample.
+a mark ("at") appears at that moment of the voice. Cuts are hard, as in the sample, unless script.json "fade" (seconds)
+asks for a dissolve between pictures.
 """
 import json, os, re, sys
 import numpy as np
@@ -143,7 +144,7 @@ music = mg.render([{'from': 0, 'to': total, **mu}], lambda v: v, total)
 bed = music / (np.abs(music).max() or 1) * 0.8
 mg.write_wav(f'{pub}/{base}/bed.wav', bed)
 
-plan = {'duration': total, 'theme': STYLE, 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
+plan = {'duration': total, 'theme': STYLE, 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
         'musicVolume': spec.get('music_volume', 0.16), 'fonts': []}
 json.dump(plan, open(f'{out}/plan.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

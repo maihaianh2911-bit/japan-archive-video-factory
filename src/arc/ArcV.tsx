@@ -4,7 +4,8 @@ import { AbsoluteFill, Audio, Img, Sequence, cancelRender, continueRender, delay
 // Vertical (1080×1920) history / legend short from real archive pictures. Layout of the approved sample
 // (00-video-mau/MAU-EDIT-20S.mp4): gold bar + small label (place / kind of document), large title, the picture in
 // the middle, rings that are drawn when the voice names a detail, the subtitle under the picture, the credit at the
-// foot. Cuts on the idea. Positions come from scripts/arc/layout.py via build.py.
+// foot. Cuts on the idea; with "fade" (seconds, script.json) the next picture dissolves in over the last one instead
+// ("dựng liền mạch", owner 14/11). Positions come from scripts/arc/layout.py via build.py.
 // Themes (script.json "style"): "paper" (default, chosen by the owner 13/11: ivory archive paper, ink text, the picture
 // as a print with a white mat, red rings), "warm" (the picture itself, blurred and darkened, fills the background, so
 // every shot has its own colour; the picture floats with a shadow and a gold frame), "classic" (the flat dark brown of
@@ -18,7 +19,7 @@ export type Shot = { s: number; e: number; scene: number; shot: number; label: s
 export type Sub = { s: number; e: number; text: string; hl?: string[] };
 type FontChunk = { family: string; file: string; range: string };
 export type PlanA = { duration: number; shots: Shot[]; subs: Sub[]; voice: { s: number; src: string }[]; music: string | null;
-  musicVolume: number; fonts: FontChunk[]; theme?: string; total?: number };
+  musicVolume: number; fonts: FontChunk[]; theme?: string; total?: number; fade?: number };
 
 type Theme = { bg: string; bgCss?: string; bar: string; label: string; title: string; sub: string; subHl: string; subShadow: string; credit: string;
   ring: string; frame: string; mat: number; shadow: string; backdrop: boolean; subWeight: number; titleShadow: string };
@@ -127,16 +128,27 @@ export const ArcV: React.FC<PlanA> = (plan) => {
   const prev = idx > 0 ? plan.shots[idx - 1] : null;
   const head = prev && prev.title === sh.title && prev.label === sh.label ? 1 : easeOut((t - sh.s) / 0.45);
   const lift = (1 - head) * 18;
+  // dissolve: the last shot's pictures (and credit) stay under the new ones while these fade in
+  const fade = plan.fade || 0;
+  const same = (a: Shot, b: Shot) => a.pics.length === b.pics.length && a.pics.every((p, i) => p.src === b.pics[i].src && p.box.join() === b.pics[i].box.join());
+  const mix = prev && fade > 0 && t < sh.s + fade && !same(prev, sh) ? ease((t - sh.s) / fade) : 1;
+  const out = mix < 1 && prev ? prev : null;
   return (
     <AbsoluteFill style={{ background: th.bgCss || th.bg }}>
-      {th.backdrop ? <Backdrop p={sh.pics[0]} t={t} sh={sh} /> : null}
+      {th.backdrop && out ? <Backdrop p={out.pics[0]} t={t} sh={out} /> : null}
+      {th.backdrop ? <AbsoluteFill style={{ opacity: mix }}><Backdrop p={sh.pics[0]} t={t} sh={sh} /></AbsoluteFill> : null}
       {/* header: bar, label (place / kind of document), title */}
       <div style={{ position: 'absolute', left: M + 3, top: sh.bar, width: 92 * (0.4 + 0.6 * head), height: 6, background: th.bar }} />
       {sh.label ? (
         <div style={{ position: 'absolute', left: M + 3, top: sh.bar + 38 + lift * 0.6, opacity: head, fontFamily: SANS, fontWeight: 500, fontSize: 40, lineHeight: 1.25, color: th.label, letterSpacing: '0.02em', whiteSpace: 'nowrap', textShadow: th.titleShadow }}>{sh.label}</div>
       ) : null}
       <div style={{ position: 'absolute', left: M, top: sh.bar + 135 - 0.2 * sh.titleSize + lift, opacity: head, fontFamily: SERIF, fontWeight: 700, fontSize: sh.titleSize, lineHeight: 1.25, color: th.title, letterSpacing: '0.02em', whiteSpace: 'nowrap', textShadow: th.titleShadow }}>{sh.title}</div>
-      {sh.pics.map((p, i) => <PicView key={i} p={p} t={t} sh={sh} th={th} marks={sh.marks.filter((m) => m.on === i)} />)}
+      {out ? <AbsoluteFill style={{ opacity: 1 - mix }}>
+        {out.pics.map((p, i) => <PicView key={i} p={p} t={t} sh={out} th={th} marks={out.marks.filter((m) => m.on === i)} />)}
+      </AbsoluteFill> : null}
+      <AbsoluteFill style={{ opacity: mix }}>
+        {sh.pics.map((p, i) => <PicView key={i} p={p} t={t} sh={sh} th={th} marks={sh.marks.filter((m) => m.on === i)} />)}
+      </AbsoluteFill>
       {sh.caption && sh.captionY !== null ? (
         <div style={{ position: 'absolute', left: M + 3, top: sh.captionY + (th.mat ? th.mat : 0), fontFamily: SANS, fontWeight: 500, fontSize: 38, lineHeight: 1.3, color: th.label, textShadow: th.titleShadow }}>{sh.caption}</div>
       ) : null}
@@ -149,8 +161,11 @@ export const ArcV: React.FC<PlanA> = (plan) => {
           ))}
         </div>
       ) : null}
+      {out && out.credit && out.credit !== sh.credit ? (
+        <div style={{ position: 'absolute', left: M + 3, right: M, top: 1745, opacity: 1 - mix, fontFamily: SANS, fontWeight: 400, fontSize: 25, lineHeight: 1.3, color: th.credit, letterSpacing: '0.05em' }}>{out.credit}</div>
+      ) : null}
       {sh.credit ? (
-        <div style={{ position: 'absolute', left: M + 3, right: M, top: 1745, fontFamily: SANS, fontWeight: 400, fontSize: 25, lineHeight: 1.3, color: th.credit, letterSpacing: '0.05em' }}>{sh.credit}</div>
+        <div style={{ position: 'absolute', left: M + 3, right: M, top: 1745, opacity: out && out.credit !== sh.credit ? mix : 1, fontFamily: SANS, fontWeight: 400, fontSize: 25, lineHeight: 1.3, color: th.credit, letterSpacing: '0.05em' }}>{sh.credit}</div>
       ) : null}
       {plan.voice.map((v, i) => <Sequence key={i} from={Math.round(v.s * fps)}><Audio src={staticFile(v.src)} /></Sequence>)}
       {plan.music ? (

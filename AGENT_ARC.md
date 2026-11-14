@@ -61,6 +61,9 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
   with a white mat and soft shadow, red rings), `warm` (the shot's own picture, blurred and darkened, fills the
   background; the picture floats with a gold frame), `classic` (the flat dark brown of the first sample, no motion).
   Use `paper` unless the issue asks for another ("nền tối", "kiểu ấm", "như bản mẫu cũ").
+- `fade` (seconds, e.g. `0.6`): the next picture dissolves in over the last one instead of a hard cut. Use it when the
+  owner asks for a seamless edit ("dựng liền mạch", "đừng chia ra từng cảnh", owner 14/11) and then also group the
+  lines into a few big ideas (~10 s each: the title stays while the pictures change under it). Default 0: hard cuts.
 - `hl`: 1–2 key words per line (exact substrings), shown in colour in the subtitle: the thing the picture shows
   (`{"3": ["円を描く"]}`).
 - `music`: quiet documentary bed (`key`, `mode`, `bpm`, `energy` 0.1–0.3). `music_volume` (default 0.16) only if
