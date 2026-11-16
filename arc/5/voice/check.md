@@ -1,0 +1,9 @@
+# Kiểm tra giọng đọc (19 câu, 3 câu cần xem)
+
+Whisper nghe lại từng câu và so theo cách đọc (hiragana). Câu nào lệch từ 2 âm trở lên được liệt kê: có thể giọng đọc sai, hoặc chỉ là Whisper nghe nhầm (hay gặp với tên katakana).
+
+| Câu | Văn bản gửi đọc | Whisper nghe được | Chỗ lệch (đúng→nghe) |
+|---|---|---|---|
+| 8 | 町人たちによる火消し、「まちびけし」です。 | 長人たちによる秘消、待ちびけしです | ちょうにん→ながと |
+| 9 | きょうほうごねん、まちぶぎょうの、おおおかえちぜんが、 | 強法5年、街部業の大会地前が | おおお→たい, ちぜん→ |
+| 17 | 命がけの火消しは、江戸の人気者でした。 | 命がけの秀氏は江戸の人気者でした | ひけ→ |
