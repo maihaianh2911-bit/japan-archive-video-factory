@@ -107,6 +107,42 @@
    "date": "2014-11-05 06:55",
    "license": "CC BY 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:%E3%81%AF%E3%81%97%E3%81%94%E4%B9%97%E3%82%8A%E3%81%AE%E7%B7%B4%E7%BF%92%E5%A0%B4%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82_(15092546824).jpg"
+  },
+  {
+   "name": "musashi",
+   "src": "1/8-8.jpg",
+   "title": "Meireki fire woodblock.jpg",
+   "artist": "Heineken, Ty &amp; Kiyoko",
+   "date": "",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Meireki_fire_woodblock.jpg"
+  },
+  {
+   "name": "map",
+   "src": "1/8-5.jpg",
+   "title": "Meireki Brand 1657.jpg",
+   "artist": "Fraxinus2",
+   "date": "2016-07-23",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Meireki_Brand_1657.jpg"
+  },
+  {
+   "name": "matois",
+   "src": "2/7-1.jpg",
+   "title": "田原市民俗資料館 - 纏.jpg",
+   "artist": "Yanajin33",
+   "date": "2014-06-28 13:51:04",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E5%8E%9F%E5%B8%82%E6%B0%91%E4%BF%97%E8%B3%87%E6%96%99%E9%A4%A8_-_%E7%BA%8F.jpg"
+  },
+  {
+   "name": "jacket",
+   "src": "2/10-5.jpg",
+   "title": "Fireman's jacket, plastron and sash",
+   "artist": "Japan",
+   "date": "19th century",
+   "license": "CC0 (The Met Open Access)",
+   "page": "https://www.metmuseum.org/art/collection/search/53910"
   }
  ],
  "shots": [
@@ -148,10 +184,29 @@
    "marks": []
   },
   {
+   "scene": 1,
+   "shot": 3,
+   "start": 6.659,
+   "end": 11.534,
+   "said": [
+    "冬は乾いた北風が強く、",
+    "小さな火も、たちまち町じゅうに広がりました。"
+   ],
+   "label": "江戸の大火を描いた版本（1661年）",
+   "title": "江戸の華",
+   "image": "musashi",
+   "page": "https://commons.wikimedia.org/wiki/File:Meireki_fire_woodblock.jpg",
+   "credit": "Heineken, Ty & Kiyoko / CC BY-SA 3.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
    "scene": 2,
    "shot": 1,
-   "start": 6.659,
-   "end": 10.769,
+   "start": 11.534,
+   "end": 15.644,
    "said": [
     "明暦三年、一六五七年の「明暦の大火」では、"
    ],
@@ -173,8 +228,8 @@
   {
    "scene": 2,
    "shot": 2,
-   "start": 10.769,
-   "end": 14.697,
+   "start": 15.644,
+   "end": 19.572,
    "said": [
     "江戸の町の大半が焼け、江戸城の天守まで失われました。"
    ],
@@ -191,8 +246,8 @@
   {
    "scene": 2,
    "shot": 3,
-   "start": 14.697,
-   "end": 17.499,
+   "start": 19.572,
+   "end": 22.374,
    "said": [
     "亡くなった人は、十万人ともいわれます。"
    ],
@@ -207,10 +262,29 @@
    "marks": []
   },
   {
+   "scene": 2,
+   "shot": 4,
+   "start": 22.374,
+   "end": 26.759,
+   "said": [
+    "焼け跡には、火が燃え移らないよう、",
+    "広い道や空き地がつくられました。"
+   ],
+   "label": "明暦の大火で焼けた範囲（推定）",
+   "title": "明暦の大火",
+   "image": "map",
+   "page": "https://commons.wikimedia.org/wiki/File:Meireki_Brand_1657.jpg",
+   "credit": "Fraxinus2 / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
    "scene": 3,
    "shot": 1,
-   "start": 17.499,
-   "end": 21.629,
+   "start": 26.759,
+   "end": 30.889,
    "said": [
     "そこで生まれたのが、",
     "町人たちによる火消し、「町火消」です。"
@@ -228,8 +302,8 @@
   {
    "scene": 3,
    "shot": 2,
-   "start": 21.629,
-   "end": 24.615,
+   "start": 30.889,
+   "end": 33.875,
    "said": [
     "享保五年、町奉行の大岡越前が、"
    ],
@@ -246,8 +320,8 @@
   {
    "scene": 3,
    "shot": 3,
-   "start": 24.615,
-   "end": 29.709,
+   "start": 33.875,
+   "end": 38.969,
    "said": [
     "町ごとに組をつくらせました。",
     "「いろは四十八組」と呼ばれる火消したちです。"
@@ -268,10 +342,62 @@
    "marks": []
   },
   {
+   "scene": 3,
+   "shot": 4,
+   "start": 38.969,
+   "end": 40.897,
+   "said": [
+    "組ごとに、目印の纏と、そろいの半纏を持っていました。"
+   ],
+   "label": "火消の纏（田原市民俗資料館）",
+   "title": "町火消",
+   "image": "matois",
+   "page": "https://commons.wikimedia.org/wiki/File:%E7%94%B0%E5%8E%9F%E5%B8%82%E6%B0%91%E4%BF%97%E8%B3%87%E6%96%99%E9%A4%A8_-_%E7%BA%8F.jpg",
+   "credit": "Yanajin33 / CC BY-SA 3.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 5,
+   "start": 40.897,
+   "end": 42.925,
+   "said": [],
+   "label": "火消の半纏（19世紀）",
+   "title": "町火消",
+   "image": "jacket",
+   "page": "https://www.metmuseum.org/art/collection/search/53910",
+   "credit": "The Metropolitan Museum of Art / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 6,
+   "start": 42.925,
+   "end": 46.507,
+   "said": [
+    "火消しの多くは、ふだんは家を建てる鳶の職人でした。"
+   ],
+   "label": "火消の道具（1870年代の写真）",
+   "title": "町火消",
+   "image": "tools",
+   "page": "https://commons.wikimedia.org/wiki/File:Raimund_von_Stillfried_(attr)_Equipment_of_Japanese_firefighters_1870s.jpg",
+   "credit": "Raimund von Stillfried / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
    "scene": 4,
    "shot": 1,
-   "start": 29.709,
-   "end": 37.271,
+   "start": 46.507,
+   "end": 54.069,
    "said": [
     "けれど当時は、火を水で消す力がありません。",
     "そこで火消したちは、",
@@ -290,8 +416,8 @@
   {
    "scene": 4,
    "shot": 2,
-   "start": 37.271,
-   "end": 42.477,
+   "start": 54.069,
+   "end": 59.275,
    "said": [
     "屋根の上では、組の目印「纏」を振る纏持ちが、",
     "ここで火を止めると知らせます。"
@@ -309,8 +435,8 @@
   {
    "scene": 5,
    "shot": 1,
-   "start": 42.477,
-   "end": 45.151,
+   "start": 59.275,
+   "end": 61.949,
    "said": [
     "命がけの火消しは、江戸の人気者でした。"
    ],
@@ -327,8 +453,8 @@
   {
    "scene": 5,
    "shot": 2,
-   "start": 45.151,
-   "end": 48.256,
+   "start": 61.949,
+   "end": 65.054,
    "said": [
     "その心意気は、今も毎年一月の出初式で、"
    ],
@@ -345,8 +471,8 @@
   {
    "scene": 5,
    "shot": 3,
-   "start": 48.256,
-   "end": 51.756,
+   "start": 65.054,
+   "end": 68.554,
    "said": [
     "はしご乗りとして受け継がれています。"
    ],
