@@ -1,0 +1,163 @@
+{
+ "images": {
+  "yoru": {
+   "src": "1/4-1.jpg"
+  },
+  "quake": {
+   "src": "1/14-2.jpg"
+  },
+  "zu": {
+   "src": "1/4-4.jpg"
+  },
+  "ash": {
+   "src": "1/4-3.jpg"
+  },
+  "hakuseki": {
+   "src": "1/9-2.jpg"
+  },
+  "sakawa": {
+   "src": "1/4-2.jpg",
+   "crop": [
+    0.0,
+    0.03,
+    1.0,
+    0.5
+   ]
+  },
+  "crater": {
+   "src": "1/3-8.jpg"
+  },
+  "hoeizan": {
+   "src": "1/3-1.jpg"
+  },
+  "hokusai": {
+   "src": "1/4-7.jpg"
+  },
+  "kano": {
+   "src": "1/11-1.jpg"
+  },
+  "fuji": {
+   "src": "1/11-6.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "yoru",
+     "label": "宝永噴火の絵図「夜ルの景気」",
+     "credit": "沼津市 土屋博氏所蔵 / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "quake",
+     "label": "宝永地震の震度分布（推定）",
+     "credit": "As6022014 / CC BY-SA 3.0",
+     "still": true
+    },
+    {
+     "at": 5,
+     "img": "zu",
+     "label": "「富士山宝永噴火之図」",
+     "credit": "御殿場市 滝口文夫氏所蔵 / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "ash",
+     "label": "宝永噴火の降灰の厚さ（推定図）",
+     "credit": "富士山防災協議会 / CC BY 4.0",
+     "still": true,
+     "marks": [
+      {
+       "at": 9.3,
+       "box": [
+        0.44,
+        0.36,
+        0.63,
+        0.6
+       ]
+      }
+     ]
+    },
+    {
+     "at": 10,
+     "img": "hakuseki",
+     "label": "新井白石（1657〜1725年）",
+     "credit": "有朋堂書店（1914年）/ Public domain"
+    },
+    {
+     "at": 13,
+     "img": "zu",
+     "view": [
+      0.0,
+      0.3,
+      1.0,
+      1.0
+     ],
+     "label": "「富士山宝永噴火之図」",
+     "credit": "御殿場市 滝口文夫氏所蔵 / Public domain"
+    },
+    {
+     "at": 14,
+     "img": "sakawa",
+     "label": "噴火後の酒匂川の洪水（推定図）",
+     "credit": "富士山防災協議会 / CC BY 4.0",
+     "still": true
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "crater",
+     "label": "宝永火口（静岡県御殿場市）",
+     "credit": "Alpsdake / CC BY-SA 4.0"
+    },
+    {
+     "at": 19,
+     "img": "hoeizan",
+     "label": "宝永山と宝永火口",
+     "credit": "Alpsdake / CC BY-SA 4.0",
+     "marks": [
+      {
+       "at": 19.45,
+       "box": [
+        0.38,
+        0.04,
+        0.78,
+        0.18
+       ]
+      }
+     ]
+    },
+    {
+     "at": 20,
+     "img": "hokusai",
+     "label": "葛飾北斎『富嶽百景』「宝永山出現」",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "kano",
+     "label": "狩野常信「冬の富士」（17〜18世紀）",
+     "credit": "rawpixel / CC0"
+    },
+    {
+     "at": 22,
+     "img": "fuji",
+     "label": "現在の富士山",
+     "credit": "TANAKA Juuyoh / CC BY 2.0"
+    }
+   ]
+  }
+ ]
+}
