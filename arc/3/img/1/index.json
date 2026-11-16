@@ -1,0 +1,770 @@
+[
+ {
+  "k": 1,
+  "query": "namazu-e",
+  "results": [
+   {
+    "source": "openverse/flickr",
+    "title": "namazu-e",
+    "page": "https://www.flickr.com/photos/76586154@N00/4013758397",
+    "thumb": "https://live.staticflickr.com/2429/4013758397_bb51e6534b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "nan_says",
+    "date": "",
+    "description": "",
+    "width": 417,
+    "height": 500,
+    "file": "1-1.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Kannon by a Lotus Pond",
+    "page": "https://www.metmuseum.org/art/collection/search/906843",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP-34239-002.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Hakuin Ekaku",
+    "date": "1750s",
+    "description": "Japan, Hanging scroll; ink and color on paper",
+    "width": 1483,
+    "height": 4000,
+    "file": "1-2.jpg"
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "query": "commons: incategory:\"Namazu-e\"",
+  "results": [
+   {
+    "source": "commons",
+    "title": "NDL-DC 1303372-Unknown Artist-恵比寿天申訳之記-crd.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303372-Unknown_Artist-%E6%81%B5%E6%AF%94%E5%AF%BF%E5%A4%A9%E7%94%B3%E8%A8%B3%E4%B9%8B%E8%A8%98-crd.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/NDL-DC_1303372-Unknown_Artist-%E6%81%B5%E6%AF%94%E5%AF%BF%E5%A4%A9%E7%94%B3%E8%A8%B3%E4%B9%8B%E8%A8%98-crd.jpg/1920px-NDL-DC_1303372-Unknown_Artist-%E6%81%B5%E6%AF%94%E5%AF%BF%E5%A4%A9%E7%94%B3%E8%A8%B3%E4%B9%8B%E8%A8%98-crd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "",
+    "date": "",
+    "description": "from the picture album \"Ansei ōjishin-e\"",
+    "width": 4750,
+    "height": 3209,
+    "file": "2-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "NDL-DC 1303386-Unknown Artist-（地震鯰の取調べ）-crd.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303386-Unknown_Artist-%EF%BC%88%E5%9C%B0%E9%9C%87%E9%AF%B0%E3%81%AE%E5%8F%96%E8%AA%BF%E3%81%B9%EF%BC%89-crd.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/NDL-DC_1303386-Unknown_Artist-%EF%BC%88%E5%9C%B0%E9%9C%87%E9%AF%B0%E3%81%AE%E5%8F%96%E8%AA%BF%E3%81%B9%EF%BC%89-crd.jpg/1920px-NDL-DC_1303386-Unknown_Artist-%EF%BC%88%E5%9C%B0%E9%9C%87%E9%AF%B0%E3%81%AE%E5%8F%96%E8%AA%BF%E3%81%B9%EF%BC%89-crd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "",
+    "date": "",
+    "description": "from the picture album \"Ansei ōjishin-e\"",
+    "width": 4810,
+    "height": 3213,
+    "file": "2-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "NDL-DC 1304005-Unknown Artist-（要石）-crd.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1304005-Unknown_Artist-%EF%BC%88%E8%A6%81%E7%9F%B3%EF%BC%89-crd.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/NDL-DC_1304005-Unknown_Artist-%EF%BC%88%E8%A6%81%E7%9F%B3%EF%BC%89-crd.jpg/1920px-NDL-DC_1304005-Unknown_Artist-%EF%BC%88%E8%A6%81%E7%9F%B3%EF%BC%89-crd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "",
+    "date": "",
+    "description": "from the picture album \"Ansei ōjishin-e\"",
+    "width": 4759,
+    "height": 3225,
+    "file": "2-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Namazu-e.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Namazu-e.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/55/Namazu-e.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "1855",
+    "description": "A namazu-e or catfish motif earthquake art, entitled Shin Yoshiwara ōnamazu yurai or \"The cause of the great catfish at Shin Yoshiwara\". The women of the pleasure quarters blame the catfish for the earthquake, but the catfish is delighted to have these ladies press flesh with him, and threatens to s",
+    "width": 1849,
+    "height": 1320,
+    "file": "2-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "NDL-DC 1303365-Unknown Artist-四民不動礎-crd.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303365-Unknown_Artist-%E5%9B%9B%E6%B0%91%E4%B8%8D%E5%8B%95%E7%A4%8E-crd.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/NDL-DC_1303365-Unknown_Artist-%E5%9B%9B%E6%B0%91%E4%B8%8D%E5%8B%95%E7%A4%8E-crd.jpg/1920px-NDL-DC_1303365-Unknown_Artist-%E5%9B%9B%E6%B0%91%E4%B8%8D%E5%8B%95%E7%A4%8E-crd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "",
+    "date": "",
+    "description": "from the picture album \"Ansei ōjishin-e\"",
+    "width": 4709,
+    "height": 3209,
+    "file": "2-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "NDL-DC 1303375-Unknown Artist-（神馬）-crd.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303375-Unknown_Artist-%EF%BC%88%E7%A5%9E%E9%A6%AC%EF%BC%89-crd.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/NDL-DC_1303375-Unknown_Artist-%EF%BC%88%E7%A5%9E%E9%A6%AC%EF%BC%89-crd.jpg/1920px-NDL-DC_1303375-Unknown_Artist-%EF%BC%88%E7%A5%9E%E9%A6%AC%EF%BC%89-crd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "",
+    "date": "",
+    "description": "from the picture album \"Ansei ōjishin-e\"",
+    "width": 4790,
+    "height": 3232,
+    "file": "2-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "NDL-DC 1303398-Unknown Artist-見たて大地震角力取くみ-crd.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303398-Unknown_Artist-%E8%A6%8B%E3%81%9F%E3%81%A6%E5%A4%A7%E5%9C%B0%E9%9C%87%E8%A7%92%E5%8A%9B%E5%8F%96%E3%81%8F%E3%81%BF-crd.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/NDL-DC_1303398-Unknown_Artist-%E8%A6%8B%E3%81%9F%E3%81%A6%E5%A4%A7%E5%9C%B0%E9%9C%87%E8%A7%92%E5%8A%9B%E5%8F%96%E3%81%8F%E3%81%BF-crd.jpg/1920px-NDL-DC_1303398-Unknown_Artist-%E8%A6%8B%E3%81%9F%E3%81%A6%E5%A4%A7%E5%9C%B0%E9%9C%87%E8%A7%92%E5%8A%9B%E5%8F%96%E3%81%8F%E3%81%BF-crd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "",
+    "date": "",
+    "description": "from the picture album \"Ansei ōjishin-e\"",
+    "width": 4867,
+    "height": 3249,
+    "file": "2-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "NDL-DC 1303392-Unknown Artist-（無題）-crd.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303392-Unknown_Artist-%EF%BC%88%E7%84%A1%E9%A1%8C%EF%BC%89-crd.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/NDL-DC_1303392-Unknown_Artist-%EF%BC%88%E7%84%A1%E9%A1%8C%EF%BC%89-crd.jpg/1920px-NDL-DC_1303392-Unknown_Artist-%EF%BC%88%E7%84%A1%E9%A1%8C%EF%BC%89-crd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "",
+    "date": "",
+    "description": "from the picture album \"Ansei ōjishin-e\"",
+    "width": 4791,
+    "height": 3228,
+    "file": "2-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 3,
+  "query": "commons: namazu-e catfish",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Takemikazuchi-pins-Namazu-with-Kaname-ishi-spirit-stone-1855.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Takemikazuchi-pins-Namazu-with-Kaname-ishi-spirit-stone-1855.png",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Takemikazuchi-pins-Namazu-with-Kaname-ishi-spirit-stone-1855.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown (Edo Period, 1855)",
+    "date": "1855-10-14",
+    "description": "After the Great Ansei earthquake of 1855, which struck Edo (now Tokyo) with a magnitude of 7.0 and claimed about 7000 casualties, the belief that giant catfish had caused the natural disaster rapidly gained in popularity. Within days of the earthquake, a new type of color woodblock print called nama",
+    "width": 1000,
+    "height": 1463,
+    "file": "3-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Namazu-e - Namazu the saviour.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Namazu-e_-_Namazu_the_saviour.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Namazu-e_-_Namazu_the_saviour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "unnkown",
+    "date": "Edo - 1855",
+    "description": "鯰絵 「世直し鯰の情」 安政２年の地震の瓦版",
+    "width": 450,
+    "height": 641,
+    "file": "3-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Namazu-e - Kashima absent-minded.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Namazu-e_-_Kashima_absent-minded.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Namazu-e_-_Kashima_absent-minded.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "Edo - 1855",
+    "description": "Namazu-e (catfish picture). The deity Ebisu falls asleep while guarding the foundation stone (kaname ishi) for Kashima, allowing the Namazu to cause the quake that destroys Edo. Kashima (aka Takemikazuchi, enshrined at Kashima shrine) is seen returning on horseback, too late. The thunder deity is se",
+    "width": 545,
+    "height": 800,
+    "file": "3-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Kashima-kanameishi-shinzu-namazu-e.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Kashima-kanameishi-shinzu-namazu-e.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Kashima-kanameishi-shinzu-namazu-e.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "Edo period. ca. 1855[1]",
+    "description": "Title:Kashima kanameishi shinzu (\"Kashima foundation stone's true depiction\"). Above:Kashima Shrine and foundation stone. Below: Kashima's deity Takemikazuchi controlling the earthquake-causing giant catfish. A namazu-e (catfish art) type woodblock print.",
+    "width": 540,
+    "height": 800,
+    "file": "3-4.jpg"
+   }
+  ]
+ },
+ {
+  "k": 4,
+  "query": "europeana: namazu-e",
+  "results": []
+ },
+ {
+  "k": 5,
+  "query": "loc: catfish earthquake print",
+  "results": []
+ },
+ {
+  "k": 6,
+  "query": "met: catfish",
+  "results": [
+   {
+    "source": "met",
+    "title": "Tunic with Confronting Catfish",
+    "page": "https://www.metmuseum.org/art/collection/search/307975",
+    "thumb": "https://images.metmuseum.org/CRDImages/ao/original/DT829.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Nasca-Wari",
+    "date": "800–850 CE",
+    "description": "Nasca-Wari, Camelid hair, tapestry-weave",
+    "width": 1905,
+    "height": 961,
+    "file": "6-1.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Netsuke with Decoration of Monkeys and Catfish",
+    "page": "https://www.metmuseum.org/art/collection/search/60182",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/LC-10_211_875-001.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Japan",
+    "date": "19th century",
+    "description": "Japan, Ivory",
+    "width": 4000,
+    "height": 2667,
+    "file": "6-2.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Pedestal dish with catfish and aquatic plants décor",
+    "page": "https://www.metmuseum.org/art/collection/search/853978",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP-24021-001.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "North Central Thailand, Sukhothai",
+    "date": "15th century",
+    "description": "North Central Thailand, Sukhothai, Stoneware with iron-underglaze painted décor over a white slip",
+    "width": 4000,
+    "height": 3000,
+    "file": "6-3.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Covered box with catfish",
+    "page": "https://www.metmuseum.org/art/collection/search/898206",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP-28251-003.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "China",
+    "date": "18th century",
+    "description": "China, Blue glass",
+    "width": 4000,
+    "height": 3000,
+    "file": "6-4.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Catfish, from Fish from American Waters series (N39) for Allen & Ginter Cigarettes",
+    "page": "https://www.metmuseum.org/art/collection/search/420102",
+    "thumb": "https://images.metmuseum.org/CRDImages/dp/original/DP839067.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Allen & Ginter",
+    "date": "1889",
+    "description": "Commercial color lithograph",
+    "width": 3025,
+    "height": 2766,
+    "file": "6-5.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Catfish, from the series Fishers and Fish (N74) for Duke brand cigarettes",
+    "page": "https://www.metmuseum.org/art/collection/search/423314",
+    "thumb": "https://images.metmuseum.org/CRDImages/dp/original/DPB882831.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Knapp & Company",
+    "date": "1888",
+    "description": "Commercial color lithograph",
+    "width": 1538,
+    "height": 2818,
+    "file": "6-6.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Catfish, from the Fish from American Waters series (N8) for Allen & Ginter Cigarettes Brands",
+    "page": "https://www.metmuseum.org/art/collection/search/407062",
+    "thumb": "https://images.metmuseum.org/CRDImages/dp/original/DP830384.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Allen & Ginter",
+    "date": "1889",
+    "description": "Commercial color lithograph",
+    "width": 2928,
+    "height": 1659,
+    "file": "6-7.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Fish Pendant",
+    "page": "https://www.metmuseum.org/art/collection/search/546742",
+    "thumb": "https://images.metmuseum.org/CRDImages/eg/original/DP109373.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "",
+    "date": "ca. 1878–1749 B.C.",
+    "description": "Turquoise, gold",
+    "width": 2602,
+    "height": 3616,
+    "file": "6-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 7,
+  "query": "openverse: namazu catfish earthquake",
+  "results": []
+ },
+ {
+  "k": 8,
+  "query": "openverse: kanameishi",
+  "results": []
+ },
+ {
+  "k": 9,
+  "query": "openverse: Kashima Jingu",
+  "results": [
+   {
+    "source": "openverse/flickr",
+    "title": "Kashima-jingu Sta.",
+    "page": "https://www.flickr.com/photos/59407191@N04/30425568841",
+    "thumb": "https://live.staticflickr.com/5761/30425568841_73b863caca_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "elminium",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "9-1.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Kashima-jingu Shrine",
+    "page": "https://www.flickr.com/photos/59407191@N04/30425572581",
+    "thumb": "https://live.staticflickr.com/5613/30425572581_368afc3289_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "elminium",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 768,
+    "file": "9-2.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Kashima-jingu Shrine",
+    "page": "https://www.flickr.com/photos/59407191@N04/29881475344",
+    "thumb": "https://live.staticflickr.com/5591/29881475344_ef87c82afd_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "elminium",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 768,
+    "file": "9-3.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Gligar in Kashima, Ibaraki 20 (Kashima jingu shrine)",
+    "page": "https://www.flickr.com/photos/42160904@N08/16573399873",
+    "thumb": "https://live.staticflickr.com/5347/16573399873_1806968a08_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Kasadera",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 768,
+    "file": "9-4.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Gligar in Kashima, Ibaraki 18 (Kashima jingu shrine)",
+    "page": "https://www.flickr.com/photos/42160904@N08/17193580735",
+    "thumb": "https://live.staticflickr.com/5339/17193580735_587c532701_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Kasadera",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 768,
+    "file": "9-5.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Gligar in Kashima, Ibaraki 44 (Kashima jingu shrine)",
+    "page": "https://www.flickr.com/photos/42160904@N08/17007517269",
+    "thumb": "https://live.staticflickr.com/7621/17007517269_d93b0dac51_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Kasadera",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 758,
+    "file": "9-6.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Gligar in Kashima, Ibaraki 41 (Kashima jingu shrine)",
+    "page": "https://www.flickr.com/photos/42160904@N08/17167726826",
+    "thumb": "https://live.staticflickr.com/7594/17167726826_afd9f514d0_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Kasadera",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 761,
+    "file": "9-7.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Gligar in Kashima, Ibaraki 5 (Kashima jingu shrine)",
+    "page": "https://www.flickr.com/photos/42160904@N08/17191889492",
+    "thumb": "https://live.staticflickr.com/8773/17191889492_5fe99fa9a5_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Kasadera",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 768,
+    "file": "9-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 10,
+  "query": "commons: Kanameishi Kashima",
+  "results": [
+   {
+    "source": "commons",
+    "title": "“Kanameishi” in Kashima Shrine.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:%E2%80%9CKanameishi%E2%80%9D_in_Kashima_Shrine.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/%E2%80%9CKanameishi%E2%80%9D_in_Kashima_Shrine.JPG/1920px-%E2%80%9CKanameishi%E2%80%9D_in_Kashima_Shrine.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "そらみみ",
+    "date": "2014-03-08 12:00:46",
+    "description": "鹿島神宮・要石",
+    "width": 3177,
+    "height": 2383,
+    "file": "10-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Kashima-jingu kanameishi-2.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Kashima-jingu_kanameishi-2.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Kashima-jingu_kanameishi-2.JPG/1920px-Kashima-jingu_kanameishi-2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC0",
+    "artist": "Saigen Jiro",
+    "date": "2013-07-21 11:03:16",
+    "description": "鹿島神宮 要石",
+    "width": 6016,
+    "height": 4000,
+    "file": "10-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Kashima-jingu kanameishi-1.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Kashima-jingu_kanameishi-1.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Kashima-jingu_kanameishi-1.JPG/1920px-Kashima-jingu_kanameishi-1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC0",
+    "artist": "Saigen Jiro",
+    "date": "2013-07-21 11:02:26",
+    "description": "鹿島神宮 要石 遠景",
+    "width": 5928,
+    "height": 3864,
+    "file": "10-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "“Kanameishi” in Kashima Shrine 2.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:%E2%80%9CKanameishi%E2%80%9D_in_Kashima_Shrine_2.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/%E2%80%9CKanameishi%E2%80%9D_in_Kashima_Shrine_2.JPG/1920px-%E2%80%9CKanameishi%E2%80%9D_in_Kashima_Shrine_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "そらみみ",
+    "date": "2014-03-08 12:01:50",
+    "description": "鹿島神宮・要石",
+    "width": 3264,
+    "height": 2448,
+    "file": "10-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Kashima-jingu kanameishi.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Kashima-jingu_kanameishi.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Kashima-jingu_kanameishi.jpg/1920px-Kashima-jingu_kanameishi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "Kiku-zou",
+    "date": "2009-12-13",
+    "description": "\"Kanameishi\" stone in Kashima-jingu Shrine (Kashima-city, Ibaraki)",
+    "width": 2048,
+    "height": 1536,
+    "file": "10-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Kanameishi key-stone of Kashima Amatarashiwake-jinja shrine.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Kanameishi_key-stone_of_Kashima_Amatarashiwake-jinja_shrine.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Kanameishi_key-stone_of_Kashima_Amatarashiwake-jinja_shrine.JPG/1920px-Kanameishi_key-stone_of_Kashima_Amatarashiwake-jinja_shrine.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "Bachstelze",
+    "date": "2010-05-31",
+    "description": "鹿島天足和気神社の要石",
+    "width": 3072,
+    "height": 2304,
+    "file": "10-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "鹿島神宮要石 - panoramio.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:%E9%B9%BF%E5%B3%B6%E7%A5%9E%E5%AE%AE%E8%A6%81%E7%9F%B3_-_panoramio.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/%E9%B9%BF%E5%B3%B6%E7%A5%9E%E5%AE%AE%E8%A6%81%E7%9F%B3_-_panoramio.jpg/1920px-%E9%B9%BF%E5%B3%B6%E7%A5%9E%E5%AE%AE%E8%A6%81%E7%9F%B3_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY 3.0",
+    "artist": "松浦党",
+    "date": "Taken on 10 July 2010",
+    "description": "鹿島神宮要石",
+    "width": 1944,
+    "height": 2592,
+    "file": "10-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "鹿島神宮（要石） - panoramio.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:%E9%B9%BF%E5%B3%B6%E7%A5%9E%E5%AE%AE%EF%BC%88%E8%A6%81%E7%9F%B3%EF%BC%89_-_panoramio.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/%E9%B9%BF%E5%B3%B6%E7%A5%9E%E5%AE%AE%EF%BC%88%E8%A6%81%E7%9F%B3%EF%BC%89_-_panoramio.jpg/1920px-%E9%B9%BF%E5%B3%B6%E7%A5%9E%E5%AE%AE%EF%BC%88%E8%A6%81%E7%9F%B3%EF%BC%89_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY 3.0",
+    "artist": "Mr Montarou",
+    "date": "Taken on 20 November 2011",
+    "description": "鹿島神宮（要石）",
+    "width": 2770,
+    "height": 4163,
+    "file": "10-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 11,
+  "query": "commons: Ansei Edo earthquake",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Kawaraban-of-1855-Ansei-Edo-earthquake.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Kawaraban-of-1855-Ansei-Edo-earthquake.png",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Kawaraban-of-1855-Ansei-Edo-earthquake.png/1920px-Kawaraban-of-1855-Ansei-Edo-earthquake.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "A news broadsheet “Kawaraban”, 1855",
+    "date": "1855-11-11",
+    "description": "A news broadsheet “Kawaraban” (tile-block printing) depicting the state of the damage after the Great Ansei earthquake that occurred on November 11, 1855. The earthquake severely damaged the Japanese capital Edo (Tokyo) through shaking and fire.",
+    "width": 1956,
+    "height": 902,
+    "file": "11-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "1855 Ansei Edo earthquake intensity.png",
+    "page": "https://commons.wikimedia.org/wiki/File:1855_Ansei_Edo_earthquake_intensity.png",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2b/1855_Ansei_Edo_earthquake_intensity.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "As6022014",
+    "date": "2012-02-22",
+    "description": "1855 Ansei Edo earthquake intensity",
+    "width": 512,
+    "height": 512,
+    "file": "11-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Damage caused by the Ansei Edo Earthquake, woodblock print, 1855 AD - Edo-Tokyo Museum - Sumida, Tokyo, Japan - DSC06714.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Damage_caused_by_the_Ansei_Edo_Earthquake,_woodblock_print,_1855_AD_-_Edo-Tokyo_Museum_-_Sumida,_Tokyo,_Japan_-_DSC06714.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Damage_caused_by_the_Ansei_Edo_Earthquake%2C_woodblock_print%2C_1855_AD_-_Edo-Tokyo_Museum_-_Sumida%2C_Tokyo%2C_Japan_-_DSC06714.jpg/1920px-Damage_caused_by_the_Ansei_Edo_Earthquake%2C_woodblock_print%2C_1855_AD_-_Edo-Tokyo_Museum_-_Sumida%2C_Tokyo%2C_Japan_-_DSC06714.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "Daderot",
+    "date": "1855",
+    "description": "Tile-block print (Kawaraban) of the damage caused by the Ansei Edo Earthquake in November 1855. in the Edo-Tokyo Museum - Sumida, Tokyo, Japan.",
+    "width": 5167,
+    "height": 2390,
+    "file": "11-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Victims who lost their homes in the Ansei Edo Earthquake, sleeping in the open, woodblock print, 1855 AD - Edo-Tokyo Museum - Sumida, Tokyo, Japan - DSC06718.jp",
+    "page": "https://commons.wikimedia.org/wiki/File:Victims_who_lost_their_homes_in_the_Ansei_Edo_Earthquake,_sleeping_in_the_open,_woodblock_print,_1855_AD_-_Edo-Tokyo_Museum_-_Sumida,_Tokyo,_Japan_-_DSC06718.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Victims_who_lost_their_homes_in_the_Ansei_Edo_Earthquake%2C_sleeping_in_the_open%2C_woodblock_print%2C_1855_AD_-_Edo-Tokyo_Museum_-_Sumida%2C_Tokyo%2C_Japan_-_DSC06718.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "Daderot",
+    "date": "2016-09-06 03:13:37",
+    "description": "Print in the Edo-Tokyo Museum - Sumida, Tokyo, Japan.",
+    "width": 3362,
+    "height": 4085,
+    "file": "11-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ansei Great Earthquake 1854 1855.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ansei_Great_Earthquake_1854_1855.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Ansei_Great_Earthquake_1854_1855.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown, 1854-1855",
+    "date": "between 1854 and 1855date QS:P,+1854-00-00T00:00:00Z/8,P1319",
+    "description": "Ansei_Great_Earthquake_1854_1855",
+    "width": 907,
+    "height": 600,
+    "file": "11-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Namazu-e - Kashima controls namazu.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Namazu-e_-_Kashima_controls_namazu.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/43/Namazu-e_-_Kashima_controls_namazu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "Edo - 1855",
+    "description": "Namazu-e - Kashima controls Namazu with his sword",
+    "width": 440,
+    "height": 622,
+    "file": "11-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Namazu4.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Namazu4.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Namazu4.jpg/1920px-Namazu4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "AnonymousUnknown author",
+    "date": "Edo - Ansei 2, month 10 = Nov. 1855",
+    "description": "Namazu-e - Daikoku redistributes wealthies's riches. A kawaraban (woodblock pamphlet type newspaper). Title:Jishin yoke no uta (earthquake-averting song). The kyōka poem inscribed Minakami no tsuge ni inochi wo tasukarite roku bu no uchini iruzo ureshiki \"(thanks to) the Water god's message (we are ",
+    "width": 3200,
+    "height": 4500,
+    "file": "11-7.jpg"
+   }
+  ]
+ },
+ {
+  "k": 12,
+  "query": "loc: Edo earthquake 1855",
+  "results": [],
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ {
+  "k": 13,
+  "query": "openverse: Izumo Taisha",
+  "results": [
+   {
+    "source": "openverse/flickr",
+    "title": "Izumo Taisha",
+    "page": "https://www.flickr.com/photos/53884652@N03/6672497543",
+    "thumb": "https://live.staticflickr.com/7009/6672497543_241a7ac633_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Imahinasyon Photography",
+    "date": "",
+    "description": "",
+    "width": 683,
+    "height": 1024,
+    "file": "13-1.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Izumo Taisha",
+    "page": "https://www.flickr.com/photos/53884652@N03/6620088231",
+    "thumb": "https://live.staticflickr.com/7171/6620088231_c0dbe8d1a7_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Imahinasyon Photography",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "13-2.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Izumo Taisha",
+    "page": "https://www.flickr.com/photos/53884652@N03/6672499663",
+    "thumb": "https://live.staticflickr.com/7018/6672499663_d07889b475_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Imahinasyon Photography",
+    "date": "",
+    "description": "",
+    "width": 683,
+    "height": 1024,
+    "file": "13-3.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Izumo Taisha",
+    "page": "https://www.flickr.com/photos/53884652@N03/6672498647",
+    "thumb": "https://live.staticflickr.com/7157/6672498647_11b1ee59bf_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Imahinasyon Photography",
+    "date": "",
+    "description": "",
+    "width": 683,
+    "height": 1024,
+    "file": "13-4.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Izumo Taisha",
+    "page": "https://www.flickr.com/photos/53884652@N03/6620128651",
+    "thumb": "https://live.staticflickr.com/7016/6620128651_3916d2daf8_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Imahinasyon Photography",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "13-5.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Izumo Taisha",
+    "page": "https://www.flickr.com/photos/53884652@N03/6634138851",
+    "thumb": "https://live.staticflickr.com/7016/6634138851_e72d538740_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Imahinasyon Photography",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "13-6.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Izumo Taisha",
+    "page": "https://www.flickr.com/photos/53884652@N03/6634137073",
+    "thumb": "https://live.staticflickr.com/7011/6634137073_55196109b7_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Imahinasyon Photography",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "13-7.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Izumo Taisha",
+    "page": "https://www.flickr.com/photos/53884652@N03/6672496585",
+    "thumb": "https://live.staticflickr.com/7024/6672496585_1355150563_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "Imahinasyon Photography",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "13-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 14,
+  "query": "europeana: Japanese earthquake print",
+  "results": []
+ }
+]
