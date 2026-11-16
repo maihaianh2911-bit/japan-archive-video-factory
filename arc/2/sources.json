@@ -1,0 +1,403 @@
+{
+ "pictures": [
+  {
+   "name": "kw",
+   "src": "1/1-1.jpg",
+   "title": "Higo Amabie.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "1846",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Higo_Amabie.jpg"
+  },
+  {
+   "name": "kwfig",
+   "src": "1/1-3.jpg",
+   "title": "Amabie detail, from- 肥後国海中の怪（アマビエ／アマビヱ） (cropped).png",
+   "artist": "『アマビエ（アマビヱ）の図』（京都大学附属図書館所蔵）を改変（※当該画像ファイルを複製したうえで、周辺画像を削除）",
+   "date": "2020-04-19",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Amabie_detail,_from-_%E8%82%A5%E5%BE%8C%E5%9B%BD%E6%B5%B7%E4%B8%AD%E3%81%AE%E6%80%AA%EF%BC%88%E3%82%A2%E3%83%9E%E3%83%93%E3%82%A8%EF%BC%8F%E3%82%A2%E3%83%9E%E3%83%93%E3%83%B1%EF%BC%89_(cropped).png"
+  },
+  {
+   "name": "amabiko",
+   "src": "1/2-1.jpg",
+   "title": "Amabiko nyūdō.jpg",
+   "artist": "Tanapat user",
+   "date": "2023-06-15",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Amabiko_ny%C5%ABd%C5%8D.jpg"
+  },
+  {
+   "name": "lib",
+   "src": "1/13-1.jpg",
+   "title": "Kyoto University Library 2018 a.jpg",
+   "artist": "桂鷺淵",
+   "date": "2018-04-12 11:23:43",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kyoto_University_Library_2018_a.jpg"
+  },
+  {
+   "name": "mask",
+   "src": "1/1-8.jpg",
+   "title": "Amabie design mask.jpg",
+   "artist": "番記者",
+   "date": "2020-06-16 11:08:13",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Amabie_design_mask.jpg"
+  },
+  {
+   "name": "poster",
+   "src": "1/1-7.jpg",
+   "title": "Kitsch! Amabie!!.jpg",
+   "artist": "京都新観光提言懇談会メンバー",
+   "date": "2020-05-17 13:26:32",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kitsch!_Amabie!!.jpg"
+  },
+  {
+   "name": "tile",
+   "src": "1/1-4.jpg",
+   "title": "Nakayama-shinmeisha amabie ac (2).jpg",
+   "artist": "Asturio Cantabrio",
+   "date": "2023-12",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nakayama-shinmeisha_amabie_ac_(2).jpg"
+  }
+ ],
+ "shots": [
+  {
+   "scene": 1,
+   "shot": 1,
+   "start": 0.0,
+   "end": 6.62,
+   "said": [
+    "江戸時代の終わり、弘化三年の四月。",
+    "今の熊本の海に、夜ごと光るものが現れたといいます。"
+   ],
+   "label": "瓦版「肥後国海中の怪」",
+   "title": "熊本の海の怪",
+   "image": "kw",
+   "page": "https://commons.wikimedia.org/wiki/File:Higo_Amabie.jpg",
+   "credit": "京都大学附属図書館 / Public domain",
+   "view": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 1.316,
+     "box": [
+      0.49,
+      0.2,
+      0.57,
+      0.72
+     ]
+    },
+    {
+     "at_s": 3.718,
+     "box": [
+      0.875,
+      0.08,
+      0.945,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 2,
+   "shot": 1,
+   "start": 6.62,
+   "end": 15.435,
+   "said": [
+    "役人が見に行くと、",
+    "海の中から不思議なものが姿を見せました。",
+    "長い髪に、くちばしのような口。",
+    "体はうろこに覆われ、足は三本。"
+   ],
+   "label": "瓦版に描かれたアマビエ",
+   "title": "アマビエ現る",
+   "image": "kw",
+   "page": "https://commons.wikimedia.org/wiki/File:Higo_Amabie.jpg",
+   "credit": "京都大学附属図書館 / Public domain",
+   "view": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "detail": null,
+   "zoom": {
+    "to": [
+     0.04,
+     0.22,
+     0.4,
+     0.8
+    ],
+    "at": 3.4,
+    "dur": 1.8
+   },
+   "marks": [
+    {
+     "at_s": 11.931,
+     "box": [
+      0.115,
+      0.33,
+      0.2,
+      0.415
+     ]
+    },
+    {
+     "at_s": 13.446,
+     "box": [
+      0.16,
+      0.42,
+      0.27,
+      0.59
+     ]
+    },
+    {
+     "at_s": 14.478,
+     "box": [
+      0.13,
+      0.65,
+      0.3,
+      0.77
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 2,
+   "shot": 2,
+   "start": 15.435,
+   "end": 17.117,
+   "said": [
+    "それは「アマビエ」と名乗り、"
+   ],
+   "label": "アマビエ（弘化三年の瓦版）",
+   "title": "アマビエ現る",
+   "image": "kwfig",
+   "page": "https://commons.wikimedia.org/wiki/File:Amabie_detail,_from-_%E8%82%A5%E5%BE%8C%E5%9B%BD%E6%B5%B7%E4%B8%AD%E3%81%AE%E6%80%AA%EF%BC%88%E3%82%A2%E3%83%9E%E3%83%93%E3%82%A8%EF%BC%8F%E3%82%A2%E3%83%9E%E3%83%93%E3%83%B1%EF%BC%89_(cropped).png",
+   "credit": "京都大学附属図書館 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 2,
+   "shot": 3,
+   "start": 17.117,
+   "end": 25.941,
+   "said": [
+    "「これから六年は豊作が続く。",
+    "だが、もし病がはやったら、",
+    "わたしの姿を描いて人々に見せよ」と告げて、",
+    "海へ消えたそうです。"
+   ],
+   "label": "瓦版に書かれたアマビエのことば",
+   "title": "アマビエ現る",
+   "image": "kw",
+   "page": "https://commons.wikimedia.org/wiki/File:Higo_Amabie.jpg",
+   "credit": "京都大学附属図書館 / Public domain",
+   "view": [
+    0.66,
+    0.05,
+    0.97,
+    0.8
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 19.81,
+     "box": [
+      0.69,
+      0.09,
+      0.765,
+      0.77
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 3,
+   "shot": 1,
+   "start": 25.941,
+   "end": 30.18,
+   "said": [
+    "この話は、町で売られた一枚刷りの瓦版で広まりました。"
+   ],
+   "label": "瓦版（京都大学附属図書館蔵）",
+   "title": "一枚の瓦版",
+   "image": "kw",
+   "page": "https://commons.wikimedia.org/wiki/File:Higo_Amabie.jpg",
+   "credit": "京都大学附属図書館 / Public domain",
+   "view": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 2,
+   "start": 30.18,
+   "end": 33.699,
+   "said": [
+    "その瓦版は、今も京都大学に残っています。"
+   ],
+   "label": "京都大学附属図書館",
+   "title": "一枚の瓦版",
+   "image": "lib",
+   "page": "https://commons.wikimedia.org/wiki/File:Kyoto_University_Library_2018_a.jpg",
+   "credit": "桂鷺淵 / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 3,
+   "start": 33.699,
+   "end": 40.2,
+   "said": [
+    "各地には、よく似た「アマビコ」という妖怪の話もあり、",
+    "アマビエはその書き間違いだという説もあります。"
+   ],
+   "label": "「尼彦入道」を描いた写本",
+   "title": "一枚の瓦版",
+   "image": "amabiko",
+   "page": "https://commons.wikimedia.org/wiki/File:Amabiko_ny%C5%ABd%C5%8D.jpg",
+   "credit": "Tanapat user / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 34.885,
+     "box": [
+      0.865,
+      0.09,
+      0.975,
+      0.4
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 4,
+   "shot": 1,
+   "start": 40.2,
+   "end": 42.527,
+   "said": [
+    "長いあいだ忘れられていたアマビエ。"
+   ],
+   "label": "アマビエ（弘化三年の瓦版）",
+   "title": "二〇二〇年",
+   "image": "kwfig",
+   "page": "https://commons.wikimedia.org/wiki/File:Amabie_detail,_from-_%E8%82%A5%E5%BE%8C%E5%9B%BD%E6%B5%B7%E4%B8%AD%E3%81%AE%E6%80%AA%EF%BC%88%E3%82%A2%E3%83%9E%E3%83%93%E3%82%A8%EF%BC%8F%E3%82%A2%E3%83%9E%E3%83%93%E3%83%B1%EF%BC%89_(cropped).png",
+   "credit": "京都大学附属図書館 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 4,
+   "shot": 2,
+   "start": 42.527,
+   "end": 46.136,
+   "said": [
+    "ところが二〇二〇年、新型コロナウイルスが広がると、"
+   ],
+   "label": "アマビエのマスク（2020年）",
+   "title": "二〇二〇年",
+   "image": "mask",
+   "page": "https://commons.wikimedia.org/wiki/File:Amabie_design_mask.jpg",
+   "credit": "番記者 / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 4,
+   "shot": 3,
+   "start": 46.136,
+   "end": 49.619,
+   "said": [
+    "病よけとして、多くの人がその姿を描き始めました。"
+   ],
+   "label": "疫病よけのアマビエの絵（2020年）",
+   "title": "二〇二〇年",
+   "image": "poster",
+   "page": "https://commons.wikimedia.org/wiki/File:Kitsch!_Amabie!!.jpg",
+   "credit": "京都新観光提言懇談会メンバー / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 5,
+   "shot": 1,
+   "start": 49.619,
+   "end": 52.578,
+   "said": [
+    "百七十年以上前の小さな瓦版が、"
+   ],
+   "label": "瓦版「肥後国海中の怪」（1846年）",
+   "title": "人々の願い",
+   "image": "kw",
+   "page": "https://commons.wikimedia.org/wiki/File:Higo_Amabie.jpg",
+   "credit": "京都大学附属図書館 / Public domain",
+   "view": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "detail": null,
+   "zoom": {
+    "to": [
+     0.04,
+     0.22,
+     0.4,
+     0.8
+    ],
+    "at": 19.2,
+    "dur": 2.4
+   },
+   "marks": []
+  },
+  {
+   "scene": 5,
+   "shot": 2,
+   "start": 52.578,
+   "end": 56.343,
+   "said": [
+    "ふたたび人々の願いを集めたのです。"
+   ],
+   "label": "アマビエの鬼瓦（中山神明社）",
+   "title": "人々の願い",
+   "image": "tile",
+   "page": "https://commons.wikimedia.org/wiki/File:Nakayama-shinmeisha_amabie_ac_(2).jpg",
+   "credit": "Asturio Cantabrio / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  }
+ ]
+}
