@@ -35,6 +35,18 @@
   },
   "ladder": {
    "src": "2/3-1.jpg"
+  },
+  "musashi": {
+   "src": "1/8-8.jpg"
+  },
+  "map": {
+   "src": "1/8-5.jpg"
+  },
+  "matois": {
+   "src": "2/7-1.jpg"
+  },
+  "jacket": {
+   "src": "2/10-5.jpg"
   }
  },
  "scenes": [
@@ -50,6 +62,12 @@
      "img": "street",
      "label": "歌川広重「駿河町」（1836年頃）",
      "credit": "The Metropolitan Museum of Art / CC0"
+    },
+    {
+     "at": 4,
+     "img": "musashi",
+     "label": "江戸の大火を描いた版本（1661年）",
+     "credit": "Heineken, Ty & Kiyoko / CC BY-SA 3.0"
     }
    ]
   },
@@ -57,26 +75,33 @@
    "shots": [
     {
      "img": "scroll",
-     "label": "「江戸火事図巻」（1814年）",
-     "credit": "Wikimedia Commons / Public domain",
      "view": [
       0.42,
       0.0,
       1.0,
       1.0
-     ]
+     ],
+     "label": "「江戸火事図巻」（1814年）",
+     "credit": "Wikimedia Commons / Public domain"
     },
     {
-     "at": 5,
+     "at": 7,
      "img": "montanus",
      "label": "江戸の大火の銅版画（1669年）",
      "credit": "Wolfgang Michel / CC BY-SA 3.0"
     },
     {
-     "at": 6,
+     "at": 8,
      "img": "stupa",
      "label": "明暦の大火の供養塔（回向院）",
      "credit": "椿玄 / CC BY-SA 4.0"
+    },
+    {
+     "at": 9,
+     "img": "map",
+     "label": "明暦の大火で焼けた範囲（推定）",
+     "credit": "Fraxinus2 / CC BY-SA 4.0",
+     "still": true
     }
    ]
   },
@@ -88,23 +113,41 @@
      "credit": "Wikimedia Commons / Public domain"
     },
     {
-     "at": 9,
+     "at": 13,
      "img": "ooka",
      "label": "大岡越前（大岡忠相）",
      "credit": "Wikimedia Commons / Public domain"
     },
     {
-     "at": 10,
+     "at": 14,
      "img": "brigades",
-     "label": "江戸の町火消を描いた錦絵（1852年）",
-     "credit": "Wikimedia Commons / Public domain",
-     "still": true,
      "view": [
       0.36,
       0.14,
       0.72,
       0.74
-     ]
+     ],
+     "label": "江戸の町火消を描いた錦絵（1852年）",
+     "credit": "Wikimedia Commons / Public domain",
+     "still": true
+    },
+    {
+     "at": 16,
+     "img": "matois",
+     "label": "火消の纏（田原市民俗資料館）",
+     "credit": "Yanajin33 / CC BY-SA 3.0"
+    },
+    {
+     "at": 16.55,
+     "img": "jacket",
+     "label": "火消の半纏（19世紀）",
+     "credit": "The Metropolitan Museum of Art / CC0"
+    },
+    {
+     "at": 17,
+     "img": "tools",
+     "label": "火消の道具（1870年代の写真）",
+     "credit": "Raimund von Stillfried / Public domain"
     }
    ]
   },
@@ -116,7 +159,7 @@
      "credit": "Raimund von Stillfried / Public domain"
     },
     {
-     "at": 15,
+     "at": 21,
      "img": "matoi",
      "label": "纏（まとい）",
      "credit": "Bject / CC BY-SA 4.0"
@@ -131,13 +174,13 @@
      "credit": "Joe Mabel / CC BY-SA 3.0"
     },
     {
-     "at": 18,
+     "at": 24,
      "img": "dezome",
      "label": "出初式（2025年・長崎県西海市）",
      "credit": "U.S. Navy / Public domain"
     },
     {
-     "at": 19,
+     "at": 25,
      "img": "ladder",
      "label": "はしご乗りの練習場（2014年）",
      "credit": "Nori Norisa / CC BY 2.0"
