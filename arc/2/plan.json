@@ -1,5 +1,5 @@
 {
- "duration": 56.343,
+ "duration": 67.347,
  "theme": "paper",
  "fade": 0.6,
  "shots": [
@@ -341,7 +341,42 @@
   },
   {
    "s": 40.2,
-   "e": 42.527,
+   "e": 44.445,
+   "scene": 3,
+   "shot": 4,
+   "label": "アマビコの図（1916年の本より）",
+   "title": "一枚の瓦版",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "物集高見 / Public domain",
+   "bar": 226.0,
+   "captionY": null,
+   "subY": 1508.0,
+   "pics": [
+    {
+     "src": "arc/2/img/amabiko2.jpg",
+     "w": 1222,
+     "h": 1400,
+     "box": [
+      140.7,
+      523.0,
+      798.7,
+      915
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0.05
+    }
+   ],
+   "marks": []
+  },
+  {
+   "s": 44.445,
+   "e": 46.772,
    "scene": 4,
    "shot": 1,
    "label": "アマビエ（弘化三年の瓦版）",
@@ -375,8 +410,8 @@
    "marks": []
   },
   {
-   "s": 42.527,
-   "e": 46.136,
+   "s": 46.772,
+   "e": 50.381,
    "scene": 4,
    "shot": 2,
    "label": "アマビエのマスク（2020年）",
@@ -410,8 +445,8 @@
    "marks": []
   },
   {
-   "s": 46.136,
-   "e": 49.619,
+   "s": 50.381,
+   "e": 53.864,
    "scene": 4,
    "shot": 3,
    "label": "疫病よけのアマビエの絵（2020年）",
@@ -445,57 +480,82 @@
    "marks": []
   },
   {
-   "s": 49.619,
-   "e": 52.578,
-   "scene": 5,
-   "shot": 1,
-   "label": "瓦版「肥後国海中の怪」（1846年）",
-   "title": "人々の願い",
+   "s": 53.864,
+   "e": 55.433,
+   "scene": 4,
+   "shot": 4,
+   "label": "アマビエの風鈴（東京・台東区）",
+   "title": "二〇二〇年",
    "titleSize": 90,
    "caption": "",
-   "credit": "京都大学附属図書館 / Public domain",
-   "bar": 310.9,
+   "credit": "Real Estate Japan Photos / CC BY 2.0",
+   "bar": 369.3,
    "captionY": null,
    "subY": 1472,
    "pics": [
     {
-     "src": "arc/2/img/kw.jpg",
-     "w": 1757,
-     "h": 1390,
+     "src": "arc/2/img/chimes.jpg",
+     "w": 1400,
+     "h": 934,
      "box": [
       69.0,
-      607.9,
+      666.3,
       942,
-      745.2
+      628.4
      ],
      "view": [
-      0.0,
-      0.0,
-      1.0,
-      1.0
+      0,
+      0,
+      1,
+      1
      ],
-     "drift": 0,
-     "zoom": {
-      "to": [
-       0.0,
-       0.22,
-       0.58,
-       0.8
-      ],
-      "s": 50.311,
-      "e": 52.711
-     }
+     "drift": 0.05
     }
    ],
    "marks": []
   },
   {
-   "s": 52.578,
-   "e": 56.343,
-   "scene": 5,
-   "shot": 2,
-   "label": "アマビエの鬼瓦（中山神明社）",
-   "title": "人々の願い",
+   "s": 55.433,
+   "e": 57.166,
+   "scene": 4,
+   "shot": 5,
+   "label": "アマビエの飴（東京・巣鴨）",
+   "title": "二〇二〇年",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Real Estate Japan Photos / CC BY 2.0",
+   "bar": 369.3,
+   "captionY": null,
+   "subY": 1472,
+   "pics": [
+    {
+     "src": "arc/2/img/candy.jpg",
+     "w": 1400,
+     "h": 934,
+     "box": [
+      69.0,
+      666.3,
+      942,
+      628.4
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0.05
+    }
+   ],
+   "marks": []
+  },
+  {
+   "s": 57.166,
+   "e": 60.623,
+   "scene": 4,
+   "shot": 6,
+   "label": "アマビエの瓦（中山神明社）",
+   "title": "二〇二〇年",
    "titleSize": 90,
    "caption": "",
    "credit": "Asturio Cantabrio / CC BY-SA 4.0",
@@ -520,6 +580,51 @@
       1
      ],
      "drift": 0.05
+    }
+   ],
+   "marks": []
+  },
+  {
+   "s": 60.623,
+   "e": 67.347,
+   "scene": 5,
+   "shot": 1,
+   "label": "瓦版「肥後国海中の怪」（1846年）",
+   "title": "人々の願い",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "京都大学附属図書館 / Public domain",
+   "bar": 310.9,
+   "captionY": null,
+   "subY": 1472,
+   "pics": [
+    {
+     "src": "arc/2/img/kw.jpg",
+     "w": 1757,
+     "h": 1390,
+     "box": [
+      69.0,
+      607.9,
+      942,
+      745.2
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0,
+     "zoom": {
+      "to": [
+       0.0,
+       0.22,
+       0.58,
+       0.8
+      ],
+      "s": 61.315,
+      "e": 63.715
+     }
     }
    ],
    "marks": []
@@ -593,7 +698,7 @@
   {
    "s": 21.477,
    "e": 24.245,
-   "text": "わたしの姿を描いて人々に\n見せよ」と告げて、",
+   "text": "わたしの姿を描いて\n人々に見せよ」と告げて、",
    "hl": [
     "わたしの姿を描いて"
    ]
@@ -638,35 +743,59 @@
   },
   {
    "s": 40.2,
-   "e": 42.527,
+   "e": 44.445,
+   "text": "アマビコの姿も、いくつもの\n瓦版や写本に描かれています。",
+   "hl": [
+    "写本"
+   ]
+  },
+  {
+   "s": 44.445,
+   "e": 46.772,
    "text": "長いあいだ忘れられていたアマビエ。",
    "hl": []
   },
   {
-   "s": 42.527,
-   "e": 46.136,
+   "s": 46.772,
+   "e": 50.381,
    "text": "ところが二〇二〇年、\n新型コロナウイルスが広がると、",
    "hl": [
     "二〇二〇年"
    ]
   },
   {
-   "s": 46.136,
-   "e": 49.619,
+   "s": 50.381,
+   "e": 53.864,
    "text": "病よけとして、\n多くの人がその姿を描き始めました。",
    "hl": [
     "病よけ"
    ]
   },
   {
-   "s": 49.619,
-   "e": 52.578,
+   "s": 53.864,
+   "e": 57.166,
+   "text": "マスクや風鈴、お菓子にまで、\nその姿が描かれました。",
+   "hl": [
+    "マスクや風鈴"
+   ]
+  },
+  {
+   "s": 57.166,
+   "e": 60.623,
+   "text": "神社には、アマビエをかたどった瓦も\n作られています。",
+   "hl": [
+    "瓦"
+   ]
+  },
+  {
+   "s": 60.623,
+   "e": 63.582,
    "text": "百七十年以上前の\n小さな瓦版が、",
    "hl": []
   },
   {
-   "s": 52.578,
-   "e": 56.043,
+   "s": 63.582,
+   "e": 67.047,
    "text": "ふたたび人々の願いを\n集めたのです。",
    "hl": [
     "願い"
@@ -739,20 +868,32 @@
    "src": "arc/2/voice/line_16.mp3"
   },
   {
-   "s": 42.677,
+   "s": 44.595,
    "src": "arc/2/voice/line_17.mp3"
   },
   {
-   "s": 46.286,
+   "s": 46.922,
    "src": "arc/2/voice/line_18.mp3"
   },
   {
-   "s": 49.769,
+   "s": 50.531,
    "src": "arc/2/voice/line_19.mp3"
   },
   {
-   "s": 52.728,
+   "s": 54.014,
    "src": "arc/2/voice/line_20.mp3"
+  },
+  {
+   "s": 57.316,
+   "src": "arc/2/voice/line_21.mp3"
+  },
+  {
+   "s": 60.773,
+   "src": "arc/2/voice/line_22.mp3"
+  },
+  {
+   "s": 63.732,
+   "src": "arc/2/voice/line_23.mp3"
   }
  ],
  "music": "arc/2/bed.wav",
@@ -762,6 +903,11 @@
    "family": "Noto Serif JP",
    "file": "arc/fonts/noto-serif-jp-65-wght-normal.woff2",
    "range": "U+b1,U+309b,U+4e5e,U+51f1,U+5506,U+55c5,U+58cc,U+59d1,U+5c51,U+5ef7,U+6284,U+62d7,U+6689,U+673d,U+6a2b,U+6a8e,U+6a9c,U+6d63,U+6dd1,U+70b8,U+7235,U+72db,U+72f8,U+7560,U+7c9b,U+7ce7,U+7e1e,U+80af,U+82eb,U+8463,U+8499,U+85dd,U+86ee,U+8a60,U+8a6e,U+8c79,U+8e87,U+8e8a,U+8f5f,U+9010,U+918d,U+9190,U+965b,U+97fb,U+9ab8,U+9bad,U+9d3b,U+9d5c,U+9dfa,U+9e93"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-68-wght-normal.woff2",
+   "range": "U+251c,U+2523,U+4e14,U+545f,U+54bd,U+553e,U+55dc,U+56da,U+589c,U+5b55,U+5bb5,U+5ce1,U+5df4,U+5eb6,U+5ec9,U+6191,U+62f7,U+6357,U+64a5,U+6591,U+65bc,U+6897,U+6e1a,U+7063,U+711a,U+721b,U+722c,U+75b9,U+75d5,U+75fa,U+7766,U+7aae,U+7b48,U+7b8b,U+7d21,U+7e55,U+7f75,U+842c,U+8910,U+8a63,U+8b39,U+8b5a,U+8cdc,U+8d74,U+907d,U+91e7,U+9306,U+96bc,U+98f4,U+9ac4"
   },
   {
    "family": "Noto Serif JP",
@@ -780,6 +926,11 @@
   },
   {
    "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-76-wght-normal.woff2",
+   "range": "U+2266-2267,U+4f2f,U+5208,U+5451,U+546a,U+5589,U+576a,U+5815,U+5a9a,U+5b9b,U+5c3a,U+5efb,U+5faa,U+6109,U+6643,U+6652,U+695a,U+69fd,U+6b86,U+6bb4,U+6daf,U+7089,U+70cf,U+7a00,U+7a4f,U+7b39,U+7d33,U+80e1,U+828b,U+82a6,U+86cd,U+8c8c,U+8cca,U+8df3,U+9077,U+9175,U+91dc,U+925b,U+9262,U+9271,U+92ed,U+9855,U+9905,U+9d28,U+ff3f,U+ff58,U+ff68,U+ff6d,U+ff9c"
+  },
+  {
+   "family": "Noto Serif JP",
    "file": "arc/fonts/noto-serif-jp-79-wght-normal.woff2",
    "range": "U+25b3,U+30f5,U+4eae,U+4f46,U+4f51,U+5203,U+52ff,U+55a7,U+564c,U+565b,U+57f9,U+5805,U+5b64,U+5e06,U+5f70,U+5f90,U+60e8,U+6182,U+62f3,U+62fe,U+63aa,U+64a4,U+65d7,U+673a,U+6851,U+68cb,U+68df,U+6d1e,U+6e58,U+6e9d,U+77b3,U+7832,U+7c3f,U+7db4,U+7f70,U+80aa,U+80c6,U+8105,U+819d,U+8276,U+8679,U+8986,U+8c9d,U+8fc5,U+916c,U+9665,U+9699,U+96c0,U+9a19,U+ff8b"
   },
@@ -792,6 +943,11 @@
    "family": "Noto Serif JP",
    "file": "arc/fonts/noto-serif-jp-81-wght-normal.woff2",
    "range": "U+2010,U+2502,U+25b6,U+4f3a,U+514b,U+5265,U+52c3,U+5339,U+53ec,U+54c0,U+55b0,U+5854,U+5b8f,U+5cb3,U+5e84,U+60da,U+6247,U+6249,U+628a,U+62cd,U+65ac,U+6838,U+690e,U+6cf0,U+6f02,U+6f2c,U+6f70,U+708a,U+7434,U+75be,U+77ef,U+7c60,U+7c98,U+7d1b,U+7e2b,U+80a5,U+81e3,U+820c,U+8210,U+8475,U+862d,U+8650,U+8997,U+906d,U+91c8,U+9700,U+9727,U+9df9,U+ff3a,U+ff9a"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-82-wght-normal.woff2",
+   "range": "U+2103,U+5049,U+52b1,U+5320,U+5553,U+572d,U+58c7,U+5b5d,U+5bc2,U+5de3,U+5e61,U+5f80,U+61a9,U+67d0,U+67f4,U+6c88,U+6ca1,U+6ce5,U+6d78,U+6e9c,U+6f54,U+731b,U+73b2,U+74a7,U+74f6,U+75e9,U+7b20,U+7c8b,U+7f72,U+809d,U+8108,U+82b3,U+82bd,U+84b8,U+84c4,U+88c2,U+8ae6,U+8ef8,U+902e,U+9065,U+9326,U+935b,U+938c,U+9676,U+9694,U+96f7,U+9ed9,U+ff48,U+ff4c,U+ff81"
   },
   {
    "family": "Noto Serif JP",
@@ -950,6 +1106,11 @@
   },
   {
    "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-68-wght-normal.woff2",
+   "range": "U+251c,U+2523,U+4e14,U+545f,U+54bd,U+553e,U+55dc,U+56da,U+589c,U+5b55,U+5bb5,U+5ce1,U+5df4,U+5eb6,U+5ec9,U+6191,U+62f7,U+6357,U+64a5,U+6591,U+65bc,U+6897,U+6e1a,U+7063,U+711a,U+721b,U+722c,U+75b9,U+75d5,U+75fa,U+7766,U+7aae,U+7b48,U+7b8b,U+7d21,U+7e55,U+7f75,U+842c,U+8910,U+8a63,U+8b39,U+8b5a,U+8cdc,U+8d74,U+907d,U+91e7,U+9306,U+96bc,U+98f4,U+9ac4"
+  },
+  {
+   "family": "Noto Sans JP",
    "file": "arc/fonts/noto-sans-jp-72-wght-normal.woff2",
    "range": "U+4e91,U+508d,U+50e7,U+514e,U+51f6,U+5446,U+5504,U+584a,U+59a8,U+59d3,U+5a46,U+5ac9,U+6020,U+60a6,U+6148,U+621a,U+6234,U+64c1,U+6523,U+675c,U+67d1,U+6953,U+6ccc,U+6df5,U+6e13,U+6f06,U+723a,U+7325,U+74e6,U+758e,U+75ab,U+75d9,U+7a40,U+8096,U+82fa,U+8587,U+8594,U+8a6b,U+8ab9,U+8b17,U+8b83,U+937c,U+963b,U+9673,U+96db,U+9ce9,U+9f4b,U+ff67,U+ff82,U+ff93"
   },
@@ -965,6 +1126,11 @@
   },
   {
    "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-76-wght-normal.woff2",
+   "range": "U+2266-2267,U+4f2f,U+5208,U+5451,U+546a,U+5589,U+576a,U+5815,U+5a9a,U+5b9b,U+5c3a,U+5efb,U+5faa,U+6109,U+6643,U+6652,U+695a,U+69fd,U+6b86,U+6bb4,U+6daf,U+7089,U+70cf,U+7a00,U+7a4f,U+7b39,U+7d33,U+80e1,U+828b,U+82a6,U+86cd,U+8c8c,U+8cca,U+8df3,U+9077,U+9175,U+91dc,U+925b,U+9262,U+9271,U+92ed,U+9855,U+9905,U+9d28,U+ff3f,U+ff58,U+ff68,U+ff6d,U+ff9c"
+  },
+  {
+   "family": "Noto Sans JP",
    "file": "arc/fonts/noto-sans-jp-79-wght-normal.woff2",
    "range": "U+25b3,U+30f5,U+4eae,U+4f46,U+4f51,U+5203,U+52ff,U+55a7,U+564c,U+565b,U+57f9,U+5805,U+5b64,U+5e06,U+5f70,U+5f90,U+60e8,U+6182,U+62f3,U+62fe,U+63aa,U+64a4,U+65d7,U+673a,U+6851,U+68cb,U+68df,U+6d1e,U+6e58,U+6e9d,U+77b3,U+7832,U+7c3f,U+7db4,U+7f70,U+80aa,U+80c6,U+8105,U+819d,U+8276,U+8679,U+8986,U+8c9d,U+8fc5,U+916c,U+9665,U+9699,U+96c0,U+9a19,U+ff8b"
   },
@@ -977,6 +1143,11 @@
    "family": "Noto Sans JP",
    "file": "arc/fonts/noto-sans-jp-81-wght-normal.woff2",
    "range": "U+2010,U+2502,U+25b6,U+4f3a,U+514b,U+5265,U+52c3,U+5339,U+53ec,U+54c0,U+55b0,U+5854,U+5b8f,U+5cb3,U+5e84,U+60da,U+6247,U+6249,U+628a,U+62cd,U+65ac,U+6838,U+690e,U+6cf0,U+6f02,U+6f2c,U+6f70,U+708a,U+7434,U+75be,U+77ef,U+7c60,U+7c98,U+7d1b,U+7e2b,U+80a5,U+81e3,U+820c,U+8210,U+8475,U+862d,U+8650,U+8997,U+906d,U+91c8,U+9700,U+9727,U+9df9,U+ff3a,U+ff9a"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-82-wght-normal.woff2",
+   "range": "U+2103,U+5049,U+52b1,U+5320,U+5553,U+572d,U+58c7,U+5b5d,U+5bc2,U+5de3,U+5e61,U+5f80,U+61a9,U+67d0,U+67f4,U+6c88,U+6ca1,U+6ce5,U+6d78,U+6e9c,U+6f54,U+731b,U+73b2,U+74a7,U+74f6,U+75e9,U+7b20,U+7c8b,U+7f72,U+809d,U+8108,U+82b3,U+82bd,U+84b8,U+84c4,U+88c2,U+8ae6,U+8ef8,U+902e,U+9065,U+9326,U+935b,U+938c,U+9676,U+9694,U+96f7,U+9ed9,U+ff48,U+ff4c,U+ff81"
   },
   {
    "family": "Noto Sans JP",
