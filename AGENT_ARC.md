@@ -204,8 +204,24 @@ lines and 17 queries, ~30 s more per line; you are woken at `arc-pick`.)
    reason: read it once as the owner would (does each edit follow from its line? three alike in a row?). Check: the picture is the thing
    the line names, the ring sits on exactly the named structure, nothing important is cut, the subtitle does not
    cover the picture, labels and titles fit on one row. Fix and run again until all are right.
-8. Commit `picks.json` together with any `script.json`/readings fixes in **one** push as `[arc #<N>] chọn ảnh`
-   (a push of `script.json` alone runs the voice step again), remove `arc-busy`. (Render ~4–10 min: 4–5 min
+8. **Write the posting caption** `arc/<N>/caption.txt` (owner, 16/11: every video comes with the text to paste
+   when it is posted; it lands on `renders` beside `video.mp4`). UTF-8, **Japanese only** (the channel's language,
+   iron rule 1), at most 2000 characters:
+   ```
+   <hook title, ≤ 80 characters, true to the script>
+   <2–4 short sentences: what the video shows, taken from the script's lines>
+
+   <5–8 hashtags on one line: the subject, the era, the field, #日本史 #歴史 … #shorts>
+
+   画像出典: <author (licence), … from credits.txt; when too long, the main ones and "ほか（概要欄の出典一覧）">
+   ```
+   Nothing that is not in the script or the picture credits (a hypothesis stays a hypothesis: 〜という説も).
+   Check it: `python3 scripts/arc/caption.py arc/<N>/caption.txt` must print `caption OK` (the render publishes
+   only a correct caption and says on the issue when it is missing or wrong).
+9. Commit `picks.json` and `caption.txt` together with any `script.json`/readings fixes in **one** push as
+   `[arc #<N>] chọn ảnh` (a push of `script.json` alone runs the voice step again), remove `arc-busy`. A later push
+   that changes **only** `caption.txt` does not render again: the machine checks it, copies it to `renders` and
+   comments its link. (Render ~4–10 min: 4–5 min
    measured for a 1-minute video; you are woken at `arc-check`.)
 
 ## 3. `arc-check` → done
@@ -213,14 +229,16 @@ First read the issue's comments again: the owner may have asked for a change whi
 owner comment newer than your last `🤖` comment (comments by `github-actions[bot]` do not count as yours) is a
 request not done yet — the machine keeps `arc-fix` on the issue for it — so do it as §4 in the same step, before
 anything is called done.
-Open `sheet.jpg` (every shot as a full frame, after its ring/zoom too). Push a corrected `picks.json` only for a
+Open `sheet.jpg` (every shot as a full frame, after its ring/zoom too). Check that `arc/<N>/caption.txt` is on
+`renders` beside the video (the render comment says when it is missing or wrong: fix it and push it alone). Push a corrected `picks.json` only for a
 real fault (wrong document for the line, a ring off its target, a cut subject, a blurred picture, a watermark),
 all fixes in one push. Otherwise remove `arc-check`, add `arc-done` and comment (🤖, short, Vietnamese):
 - video: `https://github.com/maihaianh2911-bit/japan-archive-video-factory/blob/renders/arc/<N>/video.mp4` and
   the direct download `https://github.com/maihaianh2911-bit/japan-archive-video-factory/raw/renders/arc/<N>/video.mp4`,
   its length;
-- `subtitles.srt`, `credits.txt` (to paste into the video description) and `sources.json` (per shot: line,
-  picture, page, credit, view, ring times);
+- `subtitles.srt`, `caption.txt` (the posting caption: title, description, hashtags, picture credits — the owner
+  pastes it when posting) next to the video links, then `credits.txt` (the full credit list) and `sources.json`
+  (per shot: line, picture, page, credit, view, ring times);
 - the table "Cách edit từng cảnh" pasted from `edits.md` (on `renders`, `arc/<N>/edits.md`; only its first table,
   up to the catalogue heading, plus the link to the file for the list of edits): shot number, line, picture, edit,
   reason — so the owner can answer "cảnh 5 đổi sang kiểu khoanh";

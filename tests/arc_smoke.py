@@ -115,6 +115,15 @@ assert Image.open(os.path.join(out, 'preview.jpg')).size[0] > 1000
 if os.environ.get('FONTSOURCE'):
     plan = json.load(open(plan_p, encoding='utf-8')); assert len(plan['fonts']) > 5 and all(os.path.exists(os.path.join(pub, f['file'])) for f in plan['fonts'])
 
+# posting caption (owner 16/11/2026): the checker accepts the format of AGENT_ARC.md and names what is wrong
+import caption as C
+good_cap = ('三千年前の土偶の正体は？\n縄文時代の土偶を紹介します。\n大きな目の意味を考えます。\n\n'
+            '#土偶 #縄文時代 #考古学 #日本史 #歴史 #shorts\n\n画像出典: 作者不詳（パブリックドメイン）')
+assert C.problems(good_cap) == [], C.problems(good_cap)
+assert any('hashtag' in p for p in C.problems(good_cap.replace(' #歴史 #shorts', '')))
+assert any('tiếng Nhật' in p for p in C.problems('The mystery of the dogu figurine and its eyes\nA clay figure from Japan seen up close.\n\n#a #b #c #d #e\n\n画像出典: x'))
+assert any('画像出典' in p for p in C.problems(good_cap.split('\n\n画像出典')[0]))
+
 if '--still' in sys.argv:
     t_ring = sh[2]['marks'][0]['s']
     run('node', os.path.join(S, 'stills.mjs'), plan_p, pub, os.path.join(out, 'still'), f'{t_ring - 0.3:.2f}', f'{t_ring + 0.6:.2f}')

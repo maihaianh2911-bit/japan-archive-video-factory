@@ -7,7 +7,10 @@
            (Whisper) cannot run, the voice is published all the same and check.md says so.
   search   every arc/<N>/search-<r>.json whose round is not on renders yet → renders/arc/<N>/img/<r>/
   render   pictures from picks.json, plan, fonts, Remotion render, loudness, shot sheet
-           → renders/arc/<N>/video.mp4, subtitles.srt, credits.txt, sources.json, sheet.jpg, edits.md
+           → renders/arc/<N>/video.mp4, subtitles.srt, credits.txt, sources.json, sheet.jpg, edits.md, and
+           caption.txt (the posting caption Claude wrote in arc/<N>/caption.txt) when it is there and correct
+  caption  only arc/<N>/caption.txt changed: check it (caption.py), copy it to renders/arc/<N>/caption.txt and
+           comment its link. No voice, no search, no render, no label change (a render in the same run does it).
 After prepare/search the issue waits for Claude (arc-pick) unless picks.json exists, then render runs too; not when
 prepare searched round 1 again (changed queries, or the round was no longer on renders: the weekly clean-up removes
 the files of issues quiet for 14 days) — a new search numbers the pictures anew and the picks would point at other
@@ -235,6 +238,31 @@ def fix_pending():
     except ValueError: return True
 
 
+CAPTION_FIX = ('Claude sửa arc/{N}/caption.txt theo mẫu trong AGENT_ARC.md §2 rồi đẩy lại (chỉ đổi caption.txt '
+               'thì máy chỉ chép caption, không dựng lại video).')
+
+
+def caption_problems():
+    """None when arc/<N>/caption.txt does not exist, else the list of its problems (empty = good)."""
+    p = os.path.join(JOB, 'caption.txt')
+    if not os.path.isfile(p):
+        return None
+    import caption
+    return caption.problems(open(p, encoding='utf-8').read())
+
+
+def caption_step():
+    """A push that changed only caption.txt: publish it beside the video, comment the link."""
+    bad = caption_problems()
+    if bad is None:
+        print(f'arc/{N}: không có caption.txt — không có gì để chép', flush=True); return
+    if bad:
+        raise SystemExit(f'arc/{N}/caption.txt chưa đúng mẫu: ' + '; '.join(bad) + '. ' + CAPTION_FIX.format(N=N))
+    shutil.copy(os.path.join(JOB, 'caption.txt'), os.path.join(WORK, 'caption.txt'))
+    publish(['caption.txt'], 'caption')
+    comment(f'🤖 Đã cập nhật nội dung đăng bài (caption) cho video này: {link("caption.txt")}')
+
+
 def render():
     """Returns (video length in seconds, True when an owner request newer than this push still waits: arc-fix kept)."""
     waiting = fix_pending()
@@ -265,7 +293,13 @@ def render():
         if mb > 100: raise SystemExit(f'video {mb:.1f} MB, vẫn quá 100 MB')
     sh(sys.executable, os.path.join(HERE, 'sheet.py'), video, os.path.join(out, 'plan.json'), os.path.join(WORK, 'sheet.jpg'))
     for f in ('subtitles.srt', 'credits.txt', 'sources.json', 'plan.json', 'edits.md'): shutil.copy(os.path.join(out, f), os.path.join(WORK, f))
-    publish(['video.mp4', 'sheet.jpg', 'subtitles.srt', 'credits.txt', 'sources.json', 'plan.json', 'edits.md'], 'video')
+    files = ['video.mp4', 'sheet.jpg', 'subtitles.srt', 'credits.txt', 'sources.json', 'plan.json', 'edits.md']
+    bad = caption_problems()   # a wrong caption never costs the render: the video goes out, the caption waits for Claude
+    if bad:
+        print(f'::warning::arc/{N}/caption.txt chưa đúng mẫu, chưa đăng: ' + '; '.join(bad), flush=True)
+    elif bad is not None:
+        shutil.copy(os.path.join(JOB, 'caption.txt'), os.path.join(WORK, 'caption.txt')); files.append('caption.txt')
+    publish(files, 'video')
     return plan['duration'], waiting
 
 
@@ -293,6 +327,8 @@ def wake(why, say=False):
 
 if __name__ == '__main__':
     fetch_renders()
+    if 'caption' in steps and len(steps) > 1:
+        steps.remove('caption')   # the voice / render step of this run publishes the caption with the video
     if 'render' in steps and not os.path.exists(os.path.join(JOB, 'picks.json')):
         # e.g. a push of own/ (the owner's pictures) before Claude wrote picks.json: nothing to render yet, not a failure
         print(f'arc/{N}: chưa có picks.json — bỏ qua bước dựng (render). Ảnh trong own/ sẽ được dùng khi có picks.json.', flush=True)
@@ -345,6 +381,13 @@ if __name__ == '__main__':
         m, s = divmod(round(length), 60)
         note = wake(f'Phiếu lịch sử số {N}: video đã dựng, chờ kiểm tra.'
                     + (' Nhãn arc-fix còn trên phiếu: đọc lại bình luận của chủ kênh, có thể có yêu cầu sửa chưa làm.' if waiting else ''))
+        cap = caption_problems()
         comment(f'🤖 Đã dựng xong bản video ({m} phút {s:02d} giây). '
                 + ('Claude đang kiểm tra lại từng cảnh trước khi giao.' if not note else f'Bản này chưa được Claude kiểm tra lại. {note}')
-                + f'\n\n- Video: {link("video.mp4")}\n- Ảnh các cảnh: {link("sheet.jpg")}')
+                + f'\n\n- Video: {link("video.mp4")}\n- Phụ đề: {link("subtitles.srt")}'
+                + (f'\n- Nội dung đăng bài (caption): {link("caption.txt")}' if cap == [] else
+                   '\n- Nội dung đăng bài (caption): chưa có — ' + ('chưa đúng mẫu (' + '; '.join(cap) + '). ' if cap else '')
+                   + CAPTION_FIX.format(N=N))
+                + f'\n- Ảnh các cảnh: {link("sheet.jpg")}')
+    if 'caption' in steps:
+        caption_step()
