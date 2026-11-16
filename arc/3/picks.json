@@ -44,6 +44,12 @@
     0.885,
     0.855
    ]
+  },
+  "horse": {
+   "src": "1/2-6.jpg"
+  },
+  "ebisu": {
+   "src": "1/2-1.jpg"
   }
  },
  "scenes": [
@@ -61,12 +67,12 @@
        0.52,
        0.88
       ],
-      "at": 3.0,
-      "dur": 1.6
+      "at": 4.0,
+      "dur": 1.8
      }
     },
     {
-     "at": 4,
+     "at": 6,
      "img": "victims",
      "label": "家を失った人々を描いた錦絵",
      "credit": "Daderot / Public domain"
@@ -87,19 +93,19 @@
      "credit": "Wikimedia Commons / Public domain"
     },
     {
-     "at": 7,
+     "at": 9,
      "img": "stone",
      "label": "鹿島神宮の要石（茨城県）",
      "credit": "そらみみ / CC BY-SA 3.0"
     },
     {
-     "at": 8,
+     "at": 10,
      "img": "pin",
      "label": "鯰絵「要石で鯰を押さえる神」",
      "credit": "Wikimedia Commons / Public domain",
      "marks": [
       {
-       "at": 8.3,
+       "at": 10.3,
        "box": [
         0.3,
         0.3,
@@ -110,13 +116,13 @@
      ]
     },
     {
-     "at": 9,
+     "at": 11,
      "img": "cloud",
      "label": "鯰絵（1855年）",
      "credit": "国立国会図書館 / Public domain",
      "marks": [
       {
-       "at": 10.35,
+       "at": 12.35,
        "box": [
         0.03,
         0.02,
@@ -127,7 +133,7 @@
      ]
     },
     {
-     "at": 11,
+     "at": 13,
      "img": "city",
      "view": [
       0.0,
@@ -139,12 +145,21 @@
      "credit": "Wikimedia Commons / Public domain",
      "marks": [
       {
-       "at": 11.35,
+       "at": 13.35,
        "box": [
         0.38,
         0.55,
         0.8,
         0.93
+       ]
+      },
+      {
+       "at": 14.45,
+       "box": [
+        0.66,
+        0.41,
+        0.97,
+        0.6
        ]
       }
      ]
@@ -159,19 +174,31 @@
      "credit": "Wikimedia Commons / Public domain"
     },
     {
-     "at": 14,
+     "at": 17,
+     "img": "horse",
+     "label": "鯰絵（1855年）",
+     "credit": "国立国会図書館 / Public domain"
+    },
+    {
+     "at": 18,
      "img": "sumo",
      "label": "鯰絵「見たて大地震角力取くみ」",
      "credit": "国立国会図書館 / Public domain"
     },
     {
-     "at": 15,
+     "at": 19,
+     "img": "ebisu",
+     "label": "鯰絵「恵比寿天申訳之記」",
+     "credit": "国立国会図書館 / Public domain"
+    },
+    {
+     "at": 20,
      "img": "taiji",
      "label": "鯰絵「鯰退治」",
      "credit": "Wikimedia Commons / Public domain"
     },
     {
-     "at": 16,
+     "at": 21,
      "img": "daikoku",
      "label": "鯰絵「地震よけの歌」",
      "credit": "Wikimedia Commons / Public domain"
