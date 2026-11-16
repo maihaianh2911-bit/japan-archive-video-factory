@@ -131,7 +131,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
   const lift = (1 - head) * 18;
   // dissolve: the last shot's pictures (caption, credit) stay under the new ones while these fade in
   const fade = plan.fade || 0;
-  const same = (a: Shot, b: Shot) => a.pics.length === b.pics.length && a.pics.every((p, i) => p.src === b.pics[i].src && p.box.join() === b.pics[i].box.join());
+  const same = (a: Shot, b: Shot) => a.pics.length === b.pics.length && a.pics.every((p, i) => p.src === b.pics[i].src && p.box.join() === b.pics[i].box.join() && p.view.join() === b.pics[i].view.join());
   const mix = prev && fade > 0 && t < sh.s + fade && !same(prev, sh) ? ease((t - sh.s) / fade) : 1;
   const out = mix < 1 && prev ? prev : null;
   return (
