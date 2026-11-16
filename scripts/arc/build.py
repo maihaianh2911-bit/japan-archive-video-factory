@@ -53,7 +53,7 @@ picked = [[E.expand(p, f'cảnh {si}, ảnh {j}') for j, p in enumerate(ps['shot
 
 # ---- subtitles: a spoken line becomes one cue of up to two rows, or two cues when it is too long
 ROW = 17   # characters per row (50 px)
-PUNCT, PART = '、。」？！', 'をにへはがでとものや'
+PUNCT, PART = '、。」？！', 'をにへはがでとものやて'   # て: 〜として|受け継ぐ
 def is_kana(c): return '぀' <= c <= 'ゟ'
 def breaks(t):
     out = []
