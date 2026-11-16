@@ -98,6 +98,24 @@
    "date": "",
    "license": "Public domain",
    "page": "https://commons.wikimedia.org/wiki/File:NDL1302131_%E4%B8%96%E7%9B%B4%E3%81%97%E9%AF%B0%E3%81%AE%E6%83%85.jpg"
+  },
+  {
+   "name": "horse",
+   "src": "1/2-6.jpg",
+   "title": "NDL-DC 1303375-Unknown Artist-（神馬）-crd.jpg",
+   "artist": "",
+   "date": "",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303375-Unknown_Artist-%EF%BC%88%E7%A5%9E%E9%A6%AC%EF%BC%89-crd.jpg"
+  },
+  {
+   "name": "ebisu",
+   "src": "1/2-1.jpg",
+   "title": "NDL-DC 1303372-Unknown Artist-恵比寿天申訳之記-crd.jpg",
+   "artist": "",
+   "date": "",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303372-Unknown_Artist-%E6%81%B5%E6%AF%94%E5%AF%BF%E5%A4%A9%E7%94%B3%E8%A8%B3%E4%B9%8B%E8%A8%98-crd.jpg"
   }
  ],
  "shots": [
@@ -105,10 +123,12 @@
    "scene": 1,
    "shot": 1,
    "start": 0.0,
-   "end": 7.919,
+   "end": 14.52,
    "said": [
     "安政二年、一八五五年の秋の夜。",
     "江戸の町を、大きな地震が襲いました。",
+    "地震が起きたのは、夜の十時ごろ。",
+    "被害は、隅田川沿いの下町で特に大きかったといいます。",
     "家々は倒れ、火事が広がり、"
    ],
    "label": "瓦版「大地震」（1855年）",
@@ -125,16 +145,16 @@
      0.52,
      0.88
     ],
-    "at": 3.0,
-    "dur": 1.6
+    "at": 4.0,
+    "dur": 1.8
    },
    "marks": []
   },
   {
    "scene": 1,
    "shot": 2,
-   "start": 7.919,
-   "end": 10.646,
+   "start": 14.52,
+   "end": 17.247,
    "said": [
     "一万人近くが亡くなったともいわれます。"
    ],
@@ -151,8 +171,8 @@
   {
    "scene": 2,
    "shot": 1,
-   "start": 10.646,
-   "end": 15.765,
+   "start": 17.247,
+   "end": 22.366,
    "said": [
     "当時の人々は、",
     "地震は地下に住む大鯰が暴れて起きると信じていました。"
@@ -175,8 +195,8 @@
   {
    "scene": 2,
    "shot": 2,
-   "start": 15.765,
-   "end": 17.993,
+   "start": 22.366,
+   "end": 24.594,
    "said": [
     "ふだんは鹿島神宮の神さまが、"
    ],
@@ -193,8 +213,8 @@
   {
    "scene": 2,
    "shot": 3,
-   "start": 17.993,
-   "end": 20.238,
+   "start": 24.594,
+   "end": 26.839,
    "said": [
     "要石で鯰を押さえています。"
    ],
@@ -208,7 +228,7 @@
    "zoom": null,
    "marks": [
     {
-     "at_s": 18.682,
+     "at_s": 25.283,
      "box": [
       0.3,
       0.3,
@@ -221,8 +241,8 @@
   {
    "scene": 2,
    "shot": 4,
-   "start": 20.238,
-   "end": 26.255,
+   "start": 26.839,
+   "end": 32.856,
    "said": [
     "ところが地震が起きたのは旧暦の十月、",
     "神さまたちが出雲へ出かける「神無月」でした。"
@@ -237,7 +257,7 @@
    "zoom": null,
    "marks": [
     {
-     "at_s": 24.279,
+     "at_s": 30.88,
      "box": [
       0.03,
       0.02,
@@ -250,10 +270,11 @@
   {
    "scene": 2,
    "shot": 5,
-   "start": 26.255,
-   "end": 29.112,
+   "start": 32.856,
+   "end": 39.653,
    "said": [
-    "留守のすきに、鯰が暴れたというわけです。"
+    "留守のすきに、鯰が暴れたというわけです。",
+    "鹿島の神さまが、馬で急いで戻ってくる姿も描かれています。"
    ],
    "label": "鯰絵「留守の間の大地震」",
    "title": "地下の大鯰",
@@ -270,12 +291,21 @@
    "zoom": null,
    "marks": [
     {
-     "at_s": 27.247,
+     "at_s": 33.848,
      "box": [
       0.38,
       0.55,
       0.8,
       0.93
+     ]
+    },
+    {
+     "at_s": 37.433,
+     "box": [
+      0.66,
+      0.41,
+      0.97,
+      0.6
      ]
     }
    ]
@@ -283,8 +313,8 @@
   {
    "scene": 3,
    "shot": 1,
-   "start": 29.112,
-   "end": 33.93,
+   "start": 39.653,
+   "end": 44.471,
    "said": [
     "地震のあと、",
     "江戸では鯰を描いた「鯰絵」が次々と売り出されました。"
@@ -302,8 +332,26 @@
   {
    "scene": 3,
    "shot": 2,
-   "start": 33.93,
-   "end": 36.843,
+   "start": 44.471,
+   "end": 48.586,
+   "said": [
+    "地震から数日のうちに、町には鯰絵があふれたといいます。"
+   ],
+   "label": "鯰絵（1855年）",
+   "title": "鯰絵",
+   "image": "horse",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303375-Unknown_Artist-%EF%BC%88%E7%A5%9E%E9%A6%AC%EF%BC%89-crd.jpg",
+   "credit": "国立国会図書館 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 3,
+   "start": 48.586,
+   "end": 51.499,
    "said": [
     "その数は、二百種類以上ともいわれます。"
    ],
@@ -319,9 +367,27 @@
   },
   {
    "scene": 3,
-   "shot": 3,
-   "start": 36.843,
-   "end": 39.699,
+   "shot": 4,
+   "start": 51.499,
+   "end": 55.381,
+   "said": [
+    "そのほとんどは、作者の名前もない、急いで刷られた絵でした。"
+   ],
+   "label": "鯰絵「恵比寿天申訳之記」",
+   "title": "鯰絵",
+   "image": "ebisu",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303372-Unknown_Artist-%E6%81%B5%E6%AF%94%E5%AF%BF%E5%A4%A9%E7%94%B3%E8%A8%B3%E4%B9%8B%E8%A8%98-crd.jpg",
+   "credit": "国立国会図書館 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 5,
+   "start": 55.381,
+   "end": 58.237,
    "said": [
     "怒った町の人々が鯰をこらしめる絵もあれば、"
    ],
@@ -337,9 +403,9 @@
   },
   {
    "scene": 3,
-   "shot": 4,
-   "start": 39.699,
-   "end": 44.163,
+   "shot": 6,
+   "start": 58.237,
+   "end": 62.701,
    "said": [
     "復興の仕事で、町の人々にお金が回り、",
     "それを喜ぶ絵もあります。"
@@ -357,8 +423,8 @@
   {
    "scene": 4,
    "shot": 1,
-   "start": 44.163,
-   "end": 51.108,
+   "start": 62.701,
+   "end": 69.646,
    "said": [
     "鯰絵は、恐ろしい災害を笑いに変えて、",
     "人々が立ち直るための力だったのかもしれません。"
