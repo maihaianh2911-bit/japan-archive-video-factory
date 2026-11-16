@@ -18,10 +18,12 @@ pub = os.path.join(tmp, 'public'); base = os.path.join(pub, 'arc', 'P')
 os.makedirs(base); shutil.copytree(os.path.join(rend, 'voice'), os.path.join(base, 'voice'))
 imgsrc = os.path.join(tmp, 'img'); shutil.copytree(os.path.join(rend, 'img'), imgsrc)
 if os.path.isdir(os.path.join(job, 'own')): shutil.copytree(os.path.join(job, 'own'), os.path.join(imgsrc, 'own'), dirs_exist_ok=True)
-run = lambda *a: subprocess.run([sys.executable, *a], check=True, stdout=subprocess.DEVNULL)
+run = lambda *a: subprocess.run([sys.executable, *a], check=True, stdout=subprocess.DEVNULL, env={**os.environ, 'ARC_MIN_SECONDS': '0'})
 run(os.path.join(HERE, 'prep.py'), os.path.join(job, 'picks.json'), imgsrc, os.path.join(base, 'img'))
 run(os.path.join(HERE, 'build.py'), job, pub, 'P', imgsrc, os.path.join(tmp, 'out'))
 plan = json.load(open(os.path.join(tmp, 'out', 'plan.json'), encoding='utf-8'))
+if plan['duration'] < 60:
+    print(f"CẢNH BÁO: video dài {plan['duration']:.1f} giây, dưới 60 giây: máy sẽ không dựng (luật của chủ kênh). Thêm câu.", file=sys.stderr)
 cache = {}
 def img_of(src):
     if src not in cache: cache[src] = Image.open(os.path.join(pub, src)).convert('RGB')

@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.join(ROOT, 'scripts', 'arc'))
 import ff, layout
 
 N = '0'
+os.environ['ARC_MIN_SECONDS'] = '0'   # the made-up video is 17 s; the 60-s rule is checked below
 tmp = tempfile.mkdtemp(prefix='arc-smoke-')
 job, pub, imgsrc, out = (os.path.join(tmp, d) for d in ('job', 'public', 'imgsrc', 'out'))
 voice = os.path.join(pub, 'arc', N, 'voice')
@@ -63,6 +64,9 @@ rend = os.path.join(tmp, 'renders'); os.makedirs(rend)
 shutil.copytree(voice, os.path.join(rend, 'voice')); shutil.copytree(imgsrc, os.path.join(rend, 'img'))
 run(sys.executable, os.path.join(S, 'preview.py'), job, rend, os.path.join(out, 'preview.jpg'))
 
+r60 = subprocess.run([sys.executable, os.path.join(S, 'build.py'), job, pub, N, imgsrc, os.path.join(tmp, 'out60')], cwd=ROOT,
+                     env={**os.environ, 'ARC_MIN_SECONDS': '60'}, capture_output=True, text=True)
+assert r60.returncode != 0 and 'dưới 60 giây' in r60.stderr, r60.stderr   # owner's rule: under 60 s nothing is rendered
 plan = json.load(open(plan_p, encoding='utf-8'))
 speech = sum(r['duration'] for r in rows)
 assert speech + 1 < plan['duration'] < speech + 4, plan['duration']

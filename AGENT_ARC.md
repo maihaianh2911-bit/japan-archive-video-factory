@@ -56,8 +56,11 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
   ranges `[first, last]` follow each other and cover every line from 1 to the last (the render stops otherwise).
   `title` ≤ 10 characters, the hook of the idea (`約1万2千年前`, `円形に並ぶ石柱`, `なぜ、ここに石柱を？`). An optional `label` is a
   default for the shots; usually the label is set per shot in picks.json.
-- Length: the voice reads ~8.3 characters/s; each line adds ~0.4 s. Shorts allow 3 min ≈ 1250 characters;
-  20–60 s suits this format. Longer without the owner asking → keep it and offer a shorter cut in your comment.
+- Length — **iron rule (owner, 16/11): no video under 60 s.** Under 60 s `build.py` refuses to render. Write
+  65–80 s: ≈ 440–550 characters (measured on issues 1–5: ~0.15 s per character, pauses included, + ~1.7 s).
+  The owner's script too short → add a few factual, picturable sentences (say which in your comment). At arc-pick,
+  `preview.py` warns when the video is under 60 s: add lines then, in the same push as picks.json. Shorts allow
+  3 min ≈ 1250 characters.
 - `tts`: kana for names and rare readings the voice may misread (`prompts/readings.json` is applied to every line).
 - `style`: `paper` (default, chosen by the owner 13/11: ivory archive paper, ink-brown text, the picture as a print
   with a white mat and soft shadow, red rings), `warm` (the shot's own picture, blurred and darkened, fills the

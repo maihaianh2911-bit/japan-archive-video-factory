@@ -21,6 +21,6 @@ clone_190 — kể chuyện (mặc định)
 
 <độ dài mong muốn, tư liệu nên có / nên tránh; không có thì để _No response_>
 ```
-- Độ dài: 20–60 giây là hợp nhất (≈ 150–500 ký tự tiếng Nhật); tối đa ~3 phút.
+- Độ dài: **không dưới 60 giây** (luật của chủ kênh, 16/11: dưới 60 giây máy không dựng). Nên 65–80 giây ≈ 440–550 ký tự tiếng Nhật; tối đa ~3 phút.
 - Viết mỗi câu một ý cụ thể nhìn thấy được (một địa điểm, một hiện vật, một bản đồ, một chi tiết), vì mỗi câu sẽ có một tư liệu thật đi kèm. Điều chưa được xác nhận thì viết ở dạng giả thuyết.
 - Muốn sửa video: viết **một bình luận** gom hết yêu cầu vào phiếu (không bắt đầu bằng 🤖).

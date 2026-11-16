@@ -36,7 +36,8 @@ questions, so do not ask; comments go on the issues (🤖, Vietnamese).
    task continues from the labels when GitHub calls it after that step.
 3. Give the owner the links to the video (view + download), the subtitles and the picture credits.
 
-Quality first: look at every picture yourself, preview the framing and rings before rendering.
+Iron rule (owner, 16/11/2026): **no video under 60 s** — under 60 s nothing is rendered (`build.py` refuses); write
+65–80 s (`AGENT_ARC.md` §1). Quality first: look at every picture yourself, preview the framing and rings before rendering.
 
 ## Changing the pipeline
 Before pushing to `main`: `python3 tests/arc_smoke.py --still`, `python3 -m compileall -q scripts tests`,

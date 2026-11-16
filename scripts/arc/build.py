@@ -96,6 +96,11 @@ for sc in scenes_in:
             subs.append({'s': round(cs, 3), 'e': round(ce, 3), 'text': '\n'.join(cu), 'hl': spec.get('hl', {}).get(str(i), [])})
         t += dur[i] + (0.45 if text[i].endswith(('。', '」', '？', '！')) else 0.25)
 total = round(t - 0.25 + TAIL, 3)
+# owner's iron rule (16/11/2026): no video under 60 s; under 60 s nothing is rendered
+MIN_S = float(os.environ.get('ARC_MIN_SECONDS', '60'))
+if total < MIN_S:
+    raise SystemExit(f'video chỉ dài {total:.1f} giây, dưới {MIN_S:.0f} giây: không dựng (luật của chủ kênh). '
+                     'Viết thêm câu vào script.json rồi đẩy lại cùng picks.json.')
 # a cue stays until the next one (no flicker between lines of one scene); the last one until the end
 for x, y in zip(subs, subs[1:]): x['e'] = round(max(x['e'], min(y['s'], x['e'] + 0.6)), 3)
 subs[-1]['e'] = round(total - 0.3, 3)
