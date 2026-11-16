@@ -1,0 +1,191 @@
+{
+ "images": {
+  "kw": {
+   "src": "1/11-1.jpg"
+  },
+  "victims": {
+   "src": "1/11-4.jpg",
+   "crop": [
+    0.085,
+    0.035,
+    0.945,
+    0.67
+   ]
+  },
+  "city": {
+   "src": "1/3-3.jpg"
+  },
+  "stone": {
+   "src": "1/10-1.jpg"
+  },
+  "pin": {
+   "src": "1/3-1.jpg"
+  },
+  "cloud": {
+   "src": "1/2-8.jpg"
+  },
+  "crowd": {
+   "src": "2/2-4.jpg"
+  },
+  "sumo": {
+   "src": "1/2-7.jpg"
+  },
+  "taiji": {
+   "src": "2/2-5.jpg"
+  },
+  "daikoku": {
+   "src": "1/11-7.jpg"
+  },
+  "yonaoshi": {
+   "src": "2/1-1.jpg",
+   "crop": [
+    0.15,
+    0.075,
+    0.885,
+    0.855
+   ]
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "kw",
+     "label": "瓦版「大地震」（1855年）",
+     "credit": "Wikimedia Commons / Public domain",
+     "still": true,
+     "zoom": {
+      "to": [
+       0.08,
+       0.12,
+       0.52,
+       0.88
+      ],
+      "at": 3.0,
+      "dur": 1.6
+     }
+    },
+    {
+     "at": 4,
+     "img": "victims",
+     "label": "家を失った人々を描いた錦絵",
+     "credit": "Daderot / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "city",
+     "view": [
+      0.0,
+      0.0,
+      1.0,
+      0.62
+     ],
+     "label": "鯰絵（1855年）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 7,
+     "img": "stone",
+     "label": "鹿島神宮の要石（茨城県）",
+     "credit": "そらみみ / CC BY-SA 3.0"
+    },
+    {
+     "at": 8,
+     "img": "pin",
+     "label": "鯰絵「要石で鯰を押さえる神」",
+     "credit": "Wikimedia Commons / Public domain",
+     "marks": [
+      {
+       "at": 8.3,
+       "box": [
+        0.3,
+        0.3,
+        0.65,
+        0.64
+       ]
+      }
+     ]
+    },
+    {
+     "at": 9,
+     "img": "cloud",
+     "label": "鯰絵（1855年）",
+     "credit": "国立国会図書館 / Public domain",
+     "marks": [
+      {
+       "at": 10.35,
+       "box": [
+        0.03,
+        0.02,
+        0.21,
+        0.64
+       ]
+      }
+     ]
+    },
+    {
+     "at": 11,
+     "img": "city",
+     "view": [
+      0.0,
+      0.0,
+      1.0,
+      1.0
+     ],
+     "label": "鯰絵「留守の間の大地震」",
+     "credit": "Wikimedia Commons / Public domain",
+     "marks": [
+      {
+       "at": 11.35,
+       "box": [
+        0.38,
+        0.55,
+        0.8,
+        0.93
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "crowd",
+     "label": "鯰絵（1855年）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 14,
+     "img": "sumo",
+     "label": "鯰絵「見たて大地震角力取くみ」",
+     "credit": "国立国会図書館 / Public domain"
+    },
+    {
+     "at": 15,
+     "img": "taiji",
+     "label": "鯰絵「鯰退治」",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 16,
+     "img": "daikoku",
+     "label": "鯰絵「地震よけの歌」",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "yonaoshi",
+     "label": "鯰絵「世直し鯰の情」",
+     "credit": "国立国会図書館 / Public domain"
+    }
+   ]
+  }
+ ]
+}
