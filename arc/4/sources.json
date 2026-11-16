@@ -1,0 +1,359 @@
+{
+ "pictures": [
+  {
+   "name": "yoru",
+   "src": "1/4-1.jpg",
+   "title": "宝永大噴火を描いた絵図「夜ルの景気」(静岡県沼津市土屋博氏所蔵).jpg",
+   "artist": "内閣府 防災担当",
+   "date": "2022-12-04",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:%E5%AE%9D%E6%B0%B8%E5%A4%A7%E5%99%B4%E7%81%AB%E3%82%92%E6%8F%8F%E3%81%84%E3%81%9F%E7%B5%B5%E5%9B%B3%E3%80%8C%E5%A4%9C%E3%83%AB%E3%81%AE%E6%99%AF%E6%B0%97%E3%80%8D(%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B2%BC%E6%B4%A5%E5%B8%82%E5%9C%9F%E5%B1%8B%E5%8D%9A%E6%B0%8F%E6%89%80%E8%94%B5).jpg"
+  },
+  {
+   "name": "quake",
+   "src": "1/14-2.jpg",
+   "title": "1707Hoei earthquake intensity.png",
+   "artist": "As6022014",
+   "date": "2011-10-14",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:1707Hoei_earthquake_intensity.png"
+  },
+  {
+   "name": "zu",
+   "src": "1/4-4.jpg",
+   "title": "富士山宝永噴火之図.jpg",
+   "artist": "静岡県御殿場市滝口文夫氏所蔵",
+   "date": "2024-07-28",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E5%A3%AB%E5%B1%B1%E5%AE%9D%E6%B0%B8%E5%99%B4%E7%81%AB%E4%B9%8B%E5%9B%B3.jpg"
+  },
+  {
+   "name": "ash",
+   "src": "1/4-3.jpg",
+   "title": "Volcanic-ash-downfall map of Mt.Fuji Hoei-eruption01.jpg",
+   "artist": "富士山防災協議会 (Mt. Fuji Disaster Prevention Council); Miya.m added the URL and the information to the Map and uploaded under the permission of the Cabinet Office of",
+   "date": "中間報告〔平成14年6月12日〕（the interim report was released on 2002-6-1",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Volcanic-ash-downfall_map_of_Mt.Fuji_Hoei-eruption01.jpg"
+  },
+  {
+   "name": "hakuseki",
+   "src": "1/9-2.jpg",
+   "title": "Arai Hakuseki.jpg",
+   "artist": "有朋堂書店",
+   "date": "1914-01-24",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Arai_Hakuseki.jpg"
+  },
+  {
+   "name": "sakawa",
+   "src": "1/4-2.jpg",
+   "title": "Result map of Sakawa-river overflow after the Hoei eruption.jpg",
+   "artist": "富士山防災協議会 (the Mt.Fuji Volcano Disaster Management Conference); Miya.m added the URL and the information to the Map and uploaded under the permission of the Cabi",
+   "date": "中間報告〔平成14年6月12日〕（the interim report was released on 2002-6-1",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Result_map_of_Sakawa-river_overflow_after_the_Hoei_eruption.jpg"
+  },
+  {
+   "name": "crater",
+   "src": "1/3-8.jpg",
+   "title": "1st Hoei Crater.jpg",
+   "artist": "Alpsdake",
+   "date": "Taken on 3 July 2018, 08:53:13",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:1st_Hoei_Crater.jpg"
+  },
+  {
+   "name": "hoeizan",
+   "src": "1/3-1.jpg",
+   "title": "Mount Hoei and Second Crater of Hoei.jpg",
+   "artist": "Alpsdake",
+   "date": "Taken on 2 July 2018, 16:49:31",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mount_Hoei_and_Second_Crater_of_Hoei.jpg"
+  },
+  {
+   "name": "hokusai",
+   "src": "1/4-7.jpg",
+   "title": "HokusaiHoeizan.jpg",
+   "artist": "Hokusai",
+   "date": "19th century",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:HokusaiHoeizan.jpg"
+  },
+  {
+   "name": "kano",
+   "src": "1/11-1.jpg",
+   "title": "Mount Fuji Winter (late 17th-early",
+   "artist": "",
+   "date": "",
+   "license": "CC0",
+   "page": "https://www.rawpixel.com/image/10140869/mount-fuji-the-winter-late-17th-early-18th-century-edo-kano-tsunenobu"
+  },
+  {
+   "name": "fuji",
+   "src": "1/11-6.jpg",
+   "title": "Mt. Fuji / 富士山(ふじさん)",
+   "artist": "TANAKA Juuyoh (田中十洋)",
+   "date": "",
+   "license": "CC BY 2.0",
+   "page": "https://www.flickr.com/photos/13910409@N05/3121538767"
+  }
+ ],
+ "shots": [
+  {
+   "scene": 1,
+   "shot": 1,
+   "start": 0.0,
+   "end": 6.53,
+   "said": [
+    "宝永四年、一七〇七年の冬。",
+    "富士山の南東の中腹が、突然、火を噴きました。"
+   ],
+   "label": "宝永噴火の絵図「夜ルの景気」",
+   "title": "宝永大噴火",
+   "image": "yoru",
+   "page": "https://commons.wikimedia.org/wiki/File:%E5%AE%9D%E6%B0%B8%E5%A4%A7%E5%99%B4%E7%81%AB%E3%82%92%E6%8F%8F%E3%81%84%E3%81%9F%E7%B5%B5%E5%9B%B3%E3%80%8C%E5%A4%9C%E3%83%AB%E3%81%AE%E6%99%AF%E6%B0%97%E3%80%8D(%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B2%BC%E6%B4%A5%E5%B8%82%E5%9C%9F%E5%B1%8B%E5%8D%9A%E6%B0%8F%E6%89%80%E8%94%B5).jpg",
+   "credit": "沼津市 土屋博氏所蔵 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 2,
+   "shot": 1,
+   "start": 6.53,
+   "end": 12.241,
+   "said": [
+    "わずか四十九日前には、",
+    "東海から九州までを大地震が襲ったばかりでした。"
+   ],
+   "label": "宝永地震の震度分布（推定）",
+   "title": "十六日間の噴火",
+   "image": "quake",
+   "page": "https://commons.wikimedia.org/wiki/File:1707Hoei_earthquake_intensity.png",
+   "credit": "As6022014 / CC BY-SA 3.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 2,
+   "shot": 2,
+   "start": 12.241,
+   "end": 20.925,
+   "said": [
+    "噴火は十六日間続き、",
+    "ふもとの村々は、厚い砂と灰に埋もれました。",
+    "須走村では、焼けた石が降り、家々が燃えたといいます。"
+   ],
+   "label": "「富士山宝永噴火之図」",
+   "title": "十六日間の噴火",
+   "image": "zu",
+   "page": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E5%A3%AB%E5%B1%B1%E5%AE%9D%E6%B0%B8%E5%99%B4%E7%81%AB%E4%B9%8B%E5%9B%B3.jpg",
+   "credit": "御殿場市 滝口文夫氏所蔵 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 1,
+   "start": 20.925,
+   "end": 28.378,
+   "said": [
+    "灰は風に乗って、",
+    "およそ百キロ離れた江戸にも降り注ぎます。",
+    "江戸にも、数センチの灰が積もったといわれます。"
+   ],
+   "label": "宝永噴火の降灰の厚さ（推定図）",
+   "title": "江戸に降った灰",
+   "image": "ash",
+   "page": "https://commons.wikimedia.org/wiki/File:Volcanic-ash-downfall_map_of_Mt.Fuji_Hoei-eruption01.jpg",
+   "credit": "富士山防災協議会 / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 26.112,
+     "box": [
+      0.44,
+      0.36,
+      0.63,
+      0.6
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 3,
+   "shot": 2,
+   "start": 28.378,
+   "end": 34.732,
+   "said": [
+    "学者の新井白石は、",
+    "昼なのに空が暗く、",
+    "ろうそくをともして講義をしたと書き残しています。"
+   ],
+   "label": "新井白石（1657〜1725年）",
+   "title": "江戸に降った灰",
+   "image": "hakuseki",
+   "page": "https://commons.wikimedia.org/wiki/File:Arai_Hakuseki.jpg",
+   "credit": "有朋堂書店（1914年）/ Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 3,
+   "start": 34.732,
+   "end": 37.006,
+   "said": [
+    "降り積もった砂で田畑はだめになり、"
+   ],
+   "label": "「富士山宝永噴火之図」",
+   "title": "江戸に降った灰",
+   "image": "zu",
+   "page": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E5%A3%AB%E5%B1%B1%E5%AE%9D%E6%B0%B8%E5%99%B4%E7%81%AB%E4%B9%8B%E5%9B%B3.jpg",
+   "credit": "御殿場市 滝口文夫氏所蔵 / Public domain",
+   "view": [
+    0.0,
+    0.3,
+    1.0,
+    1.0
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 4,
+   "start": 37.006,
+   "end": 44.368,
+   "said": [
+    "川はあふれ、人々は長く苦しみました。",
+    "砂でせき止められた酒匂川は、",
+    "何年ものあいだ、洪水をくり返しました。"
+   ],
+   "label": "噴火後の酒匂川の洪水（推定図）",
+   "title": "江戸に降った灰",
+   "image": "sakawa",
+   "page": "https://commons.wikimedia.org/wiki/File:Result_map_of_Sakawa-river_overflow_after_the_Hoei_eruption.jpg",
+   "credit": "富士山防災協議会 / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 4,
+   "shot": 1,
+   "start": 44.368,
+   "end": 49.064,
+   "said": [
+    "このとき山の中腹にできた大きなくぼみが、",
+    "今も見える「宝永火口」です。"
+   ],
+   "label": "宝永火口（静岡県御殿場市）",
+   "title": "宝永火口",
+   "image": "crater",
+   "page": "https://commons.wikimedia.org/wiki/File:1st_Hoei_Crater.jpg",
+   "credit": "Alpsdake / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 4,
+   "shot": 2,
+   "start": 49.064,
+   "end": 53.064,
+   "said": [
+    "火口の横には、「宝永山」と呼ばれる小さな山も生まれました。"
+   ],
+   "label": "宝永山と宝永火口",
+   "title": "宝永火口",
+   "image": "hoeizan",
+   "page": "https://commons.wikimedia.org/wiki/File:Mount_Hoei_and_Second_Crater_of_Hoei.jpg",
+   "credit": "Alpsdake / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 50.812,
+     "box": [
+      0.38,
+      0.04,
+      0.78,
+      0.18
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 4,
+   "shot": 3,
+   "start": 53.064,
+   "end": 56.904,
+   "said": [
+    "葛飾北斎も、のちにこの噴火を想像して描いています。"
+   ],
+   "label": "葛飾北斎『富嶽百景』「宝永山出現」",
+   "title": "宝永火口",
+   "image": "hokusai",
+   "page": "https://commons.wikimedia.org/wiki/File:HokusaiHoeizan.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 5,
+   "shot": 1,
+   "start": 56.904,
+   "end": 61.012,
+   "said": [
+    "それから三百年あまり、富士山は一度も噴火していません。"
+   ],
+   "label": "狩野常信「冬の富士」（17〜18世紀）",
+   "title": "眠る火山",
+   "image": "kano",
+   "page": "https://www.rawpixel.com/image/10140869/mount-fuji-the-winter-late-17th-early-18th-century-edo-kano-tsunenobu",
+   "credit": "rawpixel / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 5,
+   "shot": 2,
+   "start": 61.012,
+   "end": 69.192,
+   "said": [
+    "けれど、富士山はいまも活火山です。",
+    "美しい山の姿の奥には、",
+    "眠っている力が隠れているのです。"
+   ],
+   "label": "現在の富士山",
+   "title": "眠る火山",
+   "image": "fuji",
+   "page": "https://www.flickr.com/photos/13910409@N05/3121538767",
+   "credit": "TANAKA Juuyoh / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  }
+ ]
+}
