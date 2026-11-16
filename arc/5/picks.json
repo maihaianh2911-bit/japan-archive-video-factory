@@ -1,0 +1,148 @@
+{
+ "images": {
+  "fireman": {
+   "src": "1/1-5.jpg"
+  },
+  "street": {
+   "src": "2/9-2.jpg"
+  },
+  "scroll": {
+   "src": "1/8-1.jpg"
+  },
+  "montanus": {
+   "src": "1/8-3.jpg"
+  },
+  "stupa": {
+   "src": "1/8-7.jpg"
+  },
+  "brigades": {
+   "src": "2/7-5.jpg"
+  },
+  "ooka": {
+   "src": "1/13-1.jpg"
+  },
+  "tools": {
+   "src": "2/7-4.jpg"
+  },
+  "matoi": {
+   "src": "2/7-3.jpg"
+  },
+  "votive": {
+   "src": "2/7-6.jpg"
+  },
+  "dezome": {
+   "src": "2/1-5.jpg"
+  },
+  "ladder": {
+   "src": "2/3-1.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "fireman",
+     "label": "纏を持つ町火消（歌川芳虎）",
+     "credit": "The Metropolitan Museum of Art / CC0"
+    },
+    {
+     "at": 2,
+     "img": "street",
+     "label": "歌川広重「駿河町」（1836年頃）",
+     "credit": "The Metropolitan Museum of Art / CC0"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "scroll",
+     "label": "「江戸火事図巻」（1814年）",
+     "credit": "Wikimedia Commons / Public domain",
+     "view": [
+      0.42,
+      0.0,
+      1.0,
+      1.0
+     ]
+    },
+    {
+     "at": 5,
+     "img": "montanus",
+     "label": "江戸の大火の銅版画（1669年）",
+     "credit": "Wolfgang Michel / CC BY-SA 3.0"
+    },
+    {
+     "at": 6,
+     "img": "stupa",
+     "label": "明暦の大火の供養塔（回向院）",
+     "credit": "椿玄 / CC BY-SA 4.0"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "brigades",
+     "label": "江戸の町火消を描いた錦絵（1852年）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 9,
+     "img": "ooka",
+     "label": "大岡越前（大岡忠相）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 10,
+     "img": "brigades",
+     "label": "江戸の町火消を描いた錦絵（1852年）",
+     "credit": "Wikimedia Commons / Public domain",
+     "still": true,
+     "view": [
+      0.36,
+      0.14,
+      0.72,
+      0.74
+     ]
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "tools",
+     "label": "火消の道具（1870年代の写真）",
+     "credit": "Raimund von Stillfried / Public domain"
+    },
+    {
+     "at": 15,
+     "img": "matoi",
+     "label": "纏（まとい）",
+     "credit": "Bject / CC BY-SA 4.0"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "votive",
+     "label": "町火消「せ組」の奉納額（1833年）",
+     "credit": "Joe Mabel / CC BY-SA 3.0"
+    },
+    {
+     "at": 18,
+     "img": "dezome",
+     "label": "出初式（2025年・長崎県西海市）",
+     "credit": "U.S. Navy / Public domain"
+    },
+    {
+     "at": 19,
+     "img": "ladder",
+     "label": "はしご乗りの練習場（2014年）",
+     "credit": "Nori Norisa / CC BY 2.0"
+    }
+   ]
+  }
+ ]
+}
