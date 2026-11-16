@@ -1,5 +1,12 @@
 # Archive videos (history and legends, real documents) — runbook for Claude
 
+> **Iron rules (owner, 16/11/2026; full text at the top of `CLAUDE.md`).** (1) Voice, script lines, subtitles and
+> on-screen text are in **Japanese**, never another language; check before the voice step and on the finished video.
+> (2) **No video under 60 seconds**: estimate before the voice step and read the real speech length after it; if it
+> would be under 60 seconds, write the script longer (true facts on the same subject, nothing invented), say on the
+> issue what was added, then go on. Never render or deliver under 60 seconds, except a trial or sample video (the
+> owner says so, or the title or notes say `thử`, `mẫu`, `test`, `demo`).
+
 The owner (Vietnamese, not technical) opens an issue `[Lịch sử] …` with a script (Vietnamese or Japanese). The
 result is a vertical short (1080×1920, 30 fps) laid out exactly as the approved sample
 `00-video-mau/MAU-EDIT-20S.mp4` (Göbekli Tepe; the owner's guide is `00-video-mau/HUONG-DAN-EDIT.md`, the same
