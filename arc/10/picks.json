@@ -1,0 +1,255 @@
+{
+ "images": {
+  "gate": {
+   "src": "1/3-3.jpg"
+  },
+  "statue": {
+   "src": "1/4-1.jpg"
+  },
+  "hachi": {
+   "src": "1/1-3.jpg"
+  },
+  "odate": {
+   "src": "1/14-8.jpg"
+  },
+  "ueno": {
+   "src": "1/5-2.jpg"
+  },
+  "station": {
+   "src": "1/1-4.jpg"
+  },
+  "family": {
+   "src": "1/1-1.jpg"
+  },
+  "shibuya39": {
+   "src": "1/12-1.jpg"
+  },
+  "paw": {
+   "src": "1/12-3.jpg"
+  },
+  "first": {
+   "src": "1/2-1.jpg"
+  },
+  "first2": {
+   "src": "1/2-3.jpg"
+  },
+  "death": {
+   "src": "1/1-2.jpg"
+  },
+  "stuffing": {
+   "src": "1/7-3.jpg"
+  },
+  "museum": {
+   "src": "1/7-1.jpg"
+  },
+  "farewell": {
+   "src": "1/2-6.jpg"
+  },
+  "occupation": {
+   "src": "1/3-1.jpg"
+  },
+  "ando": {
+   "src": "1/2-4.jpg"
+  },
+  "monument": {
+   "src": "1/1-7.jpg"
+  },
+  "grave": {
+   "src": "1/5-1.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "gate",
+     "edit": "toan-canh",
+     "why": "câu nhắc ga Shibuya: cửa ga mang tên Hachikō",
+     "label": "渋谷駅ハチ公改札",
+     "credit": "MaedaAkihiko / CC BY-SA 4.0"
+    },
+    {
+     "at": 2,
+     "img": "statue",
+     "edit": "toan-canh",
+     "why": "tượng Hachikō trước ga",
+     "label": "渋谷駅前のハチ公像",
+     "credit": "jdnx / CC BY 2.0"
+    },
+    {
+     "at": 3,
+     "img": "hachi",
+     "edit": "chan-dung",
+     "why": "Hachi là chó có thật: ảnh chụp Hachi",
+     "label": "ハチの写真（1934年ごろ）",
+     "caption": "ハチ（1923〜1935年）",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "odate",
+     "edit": "so-lieu",
+     "title": "一九二三年",
+     "why": "năm sinh và quê Odate",
+     "label": "秋田県大館市",
+     "credit": "NASA / Public domain"
+    },
+    {
+     "at": 5,
+     "img": "ueno",
+     "edit": "chan-dung",
+     "why": "câu nhắc giáo sư Ueno",
+     "label": "上野英三郎の肖像",
+     "caption": "上野英三郎（1872〜1925年）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 6,
+     "img": "station",
+     "edit": "troi-cham",
+     "why": "Hachi đưa đón giáo sư ở ga Shibuya",
+     "label": "渋谷駅のハチ（1933年ごろ）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 7,
+     "img": "ueno",
+     "edit": "so-lieu",
+     "title": "一九二五年",
+     "why": "năm giáo sư mất",
+     "label": "上野英三郎の肖像",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "shibuya39",
+     "edit": "toan-canh",
+     "why": "Hachi ra ga Shibuya suốt 10 năm: ga Shibuya thời đó",
+     "label": "渋谷駅前（1939年）",
+     "credit": "師岡宏次 / Public domain"
+    },
+    {
+     "at": 10,
+     "img": "paw",
+     "edit": "troi-cham",
+     "why": "chiều nào cũng ra ga: Hachi với nhân viên ga",
+     "label": "渋谷駅の駅員とハチ（1933年ごろ）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 11,
+     "img": "family",
+     "edit": "troi-cham",
+     "why": "Hachi nổi tiếng: người ta chụp ảnh kỷ niệm với Hachi",
+     "label": "ハチと記念写真をとる家族",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 13,
+     "img": "first",
+     "edit": "so-lieu",
+     "title": "一九三四年",
+     "why": "năm dựng tượng đồng",
+     "label": "最初のハチ公像（1934年）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 14,
+     "img": "first2",
+     "edit": "toan-canh",
+     "why": "tượng đầu tiên trước ga",
+     "label": "最初のハチ公像（1934年）",
+     "credit": "師岡宏次 / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "death",
+     "edit": "troi-cham",
+     "why": "Hachi mất: ảnh mọi người cầu nguyện bên Hachi",
+     "label": "ハチの死を悼む人々（1935年3月8日）",
+     "credit": "白根記念渋谷区郷土博物館・文学館 / Public domain"
+    },
+    {
+     "at": 18,
+     "img": "stuffing",
+     "edit": "toan-canh",
+     "why": "Hachi được làm tiêu bản",
+     "label": "剥製になるハチ（1935年）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 19,
+     "img": "museum",
+     "edit": "toan-canh",
+     "why": "tiêu bản ở bảo tàng",
+     "label": "国立科学博物館のハチ",
+     "credit": "Momotarou2012 / CC BY-SA 3.0"
+    },
+    {
+     "at": 20,
+     "img": "farewell",
+     "edit": "troi-cham",
+     "why": "tượng bị thu hồi thời chiến: lễ chia tay tượng năm 1944",
+     "label": "回収前の別れの式（1944年）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 21,
+     "img": "occupation",
+     "edit": "so-lieu",
+     "title": "一九四八年",
+     "why": "tượng được dựng lại năm 1948",
+     "label": "再建されたハチ公像（戦後）",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "ando",
+     "edit": "khoanh",
+     "why": "nhà điêu khắc Andō Teru và Hachi: khoanh Hachi",
+     "label": "安藤照とハチ",
+     "credit": "朝日新聞社 / Public domain",
+     "marks": [
+      {
+       "at": 23.2,
+       "box": [
+        0.02,
+        0.3,
+        0.4,
+        0.98
+       ]
+      }
+     ]
+    },
+    {
+     "at": 24,
+     "img": "monument",
+     "edit": "toan-canh",
+     "why": "nghĩa trang Aoyama: đài tưởng niệm Hachi",
+     "label": "青山霊園のハチ公の碑",
+     "credit": "Lombroso / Public domain"
+    },
+    {
+     "at": 25,
+     "img": "grave",
+     "edit": "ket",
+     "why": "Hachi yên nghỉ cạnh giáo sư",
+     "label": "上野英三郎の墓とハチ公の碑（青山霊園）",
+     "credit": "Lombroso / Public domain"
+    }
+   ]
+  }
+ ]
+}
