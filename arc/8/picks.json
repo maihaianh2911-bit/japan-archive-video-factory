@@ -1,0 +1,293 @@
+{
+ "images": {
+  "shopwin": {
+   "src": "1/11-6.jpg"
+  },
+  "imadocats": {
+   "src": "1/8-2.jpg"
+  },
+  "hall": {
+   "src": "1/4-3.jpg"
+  },
+  "naotaka": {
+   "src": "1/5-4.jpg"
+  },
+  "gcat": {
+   "src": "1/2-1.jpg"
+  },
+  "pagoda": {
+   "src": "1/4-7.jpg"
+  },
+  "grave": {
+   "src": "1/5-7.jpg"
+  },
+  "shelves": {
+   "src": "1/1-8.jpg"
+  },
+  "sea": {
+   "src": "1/1-3.jpg"
+  },
+  "imado": {
+   "src": "1/8-3.jpg"
+  },
+  "marushime": {
+   "src": "1/9-5.jpg"
+  },
+  "hiroshige": {
+   "src": "1/6-4.jpg"
+  },
+  "shop": {
+   "src": "1/11-1.jpg"
+  },
+  "tokoname": {
+   "src": "1/13-2.jpg"
+  },
+  "right": {
+   "src": "1/11-2.jpg"
+  },
+  "left": {
+   "src": "1/11-5.jpg"
+  },
+  "close": {
+   "src": "1/1-1.jpg"
+  },
+  "gate": {
+   "src": "1/4-1.jpg"
+  },
+  "gold": {
+   "src": "1/15-1.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "shopwin",
+     "edit": "toan-canh",
+     "why": "mở bằng tủ kính đầy mèo vẫy tay ở cửa tiệm",
+     "label": "浅草の土産物店",
+     "credit": "emrank / CC BY 2.0"
+    },
+    {
+     "at": 2,
+     "img": "gold",
+     "edit": "troi-cham",
+     "why": "nói có nhiều thuyết: một tượng mèo vẫy tay",
+     "label": "招き猫",
+     "credit": "Badisches Landesmuseum / CC0"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "hall",
+     "edit": "toan-canh",
+     "why": "câu nhắc chùa Gōtoku-ji",
+     "label": "豪徳寺（東京・世田谷）",
+     "credit": "Guilhem Vellut / CC BY 2.0"
+    },
+    {
+     "at": 5,
+     "img": "naotaka",
+     "edit": "chan-dung",
+     "why": "câu nhắc lãnh chúa Ii Naotaka",
+     "label": "井伊直孝の肖像",
+     "caption": "井伊直孝（1590〜1659年）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 6,
+     "img": "gcat",
+     "edit": "khoanh",
+     "why": "con mèo vẫy tay: khoanh bàn chân giơ lên",
+     "label": "豪徳寺の招き猫",
+     "credit": "Dick Thomas Johnson / CC BY 2.0",
+     "marks": [
+      {
+       "at": 6.35,
+       "box": [
+        0.29,
+        0.36,
+        0.43,
+        0.66
+       ]
+      }
+     ]
+    },
+    {
+     "at": 7,
+     "img": "pagoda",
+     "edit": "troi-cham",
+     "why": "chuyện mưa giông, cảnh chùa",
+     "label": "豪徳寺の三重塔",
+     "credit": "Guilhem Vellut / CC BY 2.0"
+    },
+    {
+     "at": 9,
+     "img": "grave",
+     "edit": "dung-yen",
+     "why": "chùa được nhà Ii trọng vọng: mộ Ii Naotaka",
+     "label": "井伊直孝の墓",
+     "credit": "Suikotei / CC BY-SA 4.0"
+    },
+    {
+     "at": 10,
+     "img": "gate",
+     "edit": "toan-canh",
+     "why": "câu nói tên chùa Gōtoku-ji",
+     "label": "豪徳寺の招猫殿",
+     "credit": "Guilhem Vellut / CC BY 2.0"
+    },
+    {
+     "at": 11,
+     "img": "shelves",
+     "edit": "toan-canh",
+     "why": "tượng mèo dâng cúng trong chùa",
+     "label": "豪徳寺に奉納された招き猫",
+     "credit": "Ménestor / CC0"
+    },
+    {
+     "at": 12,
+     "img": "sea",
+     "edit": "troi-cham",
+     "why": "vô số tượng mèo",
+     "label": "豪徳寺に奉納された招き猫",
+     "credit": "Niwrat / CC0"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "imado",
+     "edit": "toan-canh",
+     "why": "câu nhắc Imado ở Asakusa",
+     "label": "今戸神社（東京・浅草）",
+     "credit": "Guilhem Vellut / CC BY 2.0"
+    },
+    {
+     "at": 14,
+     "img": "marushime",
+     "edit": "troi-cham",
+     "why": "chuyện bà lão nặn mèo: tượng mèo gốm Imado",
+     "label": "今戸焼の丸〆猫（昭和初期の型）",
+     "credit": "Marusime / CC BY-SA 4.0"
+    },
+    {
+     "at": 16,
+     "img": "imadocats",
+     "edit": "troi-cham",
+     "why": "mèo được ưa chuộng: đôi mèo đá ở đền Imado",
+     "label": "今戸神社の招き猫（浅草）",
+     "credit": "Guilhem Vellut / CC BY 2.0"
+    },
+    {
+     "at": 17,
+     "img": "hiroshige",
+     "edit": "tai-lieu-zoom",
+     "why": "cả bức tranh 1852 rồi phóng vào sạp bán mèo",
+     "label": "歌川広重「浄瑠理町繁花の図」（1852年）",
+     "credit": "Rijksmuseum / CC0",
+     "zoom": {
+      "to": [
+       0.0,
+       0.04,
+       0.42,
+       0.36
+      ],
+      "at": 17.6
+     },
+     "marks": [
+      {
+       "at": 18.4,
+       "box": [
+        0.02,
+        0.11,
+        0.22,
+        0.3
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "shop",
+     "edit": "toan-canh",
+     "why": "mèo vẫy tay ở cửa tiệm khắp nơi",
+     "label": "招き猫の店",
+     "credit": "luisvilla / CC BY 2.0"
+    },
+    {
+     "at": 21,
+     "img": "tokoname",
+     "edit": "toan-canh",
+     "why": "câu nhắc Tokoname",
+     "label": "常滑の招き猫通り（愛知県）",
+     "credit": "663highland / CC BY 2.5"
+    },
+    {
+     "at": 22,
+     "img": "right",
+     "edit": "khoanh",
+     "why": "giơ tay phải gọi tiền: khoanh tay và đồng tiền",
+     "label": "右手を上げた招き猫",
+     "credit": "wallygrom / CC BY-SA 2.0",
+     "marks": [
+      {
+       "at": 22.25,
+       "box": [
+        0.31,
+        0.1,
+        0.45,
+        0.33
+       ]
+      },
+      {
+       "at": 22.65,
+       "box": [
+        0.38,
+        0.6,
+        0.62,
+        0.84
+       ]
+      }
+     ]
+    },
+    {
+     "at": 23,
+     "img": "left",
+     "edit": "khoanh",
+     "why": "giơ tay trái gọi khách",
+     "label": "左手を上げた招き猫（名古屋・大須）",
+     "credit": "zayzayem / CC BY-SA 2.0",
+     "marks": [
+      {
+       "at": 23.3,
+       "box": [
+        0.6,
+        0.25,
+        0.76,
+        0.55
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "close",
+     "edit": "ket",
+     "why": "kết bằng hàng mèo ở Gōtoku-ji",
+     "label": "豪徳寺の招き猫",
+     "credit": "John Gillespie / CC BY-SA 2.0"
+    }
+   ]
+  }
+ ]
+}
