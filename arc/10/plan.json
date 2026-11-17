@@ -13,27 +13,41 @@
    "titleSize": 112,
    "caption": "",
    "credit": "MaedaAkihiko / CC BY-SA 4.0",
-   "bar": 369.5,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/gate.jpg",
      "w": 1920,
      "h": 1280,
      "box": [
-      69.0,
-      666.5,
-      942,
-      628.0
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.66667,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.66667,
+       1
+      ],
+      "to": [
+       0.33333,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -49,27 +63,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "jdnx / CC BY 2.0",
-   "bar": 226.0,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/statue.jpg",
      "w": 1400,
      "h": 1400,
      "box": [
-      82.5,
-      523.0,
-      915.0,
-      915
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
-      0,
-      1,
-      1
+      0.06,
+      0.01,
+      0.94,
+      0.89
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0.06,
+       0.01,
+       0.94,
+       0.89
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -85,8 +113,8 @@
    "titleSize": 90,
    "caption": "ハチ（1923〜1935年）",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 177.0,
-   "captionY": 1435.0,
+   "bar": 140,
+   "captionY": 1428,
    "subY": 1530,
    "pics": [
     {
@@ -94,10 +122,10 @@
      "w": 1173,
      "h": 1496,
      "box": [
-      181.3,
-      474.0,
-      717.4,
-      915
+      158.9,
+      410,
+      762.1,
+      972
      ],
      "view": [
       0,
@@ -105,7 +133,21 @@
       1,
       1
      ],
-     "drift": 0.03
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0.05,
+       0.0,
+       0.95,
+       0.9
+      ]
+     }
     }
    ],
    "marks": [],
@@ -121,7 +163,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "NASA / Public domain",
-   "bar": 418.1,
+   "bar": 383.2,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -130,10 +172,10 @@
      "w": 1400,
      "h": 789,
      "box": [
-      69.0,
-      715.1,
-      942,
-      530.9
+      40.0,
+      653.2,
+      1000,
+      563.6
      ],
      "view": [
       0,
@@ -157,8 +199,8 @@
    "titleSize": 90,
    "caption": "上野英三郎（1872〜1925年）",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 177.0,
-   "captionY": 1435.0,
+   "bar": 140,
+   "captionY": 1428,
    "subY": 1530,
    "pics": [
     {
@@ -166,10 +208,10 @@
      "w": 1064,
      "h": 1400,
      "box": [
-      192.3,
-      474.0,
-      695.4,
-      915
+      170.6,
+      410,
+      738.7,
+      972
      ],
      "view": [
       0,
@@ -177,7 +219,21 @@
       1,
       1
      ],
-     "drift": 0.03
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0.05,
+       0.0,
+       0.95,
+       0.9
+      ]
+     }
     }
    ],
    "marks": [],
@@ -193,27 +249,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 346.1,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/station.jpg",
      "w": 1400,
      "h": 1003,
      "box": [
-      69.0,
-      643.1,
-      942,
-      674.9
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.28357,
       0,
       1,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0.28357,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.71643,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -229,19 +299,19 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/10/img/ueno.jpg",
      "w": 1064,
      "h": 1400,
      "box": [
-      192.3,
-      523.0,
-      695.4,
-      915
+      148.6,
+      420.0,
+      782.8,
+      1030
      ],
      "view": [
       0,
@@ -265,27 +335,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "師岡宏次 / Public domain",
-   "bar": 371.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/shibuya39.jpg",
      "w": 1600,
      "h": 1061,
      "box": [
-      69.0,
-      668.2,
-      942,
-      624.7
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.33687,
       0,
       1,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0.33687,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.66313,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -301,27 +385,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 339.7,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/paw.jpg",
      "w": 1400,
      "h": 1022,
      "box": [
-      69.0,
-      636.7,
-      942,
-      687.7
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.73,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.73,
+       1
+      ],
+      "to": [
+       0.27,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -337,27 +435,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/family.jpg",
      "w": 1400,
      "h": 1050,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.25,
       0,
       1,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0.25,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.75,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -373,7 +485,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 374.3,
+   "bar": 336.8,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -382,10 +494,10 @@
      "w": 1400,
      "h": 919,
      "box": [
-      69.0,
-      671.3,
-      942,
-      618.4
+      40.0,
+      606.8,
+      1000,
+      656.4
      ],
      "view": [
       0,
@@ -409,27 +521,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "師岡宏次 / Public domain",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/10/img/first2.jpg",
      "w": 929,
      "h": 1400,
      "box": [
-      236.4,
-      523.0,
-      607.2,
-      915
+      198.3,
+      420.0,
+      683.5,
+      1030
      ],
      "view": [
-      0,
-      0,
-      1,
-      1
+      0.06,
+      0.01,
+      0.94,
+      0.89
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0.06,
+       0.01,
+       0.94,
+       0.89
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -445,27 +571,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "白根記念渋谷区郷土博物館・文学館 / Public domain",
-   "bar": 317.5,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/death.jpg",
      "w": 1400,
      "h": 1088,
      "box": [
-      69.0,
-      614.5,
-      942,
-      732.1
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.77714,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.77714,
+       1
+      ],
+      "to": [
+       0.22286,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -481,7 +621,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 280.1,
+   "bar": 236.8,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -490,18 +630,32 @@
      "w": 1400,
      "h": 1199,
      "box": [
-      69.0,
-      577.1,
-      942,
-      806.8
+      40.0,
+      506.8,
+      1000,
+      856.4
      ],
      "view": [
-      0,
-      0,
-      1,
-      1
+      0.06,
+      0.01,
+      0.94,
+      0.89
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0.06,
+       0.01,
+       0.94,
+       0.89
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -517,27 +671,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Momotarou2012 / CC BY-SA 3.0",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/museum.jpg",
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.75,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.75,
+       1
+      ],
+      "to": [
+       0.25,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -553,27 +721,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 344.0,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/farewell.jpg",
      "w": 1400,
      "h": 1009,
      "box": [
-      69.0,
-      641.0,
-      942,
-      678.9
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.27929,
       0,
       1,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0.27929,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.72071,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -589,7 +771,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 307.0,
+   "bar": 265.4,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -598,10 +780,10 @@
      "w": 1400,
      "h": 1119,
      "box": [
-      69.0,
-      604.0,
-      942,
-      752.9
+      40.0,
+      535.4,
+      1000,
+      799.3
      ],
      "view": [
       0,
@@ -625,7 +807,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "朝日新聞社 / Public domain",
-   "bar": 303.0,
+   "bar": 261.1,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -634,10 +816,10 @@
      "w": 1400,
      "h": 1131,
      "box": [
-      69.0,
-      600.0,
-      942,
-      761.0
+      40.0,
+      531.1,
+      1000,
+      807.9
      ],
      "view": [
       0,
@@ -673,19 +855,19 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Lombroso / Public domain",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/10/img/monument.jpg",
      "w": 1704,
      "h": 2272,
      "box": [
-      196.9,
-      523.0,
-      686.2,
-      915
+      153.8,
+      420.0,
+      772.5,
+      1030
      ],
      "view": [
       0,
@@ -693,7 +875,21 @@
       1,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0.06,
+       0.01,
+       0.94,
+       0.89
+      ]
+     }
     }
    ],
    "marks": [],
@@ -709,27 +905,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Lombroso / Public domain",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/10/img/grave.jpg",
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.25,
       0,
       1,
       1
      ],
-     "drift": 0.1
+     "drift": 0,
+     "move": {
+      "from": [
+       0.25,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.75,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
