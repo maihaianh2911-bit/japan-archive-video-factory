@@ -84,13 +84,44 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
 - `music`: quiet documentary bed (`key`, `mode`, `bpm`, `energy` 0.1–0.3). `music_volume` (default 0.16) only if
   the owner asks.
 - `queries`: 12–20 searches of open archives (see §2 "Where pictures come from"), at least one for every place,
-  object, map, text, person and event the script names, written in **English** (archive catalogues are English or
-  the local language; Japanese queries return nothing). A query without prefix searches all open archives at
-  once; a prefix searches one: `met:`, `aic:`, `cleveland:`, `europeana:`, `loc:`, `openverse:`. Use precise
-  object names (`Piri Reis map`, `Flood tablet Gilgamesh`, `Gustave Dore deluge`, `Gobekli Tepe pillar 43`).
-  Prefer precise, prefixed queries aimed at the archive that holds the thing (`openverse: Gobekli Tepe pillar`,
-  `met: Assyrian relief Nineveh`): an unprefixed query also takes fuzzy matches from AIC and The Met, which fill
-  its 8 slots with unrelated pictures (any painting with a matching word) and push the real ones out.
+  object, map, text, person and event the script names. The search (`scripts/find_images.py`) was rewritten on
+  17/11/2026, after the owner found the videos short of pictures: it now looks at more pictures than it keeps
+  (20–30 from each archive) and keeps the 8 that fit the words best, scored by CLIP, a model that compares a
+  picture with **English** words. Three kinds of query, in this order:
+  1. **The thing by its name, in the archive that holds it**: a string with a prefix — `"met: Hokusai Manga"`,
+     `"cleveland: Jomon"`, `"openverse: Gotokuji"`, `"met: Assyrian relief Nineveh"`. One to three words, the
+     name as a catalogue files it (`Piri Reis map`, `Flood tablet Gilgamesh`, `Gobekli Tepe pillar`), in English
+     or the archive's language: the archives look for all the words at once, so every extra word loses pictures
+     (`openverse: Hoeizan Mount Fuji` and `openverse: Fuji volcanic sand Subashiri` found nothing). Prefixes:
+     `openverse:` (20 pictures looked at, its limit), `met:`, `aic:`, `cleveland:`, `europeana:`, and `loc:` (Library of Congress: Perry's
+     expedition, Japanese prints, old photographs). `loc:` is slow and refuses the machine when asked a lot
+     (issue 4: two `loc:` queries took 25 minutes and brought nothing; issue 9: three took 8 minutes and
+     brought 17 pictures): at most two or three in a round, each for something it surely holds. Once an archive
+     refuses (429), its later queries of the round get an `"error"` at once: repeat them in the next round.
+  2. **A picture described**: `{"q": "dogu", "want": "a Jomon clay figurine with large goggle-like eyes"}`,
+     `{"q": "met: catfish", "want": "a Japanese woodblock print of a giant catfish"}`,
+     `{"q": "Edo fire", "want": "an old Japanese print of firemen with ladders at a burning town"}`. `q`: one or
+     two words, with or without a prefix. `want`: what the picture must show, **always in English**, in words
+     for what is seen — the object, its material, the kind of document (`woodblock print`, `hand-drawn old map`,
+     `bronze statue of a dog`, `black-and-white photograph of an excavation`) — not a name the model cannot know
+     (`Suiko Koryaku`). Without a prefix the machine asks Openverse, The Met, the Art Institute of Chicago,
+     Cleveland and Europeana for 20 each, scores every one against `want` and keeps the 8 that show it best;
+     pictures that do not show it (score under 0.18) are dropped, so a group can come back small or empty: then
+     ask another word. `"keep": 12` keeps more. (Before, the 8 slots of an unprefixed query were the first
+     picture or two of each archive: any painting with a matching word.)
+     A plain string without a prefix (`"Jomon clay figure"`) still works and is ranked against its own words.
+     Words in Japanese (`"commons: 鯰絵"`) are ranked only with a `want`; without one the archive's order stays.
+  3. **Wikimedia, only when nothing else has the document** (owner, 12/11: free pictures, Wikipedia not needed;
+     it is never searched without its prefix). `"wiki: <name>"` brings what Wikimedia has **about one thing** as
+     one group of up to 24, the most to the point first: the pictures its Wikidata item names, those of its
+     Japanese and English Wikipedia articles, the files of its Commons category, photos taken at its
+     coordinates — `"wiki: 亀ヶ岡石器時代遺跡"`, `"wiki: Hachikō"`, `"wiki: 豪徳寺"`. The name is the title of
+     its Wikipedia article (Japanese or English) or its item (`"wiki: Q…"`); `index.json` says which item was
+     found (`wikidata`: id, label, description, `coord`): check it is the right thing. One `wiki:` asks for a
+     thing once, where issue 10 asked Commons eleven times. `"geo: <lat>,<lon> <metres>"`: Commons
+     photos taken around a point, whatever they are called (the mound of a site, the grounds of a shrine); the
+     coordinates of a `wiki:` item are in `index.json`. `"commons: <words>"` is the full-text search (Japanese
+     words work: `commons: 水虎考略`), `File:<name>` fetches one exact file.
 - `urls`: pictures you found yourself on a page that states a free licence (journal figures under CC BY, a museum
   open-access page, a government archive): direct image URL + page + title + author + licence. Check the licence on
   the page before adding it.
@@ -106,15 +137,36 @@ lines and 17 queries, ~30 s more per line; you are woken at `arc-pick`.)
    names, digits) are dismissed. If `check.md` says the check could not run ("chưa chạy được": Whisper failed, the
    voice itself is complete), look at the names and rare words yourself and give them kana in `tts`. After a voice
    step that failed part-way, the lines already read wait in `voice-cache/` and the next `prepare` reuses them.
-2. Open every `img/<r>/sheet_<k>.jpg` (tiles: `#n 1024x683 CC BY 2.0` + source + date; `img/<r>/index.json` has
-   titles, authors, dates, licences, pages). A query whose search failed has an `"error"` in `index.json` and no
-   sheet: repeat it in the next round. A scene without a fitting picture → write `arc/<N>/search-<r>.json`
+2. Open every `img/<r>/sheet_<k>.jpg` (tiles: `#n 1024x683 CC BY 2.0` + source + date, and for a ranked group
+   the score: `~0.31` it shows the words, `~0.20` doubtful; `img/<r>/index.json` has titles, authors, dates,
+   licences, pages, the score as `match`, how many pictures the archives offered as `candidates`, and for
+   `wiki:` the item found as `wikidata`). A ranked group shows its best fit first; a group that was not ranked
+   (no score: `wiki:`, `geo:`, Japanese words without a `want`) is in the archive's order, so look at all of
+   it. Sources `commons/wiki` = named by the item or its article, `commons/category`, `commons/geo`. A query
+   whose search failed has an `"error"` in `index.json` and no sheet: repeat it in the next round. A group that
+   is empty without an error found nothing, or nothing that shows its `want`: ask another word, not the same
+   one. A scene without a fitting picture → write `arc/<N>/search-<r>.json`
    `{"queries": […], "urls": […]}` (r = 2, 3…), push, poll the renders branch for `arc/<N>/img/<r>/index.json`
    (every 60 s, up to ~20 min: the run installs its tools for a few minutes before it searches), view it. If it is
    not there by then, remove `arc-busy` and stop: the machine wakes the Claude task when the round is published
    (or marks the issue `arc-failed`).
 3. Open the full picture (`img/<r>/<k>-<n>.jpg`) before choosing a view, a detail or a ring: you must see the very
-   thing the line names (the two round enclosures, the fox on the pillar, the southern edge of the map).
+   thing the line names (the two round enclosures, the fox on the pillar, the southern edge of the map). The
+   score only orders the group: it says the picture looks like the words, not that it is the document (a later
+   copy, another figurine of the same kind, a souvenir of the statue score as high). Title, date and page in
+   `index.json` say what it is.
+   **Enough pictures, and the document itself first** (17/11/2026, after the owner found the videos short of
+   pictures):
+   - the real document of the very thing the line names (this figurine, this broadside, this site) comes before
+     a related one (another object of the same culture, a later print of the same legend); a related document
+     never stands in for one that was found, and its label says what it is;
+   - a picture appears **at most twice** in a video, the second time as another view (a detail, a zoom, the
+     closing shot). More only when it is the one document the whole video is about (issue 2: the single Amabie
+     broadside), each time as a different view;
+   - count before you write the shots: at least **3 different pictures for every 4 shots**, and with
+     `pace: fast` about one new picture per line (§1). Fewer → another round (`search-<r>.json`: a shorter `q`
+     with a `want`, the archive that holds the thing, then Wikimedia if nothing else has it) before a picture
+     is shown a third time.
 4. **Choose the edit of every shot from the catalogue** (owner, 14/11: read each line, then pick a fitting way to
    show it). The catalogue is built from the moves of the approved sample (`00-video-mau/MAU-EDIT-20S.mp4`: whole
    picture at full width → wide picture with a detail box below → aerial photo with rings appearing when the voice
@@ -157,10 +209,14 @@ lines and 17 queries, ~30 s more per line; you are woken at `arc-pick`.)
      watermarks, captions burnt in, nudity, gore.
 5. **Where pictures come from** (owner, 12/11: free pictures, Wikipedia not needed): the machine searches open
    archives — Openverse (Flickr and other CC collections, Wikimedia excluded), The Met (CC0), Art Institute of
-   Chicago (public domain), Cleveland Museum of Art (CC0), Europeana (CC0 / PD / CC BY / CC BY-SA), Library of
-   Congress (no known restrictions). Allowed licences: public domain, CC0, CC BY, CC BY-SA (credited); never NC or
-   ND. `commons: …` / `File:…` searches Wikimedia Commons, only when nothing else has the document.
+   Chicago (public domain), Cleveland Museum of Art (CC0), Europeana (CC0 / PD / CC BY / CC BY-SA); with its
+   prefix `loc:` also the Library of Congress (no known restrictions; out of the unprefixed search since
+   17/11/2026, see §1). Allowed licences: public domain, CC0, CC BY, CC BY-SA (credited); never NC or
+   ND. `wiki: …` / `geo: …` / `commons: …` / `File:…` search Wikimedia, only when nothing else has the document.
    Sharp, well-lit pictures first; short side ≥ ~700 px for a full-width shot (smaller only for a detail).
+   A ranked search leaves out pictures that clearly look like nudity (the log counts them as `unsuitable`; the
+   line is set so that clay figurines and netsuke pass); you still check every picture yourself against the
+   "Never" list of step 4.
 6. Format:
 ```json
 {"images": {"site": {"src": "1/1-1.jpg"}, "aerial": {"src": "1/5-1.jpg", "rotate": 90},

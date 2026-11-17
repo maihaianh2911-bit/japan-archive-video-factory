@@ -2,7 +2,8 @@
 """Smoke test of the archive pipeline on made-up data (no 11labs, no picture search, no network):
 pictures → prep.py → build.py → fonts.py (when FONTSOURCE is set) → preview.py → checks, and with --still two
 Remotion frames of the ArcV composition (before and after a ring appears). The picks use named edits of the
-catalogue (scripts/arc/edits.py) next to a plain shot; wrong edits must be refused. Run from the repo root:
+catalogue (scripts/arc/edits.py) next to a plain shot; wrong edits must be refused. The picture search has its own
+tests on made-up archives (tests/find_units.py), run from here first. Run from the repo root:
 python3 tests/arc_smoke.py [--still]"""
 import json, os, re, shutil, subprocess, sys, tempfile
 import numpy as np
@@ -18,6 +19,7 @@ job, pub, imgsrc, out = (os.path.join(tmp, d) for d in ('job', 'public', 'imgsrc
 voice = os.path.join(pub, 'arc', N, 'voice')
 for d in (job, os.path.join(imgsrc, '1'), voice, out): os.makedirs(d)
 run = lambda *a: subprocess.run(a, check=True, cwd=ROOT)
+run(sys.executable, os.path.join(ROOT, 'tests', 'find_units.py'))   # the picture search: made-up archives, no network
 
 # pictures: a landscape site photo, a wide panorama, a tall pillar photo
 rng = np.random.RandomState(1)
