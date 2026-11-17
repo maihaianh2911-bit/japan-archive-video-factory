@@ -1,0 +1,252 @@
+{
+ "images": {
+  "yoshitoshi": {
+   "src": "1/1-3.jpg"
+  },
+  "tanaka": {
+   "src": "2/3-3.jpg"
+  },
+  "shoki1286": {
+   "src": "2/3-1.jpg"
+  },
+  "s1": {
+   "src": "2/8-1.jpg"
+  },
+  "utamaro": {
+   "src": "1/1-4.jpg"
+  },
+  "s_spring": {
+   "src": "2/8-4.jpg"
+  },
+  "s_summer": {
+   "src": "2/8-3.jpg"
+  },
+  "s_winter": {
+   "src": "2/8-5.jpg"
+  },
+  "s_depart": {
+   "src": "2/8-6.jpg"
+  },
+  "s_return": {
+   "src": "2/8-2.jpg"
+  },
+  "s_open": {
+   "src": "2/8-7.jpg"
+  },
+  "matsuki": {
+   "src": "1/1-8.jpg"
+  },
+  "manyo": {
+   "src": "1/6-1.jpg"
+  },
+  "ryugu": {
+   "src": "1/15-4.jpg"
+  },
+  "torii": {
+   "src": "2/6-1.jpg"
+  },
+  "honden": {
+   "src": "2/6-5.jpg"
+  },
+  "treasure": {
+   "src": "2/5-5.jpg"
+  },
+  "funaya": {
+   "src": "1/10-6.jpg"
+  },
+  "hokkei": {
+   "src": "1/2-5.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "yoshitoshi",
+     "edit": "troi-cham",
+     "why": "mở bằng tranh Urashima cưỡi rùa",
+     "label": "月岡芳年「帰国浦島」（1882年）",
+     "credit": "Los Angeles County Museum of Art / Public domain"
+    },
+    {
+     "at": 2,
+     "img": "tanaka",
+     "edit": "dung-yen",
+     "why": "câu nói sách sử 1.300 năm trước: bản chép Nihon Shoki",
+     "label": "『日本書紀』の写本（田中本）",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "shoki1286",
+     "edit": "so-lieu",
+     "title": "七二〇年",
+     "why": "năm 720 Nihon Shoki ra đời",
+     "label": "『日本書紀』神代巻（1286年の写本）",
+     "credit": "卜部兼方 / Public domain"
+    },
+    {
+     "at": 5,
+     "img": "s1",
+     "edit": "troi-cham",
+     "why": "Urashimako câu được con rùa: cảnh đầu cuộn tranh",
+     "label": "「浦島」絵巻（ボドリアン図書館蔵）",
+     "credit": "Bodleian Library / CC BY 4.0"
+    },
+    {
+     "at": 6,
+     "img": "utamaro",
+     "edit": "troi-cham",
+     "why": "rùa hóa thành người con gái đẹp",
+     "label": "喜多川歌麿「浦島」（1801年）",
+     "credit": "Library of Congress / Public domain"
+    },
+    {
+     "at": 7,
+     "img": "s_spring",
+     "edit": "troi-cham",
+     "why": "đi đến thế giới dưới biển",
+     "label": "「浦島」絵巻・海の中の国（春）",
+     "credit": "Bodleian Library / CC BY 4.0"
+    },
+    {
+     "at": 8,
+     "img": "s_summer",
+     "edit": "troi-cham",
+     "why": "gặp các vị tiên ở thế giới đó",
+     "label": "「浦島」絵巻・海の中の国（夏）",
+     "credit": "Bodleian Library / CC BY 4.0"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "s_winter",
+     "edit": "troi-cham",
+     "why": "sách Fudoki kể chi tiết hơn: các mùa trôi qua",
+     "label": "「浦島」絵巻・海の中の国（冬）",
+     "credit": "Bodleian Library / CC BY 4.0"
+    },
+    {
+     "at": 12,
+     "img": "s_depart",
+     "edit": "troi-cham",
+     "why": "về quê: lúc chia tay, nhận chiếc hộp",
+     "label": "「浦島」絵巻・別れと箱",
+     "credit": "Bodleian Library / CC BY 4.0"
+    },
+    {
+     "at": 13,
+     "img": "s_return",
+     "edit": "so-lieu",
+     "title": "三百年後",
+     "why": "300 năm đã trôi qua",
+     "label": "「浦島」絵巻・帰ってきた故郷",
+     "credit": "Bodleian Library / CC BY 4.0"
+    },
+    {
+     "at": 14,
+     "img": "s_open",
+     "edit": "khoanh",
+     "why": "mở chiếc hộp: khoanh Urashima với chiếc hộp",
+     "label": "「浦島」絵巻・箱を開ける浦島",
+     "credit": "Bodleian Library / CC BY 4.0",
+     "marks": [
+      {
+       "at": 14.6,
+       "box": [
+        0.17,
+        0.02,
+        0.36,
+        0.2
+       ]
+      }
+     ]
+    },
+    {
+     "at": 15,
+     "img": "matsuki",
+     "edit": "troi-cham",
+     "why": "dáng trẻ tan theo gió",
+     "label": "『浦島』の挿絵（1899年）",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "manyo",
+     "edit": "tai-lieu-zoom",
+     "why": "câu nhắc Man'yōshū: cả bản chép rồi phóng vào",
+     "label": "『万葉集』の写本（西本願寺本）",
+     "credit": "Wikimedia Commons / Public domain",
+     "zoom": {
+      "to": [
+       0.45,
+       0.0,
+       1.0,
+       0.8
+      ],
+      "at": 16.8
+     }
+    },
+    {
+     "at": 19,
+     "img": "ryugu",
+     "edit": "troi-cham",
+     "why": "tên 'thủy cung' có về sau: tranh Ryūgūjō",
+     "label": "月岡芳年「竜宮城」（1880年）",
+     "credit": "Library of Congress / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "torii",
+     "edit": "toan-canh",
+     "why": "câu nhắc đền Urashima ở Ine",
+     "label": "浦嶋神社（京都府伊根町）",
+     "credit": "Asturio Cantabrio / CC BY-SA 4.0"
+    },
+    {
+     "at": 22,
+     "img": "honden",
+     "edit": "toan-canh",
+     "why": "Urashimako được thờ làm thần: điện chính",
+     "label": "浦嶋神社の本殿",
+     "credit": "Naokijp / CC BY-SA 4.0"
+    },
+    {
+     "at": 23,
+     "img": "treasure",
+     "edit": "dung-yen",
+     "why": "đền giữ cuộn tranh cổ: nhà bảo vật",
+     "label": "浦嶋神社の宝物資料室",
+     "credit": "Asturio Cantabrio / CC BY-SA 4.0"
+    },
+    {
+     "at": 24,
+     "img": "funaya",
+     "edit": "toan-canh",
+     "why": "đi rồi trở về: biển Ine ngày nay",
+     "label": "伊根の舟屋（京都府伊根町）",
+     "credit": "雷太 / CC BY 2.0"
+    },
+    {
+     "at": 25,
+     "img": "hokkei",
+     "edit": "ket",
+     "why": "kết: Urashima trở về trên lưng cá",
+     "label": "魚屋北渓「浦島」（19世紀）",
+     "credit": "The Metropolitan Museum of Art / CC0"
+    }
+   ]
+  }
+ ]
+}
