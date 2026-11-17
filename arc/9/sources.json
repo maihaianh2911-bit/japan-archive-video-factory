@@ -1,0 +1,520 @@
+{
+ "pictures": [
+  {
+   "name": "uraga",
+   "src": "1/12-1.jpg",
+   "title": "Uraga Harbor",
+   "artist": "Utagawa Hiroshige",
+   "date": "",
+   "license": "CC0",
+   "page": "https://www.metmuseum.org/art/collection/search/37071"
+  },
+  {
+   "name": "kw54",
+   "src": "1/13-1.jpg",
+   "title": "Japanese 1854 print Commodore Perry.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "1854",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Japanese_1854_print_Commodore_Perry.jpg"
+  },
+  {
+   "name": "perry",
+   "src": "1/11-1.jpg",
+   "title": "Commodore Matthew Calbraith Perry.jpg",
+   "artist": "Mathew Benjamin Brady",
+   "date": "circa 1856",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Commodore_Matthew_Calbraith_Perry.jpg"
+  },
+  {
+   "name": "ship61",
+   "src": "1/6-1.jpg",
+   "title": "Hiroshige II, Bankoku nyūsen sugoroku.jpg",
+   "artist": "歌川広重２代目",
+   "date": "between 1853 and 1869",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Hiroshige_II,_Bankoku_ny%C5%ABsen_sugoroku.jpg"
+  },
+  {
+   "name": "photo",
+   "src": "1/8-6.jpg",
+   "title": "Kurofune 2.jpg",
+   "artist": "published by 東洋文化協會 (The Eastern Culture Association)",
+   "date": "between 1933 and 1934",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Kurofune_2.jpg"
+  },
+  {
+   "name": "landing",
+   "src": "1/1-2.jpg",
+   "title": "The American expedition, under Commodore Perry, landing in Japan, July 14, 1853",
+   "artist": "Hatch & Severyn, lithographer",
+   "date": "1853-01-01",
+   "license": "No known restrictions (Library of Congress)",
+   "page": "https://www.loc.gov/item/2014647410/"
+  },
+  {
+   "name": "monument",
+   "src": "1/10-3.jpg",
+   "title": "Perry-Zyourikukinenhi1.JPG",
+   "artist": "のりまき",
+   "date": "2013-06-02",
+   "license": "CC BY 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Perry-Zyourikukinenhi1.JPG"
+  },
+  {
+   "name": "kw53",
+   "src": "1/1-5.jpg",
+   "title": "[Kita-Amerika gasshukoku: Peruri to yu mono Soshu Uraga ni torai su]",
+   "artist": "",
+   "date": "1850-01-01",
+   "license": "No known restrictions (Library of Congress)",
+   "page": "https://www.loc.gov/item/2002700114/"
+  },
+  {
+   "name": "tengu",
+   "src": "1/2-3.jpg",
+   "title": "Kita Amerika jinbutsu: Peruri zō",
+   "artist": "",
+   "date": "1854",
+   "license": "No known restrictions (Library of Congress)",
+   "page": "https://www.loc.gov/item/2002700123/"
+  },
+  {
+   "name": "perry2",
+   "src": "1/2-4.jpg",
+   "title": "Kita-Amerika kyōwa seiji-shū jōkan shinzō no utsushi",
+   "artist": "",
+   "date": "1854-01-01",
+   "license": "No known restrictions (Library of Congress)",
+   "page": "https://www.loc.gov/item/2002700349/"
+  },
+  {
+   "name": "photo2",
+   "src": "1/8-2.jpg",
+   "title": "Kurofune 3.jpg",
+   "artist": "published by 東洋文化協會 (The Eastern Culture Association)",
+   "date": "between 1933 and 1934",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Kurofune_3.jpg"
+  },
+  {
+   "name": "jokisen",
+   "src": "1/1-4.jpg",
+   "title": "Gaikokujin sen no uchi: jōkisen",
+   "artist": "Utagawa, Hiroshige, 1826-1869, artist",
+   "date": "1861",
+   "license": "No known restrictions (Library of Congress)",
+   "page": "https://www.loc.gov/item/2002700155/"
+  },
+  {
+   "name": "foreign",
+   "src": "1/2-5.jpg",
+   "title": "Oranda, Amerika, Igirisu",
+   "artist": "Utagawa, Hiroshige, 1826-1869, artist",
+   "date": "1860",
+   "license": "No known restrictions (Library of Congress)",
+   "page": "https://www.loc.gov/item/2002700151/"
+  },
+  {
+   "name": "heine",
+   "src": "1/13-6.jpg",
+   "title": "Commodore-Perry-Visit-Kanagawa-1854.jpg",
+   "artist": "Wilhelm Heine",
+   "date": "1854-03-08",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Commodore-Perry-Visit-Kanagawa-1854.jpg"
+  },
+  {
+   "name": "treaty",
+   "src": "1/9-7.jpg",
+   "title": "日米和親条約写P4.png",
+   "artist": "国立国会図書館ウェブサイト",
+   "date": "1854-03-31",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E7%B1%B3%E5%92%8C%E8%A6%AA%E6%9D%A1%E7%B4%84%E5%86%99P4.png"
+  },
+  {
+   "name": "shimoda",
+   "src": "1/13-2.jpg",
+   "title": "Landing of Commodore Perry meet Imperial Commissioners at Shimoda 8 June 1854.png",
+   "artist": "Artist: Eliphalet M. Brown, Jr., 1816 - 1886. Copy after: Peter Bernard William Heine, 1827 - 1885",
+   "date": "1855",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Landing_of_Commodore_Perry_meet_Imperial_Commissioners_at_Shimoda_8_June_1854.png"
+  }
+ ],
+ "shots": [
+  {
+   "scene": 1,
+   "shot": 1,
+   "start": 0.0,
+   "end": 4.964,
+   "said": [
+    "一八五三年、嘉永六年の夏。",
+    "江戸湾の入り口、浦賀の沖に、"
+   ],
+   "label": "歌川広重が描いた浦賀の港",
+   "title": "一八五三年",
+   "image": "uraga",
+   "page": "https://www.metmuseum.org/art/collection/search/37071",
+   "credit": "Utagawa Hiroshige / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "so-lieu",
+   "why": "năm 1853, cửa vịnh Edo ở Uraga"
+  },
+  {
+   "scene": 1,
+   "shot": 2,
+   "start": 4.964,
+   "end": 7.392,
+   "said": [
+    "四隻の黒い船が姿を現しました。"
+   ],
+   "label": "黒船を描いた瓦版（1854年）",
+   "title": "黒船来航",
+   "image": "kw54",
+   "page": "https://commons.wikimedia.org/wiki/File:Japanese_1854_print_Commodore_Perry.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 5.752,
+     "box": [
+      0.6,
+      0.42,
+      0.98,
+      0.95
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "tàu đen xuất hiện: khoanh con tàu lớn trên báo giấy"
+  },
+  {
+   "scene": 1,
+   "shot": 3,
+   "start": 7.392,
+   "end": 9.623,
+   "said": [
+    "アメリカのペリーが率いる艦隊です。"
+   ],
+   "label": "ペリーの写真（1856年ごろ）",
+   "title": "黒船来航",
+   "image": "perry",
+   "page": "https://commons.wikimedia.org/wiki/File:Commodore_Matthew_Calbraith_Perry.jpg",
+   "credit": "Mathew Brady / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "chan-dung",
+   "why": "câu nhắc Perry: ảnh chụp thật"
+  },
+  {
+   "scene": 1,
+   "shot": 4,
+   "start": 9.623,
+   "end": 13.705,
+   "said": [
+    "煙を上げて進む大きな蒸気船を、",
+    "人々は「黒船」と呼びました。"
+   ],
+   "label": "二代歌川広重が描いたアメリカの船",
+   "title": "黒船来航",
+   "image": "ship61",
+   "page": "https://commons.wikimedia.org/wiki/File:Hiroshige_II,_Bankoku_ny%C5%ABsen_sugoroku.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "tàu hơi nước nhả khói mà người ta gọi là tàu đen"
+  },
+  {
+   "scene": 2,
+   "shot": 1,
+   "start": 13.705,
+   "end": 17.882,
+   "said": [
+    "ペリーは、大統領の国書を受け取るよう、",
+    "幕府に強く求めます。"
+   ],
+   "label": "ペリー一行の上陸（1853年）",
+   "title": "ペリーの国書",
+   "image": "landing",
+   "page": "https://www.loc.gov/item/2014647410/",
+   "credit": "Library of Congress / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "Perry ép Mạc phủ nhận quốc thư: cảnh lên bờ 1853"
+  },
+  {
+   "scene": 2,
+   "shot": 2,
+   "start": 17.882,
+   "end": 22.31,
+   "said": [
+    "幕府は久里浜で国書を受け取り、",
+    "返事は翌年ということになりました。"
+   ],
+   "label": "久里浜のペリー上陸記念碑",
+   "title": "ペリーの国書",
+   "image": "monument",
+   "page": "https://commons.wikimedia.org/wiki/File:Perry-Zyourikukinenhi1.JPG",
+   "credit": "のりまき / CC BY 3.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nhắc Kurihama: bia kỷ niệm Perry lên bờ"
+  },
+  {
+   "scene": 3,
+   "shot": 1,
+   "start": 22.31,
+   "end": 26.694,
+   "said": [
+    "町には瓦版が次々と出回り、",
+    "黒船やペリーの姿が描かれました。"
+   ],
+   "label": "ペリー来航を伝える瓦版",
+   "title": "天狗のペリー",
+   "image": "kw53",
+   "page": "https://www.loc.gov/item/2002700114/",
+   "credit": "Library of Congress / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": {
+    "to": [
+     0.15,
+     0.42,
+     0.85,
+     0.75
+    ],
+    "at": 11.6,
+    "dur": 1.6
+   },
+   "marks": [],
+   "edit": "tai-lieu-zoom",
+   "why": "báo giấy tung ra: cả tờ rồi phóng vào các con tàu"
+  },
+  {
+   "scene": 3,
+   "shot": 2,
+   "start": 26.694,
+   "end": 30.169,
+   "said": [
+    "中には、天狗のような顔に描かれたペリーの絵もあります。"
+   ],
+   "label": "「北亜墨利加人物 ペルリ像」",
+   "title": "天狗のペリー",
+   "image": "tengu",
+   "page": "https://www.loc.gov/item/2002700123/",
+   "credit": "Library of Congress / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 28.273,
+     "box": [
+      0.5,
+      0.55,
+      0.8,
+      0.83
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "Perry vẽ như mặt tengu: khoanh cái mũi"
+  },
+  {
+   "scene": 3,
+   "shot": 3,
+   "start": 30.169,
+   "end": 34.29,
+   "said": [
+    "見たこともない異国の人を、",
+    "絵師たちは想像をまじえて描いたのです。"
+   ],
+   "label": "日本で描かれたペリーの肖像（1854年）",
+   "title": "天狗のペリー",
+   "image": "perry2",
+   "page": "https://www.loc.gov/item/2002700349/",
+   "credit": "Library of Congress / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "họa sĩ vẽ theo tưởng tượng: một bức chân dung Perry khác"
+  },
+  {
+   "scene": 4,
+   "shot": 1,
+   "start": 34.29,
+   "end": 41.785,
+   "said": [
+    "黒船の騒ぎを詠んだ、こんな狂歌も伝わっています。",
+    "「泰平の眠りをさます上喜撰、",
+    "たった四杯で夜も寝られず」。"
+   ],
+   "label": "黒船（写真集より）",
+   "title": "上喜撰の狂歌",
+   "image": "photo2",
+   "page": "https://commons.wikimedia.org/wiki/File:Kurofune_3.jpg",
+   "credit": "東洋文化協会 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "bài thơ trào phúng về cơn náo loạn tàu đen"
+  },
+  {
+   "scene": 4,
+   "shot": 2,
+   "start": 41.785,
+   "end": 46.455,
+   "said": [
+    "上喜撰という高いお茶と蒸気船をかけて、",
+    "慌てる世の中を笑ったものです。"
+   ],
+   "label": "二代広重「外国人船之内 蒸気船」（1861年）",
+   "title": "上喜撰の狂歌",
+   "image": "jokisen",
+   "page": "https://www.loc.gov/item/2002700155/",
+   "credit": "Library of Congress / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 43.463,
+     "box": [
+      0.05,
+      0.0,
+      0.6,
+      0.28
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "chơi chữ 'jōkisen' = tàu hơi nước: khoanh ống khói"
+  },
+  {
+   "scene": 4,
+   "shot": 3,
+   "start": 46.455,
+   "end": 50.054,
+   "said": [
+    "ただし、作られたのはもっと後の時代だという説もあります。"
+   ],
+   "label": "二代広重「阿蘭陀・亜墨利加・英吉利」（1860年）",
+   "title": "上喜撰の狂歌",
+   "image": "foreign",
+   "page": "https://www.loc.gov/item/2002700151/",
+   "credit": "Library of Congress / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "bài thơ có thể làm về sau: tranh người nước ngoài thời đó"
+  },
+  {
+   "scene": 5,
+   "shot": 1,
+   "start": 50.054,
+   "end": 52.923,
+   "said": [
+    "翌年、ペリーは七隻の艦隊で再びやって来て、"
+   ],
+   "label": "ペリー艦隊の横浜上陸（1854年）",
+   "title": "一八五四年",
+   "image": "heine",
+   "page": "https://commons.wikimedia.org/wiki/File:Commodore-Perry-Visit-Kanagawa-1854.jpg",
+   "credit": "Wilhelm Heine / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "so-lieu",
+   "why": "năm sau Perry quay lại với 7 tàu"
+  },
+  {
+   "scene": 5,
+   "shot": 2,
+   "start": 52.923,
+   "end": 55.242,
+   "said": [
+    "日米和親条約が結ばれました。"
+   ],
+   "label": "日米和親条約（1854年）",
+   "title": "開国へ",
+   "image": "treaty",
+   "page": "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E7%B1%B3%E5%92%8C%E8%A6%AA%E6%9D%A1%E7%B4%84%E5%86%99P4.png",
+   "credit": "国立国会図書館 / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "dung-yen",
+   "why": "câu nhắc Hiệp ước: văn bản tiếng Nhật, để yên cho đọc"
+  },
+  {
+   "scene": 5,
+   "shot": 3,
+   "start": 55.242,
+   "end": 59.514,
+   "said": [
+    "二百年以上続いた鎖国の時代は、",
+    "ここで大きく動き出します。"
+   ],
+   "label": "下田でのペリー一行（1854年）",
+   "title": "開国へ",
+   "image": "shimoda",
+   "page": "https://commons.wikimedia.org/wiki/File:Landing_of_Commodore_Perry_meet_Imperial_Commissioners_at_Shimoda_8_June_1854.png",
+   "credit": "Eliphalet Brown / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "thời đóng cửa chuyển mình: Perry gặp quan Nhật ở Shimoda"
+  },
+  {
+   "scene": 5,
+   "shot": 4,
+   "start": 59.514,
+   "end": 65.561,
+   "said": [
+    "四隻の黒船は、",
+    "日本が世界と向き合う時代の始まりを告げたのです。"
+   ],
+   "label": "二代歌川広重が描いたアメリカの船",
+   "title": "開国へ",
+   "image": "ship61",
+   "page": "https://commons.wikimedia.org/wiki/File:Hiroshige_II,_Bankoku_ny%C5%ABsen_sugoroku.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "ket",
+   "why": "kết bằng con tàu đen"
+  }
+ ]
+}
