@@ -13,19 +13,19 @@
    "titleSize": 112,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/7/img/sekien.jpg",
      "w": 1061,
      "h": 1400,
      "box": [
-      193.3,
-      523.0,
-      693.4,
-      915
+      149.7,
+      420.0,
+      780.6,
+      1030
      ],
      "view": [
       0,
@@ -33,7 +33,21 @@
       1,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0.1,
+       0.05,
+       0.9,
+       0.85
+      ]
+     }
     }
    ],
    "marks": [],
@@ -49,27 +63,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Juntaku / Public domain",
-   "bar": 360.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/7/img/juni.jpg",
      "w": 1920,
      "h": 1318,
      "box": [
-      69.0,
-      657.2,
-      942,
-      646.6
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.31354,
       0,
       1,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0.31354,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.68646,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -85,7 +113,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 311.1,
+   "bar": 269.6,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -94,10 +122,10 @@
      "w": 1400,
      "h": 1107,
      "box": [
-      69.0,
-      608.1,
-      942,
-      744.9
+      40.0,
+      539.6,
+      1000,
+      790.7
      ],
      "view": [
       0,
@@ -121,7 +149,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Juntaku / Public domain",
-   "bar": 360.2,
+   "bar": 321.8,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -130,10 +158,10 @@
      "w": 1920,
      "h": 1318,
      "box": [
-      69.0,
-      657.2,
-      942,
-      646.6
+      40.0,
+      591.8,
+      1000,
+      686.5
      ],
      "view": [
       0,
@@ -180,27 +208,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 299.0,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/7/img/shibaten.jpg",
      "w": 1400,
      "h": 1143,
      "box": [
-      69.0,
-      596.0,
-      942,
-      769.1
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.81643,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.81643,
+       1
+      ],
+      "to": [
+       0.18357,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -216,19 +258,19 @@
    "titleSize": 90,
    "caption": "",
    "credit": "The Metropolitan Museum of Art / CC0",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/7/img/cuke.jpg",
      "w": 2134,
      "h": 3200,
      "box": [
-      234.9,
-      523.0,
-      610.2,
-      915
+      196.6,
+      420.0,
+      686.9,
+      1030
      ],
      "view": [
       0,
@@ -264,19 +306,19 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/7/img/rokusuke.jpg",
      "w": 1074,
      "h": 1600,
      "box": [
-      232.9,
-      523.0,
-      614.2,
-      915
+      194.3,
+      420.0,
+      691.4,
+      1030
      ],
      "view": [
       0,
@@ -284,7 +326,21 @@
       1,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0.1,
+       0.05,
+       0.9,
+       0.85
+      ]
+     }
     }
    ],
    "marks": [],
@@ -300,19 +356,19 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/7/img/sekien.jpg",
      "w": 1061,
      "h": 1400,
      "box": [
-      193.3,
-      523.0,
-      693.4,
-      915
+      149.7,
+      420.0,
+      780.6,
+      1030
      ],
      "view": [
       0,
@@ -348,7 +404,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "石焼ビビンバ / CC BY-SA 4.0",
-   "bar": 330.2,
+   "bar": 290.0,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -357,10 +413,10 @@
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      560.0,
+      1000,
+      750.0
      ],
      "view": [
       0,
@@ -396,27 +452,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/7/img/takagi.jpg",
      "w": 1920,
      "h": 2806,
      "box": [
-      227.0,
-      523.0,
-      626.1,
-      915
+      187.6,
+      420.0,
+      704.8,
+      1030
      ],
      "view": [
-      0,
-      0,
-      1,
-      1
+      0.1,
+      0.05,
+      0.9,
+      0.85
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0.1,
+       0.05,
+       0.9,
+       0.85
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -432,19 +502,19 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/7/img/river.jpg",
      "w": 1873,
      "h": 2577,
      "box": [
-      207.5,
-      523.0,
-      665.0,
-      915
+      165.7,
+      420.0,
+      748.6,
+      1030
      ],
      "view": [
       0,
@@ -468,27 +538,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "The Metropolitan Museum of Art / CC0",
-   "bar": 355.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/7/img/manga.jpg",
      "w": 2671,
      "h": 1862,
      "box": [
-      69.0,
-      652.2,
-      942,
-      656.7
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.30288,
       0,
       1,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0.30288,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.69712,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -504,27 +588,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 329.9,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/7/img/hokusai.jpg",
      "w": 1400,
      "h": 1051,
      "box": [
-      69.0,
-      626.9,
-      942,
-      707.2
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.75071,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.75071,
+       1
+      ],
+      "to": [
+       0.24929,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -540,27 +638,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Jeanjung212 / CC BY-SA 4.0",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/7/img/dera.jpg",
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.25,
       0,
       1,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0.25,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.75,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -576,7 +688,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Juntaku / Public domain",
-   "bar": 360.2,
+   "bar": 321.8,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -585,10 +697,10 @@
      "w": 1920,
      "h": 1318,
      "box": [
-      69.0,
-      657.2,
-      942,
-      646.6
+      40.0,
+      591.8,
+      1000,
+      686.5
      ],
      "view": [
       0,
@@ -624,27 +736,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Jeanjung212 / CC BY-SA 4.0",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/7/img/statue.jpg",
      "w": 1920,
      "h": 2560,
      "box": [
-      196.9,
-      523.0,
-      686.2,
-      915
+      153.8,
+      420.0,
+      772.5,
+      1030
      ],
      "view": [
-      0,
-      0,
-      1,
-      1
+      0.11,
+      0.06,
+      0.89,
+      0.84
      ],
-     "drift": 0.1
+     "drift": 0,
+     "move": {
+      "from": [
+       0.11,
+       0.06,
+       0.89,
+       0.84
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
