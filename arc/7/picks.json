@@ -1,0 +1,253 @@
+{
+ "images": {
+  "sekien": {
+   "src": "1/13-1.jpg"
+  },
+  "juni": {
+   "src": "1/3-1.jpg"
+  },
+  "enko": {
+   "src": "1/4-4.jpg"
+  },
+  "shibaten": {
+   "src": "1/4-3.jpg"
+  },
+  "cuke": {
+   "src": "1/5-1.jpg"
+  },
+  "rokusuke": {
+   "src": "2/11-3.jpg"
+  },
+  "maki": {
+   "src": "2/8-4.jpg"
+  },
+  "takagi": {
+   "src": "2/11-2.jpg"
+  },
+  "river": {
+   "src": "1/4-1.jpg"
+  },
+  "manga": {
+   "src": "1/8-5.jpg"
+  },
+  "hokusai": {
+   "src": "2/3-1.jpg"
+  },
+  "dera": {
+   "src": "1/12-2.jpg"
+  },
+  "statue": {
+   "src": "1/12-3.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "sekien",
+     "edit": "troi-cham",
+     "why": "mở bằng tranh kappa cổ",
+     "label": "鳥山石燕が描いた河童（江戸時代）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 2,
+     "img": "juni",
+     "edit": "toan-canh",
+     "why": "người Edo nghiêm túc điều tra: một bản tranh kappa",
+     "label": "河童の図「水虎十二品之図」",
+     "credit": "Juntaku / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "enko",
+     "edit": "so-lieu",
+     "title": "一八二〇年",
+     "why": "câu có năm 1820, các lời kể và tranh vẽ",
+     "label": "江戸時代の写本に描かれた河童",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 5,
+     "img": "juni",
+     "edit": "khoanh",
+     "why": "tranh cùng thời; khoanh con có mai và con có lông",
+     "label": "同時代の河童の図「水虎十二品之図」",
+     "credit": "Juntaku / Public domain",
+     "marks": [
+      {
+       "at": 6.35,
+       "box": [
+        0.44,
+        0.2,
+        0.6,
+        0.37
+       ]
+      },
+      {
+       "at": 7.35,
+       "box": [
+        0.79,
+        0.5,
+        0.97,
+        0.92
+       ]
+      }
+     ]
+    },
+    {
+     "at": 9,
+     "img": "shibaten",
+     "edit": "troi-cham",
+     "why": "tên gọi khác theo vùng: kappa ở Tosa gọi là Shibaten",
+     "label": "土佐の河童「シバテン」の絵",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "cuke",
+     "edit": "khoanh",
+     "why": "kappa thích dưa leo: khoanh quả dưa",
+     "label": "きゅうりを抱えた河童の根付（19世紀）",
+     "credit": "The Metropolitan Museum of Art / CC0",
+     "marks": [
+      {
+       "at": 11.4,
+       "box": [
+        0.37,
+        0.5,
+        0.85,
+        0.75
+       ]
+      }
+     ]
+    },
+    {
+     "at": 12,
+     "img": "rokusuke",
+     "edit": "troi-cham",
+     "why": "kappa mê vật nhau: tranh người vật với kappa",
+     "label": "歌川国芳の浮世絵（河童と組み合う）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 13,
+     "img": "sekien",
+     "edit": "khoanh",
+     "why": "đĩa nước trên đầu: khoanh đầu kappa",
+     "label": "鳥山石燕が描いた河童",
+     "credit": "Wikimedia Commons / Public domain",
+     "marks": [
+      {
+       "at": 13.25,
+       "box": [
+        0.38,
+        0.55,
+        0.62,
+        0.72
+       ]
+      }
+     ]
+    },
+    {
+     "at": 14,
+     "img": "maki",
+     "edit": "khoanh",
+     "why": "kappa-maki: khoanh cuộn dưa leo",
+     "label": "かっぱ巻き（きゅうりの細巻き）",
+     "credit": "石焼ビビンバ / CC BY-SA 4.0",
+     "marks": [
+      {
+       "at": 14.45,
+       "box": [
+        0.7,
+        0.1,
+        0.95,
+        0.68
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "takagi",
+     "edit": "troi-cham",
+     "why": "kappa kéo người xuống nước: tranh đánh nhau với kappa dưới nước",
+     "label": "水中で河童と戦う武者（浮世絵）",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 18,
+     "img": "river",
+     "edit": "dung-yen",
+     "why": "giữ trẻ khỏi chết đuối: kappa rình ở bờ sông",
+     "label": "川にひそむ川太郎（1788年）",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "manga",
+     "edit": "toan-canh",
+     "why": "câu nhắc Hokusai Manga: cuốn sách thật",
+     "label": "『北斎漫画』八編",
+     "credit": "The Metropolitan Museum of Art / CC0"
+    },
+    {
+     "at": 20.5,
+     "img": "hokusai",
+     "edit": "troi-cham",
+     "why": "kappa do Hokusai vẽ",
+     "label": "葛飾北斎が描いた河童",
+     "credit": "Wikimedia Commons / Public domain"
+    },
+    {
+     "at": 21,
+     "img": "dera",
+     "edit": "toan-canh",
+     "why": "chùa còn giữ 'tay kappa': chùa Kappa-dera",
+     "label": "曹源寺（かっぱ寺・東京）",
+     "credit": "Jeanjung212 / CC BY-SA 4.0"
+    },
+    {
+     "at": 22,
+     "img": "juni",
+     "edit": "khoanh",
+     "why": "'tay kappa': khoanh hình bàn tay trong tranh",
+     "label": "「水虎十二品之図」の河童の手",
+     "credit": "Juntaku / Public domain",
+     "marks": [
+      {
+       "at": 22.3,
+       "box": [
+        0.74,
+        0.8,
+        0.86,
+        0.93
+       ]
+      }
+     ]
+    },
+    {
+     "at": 23,
+     "img": "statue",
+     "edit": "ket",
+     "why": "kết: tượng kappa ở chùa, vừa sợ vừa thân",
+     "label": "曹源寺の河童像",
+     "credit": "Jeanjung212 / CC BY-SA 4.0"
+    }
+   ]
+  }
+ ]
+}
