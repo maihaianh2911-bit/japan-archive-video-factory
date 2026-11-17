@@ -1,0 +1,621 @@
+{
+ "pictures": [
+  {
+   "name": "shopwin",
+   "src": "1/11-6.jpg",
+   "title": "Asakusa sourvenir shop lots",
+   "artist": "emrank",
+   "date": "",
+   "license": "CC BY 2.0",
+   "page": "https://www.flickr.com/photos/15622795@N05/2363215822"
+  },
+  {
+   "name": "imadocats",
+   "src": "1/8-2.jpg",
+   "title": "Maneki Neko shrine @ Imado Shrine @ Asakusa (13582343343).jpg",
+   "artist": "Guilhem Vellut from Annecy, France",
+   "date": "2014-03-31 09:49",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Maneki_Neko_shrine_@_Imado_Shrine_@_Asakusa_(13582343343).jpg"
+  },
+  {
+   "name": "hall",
+   "src": "1/4-3.jpg",
+   "title": "Gotoku-ji Temple @ Setagaya (13796458243).jpg",
+   "artist": "Guilhem Vellut from Annecy, France",
+   "date": "2014-04-11 11:22",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gotoku-ji_Temple_@_Setagaya_(13796458243).jpg"
+  },
+  {
+   "name": "naotaka",
+   "src": "1/5-4.jpg",
+   "title": "Ii Naotaka.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "2013-01-01",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Ii_Naotaka.jpg"
+  },
+  {
+   "name": "gcat",
+   "src": "1/2-1.jpg",
+   "title": "Gotokuji Temple",
+   "artist": "Dick Thomas Johnson",
+   "date": "",
+   "license": "CC BY 2.0",
+   "page": "https://www.flickr.com/photos/31029865@N06/35455612793"
+  },
+  {
+   "name": "pagoda",
+   "src": "1/4-7.jpg",
+   "title": "Gotoku-ji Temple @ Setagaya (13796462603).jpg",
+   "artist": "Guilhem Vellut from Annecy, France",
+   "date": "2014-04-11 11:34",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gotoku-ji_Temple_@_Setagaya_(13796462603).jpg"
+  },
+  {
+   "name": "grave",
+   "src": "1/5-7.jpg",
+   "title": "Grave of Ii Naotaka.jpg",
+   "artist": "Suikotei",
+   "date": "Taken on 1 June 2019, 14:04:48",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Grave_of_Ii_Naotaka.jpg"
+  },
+  {
+   "name": "shelves",
+   "src": "1/1-8.jpg",
+   "title": "Shelves of maneki-neko in Gotokuji.jpg",
+   "artist": "Ménestor",
+   "date": "2023-07-04",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Shelves_of_maneki-neko_in_Gotokuji.jpg"
+  },
+  {
+   "name": "sea",
+   "src": "1/1-3.jpg",
+   "title": "Maneki-neko (Japanese Lucky Cat) Statues at Gotokuji Temple, Tokyo.jpg",
+   "artist": "Niwrat",
+   "date": "2020-01-22 13:46:58",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Maneki-neko_(Japanese_Lucky_Cat)_Statues_at_Gotokuji_Temple,_Tokyo.jpg"
+  },
+  {
+   "name": "imado",
+   "src": "1/8-3.jpg",
+   "title": "Maneki Neko shrine @ Imado Shrine @ Asakusa (13582295255).jpg",
+   "artist": "Guilhem Vellut from Annecy, France",
+   "date": "2014-03-31 09:47",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Maneki_Neko_shrine_@_Imado_Shrine_@_Asakusa_(13582295255).jpg"
+  },
+  {
+   "name": "marushime",
+   "src": "1/9-5.jpg",
+   "title": "今戸焼 丸〆猫 昭和戦前型.JPG",
+   "artist": "Marusime",
+   "date": "before 11 April 2015",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%E4%BB%8A%E6%88%B8%E7%84%BC_%E4%B8%B8%E3%80%86%E7%8C%AB_%E6%98%AD%E5%92%8C%E6%88%A6%E5%89%8D%E5%9E%8B.JPG"
+  },
+  {
+   "name": "hiroshige",
+   "src": "1/6-4.jpg",
+   "title": "Zeven kraampjes op de avondmarkt in de Joruri straat Afbeelding van de voorspoed in de Joruri straat (serietitel) Jorurimachi hanka no zu (serietitel op object)",
+   "artist": "Rijksmuseum",
+   "date": "1852",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Zeven_kraampjes_op_de_avondmarkt_in_de_Joruri_straat_Afbeelding_van_de_voorspoed_in_de_Joruri_straat_(serietitel)_Jorurimachi_hanka_no_zu_(serietitel_op_object),_RP-P-OB-JAP-26.jpg"
+  },
+  {
+   "name": "shop",
+   "src": "1/11-1.jpg",
+   "title": "Maneki Neko Shop",
+   "artist": "luisvilla",
+   "date": "",
+   "license": "CC BY 2.0",
+   "page": "https://www.flickr.com/photos/37996573467@N01/1152079561"
+  },
+  {
+   "name": "tokoname",
+   "src": "1/13-2.jpg",
+   "title": "Aichi Tokoname33n4272.jpg",
+   "artist": "663highland",
+   "date": "2009-01-11",
+   "license": "CC BY 2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Aichi_Tokoname33n4272.jpg"
+  },
+  {
+   "name": "right",
+   "src": "1/11-2.jpg",
+   "title": "Bye ...",
+   "artist": "wallygrom",
+   "date": "",
+   "license": "CC BY-SA 2.0",
+   "page": "https://www.flickr.com/photos/33037982@N04/5463357352"
+  },
+  {
+   "name": "left",
+   "src": "1/11-5.jpg",
+   "title": "Ōsu Maneki-neko",
+   "artist": "zayzayem",
+   "date": "",
+   "license": "CC BY-SA 2.0",
+   "page": "https://www.flickr.com/photos/36061217@N04/15615812432"
+  },
+  {
+   "name": "close",
+   "src": "1/1-1.jpg",
+   "title": "2015-10-20 Maneki neko in Gotokuji 02.jpg",
+   "artist": "John Gillespie",
+   "date": "2015-10-20 23:06:01",
+   "license": "CC BY-SA 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2015-10-20_Maneki_neko_in_Gotokuji_02.jpg"
+  },
+  {
+   "name": "gate",
+   "src": "1/4-1.jpg",
+   "title": "Gotoku-ji Temple @ Setagaya (13796787194).jpg",
+   "artist": "Guilhem Vellut from Annecy, France",
+   "date": "2014-04-11 11:25",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gotoku-ji_Temple_@_Setagaya_(13796787194).jpg"
+  },
+  {
+   "name": "gold",
+   "src": "1/15-1.jpg",
+   "title": "Winkekatze als Glücksbringer",
+   "artist": "Badisches Landesmuseum Karlsruhe",
+   "date": "",
+   "license": "CC0",
+   "page": "https://www.europeana.eu/item/1236/item_22IQLZBHWKMFPA5GSHDCZX56TG5GDAS4"
+  }
+ ],
+ "shots": [
+  {
+   "scene": 1,
+   "shot": 1,
+   "start": 0.0,
+   "end": 3.358,
+   "said": [
+    "お店の入り口で、片手を上げて客を招く招き猫。"
+   ],
+   "label": "浅草の土産物店",
+   "title": "招き猫",
+   "image": "shopwin",
+   "page": "https://www.flickr.com/photos/15622795@N05/2363215822",
+   "credit": "emrank / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "mở bằng tủ kính đầy mèo vẫy tay ở cửa tiệm"
+  },
+  {
+   "scene": 1,
+   "shot": 2,
+   "start": 3.358,
+   "end": 5.817,
+   "said": [
+    "その始まりには、いくつもの説があります。"
+   ],
+   "label": "招き猫",
+   "title": "招き猫",
+   "image": "gold",
+   "page": "https://www.europeana.eu/item/1236/item_22IQLZBHWKMFPA5GSHDCZX56TG5GDAS4",
+   "credit": "Badisches Landesmuseum / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "nói có nhiều thuyết: một tượng mèo vẫy tay"
+  },
+  {
+   "scene": 2,
+   "shot": 1,
+   "start": 5.817,
+   "end": 10.778,
+   "said": [
+    "よく知られているのは、東京・世田谷の豪徳寺の話です。",
+    "江戸時代のはじめ、"
+   ],
+   "label": "豪徳寺（東京・世田谷）",
+   "title": "豪徳寺の猫",
+   "image": "hall",
+   "page": "https://commons.wikimedia.org/wiki/File:Gotoku-ji_Temple_@_Setagaya_(13796458243).jpg",
+   "credit": "Guilhem Vellut / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nhắc chùa Gōtoku-ji"
+  },
+  {
+   "scene": 2,
+   "shot": 2,
+   "start": 10.778,
+   "end": 13.716,
+   "said": [
+    "彦根藩主の井伊直孝が寺の前を通りかかると、"
+   ],
+   "label": "井伊直孝の肖像",
+   "title": "豪徳寺の猫",
+   "image": "naotaka",
+   "page": "https://commons.wikimedia.org/wiki/File:Ii_Naotaka.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "chan-dung",
+   "why": "câu nhắc lãnh chúa Ii Naotaka"
+  },
+  {
+   "scene": 2,
+   "shot": 3,
+   "start": 13.716,
+   "end": 15.697,
+   "said": [
+    "一匹の猫が手招きをしました。"
+   ],
+   "label": "豪徳寺の招き猫",
+   "title": "豪徳寺の猫",
+   "image": "gcat",
+   "page": "https://www.flickr.com/photos/31029865@N06/35455612793",
+   "credit": "Dick Thomas Johnson / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 14.454,
+     "box": [
+      0.29,
+      0.36,
+      0.43,
+      0.66
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "con mèo vẫy tay: khoanh bàn chân giơ lên"
+  },
+  {
+   "scene": 2,
+   "shot": 4,
+   "start": 15.697,
+   "end": 20.486,
+   "said": [
+    "寺に入ると、すぐに激しい雷雨が降り出し、",
+    "直孝は難を逃れたといいます。"
+   ],
+   "label": "豪徳寺の三重塔",
+   "title": "豪徳寺の猫",
+   "image": "pagoda",
+   "page": "https://commons.wikimedia.org/wiki/File:Gotoku-ji_Temple_@_Setagaya_(13796462603).jpg",
+   "credit": "Guilhem Vellut / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "chuyện mưa giông, cảnh chùa"
+  },
+  {
+   "scene": 2,
+   "shot": 5,
+   "start": 20.486,
+   "end": 22.85,
+   "said": [
+    "これをきっかけに寺は井伊家に大切にされ、"
+   ],
+   "label": "井伊直孝の墓",
+   "title": "豪徳寺の猫",
+   "image": "grave",
+   "page": "https://commons.wikimedia.org/wiki/File:Grave_of_Ii_Naotaka.jpg",
+   "credit": "Suikotei / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "dung-yen",
+   "why": "chùa được nhà Ii trọng vọng: mộ Ii Naotaka"
+  },
+  {
+   "scene": 2,
+   "shot": 6,
+   "start": 22.85,
+   "end": 26.587,
+   "said": [
+    "「豪徳寺」という名前も、直孝の戒名からとられました。"
+   ],
+   "label": "豪徳寺の招猫殿",
+   "title": "豪徳寺の猫",
+   "image": "gate",
+   "page": "https://commons.wikimedia.org/wiki/File:Gotoku-ji_Temple_@_Setagaya_(13796787194).jpg",
+   "credit": "Guilhem Vellut / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nói tên chùa Gōtoku-ji"
+  },
+  {
+   "scene": 2,
+   "shot": 7,
+   "start": 26.587,
+   "end": 27.856,
+   "said": [
+    "今では境内に、"
+   ],
+   "label": "豪徳寺に奉納された招き猫",
+   "title": "豪徳寺の猫",
+   "image": "shelves",
+   "page": "https://commons.wikimedia.org/wiki/File:Shelves_of_maneki-neko_in_Gotokuji.jpg",
+   "credit": "Ménestor / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "tượng mèo dâng cúng trong chùa"
+  },
+  {
+   "scene": 2,
+   "shot": 8,
+   "start": 27.856,
+   "end": 30.947,
+   "said": [
+    "数えきれないほどの招き猫が奉納されています。"
+   ],
+   "label": "豪徳寺に奉納された招き猫",
+   "title": "豪徳寺の猫",
+   "image": "sea",
+   "page": "https://commons.wikimedia.org/wiki/File:Maneki-neko_(Japanese_Lucky_Cat)_Statues_at_Gotokuji_Temple,_Tokyo.jpg",
+   "credit": "Niwrat / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "vô số tượng mèo"
+  },
+  {
+   "scene": 3,
+   "shot": 1,
+   "start": 30.947,
+   "end": 33.535,
+   "said": [
+    "もう一つが、浅草の今戸焼の話です。"
+   ],
+   "label": "今戸神社（東京・浅草）",
+   "title": "今戸焼の猫",
+   "image": "imado",
+   "page": "https://commons.wikimedia.org/wiki/File:Maneki_Neko_shrine_@_Imado_Shrine_@_Asakusa_(13582295255).jpg",
+   "credit": "Guilhem Vellut / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nhắc Imado ở Asakusa"
+  },
+  {
+   "scene": 3,
+   "shot": 2,
+   "start": 33.535,
+   "end": 38.613,
+   "said": [
+    "江戸時代の終わり、貧しいおばあさんが、",
+    "夢に出てきた猫の姿を焼き物にして売ったところ、"
+   ],
+   "label": "今戸焼の丸〆猫（昭和初期の型）",
+   "title": "今戸焼の猫",
+   "image": "marushime",
+   "page": "https://commons.wikimedia.org/wiki/File:%E4%BB%8A%E6%88%B8%E7%84%BC_%E4%B8%B8%E3%80%86%E7%8C%AB_%E6%98%AD%E5%92%8C%E6%88%A6%E5%89%8D%E5%9E%8B.JPG",
+   "credit": "Marusime / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "chuyện bà lão nặn mèo: tượng mèo gốm Imado"
+  },
+  {
+   "scene": 3,
+   "shot": 3,
+   "start": 38.613,
+   "end": 40.415,
+   "said": [
+    "大評判になったといわれます。"
+   ],
+   "label": "今戸神社の招き猫（浅草）",
+   "title": "今戸焼の猫",
+   "image": "imadocats",
+   "page": "https://commons.wikimedia.org/wiki/File:Maneki_Neko_shrine_@_Imado_Shrine_@_Asakusa_(13582343343).jpg",
+   "credit": "Guilhem Vellut / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "mèo được ưa chuộng: đôi mèo đá ở đền Imado"
+  },
+  {
+   "scene": 3,
+   "shot": 4,
+   "start": 40.415,
+   "end": 46.831,
+   "said": [
+    "一八五二年の浮世絵にも、",
+    "浅草で「丸〆猫」という招き猫が",
+    "売られる様子が描かれています。"
+   ],
+   "label": "歌川広重「浄瑠理町繁花の図」（1852年）",
+   "title": "今戸焼の猫",
+   "image": "hiroshige",
+   "page": "https://commons.wikimedia.org/wiki/File:Zeven_kraampjes_op_de_avondmarkt_in_de_Joruri_straat_Afbeelding_van_de_voorspoed_in_de_Joruri_straat_(serietitel)_Jorurimachi_hanka_no_zu_(serietitel_op_object),_RP-P-OB-JAP-26.jpg",
+   "credit": "Rijksmuseum / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": {
+    "to": [
+     0.0,
+     0.04,
+     0.42,
+     0.36
+    ],
+    "at": 17.6,
+    "dur": 1.6
+   },
+   "marks": [
+    {
+     "at_s": 43.773,
+     "box": [
+      0.02,
+      0.11,
+      0.22,
+      0.3
+     ]
+    }
+   ],
+   "edit": "tai-lieu-zoom",
+   "why": "cả bức tranh 1852 rồi phóng vào sạp bán mèo"
+  },
+  {
+   "scene": 4,
+   "shot": 1,
+   "start": 46.831,
+   "end": 49.776,
+   "said": [
+    "明治時代以降、招き猫は全国のお店に広まり、"
+   ],
+   "label": "招き猫の店",
+   "title": "全国へ",
+   "image": "shop",
+   "page": "https://www.flickr.com/photos/37996573467@N01/1152079561",
+   "credit": "luisvilla / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "mèo vẫy tay ở cửa tiệm khắp nơi"
+  },
+  {
+   "scene": 4,
+   "shot": 2,
+   "start": 49.776,
+   "end": 52.965,
+   "said": [
+    "愛知県の常滑や瀬戸は、今も大きな産地です。"
+   ],
+   "label": "常滑の招き猫通り（愛知県）",
+   "title": "全国へ",
+   "image": "tokoname",
+   "page": "https://commons.wikimedia.org/wiki/File:Aichi_Tokoname33n4272.jpg",
+   "credit": "663highland / CC BY 2.5",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nhắc Tokoname"
+  },
+  {
+   "scene": 4,
+   "shot": 3,
+   "start": 52.965,
+   "end": 54.77,
+   "said": [
+    "右手を上げた猫はお金を、"
+   ],
+   "label": "右手を上げた招き猫",
+   "title": "全国へ",
+   "image": "right",
+   "page": "https://www.flickr.com/photos/33037982@N04/5463357352",
+   "credit": "wallygrom / CC BY-SA 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 53.536,
+     "box": [
+      0.31,
+      0.1,
+      0.45,
+      0.33
+     ]
+    },
+    {
+     "at_s": 54.21,
+     "box": [
+      0.38,
+      0.6,
+      0.62,
+      0.84
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "giơ tay phải gọi tiền: khoanh tay và đồng tiền"
+  },
+  {
+   "scene": 4,
+   "shot": 4,
+   "start": 54.77,
+   "end": 57.535,
+   "said": [
+    "左手を上げた猫は人を招くともいわれます。"
+   ],
+   "label": "左手を上げた招き猫（名古屋・大須）",
+   "title": "全国へ",
+   "image": "left",
+   "page": "https://www.flickr.com/photos/36061217@N04/15615812432",
+   "credit": "zayzayem / CC BY-SA 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 55.659,
+     "box": [
+      0.6,
+      0.25,
+      0.76,
+      0.55
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "giơ tay trái gọi khách"
+  },
+  {
+   "scene": 5,
+   "shot": 1,
+   "start": 57.535,
+   "end": 62.978,
+   "said": [
+    "小さな猫に願いを託す気持ちは、",
+    "江戸の昔から変わっていないのです。"
+   ],
+   "label": "豪徳寺の招き猫",
+   "title": "小さな願い",
+   "image": "close",
+   "page": "https://commons.wikimedia.org/wiki/File:2015-10-20_Maneki_neko_in_Gotokuji_02.jpg",
+   "credit": "John Gillespie / CC BY-SA 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "ket",
+   "why": "kết bằng hàng mèo ở Gōtoku-ji"
+  }
+ ]
+}
