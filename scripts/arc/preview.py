@@ -35,7 +35,8 @@ tiles = []
 TW, TH = 270, 480
 for k, sh in enumerate(plan['shots'], 1):
     times = [sh['s'] + 0.05]
-    late = [m['s'] + 0.2 for m in sh['marks']] + [p['zoom']['e'] + 0.05 for p in sh['pics'] if p.get('zoom')]
+    late = [m['s'] + 0.2 for m in sh['marks']] + [p['zoom']['e'] + 0.05 for p in sh['pics'] if p.get('zoom')] \
+           + [sh['e'] - 0.05 for p in sh['pics'] if p.get('move')]   # a pan / push: its last frame too
     if late: times.append(min(sh['e'] - 0.05, max(late)))
     for t in times:
         f = frame.draw(sh, t, sub_at(t), img_of, plan.get('theme', 'paper')).resize((TW, TH), Image.LANCZOS)
