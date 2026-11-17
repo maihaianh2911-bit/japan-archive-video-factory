@@ -1,0 +1,583 @@
+{
+ "pictures": [
+  {
+   "name": "yoshitoshi",
+   "src": "1/1-3.jpg",
+   "title": "Urashima Taro Returning on the Turtle LACMA M.84.31.349.jpg",
+   "artist": "Tsukioka Yoshitoshi (Japan, 1839-1892)",
+   "date": "May 1882",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_Returning_on_the_Turtle_LACMA_M.84.31.349.jpg"
+  },
+  {
+   "name": "tanaka",
+   "src": "2/3-3.jpg",
+   "title": "Nihonshoki tanaka version.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "9th century",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Nihonshoki_tanaka_version.jpg"
+  },
+  {
+   "name": "shoki1286",
+   "src": "2/3-1.jpg",
+   "title": "Postscript from The Age of Gods chapter, The Chronicles of Japan (1286).jpg",
+   "artist": "Urabe Kanekata",
+   "date": "1286",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Postscript_from_The_Age_of_Gods_chapter,_The_Chronicles_of_Japan_(1286).jpg"
+  },
+  {
+   "name": "s1",
+   "src": "2/8-1.jpg",
+   "title": "Urashima Taro handscroll from Bodleian Library 1.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "between 1590 and 1620",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_1.jpg"
+  },
+  {
+   "name": "utamaro",
+   "src": "1/1-4.jpg",
+   "title": "Urashima tarō LCCN2008660783.jpg",
+   "artist": "Kitagawa, Utamaro, 1753?-1806, artist",
+   "date": "1801",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_tar%C5%8D_LCCN2008660783.jpg"
+  },
+  {
+   "name": "s_spring",
+   "src": "2/8-4.jpg",
+   "title": "Urashima Taro handscroll from Bodleian Library 3.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "between 1590 and 1620",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_3.jpg"
+  },
+  {
+   "name": "s_summer",
+   "src": "2/8-3.jpg",
+   "title": "Urashima Taro handscroll from Bodleian Library 4.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "between 1590 and 1620",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_4.jpg"
+  },
+  {
+   "name": "s_winter",
+   "src": "2/8-5.jpg",
+   "title": "Urashima Taro handscroll from Bodleian Library 6.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "between 1590 and 1620",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_6.jpg"
+  },
+  {
+   "name": "s_depart",
+   "src": "2/8-6.jpg",
+   "title": "Urashima Taro handscroll from Bodleian Library 7.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "between 1590 and 1620",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_7.jpg"
+  },
+  {
+   "name": "s_return",
+   "src": "2/8-2.jpg",
+   "title": "Urashima Taro handscroll from Bodleian Library 8.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "between 1590 and 1620",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_8.jpg"
+  },
+  {
+   "name": "s_open",
+   "src": "2/8-7.jpg",
+   "title": "Urashima Taro handscroll from Bodleian Library 9.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "between 1590 and 1620",
+   "license": "CC BY 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_9.jpg"
+  },
+  {
+   "name": "matsuki",
+   "src": "1/1-8.jpg",
+   "title": "Matsuki Heikichi(1899)-Urashima-p10.jpg",
+   "artist": "Matsuki Heikichi, aka Matsuki Tōkō (松木東江 1836 - 1 Jul 1891",
+   "date": "1899",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Matsuki_Heikichi(1899)-Urashima-p10.jpg"
+  },
+  {
+   "name": "manyo",
+   "src": "1/6-1.jpg",
+   "title": "Nishi Honganji-bon (1.1).jpg",
+   "artist": "Kamakura period copyist",
+   "date": "Kamakura period",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Nishi_Honganji-bon_(1.1).jpg"
+  },
+  {
+   "name": "ryugu",
+   "src": "1/15-4.jpg",
+   "title": "Ryūgūjō LCCN2008660391.jpg",
+   "artist": "Taiso, Yoshitoshi, 1839-1892, artist",
+   "date": "1880",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Ry%C5%ABg%C5%ABj%C5%8D_LCCN2008660391.jpg"
+  },
+  {
+   "name": "torii",
+   "src": "2/6-1.jpg",
+   "title": "Ine Urashima-jinja 2021-04 ac (1).jpg",
+   "artist": "Asturio Cantabrio",
+   "date": "2021-04",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(1).jpg"
+  },
+  {
+   "name": "honden",
+   "src": "2/6-5.jpg",
+   "title": "Urashima-jinja Main Sanctuary 001.jpg",
+   "artist": "Naokijp",
+   "date": "2018-06-17",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima-jinja_Main_Sanctuary_001.jpg"
+  },
+  {
+   "name": "treasure",
+   "src": "2/5-5.jpg",
+   "title": "Ine Urashima-jinja 2021-04 ac.jpg",
+   "artist": "Asturio Cantabrio",
+   "date": "2021-04",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac.jpg"
+  },
+  {
+   "name": "funaya",
+   "src": "1/10-6.jpg",
+   "title": "Wooden boat houses",
+   "artist": "雷太",
+   "date": "",
+   "license": "CC BY 2.0",
+   "page": "https://www.flickr.com/photos/128275472@N07/29578588042"
+  },
+  {
+   "name": "hokkei",
+   "src": "1/2-5.jpg",
+   "title": "Urashima Taro Going Home on the Back of a Tai Fish, the King of the Sea Seeing Him Off",
+   "artist": "Totoya Hokkei",
+   "date": "19th century",
+   "license": "CC0 (The Met Open Access)",
+   "page": "https://www.metmuseum.org/art/collection/search/54029"
+  }
+ ],
+ "shots": [
+  {
+   "scene": 1,
+   "shot": 1,
+   "start": 0.0,
+   "end": 3.591,
+   "said": [
+    "亀を助けた浦島太郎が、竜宮城へ行く昔話。"
+   ],
+   "label": "月岡芳年「帰国浦島」（1882年）",
+   "title": "千三百年前の物語",
+   "image": "yoshitoshi",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_Returning_on_the_Turtle_LACMA_M.84.31.349.jpg",
+   "credit": "Los Angeles County Museum of Art / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "mở bằng tranh Urashima cưỡi rùa"
+  },
+  {
+   "scene": 1,
+   "shot": 2,
+   "start": 3.591,
+   "end": 7.562,
+   "said": [
+    "実はこの物語、千三百年前の歴史書にも記されています。"
+   ],
+   "label": "『日本書紀』の写本（田中本）",
+   "title": "千三百年前の物語",
+   "image": "tanaka",
+   "page": "https://commons.wikimedia.org/wiki/File:Nihonshoki_tanaka_version.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "dung-yen",
+   "why": "câu nói sách sử 1.300 năm trước: bản chép Nihon Shoki"
+  },
+  {
+   "scene": 2,
+   "shot": 1,
+   "start": 7.562,
+   "end": 11.588,
+   "said": [
+    "七二〇年にできた『日本書紀』には、",
+    "雄略天皇の時代、"
+   ],
+   "label": "『日本書紀』神代巻（1286年の写本）",
+   "title": "七二〇年",
+   "image": "shoki1286",
+   "page": "https://commons.wikimedia.org/wiki/File:Postscript_from_The_Age_of_Gods_chapter,_The_Chronicles_of_Japan_(1286).jpg",
+   "credit": "卜部兼方 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "so-lieu",
+   "why": "năm 720 Nihon Shoki ra đời"
+  },
+  {
+   "scene": 2,
+   "shot": 2,
+   "start": 11.588,
+   "end": 15.52,
+   "said": [
+    "丹波国の浦嶋子が釣りで大きな亀を得たと書かれています。"
+   ],
+   "label": "「浦島」絵巻（ボドリアン図書館蔵）",
+   "title": "日本書紀",
+   "image": "s1",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_1.jpg",
+   "credit": "Bodleian Library / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "Urashimako câu được con rùa: cảnh đầu cuộn tranh"
+  },
+  {
+   "scene": 2,
+   "shot": 3,
+   "start": 15.52,
+   "end": 17.445,
+   "said": [
+    "亀は美しい女性に姿を変え、"
+   ],
+   "label": "喜多川歌麿「浦島」（1801年）",
+   "title": "日本書紀",
+   "image": "utamaro",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_tar%C5%8D_LCCN2008660783.jpg",
+   "credit": "Library of Congress / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "rùa hóa thành người con gái đẹp"
+  },
+  {
+   "scene": 2,
+   "shot": 4,
+   "start": 17.445,
+   "end": 20.043,
+   "said": [
+    "二人は海の中の蓬莱山へ向かいました。"
+   ],
+   "label": "「浦島」絵巻・海の中の国（春）",
+   "title": "日本書紀",
+   "image": "s_spring",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_3.jpg",
+   "credit": "Bodleian Library / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "đi đến thế giới dưới biển"
+  },
+  {
+   "scene": 2,
+   "shot": 5,
+   "start": 20.043,
+   "end": 24.354,
+   "said": [
+    "そこで浦嶋子は、",
+    "不老不死の仙人たちに出会ったと記されています。"
+   ],
+   "label": "「浦島」絵巻・海の中の国（夏）",
+   "title": "日本書紀",
+   "image": "s_summer",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_4.jpg",
+   "credit": "Bodleian Library / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "gặp các vị tiên ở thế giới đó"
+  },
+  {
+   "scene": 3,
+   "shot": 1,
+   "start": 24.354,
+   "end": 29.155,
+   "said": [
+    "同じころにまとめられた『丹後国風土記』では、",
+    "物語はさらに詳しくなります。"
+   ],
+   "label": "「浦島」絵巻・海の中の国（冬）",
+   "title": "三百年後の故郷",
+   "image": "s_winter",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_6.jpg",
+   "credit": "Bodleian Library / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "sách Fudoki kể chi tiết hơn: các mùa trôi qua"
+  },
+  {
+   "scene": 3,
+   "shot": 2,
+   "start": 29.155,
+   "end": 30.861,
+   "said": [
+    "三年ほどで故郷に帰ると、"
+   ],
+   "label": "「浦島」絵巻・別れと箱",
+   "title": "三百年後の故郷",
+   "image": "s_depart",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_7.jpg",
+   "credit": "Bodleian Library / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "về quê: lúc chia tay, nhận chiếc hộp"
+  },
+  {
+   "scene": 3,
+   "shot": 3,
+   "start": 30.861,
+   "end": 33.661,
+   "said": [
+    "そこではすでに三百年が過ぎていました。"
+   ],
+   "label": "「浦島」絵巻・帰ってきた故郷",
+   "title": "三百年後",
+   "image": "s_return",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_8.jpg",
+   "credit": "Bodleian Library / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "so-lieu",
+   "why": "300 năm đã trôi qua"
+  },
+  {
+   "scene": 3,
+   "shot": 4,
+   "start": 33.661,
+   "end": 36.704,
+   "said": [
+    "寂しさから、決して開けるなと言われた箱を開けると、"
+   ],
+   "label": "「浦島」絵巻・箱を開ける浦島",
+   "title": "三百年後の故郷",
+   "image": "s_open",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_9.jpg",
+   "credit": "Bodleian Library / CC BY 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 35.565,
+     "box": [
+      0.17,
+      0.02,
+      0.36,
+      0.2
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "mở chiếc hộp: khoanh Urashima với chiếc hộp"
+  },
+  {
+   "scene": 3,
+   "shot": 5,
+   "start": 36.704,
+   "end": 39.881,
+   "said": [
+    "若い姿は風に乗って空へ消えてしまったといいます。"
+   ],
+   "label": "『浦島』の挿絵（1899年）",
+   "title": "三百年後の故郷",
+   "image": "matsuki",
+   "page": "https://commons.wikimedia.org/wiki/File:Matsuki_Heikichi(1899)-Urashima-p10.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "dáng trẻ tan theo gió"
+  },
+  {
+   "scene": 4,
+   "shot": 1,
+   "start": 39.881,
+   "end": 45.791,
+   "said": [
+    "奈良時代の『万葉集』には、",
+    "箱を開けた浦嶋子が、",
+    "白髪の老人になってしまう歌も残っています。"
+   ],
+   "label": "『万葉集』の写本（西本願寺本）",
+   "title": "白髪の老人",
+   "image": "manyo",
+   "page": "https://commons.wikimedia.org/wiki/File:Nishi_Honganji-bon_(1.1).jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": {
+    "to": [
+     0.45,
+     0.0,
+     1.0,
+     0.8
+    ],
+    "at": 16.8,
+    "dur": 1.6
+   },
+   "marks": [],
+   "edit": "tai-lieu-zoom",
+   "why": "câu nhắc Man'yōshū: cả bản chép rồi phóng vào"
+  },
+  {
+   "scene": 4,
+   "shot": 2,
+   "start": 45.791,
+   "end": 50.655,
+   "said": [
+    "竜宮城や乙姫という名前が広まったのは、",
+    "もっと後の時代のことです。"
+   ],
+   "label": "月岡芳年「竜宮城」（1880年）",
+   "title": "白髪の老人",
+   "image": "ryugu",
+   "page": "https://commons.wikimedia.org/wiki/File:Ry%C5%ABg%C5%ABj%C5%8D_LCCN2008660391.jpg",
+   "credit": "Library of Congress / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "tên 'thủy cung' có về sau: tranh Ryūgūjō"
+  },
+  {
+   "scene": 5,
+   "shot": 1,
+   "start": 50.655,
+   "end": 52.701,
+   "said": [
+    "京都府伊根町の浦嶋神社には、"
+   ],
+   "label": "浦嶋神社（京都府伊根町）",
+   "title": "最古のタイムトラベル",
+   "image": "torii",
+   "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(1).jpg",
+   "credit": "Asturio Cantabrio / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nhắc đền Urashima ở Ine"
+  },
+  {
+   "scene": 5,
+   "shot": 2,
+   "start": 52.701,
+   "end": 54.623,
+   "said": [
+    "浦嶋子が神としてまつられ、"
+   ],
+   "label": "浦嶋神社の本殿",
+   "title": "最古のタイムトラベル",
+   "image": "honden",
+   "page": "https://commons.wikimedia.org/wiki/File:Urashima-jinja_Main_Sanctuary_001.jpg",
+   "credit": "Naokijp / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "Urashimako được thờ làm thần: điện chính"
+  },
+  {
+   "scene": 5,
+   "shot": 3,
+   "start": 54.623,
+   "end": 57.272,
+   "said": [
+    "物語を描いた古い絵巻も伝わっています。"
+   ],
+   "label": "浦嶋神社の宝物資料室",
+   "title": "最古のタイムトラベル",
+   "image": "treasure",
+   "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac.jpg",
+   "credit": "Asturio Cantabrio / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "dung-yen",
+   "why": "đền giữ cuộn tranh cổ: nhà bảo vật"
+  },
+  {
+   "scene": 5,
+   "shot": 4,
+   "start": 57.272,
+   "end": 59.741,
+   "said": [
+    "時の流れが違う世界へ行って帰ってくる。"
+   ],
+   "label": "伊根の舟屋（京都府伊根町）",
+   "title": "最古のタイムトラベル",
+   "image": "funaya",
+   "page": "https://www.flickr.com/photos/128275472@N07/29578588042",
+   "credit": "雷太 / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "đi rồi trở về: biển Ine ngày nay"
+  },
+  {
+   "scene": 5,
+   "shot": 5,
+   "start": 59.741,
+   "end": 65.613,
+   "said": [
+    "浦島太郎は、",
+    "日本で最も古いタイムトラベルの物語なのかもしれません。"
+   ],
+   "label": "魚屋北渓「浦島」（19世紀）",
+   "title": "最古のタイムトラベル",
+   "image": "hokkei",
+   "page": "https://www.metmuseum.org/art/collection/search/54029",
+   "credit": "The Metropolitan Museum of Art / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "ket",
+   "why": "kết: Urashima trở về trên lưng cá"
+  }
+ ]
+}
