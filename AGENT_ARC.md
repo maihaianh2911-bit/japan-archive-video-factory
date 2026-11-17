@@ -76,6 +76,14 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
 - `fade` (seconds, e.g. `0.6`): the next picture dissolves in over the last one instead of a hard cut. Use it when the
   owner asks for a seamless edit ("dựng liền mạch", "đừng chia ra từng cảnh", owner 14/11) and then also group the
   lines into a few big ideas (~10 s each: the title stays while the pictures change under it). Default 0: hard cuts.
+- **Motion (owner, 17/11: "video khá tĩnh, thừa nhiều khoảng trống, gần như không chuyển động")**: the picture area
+  is 1000 × up to 1030 px; every shot with one picture and no ring, zoom, detail box or `still` **moves** over the
+  whole shot: a picture wider than ~1.2 fills a squarer box and **pans** across its whole width (direction alternates),
+  others **push in or pull out** 10–22 % (stronger for `troi-cham`, `ket`). A new picture settles in from 3 % larger,
+  each subtitle cue rises in, and the paper shows the shot's picture blurred and faint behind. Ring (`khoanh`),
+  `dung-yen`, `tai-lieu-zoom`, `toan-canh-chi-tiet` and `so-sanh` shots keep the whole picture still or zoom as
+  before. `"move": false` on a shot keeps it as before (whole picture, slow drift). Check in the preview that a panned
+  picture shows the line's subject at some point of the pan (`*` frame = end of the shot).
 - `pace`: `"fast"` (owner, 17/11: "cho nhịp nhanh lên chút") shortens the pauses between lines (0.3 s after a
   sentence, 0.12 s after a comma, instead of 0.45 / 0.25: about 3 s less per minute — keep the 60-s rule in mind).
   With it: `fade` ~0.35, and about one shot per line (a new picture every ~3 s) while the scene title stays.

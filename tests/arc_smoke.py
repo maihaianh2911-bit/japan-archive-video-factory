@@ -102,10 +102,14 @@ e3 = refused(lambda sc: sc[3]['shots'][1].pop('zoom')); assert 'zoom.to' in e3, 
 assert sh[4]['s'] > plan['voice'][3]['s'] + 1                                                       # at 4.5 = mid-line 4
 assert len(sh[1]['pics']) == 2 and sh[1]['pics'][1]['box'][2] < sh[1]['pics'][0]['box'][2]          # detail below, narrower
 b0 = sh[0]['pics'][0]['box']; assert abs(b0[2] - layout.MAX_W) < 1 and abs(b0[0] - layout.MARGIN) < 1  # landscape: full width
+assert b0[2] / b0[3] < 1.05   # a moving landscape shot fills a squarer box and pans across it
 bt = sh[3]['pics'][0]['box']; assert abs(bt[3] - layout.MAX_H) < 1 or bt[3] + 2 * layout.CAPTION_H > layout.MAX_H - 200   # portrait: tall
 for x in sh: assert x['pics'][-1]['box'][1] + x['pics'][-1]['box'][3] < x['subY'] < 1600 and x['bar'] >= 140
-assert sh[4]['pics'][0]['zoom']['to'][0] > 0.3 and sh[4]['pics'][0]['drift'] == 0
-assert sh[0]['pics'][0]['drift'] > 0 and sh[2]['pics'][0]['drift'] == 0 and plan['theme'] == 'paper'          # slow push-in unless still/zoom
+assert sh[4]['pics'][0]['zoom']['to'][0] > 0.3 and sh[4]['pics'][0]['drift'] == 0 and 'move' not in sh[4]['pics'][0]
+mv = sh[0]['pics'][0]['move']; assert mv['from'] != mv['to'] and sh[0]['pics'][0]['drift'] == 0   # owner 17/11: moving shots
+assert 'move' not in sh[2]['pics'][0] and sh[2]['pics'][0]['drift'] == 0 and plan['theme'] == 'paper'  # a ring shot stays still
+assert 'move' not in sh[1]['pics'][0] and len(sh[1]['pics']) == 2                                       # picture + detail: no pan
+mv3 = sh[3]['pics'][0]['move']; assert abs((mv3['to'][2] - mv3['to'][0]) - (mv3['from'][2] - mv3['from'][0]) * 0.88) < 0.02 or mv3['from'][0] > mv3['to'][0]
 assert any(s['hl'] == ['円を描く'] for s in plan['subs']) and plan['fade'] == 0.6
 for sb in plan['subs']:
     r = sb['text'].split('\n'); assert len(r) <= 2 and max(map(len, r)) <= 19, sb['text']

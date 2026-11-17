@@ -113,6 +113,26 @@ def at_time(li):
     k = int(li); k = min(max(starts), max(min(starts), k))
     return starts[k] + (li - int(li)) * dur[k]
 
+def motion(v, aspect, box_aspect, k, drift):
+    """Move of a moving shot: {'from': view, 'to': view} (fractions of the picture), eased over the shot.
+    A picture wider than its box pans across its whole width (left→right on even shots, right→left on odd ones);
+    otherwise it pushes in (even) or pulls out (odd) by 10–22 % (more for the edits that ask for a stronger drift),
+    centred a little above the middle (faces, inscriptions)."""
+    x0, y0, x1, y1 = v
+    if aspect > box_aspect * 1.02:
+        vw = (x1 - x0) * box_aspect / aspect
+        left, right = [x0, y0, x0 + vw, y1], [x1 - vw, y0, x1, y1]
+        a, b = (left, right) if k % 2 == 0 else (right, left)
+    else:
+        amt = max(0.1, min(0.22, drift * 2 + 0.02))
+        w, h = (x1 - x0) * (1 - amt), (y1 - y0) * (1 - amt)
+        cx, cy = (x0 + x1) / 2, y0 + (y1 - y0) * 0.45
+        cx = min(x1 - w / 2, max(x0 + w / 2, cx)); cy = min(y1 - h / 2, max(y0 + h / 2, cy))
+        inner = [cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2]
+        a, b = (list(v), inner) if k % 2 == 0 else (inner, list(v))
+    return {'from': [round(x, 5) for x in a], 'to': [round(x, 5) for x in b]}
+
+
 shots = []
 for si, (sc, ps) in enumerate(zip(scenes_in, picks['scenes'])):
     a, b = sc['lines']; s0 = 0.0 if si == 0 else starts[a] - 0.15
@@ -131,12 +151,20 @@ for si, (sc, ps) in enumerate(zip(scenes_in, picks['scenes'])):
         for q in pics:
             w, h = img_size(q['img']); x0, y0, x1, y1 = q['view']
             aspects.append((x1 - x0) * w / ((y1 - y0) * h))
-        lay = L.shot_layout(aspects, caption=bool(p.get('caption')))
+        # a moving shot (owner 17/11: "video gần như không chuyển động"): one picture, no ring, zoom, detail or "still":
+        # a wide picture fills a squarer box and pans across, others push in or pull out; directions alternate
+        moving = (STYLE != 'classic' and len(pics) == 1 and not p.get('still') and not p.get('zoom') and not p.get('marks')
+                  and p.get('move', True) is not False)   # "move": false keeps a shot as before
+        box_aspects = [L.fill_aspect(aspects[0])] if moving else aspects
+        lay = L.shot_layout(box_aspects, caption=bool(p.get('caption')))
         boxes = []
         for q, box, asp in zip(pics, lay['boxes'], aspects):
             w, h = img_size(q['img'])
             boxes.append({'src': f"{base}/img/{q['img']}.jpg", 'w': w, 'h': h, 'box': box, 'view': q['view'],
-                          'drift': 0 if p.get('still') or STYLE == 'classic' else p.get('drift', 0.05)})   # slow push-in
+                          'drift': 0 if p.get('still') or STYLE == 'classic' or moving else p.get('drift', 0.05)})   # slow push-in
+        if moving:
+            boxes[0]['move'] = motion(boxes[0]['view'], aspects[0], box_aspects[0], len(shots), p.get('drift', 0.05))
+            boxes[0]['view'] = boxes[0]['move']['from']
         z = p.get('zoom')
         if z:   # slow push into a detail of the main picture (e.g. the southern edge of a map)
             w, h = img_size(p['img'])

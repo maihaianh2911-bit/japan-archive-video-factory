@@ -8,7 +8,7 @@ THEMES = {   # colours of src/arc/ArcV.tsx THEMES
     'warm': dict(bg=(27, 20, 16), bar=(233, 190, 134), label=(240, 201, 149), title=(255, 246, 230), sub=(255, 250, 240),
                  credit=(235, 225, 212), ring=(242, 192, 112), frame=(240, 201, 149), mat=0, backdrop=True),
     'paper': dict(bg=(239, 229, 207), bar=(168, 67, 42), label=(156, 63, 38), title=(43, 29, 18), sub=(36, 24, 15),
-                  credit=(80, 62, 45), ring=(192, 57, 43), frame=(200, 190, 170), mat=12, backdrop=False),
+                  credit=(80, 62, 45), ring=(192, 57, 43), frame=(200, 190, 170), mat=12, backdrop=False, wash=0.3),
     'classic': dict(bg=(33, 26, 24), bar=(233, 190, 134), label=(239, 195, 145), title=(251, 246, 234), sub=(255, 253, 245),
                     credit=(214, 205, 200), ring=(230, 180, 110), frame=(214, 190, 156), mat=0, backdrop=False),
 }
@@ -33,6 +33,11 @@ def view_at(p, t, s, e):
     if z:
         k = ease((t - z['s']) / max(0.1, z['e'] - z['s']))
         return [v + (w - v) * k for v, w in zip(p['view'], z['to'])]
+    mv = p.get('move')
+    if mv:   # pan / push of a moving shot (owner 17/11), sine-eased over the shot as in ArcV
+        import math
+        k = (1 - math.cos(math.pi * min(1, max(0, (t - s) / max(0.5, e - s))))) / 2
+        return [a + (b - a) * k for a, b in zip(mv['from'], mv['to'])]
     if not p.get('drift'): return p['view']
     k = min(1, max(0, (t - s) / max(0.5, e - s))) * p['drift'] / 2
     a, b, c, d = p['view']; w, h = c - a, d - b
@@ -52,6 +57,12 @@ def draw(shot, t, sub, img_of, theme='paper'):
     """Full 1080×1920 frame of `shot` at time t. img_of(src) → PIL image of a prepared picture."""
     th = THEMES.get(theme, THEMES['paper'])
     im = backdrop(img_of(shot['pics'][0]['src'])) if th['backdrop'] else Image.new('RGB', (1080, 1920), th['bg'])
+    if th.get('wash'):   # paper: the picture blurred, sepia and faint over the paper (ArcV Wash)
+        src = img_of(shot['pics'][0]['src']); w, h = src.size; c = max(1080 / w, 1920 / h) * 1.15
+        bl = src.resize((max(1, round(w * c / 8)), max(1, round(h * c / 8)))).filter(ImageFilter.GaussianBlur(3.5)).resize((round(w * c), round(h * c)))
+        bl = bl.crop(((bl.width - 1080) // 2, (bl.height - 1920) // 2, (bl.width - 1080) // 2 + 1080, (bl.height - 1920) // 2 + 1920))
+        g = bl.convert('L'); sep = Image.merge('RGB', [g.point(lambda v: min(255, v * 1.07)), g.point(lambda v: v * 0.93), g.point(lambda v: v * 0.76)])
+        im = Image.blend(im, Image.blend(bl, sep, 0.55), th['wash'])
     d = ImageDraw.Draw(im)
     b = shot['bar']
     d.rectangle((72, b, 72 + 92, b + 6), fill=th['bar'])

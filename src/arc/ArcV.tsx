@@ -12,7 +12,7 @@ import { AbsoluteFill, Audio, Img, Sequence, cancelRender, continueRender, delay
 // the sample).
 type View = [number, number, number, number];
 export type PicBox = { src: string; w: number; h: number; box: [number, number, number, number]; view: View;
-  zoom?: { to: View; s: number; e: number }; drift?: number };
+  zoom?: { to: View; s: number; e: number }; drift?: number; move?: { from: View; to: View } };
 export type Mark = { s: number; box: View; shape: 'ellipse' | 'rect'; on: number };
 export type Shot = { s: number; e: number; scene: number; shot: number; label: string; title: string; titleSize: number;
   caption: string; credit: string; bar: number; captionY: number | null; subY: number; pics: PicBox[]; marks: Mark[]; newScene?: boolean;
@@ -22,14 +22,14 @@ type FontChunk = { family: string; file: string; range: string };
 export type PlanA = { duration: number; shots: Shot[]; subs: Sub[]; voice: { s: number; src: string }[]; music: string | null;
   musicVolume: number; fonts: FontChunk[]; theme?: string; total?: number; fade?: number };
 
-type Theme = { bg: string; bgCss?: string; bar: string; label: string; title: string; sub: string; subHl: string; subShadow: string; credit: string;
+type Theme = { wash?: number; bg: string; bgCss?: string; bar: string; label: string; title: string; sub: string; subHl: string; subShadow: string; credit: string;
   ring: string; frame: string; mat: number; shadow: string; backdrop: boolean; subWeight: number; titleShadow: string };
 export const THEMES: Record<string, Theme> = {
   warm: { bg: '#1b1410', bar: '#e9be86', label: '#f0c995', title: '#fff6e6', sub: '#fffaf0', subHl: '#f2c67f',
     subShadow: '0 2px 14px rgba(0,0,0,.75), 0 0 3px rgba(0,0,0,.6)', credit: 'rgba(235,225,212,.8)', ring: '#f2c070',
     frame: '2px solid rgba(240,201,149,.85)', mat: 0, shadow: '0 28px 70px rgba(0,0,0,.65), 0 6px 18px rgba(0,0,0,.45)',
     backdrop: true, subWeight: 500, titleShadow: '0 4px 24px rgba(0,0,0,.55)' },
-  paper: { bg: '#efe5cf', bgCss: 'radial-gradient(ellipse 90% 75% at 50% 42%, #f7f0de 0%, #efe5cf 55%, #dccdaa 100%)', bar: '#a8432a', label: '#9c3f26', title: '#2b1d12', sub: '#24180f', subHl: '#a8432a',
+  paper: { wash: 0.3, bg: '#efe5cf', bgCss: 'radial-gradient(ellipse 90% 75% at 50% 42%, #f7f0de 0%, #efe5cf 55%, #dccdaa 100%)', bar: '#a8432a', label: '#9c3f26', title: '#2b1d12', sub: '#24180f', subHl: '#a8432a',
     subShadow: 'none', credit: 'rgba(80,62,45,.85)', ring: '#c0392b', frame: '1px solid rgba(60,40,20,.25)', mat: 12,
     shadow: '0 18px 40px rgba(70,45,20,.35), 0 3px 8px rgba(70,45,20,.25)', backdrop: false, subWeight: 500, titleShadow: 'none' },
   classic: { bg: '#211a18', bar: '#e9be86', label: '#efc391', title: '#fbf6ea', sub: '#fffdf5', subHl: '#f2c67f',
@@ -41,6 +41,7 @@ const M = 69;
 const clamp01 = (x: number) => (x < 0 ? 0 : x > 1 ? 1 : x);
 const ease = (x: number) => { const p = clamp01(x); return p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2; };
 const easeOut = (x: number) => 1 - Math.pow(1 - clamp01(x), 3);
+const easeSine = (x: number) => (1 - Math.cos(Math.PI * clamp01(x))) / 2;
 
 let fontsLoading: Promise<void> | null = null;
 const useFonts = (fonts: FontChunk[], text: string) => {
@@ -59,6 +60,10 @@ export const viewAt = (p: PicBox, t: number, s: number, e: number): View => {
   if (p.zoom) {
     const k = ease((t - p.zoom.s) / Math.max(0.1, p.zoom.e - p.zoom.s));
     return p.view.map((v, i) => v + (p.zoom!.to[i] - v) * k) as View;
+  }
+  if (p.move) {   // pan across a wide picture, or push in / pull out (owner 17/11: more motion), over the whole shot
+    const k = easeSine((t - s) / Math.max(0.5, e - s));
+    return p.move.from.map((v, i) => v + (p.move!.to[i] - v) * k) as View;
   }
   if (!p.drift) return p.view;
   const k = clamp01((t - s) / Math.max(0.5, e - s)) * p.drift / 2;
@@ -108,6 +113,18 @@ const Backdrop: React.FC<{ p: PicBox; t: number; sh: Shot }> = ({ p, t, sh }) =>
   );
 };
 
+// paper theme (owner 17/11): the shot's picture, blurred, sepia and faint, over the paper, slowly growing
+const Wash: React.FC<{ p: PicBox; t: number; sh: Shot; o: number }> = ({ p, t, sh, o }) => {
+  const k = clamp01((t - sh.s) / Math.max(0.5, sh.e - sh.s));
+  const c = Math.max(1080 / p.w, 1920 / p.h) * 1.15, w = p.w * c, h = p.h * c;
+  return (
+    <AbsoluteFill style={{ overflow: 'hidden', opacity: o }}>
+      <Img src={staticFile(p.src)} style={{ position: 'absolute', left: (1080 - w) / 2, top: (1920 - h) / 2, width: w, height: h, maxWidth: 'none',
+        filter: 'blur(28px) sepia(.55) saturate(1.1)', transform: `scale(${1.02 + 0.06 * k})` }} />
+    </AbsoluteFill>
+  );
+};
+
 const Highlight: React.FC<{ text: string; hl: string[]; color: string }> = ({ text, hl, color }) => {
   if (!hl.length) return <>{text}</>;
   const re = new RegExp(`(${hl.map((h) => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
@@ -134,10 +151,15 @@ export const ArcV: React.FC<PlanA> = (plan) => {
   const same = (a: Shot, b: Shot) => a.pics.length === b.pics.length && a.pics.every((p, i) => p.src === b.pics[i].src && p.box.join() === b.pics[i].box.join() && p.view.join() === b.pics[i].view.join());
   const mix = prev && fade > 0 && t < sh.s + fade && !same(prev, sh) ? ease((t - sh.s) / fade) : 1;
   const out = mix < 1 && prev ? prev : null;
+  // a new picture comes in 3 % larger and settles (0.5 s); a subtitle cue rises in (0.2 s)
+  const settle = prev && same(prev, sh) ? 1 : 1 + 0.03 * (1 - easeOut((t - sh.s) / 0.5));
+  const cue = sub ? easeOut((t - sub.s) / 0.2) : 1;
   return (
     <AbsoluteFill style={{ background: th.bgCss || th.bg }}>
       {th.backdrop && out ? <Backdrop p={out.pics[0]} t={t} sh={out} /> : null}
       {th.backdrop ? <AbsoluteFill style={{ opacity: mix }}><Backdrop p={sh.pics[0]} t={t} sh={sh} /></AbsoluteFill> : null}
+      {th.wash && out ? <Wash p={out.pics[0]} t={t} sh={out} o={th.wash * (1 - mix)} /> : null}
+      {th.wash ? <Wash p={sh.pics[0]} t={t} sh={sh} o={th.wash * mix} /> : null}
       {/* header: bar, label (place / kind of document), title */}
       <div style={{ position: 'absolute', left: M + 3, top: sh.bar, width: 92 * (0.4 + 0.6 * head), height: 6, background: th.bar }} />
       {sh.label ? (
@@ -147,7 +169,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
       {out ? <AbsoluteFill style={{ opacity: 1 - mix }}>
         {out.pics.map((p, i) => <PicView key={i} p={p} t={t} sh={out} th={th} marks={out.marks.filter((m) => m.on === i)} />)}
       </AbsoluteFill> : null}
-      <AbsoluteFill style={{ opacity: mix }}>
+      <AbsoluteFill style={{ opacity: mix, transform: `scale(${settle})`, transformOrigin: `540px ${sh.pics[0].box[1] + sh.pics[0].box[3] / 2}px` }}>
         {sh.pics.map((p, i) => <PicView key={i} p={p} t={t} sh={sh} th={th} marks={sh.marks.filter((m) => m.on === i)} />)}
       </AbsoluteFill>
       {out && out.caption && out.captionY !== null ? (
@@ -157,7 +179,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
         <div style={{ position: 'absolute', left: M + 3, top: sh.captionY + (th.mat ? th.mat : 0), opacity: mix, fontFamily: SANS, fontWeight: 500, fontSize: 38, lineHeight: 1.3, color: th.label, textShadow: th.titleShadow }}>{sh.caption}</div>
       ) : null}
       {sub ? (
-        <div style={{ position: 'absolute', left: 50, right: 50, top: sh.subY, textAlign: 'center' }}>
+        <div style={{ position: 'absolute', left: 50, right: 50, top: sh.subY + (1 - cue) * 16, opacity: 0.25 + 0.75 * cue, textAlign: 'center' }}>
           {sub.text.split('\n').map((l, i) => (
             <div key={i} style={{ fontFamily: SANS, fontWeight: th.subWeight, fontSize: 52, lineHeight: 1.46, color: th.sub, letterSpacing: '0.04em', textShadow: th.subShadow }}>
               <Highlight text={l} hl={sub.hl || []} color={th.subHl} />

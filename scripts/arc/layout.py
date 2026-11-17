@@ -6,15 +6,17 @@ the picture in the middle with a thin border (full width for landscape pictures)
 (two rows), the credit small at the foot. Everything in pixels of the 1080×1920 frame.
 """
 W, H = 1080, 1920
-MARGIN = 69                 # left/right margin of picture and header
-MAX_W = W - 2 * MARGIN      # 942: a landscape picture uses the full width
-MAX_H = 915                 # tallest picture (portrait), as the P43 shot of the sample
-HEAD = 297                  # gold bar top → picture top
-BLOCK_CENTER = 832          # header + picture are centred around this height (sample: 830–832)
+# Owner, 17/11/2026: "video khá tĩnh, thừa rất nhiều khoảng trống" → the picture area is larger than in the sample
+# (942 × 915 there): pictures use 1000 px of the width and up to 1030 px of the height, the header is tighter.
+MARGIN = 40                 # left/right margin of the picture (the header text keeps the sample's 69 px)
+MAX_W = W - 2 * MARGIN      # 1000: a landscape picture uses the full width
+MAX_H = 1030                # tallest picture box
+HEAD = 270                  # gold bar top → picture top
+BLOCK_CENTER = 800          # header + picture are centred around this height
 STACK_GAP = 47              # gap between a picture and its detail below (sample: panorama + detail)
 STACK_SECOND = 0.88         # the detail is a little narrower than the picture above it
 CAPTION_GAP, CAPTION_H = 46, 52
-SUB_GAP, SUB_Y, SUB_MAX = 70, 1472, 1530   # the sample keeps the subtitle at one height (glyphs from y≈1489)
+SUB_GAP, SUB_Y, SUB_MAX = 50, 1472, 1530   # the sample keeps the subtitle at one height (glyphs from y≈1489)
 CREDIT_Y = 1745
 TITLE_SIZE, TITLE_OPEN, TITLE_BOX = 90, 112, 942   # the opening title is larger (sample: 約1万2千年前)
 
@@ -24,6 +26,16 @@ def title_size(title, opening=False):
     Half-width characters (digits, latin) count as half."""
     n = max(1.0, sum(0.55 if ord(c) < 0x2000 else 1.0 for c in (title or '')))
     return min(TITLE_OPEN if opening else TITLE_SIZE, int(TITLE_BOX / (n * 1.02)))
+
+
+# "Filled" box of a moving shot (owner 17/11): a wide picture is shown in a squarer box and panned across, so it
+# fills the frame and moves; the whole width is seen over the shot. Box aspect = max(FILL_MIN, picture / FILL_DIV).
+FILL_MIN, FILL_DIV = 1.0, 1.6
+
+
+def fill_aspect(aspect):
+    """Box aspect (w/h) for a moving shot of a picture with this aspect: wide pictures get a squarer box."""
+    return aspect if aspect <= 1.2 else max(FILL_MIN, aspect / FILL_DIV)
 
 
 def fit(aspect, max_w, max_h):
@@ -37,12 +49,14 @@ def fit(aspect, max_w, max_h):
 def shot_layout(aspects, caption=False):
     """Boxes for one shot. aspects = [w/h of the shown view] (1 picture, or 2 = picture + detail below).
     Returns {'bar': y, 'boxes': [[x, y, w, h], ...], 'caption': y | None, 'sub': y}."""
+    # the picture never pushes the subtitle (or the gold caption above it) below SUB_MAX
+    max_h = min(MAX_H, SUB_MAX - SUB_GAP - 140 - HEAD - (CAPTION_GAP + CAPTION_H if caption else 0))
     if len(aspects) == 1:
-        sizes = [fit(aspects[0], MAX_W, MAX_H)]
+        sizes = [fit(aspects[0], MAX_W, max_h)]
     else:
         a, b = aspects[:2]
-        wa, ha = fit(a, MAX_W, MAX_H); wb, hb = fit(b, MAX_W * STACK_SECOND, MAX_H)
-        k = min(1.0, (MAX_H - STACK_GAP) / (ha + hb))
+        wa, ha = fit(a, MAX_W, max_h); wb, hb = fit(b, MAX_W * STACK_SECOND, max_h)
+        k = min(1.0, (max_h - STACK_GAP) / (ha + hb))
         sizes = [(wa * k, ha * k), (wb * k, hb * k)]
     img_h = sum(h for _, h in sizes) + STACK_GAP * (len(sizes) - 1)
     block = HEAD + img_h + (CAPTION_GAP + CAPTION_H if caption else 0)
