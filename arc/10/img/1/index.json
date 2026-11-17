@@ -1,0 +1,803 @@
+[
+ {
+  "k": 1,
+  "query": "commons: Hachiko",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Chuken Hachiko with Hamano Family.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Chuken_Hachiko_with_Hamano_Family.png",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Chuken_Hachiko_with_Hamano_Family.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown",
+    "date": "before 1925",
+    "description": "A nervous Hamano family dressed up for a commemorative photo with the faithful dog Hachiko.",
+    "width": 1200,
+    "height": 900,
+    "file": "1-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Death of Hachiko - Last Photo.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Death_of_Hachiko_-_Last_Photo.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/65/Death_of_Hachiko_-_Last_Photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Shibuya Folk and Literary Shirane Memorial Museum",
+    "date": "1935-03-08",
+    "description": "Praying for recently deceased “Chuken Hachiko” (Loyal Dog Hachiko) in Tokyo's Shibuya Station baggage room on March 8, 1935. Hidesaburo Ueno's widow, Yaeko, is in the front row, second from the right. The photo was published the next day in the Yamato Shimbun.",
+    "width": 700,
+    "height": 544,
+    "file": "1-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Faithful Dog Hachiko Photo.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Faithful_Dog_Hachiko_Photo.png",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/47/Faithful_Dog_Hachiko_Photo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown",
+    "date": "circa 1934date QS:P,+1934-00-00T00:00:00Z/9,P1480,Q5727902",
+    "description": "Photo of the faithful dog Hachiko (chūken Hachikō (忠犬ハチ公)). Hachiko (1923-1935) was a famous Akita dog born in Akita Prefecture, remembered for his remarkable loyalty to his owner, Hidesaburō Ueno, long past Ueno's death.",
+    "width": 1173,
+    "height": 1496,
+    "file": "1-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Chuken Hachiko at Shibuya Station c1933.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Chuken_Hachiko_at_Shibuya_Station_c1933.png",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/38/Chuken_Hachiko_at_Shibuya_Station_c1933.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "circa 1933date QS:P,+1933-00-00T00:00:00Z/9,P1480,Q5727902",
+    "description": "Hachiko at Shibuya Station around 1933 (Showa 8). The man in the picture is the station master. He was already an old dog and walked around the station every day, but he was affectionately called \"Hachi\" by many people, including station staff and station passengers.",
+    "width": 1126,
+    "height": 807,
+    "file": "1-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Hachiko Stuffed specimen.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hachiko_Stuffed_specimen.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Hachiko_Stuffed_specimen.jpg/1920px-Hachiko_Stuffed_specimen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "Momotarou2012",
+    "date": "2013-02-16",
+    "description": "Stuffed specimen of Hachiko, Akita dog. Exhibit in the National Museum of Nature and Science, Tokyo, Japan.",
+    "width": 2400,
+    "height": 2400,
+    "file": "1-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Hachiko Old Tomb.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hachiko_Old_Tomb.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Hachiko_Old_Tomb.jpg/1920px-Hachiko_Old_Tomb.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Psjk2106",
+    "date": "2020-09-19 15:04:33",
+    "description": "Hachiko Old Tomb located in Takiko Campus, Nagoya City University Mizuho Ward, Nagoya City, Aichi Prefecture",
+    "width": 4272,
+    "height": 2848,
+    "file": "1-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Monument of Hachiko, in the Aoyama Cemetery.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Monument_of_Hachiko,_in_the_Aoyama_Cemetery.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/57/Monument_of_Hachiko%2C_in_the_Aoyama_Cemetery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Lombroso",
+    "date": "2007-09-10",
+    "description": "Monument of Hachiko (ハチ公 Hachikō), located at Aoyama Cemetery (青山霊園 Aoyama Reien) Minami-Aoyama, Minato, Tokyo, Japan",
+    "width": 1704,
+    "height": 2272,
+    "file": "1-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Hachiko-3.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hachiko-3.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Hachiko-3.jpg/1920px-Hachiko-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "江戸村のとくぞう",
+    "date": "Taken on 21 March 2019, 12:17:59",
+    "description": "青山墓地 忠犬ハチ公",
+    "width": 4496,
+    "height": 3000,
+    "file": "1-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "query": "commons: Hachikō 1934",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Statue of Hachikō by Andō Teru (1934).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Statue_of_Hachik%C5%8D_by_And%C5%8D_Teru_(1934).jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Statue_of_Hachik%C5%8D_by_And%C5%8D_Teru_%281934%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown photographer",
+    "date": "before 1945date QS:P,+1945-00-00T00:00:00Z/7,P1326,+1945-00-",
+    "description": "初代ハチ公像",
+    "width": 768,
+    "height": 504,
+    "file": "2-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Statue of Hachikō by Andō Teru (1934).1.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Statue_of_Hachik%C5%8D_by_And%C5%8D_Teru_(1934).1.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Statue_of_Hachik%C5%8D_by_And%C5%8D_Teru_%281934%29.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown photographer",
+    "date": "before 1945date QS:P,+1945-00-00T00:00:00Z/7,P1326,+1945-00-",
+    "description": "初代ハチ公像",
+    "width": 800,
+    "height": 1316,
+    "file": "2-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Statue of Hachikō by Andō Teru (1934).2.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Statue_of_Hachik%C5%8D_by_And%C5%8D_Teru_(1934).2.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Statue_of_Hachik%C5%8D_by_And%C5%8D_Teru_%281934%29.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Kōji Morooka",
+    "date": "Taken in 1939",
+    "description": "初代忠犬ハチ公像",
+    "width": 796,
+    "height": 1200,
+    "file": "2-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Hachikō and sculptor Andō Teru with the Hachikō statue.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hachik%C5%8D_and_sculptor_And%C5%8D_Teru_with_the_Hachik%C5%8D_statue.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Hachik%C5%8D_and_sculptor_And%C5%8D_Teru_with_the_Hachik%C5%8D_statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "朝日新聞社",
+    "date": "Taken in August 1933",
+    "description": "ハチ公、安藤照、ハチ公像",
+    "width": 1300,
+    "height": 1050,
+    "file": "2-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "One anniversary of Hachiko 19360308 Scan10038.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:One_anniversary_of_Hachiko_19360308_Scan10038.JPG",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c4/One_anniversary_of_Hachiko_19360308_Scan10038.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "1936-03-08",
+    "description": "First anniversary of Hachiko’s death (March 8, 1936).",
+    "width": 1124,
+    "height": 902,
+    "file": "2-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "The Hachikō's statue before being draped with a Japanese flag.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Hachik%C5%8D%27s_statue_before_being_draped_with_a_Japanese_flag.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/73/The_Hachik%C5%8D%27s_statue_before_being_draped_with_a_Japanese_flag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Teru Andō",
+    "date": "Published in 1934 (Statue) Taken in 12 October 1944",
+    "description": "The original Hachikō statue, set to be removed under wartime metal requisition, during a farewell ceremony on October 12, 1944, as a Japanese flag was being draped over it.",
+    "width": 1024,
+    "height": 738,
+    "file": "2-6.jpg"
+   }
+  ]
+ },
+ {
+  "k": 3,
+  "query": "commons: Hachiko photograph",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Hachiko statue during occupation.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hachiko_statue_during_occupation.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/60/Hachiko_statue_during_occupation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "1948–1952",
+    "description": "Allied soldiers gathered around the Hachiko statue",
+    "width": 751,
+    "height": 600,
+    "file": "3-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "1RAR soldiers on leave in Tokyo with Hachiko statue.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:1RAR_soldiers_on_leave_in_Tokyo_with_Hachiko_statue.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d9/1RAR_soldiers_on_leave_in_Tokyo_with_Hachiko_statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Meldrum, Donald Albert (Tim)",
+    "date": "1956-01",
+    "description": "On Tokyo leave from Korea, 1410845 Private (Pte) Kenneth (Ken) Alfred Walker (left), of Rockhampton, Qld, and of the 1st Battalion, The Royal Australian Regiment (1RAR), touches the statue commemorating the dog which waited two years at a Tokyo railway station after his master's death. 4327 Pte Rex ",
+    "width": 487,
+    "height": 654,
+    "file": "3-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "JRE Shibuya-STA Hachiko-Gate 2022.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:JRE_Shibuya-STA_Hachiko-Gate_2022.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/JRE_Shibuya-STA_Hachiko-Gate_2022.jpg/1920px-JRE_Shibuya-STA_Hachiko-Gate_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "MaedaAkihiko",
+    "date": "2022-12-07",
+    "description": "Hachiko ticket gate at JR East Shibuya station (as of 2022)",
+    "width": 5472,
+    "height": 3648,
+    "file": "3-3.jpg"
+   }
+  ]
+ },
+ {
+  "k": 4,
+  "query": "openverse: Hachiko statue Shibuya",
+  "results": [
+   {
+    "source": "openverse/flickr",
+    "title": "Hachiko Statue, Shibuya",
+    "page": "https://www.flickr.com/photos/21442511@N08/29153660990",
+    "thumb": "https://live.staticflickr.com/8193/29153660990_429ff32fda_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "jdnx",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 1024,
+    "file": "4-1.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Hachiko statue @ Shibuya",
+    "page": "https://www.flickr.com/photos/22539273@N00/9044304473",
+    "thumb": "https://live.staticflickr.com/7349/9044304473_97b25908f1_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "*_*",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 768,
+    "file": "4-2.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Hachiko Statue@Shibuya train station",
+    "page": "https://www.flickr.com/photos/13515682@N06/1912568608",
+    "thumb": "https://live.staticflickr.com/2241/1912568608_abf29475e4_b.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Angel_Blue",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 679,
+    "file": "4-3.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Hachiko statue, Shibuya station, Tokyo",
+    "page": "https://www.flickr.com/photos/46868759@N00/115894821",
+    "thumb": "https://live.staticflickr.com/19/115894821_e584b120d7_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "meknits",
+    "date": "",
+    "description": "",
+    "width": 768,
+    "height": 1024,
+    "file": "4-4.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Hachiko Statue - Shibuya Crossing - Tokyo",
+    "page": "https://www.flickr.com/photos/54549113@N00/54037869415",
+    "thumb": "https://live.staticflickr.com/65535/54037869415_a74241fb26_b.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Haydn Blackey",
+    "date": "",
+    "description": "",
+    "width": 684,
+    "height": 1024,
+    "file": "4-5.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Hachiko Statue - Shibuya Crossing - Tokyo",
+    "page": "https://www.flickr.com/photos/54549113@N00/54037417181",
+    "thumb": "https://live.staticflickr.com/65535/54037417181_57f1a14808_b.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Haydn Blackey",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 684,
+    "file": "4-6.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "good dog",
+    "page": "https://www.flickr.com/photos/44124401641@N01/4735425448",
+    "thumb": "https://live.staticflickr.com/4080/4735425448_43bae9b0ce_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "istolethetv",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "4-7.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Hachiko en Shibuya",
+    "page": "https://www.flickr.com/photos/37996573467@N01/1081357621",
+    "thumb": "https://live.staticflickr.com/1401/1081357621_d0e8107b16_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "luisvilla",
+    "date": "",
+    "description": "",
+    "width": 768,
+    "height": 1024,
+    "file": "4-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 5,
+  "query": "commons: Hidesaburo Ueno",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Grave of Hidesaburo Ueno and monument of Hachiko, in the Aoyama Cemetery.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Grave_of_Hidesaburo_Ueno_and_monument_of_Hachiko,_in_the_Aoyama_Cemetery.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Grave_of_Hidesaburo_Ueno_and_monument_of_Hachiko%2C_in_the_Aoyama_Cemetery.jpg/1920px-Grave_of_Hidesaburo_Ueno_and_monument_of_Hachiko%2C_in_the_Aoyama_Cemetery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "Lombroso",
+    "date": "Taken on 10 September 2007",
+    "description": "Grave of Hidesaburo Ueno (上野 英三郎 Ueno Hidesaburō) and monument of Hachiko (ハチ公 Hachikō), located at Aoyama Cemetery (青山霊園 Aoyama Reien) Minami-Aoyama, Minato, Tokyo, Japan",
+    "width": 2272,
+    "height": 1704,
+    "file": "5-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "上野英三郎.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:%E4%B8%8A%E9%87%8E%E8%8B%B1%E4%B8%89%E9%83%8E.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/38/%E4%B8%8A%E9%87%8E%E8%8B%B1%E4%B8%89%E9%83%8E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "before 1925date QS:P,+1925-00-00T00:00:00Z/7,P1326,+1925-00-",
+    "description": "上野英三郎",
+    "width": 607,
+    "height": 799,
+    "file": "5-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "UenoHidesaburo20131109.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:UenoHidesaburo20131109.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8c/UenoHidesaburo20131109.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 4.0",
+    "artist": "三人日",
+    "date": "2013-11-09",
+    "description": "上野英三郎の墓",
+    "width": 1200,
+    "height": 1600,
+    "file": "5-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Hachiko-2.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hachiko-2.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Hachiko-2.jpg/1920px-Hachiko-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "江戸村のとくぞう",
+    "date": "Taken on 21 March 2019, 12:17:38",
+    "description": "青山墓地 忠犬ハチ公",
+    "width": 4496,
+    "height": 3000,
+    "file": "5-4.jpg"
+   }
+  ]
+ },
+ {
+  "k": 6,
+  "query": "commons: Ueno Hidesaburo professor",
+  "results": []
+ },
+ {
+  "k": 7,
+  "query": "commons: Hachiko National Museum of Nature and Science",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Hachiko in National Museum of Nature and Science.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hachiko_in_National_Museum_of_Nature_and_Science.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Hachiko_in_National_Museum_of_Nature_and_Science.jpg/1920px-Hachiko_in_National_Museum_of_Nature_and_Science.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "Momotarou2012",
+    "date": "2011-04-24",
+    "description": "Hachikō exhibited at the National Museum of Nature and Science,Tokyo.",
+    "width": 2752,
+    "height": 2064,
+    "file": "7-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Hachiko-hakusei.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hachiko-hakusei.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Hachiko-hakusei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "日:Muramasa,Muramasa",
+    "date": "2007-07-14",
+    "description": "忠犬ハチ公-国立科学博物館剥製",
+    "width": 640,
+    "height": 666,
+    "file": "7-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Stuffed production of Hachiko Scan10038.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Stuffed_production_of_Hachiko_Scan10038.JPG",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/42/Stuffed_production_of_Hachiko_Scan10038.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "1935",
+    "description": "Stuffed production of Hachiko.",
+    "width": 973,
+    "height": 833,
+    "file": "7-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Laika ac Hachiko (7581322702).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Laika_ac_Hachiko_(7581322702).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Laika_ac_Hachiko_%287581322702%29.jpg/1920px-Laika_ac_Hachiko_%287581322702%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 2.0",
+    "artist": "Laika ac from USA",
+    "date": "2012-07-14 21:53",
+    "description": "Hachiko",
+    "width": 5184,
+    "height": 3456,
+    "file": "7-4.jpg"
+   }
+  ]
+ },
+ {
+  "k": 8,
+  "query": "openverse: Hachiko stuffed museum",
+  "results": []
+ },
+ {
+  "k": 9,
+  "query": "commons: Hachiko statue University of Tokyo",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Shibuya Hachiko Bus (2846051593).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Shibuya_Hachiko_Bus_(2846051593).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Shibuya_Hachiko_Bus_%282846051593%29.jpg/1920px-Shibuya_Hachiko_Bus_%282846051593%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 2.0",
+    "artist": "Stéfan",
+    "date": "2008-07-22 16:01",
+    "description": "[1] Hachikō (ハチ公, Hachikō? November 10, 1923–March 8, 1935), known in Japanese as chūken Hachikō (忠犬ハチ公, chūken Hachikō? \"faithful dog Hachikō\"), was an Akita dog born in the city of Odate, Akita Prefecture remembered for his loyalty to his master. In 1924, Hachikō was brought to Tokyo by his owner,",
+    "width": 2746,
+    "height": 2059,
+    "file": "9-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Shadow of Hachiko (18000344252).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Shadow_of_Hachiko_(18000344252).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Shadow_of_Hachiko_%2818000344252%29.jpg/1920px-Shadow_of_Hachiko_%2818000344252%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY 2.0",
+    "artist": "Manish Prabhune",
+    "date": "Taken on 23 May 2015, 19:57",
+    "description": "Shadow of Hachiko",
+    "width": 4592,
+    "height": 2576,
+    "file": "9-2.jpg"
+   }
+  ]
+ },
+ {
+  "k": 10,
+  "query": "openverse: Hachiko Ueno statue University of Tokyo",
+  "results": [
+   {
+    "source": "openverse/flickr",
+    "title": "This Hachiko dog statue outside Shibuya station is very famous",
+    "page": "https://www.flickr.com/photos/77742560@N06/48624517053",
+    "thumb": "https://live.staticflickr.com/65535/48624517053_8efe7b7368_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "shankar s.",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 684,
+    "file": "10-1.jpg"
+   }
+  ]
+ },
+ {
+  "k": 11,
+  "query": "commons: Hachiko grave Aoyama Cemetery",
+  "results": []
+ },
+ {
+  "k": 12,
+  "query": "commons: Shibuya station 1930s",
+  "results": [
+   {
+    "source": "commons",
+    "title": "In front of Shibuya Station in 1939 photographed by Morooka Kōji.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:In_front_of_Shibuya_Station_in_1939_photographed_by_Morooka_K%C5%8Dji.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/39/In_front_of_Shibuya_Station_in_1939_photographed_by_Morooka_K%C5%8Dji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Kōji Morooka",
+    "date": "昭和14年撮影",
+    "description": "View from near the current Hachiko Exit of Shibuya Station, looking toward the site of the present-day Shibuya Scramble Crossing. A Tokyo City Streetcar is visible in the foreground.",
+    "width": 1600,
+    "height": 1061,
+    "file": "12-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Tamaden Shibuya Sta.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Tamaden_Shibuya_Sta.png",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Tamaden_Shibuya_Sta.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "東京急行電鉄",
+    "date": "1935",
+    "description": "玉電渋谷駅の改札口",
+    "width": 583,
+    "height": 420,
+    "file": "12-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Hachikō giving a paw.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hachik%C5%8D_giving_a_paw.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Hachik%C5%8D_giving_a_paw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "昭和8年出版",
+    "description": "Hachikō trying to grab the hand of Kasaburō Gomi, a station attendant at Shibuya Station. Photo taken around 1933.",
+    "width": 896,
+    "height": 654,
+    "file": "12-3.jpg"
+   }
+  ]
+ },
+ {
+  "k": 13,
+  "query": "commons: Hachiko funeral",
+  "results": []
+ },
+ {
+  "k": 14,
+  "query": "commons: Odate Hachiko",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Exterior of Odate Jukai Dome 20181020.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Exterior_of_Odate_Jukai_Dome_20181020.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Exterior_of_Odate_Jukai_Dome_20181020.jpg/1920px-Exterior_of_Odate_Jukai_Dome_20181020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "掬茶",
+    "date": "2018-10-20 13:54:45",
+    "description": "大館樹海ドーム（ニプロハチ公ドーム）。国内最大級の木造ドームである。",
+    "width": 6000,
+    "height": 3376,
+    "file": "14-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nipro Hachiko Dome 2017 A.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nipro_Hachiko_Dome_2017_A.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Nipro_Hachiko_Dome_2017_A.jpg/1920px-Nipro_Hachiko_Dome_2017_A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Marho",
+    "date": "2017-07-21 10:57:26",
+    "description": "ニプロハチ公ドーム（大館樹海ドーム）：秋田県大館市",
+    "width": 4215,
+    "height": 2810,
+    "file": "14-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Odate Jukai Dome 20181202.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Odate_Jukai_Dome_20181202.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Odate_Jukai_Dome_20181202.jpg/1920px-Odate_Jukai_Dome_20181202.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Marho",
+    "date": "2018-12-02 10:58:15",
+    "description": "大館樹海ドーム（ニプロハチ公ドーム）：秋田県大館市",
+    "width": 5184,
+    "height": 3888,
+    "file": "14-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nipro Hachiko Dome 2017 C.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nipro_Hachiko_Dome_2017_C.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Nipro_Hachiko_Dome_2017_C.jpg/1920px-Nipro_Hachiko_Dome_2017_C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Marho",
+    "date": "2017-07-21 11:00:49",
+    "description": "ニプロハチ公ドーム（大館樹海ドーム）：秋田県大館市",
+    "width": 4334,
+    "height": 2889,
+    "file": "14-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nipro Hachiko Dome 2017 B.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nipro_Hachiko_Dome_2017_B.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Nipro_Hachiko_Dome_2017_B.jpg/1920px-Nipro_Hachiko_Dome_2017_B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Marho",
+    "date": "2017-07-21 10:41:31",
+    "description": "ニプロハチ公ドーム（大館樹海ドーム）：秋田県大館市",
+    "width": 4131,
+    "height": 2755,
+    "file": "14-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Odate Jukai Dome 2012.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Odate_Jukai_Dome_2012.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Odate_Jukai_Dome_2012.jpg/1920px-Odate_Jukai_Dome_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Marho",
+    "date": "2012-07-04 10:34:25",
+    "description": "大館樹海ドーム(秋田県大館市)",
+    "width": 2304,
+    "height": 1536,
+    "file": "14-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Odate Jukai Dome 202005.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Odate_Jukai_Dome_202005.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Odate_Jukai_Dome_202005.jpg/1920px-Odate_Jukai_Dome_202005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Wc018",
+    "date": "2020-05-30 13:17:00",
+    "description": "長根山から望む大館ニプロハチ公ドーム（樹海ドーム）",
+    "width": 3837,
+    "height": 2558,
+    "file": "14-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nipro Hachiko Dome.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Nipro_Hachiko_Dome.png",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Nipro_Hachiko_Dome.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "NASA",
+    "date": "2018-05-03",
+    "description": "Nipro Hachiko Dome",
+    "width": 784,
+    "height": 442,
+    "file": "14-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 15,
+  "query": "openverse: Akita dog",
+  "results": [
+   {
+    "source": "openverse/flickr",
+    "title": "Raccoon friend #kuma #akita #dog",
+    "page": "https://www.flickr.com/photos/11406748@N00/7040684235",
+    "thumb": "https://live.staticflickr.com/7128/7040684235_9acbb8779f.jpg",
+    "license": "CC BY 2.0",
+    "artist": "gina pina",
+    "date": "",
+    "description": "",
+    "width": 500,
+    "height": 500,
+    "file": "15-1.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "秋田犬, 武家屋敷, 角館, 陸奧小京都, 仙北, 秋田, 東北, 日本, Akita Dog, Kakunodate, Little Kyoto, Semboku, Akita, Tohoku, Japan, Nippon, Nihon, あきたいぬ, 武家屋敷通り, ぶけやしきどおり, かくのだて, みちのくの小京",
+    "page": "https://www.flickr.com/photos/91049143@N00/31055640388",
+    "thumb": "https://live.staticflickr.com/1958/31055640388_dea4865a11_b.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "bryan...",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "15-2.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Kuma! #akita #dog",
+    "page": "https://www.flickr.com/photos/11406748@N00/8139112193",
+    "thumb": "https://live.staticflickr.com/8326/8139112193_2fc85a952f.jpg",
+    "license": "CC BY 2.0",
+    "artist": "gina pina",
+    "date": "",
+    "description": "",
+    "width": 500,
+    "height": 500,
+    "file": "15-3.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Rainbow pinstripe #kuma #Akita #dog",
+    "page": "https://www.flickr.com/photos/11406748@N00/8193545114",
+    "thumb": "https://live.staticflickr.com/8345/8193545114_0cd5070dd1.jpg",
+    "license": "CC BY 2.0",
+    "artist": "gina pina",
+    "date": "",
+    "description": "",
+    "width": 500,
+    "height": 500,
+    "file": "15-4.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Akita dog model",
+    "page": "https://www.flickr.com/photos/167204877@N08/32607189577",
+    "thumb": "https://live.staticflickr.com/7861/32607189577_3b963a52e3_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "eba5684",
+    "date": "",
+    "description": "",
+    "width": 848,
+    "height": 1024,
+    "file": "15-5.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "秋田犬, 武家屋敷, 角館, 陸奧小京都, 仙北, 秋田, 東北, 日本, Akita Dog, Kakunodate, Little Kyoto, Semboku, Akita, Tohoku, Japan, Nippon, Nihon, あきたいぬ, 武家屋敷通り, ぶけやしきどおり, かくのだて, みちのくの小京",
+    "page": "https://www.flickr.com/photos/91049143@N00/44878785532",
+    "thumb": "https://live.staticflickr.com/1914/44878785532_4bd0d9a861_b.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "bryan...",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "15-6.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "yawn... busy day #akita #dog #black&white #dogstagram #afternoon",
+    "page": "https://www.flickr.com/photos/26168191@N00/7087768197",
+    "thumb": "https://live.staticflickr.com/7077/7087768197_603c9b6849.jpg",
+    "license": "CC BY 2.0",
+    "artist": "dee & tula monstah",
+    "date": "",
+    "description": "",
+    "width": 500,
+    "height": 500,
+    "file": "15-7.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Akita dog",
+    "page": "https://www.flickr.com/photos/58661913@N00/28695632914",
+    "thumb": "https://live.staticflickr.com/8152/28695632914_efafccd05d_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "limitsios",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "15-8.jpg"
+   }
+  ]
+ }
+]
