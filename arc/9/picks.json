@@ -1,0 +1,242 @@
+{
+ "images": {
+  "uraga": {
+   "src": "1/12-1.jpg"
+  },
+  "kw54": {
+   "src": "1/13-1.jpg"
+  },
+  "perry": {
+   "src": "1/11-1.jpg"
+  },
+  "ship61": {
+   "src": "1/6-1.jpg"
+  },
+  "photo": {
+   "src": "1/8-6.jpg"
+  },
+  "landing": {
+   "src": "1/1-2.jpg"
+  },
+  "monument": {
+   "src": "1/10-3.jpg"
+  },
+  "kw53": {
+   "src": "1/1-5.jpg"
+  },
+  "tengu": {
+   "src": "1/2-3.jpg"
+  },
+  "perry2": {
+   "src": "1/2-4.jpg"
+  },
+  "photo2": {
+   "src": "1/8-2.jpg"
+  },
+  "jokisen": {
+   "src": "1/1-4.jpg"
+  },
+  "foreign": {
+   "src": "1/2-5.jpg"
+  },
+  "heine": {
+   "src": "1/13-6.jpg"
+  },
+  "treaty": {
+   "src": "1/9-7.jpg"
+  },
+  "shimoda": {
+   "src": "1/13-2.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "uraga",
+     "edit": "so-lieu",
+     "title": "一八五三年",
+     "why": "năm 1853, cửa vịnh Edo ở Uraga",
+     "label": "歌川広重が描いた浦賀の港",
+     "credit": "Utagawa Hiroshige / CC0"
+    },
+    {
+     "at": 3,
+     "img": "kw54",
+     "edit": "khoanh",
+     "why": "tàu đen xuất hiện: khoanh con tàu lớn trên báo giấy",
+     "label": "黒船を描いた瓦版（1854年）",
+     "credit": "Wikimedia Commons / Public domain",
+     "marks": [
+      {
+       "at": 3.3,
+       "box": [
+        0.6,
+        0.42,
+        0.98,
+        0.95
+       ]
+      }
+     ]
+    },
+    {
+     "at": 4,
+     "img": "perry",
+     "edit": "chan-dung",
+     "why": "câu nhắc Perry: ảnh chụp thật",
+     "label": "ペリーの写真（1856年ごろ）",
+     "caption": "マシュー・ペリー（1794〜1858年）",
+     "credit": "Mathew Brady / Public domain"
+    },
+    {
+     "at": 5,
+     "img": "ship61",
+     "edit": "troi-cham",
+     "why": "tàu hơi nước nhả khói mà người ta gọi là tàu đen",
+     "label": "二代歌川広重が描いたアメリカの船",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "landing",
+     "edit": "toan-canh",
+     "why": "Perry ép Mạc phủ nhận quốc thư: cảnh lên bờ 1853",
+     "label": "ペリー一行の上陸（1853年）",
+     "credit": "Library of Congress / Public domain"
+    },
+    {
+     "at": 9,
+     "img": "monument",
+     "edit": "toan-canh",
+     "why": "câu nhắc Kurihama: bia kỷ niệm Perry lên bờ",
+     "label": "久里浜のペリー上陸記念碑",
+     "credit": "のりまき / CC BY 3.0"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "kw53",
+     "edit": "tai-lieu-zoom",
+     "why": "báo giấy tung ra: cả tờ rồi phóng vào các con tàu",
+     "label": "ペリー来航を伝える瓦版",
+     "credit": "Library of Congress / Public domain",
+     "zoom": {
+      "to": [
+       0.15,
+       0.42,
+       0.85,
+       0.75
+      ],
+      "at": 11.6
+     }
+    },
+    {
+     "at": 13,
+     "img": "tengu",
+     "edit": "khoanh",
+     "why": "Perry vẽ như mặt tengu: khoanh cái mũi",
+     "label": "「北亜墨利加人物 ペルリ像」",
+     "credit": "Library of Congress / Public domain",
+     "marks": [
+      {
+       "at": 13.45,
+       "box": [
+        0.5,
+        0.55,
+        0.8,
+        0.83
+       ]
+      }
+     ]
+    },
+    {
+     "at": 14,
+     "img": "perry2",
+     "edit": "troi-cham",
+     "why": "họa sĩ vẽ theo tưởng tượng: một bức chân dung Perry khác",
+     "label": "日本で描かれたペリーの肖像（1854年）",
+     "credit": "Library of Congress / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "photo2",
+     "edit": "troi-cham",
+     "why": "bài thơ trào phúng về cơn náo loạn tàu đen",
+     "label": "黒船（写真集より）",
+     "credit": "東洋文化協会 / Public domain"
+    },
+    {
+     "at": 19,
+     "img": "jokisen",
+     "edit": "khoanh",
+     "why": "chơi chữ 'jōkisen' = tàu hơi nước: khoanh ống khói",
+     "label": "二代広重「外国人船之内 蒸気船」（1861年）",
+     "credit": "Library of Congress / Public domain",
+     "marks": [
+      {
+       "at": 19.6,
+       "box": [
+        0.05,
+        0.0,
+        0.6,
+        0.28
+       ]
+      }
+     ]
+    },
+    {
+     "at": 21,
+     "img": "foreign",
+     "edit": "troi-cham",
+     "why": "bài thơ có thể làm về sau: tranh người nước ngoài thời đó",
+     "label": "二代広重「阿蘭陀・亜墨利加・英吉利」（1860年）",
+     "credit": "Library of Congress / Public domain"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "heine",
+     "edit": "so-lieu",
+     "title": "一八五四年",
+     "why": "năm sau Perry quay lại với 7 tàu",
+     "label": "ペリー艦隊の横浜上陸（1854年）",
+     "credit": "Wilhelm Heine / Public domain"
+    },
+    {
+     "at": 23,
+     "img": "treaty",
+     "edit": "dung-yen",
+     "why": "câu nhắc Hiệp ước: văn bản tiếng Nhật, để yên cho đọc",
+     "label": "日米和親条約（1854年）",
+     "credit": "国立国会図書館 / CC BY 4.0"
+    },
+    {
+     "at": 24,
+     "img": "shimoda",
+     "edit": "toan-canh",
+     "why": "thời đóng cửa chuyển mình: Perry gặp quan Nhật ở Shimoda",
+     "label": "下田でのペリー一行（1854年）",
+     "credit": "Eliphalet Brown / Public domain"
+    },
+    {
+     "at": 26,
+     "img": "ship61",
+     "edit": "ket",
+     "why": "kết bằng con tàu đen",
+     "label": "二代歌川広重が描いたアメリカの船",
+     "credit": "Wikimedia Commons / Public domain"
+    }
+   ]
+  }
+ ]
+}
