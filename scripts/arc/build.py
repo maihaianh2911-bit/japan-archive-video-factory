@@ -7,7 +7,8 @@ lines.json (measured line lengths) and the prepared pictures in <public_dir>/arc
 <out_dir>/plan.json, subtitles.srt, credits.txt, sources.json, edits.md and <public_dir>/arc/<N>/bed.wav.
 A shot of picks.json may name an edit of the catalogue ("edit", see edits.py): it fills defaults for the shot's
 fields; edits.md lists every shot with its line, picture, edit and reason, for the owner.
-Timing: every line starts after the previous one plus a pause (0.45 s after a sentence end, 0.25 s otherwise);
+Timing: every line starts after the previous one plus a pause (0.45 s after a sentence end, 0.25 s otherwise;
+0.3 / 0.12 s with script.json "pace": "fast");
 a shot that starts on a line ("at", fractional = part-way through the line) cuts in just before it is spoken;
 a mark ("at") appears at that moment of the voice. Cuts are hard, as in the sample, unless script.json "fade" (seconds)
 asks for a dissolve between pictures.
@@ -82,6 +83,8 @@ def img_size(name):
 
 # ---- timeline
 LEAD, TAIL = 0.25, 1.4
+# pauses after a sentence end / after a comma; "pace": "fast" (owner 17/11: "nhịp nhanh lên chút") tightens them
+GAP_END, GAP = (0.3, 0.12) if spec.get('pace') == 'fast' else (0.45, 0.25)
 t = LEAD; starts = {}; subs = []; voice = []
 for sc in scenes_in:
     a, b = sc['lines']
@@ -94,7 +97,7 @@ for sc in scenes_in:
         for cu in parts:   # cues share the line's time in proportion to their length; a line's first cue comes in with the cut
             cs = t + dur[i] * done / n_all - (0.15 if done == 0 else 0); done += len(''.join(cu)); ce = t + dur[i] * done / n_all
             subs.append({'s': round(cs, 3), 'e': round(ce, 3), 'text': '\n'.join(cu), 'hl': spec.get('hl', {}).get(str(i), [])})
-        t += dur[i] + (0.45 if text[i].endswith(('。', '」', '？', '！')) else 0.25)
+        t += dur[i] + (GAP_END if text[i].endswith(('。', '」', '？', '！')) else GAP)
 total = round(t - 0.25 + TAIL, 3)
 # owner's iron rule (16/11/2026): no video under 60 s; under 60 s nothing is rendered
 MIN_S = float(os.environ.get('ARC_MIN_SECONDS', '60'))

@@ -76,6 +76,9 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
 - `fade` (seconds, e.g. `0.6`): the next picture dissolves in over the last one instead of a hard cut. Use it when the
   owner asks for a seamless edit ("dựng liền mạch", "đừng chia ra từng cảnh", owner 14/11) and then also group the
   lines into a few big ideas (~10 s each: the title stays while the pictures change under it). Default 0: hard cuts.
+- `pace`: `"fast"` (owner, 17/11: "cho nhịp nhanh lên chút") shortens the pauses between lines (0.3 s after a
+  sentence, 0.12 s after a comma, instead of 0.45 / 0.25: about 3 s less per minute — keep the 60-s rule in mind).
+  With it: `fade` ~0.35, and about one shot per line (a new picture every ~3 s) while the scene title stays.
 - `hl`: 1–2 key words per line (exact substrings), shown in colour in the subtitle: the thing the picture shows
   (`{"3": ["円を描く"]}`).
 - `music`: quiet documentary bed (`key`, `mode`, `bpm`, `energy` 0.1–0.3). `music_volume` (default 0.16) only if

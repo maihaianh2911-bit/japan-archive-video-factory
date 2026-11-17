@@ -67,9 +67,14 @@ run(sys.executable, os.path.join(S, 'preview.py'), job, rend, os.path.join(out, 
 r60 = subprocess.run([sys.executable, os.path.join(S, 'build.py'), job, pub, N, imgsrc, os.path.join(tmp, 'out60')], cwd=ROOT,
                      env={**os.environ, 'ARC_MIN_SECONDS': '60'}, capture_output=True, text=True)
 assert r60.returncode != 0 and 'dưới 60 giây' in r60.stderr, r60.stderr   # owner's rule: under 60 s nothing is rendered
+fast = json.load(open(os.path.join(job, 'script.json'), encoding='utf-8')); fast['pace'] = 'fast'
+jf = os.path.join(tmp, 'jobfast'); shutil.copytree(job, jf); json.dump(fast, open(os.path.join(jf, 'script.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+run(sys.executable, os.path.join(S, 'build.py'), jf, pub, N, imgsrc, os.path.join(tmp, 'outfast'))
+d_fast = json.load(open(os.path.join(tmp, 'outfast', 'plan.json'), encoding='utf-8'))['duration']
 plan = json.load(open(plan_p, encoding='utf-8'))
 speech = sum(r['duration'] for r in rows)
 assert speech + 1 < plan['duration'] < speech + 4, plan['duration']
+assert plan['duration'] - d_fast > 0.4, (plan['duration'], d_fast)   # pace fast: shorter pauses between lines
 sh = plan['shots']
 assert [(x['scene'], x['shot']) for x in sh] == [(1, 1), (2, 1), (3, 1), (4, 1), (4, 2)]
 assert sh[0]['s'] == 0 and sh[-1]['e'] == plan['duration'] and all(a['e'] == b['s'] for a, b in zip(sh, sh[1:]))   # no gaps
