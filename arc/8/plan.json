@@ -13,27 +13,41 @@
    "titleSize": 112,
    "caption": "",
    "credit": "emrank / CC BY 2.0",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/shopwin.jpg",
      "w": 1400,
      "h": 1050,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.75,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.75,
+       1
+      ],
+      "to": [
+       0.25,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -49,27 +63,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Badisches Landesmuseum / CC0",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/8/img/gold.jpg",
      "w": 992,
      "h": 1403,
      "box": [
-      216.5,
-      523.0,
-      647.0,
-      915
+      175.9,
+      420.0,
+      728.3,
+      1030
      ],
      "view": [
-      0,
-      0,
-      1,
-      1
+      0.1,
+      0.05,
+      0.9,
+      0.85
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0.1,
+       0.05,
+       0.9,
+       0.85
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -85,27 +113,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Guilhem Vellut / CC BY 2.0",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/hall.jpg",
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.75,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.75,
+       1
+      ],
+      "to": [
+       0.25,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -121,8 +163,8 @@
    "titleSize": 90,
    "caption": "井伊直孝（1590〜1659年）",
    "credit": "Wikimedia Commons / Public domain",
-   "bar": 177.0,
-   "captionY": 1435.0,
+   "bar": 140,
+   "captionY": 1428,
    "subY": 1530,
    "pics": [
     {
@@ -130,18 +172,32 @@
      "w": 1358,
      "h": 3200,
      "box": [
-      345.8,
-      474.0,
-      388.3,
-      915
+      333.8,
+      410,
+      412.5,
+      972
      ],
      "view": [
-      0,
-      0,
-      1,
-      1
+      0.05,
+      0.0,
+      0.95,
+      0.9
      ],
-     "drift": 0.03
+     "drift": 0,
+     "move": {
+      "from": [
+       0.05,
+       0.0,
+       0.95,
+       0.9
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -157,7 +213,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Dick Thomas Johnson / CC BY 2.0",
-   "bar": 369.3,
+   "bar": 331.4,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -166,10 +222,10 @@
      "w": 1400,
      "h": 934,
      "box": [
-      69.0,
-      666.3,
-      942,
-      628.4
+      40.0,
+      601.4,
+      1000,
+      667.1
      ],
      "view": [
       0,
@@ -205,27 +261,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Guilhem Vellut / CC BY 2.0",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/8/img/pagoda.jpg",
      "w": 1920,
      "h": 2560,
      "box": [
-      196.9,
-      523.0,
-      686.2,
-      915
+      153.8,
+      420.0,
+      772.5,
+      1030
      ],
      "view": [
-      0,
-      0,
-      1,
-      1
+      0.1,
+      0.05,
+      0.9,
+      0.85
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0.1,
+       0.05,
+       0.9,
+       0.85
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -241,7 +311,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Suikotei / CC BY-SA 4.0",
-   "bar": 330.2,
+   "bar": 290.0,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -250,10 +320,10 @@
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      560.0,
+      1000,
+      750.0
      ],
      "view": [
       0,
@@ -277,27 +347,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Guilhem Vellut / CC BY 2.0",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/gate.jpg",
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.25,
       0,
       1,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0.25,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.75,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -313,27 +397,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Ménestor / CC0",
-   "bar": 306.7,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/shelves.jpg",
      "w": 1920,
      "h": 1536,
      "box": [
-      69.0,
-      603.7,
-      942,
-      753.6
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.8,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.8,
+       1
+      ],
+      "to": [
+       0.2,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -349,27 +447,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Niwrat / CC0",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/sea.jpg",
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.25,
       0,
       1,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0.25,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.75,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -385,27 +497,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Guilhem Vellut / CC BY 2.0",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/imado.jpg",
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.75,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.75,
+       1
+      ],
+      "to": [
+       0.25,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -421,27 +547,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Marusime / CC BY-SA 4.0",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/8/img/marushime.jpg",
      "w": 1920,
      "h": 2560,
      "box": [
-      196.9,
-      523.0,
-      686.2,
-      915
+      153.8,
+      420.0,
+      772.5,
+      1030
      ],
      "view": [
-      0,
-      0,
-      1,
-      1
+      0.1,
+      0.05,
+      0.9,
+      0.85
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0.1,
+       0.05,
+       0.9,
+       0.85
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -457,27 +597,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Guilhem Vellut / CC BY 2.0",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/imadocats.jpg",
      "w": 1920,
      "h": 1440,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.75,
       1
      ],
-     "drift": 0.09
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.75,
+       1
+      ],
+      "to": [
+       0.25,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -493,19 +647,19 @@
    "titleSize": 90,
    "caption": "",
    "credit": "Rijksmuseum / CC0",
-   "bar": 226.0,
+   "bar": 150.0,
    "captionY": null,
-   "subY": 1508.0,
+   "subY": 1500.0,
    "pics": [
     {
      "src": "arc/8/img/hiroshige.jpg",
      "w": 1920,
      "h": 2890,
      "box": [
-      236.1,
-      523.0,
-      607.9,
-      915
+      197.9,
+      420.0,
+      684.3,
+      1030
      ],
      "view": [
       0,
@@ -551,27 +705,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "luisvilla / CC BY 2.0",
-   "bar": 330.2,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/shop.jpg",
      "w": 1400,
      "h": 1050,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.75,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.75,
+       1
+      ],
+      "to": [
+       0.25,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -587,27 +755,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "663highland / CC BY 2.5",
-   "bar": 369.5,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/tokoname.jpg",
      "w": 1920,
      "h": 1280,
      "box": [
-      69.0,
-      666.5,
-      942,
-      628.0
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
-      0,
+      0.33333,
       0,
       1,
       1
      ],
-     "drift": 0.05
+     "drift": 0,
+     "move": {
+      "from": [
+       0.33333,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.66667,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
@@ -623,7 +805,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "wallygrom / CC BY-SA 2.0",
-   "bar": 329.6,
+   "bar": 289.3,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -632,10 +814,10 @@
      "w": 1400,
      "h": 1052,
      "box": [
-      69.0,
-      626.6,
-      942,
-      707.8
+      40.0,
+      559.3,
+      1000,
+      751.4
      ],
      "view": [
       0,
@@ -682,7 +864,7 @@
    "titleSize": 90,
    "caption": "",
    "credit": "zayzayem / CC BY-SA 2.0",
-   "bar": 330.2,
+   "bar": 290.0,
    "captionY": null,
    "subY": 1472,
    "pics": [
@@ -691,10 +873,10 @@
      "w": 1400,
      "h": 1050,
      "box": [
-      69.0,
-      627.2,
-      942,
-      706.5
+      40.0,
+      560.0,
+      1000,
+      750.0
      ],
      "view": [
       0,
@@ -730,27 +912,41 @@
    "titleSize": 90,
    "caption": "",
    "credit": "John Gillespie / CC BY-SA 2.0",
-   "bar": 369.5,
+   "bar": 165.0,
    "captionY": null,
-   "subY": 1472,
+   "subY": 1485.0,
    "pics": [
     {
      "src": "arc/8/img/close.jpg",
      "w": 1920,
      "h": 1280,
      "box": [
-      69.0,
-      666.5,
-      942,
-      628.0
+      40.0,
+      435.0,
+      1000,
+      1000.0
      ],
      "view": [
       0,
       0,
-      1,
+      0.66667,
       1
      ],
-     "drift": 0.1
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.66667,
+       1
+      ],
+      "to": [
+       0.33333,
+       0,
+       1,
+       1
+      ]
+     }
     }
    ],
    "marks": [],
