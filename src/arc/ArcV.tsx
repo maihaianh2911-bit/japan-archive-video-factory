@@ -273,7 +273,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
       {sub ? (
         <div style={{ position: 'absolute', left: 50, right: 50, top: (intro ? 1500 : sh.subY) + (1 - cue) * 16, opacity: 0.25 + 0.75 * cue, textAlign: 'center' }}>
           {sub.text.split('\n').map((l, i) => (
-            <div key={i} style={{ fontFamily: SANS, fontWeight: th.subWeight, fontSize: th.outline ? 56 : 52, lineHeight: 1.46, color: th.sub, letterSpacing: '0.04em', textShadow: th.outline ? outlineOf(th.outline) : th.subShadow }}>
+            <div key={i} style={{ fontFamily: SANS, fontWeight: th.subWeight, fontSize: 52, lineHeight: 1.46, color: th.sub, letterSpacing: th.outline ? '0.02em' : '0.04em', textShadow: th.outline ? outlineOf(th.outline) : th.subShadow }}>
               <Highlight text={l} hl={sub.hl || []} color={th.subHl} />
             </div>
           ))}
@@ -282,7 +282,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
       {plan.grain ? (   /* film grain, darker edges and a faint flicker over everything (horror) */
         <AbsoluteFill style={{ overflow: 'hidden', pointerEvents: 'none' }}>
           <Img src={staticFile(plan.grain)} style={{ position: 'absolute', left: -Math.floor(rnd(frame) * 200), top: -Math.floor(rnd(frame + 0.5) * 240), width: 1280, height: 2160, maxWidth: 'none',
-            opacity: 0.2, mixBlendMode: 'overlay', transform: `scale(${frame % 2 ? 1 : -1}, ${frame % 4 < 2 ? 1 : -1})`, transformOrigin: '640px 1080px' }} />
+            opacity: 0.13, mixBlendMode: 'overlay', transform: `scale(${frame % 2 ? 1 : -1}, ${frame % 4 < 2 ? 1 : -1})`, transformOrigin: '640px 1080px' }} />
           <AbsoluteFill style={{ background: 'radial-gradient(ellipse 85% 70% at 50% 46%, rgba(0,0,0,0) 48%, rgba(0,0,0,.72) 100%)' }} />
           <AbsoluteFill style={{ background: '#000', opacity: 0.07 * rnd(frame * 1.7) * (rnd(Math.floor(frame / 9)) > 0.72 ? 1.6 : 0.5) }} />
         </AbsoluteFill>

@@ -1,0 +1,459 @@
+{
+ "images": {
+  "t1": {
+   "src": "1/1-1.jpg",
+   "crop": [
+    0.0,
+    0.0,
+    0.75,
+    1.0
+   ]
+  },
+  "t2": {
+   "src": "1/4-3.jpg",
+   "crop": [
+    0.0,
+    0.0,
+    1.0,
+    0.55
+   ]
+  },
+  "t3": {
+   "src": "1/5-2.jpg",
+   "crop": [
+    0.0,
+    0.25,
+    1.0,
+    0.75
+   ]
+  },
+  "t4": {
+   "src": "1/6-1.jpg"
+  },
+  "1-1": {
+   "src": "1/1-1.jpg"
+  },
+  "7-3": {
+   "src": "1/7-3.jpg"
+  },
+  "paper": {
+   "src": "1/8-3.jpg",
+   "crop": [
+    0.0,
+    0.02,
+    0.52,
+    0.98
+   ]
+  },
+  "9-1": {
+   "src": "1/9-1.jpg"
+  },
+  "osaka": {
+   "src": "1/8-2.jpg"
+  },
+  "10-2": {
+   "src": "1/10-2.jpg"
+  },
+  "11-2": {
+   "src": "1/11-2.jpg"
+  },
+  "3-5": {
+   "src": "1/3-5.jpg"
+  },
+  "1-4": {
+   "src": "1/1-4.jpg"
+  },
+  "2-1": {
+   "src": "1/2-1.jpg"
+  },
+  "1-2": {
+   "src": "1/1-2.jpg"
+  },
+  "1-7": {
+   "src": "1/1-7.jpg"
+  },
+  "3-3": {
+   "src": "1/3-3.jpg"
+  },
+  "1-6": {
+   "src": "1/1-6.jpg"
+  },
+  "10-1": {
+   "src": "1/10-1.jpg"
+  },
+  "14-1": {
+   "src": "1/14-1.jpg"
+  },
+  "15-2": {
+   "src": "1/15-2.jpg"
+  },
+  "16-4": {
+   "src": "1/16-4.jpg"
+  },
+  "17-6": {
+   "src": "1/17-6.jpg"
+  },
+  "18-7": {
+   "src": "1/18-7.jpg"
+  },
+  "11-1": {
+   "src": "1/11-1.jpg"
+  },
+  "19-6": {
+   "src": "1/19-6.jpg"
+  },
+  "3-6": {
+   "src": "1/3-6.jpg"
+  },
+  "20-1": {
+   "src": "1/20-1.jpg"
+  },
+  "1-9": {
+   "src": "1/1-9.jpg"
+  },
+  "21-3": {
+   "src": "1/21-3.jpg"
+  },
+  "4-3": {
+   "src": "1/4-3.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "1-1",
+     "edit": "troi-cham",
+     "why": "nằm dưới bảng 4 truyện mở đầu",
+     "label": "映画『先生！口裂け女です！』（2023）",
+     "credit": "映画『先生！口裂け女です！』（2023）／出典: press.moviewalker.jp"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "1-1",
+     "edit": "troi-cham",
+     "why": "truyền thuyết đô thị đầu tiên lan cả nước: người phụ nữ đeo khẩu trang",
+     "label": "映画『先生！口裂け女です！』（2023）",
+     "credit": "映画『先生！口裂け女です！』（2023）／出典: press.moviewalker.jp"
+    },
+    {
+     "img": "7-3",
+     "edit": "so-lieu",
+     "why": "năm 1978, tỉnh Gifu",
+     "label": "岐阜県八百津町（発祥地の一説）",
+     "credit": "出典: jl-db.nfaj.go.jp",
+     "at": 5,
+     "title": "一九七八年"
+    },
+    {
+     "img": "paper",
+     "edit": "tai-lieu-zoom",
+     "why": "báo đưa tin: cả trang rồi phóng vào tít",
+     "label": "「名古屋タイムズ」の記事（1979年）",
+     "credit": "出典: chunichi.co.jp",
+     "at": 6,
+     "zoom": {
+      "to": [
+       0.03,
+       0.15,
+       0.8,
+       0.62
+      ],
+      "at": 6.35
+     }
+    },
+    {
+     "img": "9-1",
+     "edit": "troi-cham",
+     "why": "học sinh truyền miệng",
+     "label": "昭和の小学生（イメージ）",
+     "credit": "出典: chunichi.co.jp",
+     "at": 7
+    },
+    {
+     "img": "osaka",
+     "edit": "troi-cham",
+     "why": "lan khắp nước: bài báo \"列島一巡\"",
+     "label": "『大阪日日新聞』（1979年6月17日）",
+     "credit": "出典: twicomi.com",
+     "at": 8,
+     "view": [
+      0.0,
+      0.0,
+      0.75,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "10-2",
+     "edit": "troi-cham",
+     "why": "nội dung câu chuyện: con đường lúc chiều tối",
+     "label": "夕暮れの住宅街（イメージ）",
+     "credit": "出典: cizucu.com"
+    },
+    {
+     "img": "11-2",
+     "edit": "troi-cham",
+     "why": "người phụ nữ đeo khẩu trang lớn",
+     "label": "マスクとコートの女（イメージ）",
+     "credit": "出典: pakutaso.com",
+     "at": 10
+    },
+    {
+     "img": "3-5",
+     "edit": "troi-cham",
+     "why": "gọi đứa trẻ đang tan học",
+     "label": "口裂け女のイラスト",
+     "credit": "出典: web-mu.jp",
+     "at": 11
+    },
+    {
+     "img": "1-4",
+     "edit": "dung-yen",
+     "why": "câu thoại 「私、きれい？」 đè lên mặt đeo khẩu trang",
+     "label": "映画『口裂け女2』（2008）",
+     "credit": "映画『口裂け女2』（2008）／出典: eiga.com",
+     "at": 12,
+     "view": [
+      0.0,
+      0.0,
+      0.62,
+      1.0
+     ]
+    },
+    {
+     "img": "2-1",
+     "edit": "troi-cham",
+     "why": "tháo khẩu trang",
+     "label": "映画『口裂け女』（2007）",
+     "credit": "映画『口裂け女』（2007）／出典: cinemakadokawa.jp",
+     "at": 13
+    },
+    {
+     "img": "1-2",
+     "edit": "troi-cham",
+     "why": "cái miệng rách tới mang tai",
+     "label": "映画『口裂け女』（2007）",
+     "credit": "映画『口裂け女』（2007）／出典: jfdb.jp",
+     "at": 14
+    },
+    {
+     "img": "1-7",
+     "edit": "dung-yen",
+     "why": "câu thoại 「これでも？」",
+     "label": "映画『口裂け女』（2007）",
+     "credit": "映画『口裂け女』（2007）／出典: themoviedb.org",
+     "at": 15,
+     "view": [
+      0.42,
+      0.0,
+      1.0,
+      1.0
+     ]
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "3-3",
+     "edit": "troi-cham",
+     "why": "trả lời \"không đẹp\" có thoát không",
+     "label": "口裂け女のイラスト",
+     "credit": "出典: kango.mynavi.jp"
+    },
+    {
+     "img": "1-6",
+     "edit": "troi-cham",
+     "why": "chém bằng liềm hoặc kéo",
+     "label": "映画『口裂け女』（2007）",
+     "credit": "映画『口裂け女』（2007）／出典: baike.baidu.com",
+     "at": 17
+    },
+    {
+     "img": "10-1",
+     "edit": "so-lieu",
+     "why": "100 mét trong 6 giây",
+     "label": "夕暮れの通学路（イメージ）",
+     "credit": "出典: j-town.net",
+     "at": 18,
+     "title": "百メートル六秒"
+    },
+    {
+     "img": "9-1",
+     "edit": "troi-cham",
+     "why": "trong đám trẻ lan cả cách thoát thân",
+     "label": "昭和の小学生（イメージ）",
+     "credit": "出典: chunichi.co.jp",
+     "at": 20,
+     "view": [
+      0.0,
+      0.1,
+      1.0,
+      0.9
+     ]
+    },
+    {
+     "img": "14-1",
+     "edit": "troi-cham",
+     "why": "đọc \"pomade\" ba lần",
+     "label": "柳屋ポマード",
+     "credit": "出典: yanagiya-cosme.co.jp",
+     "at": 22
+    },
+    {
+     "img": "15-2",
+     "edit": "troi-cham",
+     "why": "đưa kẹo bekkō rồi chạy",
+     "label": "べっこう飴",
+     "credit": "出典: daimonji.co.jp",
+     "at": 23
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "paper",
+     "edit": "dung-yen",
+     "why": "thành náo loạn ngoài đời thật",
+     "label": "「名古屋タイムズ」の記事（1979年）",
+     "credit": "出典: chunichi.co.jp"
+    },
+    {
+     "img": "16-4",
+     "edit": "troi-cham",
+     "why": "xe cảnh sát đi tuần",
+     "label": "昭和のパトカー（イメージ）",
+     "credit": "出典: x.com",
+     "at": 25
+    },
+    {
+     "img": "17-6",
+     "edit": "troi-cham",
+     "why": "tan học theo nhóm",
+     "label": "集団下校（イメージ）",
+     "credit": "出典: higashimachi-es.minato-tky.ed.jp",
+     "at": 26
+    },
+    {
+     "img": "18-7",
+     "edit": "so-lieu",
+     "why": "tháng 6, Himeji",
+     "label": "昭和の姫路（みゆき通り商店街）",
+     "credit": "出典: himeji-miyuki.com",
+     "at": 27,
+     "title": "一九七九年六月"
+    },
+    {
+     "img": "11-1",
+     "edit": "troi-cham",
+     "why": "người phụ nữ hóa trang, cầm dao, bị bắt",
+     "label": "コートの女（イメージ）",
+     "credit": "出典: pexels.com",
+     "at": 28
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "19-6",
+     "edit": "troi-cham",
+     "why": "nghỉ hè, truyền miệng dừng lại",
+     "label": "夏休みの教室（イメージ）",
+     "credit": "出典: note.com"
+    },
+    {
+     "img": "osaka",
+     "edit": "dung-yen",
+     "why": "tít báo \"消えた口裂け女\"",
+     "label": "『大阪日日新聞』（1979年6月17日）",
+     "credit": "出典: twicomi.com",
+     "at": 31,
+     "view": [
+      0.2,
+      0.0,
+      1.0,
+      0.5
+     ]
+    },
+    {
+     "img": "3-6",
+     "edit": "troi-cham",
+     "why": "câu chuyện vẫn sống",
+     "label": "漫画『口裂け女あらわる！』（呪みちる）",
+     "credit": "出典: amazon.co.jp",
+     "at": 32
+    },
+    {
+     "img": "20-1",
+     "edit": "so-lieu",
+     "why": "Hàn Quốc năm 2004",
+     "label": "韓国の「赤いマスク」怪談の本",
+     "credit": "出典: product.kyobobook.co.kr",
+     "at": 33,
+     "title": "二〇〇四年"
+    },
+    {
+     "img": "1-9",
+     "edit": "so-lieu",
+     "why": "phim năm 2007",
+     "label": "映画『口裂け女』（2007）",
+     "credit": "映画『口裂け女』（2007）／出典: themoviedb.org",
+     "at": 34,
+     "title": "二〇〇七年"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "9-1",
+     "edit": "troi-cham",
+     "why": "từ miệng trẻ này sang trẻ khác",
+     "label": "昭和の小学生（イメージ）",
+     "credit": "出典: chunichi.co.jp",
+     "view": [
+      0.1,
+      0.0,
+      0.9,
+      0.8
+     ]
+    },
+    {
+     "img": "1-1",
+     "edit": "troi-cham",
+     "why": "Kuchisake-onna lan khắp nước trong nửa năm",
+     "label": "映画『先生！口裂け女です！』（2023）",
+     "credit": "映画『先生！口裂け女です！』（2023）／出典: press.moviewalker.jp",
+     "at": 36
+    },
+    {
+     "img": "21-3",
+     "edit": "dung-yen",
+     "why": "diễn đàn mạng",
+     "label": "2ちゃんねるの画面（イメージ）",
+     "credit": "出典: textworld.sakura.ne.jp",
+     "at": 37
+    },
+    {
+     "img": "4-3",
+     "edit": "ket",
+     "why": "truyện thứ hai: Hachishaku-sama",
+     "label": "八尺様のイラスト",
+     "credit": "出典: illustnouka.com",
+     "at": 39,
+     "title": "八尺様"
+    }
+   ]
+  }
+ ]
+}

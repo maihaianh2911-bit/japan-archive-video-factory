@@ -86,7 +86,7 @@ def draw_intro(it, t, sub, img_of, th):
         d.text((x + (470 - d.textlength(p['name'], font=nf)) / 2, y + 452), p['name'], fill=col, font=nf, stroke_width=3, stroke_fill=(0, 0, 0))
     if sub:
         for k, row in enumerate(sub.split('\n')):
-            sf = font(56); d.text(((1080 - d.textlength(row, font=sf)) / 2, 1517 + k * 82), row, fill=th['sub'], font=sf, stroke_width=th.get('outline', 0), stroke_fill=(0, 0, 0))
+            sf = font(52); d.text(((1080 - d.textlength(row, font=sf)) / 2, 1517 + k * 76), row, fill=th['sub'], font=sf, stroke_width=th.get('outline', 0), stroke_fill=(0, 0, 0))
     if it.get('credit'): d.text((72, 1751), it['credit'], fill=th['credit'], font=font(23))
     return im
 
