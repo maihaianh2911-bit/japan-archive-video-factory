@@ -1,0 +1,23 @@
+[
+ {
+  "k": 1,
+  "query": "web: きさらぎ駅",
+  "results": [],
+  "candidates": 0,
+  "want": "a lonely train station at night"
+ },
+ {
+  "k": 2,
+  "query": "web: きさらぎ駅 映画 2022",
+  "results": [],
+  "candidates": 0,
+  "want": "a scene from a Japanese horror film"
+ },
+ {
+  "k": 3,
+  "query": "web: 遠州鉄道 電車",
+  "results": [],
+  "candidates": 0,
+  "want": "a red commuter train"
+ }
+]
