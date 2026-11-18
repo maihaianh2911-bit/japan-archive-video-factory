@@ -1,0 +1,640 @@
+{
+ "images": {
+  "t1": {
+   "src": "own/board-1-1.jpg",
+   "title": "映画『先生！口裂け女です！』（2023）",
+   "artist": "press.moviewalker.jp",
+   "license": "引用 (press.moviewalker.jp)",
+   "page": "https://press.moviewalker.jp/mv81732/gallery/2/",
+   "crop": [
+    0.0,
+    0.0,
+    0.75,
+    1.0
+   ]
+  },
+  "t2": {
+   "src": "own/board-4-3.jpg",
+   "title": "八尺様（イラスト）",
+   "artist": "illustnouka.com",
+   "license": "引用 (illustnouka.com)",
+   "page": "https://illustnouka.com/character/9098/",
+   "crop": [
+    0.0,
+    0.0,
+    1.0,
+    0.55
+   ]
+  },
+  "t3": {
+   "src": "own/board-5-2.jpg",
+   "title": "映画『きさらぎ駅』（2022）",
+   "artist": "natalie.mu",
+   "license": "引用 (natalie.mu)",
+   "page": "https://natalie.mu/eiga/news/471515",
+   "crop": [
+    0.0,
+    0.25,
+    1.0,
+    0.75
+   ]
+  },
+  "t4": {
+   "src": "own/board-6-1.jpg",
+   "title": "映画『トイレの花子さん』（1995）",
+   "artist": "note.com",
+   "license": "引用 (note.com)",
+   "page": "https://note.com/shibusan_3/n/nde3c0663692f"
+  },
+  "5-6": {
+   "src": "1/5-6.jpg"
+  },
+  "5-1": {
+   "src": "1/5-1.jpg"
+  },
+  "7-1": {
+   "src": "1/7-1.jpg"
+  },
+  "7-2": {
+   "src": "1/7-2.jpg"
+  },
+  "6-6": {
+   "src": "1/6-6.jpg"
+  },
+  "6-7": {
+   "src": "1/6-7.jpg"
+  },
+  "9-6": {
+   "src": "1/9-6.jpg"
+  },
+  "8-8": {
+   "src": "1/8-8.jpg"
+  },
+  "8-3": {
+   "src": "1/8-3.jpg"
+  },
+  "1-1": {
+   "src": "1/1-1.jpg"
+  },
+  "2-1": {
+   "src": "1/2-1.jpg"
+  },
+  "10-4": {
+   "src": "1/10-4.jpg"
+  },
+  "2-2": {
+   "src": "1/2-2.jpg"
+  },
+  "9-1": {
+   "src": "1/9-1.jpg"
+  },
+  "2-5": {
+   "src": "1/2-5.jpg"
+  },
+  "1-11": {
+   "src": "1/1-11.jpg"
+  },
+  "10-1": {
+   "src": "1/10-1.jpg"
+  },
+  "11-3": {
+   "src": "1/11-3.jpg"
+  },
+  "12-5": {
+   "src": "1/12-5.jpg"
+  },
+  "14-8": {
+   "src": "1/14-8.jpg"
+  },
+  "13-3": {
+   "src": "1/13-3.jpg"
+  },
+  "14-2": {
+   "src": "1/14-2.jpg"
+  },
+  "14-4": {
+   "src": "1/14-4.jpg"
+  },
+  "12-1": {
+   "src": "1/12-1.jpg"
+  },
+  "16-7": {
+   "src": "1/16-7.jpg"
+  },
+  "3-2": {
+   "src": "1/3-2.jpg"
+  },
+  "3-4": {
+   "src": "1/3-4.jpg"
+  },
+  "16-1": {
+   "src": "1/16-1.jpg"
+  },
+  "16-2": {
+   "src": "1/16-2.jpg"
+  },
+  "16-4": {
+   "src": "1/16-4.jpg"
+  },
+  "20-4": {
+   "src": "1/20-4.jpg"
+  },
+  "18-6": {
+   "src": "1/18-6.jpg"
+  },
+  "17-1": {
+   "src": "1/17-1.jpg"
+  },
+  "8-5": {
+   "src": "1/8-5.jpg"
+  },
+  "1-6": {
+   "src": "1/1-6.jpg"
+  },
+  "19-1": {
+   "src": "1/19-1.jpg"
+  },
+  "19-3": {
+   "src": "1/19-3.jpg"
+  },
+  "2-4": {
+   "src": "1/2-4.jpg"
+  },
+  "21-7": {
+   "src": "1/21-7.jpg"
+  },
+  "21-3": {
+   "src": "1/21-3.jpg"
+  },
+  "5-4": {
+   "src": "1/5-4.jpg"
+  },
+  "6-1": {
+   "src": "1/6-1.jpg"
+  },
+  "21-2": {
+   "src": "1/21-2.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "5-6",
+     "edit": "troi-cham",
+     "why": "nằm dưới bảng 4 truyện mở đầu",
+     "label": "八尺様の挿絵",
+     "credit": "webムー「朝里樹の都市伝説タイムトリップ」／出典: web-mu.jp"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "t1",
+     "edit": "troi-cham",
+     "why": "Kuchisake-onna lan qua miệng trẻ con",
+     "label": "映画『先生！口裂け女です！』（2023）",
+     "credit": "映画『先生！口裂け女です！』（2023）／出典: press.moviewalker.jp"
+    },
+    {
+     "img": "5-1",
+     "edit": "troi-cham",
+     "why": "ra đời trên diễn đàn mạng",
+     "label": "ネット掲示板「2ちゃんねる」オカルト板",
+     "credit": "出典: listennotes.com",
+     "at": 5
+    },
+    {
+     "img": "7-1",
+     "edit": "so-lieu",
+     "why": "tháng 8 năm 2008",
+     "label": "山あいの集落（イメージ）",
+     "credit": "出典: picky-s.jp",
+     "at": 6,
+     "title": "二〇〇八年八月"
+    },
+    {
+     "img": "5-4",
+     "edit": "troi-cham",
+     "why": "chủ đề 洒落怖",
+     "label": "2ちゃんねる「洒落怖」（解説記事）",
+     "credit": "出典: yokaiarchive.com",
+     "at": 7
+    },
+    {
+     "img": "6-1",
+     "edit": "troi-cham",
+     "why": "trải nghiệm ở nhà ông bà mười năm trước",
+     "label": "田舎の古い家（イメージ）",
+     "credit": "出典: engawanavi.com",
+     "at": 8
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "7-2",
+     "edit": "troi-cham",
+     "why": "làng quê nhà bố",
+     "label": "田舎の村（イメージ）",
+     "credit": "出典: unsplash.com"
+    },
+    {
+     "img": "6-6",
+     "edit": "troi-cham",
+     "why": "về chơi một mình kỳ nghỉ xuân",
+     "label": "田舎の古い家（イメージ）",
+     "credit": "出典: dailyportalz.jp",
+     "at": 10
+    },
+    {
+     "img": "6-7",
+     "edit": "troi-cham",
+     "why": "ngồi nghỉ ngoài hiên",
+     "label": "縁側（イメージ）",
+     "credit": "出典: pakutaso.com",
+     "at": 11
+    },
+    {
+     "img": "9-6",
+     "edit": "dung-yen",
+     "why": "câu thoại 「ぽぽぽ」 chữ to",
+     "label": "夜の白い服の女（イメージ）",
+     "credit": "出典: pakutaso.com",
+     "at": 12
+    },
+    {
+     "img": "8-8",
+     "edit": "troi-cham",
+     "why": "tiếng lạ vọng vào",
+     "label": "生け垣（イメージ）",
+     "credit": "出典: minamibosocity-iju.jp",
+     "at": 13
+    },
+    {
+     "img": "8-3",
+     "edit": "troi-cham",
+     "why": "hàng rào cây cao hơn 2 mét",
+     "label": "生け垣のある古民家（イメージ）",
+     "credit": "出典: yamagata-takara.com",
+     "at": 14
+    },
+    {
+     "img": "5-6",
+     "edit": "khoanh",
+     "why": "khoanh chiếc mũ trắng trên hàng rào",
+     "label": "生け垣の上からのぞく八尺様（挿絵）",
+     "credit": "webムー「朝里樹の都市伝説タイムトリップ」／出典: web-mu.jp",
+     "at": 15,
+     "marks": [
+      {
+       "at": 15.35,
+       "box": [
+        0.38,
+        0.0,
+        0.78,
+        0.16
+       ]
+      }
+     ]
+    },
+    {
+     "img": "1-1",
+     "edit": "troi-cham",
+     "why": "người phụ nữ mặc váy trắng",
+     "label": "八尺様（イラスト）",
+     "credit": "出典: illustnouka.com",
+     "at": 16
+    },
+    {
+     "img": "2-1",
+     "edit": "troi-cham",
+     "why": "cao khác thường",
+     "label": "漫画「八尺様」",
+     "credit": "漫画「八尺様」（walkerplus）／出典: walkerplus.com",
+     "at": 17
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "10-4",
+     "edit": "troi-cham",
+     "why": "mặt ông bà biến sắc",
+     "label": "古い家の座敷（イメージ）",
+     "credit": "出典: dejimo.co.jp"
+    },
+    {
+     "img": "2-2",
+     "edit": "troi-cham",
+     "why": "đó là Hachishaku-sama",
+     "label": "漫画「八尺様」",
+     "credit": "漫画「八尺様」（walkerplus）／出典: summer.walkerplus.com",
+     "at": 19
+    },
+    {
+     "img": "1-1",
+     "edit": "so-lieu",
+     "why": "cao khoảng 2,4 mét",
+     "label": "八尺様（イラスト）",
+     "credit": "出典: illustnouka.com",
+     "at": 20,
+     "title": "約二メートル四十センチ"
+    },
+    {
+     "img": "9-1",
+     "edit": "troi-cham",
+     "why": "vài năm đến hơn chục năm lại xuất hiện",
+     "label": "白い服の女（イメージ）",
+     "credit": "出典: pakutaso.com",
+     "at": 21
+    },
+    {
+     "img": "2-5",
+     "edit": "troi-cham",
+     "why": "người bị để ý",
+     "label": "漫画「八尺様」",
+     "credit": "漫画「八尺様」（walkerplus）／出典: walkerplus.com",
+     "at": 22
+    },
+    {
+     "img": "1-11",
+     "edit": "troi-cham",
+     "why": "bị bắt chết trong vài ngày",
+     "label": "八尺様（イラスト）",
+     "credit": "出典: skima.jp",
+     "at": 23
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "10-1",
+     "edit": "troi-cham",
+     "why": "bị nhốt trong phòng tầng hai",
+     "label": "夜の和室（イメージ）",
+     "credit": "出典: e-uchiya.jp"
+    },
+    {
+     "img": "11-3",
+     "edit": "troi-cham",
+     "why": "bùa trên cửa sổ",
+     "label": "お札（イメージ）",
+     "credit": "出典: leafkyoto.net",
+     "at": 25
+    },
+    {
+     "img": "12-5",
+     "edit": "troi-cham",
+     "why": "muối ở bốn góc phòng",
+     "label": "盛り塩（イメージ）",
+     "credit": "出典: hayamisousai.co.jp",
+     "at": 25.55
+    },
+    {
+     "img": "14-8",
+     "edit": "troi-cham",
+     "why": "ai gọi cũng không được ra",
+     "label": "夜の廊下（イメージ）",
+     "credit": "出典: flickr.com",
+     "at": 26
+    },
+    {
+     "img": "13-3",
+     "edit": "troi-cham",
+     "why": "cửa sổ bị đập",
+     "label": "窓に残る手の跡（イメージ）",
+     "credit": "出典: buzzfeed.com",
+     "at": 27
+    },
+    {
+     "img": "14-2",
+     "edit": "troi-cham",
+     "why": "giọng y hệt ông nội",
+     "label": "夜の廊下（イメージ）",
+     "credit": "出典: kominka-mie.org",
+     "at": 28
+    },
+    {
+     "img": "14-4",
+     "edit": "troi-cham",
+     "why": "không trả lời",
+     "label": "夜の古い家（イメージ）",
+     "credit": "出典: istockphoto.com",
+     "at": 29
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "12-1",
+     "edit": "so-lieu",
+     "why": "sáng ra muối chuyển màu đen",
+     "label": "盛り塩（イメージ）",
+     "credit": "出典: homes.co.jp",
+     "title": "真っ黒な盛り塩"
+    },
+    {
+     "img": "16-7",
+     "edit": "troi-cham",
+     "why": "ngồi giữa xe",
+     "label": "田舎道（イメージ）",
+     "credit": "出典: yamanashi-kankou.jp",
+     "at": 31
+    },
+    {
+     "img": "7-2",
+     "edit": "troi-cham",
+     "why": "bị những người đàn ông vây quanh, rời làng",
+     "label": "村を出る道（イメージ）",
+     "credit": "出典: unsplash.com",
+     "at": 32
+    },
+    {
+     "img": "3-2",
+     "edit": "troi-cham",
+     "why": "tiếng po po po ngoài xe",
+     "label": "ゲーム『八尺様がいた夏休み』",
+     "credit": "ゲーム『八尺様がいた夏休み』／出典: x.com",
+     "at": 33
+    },
+    {
+     "img": "3-4",
+     "edit": "troi-cham",
+     "why": "bám theo mãi",
+     "label": "ゲーム『八尺様がいた夏休み』",
+     "credit": "ゲーム『八尺様がいた夏休み』／出典: note.com",
+     "at": 34
+    },
+    {
+     "img": "16-1",
+     "edit": "troi-cham",
+     "why": "tượng Jizō ở ranh giới làng",
+     "label": "道端の地蔵（イメージ）",
+     "credit": "出典: nakamoto.jp",
+     "at": 35
+    },
+    {
+     "img": "16-2",
+     "edit": "troi-cham",
+     "why": "không ra ngoài được",
+     "label": "山道の地蔵（イメージ）",
+     "credit": "出典: e-tsuyama.com",
+     "at": 36
+    },
+    {
+     "img": "16-4",
+     "edit": "troi-cham",
+     "why": "không bao giờ được quay lại",
+     "label": "村はずれの地蔵堂（イメージ）",
+     "credit": "出典: bongheiberg.yamagata.jp",
+     "at": 37
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "10-4",
+     "edit": "so-lieu",
+     "why": "mười năm sau",
+     "label": "古い家の座敷（イメージ）",
+     "credit": "出典: dejimo.co.jp",
+     "title": "十年後"
+    },
+    {
+     "img": "20-4",
+     "edit": "troi-cham",
+     "why": "ông mất, không dự được đám tang",
+     "label": "葬儀の祭壇（イメージ）",
+     "credit": "出典: shimokawa-pia.co.jp",
+     "at": 39
+    },
+    {
+     "img": "18-6",
+     "edit": "troi-cham",
+     "why": "bà gọi điện",
+     "label": "黒電話（イメージ）",
+     "credit": "出典: mainichi.jp",
+     "at": 40
+    },
+    {
+     "img": "17-1",
+     "edit": "dung-yen",
+     "why": "câu 「地蔵が、壊された」 chữ to",
+     "label": "壊れた地蔵（イメージ）",
+     "credit": "出典: oomorisekizai.com",
+     "at": 41
+    },
+    {
+     "img": "8-5",
+     "edit": "troi-cham",
+     "why": "tượng trên đường về nhà anh",
+     "label": "家へ通じる道（イメージ）",
+     "credit": "出典: siroutodaiku.blog.fc2.com",
+     "at": 42
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "5-1",
+     "edit": "troi-cham",
+     "why": "bài viết kết thúc ở đó",
+     "label": "ネット掲示板「2ちゃんねる」オカルト板",
+     "credit": "出典: listennotes.com"
+    },
+    {
+     "img": "5-4",
+     "edit": "troi-cham",
+     "why": "vào danh sách hay nhất",
+     "label": "2ちゃんねる「洒落怖」（解説記事）",
+     "credit": "出典: yokaiarchive.com",
+     "at": 44
+    },
+    {
+     "img": "1-6",
+     "edit": "troi-cham",
+     "why": "tiếng po po po",
+     "label": "漫画「八尺様」（ねとらぼ）",
+     "credit": "出典: nlab.itmedia.co.jp",
+     "at": 45
+    },
+    {
+     "img": "19-1",
+     "edit": "troi-cham",
+     "why": "bài hát của Nezumi-senpai",
+     "label": "鼠先輩",
+     "credit": "出典: nikkan-gendai.com",
+     "at": 46
+    },
+    {
+     "img": "19-3",
+     "edit": "troi-cham",
+     "why": "chỉ là thuyết",
+     "label": "鼠先輩「六本木〜GIROPPON〜」（2008）",
+     "credit": "鼠先輩「六本木〜GIROPPON〜」／出典: sp-m.mu-mo.net",
+     "at": 47
+    },
+    {
+     "img": "2-4",
+     "edit": "troi-cham",
+     "why": "thành truyện tranh",
+     "label": "漫画『恋する八尺様』",
+     "credit": "漫画『恋する八尺様』（蜂月ろく）／出典: rookie.shonenjump.com",
+     "at": 48
+    },
+    {
+     "img": "3-2",
+     "edit": "troi-cham",
+     "why": "và trò chơi",
+     "label": "ゲーム『八尺様がいた夏休み』",
+     "credit": "ゲーム『八尺様がいた夏休み』／出典: x.com",
+     "at": 48.55
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "1-11",
+     "edit": "troi-cham",
+     "why": "quái dị không ra khỏi làng",
+     "label": "八尺様（イラスト）",
+     "credit": "出典: skima.jp"
+    },
+    {
+     "img": "21-2",
+     "edit": "troi-cham",
+     "why": "ngược lại, con người",
+     "label": "映画『きさらぎ駅 Re:』のチラシ",
+     "credit": "映画『きさらぎ駅 Re:』（2025）／出典: av.watch.impress.co.jp",
+     "at": 50
+    },
+    {
+     "img": "21-7",
+     "edit": "troi-cham",
+     "why": "lạc vào nơi không thuộc thế giới này",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: youtube.com",
+     "at": 51
+    },
+    {
+     "img": "21-3",
+     "edit": "ket",
+     "why": "truyện thứ ba: ga Kisaragi",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: kisaragimovie.com",
+     "at": 52,
+     "title": "きさらぎ駅"
+    }
+   ]
+  }
+ ]
+}
