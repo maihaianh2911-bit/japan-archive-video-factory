@@ -282,12 +282,18 @@
      "at": 20
     },
     {
-     "img": "2-7",
+     "img": "16-1",
      "edit": "troi-cham",
-     "why": "gọi về nhà nhưng không nói được mình ở đâu",
-     "label": "映画『きさらぎ駅』（2022）",
-     "credit": "映画『きさらぎ駅』（2022）／出典: skyperfectv.co.jp",
-     "at": 21
+     "why": "gọi về nhà bằng điện thoại",
+     "label": "当時の携帯電話",
+     "credit": "出典: irodori-kurasu.essay.jp",
+     "at": 21,
+     "view": [
+      0.1,
+      0,
+      0.9,
+      1
+     ]
     },
     {
      "img": "8-7",
@@ -398,11 +404,11 @@
      "at": 33
     },
     {
-     "img": "2-1",
+     "img": "2-7",
      "edit": "troi-cham",
-     "why": "người đàn ông im lặng dần",
+     "why": "người đàn ông im lặng dần: cảnh sợ hãi trong phim",
      "label": "映画『きさらぎ駅』（2022）",
-     "credit": "映画『きさらぎ駅』（2022）／出典: online.stereosound.co.jp",
+     "credit": "映画『きさらぎ駅』（2022）／出典: skyperfectv.co.jp",
      "at": 34
     }
    ]
