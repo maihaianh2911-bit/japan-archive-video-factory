@@ -12,6 +12,9 @@
    the issue what was added, and only then go on. This is the one exception to "never change the owner's script".
    Never render or deliver a video under 60 seconds. Only exception: a trial or sample video — the owner says so,
    or the issue title or notes say `thử`, `mẫu`, `test` or `demo`.
+3. **Every video is vertical (1080×1920) and 80–160 seconds long** (owner, 18/11/2026: "tất cả các kênh đều làm
+   dạng dọc, 80-160s thôi"). Write the script for that length: under 80 s add true scenes and details of the same
+   story (never padding), over 160 s cut repetition. Trial or sample videos are the exception, as in rule 2.
 
 Read `docs/HANDOVER.md` first (the owner, their standing decisions, the current state), then `AGENT_ARC.md` (how a
 video is made) and `00-video-mau/HUONG-DAN-EDIT.md` (the owner's editing guide for the approved sample). The owner is
@@ -57,7 +60,7 @@ questions, so do not ask; comments go on the issues (🤖, Vietnamese).
    written by Claude at the picks step, owner 16/11/2026) and the picture credits.
 
 Iron rule (owner, 16/11/2026): **no video under 60 s** — under 60 s nothing is rendered (`build.py` refuses); write
-65–80 s (`AGENT_ARC.md` §1). Quality first: look at every picture yourself, preview the framing and rings before rendering.
+80–160 s (iron rule 3; `AGENT_ARC.md` §1). Quality first: look at every picture yourself, preview the framing and rings before rendering.
 
 ## Changing the pipeline
 Before pushing to `main`: `python3 tests/arc_smoke.py --still`, `python3 -m compileall -q scripts tests`,
