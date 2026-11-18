@@ -20,7 +20,7 @@ Only when asked for with their prefix:
              files of its Wikimedia Commons category (and sub-categories), the photos taken at its coordinates.
              `wiki: 亀ヶ岡石器時代遺跡`, `wiki: Hachikō` or `wiki: Q1049738`.
   geo        Commons photos taken around a point, whatever they are called: `geo: 40.8833,140.3389 800` (metres)
-  web        pictures from the whole web (Bing images, then Yahoo! JAPAN and DuckDuckGo images): film stills and
+  web        pictures from the whole web (Yahoo! JAPAN images, then Bing and DuckDuckGo): film stills and
              posters, news photos, blog pictures, screenshots. Owner, 18/11/2026 (urban-legend videos): "lấy ảnh
              thoải mái, ảnh phim cũng được, ghi nguồn là được". Licence recorded as "引用 (<site>)", the page kept for
              the credit. Japanese words are fine (`web: きさらぎ駅 映画`); give a "want" in English so CLIP can rank them.
@@ -380,11 +380,11 @@ def web_item(source, title, page, url, preview=None, width=None, height=None):
     return item(source, title, page, url, f'引用 ({site(page or url)})', site(page or url), width=width, height=height, preview=preview)
 
 
-DEBUG_DIR = None   # set by main(): a web search that finds nothing keeps the page it got there (web-<engine>-<n>.txt)
+DEBUG_DIR = None   # set by main(); with FIND_DEBUG=1 a web engine that gives nothing keeps its page there (web-<engine>-<n>.txt)
 
 
 def keep_page(engine, page):
-    if DEBUG_DIR:
+    if DEBUG_DIR and os.environ.get('FIND_DEBUG'):
         n = len([f for f in os.listdir(DEBUG_DIR) if f.startswith(f'web-{engine}-')]) + 1
         open(f'{DEBUG_DIR}/web-{engine}-{n}.txt', 'w', encoding='utf-8').write(page[:300000])
     print(f'  web/{engine}: nothing read from a page of {len(page)} characters')
@@ -451,9 +451,11 @@ def ddg(q, n):
 
 
 def web(q, n):
-    """Pictures from the whole web: Bing, then Yahoo! JAPAN and DuckDuckGo to fill up (see the module text)."""
+    """Pictures from the whole web: Yahoo! JAPAN, then Bing and DuckDuckGo to fill up (see the module text). Tested on
+    the GitHub runners 18/11/2026: Yahoo! JAPAN answers; Bing sends a page without results and DuckDuckGo a
+    challenge to them (kept as fallbacks, they cost a few seconds)."""
     out, errors = [], []
-    for f in (bing, yahoo, ddg):
+    for f in (yahoo, bing, ddg):
         if len(out) >= n: break
         try:
             seen = {r['thumb'] for r in out}

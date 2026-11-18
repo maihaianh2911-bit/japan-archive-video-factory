@@ -17,6 +17,10 @@ Read `docs/HANDOVER.md` first (the owner, their standing decisions, the current 
 video is made) and `00-video-mau/HUONG-DAN-EDIT.md` (the owner's editing guide for the approved sample). The owner is
 Vietnamese and not technical: answer in short, simple Vietnamese, no jargon.
 
+Since 18/11/2026 it also makes `[Truyền thuyết]` videos: Japanese urban legends and horror stories, one story per
+video, 2–3 min, pictures from the whole web (film stills allowed, credited), no AI pictures, a strong hook
+(`AGENT_ARC.md` §5). A list of stories in a chat = one issue per story.
+
 This repo makes one thing: vertical Japanese history and legend shorts from real archive documents (excavation
 photos, artefacts, maps, scans, old engravings and paintings), a Japanese voice and subtitles timed to it, laid out
 as the approved Göbekli Tepe sample (`00-video-mau/MAU-EDIT-20S.mp4`). One issue `[Lịch sử] …` = one video; the

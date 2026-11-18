@@ -20,7 +20,8 @@ export type Shot = { s: number; e: number; scene: number; shot: number; label: s
 export type Sub = { s: number; e: number; text: string; hl?: string[] };
 type FontChunk = { family: string; file: string; range: string };
 export type PlanA = { duration: number; shots: Shot[]; subs: Sub[]; voice: { s: number; src: string }[]; music: string | null;
-  musicVolume: number; fonts: FontChunk[]; theme?: string; total?: number; fade?: number };
+  musicVolume: number; fonts: FontChunk[]; theme?: string; total?: number; fade?: number;
+  hook?: { text: string; s: number; e: number; hl?: string[] } };
 
 type Theme = { wash?: number; bg: string; bgCss?: string; bar: string; label: string; title: string; sub: string; subHl: string; subShadow: string; credit: string;
   ring: string; frame: string; mat: number; shadow: string; backdrop: boolean; subWeight: number; titleShadow: string };
@@ -125,6 +126,27 @@ const Wash: React.FC<{ p: PicBox; t: number; sh: Shot; o: number }> = ({ p, t, s
   );
 };
 
+// the hook: the picture darkened, the words very large in the middle of it — fully there on the very first frame (the
+// feed shows it), with a small punch (scale 1.08 → 1 in 0.25 s); key words in the theme's highlight colour; it fades
+// out in 0.35 s when the first line has been said
+const Hook: React.FC<{ hk: { text: string; s: number; e: number; hl?: string[] }; t: number; on: number; box: number[]; color: string }> = ({ hk, t, on, box, color }) => {
+  const k = easeOut((t - hk.s) / 0.25), sc = 1.08 - 0.08 * k;
+  const rows = hk.text.split('\n');
+  const n = Math.max(...rows.map((r) => [...r].reduce((a, c) => a + (c.charCodeAt(0) < 0x2000 ? 0.55 : 1), 0)));
+  const size = Math.min(150, Math.floor(980 / Math.max(1, n) / 1.04 / 1.08));
+  const ring = Array.from({ length: 16 }, (_, i) => { const a = (i / 16) * 2 * Math.PI; return `${(Math.cos(a) * 7).toFixed(1)}px ${(Math.sin(a) * 7).toFixed(1)}px 0 #000`; }).join(', ');
+  return (
+    <AbsoluteFill style={{ opacity: on }}>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: box[1] - 40, height: box[3] + 80, background: 'radial-gradient(ellipse 75% 60% at 50% 50%, rgba(0,0,0,.55) 0%, rgba(0,0,0,.25) 70%, rgba(0,0,0,0) 100%)' }} />
+      <div style={{ position: 'absolute', left: 30, right: 30, top: box[1] + box[3] / 2, transform: `translateY(-50%) scale(${sc})`,
+        textAlign: 'center', fontFamily: SERIF, fontWeight: 900, fontSize: size, lineHeight: 1.18, color: '#ffffff', letterSpacing: '0.03em',
+        textShadow: `${ring}, 0 10px 30px rgba(0,0,0,.6)` }}>
+        {rows.map((r, i) => <div key={i}><Highlight text={r} hl={hk.hl || []} color={color} /></div>)}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const Highlight: React.FC<{ text: string; hl: string[]; color: string }> = ({ text, hl, color }) => {
   if (!hl.length) return <>{text}</>;
   const re = new RegExp(`(${hl.map((h) => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
@@ -144,7 +166,11 @@ export const ArcV: React.FC<PlanA> = (plan) => {
   const speaking = (tt: number) => plan.subs.some((s) => tt >= s.s - 0.2 && tt < s.e + 0.2);
   // header comes in softly when the title changes (a new idea); same title → it stays
   const prev = idx > 0 ? plan.shots[idx - 1] : null;
-  const head = prev && prev.title === sh.title && prev.label === sh.label ? 1 : easeOut((t - sh.s) / 0.45);
+  // the hook (owner 18/11): big words over the first picture from frame 0; the first header comes in after it
+  const hk = plan.hook && t < plan.hook.e + 0.35 ? plan.hook : null;
+  const hookOn = hk ? clamp01((hk.e + 0.35 - t) / 0.35) : 0;
+  const headFrom = idx === 0 && plan.hook ? plan.hook.e : sh.s;
+  const head = prev && prev.title === sh.title && prev.label === sh.label ? 1 : easeOut((t - headFrom) / 0.45);
   const lift = (1 - head) * 18;
   // dissolve: the last shot's pictures (caption, credit) stay under the new ones while these fade in
   const fade = plan.fade || 0;
@@ -161,7 +187,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
       {th.wash && out ? <Wash p={out.pics[0]} t={t} sh={out} o={th.wash * (1 - mix)} /> : null}
       {th.wash ? <Wash p={sh.pics[0]} t={t} sh={sh} o={th.wash * mix} /> : null}
       {/* header: bar, label (place / kind of document), title */}
-      <div style={{ position: 'absolute', left: M + 3, top: sh.bar, width: 92 * (0.4 + 0.6 * head), height: 6, background: th.bar }} />
+      <div style={{ position: 'absolute', left: M + 3, top: sh.bar, width: 92 * (0.4 + 0.6 * head), height: 6, opacity: head, background: th.bar }} />
       {sh.label ? (
         <div style={{ position: 'absolute', left: M + 3, top: sh.bar + 38 + lift * 0.6, opacity: head, fontFamily: SANS, fontWeight: 500, fontSize: 40, lineHeight: 1.25, color: th.label, letterSpacing: '0.02em', whiteSpace: 'nowrap', textShadow: th.titleShadow }}>{sh.label}</div>
       ) : null}
@@ -193,6 +219,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
       {sh.credit ? (
         <div style={{ position: 'absolute', left: M + 3, right: M, top: 1745, opacity: out && out.credit !== sh.credit ? mix : 1, fontFamily: SANS, fontWeight: 400, fontSize: 25, lineHeight: 1.3, color: th.credit, letterSpacing: '0.05em' }}>{sh.credit}</div>
       ) : null}
+      {hk ? <Hook hk={hk} t={t} on={hookOn} box={plan.shots[0].pics[0].box} color={th.subHl} /> : null}
       {plan.voice.map((v, i) => <Sequence key={i} from={Math.round(v.s * fps)}><Audio src={staticFile(v.src)} /></Sequence>)}
       {plan.music ? (
         <Audio src={staticFile(plan.music)} volume={(f) => {

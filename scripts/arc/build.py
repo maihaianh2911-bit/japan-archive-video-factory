@@ -187,7 +187,13 @@ music = mg.render([{'from': 0, 'to': total, **mu}], lambda v: v, total)
 bed = music / (np.abs(music).max() or 1) * 0.8
 mg.write_wav(f'{pub}/{base}/bed.wav', bed)
 
-plan = {'duration': total, 'theme': STYLE, 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
+# the hook (owner 18/11, "cải thiện phần hook"): big words over the first picture from the very first frame until the
+# spoken hook (line 1) has been said; the header of the first shot comes in after it
+hook = None
+if spec.get('hook'):
+    hook = {'text': str(spec['hook']).replace('\\n', '\n'), 's': 0.0,
+            'e': round(max(2.0, min(4.5, starts[1] + dur[1] + 0.3, shots[0]['e'] - 0.3)), 3), 'hl': spec.get('hook_hl', [])}
+plan = {'duration': total, 'theme': STYLE, **({'hook': hook} if hook else {}), 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
         'musicVolume': spec.get('music_volume', 0.16), 'fonts': []}
 json.dump(plan, open(f'{out}/plan.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

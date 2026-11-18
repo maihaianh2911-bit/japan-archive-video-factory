@@ -2,7 +2,7 @@
 
 Repo: `maihaianh2911-bit/japan-archive-video-factory`. Mỗi video = **một Issue mới** do tài khoản `maihaianh2911-bit` tạo (phiếu của tài khoản khác không chạy). Không gắn nhãn, không đẩy file: Claude chia lời theo cảnh (dịch sang tiếng Nhật nếu kịch bản là tiếng Việt), tìm và chọn tư liệu thật, máy tạo giọng và dựng.
 
-- **Tiêu đề:** `[Lịch sử] <tên tiếng Nhật> — <ý chính>`. Phải bắt đầu đúng bằng `[Lịch sử]`.
+- **Tiêu đề:** `[Lịch sử] <tên tiếng Nhật> — <ý chính>`. Phải bắt đầu đúng bằng `[Lịch sử]`. Truyện kinh dị, truyền thuyết đô thị (chủ kênh 18/11): `[Truyền thuyết] <tên tiếng Nhật> — <ý chính>`, mỗi truyện một phiếu, video 2–3 phút.
 - **Nội dung** (giữ nguyên tên mục):
 ```
 ### Chủ đề (không bắt buộc)

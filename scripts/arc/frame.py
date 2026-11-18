@@ -53,8 +53,9 @@ def backdrop(src):
     return ImageEnhance.Brightness(ImageEnhance.Color(im).enhance(1.45)).enhance(0.55)
 
 
-def draw(shot, t, sub, img_of, theme='paper'):
-    """Full 1080×1920 frame of `shot` at time t. img_of(src) → PIL image of a prepared picture."""
+def draw(shot, t, sub, img_of, theme='paper', hook=None):
+    """Full 1080×1920 frame of `shot` at time t. img_of(src) → PIL image of a prepared picture. hook: the plan's
+    hook, drawn over the first shot while it is on (ArcV Hook)."""
     th = THEMES.get(theme, THEMES['paper'])
     im = backdrop(img_of(shot['pics'][0]['src'])) if th['backdrop'] else Image.new('RGB', (1080, 1920), th['bg'])
     if th.get('wash'):   # paper: the picture blurred, sepia and faint over the paper (ArcV Wash)
@@ -88,4 +89,12 @@ def draw(shot, t, sub, img_of, theme='paper'):
             f = font(52); wdt = d.textlength(row, font=f)
             d.text(((1080 - wdt) / 2, shot['subY'] + 17 + k * 76), row, fill=th['sub'], font=f)
     if shot['credit']: d.text((72, 1751), shot['credit'], fill=th['credit'], font=font(25))
+    if hook and hook['s'] <= t < hook['e'] and shot.get('scene') == 1 and shot.get('shot') == 1:
+        x, y, w, h = shot['pics'][0]['box']
+        dark = Image.new('RGBA', im.size, (0, 0, 0, 0)); ImageDraw.Draw(dark).rectangle((0, y, 1080, y + h), fill=(0, 0, 0, 110))
+        im = Image.alpha_composite(im.convert('RGBA'), dark).convert('RGB'); d = ImageDraw.Draw(im)
+        rows = hook['text'].split('\n'); n = max(sum(0.55 if ord(c) < 0x2000 else 1 for c in r) for r in rows)
+        f = font(min(150, int(980 / max(1, n) / 1.04 / 1.08))); lh = round(f.size * 1.18); top = y + h / 2 - lh * len(rows) / 2
+        for k, r in enumerate(rows):
+            d.text(((1080 - d.textlength(r, font=f)) / 2, top + k * lh), r, fill=(255, 255, 255), font=f, stroke_width=7, stroke_fill=(0, 0, 0))
     return im

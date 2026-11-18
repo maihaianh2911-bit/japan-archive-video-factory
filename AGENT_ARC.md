@@ -38,6 +38,8 @@ the shot sheet → `arc-done`. `arc-fix`: the owner commented. `arc-failed`: a m
 - Usage: open only the pictures you need; check framing with the preview (§2.6), not with local renders.
 
 ## 1. `arc-plan` → `arc/<N>/script.json`
+A `[Truyền thuyết]` issue (Japanese urban legends and horror stories) follows the same steps with the rules of §5
+(one story, 2–3 min, a hook, the dark look, pictures from the whole web).
 Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and the owner's comments.
 ```json
 {"title": "ギョベクリ・テペ", "voice": "clone_190",
@@ -130,6 +132,14 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
      photos taken around a point, whatever they are called (the mound of a site, the grounds of a shrine); the
      coordinates of a `wiki:` item are in `index.json`. `"commons: <words>"` is the full-text search (Japanese
      words work: `commons: 水虎考略`), `File:<name>` fetches one exact file.
+  4. **The whole web, for `[Truyền thuyết]` videos only** (owner, 18/11: "lấy ảnh thoải mái, ảnh phim cũng được,
+     ghi nguồn là được"): `"web: <words>"` asks Yahoo! JAPAN image search (Bing and DuckDuckGo as fallbacks: on the GitHub
+     runners they send no results) — film stills
+     and posters, news photos, blog pictures, screenshots of the original posts. Japanese words work; always give
+     a `want` in English so the results are ranked (`{"q": "web: きさらぎ駅 映画", "want": "a scene from a Japanese
+     horror film"}`). Licence `引用 (<site>)`; credit such a picture on screen as `出典: <site or work>` (a film:
+     `映画『きさらぎ駅』（2022）より`). Never `web:` for a `[Lịch sử]` video. A web search that reads nothing is logged;
+     with `FIND_DEBUG=1` the page it got is kept as `web-<engine>-<n>.txt` (tell the owner it failed; do not guess).
 - `urls`: pictures you found yourself on a page that states a free licence (journal figures under CC BY, a museum
   open-access page, a government archive): direct image URL + page + title + author + licence. Check the licence on
   the page before adding it.
@@ -221,6 +231,7 @@ lines and 17 queries, ~30 s more per line; you are woken at `arc-pick`.)
    prefix `loc:` also the Library of Congress (no known restrictions; out of the unprefixed search since
    17/11/2026, see §1). Allowed licences: public domain, CC0, CC BY, CC BY-SA (credited); never NC or
    ND. `wiki: …` / `geo: …` / `commons: …` / `File:…` search Wikimedia, only when nothing else has the document.
+   `[Truyền thuyết]` videos (§5) may also use pictures of any licence found with `web:`, credited by their source.
    Sharp, well-lit pictures first; short side ≥ ~700 px for a full-width shot (smaller only for a detail).
    A ranked search leaves out pictures that clearly look like nudity (the log counts them as `unsuitable`; the
    line is set so that clay figurines and netsuke pass); you still check every picture yourself against the
@@ -330,3 +341,34 @@ all fixes in one push. Otherwise remove `arc-check`, add `arc-done` and comment 
   `gh api -X POST repos/maihaianh2911-bit/japan-archive-video-factory/actions/workflows/arc.yml/dispatches -f ref=main -f 'inputs[issue]=<N>' -f 'inputs[steps]=render'`
   (or `prepare`, `search`), remove `arc-failed`. When the fix is a push under `arc/<N>/` (script.json, picks.json,
   search-<r>.json, own/), that push already starts the run: do not dispatch it by hand as well.
+
+## 5. `[Truyền thuyết]` — Japanese urban legends and horror stories (owner, 18/11/2026)
+The owner saw a foreign "8 urban legends" video and took **only the idea**, not its look ("hình ảnh của video mẫu
+rất xấu, tao lấy ý tưởng thôi"): a series of Japanese legends — きさらぎ駅, 八尺様, くねくね, 口裂け女,
+トイレの花子さん, 犬鳴村, 杉沢村, 牛の首, ひきこさん, 鮫島事件 … — **one story per video, 2–3 minutes**, never
+several stories in one video ("ko để video bị loãng"). A list in a chat ("8 truyện kinh dị") = 8 issues
+`[Truyền thuyết] <Japanese name> — <idea>`, one per story.
+- **Length**: 2–3 min ≈ 900–1300 Japanese characters (0.128 s per character measured, plus the pauses). The
+  iron rule (≥ 60 s) applies; 3 min is the Shorts limit, so stay under 175 s.
+- **Story**: tell it as it was first told (the date, the board, the poster's words), then what people found out,
+  then what is still unknown. Facts and sources as facts; the uncanny parts as what the poster wrote or what is
+  said (〜と書き込んだ, 〜といわれています). Nothing invented. No gore described.
+- **Hook (owner, 18/11: "cải thiện phần hook")** — the first 2 seconds decide whether a viewer stays:
+  - line 1 = the hook: the most uncanny fact or the end of the story, ≤ 20 characters, no date, no
+    introduction: 「どの地図にも載っていない駅がある。」, 「この書き込みを最後に、彼女は消えた。」 Never
+    「今日は〇〇を紹介します」 or the legend's name alone. Line 2 starts the story (「始まりは二〇〇四年…」).
+  - `"hook": "地図にない\n駅"` in `script.json`: 2–12 characters per row, at most 2 rows (`\n`), shown huge over
+    the first picture from the very first frame until line 1 has been said (2–4.5 s); `"hook_hl": ["地図にない"]`
+    colours a key word. The first header comes in after it.
+  - the first picture is the most striking one (the station sign, the figure, the place at night), not a map;
+    it is cut at the end of the hook line (second shot `"at": 2`).
+  - the last line leaves a question or the uncanny remainder (「次の電車が、いつもの駅に止まるとは限らない。」).
+- **Look**: `"style": "warm"` (dark: the picture blurred behind, gold frame) unless the owner asks for another;
+  `"pace": "fast"`, `"fade": 0.35`; about one picture per line (a new picture every 2–3 s), the motion of §2;
+  `"music": {"style": "tension", "mode": "minor", "bpm": 70, "energy": 0.3}`.
+- **Pictures**: `web:` queries (§1 `queries` 4) for the posts, the films, the places as people show them, plus
+  the open archives and Wikimedia for real places (stations, tunnels, villages, shrines). **Never AI pictures**
+  (owner, 18/11: "ko dùng hình AI, trên mạng có đủ nguồn hình"). Check every picture yourself: no gore, no
+  real victims' photos, no watermark across the middle, nothing that is another story's picture.
+- **Caption**: hook title (the hook line or a sharper one), 2–4 sentences, hashtags such as #都市伝説 #怖い話
+  #ネット怪談 #ホラー #shorts, `画像出典:` the sites and works.

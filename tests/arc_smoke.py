@@ -45,7 +45,7 @@ json.dump(rows, open(os.path.join(voice, 'lines.json'), 'w', encoding='utf-8'), 
 json.dump({'title': 'ギョベクリ・テペ', 'voice': 'clone_190', 'lines': lines,
            'scenes': [{'lines': [1, 1], 'title': '約1万2千年前'}, {'lines': [2, 2], 'title': 'ギョベクリ・テペ'},
                       {'lines': [3, 3], 'title': '円形に並ぶ石柱'}, {'lines': [4, 4], 'title': 'なぜ、ここに石柱を？'}],
-           'hl': {'3': ['円を描く']}, 'queries': ['test'], 'fade': 0.6}, open(os.path.join(job, 'script.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+           'hl': {'3': ['円を描く']}, 'queries': ['test'], 'fade': 0.6, 'hook': '一万二千年前の\\n謎の遺跡', 'hook_hl': ['謎']}, open(os.path.join(job, 'script.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 json.dump({'images': {'site': {'src': '1/1-1.jpg'}, 'pano': {'src': '1/1-2.jpg'}, 'pillar': {'src': '1/1-3.jpg', 'mode': 'bw'}},
            'scenes': [
                {'shots': [{'img': 'site', 'edit': 'toan-canh', 'why': 'câu nhắc cả di tích', 'label': 'ギョベクリ・テペの発掘現場', 'credit': 'A / CC BY-SA 4.0'}]},
@@ -111,6 +111,7 @@ assert 'move' not in sh[2]['pics'][0] and sh[2]['pics'][0]['drift'] == 0 and pla
 assert 'move' not in sh[1]['pics'][0] and len(sh[1]['pics']) == 2                                       # picture + detail: no pan
 mv3 = sh[3]['pics'][0]['move']; assert abs((mv3['to'][2] - mv3['to'][0]) - (mv3['from'][2] - mv3['from'][0]) * 0.88) < 0.02 or mv3['from'][0] > mv3['to'][0]
 assert any(s['hl'] == ['円を描く'] for s in plan['subs']) and plan['fade'] == 0.6
+assert plan['hook']['text'] == '一万二千年前の\n謎の遺跡' and 2.0 <= plan['hook']['e'] <= sh[0]['e']   # the hook stays over the first picture
 for sb in plan['subs']:
     r = sb['text'].split('\n'); assert len(r) <= 2 and max(map(len, r)) <= 19, sb['text']
 assert ''.join(s['text'].replace('\n', '') for s in plan['subs']) == ''.join(lines)

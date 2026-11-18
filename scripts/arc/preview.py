@@ -39,7 +39,7 @@ for k, sh in enumerate(plan['shots'], 1):
            + [sh['e'] - 0.05 for p in sh['pics'] if p.get('move')]   # a pan / push: its last frame too
     if late: times.append(min(sh['e'] - 0.05, max(late)))
     for t in times:
-        f = frame.draw(sh, t, sub_at(t), img_of, plan.get('theme', 'paper')).resize((TW, TH), Image.LANCZOS)
+        f = frame.draw(sh, t, sub_at(t), img_of, plan.get('theme', 'paper'), plan.get('hook')).resize((TW, TH), Image.LANCZOS)
         tile = Image.new('RGB', (TW, TH + 24), (10, 10, 12)); tile.paste(f, (0, 24))
         ImageDraw.Draw(tile).text((4, 6), f"#{k} {sh['scene']}-{sh['shot']} {t:.1f}s{'*' if t != times[0] else ''} {sh.get('edit', '')}", fill=(255, 210, 90))
         tiles.append(tile)
