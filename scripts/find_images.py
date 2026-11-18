@@ -20,6 +20,11 @@ Only when asked for with their prefix:
              files of its Wikimedia Commons category (and sub-categories), the photos taken at its coordinates.
              `wiki: 亀ヶ岡石器時代遺跡`, `wiki: Hachikō` or `wiki: Q1049738`.
   geo        Commons photos taken around a point, whatever they are called: `geo: 40.8833,140.3389 800` (metres)
+  web        pictures from the whole web (Bing images, DuckDuckGo images when Bing gives nothing): film stills and
+             posters, news photos, blog pictures, screenshots. Owner, 18/11/2026 (urban-legend videos): "lấy ảnh
+             thoải mái, ảnh phim cũng được, ghi nguồn là được". Licence recorded as "引用 (<site>)", the page kept for
+             the credit. Japanese words are fine (`web: きさらぎ駅 映画`); give a "want" in English so CLIP can rank them.
+             Only by its prefix, never for an archive video by default.
 Write queries in English (or the language of the archive). `File:<name>` fetches one exact Commons file.
 With --spec, the JSON list may also hold
   {"q": "<query>", "want": "<what the picture must show, in English>", "keep": 12}   a query with its own wish
@@ -47,7 +52,7 @@ query fails does the script exit with an error. An archive that answers 429 (too
 in the same run: its later queries get an "error" at once (repeat them in the next round). Stdlib + Pillow
 (+ torch and open_clip_torch for the ranking).
 """
-import http.client, io, json, os, re, shutil, sys, threading, time, urllib.error, urllib.parse, urllib.request
+import html as htmllib, http.client, io, json, os, re, shutil, sys, threading, time, urllib.error, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image, ImageDraw
 
@@ -63,14 +68,22 @@ NET = (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPExc
 WIKIMEDIA = threading.BoundedSemaphore(2)   # Wikimedia asks for few requests at a time, whatever runs in parallel here
 
 
-def get(url, tries=4, raw=True, timeout=60):
-    """GET with retries: 429/5xx (rate limits, busy servers) and network errors (timeout, reset, cut-off reply)."""
+BROWSER = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36',
+           'Accept-Language': 'ja,en;q=0.8'}
+WEB_PAGE = {}   # picture url found by web: -> its page (sent as Referer: many sites refuse hotlinked pictures)
+
+
+def get(url, tries=4, raw=True, timeout=60, headers=None):
+    """GET with retries: 429/5xx (rate limits, busy servers) and network errors (timeout, reset, cut-off reply).
+    A picture found by web: is fetched as a browser would, with its page as Referer."""
     gentle = urllib.parse.urlsplit(url).netloc.endswith('wikimedia.org')
+    if headers is None:
+        headers = {**BROWSER, 'Referer': WEB_PAGE[url]} if url in WEB_PAGE else {'User-Agent': UA}
     for i in range(tries):
         try:
             if gentle: WIKIMEDIA.acquire()
             try:
-                with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=timeout) as r:
+                with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=timeout) as r:
                     b = r.read()
             finally:
                 if gentle: time.sleep(0.05); WIKIMEDIA.release()
@@ -357,8 +370,61 @@ def wiki(q, n):
     return out[:max(n, 60)]
 
 
+def site(u):
+    return urllib.parse.urlsplit(u or '').netloc.removeprefix('www.')
+
+
+def web_item(source, title, page, url, preview=None, width=None, height=None):
+    WEB_PAGE[url] = page or url
+    if preview: WEB_PAGE[preview] = page or url
+    return item(source, title, page, url, f'引用 ({site(page or url)})', site(page or url), width=width, height=height, preview=preview)
+
+
+def bing(q, n):
+    """Bing image results (its async result page, no key): murl = the picture, purl = its page, turl = a small one."""
+    url = 'https://www.bing.com/images/async?' + urllib.parse.urlencode(
+        {'q': q, 'first': 0, 'count': max(35, n), 'mmasync': 1, 'setlang': 'ja', 'cc': 'JP', 'adlt': 'moderate'})
+    page = get(url, tries=2, timeout=30, headers=BROWSER).decode('utf-8', 'replace')
+    out = []
+    for tag in re.findall(r'<a\b[^>]*class="iusc"[^>]*>', page):
+        m = re.search(r'\sm="([^"]+)"', tag)
+        if not m: continue
+        try: d = json.loads(htmllib.unescape(m.group(1)))
+        except ValueError: continue
+        if d.get('murl', '').startswith('http'):
+            out.append(web_item('web/bing', d.get('t') or d.get('desc') or '', d.get('purl', ''), d['murl'], d.get('turl')))
+        if len(out) >= n: break
+    return out
+
+
+def ddg(q, n):
+    """DuckDuckGo image results (its own page asks for a token first, then the JSON list)."""
+    page = get('https://duckduckgo.com/?' + urllib.parse.urlencode({'q': q, 'iax': 'images', 'ia': 'images'}), tries=2, timeout=30,
+               headers=BROWSER).decode('utf-8', 'replace')
+    m = re.search(r'vqd=["\']?([\d-]+)', page)
+    if not m: raise RuntimeError('duckduckgo: no token')
+    d = json.loads(get('https://duckduckgo.com/i.js?' + urllib.parse.urlencode({'l': 'jp-jp', 'o': 'json', 'q': q, 'vqd': m.group(1), 'f': ',,,,,', 'p': '1'}),
+                       tries=2, timeout=30, headers={**BROWSER, 'Referer': 'https://duckduckgo.com/'}))
+    return [web_item('web/ddg', r.get('title', ''), r.get('url', ''), r['image'], r.get('thumbnail'), r.get('width'), r.get('height'))
+            for r in d.get('results', [])[:n] if r.get('image', '').startswith('http')]
+
+
+def web(q, n):
+    """Pictures from the whole web: Bing first, DuckDuckGo to fill up or when Bing fails (see the module text)."""
+    out, errors = [], []
+    for f in (bing, ddg):
+        if len(out) >= n: break
+        try:
+            seen = {r['thumb'] for r in out}
+            out += [r for r in f(q, n) if r['thumb'] not in seen]
+        except Exception as e:
+            errors.append(f'{f.__name__}: {str(e)[:80]}'); print(f'  web/{f.__name__}: {str(e)[:100]}')
+    if not out and errors: raise RuntimeError('; '.join(errors))
+    return out[:n]
+
+
 FIND = {'openverse': openverse, 'met': met, 'aic': aic, 'cleveland': cleveland, 'europeana': europeana, 'loc': loc, 'commons': commons,
-        'wiki': wiki, 'geo': geo}
+        'wiki': wiki, 'geo': geo, 'web': web}
 ABOUT = ('wiki', 'geo')   # sources whose results are about the thing by construction: kept in their order
 
 
