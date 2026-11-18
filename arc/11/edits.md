@@ -22,7 +22,7 @@ Muốn đổi thì viết, ví dụ: "cảnh 5 đổi sang kiểu khoanh" hoặc
 | 16 | 45.2 | しかし、そんな駅は、どこを調べても見つかりません。 | 夜の無人駅（イメージ） | `troi-cham` — Trôi chậm | không tìm thấy ga nào như vậy |
 | 17 | 48.3 | 駅の外には、草原と山が広がるだけ。 | 夜の草原と山（イメージ） | `troi-cham` — Trôi chậm | bên ngoài chỉ có đồng cỏ và núi |
 | 18 | 50.7 | 駅員もいなければ、人の姿もありません。 | 夜の無人駅（イメージ） | `troi-cham` — Trôi chậm | không có nhân viên, không có ai |
-| 19 | 53.3 | 家族に電話をしても、 どこにいるのか、うまく伝えられません。 | 映画『きさらぎ駅』（2022） | `troi-cham` — Trôi chậm | gọi về nhà nhưng không nói được mình ở đâu |
+| 19 | 53.3 | 家族に電話をしても、 どこにいるのか、うまく伝えられません。 | 当時の携帯電話 | `troi-cham` — Trôi chậm | gọi về nhà bằng điện thoại |
 | 20 | 57.4 | 警察に電話をしても、いたずらだと思われたといいます。 | 夜の駅舎（イメージ） | `troi-cham` — Trôi chậm | gọi cảnh sát bị tưởng là trêu |
 | 21 | 60.7 | 彼女は、線路に沿って歩いて戻ることにしました。 | 月明かりの線路（イメージ） | `troi-cham` — Trôi chậm | đi bộ dọc đường ray |
 | 22 | 63.7 | すると遠くから、太鼓と鈴の音が聞こえてきます。 | 夜祭りの和太鼓（イメージ） | `troi-cham` — Trôi chậm | tiếng trống |
@@ -35,7 +35,7 @@ Muốn đổi thì viết, ví dụ: "cảnh 5 đổi sang kiểu khoanh" hoặc
 | 29 | 80.5 | トンネルを抜けたところで、一台の車に出会います。 | 夜道の車（イメージ） | `troi-cham` — Trôi chậm | gặp một chiếc xe |
 | 30 | 83.5 | 男性が、近くの駅まで送ってくれるといいます。 | 夜の山道（イメージ） | `troi-cham` — Trôi chậm | người đàn ông chở ra ga |
 | 31 | 86.3 | ところが車は、駅とは反対の、山の方へ。 | 夜の山道のトンネル（イメージ） | `troi-cham` — Trôi chậm | xe đi về phía núi |
-| 32 | 88.9 | 男性は、だんだん何もしゃべらなくなりました。 | 映画『きさらぎ駅』（2022） | `troi-cham` — Trôi chậm | người đàn ông im lặng dần |
+| 32 | 88.9 | 男性は、だんだん何もしゃべらなくなりました。 | 映画『きさらぎ駅』（2022） | `troi-cham` — Trôi chậm | người đàn ông im lặng dần: cảnh sợ hãi trong phim |
 | 33 | 91.7 | 最後の書き込みは、 | 匿名掲示板の書き込み（イメージ） | `dung-yen` — Đứng yên | bài đăng cuối cùng |
 | 34 | 92.8 | 携帯の電池がもう残り少ないこと、 | 当時の携帯電話 | `troi-cham` — Trôi chậm | pin sắp hết |
 | 35 | 95.0 | そして、様子がおかしいので、 すきを見て逃げるつもりだ、という内容でした。 | 夜の無人駅（イメージ） | `troi-cham` — Trôi chậm | có gì đó lạ, định tìm cách trốn |

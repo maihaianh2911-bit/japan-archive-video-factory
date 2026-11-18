@@ -694,17 +694,22 @@
     "家族に電話をしても、",
     "どこにいるのか、うまく伝えられません。"
    ],
-   "label": "映画『きさらぎ駅』（2022）",
+   "label": "当時の携帯電話",
    "title": "きさらぎ駅",
-   "image": "2-7",
-   "page": "https://www.skyperfectv.co.jp/article/detail/5667",
-   "credit": "映画『きさらぎ駅』（2022）／出典: skyperfectv.co.jp",
-   "view": null,
+   "image": "16-1",
+   "page": "https://irodori-kurasu.essay.jp/life/%E6%97%A7%E3%81%84%E3%82%AC%E3%83%A9%E3%82%B1%E3%83%BC%E3%81%A8%E3%82%B9%E3%83%9E%E3%83%9B%E3%82%92%E5%87%A6%E5%88%86%E3%81%99%E3%82%8B%E8%A9%B1/",
+   "credit": "出典: irodori-kurasu.essay.jp",
+   "view": [
+    0.1,
+    0,
+    0.9,
+    1
+   ],
    "detail": null,
    "zoom": null,
    "marks": [],
    "edit": "troi-cham",
-   "why": "gọi về nhà nhưng không nói được mình ở đâu"
+   "why": "gọi về nhà bằng điện thoại"
   },
   {
    "scene": 3,
@@ -959,15 +964,15 @@
    ],
    "label": "映画『きさらぎ駅』（2022）",
    "title": "伊佐貫トンネル",
-   "image": "2-1",
-   "page": "https://online.stereosound.co.jp/_ct/17753068",
-   "credit": "映画『きさらぎ駅』（2022）／出典: online.stereosound.co.jp",
+   "image": "2-7",
+   "page": "https://www.skyperfectv.co.jp/article/detail/5667",
+   "credit": "映画『きさらぎ駅』（2022）／出典: skyperfectv.co.jp",
    "view": null,
    "detail": null,
    "zoom": null,
    "marks": [],
    "edit": "troi-cham",
-   "why": "người đàn ông im lặng dần"
+   "why": "người đàn ông im lặng dần: cảnh sợ hãi trong phim"
   },
   {
    "scene": 6,
