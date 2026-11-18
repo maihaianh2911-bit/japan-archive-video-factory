@@ -193,7 +193,13 @@ hook = None
 if spec.get('hook'):
     hook = {'text': str(spec['hook']).replace('\\n', '\n'), 's': 0.0,
             'e': round(max(2.0, min(4.5, starts[1] + dur[1] + 0.3, shots[0]['e'] - 0.3)), 3), 'hl': spec.get('hook_hl', [])}
-plan = {'duration': total, 'theme': STYLE, **({'hook': hook} if hook else {}), 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
+# cards (owner 18/11, "top 4" countdowns): big words over the picture when an item starts ("第4位\n千駄ヶ谷トンネル"),
+# from its line until that line has been said (1.6–3 s); script.json "cards": [{"at": <line>, "text": …, "hl": […]}]
+cards = []
+for c in spec.get('cards', []):
+    k = int(c['at']); s_ = round(max(0.0, at_time(c['at']) - 0.15), 3)
+    cards.append({'text': str(c['text']).replace('\\n', '\n'), 's': s_, 'e': round(s_ + max(1.6, min(3.0, dur[k] + 0.35)), 3), 'hl': c.get('hl', [])})
+plan = {'duration': total, 'theme': STYLE, **({'hook': hook} if hook else {}), **({'cards': cards} if cards else {}), 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
         'musicVolume': spec.get('music_volume', 0.16), 'fonts': []}
 json.dump(plan, open(f'{out}/plan.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

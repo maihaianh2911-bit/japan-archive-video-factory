@@ -21,7 +21,7 @@ export type Sub = { s: number; e: number; text: string; hl?: string[] };
 type FontChunk = { family: string; file: string; range: string };
 export type PlanA = { duration: number; shots: Shot[]; subs: Sub[]; voice: { s: number; src: string }[]; music: string | null;
   musicVolume: number; fonts: FontChunk[]; theme?: string; total?: number; fade?: number;
-  hook?: { text: string; s: number; e: number; hl?: string[] } };
+  hook?: { text: string; s: number; e: number; hl?: string[] }; cards?: { text: string; s: number; e: number; hl?: string[] }[] };
 
 type Theme = { wash?: number; bg: string; bgCss?: string; bar: string; label: string; title: string; sub: string; subHl: string; subShadow: string; credit: string;
   ring: string; frame: string; mat: number; shadow: string; backdrop: boolean; subWeight: number; titleShadow: string };
@@ -169,7 +169,10 @@ export const ArcV: React.FC<PlanA> = (plan) => {
   // the hook (owner 18/11): big words over the first picture from frame 0; the first header comes in after it
   const hk = plan.hook && t < plan.hook.e + 0.35 ? plan.hook : null;
   const hookOn = hk ? clamp01((hk.e + 0.35 - t) / 0.35) : 0;
-  const headFrom = idx === 0 && plan.hook ? plan.hook.e : sh.s;
+  const card = (plan.cards || []).find((c) => t >= c.s && t < c.e + 0.35);
+  const cardOn = card ? clamp01((card.e + 0.35 - t) / 0.35) : 0;
+  const cardAtShot = (plan.cards || []).find((c) => Math.abs(c.s - sh.s) < 0.4);
+  const headFrom = idx === 0 && plan.hook ? plan.hook.e : cardAtShot ? cardAtShot.e : sh.s;
   const head = prev && prev.title === sh.title && prev.label === sh.label ? 1 : easeOut((t - headFrom) / 0.45);
   const lift = (1 - head) * 18;
   // dissolve: the last shot's pictures (caption, credit) stay under the new ones while these fade in
@@ -220,6 +223,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
         <div style={{ position: 'absolute', left: M + 3, right: M, top: 1745, opacity: out && out.credit !== sh.credit ? mix : 1, fontFamily: SANS, fontWeight: 400, fontSize: 25, lineHeight: 1.3, color: th.credit, letterSpacing: '0.05em' }}>{sh.credit}</div>
       ) : null}
       {hk ? <Hook hk={hk} t={t} on={hookOn} box={plan.shots[0].pics[0].box} color={th.subHl} /> : null}
+      {card && !hk ? <Hook hk={card} t={t} on={cardOn} box={sh.pics[0].box} color={th.subHl} /> : null}
       {plan.voice.map((v, i) => <Sequence key={i} from={Math.round(v.s * fps)}><Audio src={staticFile(v.src)} /></Sequence>)}
       {plan.music ? (
         <Audio src={staticFile(plan.music)} volume={(f) => {

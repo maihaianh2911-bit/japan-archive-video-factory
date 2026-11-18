@@ -66,7 +66,9 @@ def draw(shot, t, sub, img_of, theme='paper', hook=None):
         im = Image.blend(im, Image.blend(bl, sep, 0.55), th['wash'])
     d = ImageDraw.Draw(im)
     b = shot['bar']
-    hooked = hook and t < hook['e'] and shot.get('scene') == 1 and shot.get('shot') == 1   # ArcV: the first header comes after the hook
+    if isinstance(hook, list):   # [hook or None, *cards]: the one on at t over this shot (ArcV Hook)
+        hook = next((c for c in hook if c and c['s'] <= t < c['e'] and (c is not hook[0] or (shot.get('scene') == 1 and shot.get('shot') == 1))), None)
+    hooked = bool(hook) and t < hook['e'] and abs(hook['s'] - shot['s']) < 0.4 or (hook and hook['s'] == 0 and shot.get('scene') == 1 and shot.get('shot') == 1 and t < hook['e'])
     if not hooked:
         d.rectangle((72, b, 72 + 92, b + 6), fill=th['bar'])
         if shot['label']: d.text((72, b + 46), shot['label'], fill=th['label'], font=font(40))
@@ -91,7 +93,7 @@ def draw(shot, t, sub, img_of, theme='paper', hook=None):
             f = font(52); wdt = d.textlength(row, font=f)
             d.text(((1080 - wdt) / 2, shot['subY'] + 17 + k * 76), row, fill=th['sub'], font=f)
     if shot['credit']: d.text((72, 1751), shot['credit'], fill=th['credit'], font=font(25))
-    if hook and hook['s'] <= t < hook['e'] and shot.get('scene') == 1 and shot.get('shot') == 1:
+    if hook and hook['s'] <= t < hook['e']:
         x, y, w, h = shot['pics'][0]['box']
         dark = Image.new('RGBA', im.size, (0, 0, 0, 0)); ImageDraw.Draw(dark).rectangle((0, y, 1080, y + h), fill=(0, 0, 0, 110))
         im = Image.alpha_composite(im.convert('RGBA'), dark).convert('RGB'); d = ImageDraw.Draw(im)
