@@ -20,7 +20,7 @@ Only when asked for with their prefix:
              files of its Wikimedia Commons category (and sub-categories), the photos taken at its coordinates.
              `wiki: 亀ヶ岡石器時代遺跡`, `wiki: Hachikō` or `wiki: Q1049738`.
   geo        Commons photos taken around a point, whatever they are called: `geo: 40.8833,140.3389 800` (metres)
-  web        pictures from the whole web (Bing images, DuckDuckGo images when Bing gives nothing): film stills and
+  web        pictures from the whole web (Bing images, then Yahoo! JAPAN and DuckDuckGo images): film stills and
              posters, news photos, blog pictures, screenshots. Owner, 18/11/2026 (urban-legend videos): "lấy ảnh
              thoải mái, ảnh phim cũng được, ghi nguồn là được". Licence recorded as "引用 (<site>)", the page kept for
              the credit. Japanese words are fine (`web: きさらぎ駅 映画`); give a "want" in English so CLIP can rank them.
@@ -380,11 +380,49 @@ def web_item(source, title, page, url, preview=None, width=None, height=None):
     return item(source, title, page, url, f'引用 ({site(page or url)})', site(page or url), width=width, height=height, preview=preview)
 
 
+DEBUG_DIR = None   # set by main(): a web search that finds nothing keeps the page it got there (web-<engine>-<n>.txt)
+
+
+def keep_page(engine, page):
+    if DEBUG_DIR:
+        n = len([f for f in os.listdir(DEBUG_DIR) if f.startswith(f'web-{engine}-')]) + 1
+        open(f'{DEBUG_DIR}/web-{engine}-{n}.txt', 'w', encoding='utf-8').write(page[:300000])
+    print(f'  web/{engine}: nothing read from a page of {len(page)} characters')
+
+
+def yahoo(q, n):
+    """Yahoo! JAPAN image search (its page carries the results as JSON): pictures from Japanese sites first."""
+    page = get('https://search.yahoo.co.jp/image/search?' + urllib.parse.urlencode({'p': q, 'ei': 'UTF-8'}), tries=2, timeout=30,
+               headers=BROWSER).decode('utf-8', 'replace')
+    out, seen = [], set()
+    def walk(d):
+        if len(out) >= n: return
+        if isinstance(d, dict):
+            orig = d.get('original') if isinstance(d.get('original'), dict) else {}
+            img = orig.get('url') or ''
+            if img.startswith('http') and img not in seen:
+                seen.add(img); thumb = d.get('thumbnail') if isinstance(d.get('thumbnail'), dict) else {}
+                out.append(web_item('web/yahoo', d.get('title', ''), d.get('refererUrl') or d.get('url') or '', img, thumb.get('url'),
+                                    orig.get('width'), orig.get('height')))
+            for v in d.values(): walk(v)
+        elif isinstance(d, list):
+            for v in d: walk(v)
+    for m in re.finditer(r'<script[^>]*>(\{.*?\})</script>', page, re.S):
+        try: walk(json.loads(m.group(1)))
+        except ValueError: pass
+    if not out: keep_page('yahoo', page)
+    return out
+
+
 def bing(q, n):
-    """Bing image results (its async result page, no key): murl = the picture, purl = its page, turl = a small one."""
-    url = 'https://www.bing.com/images/async?' + urllib.parse.urlencode(
-        {'q': q, 'first': 0, 'count': max(35, n), 'mmasync': 1, 'setlang': 'ja', 'cc': 'JP', 'adlt': 'moderate'})
-    page = get(url, tries=2, timeout=30, headers=BROWSER).decode('utf-8', 'replace')
+    """Bing image results (its async result page, else its full result page; no key): murl = the picture, purl =
+    its page, turl = a small one."""
+    page = ''
+    for url in ('https://www.bing.com/images/async?' + urllib.parse.urlencode(
+                    {'q': q, 'first': 0, 'count': max(35, n), 'mmasync': 1, 'setlang': 'ja', 'cc': 'JP', 'adlt': 'moderate'}),
+                'https://www.bing.com/images/search?' + urllib.parse.urlencode({'q': q, 'form': 'HDRSC2', 'first': 1, 'setlang': 'ja', 'cc': 'JP'})):
+        page = get(url, tries=2, timeout=30, headers=BROWSER).decode('utf-8', 'replace')
+        if 'iusc' in page: break
     out = []
     for tag in re.findall(r'<a\b[^>]*class="iusc"[^>]*>', page):
         m = re.search(r'\sm="([^"]+)"', tag)
@@ -394,6 +432,7 @@ def bing(q, n):
         if d.get('murl', '').startswith('http'):
             out.append(web_item('web/bing', d.get('t') or d.get('desc') or '', d.get('purl', ''), d['murl'], d.get('turl')))
         if len(out) >= n: break
+    if not out: keep_page('bing', page)
     return out
 
 
@@ -402,17 +441,19 @@ def ddg(q, n):
     page = get('https://duckduckgo.com/?' + urllib.parse.urlencode({'q': q, 'iax': 'images', 'ia': 'images'}), tries=2, timeout=30,
                headers=BROWSER).decode('utf-8', 'replace')
     m = re.search(r'vqd=["\']?([\d-]+)', page)
-    if not m: raise RuntimeError('duckduckgo: no token')
+    if not m: keep_page('ddg', page); raise RuntimeError('duckduckgo: no token')
     d = json.loads(get('https://duckduckgo.com/i.js?' + urllib.parse.urlencode({'l': 'jp-jp', 'o': 'json', 'q': q, 'vqd': m.group(1), 'f': ',,,,,', 'p': '1'}),
                        tries=2, timeout=30, headers={**BROWSER, 'Referer': 'https://duckduckgo.com/'}))
-    return [web_item('web/ddg', r.get('title', ''), r.get('url', ''), r['image'], r.get('thumbnail'), r.get('width'), r.get('height'))
-            for r in d.get('results', [])[:n] if r.get('image', '').startswith('http')]
+    out = [web_item('web/ddg', r.get('title', ''), r.get('url', ''), r['image'], r.get('thumbnail'), r.get('width'), r.get('height'))
+           for r in d.get('results', [])[:n] if r.get('image', '').startswith('http')]
+    if not out: keep_page('ddg', json.dumps(d, ensure_ascii=False))
+    return out
 
 
 def web(q, n):
-    """Pictures from the whole web: Bing first, DuckDuckGo to fill up or when Bing fails (see the module text)."""
+    """Pictures from the whole web: Bing, then Yahoo! JAPAN and DuckDuckGo to fill up (see the module text)."""
     out, errors = [], []
-    for f in (bing, ddg):
+    for f in (bing, yahoo, ddg):
         if len(out) >= n: break
         try:
             seen = {r['thumb'] for r in out}
@@ -591,6 +632,7 @@ def main():
     if queries[:1] == ['--spec']:
         queries = json.load(open(queries[1], encoding='utf-8'))
     os.makedirs(out, exist_ok=True)
+    global DEBUG_DIR; DEBUG_DIR = out
     index, kept_hashes = [], seen_hashes()
     dropped = {'small': 0, 'duplicate': 0, 'unfit': 0, 'unsuitable': 0, 'failed': 0}
     for k, q in enumerate(queries, 1):
