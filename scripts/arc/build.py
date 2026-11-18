@@ -29,7 +29,7 @@ lines = json.load(open(f'{pub}/{base}/voice/lines.json', encoding='utf-8'))
 dur = {r['i']: r['duration'] for r in lines}
 text = {r['i']: r['text'] for r in lines}
 os.makedirs(out, exist_ok=True)
-STYLE = spec.get('style', 'paper')   # paper (default, owner 13/11) | warm | classic — see src/arc/ArcV.tsx
+STYLE = spec.get('style', 'paper')   # paper (default, owner 13/11) | warm | classic | horror (legends, 18/11) — see src/arc/ArcV.tsx
 scenes_in = spec['scenes']
 if len(lines) != len(spec['lines']):
     raise SystemExit(f'giọng đọc có {len(lines)} câu, script.json có {len(spec["lines"])} câu: chạy lại bước prepare')
@@ -199,7 +199,31 @@ cards = []
 for c in spec.get('cards', []):
     k = int(c['at']); s_ = round(max(0.0, at_time(c['at']) - 0.15), 3)
     cards.append({'text': str(c['text']).replace('\\n', '\n'), 's': s_, 'e': round(s_ + max(1.6, min(3.0, dur[k] + 0.35)), 3), 'hl': c.get('hl', [])})
-plan = {'duration': total, 'theme': STYLE, **({'hook': hook} if hook else {}), **({'cards': cards} if cards else {}), 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
+# intro (owner 18/11: one hook shared by the videos of a series, as the board of the sample they sent): a 2×2 board of
+# the series' items with their names over the first lines; this video's item lights up when it is named.
+# script.json "intro": {"title": "…", "items": [{"img": "<picks image>", "name": "口裂け女"}, …], "pick": 1,
+#                       "name_at": <line that names it>, "until": <first line of the story>, "credit": "…"}
+intro = None
+if spec.get('intro'):
+    it = spec['intro']; items = []
+    for x in it['items'][:4]:
+        w, h = img_size(x['img']); items.append({'src': f"{base}/img/{x['img']}.jpg", 'w': w, 'h': h, 'name': x['name']})
+    intro = {'title': str(it.get('title', '')).replace('\\n', '\n'), 'items': items, 'pick': int(it.get('pick', 1)) - 1,
+             'mid': round(at_time(it.get('name_at', 2)) - 0.15, 3), 'e': round(at_time(it.get('until', 3)) - 0.15, 3),
+             'credit': it.get('credit', '')}
+extra = {}
+if STYLE == 'horror':   # film grain (one noise picture, moved every frame) and a low boom on every card and on the intro's pick
+    Image.fromarray(np.random.RandomState(7).randint(40, 216, (2160, 1280)).astype(np.uint8), 'L').convert('RGB').save(f'{pub}/{base}/grain.jpg', quality=80)
+    extra['grain'] = f'{base}/grain.jpg'
+    hits = [c['s'] for c in cards] + ([intro['mid']] if intro else [])
+    if hits:
+        fx = np.zeros(int((total + 1) * mg.SR))
+        for h_ in hits:
+            boom = np.zeros(int(2.2 * mg.SR)); mg.add(boom, mg.kick(1.0), 0); mg.add(boom, mg.tom(46, 0.9), 0.01)
+            mg.add(fx, mg.reverb(boom, secs=2.0, wet=0.45), h_)
+        mg.write_wav(f'{pub}/{base}/sfx.wav', fx / (np.abs(fx).max() or 1) * 0.9); extra['sfx'] = f'{base}/sfx.wav'
+plan = {'duration': total, 'theme': STYLE, **({'hook': hook} if hook else {}), **({'cards': cards} if cards else {}),
+        **({'intro': intro} if intro else {}), **extra, 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
         'musicVolume': spec.get('music_volume', 0.16), 'fonts': []}
 json.dump(plan, open(f'{out}/plan.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

@@ -37,9 +37,12 @@ for k, sh in enumerate(plan['shots'], 1):
     times = [sh['s'] + 0.05]
     late = [m['s'] + 0.2 for m in sh['marks']] + [p['zoom']['e'] + 0.05 for p in sh['pics'] if p.get('zoom')] \
            + [sh['e'] - 0.05 for p in sh['pics'] if p.get('move')]   # a pan / push: its last frame too
+    times += [c['s'] + 0.3 for c in plan.get('cards', []) if sh['s'] <= c['s'] < sh['e']]   # a card: while it is on
     if late: times.append(min(sh['e'] - 0.05, max(late)))
+    io = plan.get('intro')
+    if io and k == 1: times = [0.1, min(io['e'] - 0.05, io['mid'] + 0.4)]   # the board, before and after this video's item is named
     for t in times:
-        f = frame.draw(sh, t, sub_at(t), img_of, plan.get('theme', 'paper'), [plan.get('hook')] + plan.get('cards', [])).resize((TW, TH), Image.LANCZOS)
+        f = frame.draw(sh, t, sub_at(t), img_of, plan.get('theme', 'paper'), [plan.get('hook')] + plan.get('cards', []), plan.get('intro')).resize((TW, TH), Image.LANCZOS)
         tile = Image.new('RGB', (TW, TH + 24), (10, 10, 12)); tile.paste(f, (0, 24))
         ImageDraw.Draw(tile).text((4, 6), f"#{k} {sh['scene']}-{sh['shot']} {t:.1f}s{'*' if t != times[0] else ''} {sh.get('edit', '')}", fill=(255, 210, 90))
         tiles.append(tile)
