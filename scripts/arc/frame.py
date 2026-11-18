@@ -66,9 +66,11 @@ def draw(shot, t, sub, img_of, theme='paper', hook=None):
         im = Image.blend(im, Image.blend(bl, sep, 0.55), th['wash'])
     d = ImageDraw.Draw(im)
     b = shot['bar']
-    d.rectangle((72, b, 72 + 92, b + 6), fill=th['bar'])
-    if shot['label']: d.text((72, b + 46), shot['label'], fill=th['label'], font=font(40))
-    if shot['title']: d.text((69, b + 135 - 0.02 * shot['titleSize']), shot['title'], fill=th['title'], font=font(shot['titleSize']))
+    hooked = hook and t < hook['e'] and shot.get('scene') == 1 and shot.get('shot') == 1   # ArcV: the first header comes after the hook
+    if not hooked:
+        d.rectangle((72, b, 72 + 92, b + 6), fill=th['bar'])
+        if shot['label']: d.text((72, b + 46), shot['label'], fill=th['label'], font=font(40))
+        if shot['title']: d.text((69, b + 135 - 0.02 * shot['titleSize']), shot['title'], fill=th['title'], font=font(shot['titleSize']))
     m = th['mat']
     for i, p in enumerate(shot['pics']):
         x, y, w, h = p['box']; v = view_at(p, t, shot['s'], shot['e']); src = img_of(p['src'])
