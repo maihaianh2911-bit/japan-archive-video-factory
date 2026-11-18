@@ -212,10 +212,11 @@ def search():
 MAX_MB, TARGET_MB = 95, 90   # GitHub refuses files over 100 MB
 
 
-def encode(raw, dst, rate):
-    """Final encode of the Remotion output: H.264 + loudness-normalised AAC. rate = ['-crf', …] or a bitrate."""
+def encode(raw, dst, rate, loudness=-15.0):
+    """Final encode of the Remotion output: H.264 + loudness-normalised AAC. rate = ['-crf', …] or a bitrate.
+    loudness: integrated loudness in LUFS (script.json "loudness", default -15; owner 18/11: +40 % on issue 12)."""
     ff.run('-i', raw, '-c:v', 'libx264', '-preset', 'medium', *rate, '-pix_fmt', 'yuv420p',
-           '-af', 'loudnorm=I=-15:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '160k', '-ar', '48000', '-movflags', '+faststart', dst)
+           '-af', f'loudnorm=I={loudness:.1f}:TP=-1.5:LRA=11', '-c:a', 'aac', '-b:a', '160k', '-ar', '48000', '-movflags', '+faststart', dst)
 
 
 def fix_pending():
@@ -282,12 +283,12 @@ def render():
        '--gl=swiftshader', '--log=error', cwd=ROOT)
     plan = json.load(open(os.path.join(out, 'plan.json'), encoding='utf-8'))
     raw, video = os.path.join(out, 'raw.mp4'), os.path.join(WORK, 'video.mp4')
-    encode(raw, video, ['-crf', '24'])
+    encode(raw, video, ['-crf', '24'], plan.get('loudness', -15.0))
     mb = os.path.getsize(video) / 1e6
     if mb > MAX_MB:   # long videos only: an average bitrate that lands ~90 MB
         kbps = int(TARGET_MB * 8000 / plan['duration']) - 160
         print(f'video {mb:.1f} MB > {MAX_MB} MB (GitHub limit 100 MB): encoding again at {kbps} kbit/s', flush=True)
-        encode(raw, video, ['-b:v', f'{kbps}k', '-maxrate', f'{kbps}k', '-bufsize', f'{2 * kbps}k'])
+        encode(raw, video, ['-b:v', f'{kbps}k', '-maxrate', f'{kbps}k', '-bufsize', f'{2 * kbps}k'], plan.get('loudness', -15.0))
         mb = os.path.getsize(video) / 1e6
         print(f'video now {mb:.1f} MB', flush=True)
         if mb > 100: raise SystemExit(f'video {mb:.1f} MB, vẫn quá 100 MB')

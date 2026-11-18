@@ -343,32 +343,44 @@ all fixes in one push. Otherwise remove `arc-check`, add `arc-done` and comment 
   search-<r>.json, own/), that push already starts the run: do not dispatch it by hand as well.
 
 ## 5. `[Truyền thuyết]` — Japanese urban legends and horror stories (owner, 18/11/2026)
-The owner saw a foreign "8 urban legends" video and took **only the idea**, not its look ("hình ảnh của video mẫu
-rất xấu, tao lấy ý tưởng thôi"): a series of Japanese legends — きさらぎ駅, 八尺様, くねくね, 口裂け女,
-トイレの花子さん, 犬鳴村, 杉沢村, 牛の首, ひきこさん, 鮫島事件 … — **one story per video, 2–3 minutes**, never
-several stories in one video ("ko để video bị loãng"). A list in a chat ("8 truyện kinh dị") = 8 issues
-`[Truyền thuyết] <Japanese name> — <idea>`, one per story.
-- **Length**: 2–3 min ≈ 900–1300 Japanese characters (0.128 s per character measured, plus the pauses). The
-  iron rule (≥ 60 s) applies; 3 min is the Shorts limit, so stay under 175 s.
-- **Story**: tell it as it was first told (the date, the board, the poster's words), then what people found out,
-  then what is still unknown. Facts and sources as facts; the uncanny parts as what the poster wrote or what is
-  said (〜と書き込んだ, 〜といわれています). Nothing invented. No gore described.
-- **Hook (owner, 18/11: "cải thiện phần hook")** — the first 2 seconds decide whether a viewer stays:
-  - line 1 = the hook: the most uncanny fact or the end of the story, ≤ 20 characters, no date, no
-    introduction: 「どの地図にも載っていない駅がある。」, 「この書き込みを最後に、彼女は消えた。」 Never
-    「今日は〇〇を紹介します」 or the legend's name alone. Line 2 starts the story (「始まりは二〇〇四年…」).
-  - `"hook": "地図にない\n駅"` in `script.json`: 2–12 characters per row, at most 2 rows (`\n`), shown huge over
-    the first picture from the very first frame until line 1 has been said (2–4.5 s); `"hook_hl": ["地図にない"]`
-    colours a key word. The first header comes in after it.
-  - the first picture is the most striking one (the station sign, the figure, the place at night), not a map;
-    it is cut at the end of the hook line (second shot `"at": 2`).
-  - the last line leaves a question or the uncanny remainder (「次の電車が、いつもの駅に止まるとは限らない。」).
-- **Look**: `"style": "warm"` (dark: the picture blurred behind, gold frame) unless the owner asks for another;
-  `"pace": "fast"`, `"fade": 0.35`; about one picture per line (a new picture every 2–3 s), the motion of §2;
-  `"music": {"style": "tension", "mode": "minor", "bpm": 70, "energy": 0.3}`.
-- **Pictures**: `web:` queries (§1 `queries` 4) for the posts, the films, the places as people show them, plus
-  the open archives and Wikimedia for real places (stations, tunnels, villages, shrines). **Never AI pictures**
-  (owner, 18/11: "ko dùng hình AI, trên mạng có đủ nguồn hình"). Check every picture yourself: no gore, no
-  real victims' photos, no watermark across the middle, nothing that is another story's picture.
-- **Caption**: hook title (the hook line or a sharper one), 2–4 sentences, hashtags such as #都市伝説 #怖い話
-  #ネット怪談 #ホラー #shorts, `画像出典:` the sites and works.
+The owner sent a foreign "8 urban legends" video and asked to **learn how its script is written** and make the
+Japanese counterpart; its pictures they found ugly ("tao lấy ý tưởng thôi"). What they approved, step by step, on
+issue 12 (口裂け女): keep to it.
+- **A series, one story per video** ("ko để video bị loãng"): e.g. 「最恐の都市伝説 四選」 = four issues
+  `[Truyền thuyết] <name> — <series>（n）`, each 1.5–3 min (iron rule ≥ 60 s; stay under 175 s).
+- **In a chat the owner approves the script before anything is made**, and for the first video of a new series or
+  look, a **20-second trial** before the full render (render it yourself from `picks.json` kept off `main`:
+  `prep.py`, `build.py`, `fonts.py`, `npx remotion render … --frames=0-599 --public-dir=…`). Rejected drafts
+  (do not repeat): a slow literary retelling; a "top 4 in one video"; second-person "you are there"; a script
+  cut into headed parts; an ending with a rhetorical question.
+- **Script = the sample's way of writing**: a fast explainer in the third person, every sentence a new fact (a
+  name, a year, a place), **one unbroken flow** (each sentence picks up the last: その中身は、こうです。/ では…かというと、/
+  だから… / こうして… / ところが… / それでも…), never sections. Order: the shared hook → what it is and its rank
+  (「全国規模で広まった最初の都市伝説」) → when, where, how it spread → the story in short beats with **the quote**
+  (「私、きれい？」「これでも？」) → the variants → the rules to survive / to meet it → what happened in the real world
+  (police, arrests, films, an explanation) → **the ending connects to the next video of the series**
+  (「では、ネットの掲示板が生んだ怪異は、どこまで広がったのか。二つ目は、八尺様。続きは次の動画で。」).
+  Real-world facts are checked against sources before the voice step (WebSearch) and named in the comment;
+  the uncanny parts stay "it is said" (〜といわれます, 〜という話もあります). Nothing invented, no gore described.
+- **The shared hook**: the first lines are the same in every video of the series except the item
+  (「日本を震え上がらせた都市伝説・ネット怪談、最恐の四つを総チェック。一つ目は、口裂け女。」), over the series' board:
+  `"intro": {"title": "最恐の都市伝説\\n四選", "items": [{"img": "t1", "name": "口裂け女"}, … 4], "pick": 1,
+  "name_at": 3, "until": 4, "credit": "出典: …"}` — four numbered pictures (`picks.json` images, cropped so the
+  subject fills a 470 × 440 tile); this video's tile lights up when its name is said (`name_at` = that line),
+  the board ends when line `until` starts. It is on screen from the very first frame.
+- **Look**: `"style": "horror"` (black with a dark red glow, pictures darkened and cold with dark edges, film
+  grain, white outlined subtitles, blood-red key words), `"pace": "fast"`, `"fade": 0.3`, about one picture per
+  line, the motion of §2; `"music": {"style": "tension", "mode": "minor", "bpm": 66, "energy": 0.3}`.
+  `"cards": [{"at": 12, "text": "「私、きれい？」", "hl": ["きれい"]}]`: a quote shown huge over its picture with a
+  low boom and a short shake; its line is followed by half a second of silence (`"hold"`), so give that line its own
+  shot (a masked face, a dark close-up — not a text-heavy poster). `"loudness": -14.7` (owner 18/11: "âm thanh
+  tăng lên 40%" over the trial's mix; the default is -15 LUFS).
+- **Pictures**: `web:` queries (§1 `queries` 4) — film stills and posters named by film and year in the label
+  (`映画『口裂け女』（2007）`), newspaper articles of the time named by paper and date, the real places, the objects
+  the story names — plus the archives. **Never AI pictures** (owner: "ko dùng hình AI"): the web is full of
+  them, so leave out anything that looks generated (glossy "yokai card" art, book covers with AI art). Also
+  never: a watermark or a burnt-in copyright notice ("Copyright … All Rights Reserved", stock-site marks), gore
+  close-ups (an open bloody mouth), recognisable children from school blogs (backs are fine), real victims. A
+  slit-mouth make-up shot only where the line names it, never on the first frame or the board.
+- **Caption**: the quote or the hook as title, 2–4 sentences, the series and what comes next, hashtags such as
+  #都市伝説 #怖い話 #ネット怪談 #ホラー #shorts, `画像出典:` the films and sites.

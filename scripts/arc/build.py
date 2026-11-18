@@ -83,6 +83,8 @@ def img_size(name):
 
 # ---- timeline
 LEAD, TAIL = 0.25, 1.4
+# a line that carries a card (a quote shown large, "cards" below) is followed by a beat of silence ("hold", 0.5 s)
+HOLD = {int(c['at']): float(c.get('hold', 0.5)) for c in spec.get('cards', [])}
 # pauses after a sentence end / after a comma; "pace": "fast" (owner 17/11: "nhịp nhanh lên chút") tightens them
 GAP_END, GAP = (0.3, 0.12) if spec.get('pace') == 'fast' else (0.45, 0.25)
 t = LEAD; starts = {}; subs = []; voice = []
@@ -97,7 +99,7 @@ for sc in scenes_in:
         for cu in parts:   # cues share the line's time in proportion to their length; a line's first cue comes in with the cut
             cs = t + dur[i] * done / n_all - (0.15 if done == 0 else 0); done += len(''.join(cu)); ce = t + dur[i] * done / n_all
             subs.append({'s': round(cs, 3), 'e': round(ce, 3), 'text': '\n'.join(cu), 'hl': spec.get('hl', {}).get(str(i), [])})
-        t += dur[i] + (GAP_END if text[i].endswith(('。', '」', '？', '！')) else GAP)
+        t += dur[i] + (GAP_END if text[i].endswith(('。', '」', '？', '！')) else GAP) + HOLD.get(i, 0)
 total = round(t - 0.25 + TAIL, 3)
 # owner's iron rule (16/11/2026): no video under 60 s; under 60 s nothing is rendered
 MIN_S = float(os.environ.get('ARC_MIN_SECONDS', '60'))
@@ -198,7 +200,10 @@ if spec.get('hook'):
 cards = []
 for c in spec.get('cards', []):
     k = int(c['at']); s_ = round(max(0.0, at_time(c['at']) - 0.15), 3)
-    cards.append({'text': str(c['text']).replace('\\n', '\n'), 's': s_, 'e': round(s_ + max(1.6, min(3.0, dur[k] + 0.35)), 3), 'hl': c.get('hl', [])})
+    e_ = s_ + max(1.6, min(3.0, dur[k] + 0.35))
+    own = next((x for x in shots if x['s'] - 0.01 <= s_ < x['e']), None)   # a card never runs over the next picture
+    if own and own['e'] - s_ >= 0.8: e_ = min(e_, own['e'] - 0.05)
+    cards.append({'text': str(c['text']).replace('\\n', '\n'), 's': s_, 'e': round(e_, 3), 'hl': c.get('hl', [])})
 # intro (owner 18/11: one hook shared by the videos of a series, as the board of the sample they sent): a 2×2 board of
 # the series' items with their names over the first lines; this video's item lights up when it is named.
 # script.json "intro": {"title": "…", "items": [{"img": "<picks image>", "name": "口裂け女"}, …], "pick": 1,
@@ -223,7 +228,7 @@ if STYLE == 'horror':   # film grain (one noise picture, moved every frame) and 
             mg.add(fx, mg.reverb(boom, secs=2.0, wet=0.45), h_)
         mg.write_wav(f'{pub}/{base}/sfx.wav', fx / (np.abs(fx).max() or 1) * 0.9); extra['sfx'] = f'{base}/sfx.wav'
 plan = {'duration': total, 'theme': STYLE, **({'hook': hook} if hook else {}), **({'cards': cards} if cards else {}),
-        **({'intro': intro} if intro else {}), **extra, 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
+        **({'intro': intro} if intro else {}), **extra, 'loudness': max(-20.0, min(-11.0, float(spec.get('loudness', -15)))), 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
         'musicVolume': spec.get('music_volume', 0.16), 'fonts': []}
 json.dump(plan, open(f'{out}/plan.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 

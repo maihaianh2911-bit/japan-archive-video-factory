@@ -71,7 +71,7 @@ r60 = subprocess.run([sys.executable, os.path.join(S, 'build.py'), job, pub, N, 
                      env={**os.environ, 'ARC_MIN_SECONDS': '60'}, capture_output=True, text=True)
 assert r60.returncode != 0 and 'dưới 60 giây' in r60.stderr, r60.stderr   # owner's rule: under 60 s nothing is rendered
 fast = json.load(open(os.path.join(job, 'script.json'), encoding='utf-8')); fast['pace'] = 'fast'
-fast.update({'style': 'horror', 'intro': {'title': '最恐の都市伝説\\n四選', 'pick': 2, 'name_at': 2, 'until': 3, 'items': [
+fast.update({'loudness': -14.7, 'style': 'horror', 'intro': {'title': '最恐の都市伝説\\n四選', 'pick': 2, 'name_at': 2, 'until': 3, 'items': [
     {'img': 'site', 'name': '一'}, {'img': 'pano', 'name': '二'}, {'img': 'pillar', 'name': '三'}, {'img': 'site', 'name': '四'}]}})
 jf = os.path.join(tmp, 'jobfast'); shutil.copytree(job, jf); json.dump(fast, open(os.path.join(jf, 'script.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 run(sys.executable, os.path.join(S, 'build.py'), jf, pub, N, imgsrc, os.path.join(tmp, 'outfast'))
@@ -119,6 +119,7 @@ assert 'move' not in sh[2]['pics'][0] and sh[2]['pics'][0]['drift'] == 0 and pla
 assert 'move' not in sh[1]['pics'][0] and len(sh[1]['pics']) == 2                                       # picture + detail: no pan
 mv3 = sh[3]['pics'][0]['move']; assert abs((mv3['to'][2] - mv3['to'][0]) - (mv3['from'][2] - mv3['from'][0]) * 0.88) < 0.02 or mv3['from'][0] > mv3['to'][0]
 assert any(s['hl'] == ['円を描く'] for s in plan['subs']) and plan['fade'] == 0.6
+assert plan['loudness'] == -15.0 and pf['loudness'] == -14.7   # script.json "loudness" reaches the final encode
 assert plan['hook']['text'] == '一万二千年前の\n謎の遺跡' and 2.0 <= plan['hook']['e'] <= sh[0]['e']   # the hook stays over the first picture
 cd = plan['cards'][0]; assert abs(cd['s'] - sh[2]['s']) < 0.05 and 1.6 <= cd['e'] - cd['s'] <= 3.0 and cd['text'] == '第2位\n円形の石柱'   # a countdown card
 for sb in plan['subs']:

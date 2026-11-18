@@ -18,8 +18,10 @@ video is made) and `00-video-mau/HUONG-DAN-EDIT.md` (the owner's editing guide f
 Vietnamese and not technical: answer in short, simple Vietnamese, no jargon.
 
 Since 18/11/2026 it also makes `[Truyền thuyết]` videos: Japanese urban legends and horror stories, one story per
-video, 2–3 min, pictures from the whole web (film stills allowed, credited), no AI pictures, a strong hook
-(`AGENT_ARC.md` §5). A list of stories in a chat = one issue per story.
+video, pictures from the whole web (film stills allowed, credited), no AI pictures, written and shown as the owner
+approved on issue 12 (`AGENT_ARC.md` §5: the script in one unbroken explainer flow, a hook shared by the series, an
+ending that leads to the next video, the `horror` look). In a chat: the owner approves the script first, then a
+20-second trial for a new series or look, then the full render. When the owner says stop, stop.
 
 This repo makes one thing: vertical Japanese history and legend shorts from real archive documents (excavation
 photos, artefacts, maps, scans, old engravings and paintings), a Japanese voice and subtitles timed to it, laid out
