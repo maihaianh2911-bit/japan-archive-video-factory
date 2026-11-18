@@ -1,0 +1,534 @@
+{
+ "images": {
+  "2-5": {
+   "src": "1/2-5.jpg"
+  },
+  "8-4": {
+   "src": "1/8-4.jpg"
+  },
+  "4-3": {
+   "src": "1/4-3.jpg"
+  },
+  "2-2": {
+   "src": "1/2-2.jpg"
+  },
+  "7-6": {
+   "src": "1/7-6.jpg"
+  },
+  "5-2": {
+   "src": "1/5-2.jpg"
+  },
+  "6-1": {
+   "src": "1/6-1.jpg"
+  },
+  "11-6": {
+   "src": "1/11-6.jpg"
+  },
+  "11-8": {
+   "src": "1/11-8.jpg"
+  },
+  "7-5": {
+   "src": "1/7-5.jpg"
+  },
+  "16-1": {
+   "src": "1/16-1.jpg"
+  },
+  "8-1": {
+   "src": "1/8-1.jpg"
+  },
+  "18-4": {
+   "src": "1/18-4.jpg"
+  },
+  "8-3": {
+   "src": "1/8-3.jpg"
+  },
+  "10-7": {
+   "src": "1/10-7.jpg"
+  },
+  "8-2": {
+   "src": "1/8-2.jpg"
+  },
+  "2-7": {
+   "src": "1/2-7.jpg"
+  },
+  "8-7": {
+   "src": "1/8-7.jpg"
+  },
+  "11-3": {
+   "src": "1/11-3.jpg"
+  },
+  "12-3": {
+   "src": "1/12-3.jpg"
+  },
+  "13-1": {
+   "src": "1/13-1.jpg"
+  },
+  "11-5": {
+   "src": "1/11-5.jpg"
+  },
+  "11-4": {
+   "src": "1/11-4.jpg"
+  },
+  "14-3": {
+   "src": "1/14-3.jpg"
+  },
+  "14-7": {
+   "src": "1/14-7.jpg"
+  },
+  "14-2": {
+   "src": "1/14-2.jpg"
+  },
+  "15-8": {
+   "src": "1/15-8.jpg"
+  },
+  "15-4": {
+   "src": "1/15-4.jpg"
+  },
+  "14-1": {
+   "src": "1/14-1.jpg"
+  },
+  "2-1": {
+   "src": "1/2-1.jpg"
+  },
+  "8-5": {
+   "src": "1/8-5.jpg"
+  },
+  "2-4": {
+   "src": "1/2-4.jpg"
+  },
+  "8-6": {
+   "src": "1/8-6.jpg"
+  },
+  "5-1": {
+   "src": "1/5-1.jpg"
+  },
+  "1-4": {
+   "src": "1/1-4.jpg"
+  },
+  "17-2": {
+   "src": "1/17-2.jpg"
+  }
+ },
+ "scenes": [
+  {
+   "shots": [
+    {
+     "img": "2-5",
+     "edit": "troi-cham",
+     "why": "mở bằng tấm biển ga Kisaragi trong phim: chữ móc đè lên",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: youtube.com"
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "8-4",
+     "edit": "so-lieu",
+     "why": "mốc thời gian 2004",
+     "label": "夜の無人駅（イメージ）",
+     "credit": "出典: astroarts.co.jp",
+     "title": "二〇〇四年一月八日"
+    },
+    {
+     "img": "4-3",
+     "edit": "dung-yen",
+     "why": "câu nhắc 2ちゃんねる: một trang bài đăng",
+     "label": "匿名掲示板の書き込み（イメージ）",
+     "credit": "出典: ddnavi.com",
+     "at": 4
+    },
+    {
+     "img": "2-2",
+     "edit": "troi-cham",
+     "why": "tàu chạy lạ: người phụ nữ trên tàu đêm",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: eiga.com",
+     "at": 6
+    },
+    {
+     "img": "7-6",
+     "edit": "troi-cham",
+     "why": "cuộc trao đổi kéo dài trên chuyến tàu",
+     "label": "夜のローカル線の車内（イメージ）",
+     "credit": "出典: pakutaso.com",
+     "at": 7
+    },
+    {
+     "img": "5-2",
+     "edit": "troi-cham",
+     "why": "câu nhắc ga Shin-Hamamatsu",
+     "label": "新浜松駅（静岡県浜松市）",
+     "credit": "出典: agui.net",
+     "at": 8
+    },
+    {
+     "img": "6-1",
+     "edit": "troi-cham",
+     "why": "tàu tư nhân quen thuộc",
+     "label": "遠州鉄道の電車（夜）",
+     "credit": "出典: x.com",
+     "at": 9
+    },
+    {
+     "img": "11-6",
+     "edit": "troi-cham",
+     "why": "tàu không dừng",
+     "label": "夜の線路（イメージ）",
+     "credit": "出典: publicdomainq.net",
+     "at": 10
+    },
+    {
+     "img": "11-8",
+     "edit": "so-lieu",
+     "why": "con số 20 phút",
+     "label": "夜の線路（イメージ）",
+     "credit": "出典: ganref.jp",
+     "at": 11,
+     "title": "二十分以上"
+    },
+    {
+     "img": "7-5",
+     "edit": "troi-cham",
+     "why": "hành khách như đang ngủ",
+     "label": "夜の車内（イメージ）",
+     "credit": "出典: trafficnews.jp",
+     "at": 12
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "4-3",
+     "edit": "dung-yen",
+     "why": "người trên diễn đàn trả lời",
+     "label": "匿名掲示板の書き込み（イメージ）",
+     "credit": "出典: ddnavi.com",
+     "view": [
+      0,
+      0.35,
+      1,
+      1
+     ]
+    },
+    {
+     "img": "16-1",
+     "edit": "troi-cham",
+     "why": "điện thoại vẫn có sóng",
+     "label": "当時の携帯電話",
+     "credit": "出典: irodori-kurasu.essay.jp",
+     "at": 14
+    },
+    {
+     "img": "8-1",
+     "edit": "troi-cham",
+     "why": "tàu dừng ở một ga vắng",
+     "label": "夜の無人駅（イメージ）",
+     "credit": "出典: soraumi-doggie.com",
+     "at": 15
+    },
+    {
+     "img": "2-5",
+     "edit": "khoanh",
+     "why": "khoanh tấm biển きさらぎ",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: youtube.com",
+     "at": 16,
+     "marks": [
+      {
+       "at": 16.45,
+       "box": [
+        0.04,
+        0.22,
+        0.47,
+        0.62
+       ],
+       "shape": "rect"
+      }
+     ]
+    },
+    {
+     "img": "18-4",
+     "edit": "dung-yen",
+     "why": "chữ 如月",
+     "label": "「如月」（二月の和風月名）",
+     "credit": "出典: nihon-nenchugyoji.jp",
+     "at": 17
+    },
+    {
+     "img": "8-3",
+     "edit": "troi-cham",
+     "why": "không tìm thấy ga nào như vậy",
+     "label": "夜の無人駅（イメージ）",
+     "credit": "出典: pakutaso.com",
+     "at": 18
+    },
+    {
+     "img": "10-7",
+     "edit": "troi-cham",
+     "why": "bên ngoài chỉ có đồng cỏ và núi",
+     "label": "夜の草原と山（イメージ）",
+     "credit": "出典: enjoy-my-aso.jp",
+     "at": 19
+    },
+    {
+     "img": "8-2",
+     "edit": "troi-cham",
+     "why": "không có nhân viên, không có ai",
+     "label": "夜の無人駅（イメージ）",
+     "credit": "出典: ganref.jp",
+     "at": 20
+    },
+    {
+     "img": "2-7",
+     "edit": "troi-cham",
+     "why": "gọi về nhà nhưng không nói được mình ở đâu",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: skyperfectv.co.jp",
+     "at": 21
+    },
+    {
+     "img": "8-7",
+     "edit": "troi-cham",
+     "why": "gọi cảnh sát bị tưởng là trêu",
+     "label": "夜の駅舎（イメージ）",
+     "credit": "出典: ganref.jp",
+     "at": 23
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "11-3",
+     "edit": "troi-cham",
+     "why": "đi bộ dọc đường ray",
+     "label": "月明かりの線路（イメージ）",
+     "credit": "出典: pakutaso.com"
+    },
+    {
+     "img": "12-3",
+     "edit": "troi-cham",
+     "why": "tiếng trống",
+     "label": "夜祭りの和太鼓（イメージ）",
+     "credit": "出典: sumitai.ne.jp",
+     "at": 25
+    },
+    {
+     "img": "13-1",
+     "edit": "troi-cham",
+     "why": "tiếng chuông",
+     "label": "神社の鈴（イメージ）",
+     "credit": "出典: oshiete-oterasan.com",
+     "at": 25.55,
+     "view": [
+      0,
+      0,
+      1,
+      0.8
+     ]
+    },
+    {
+     "img": "11-5",
+     "edit": "troi-cham",
+     "why": "giọng nói gọi từ phía sau",
+     "label": "夜の線路（イメージ）",
+     "credit": "出典: charitetsu.jp",
+     "at": 26
+    },
+    {
+     "img": "11-4",
+     "edit": "troi-cham",
+     "why": "một ông lão một chân (không có ảnh thật: chỉ đường ray đêm)",
+     "label": "夜の線路（イメージ）",
+     "credit": "出典: ganref.jp",
+     "at": 27
+    },
+    {
+     "img": "14-3",
+     "edit": "troi-cham",
+     "why": "biến mất ngay",
+     "label": "夜のトンネル（イメージ）",
+     "credit": "出典: reddit.com",
+     "at": 28
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "14-7",
+     "edit": "troi-cham",
+     "why": "đường hầm Isanuki",
+     "label": "古いトンネル（イメージ）",
+     "credit": "出典: motospot.jp"
+    },
+    {
+     "img": "14-2",
+     "edit": "troi-cham",
+     "why": "bên trong tối om",
+     "label": "トンネルの中（イメージ）",
+     "credit": "出典: chunichi.co.jp",
+     "at": 30
+    },
+    {
+     "img": "15-8",
+     "edit": "troi-cham",
+     "why": "gặp một chiếc xe",
+     "label": "夜道の車（イメージ）",
+     "credit": "出典: kentazzw30.blog.fc2.com",
+     "at": 31
+    },
+    {
+     "img": "15-4",
+     "edit": "troi-cham",
+     "why": "người đàn ông chở ra ga",
+     "label": "夜の山道（イメージ）",
+     "credit": "出典: carshares.jp",
+     "at": 32
+    },
+    {
+     "img": "14-1",
+     "edit": "troi-cham",
+     "why": "xe đi về phía núi",
+     "label": "夜の山道のトンネル（イメージ）",
+     "credit": "出典: chunichi.co.jp",
+     "at": 33
+    },
+    {
+     "img": "2-1",
+     "edit": "troi-cham",
+     "why": "người đàn ông im lặng dần",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: online.stereosound.co.jp",
+     "at": 34
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "4-3",
+     "edit": "dung-yen",
+     "why": "bài đăng cuối cùng",
+     "label": "匿名掲示板の書き込み（イメージ）",
+     "credit": "出典: ddnavi.com",
+     "view": [
+      0,
+      0,
+      1,
+      0.6
+     ]
+    },
+    {
+     "img": "16-1",
+     "edit": "troi-cham",
+     "why": "pin sắp hết",
+     "label": "当時の携帯電話",
+     "credit": "出典: irodori-kurasu.essay.jp",
+     "at": 36
+    },
+    {
+     "img": "8-5",
+     "edit": "troi-cham",
+     "why": "có gì đó lạ, định tìm cách trốn",
+     "label": "夜の無人駅（イメージ）",
+     "credit": "出典: kumapapa.jp",
+     "at": 37
+    },
+    {
+     "img": "2-4",
+     "edit": "troi-cham",
+     "why": "từ đó không viết thêm lần nào nữa",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: kisaragimovie.com",
+     "at": 39
+    },
+    {
+     "img": "8-6",
+     "edit": "troi-cham",
+     "why": "mọi người vẫn chờ",
+     "label": "夜の無人駅（イメージ）",
+     "credit": "出典: kumapapa.jp",
+     "at": 40
+    }
+   ]
+  },
+  {
+   "shots": [
+    {
+     "img": "4-3",
+     "edit": "dung-yen",
+     "why": "có người cho là bịa",
+     "label": "匿名掲示板の書き込み（イメージ）",
+     "credit": "出典: ddnavi.com",
+     "view": [
+      0,
+      0.2,
+      1,
+      0.85
+     ]
+    },
+    {
+     "img": "5-1",
+     "edit": "troi-cham",
+     "why": "Entetsu không có ga tên đó",
+     "label": "新浜松駅（遠州鉄道）",
+     "credit": "出典: kaisatsugazo.net",
+     "at": 43
+    },
+    {
+     "img": "1-4",
+     "edit": "troi-cham",
+     "why": "ga Saginomiya, được cho là hình mẫu",
+     "label": "遠州鉄道 さぎの宮駅",
+     "credit": "出典: gigazine.net",
+     "at": 44
+    },
+    {
+     "img": "17-2",
+     "edit": "troi-cham",
+     "why": "ga Saginomiya ban ngày",
+     "label": "遠州鉄道 さぎの宮駅",
+     "credit": "出典: train.entetsu.co.jp",
+     "at": 44.55
+    },
+    {
+     "img": "2-1",
+     "edit": "troi-cham",
+     "why": "vẫn được kể trên mạng",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: online.stereosound.co.jp",
+     "at": 45
+    },
+    {
+     "img": "2-4",
+     "edit": "so-lieu",
+     "why": "năm 2022 thành phim",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: kisaragimovie.com",
+     "at": 46,
+     "title": "二〇二二年"
+    },
+    {
+     "img": "8-4",
+     "edit": "troi-cham",
+     "why": "chuyến tàu quen chưa chắc dừng ga quen",
+     "label": "夜の無人駅（イメージ）",
+     "credit": "出典: astroarts.co.jp",
+     "at": 47
+    },
+    {
+     "img": "2-5",
+     "edit": "ket",
+     "why": "kết lại bằng tấm biển きさらぎ",
+     "label": "映画『きさらぎ駅』（2022）",
+     "credit": "映画『きさらぎ駅』（2022）／出典: youtube.com",
+     "at": 48
+    }
+   ]
+  }
+ ]
+}
