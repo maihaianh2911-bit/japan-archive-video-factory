@@ -31,10 +31,11 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  # 1) The owner (or a collaborator) opens a [Lịch sử] issue → wait for Claude's plan, wake Claude now
+  # 1) The owner (or a collaborator) opens a [Lịch sử] issue, or a [Truyền thuyết] one (Japanese urban legends and
+  #    horror stories, one story per video, 2–3 min, owner 18/11) → wait for Claude's plan, wake Claude now
   start:
     if: >-
-      github.event_name == 'issues' && startsWith(github.event.issue.title, '[Lịch sử]')
+      github.event_name == 'issues' && (startsWith(github.event.issue.title, '[Lịch sử]') || startsWith(github.event.issue.title, '[Truyền thuyết]'))
       && contains(fromJson('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
     runs-on: ubuntu-24.04
     steps:
