@@ -9,12 +9,32 @@
    line of this channel's earlier videos); after the voice step, read the real length of the speech (the machine
    comment gives it). If the video would be under 60 seconds, **write the script longer** (more true facts and
    detail on the same subject, in the owner's tone, nothing invented) until it passes 60 seconds, tell the owner on
-   the issue what was added, and only then go on. This is the one exception to "never change the owner's script".
+   the issue what was added, and only then go on (a script may be changed for this as for any improvement, see the rule changes of 19/11/2026).
    Never render or deliver a video under 60 seconds. Only exception: a trial or sample video — the owner says so,
    or the issue title or notes say `thử`, `mẫu`, `test` or `demo`.
 3. **Every video is vertical (1080×1920) and 80–160 seconds long** (owner, 18/11/2026: "tất cả các kênh đều làm
    dạng dọc, 80-160s thôi"). Write the script for that length: under 80 s add true scenes and details of the same
    story (never padding), over 160 s cut repetition. Trial or sample videos are the exception, as in rule 2.
+
+## The owner's rule changes of 19/11/2026 — they win over any older sentence in this file or in `AGENT_ARC.md`
+The owner read the list of the hard rules and said of several of them "mấy cái này ko hợp lí", then chose what
+replaces each (the same in every repo of the owner's Japanese channels):
+1. **A script the owner sends may be improved** (owner: "Sửa cả kịch bản tao gửi"): Claude may cut, add and rewrite
+   it so that it is better and more gripping, keeping the owner's story and main idea. It is no longer translated
+   sentence by sentence and left as it is (the rule of 12/11/2026). Say on the issue or in the chat what was changed.
+2. **Rumours and unconfirmed details may be told on every channel** (owner: "Dùng tin đồn ở mọi kênh"): framed as
+   told at the key line (「…と噂されています」, 「…といいます」, 「〜という説もある」), and the posting caption says so in a ※
+   note (which part is a rumour, what is known).
+3. **The telling may be dramatised** (owner: "Thêm thắt cho kịch tính"): feelings, a narrator's lead-in, suspense,
+   the order of the telling. The one line that stays: an event or a quote of a real person is never made up and
+   told as a fact (a legend is told as people tell it; a rumour nobody tells is not made up).
+4. **The ending is free** (owner: "Tự do, miễn hay"): whatever ends this story best — a line that stays, a last
+   surprising detail, a return to the opening, a question to the viewer, a lead to the next video. No fixed form.
+5. **The voice and the music of a video the owner sends may be used**, as its pictures and footage are (owner:
+   "Được dùng cả nhạc và giọng"). The owner was told the risk: music under copyright is recognised by YouTube
+   (a muted video, lost revenue, a strike), and the more of the source a video carries, the more it counts as
+   reused content. This repo's machine cannot put a sound of the source into a video yet: that needs new code and a
+   trial the owner approves.
 
 Read `docs/HANDOVER.md` first (the owner, their standing decisions, the current state), then `AGENT_ARC.md` (how a
 video is made) and `00-video-mau/HUONG-DAN-EDIT.md` (the owner's editing guide for the approved sample). The owner is
@@ -65,8 +85,8 @@ Iron rule (owner, 16/11/2026): **no video under 60 s** — under 60 s nothing is
 ## A video the owner sends (owner, 19/11/2026, for every repo)
 "nếu repo nào đc dựng bằng cách remix video hoặc tao có gửi video, có thể sử dụng hình ảnh/video trong video tao gửi":
 when a video of this repo is made from a video the owner sent (a remix, or a video sent in the chat), **the pictures
-and the footage of that video may be used** in ours, beside the pictures of our own search. Still the rule: never its
-voice or its music; a frame with the source's caption, logo or watermark over the picture is cropped clean or left;
+and the footage of that video may be used** in ours, beside the pictures of our own search, and its voice and music
+too (owner, later on 19/11: "Được dùng cả nhạc và giọng"). Still the rule: a frame with the source's caption, logo or watermark over the picture is cropped clean or left;
 credited 元動画; told in our own words (YouTube penalises reused content: the more of the source a video shows, the
 higher that risk, told to the owner). The shared note is in `maihaianh2911-bit/japan-video-factory` →
 `docs/KENH-NHAT.md`; `tools/video_frames.py` of `japan-news-video-factory` lays out the shots of a video to choose

@@ -54,10 +54,9 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
            "page": "https://doi.org/10.1371/journal.pone.0215214.g001", "title": "Göbekli Tepe aerial view (PLOS ONE 2019, Fig 1)",
            "artist": "E. Kücük, German Archaeological Institute", "license": "CC BY 4.0"}]}
 ```
-- `lines`: one spoken line each (one sentence, ≤ ~26 characters: it shows as at most two subtitle rows). Japanese
-  script → keep the owner's words exactly, only split. Vietnamese script → translate into natural spoken Japanese
-  narration (plain だ/である style as the sample, or です/ます if the owner's text is polite), faithful, nothing
-  added. Unconfirmed interpretations (lost civilisations, Atlantis, ancient maps "showing Antarctica"…) stay
+- `lines`: one spoken line each (one sentence, ≤ ~26 characters: it shows as at most two subtitle rows). Japanese or Vietnamese script → natural spoken Japanese narration (plain だ/である style as the sample, or
+  です/ます if the owner's text is polite), improved where that makes it better (owner, 19/11/2026: "Sửa cả kịch bản
+  tao gửi"; before: the owner's words exactly, faithful, nothing added; `CLAUDE.md`, the rule changes of 19/11/2026). Unconfirmed interpretations (lost civilisations, Atlantis, ancient maps "showing Antarctica"…) stay
   hypotheses in the Japanese (〜という説もある, 〜と考える人もいる) — the owner's guide asks for this.
 - **Picture-ability** (owner's guide): a line that names something no real document can show → first look for a real
   document directly related (§2); only if none exists, rephrase that line minimally so it matches what can be
