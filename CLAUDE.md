@@ -36,6 +36,34 @@ replaces each (the same in every repo of the owner's Japanese channels):
    reused content. This repo's machine cannot put a sound of the source into a video yet: that needs new code and a
    trial the owner approves.
 
+## The picture rules of the edit (owner, 19/11/2026: "hook 5s đầu phải là ảnh đẹp, rồi ảnh k bị mất mặt") — approved one by one
+Each rule is a question a look at the picture answers with yes or no. A picture that fails one is not used as it
+is: frame it again, pick another, or search again. For every channel of the owner; here they are checked by eye
+at the preview and the review (`japan-news-video-factory` and `japan-remix-video-factory` also have a machine
+that warns of cut faces, `news/faces.py`).
+
+**The first picture (the hook, about the first 5 seconds)**
+1. It is the best picture of the whole video: sharp, bright, not blurred, not grainy.
+2. It shows the face of the main person clearly, or a place or a thing the Japanese audience recognises at once.
+3. It matches the opening line: the right person, the story being told.
+4. It is a photograph: not a newspaper page, a document, a collage with text or a picture with a logo (on this channel, whose pictures are archive documents, the first picture is the clearest document or photograph of the subject itself).
+5. The face is in the upper half of the frame, clear of the text printed over the picture.
+
+**Faces (every scene)**
+6. The whole face, forehead to chin, stays inside the frame for as long as the picture is shown, while it zooms or
+   pans too.
+7. The text on the picture (a title, a card, a tag, the subtitles) does not lie over a face.
+8. In a picture of several people, the one being spoken of is the clearest; if not, frame that person or change
+   the picture.
+9. A scene about one person does not use a picture in which that person's face is very small.
+
+**Every picture**
+10. When no picture passes, search again; if there is still none, tell the owner which scene lacks one. A poor
+    picture is never taken just to be done.
+
+The owner turned down two more that were proposed, so they are **not** rules: "a picture is used only once in a
+video, and two near-identical pictures are not put side by side", and "the last picture must be a fine one too".
+
 Read `docs/HANDOVER.md` first (the owner, their standing decisions, the current state), then `AGENT_ARC.md` (how a
 video is made) and `00-video-mau/HUONG-DAN-EDIT.md` (the owner's editing guide for the approved sample). The owner is
 Vietnamese and not technical: answer in short, simple Vietnamese, no jargon.
