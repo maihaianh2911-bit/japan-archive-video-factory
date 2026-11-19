@@ -1,0 +1,242 @@
+{
+ "title": "口裂け女の真実",
+ "voice": "clone_190",
+ "style": "horror",
+ "fade": 0.3,
+ "pace": "fast",
+ "loudness": -14.7,
+ "hook": "口裂け女の\n口が裂けた理由\nにまつわる都市伝説",
+ "hook_hl": [
+  "口が裂けた理由"
+ ],
+ "head": {
+  "label": "怖い都市伝説",
+  "title": "口裂け女の真実"
+ },
+ "cards": [
+  {
+   "at": 3,
+   "text": "「犬神の祟り」",
+   "hl": [
+    "祟り"
+   ]
+  },
+  {
+   "at": 14,
+   "text": "「わたし、きれい？」",
+   "hl": [
+    "きれい"
+   ]
+  }
+ ],
+ "lines": [
+  "口裂け女の口が裂けた理由にまつわる都市伝説。",
+  "多くの人は、整形手術に失敗したせいだと思っている。",
+  "だが本当の理由は、「犬神の祟り」だ。",
+  "犬神とは、四国で恐れられてきた、犬の霊の憑きもの。",
+  "飢えた犬の首をはね、その怨念を呪いに使ったのが始まりだ。",
+  "室町時代には、幕府が犬神使いを罰せよと命じたほどだ。",
+  "口裂け女の一族は、先祖の悪行のせいで、代々この犬神に呪われていた。",
+  "そして彼女自身も、牙をむく犬のように、口を耳まで裂かれてしまった。",
+  "犬神に憑かれた者は、心を病み、犬のように吠え、犬のまねをする。",
+  "最初の噂の口裂け女が、「精神科から逃げた女」だったのもそのためだ。",
+  "目撃されるのがいつも女なのも、犬神が女に憑くからだ。",
+  "漫画『地獄先生ぬ〜べ〜』でも、口裂け女は犬神憑きの家の末裔として描かれた。",
+  "ポマードを嫌うのも、犬神のせいで鼻が利きすぎるからだ。",
+  "赤い服にマスクの女に「わたし、きれい？」と聞かれたら、それは犬神に憑かれた口裂け女だ。",
+  "口は災いの元。答えを間違えれば、その牙で食い殺される。"
+ ],
+ "tts": {
+  "1": "くちさけおんなの、口が裂けた理由にまつわる、都市伝説。",
+  "2": "多くの人は、せいけいしゅじゅつに失敗したせいだと思っている。",
+  "3": "だが、本当の理由は、いぬがみの、たたりだ。",
+  "4": "いぬがみとは、しこくで恐れられてきた、犬の霊の、つきもの。",
+  "5": "うえた犬の首をはね、その、おんねんを、のろいに使ったのが始まりだ。",
+  "6": "むろまち時代には、ばくふが、いぬがみつかいを、罰せよと命じたほどだ。",
+  "7": "くちさけおんなの一族は、先祖の、あくぎょうのせいで、だいだい、この、いぬがみに呪われていた。",
+  "8": "そして、彼女自身も、牙をむく犬のように、口を、耳まで裂かれてしまった。",
+  "9": "いぬがみに、つかれた者は、心を病み、犬のように吠え、犬のまねをする。",
+  "10": "最初のうわさの、くちさけおんなが、せいしんかから逃げた女だったのも、そのためだ。",
+  "11": "目撃されるのが、いつも女なのも、いぬがみが、女に、つくからだ。",
+  "12": "まんが、じごくせんせい、ぬーべーでも、くちさけおんなは、いぬがみつきの家の、まつえいとして描かれた。",
+  "13": "ポマードを嫌うのも、いぬがみのせいで、鼻が、ききすぎるからだ。",
+  "14": "赤い服に、マスクの女に、わたし、きれい？と聞かれたら、それは、いぬがみに、つかれた、くちさけおんなだ。",
+  "15": "口は、わざわいのもと。答えを間違えれば、その牙で、食い殺される。"
+ },
+ "scenes": [
+  {
+   "lines": [
+    1,
+    3
+   ],
+   "title": "口裂け女の真実"
+  },
+  {
+   "lines": [
+    4,
+    6
+   ],
+   "title": "犬神とは"
+  },
+  {
+   "lines": [
+    7,
+    9
+   ],
+   "title": "呪われた一族"
+  },
+  {
+   "lines": [
+    10,
+    13
+   ],
+   "title": "重なる噂"
+  },
+  {
+   "lines": [
+    14,
+    15
+   ],
+   "title": "わたし、きれい？"
+  }
+ ],
+ "hl": {
+  "1": [
+   "口裂け女",
+   "都市伝説"
+  ],
+  "2": [
+   "整形手術"
+  ],
+  "3": [
+   "犬神の祟り"
+  ],
+  "4": [
+   "犬の霊"
+  ],
+  "5": [
+   "首をはね"
+  ],
+  "6": [
+   "室町時代"
+  ],
+  "7": [
+   "先祖の悪行"
+  ],
+  "8": [
+   "耳まで"
+  ],
+  "9": [
+   "犬のように吠え"
+  ],
+  "10": [
+   "精神科"
+  ],
+  "11": [
+   "女に憑く"
+  ],
+  "12": [
+   "地獄先生ぬ〜べ〜"
+  ],
+  "13": [
+   "ポマード"
+  ],
+  "14": [
+   "赤い服",
+   "マスク"
+  ],
+  "15": [
+   "食い殺される"
+  ]
+ },
+ "music": {
+  "style": "tension",
+  "key": "D",
+  "mode": "minor",
+  "bpm": 66,
+  "energy": 0.3
+ },
+ "queries": [
+  {
+   "q": "web: 口裂け女 映画 2007 場面写真",
+   "want": "a scary woman wearing a white surgical mask and a coat, Japanese horror film still",
+   "keep": 12
+  },
+  {
+   "q": "web: 口裂け女 映画 マスク 女",
+   "want": "a pale Japanese woman with long black hair wearing a white mask, horror film",
+   "keep": 10
+  },
+  {
+   "q": "web: 口裂け女 赤いコート 映画",
+   "want": "a woman in a red coat wearing a mask, Japanese horror film still",
+   "keep": 8
+  },
+  {
+   "q": "web: 昭和 手術室 古い 写真",
+   "want": "an old dark hospital operating room with a surgical lamp",
+   "keep": 8
+  },
+  {
+   "q": "commons: Inugami Toriyama Sekien",
+   "want": "an old Japanese woodblock print of a dog spirit yokai",
+   "keep": 6
+  },
+  {
+   "q": "web: 犬神 妖怪 百怪図巻 佐脇嵩之",
+   "want": "an Edo period painting of the dog yokai inugami",
+   "keep": 6
+  },
+  {
+   "q": "web: 犬神 憑きもの 絵",
+   "want": "an old Japanese painting of a dog spirit possessing a person",
+   "keep": 8
+  },
+  {
+   "q": "web: 野犬 牙 威嚇 暗い",
+   "want": "a snarling dog baring its fangs, dark photo",
+   "keep": 10
+  },
+  {
+   "q": "web: 四国 山村 古い集落 霧",
+   "want": "a misty old mountain village in Shikoku, Japan",
+   "keep": 6
+  },
+  {
+   "q": "web: 室町幕府 古文書 下知状",
+   "want": "an old Japanese handwritten document scroll",
+   "keep": 6
+  },
+  {
+   "q": "web: 古い 位牌 仏壇 暗い",
+   "want": "old Buddhist memorial tablets in a dark Japanese house altar",
+   "keep": 6
+  },
+  {
+   "q": "web: 廃病院 精神科 廊下",
+   "want": "a dark abandoned hospital corridor",
+   "keep": 8
+  },
+  {
+   "q": "web: 地獄先生ぬ〜べ〜 口裂け女",
+   "want": "a Japanese manga or anime scene of a masked woman with a slit mouth",
+   "keep": 8
+  },
+  {
+   "q": "web: ポマード 瓶 昭和 レトロ",
+   "want": "an old jar of hair pomade, retro Japanese product",
+   "keep": 6
+  },
+  {
+   "q": "web: マスク 女 夕暮れ 路地 不気味",
+   "want": "a woman wearing a mask standing in a dark alley at dusk",
+   "keep": 8
+  },
+  {
+   "q": "web: 口裂け女 映画 2008 口裂け女2",
+   "want": "a Japanese horror film still of a woman with a slit mouth",
+   "keep": 8
+  }
+ ],
+ "urls": []
+}
