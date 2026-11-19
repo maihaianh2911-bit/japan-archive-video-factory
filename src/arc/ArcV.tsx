@@ -301,7 +301,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
         <div style={{ position: 'absolute', left: M + 3, right: M, top: 1745, opacity: out && out.credit !== sh.credit ? mix : 1, fontFamily: SANS, fontWeight: 400, fontSize: 25, lineHeight: 1.3, color: th.credit, letterSpacing: '0.05em' }}>{sh.credit}</div>
       ) : null}
       {intro ? <Intro it={intro} t={t} th={th} on={introOn} /> : null}
-      {plan.head ? <Head hd={plan.head} font={disp || SERIF} th={th} /> : null}
+      {plan.head && introOn < 1 ? <AbsoluteFill style={{ opacity: 1 - introOn }}><Head hd={plan.head} font={disp || SERIF} th={th} /></AbsoluteFill> : null}
       {hk ? <Hook hk={hk} t={t} on={hookOn} box={plan.shots[0].pics[0].box} color={th.subHl} font={disp} /> : null}
       {card && !hk ? <Hook hk={card} t={t} on={cardOn} box={sh.pics[0].box} color={th.subHl} font={disp} /> : null}
       {sub ? (
