@@ -62,6 +62,17 @@ questions, so do not ask; comments go on the issues (🤖, Vietnamese).
 Iron rule (owner, 16/11/2026): **no video under 60 s** — under 60 s nothing is rendered (`build.py` refuses); write
 80–160 s (iron rule 3; `AGENT_ARC.md` §1). Quality first: look at every picture yourself, preview the framing and rings before rendering.
 
+## A video the owner sends (owner, 19/11/2026, for every repo)
+"nếu repo nào đc dựng bằng cách remix video hoặc tao có gửi video, có thể sử dụng hình ảnh/video trong video tao gửi":
+when a video of this repo is made from a video the owner sent (a remix, or a video sent in the chat), **the pictures
+and the footage of that video may be used** in ours, beside the pictures of our own search. Still the rule: never its
+voice or its music; a frame with the source's caption, logo or watermark over the picture is cropped clean or left;
+credited 元動画; told in our own words (YouTube penalises reused content: the more of the source a video shows, the
+higher that risk, told to the owner). The shared note is in `maihaianh2911-bit/japan-video-factory` →
+`docs/KENH-NHAT.md`; `tools/video_frames.py` of `japan-news-video-factory` lays out the shots of a video to choose
+from (this repo has no such tool yet: cut the frames with ffmpeg and save them in `arc/<N>/own/`, the
+`own/<file>` pictures of `AGENT_ARC.md`).
+
 ## Changing the pipeline
 Before pushing to `main`: `python3 tests/arc_smoke.py --still`, `python3 -m compileall -q scripts tests`,
 `npm run check`. Never touch secrets. Comments posted on GitHub start with 🤖 (they come from the owner's account).
