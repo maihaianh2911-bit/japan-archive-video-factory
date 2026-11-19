@@ -362,8 +362,17 @@ issue 12 (口裂け女): keep to it.
   (「私、きれい？」「これでも？」) → the variants → the rules to survive / to meet it → what happened in the real world
   (police, arrests, films, an explanation) → **the ending connects to the next video of the series**
   (「では、ネットの掲示板が生んだ怪異は、どこまで広がったのか。二つ目は、八尺様。続きは次の動画で。」).
-  Real-world facts are checked against sources before the voice step (WebSearch) and named in the comment;
-  the uncanny parts stay "it is said" (〜といわれます, 〜という話もあります). Nothing invented, no gore described.
+  Real-world facts are checked against sources before the voice step (WebSearch) and named in the comment.
+  **The legend itself is told straight, as the rumour tells it** (owner 19/11: "truyền thuyết mà đ làm bằng tin
+  đồn thì còn làm gì nữa … chỉ cần tin vỉa hè cũng đc"): no 「〜という説がある」「〜といわれます」 hedging on every
+  line; street rumours, net theories and manga versions are fine material. The **caption** then says it is all
+  rumour (「※内容はすべて噂・都市伝説です。」). Never invent a rumour nobody tells; no gore described.
+- **The hook is always "the legend about …"** (owner 19/11: "hook phải luôn là kiểu: truyền thuyết về v.v"): the
+  first spoken line and the big hook words name the subject as 「〇〇にまつわる都市伝説」 /「〇〇の都市伝説」
+  (「口裂け女の口が裂けた理由にまつわる都市伝説。」), not a bare question.
+- **A single short on one theory** is also made when the owner sends a video of one (19/11: 口裂け女の真実 —
+  犬神説, issue 14): its content, retold in this style, at the length the owner names (61 s for issue 14, the
+  owner's own exception to iron rule 3).
 - **The shared hook**: the first lines are the same in every video of the series except the item
   (「日本を震え上がらせた都市伝説・ネット怪談、最恐の四つを総チェック。一つ目は、口裂け女。」), over the series' board:
   `"intro": {"title": "最恐の都市伝説\\n四選", "items": [{"img": "t1", "name": "口裂け女"}, … 4], "pick": 1,
@@ -385,4 +394,5 @@ issue 12 (口裂け女): keep to it.
   close-ups (an open bloody mouth), recognisable children from school blogs (backs are fine), real victims. A
   slit-mouth make-up shot only where the line names it, never on the first frame or the board.
 - **Caption**: the quote or the hook as title, 2–4 sentences, the series and what comes next, hashtags such as
-  #都市伝説 #怖い話 #ネット怪談 #ホラー #shorts, `画像出典:` the films and sites.
+  #都市伝説 #怖い話 #ネット怪談 #ホラー #shorts, `画像出典:` the films and sites, and the line
+  「※内容はすべて噂・都市伝説です。」 (owner 19/11).
