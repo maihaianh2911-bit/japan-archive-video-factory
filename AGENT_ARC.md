@@ -379,6 +379,11 @@ issue 12 (口裂け女): keep to it.
   "name_at": 3, "until": 4, "credit": "出典: …"}` — four numbered pictures (`picks.json` images, cropped so the
   subject fills a 470 × 440 tile); this video's tile lights up when its name is said (`name_at` = that line),
   the board ends when line `until` starts. It is on screen from the very first frame.
+- **Fixed header** (owner 19/11, a video they sent: "phần hình ảnh chưa đẹp, nhất là phần chữ"):
+  `"head": {"label": "怖い都市伝説", "title": "口裂け女の真実"}` keeps the video's title at the top for the whole video
+  (a red label between thin lines, the title large in the brush font Yuji Boku with a red glow); the hook and the
+  cards use the same brush font, subtitles are 60 px (rows of ≤ 15–16 characters) and each shot's label is small
+  over its picture. Without `head` a video keeps the look of issues 12–13.
 - **Look**: `"style": "horror"` (black with a dark red glow, pictures darkened and cold with dark edges, film
   grain, white outlined subtitles, blood-red key words), `"pace": "fast"`, `"fade": 0.3`, about one picture per
   line, the motion of §2; `"music": {"style": "tension", "mode": "minor", "bpm": 66, "energy": 0.3}`.
