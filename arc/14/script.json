@@ -2,7 +2,7 @@
  "title": "口裂け女の真実",
  "voice": "clone_190",
  "style": "horror",
- "fade": 0.3,
+ "fade": 0.6,
  "pace": "fast",
  "loudness": -14.7,
  "hook": "口裂け女の\n口が裂けた理由\nにまつわる都市伝説",
@@ -238,5 +238,7 @@
    "keep": 8
   }
  ],
- "urls": []
+ "urls": [],
+ "frame": "fixed",
+ "bright": true
 }
