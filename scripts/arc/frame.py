@@ -91,9 +91,10 @@ def draw_intro(it, t, sub, img_of, th):
     return im
 
 
-def draw(shot, t, sub, img_of, theme='paper', hook=None, intro=None):
+def draw(shot, t, sub, img_of, theme='paper', hook=None, intro=None, head=None):
     """Full 1080×1920 frame of `shot` at time t. img_of(src) → PIL image of a prepared picture. hook: the plan's
-    hook, drawn over the first shot while it is on (ArcV Hook)."""
+    hook, drawn over the first shot while it is on (ArcV Hook). head: the plan's fixed header (ArcV Head, owner 19/11):
+    label + title at the top, the shot's label small over the picture, subtitles 60 px."""
     th = THEMES.get(theme, THEMES['paper'])
     if intro and t < intro['e']:
         return draw_intro(intro, t, sub, img_of, th)
@@ -110,7 +111,9 @@ def draw(shot, t, sub, img_of, theme='paper', hook=None, intro=None):
     if isinstance(hook, list):   # [hook or None, *cards]: the one on at t over this shot (ArcV Hook)
         hook = next((c for c in hook if c and c['s'] <= t < c['e'] and (c is not hook[0] or (shot.get('scene') == 1 and shot.get('shot') == 1))), None)
     hooked = bool(hook) and t < hook['e'] and abs(hook['s'] - shot['s']) < 0.4 or (hook and hook['s'] == 0 and shot.get('scene') == 1 and shot.get('shot') == 1 and t < hook['e'])
-    if not hooked:
+    if head:
+        if shot['label']: d.text((shot['pics'][0]['box'][0] + 4, shot['pics'][0]['box'][1] - 46), shot['label'], fill=th['label'], font=font(30))
+    elif not hooked:
         d.rectangle((72, b, 72 + 92, b + 6), fill=th['bar'])
         if shot['label']: d.text((72, b + 46), shot['label'], fill=th['label'], font=font(40))
         if shot['title']: d.text((69, b + 135 - 0.02 * shot['titleSize']), shot['title'], fill=th['title'], font=font(shot['titleSize']))
@@ -131,8 +134,9 @@ def draw(shot, t, sub, img_of, theme='paper', hook=None, intro=None):
         d.text((72, shot['captionY'] + 6 + m), shot['caption'], fill=th['label'], font=font(38))
     if sub:
         for k, row in enumerate(sub.split('\n')):
-            f = font(52); wdt = d.textlength(row, font=f)
-            d.text(((1080 - wdt) / 2, shot['subY'] + 17 + k * 76), row, fill=th['sub'], font=f)
+            f = font(60 if head else 52); wdt = d.textlength(row, font=f)
+            d.text(((1080 - wdt) / 2, shot['subY'] + 17 + k * (83 if head else 76)), row, fill=th['sub'], font=f,
+                   stroke_width=th.get('outline', 0) + (1 if head else 0), stroke_fill=(0, 0, 0))
     if shot['credit']: d.text((72, 1751), shot['credit'], fill=th['credit'], font=font(25))
     if hook and hook['s'] <= t < hook['e']:
         x, y, w, h = shot['pics'][0]['box']
@@ -142,4 +146,10 @@ def draw(shot, t, sub, img_of, theme='paper', hook=None, intro=None):
         f = font(min(150, int(980 / max(1, n) / 1.04 / 1.08))); lh = round(f.size * 1.18); top = y + h / 2 - lh * len(rows) / 2
         for k, r in enumerate(rows):
             d.text(((1080 - d.textlength(r, font=f)) / 2, top + k * lh), r, fill=(255, 255, 255), font=f, stroke_width=7, stroke_fill=(0, 0, 0))
+    if head:
+        if head.get('label'):
+            lf = font(50); d.text(((1080 - d.textlength(head['label'], font=lf)) / 2, 78), head['label'], fill=th['ring'], font=lf)
+        n = max(1.0, sum(0.55 if ord(c) < 0x2000 else 1 for c in head['title']))
+        tf = font(min(128, int(980 / n / 1.06)))
+        d.text(((1080 - d.textlength(head['title'], font=tf)) / 2, 150), head['title'], fill=th['title'], font=tf, stroke_width=3, stroke_fill=(0, 0, 0))
     return im

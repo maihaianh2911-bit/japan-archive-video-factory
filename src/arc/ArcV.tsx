@@ -23,7 +23,9 @@ export type PlanA = { duration: number; shots: Shot[]; subs: Sub[]; voice: { s: 
   musicVolume: number; fonts: FontChunk[]; theme?: string; total?: number; fade?: number;
   hook?: { text: string; s: number; e: number; hl?: string[] }; cards?: { text: string; s: number; e: number; hl?: string[] }[];
   intro?: { title: string; items: { src: string; w: number; h: number; name: string }[]; pick: number; mid: number; e: number; credit?: string };
-  grain?: string; sfx?: string };
+  grain?: string; sfx?: string;
+  // the fixed header of the legend videos (owner 19/11): label + title at the top for the whole video, brush font
+  head?: { label: string; title: string; hl?: string[] }; display?: string; subSize?: number };
 
 type Theme = { wash?: number; grade?: string; backdropFilter?: string; vig?: boolean; outline?: number; shake?: boolean; bg: string; bgCss?: string; bar: string; label: string; title: string; sub: string; subHl: string; subShadow: string; credit: string;
   ring: string; frame: string; mat: number; shadow: string; backdrop: boolean; subWeight: number; titleShadow: string };
@@ -56,13 +58,14 @@ const outlineOf = (r: number) => Array.from({ length: 16 }, (_, i) => { const a 
   return `${(Math.cos(a) * r).toFixed(1)}px ${(Math.sin(a) * r).toFixed(1)}px 0 #000`; }).join(', ') + ', 0 6px 16px rgba(0,0,0,.6)';
 
 let fontsLoading: Promise<void> | null = null;
-const useFonts = (fonts: FontChunk[], text: string) => {
+const useFonts = (fonts: FontChunk[], text: string, display?: string) => {
   const [h] = useState(() => delayRender('JP fonts'));
   useEffect(() => {
     (fontsLoading ??= (async () => {
       for (const f of fonts)
         document.fonts.add(new FontFace(f.family, `url(${staticFile(f.file)}) format('woff2')`, { weight: '100 900', unicodeRange: f.range }));
       await Promise.all([700, 500, 400].flatMap((wt) => [document.fonts.load(`${wt} 60px ${SERIF}`, text), document.fonts.load(`${wt} 40px ${SANS}`, text)]));
+      if (display) await document.fonts.load(`400 60px "${display}"`, text);
     })()).then(() => continueRender(h)).catch((e) => cancelRender(e));
   }, [h, fonts, text]);
 };
@@ -141,7 +144,7 @@ const Wash: React.FC<{ p: PicBox; t: number; sh: Shot; o: number }> = ({ p, t, s
 // the hook: the picture darkened, the words very large in the middle of it — fully there on the very first frame (the
 // feed shows it), with a small punch (scale 1.08 → 1 in 0.25 s); key words in the theme's highlight colour; it fades
 // out in 0.35 s when the first line has been said
-const Hook: React.FC<{ hk: { text: string; s: number; e: number; hl?: string[] }; t: number; on: number; box: number[]; color: string }> = ({ hk, t, on, box, color }) => {
+const Hook: React.FC<{ hk: { text: string; s: number; e: number; hl?: string[] }; t: number; on: number; box: number[]; color: string; font?: string }> = ({ hk, t, on, box, color, font }) => {
   const k = easeOut((t - hk.s) / 0.25), sc = 1.08 - 0.08 * k;
   const rows = hk.text.split('\n');
   const n = Math.max(...rows.map((r) => [...r].reduce((a, c) => a + (c.charCodeAt(0) < 0x2000 ? 0.55 : 1), 0)));
@@ -151,7 +154,7 @@ const Hook: React.FC<{ hk: { text: string; s: number; e: number; hl?: string[] }
     <AbsoluteFill style={{ opacity: on }}>
       <div style={{ position: 'absolute', left: 0, right: 0, top: box[1] - 40, height: box[3] + 80, background: 'radial-gradient(ellipse 75% 60% at 50% 50%, rgba(0,0,0,.55) 0%, rgba(0,0,0,.25) 70%, rgba(0,0,0,0) 100%)' }} />
       <div style={{ position: 'absolute', left: 30, right: 30, top: box[1] + box[3] / 2, transform: `translateY(-50%) scale(${sc})`,
-        textAlign: 'center', fontFamily: SERIF, fontWeight: 900, fontSize: size, lineHeight: 1.18, color: '#ffffff', letterSpacing: '0.03em',
+        textAlign: 'center', fontFamily: font || SERIF, fontWeight: font ? 400 : 900, fontSize: size, lineHeight: 1.18, color: '#ffffff', letterSpacing: '0.03em',
         textShadow: `${ring}, 0 10px 30px rgba(0,0,0,.6)` }}>
         {rows.map((r, i) => <div key={i}><Highlight text={r} hl={hk.hl || []} color={color} /></div>)}
       </div>
@@ -194,6 +197,30 @@ const Intro: React.FC<{ it: NonNullable<PlanA['intro']>; t: number; th: Theme; o
   );
 };
 
+// the fixed header (owner 19/11): a red label between two thin lines, the title large in the brush font with a red
+// glow, over a dark band so it reads on any picture; on screen from the first frame to the last
+const Head: React.FC<{ hd: NonNullable<PlanA['head']>; font: string; th: Theme }> = ({ hd, font, th }) => {
+  const n = Math.max(1, [...hd.title].reduce((a, c) => a + (c.charCodeAt(0) < 0x2000 ? 0.55 : 1), 0));
+  const size = Math.min(128, Math.floor(980 / n / 1.06));
+  const line = { flex: 1, height: 3, background: `linear-gradient(90deg, rgba(0,0,0,0), ${th.bar})` };
+  return (
+    <>
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 0, height: 420, background: 'linear-gradient(180deg, rgba(0,0,0,.82) 0%, rgba(0,0,0,.55) 55%, rgba(0,0,0,0) 100%)' }} />
+      {hd.label ? (
+        <div style={{ position: 'absolute', left: 120, right: 120, top: 78, display: 'flex', alignItems: 'center', gap: 26 }}>
+          <div style={line} />
+          <div style={{ fontFamily: font, fontSize: 50, lineHeight: 1, color: th.subHl, letterSpacing: '0.22em', marginRight: '-0.22em', whiteSpace: 'nowrap', textShadow: '0 0 18px rgba(255,0,0,.35), 0 3px 8px #000' }}>{hd.label}</div>
+          <div style={{ ...line, transform: 'scaleX(-1)' }} />
+        </div>
+      ) : null}
+      <div style={{ position: 'absolute', left: 0, right: 0, top: 150, textAlign: 'center', fontFamily: font, fontSize: size, lineHeight: 1.15, color: th.title, letterSpacing: '0.04em', whiteSpace: 'nowrap',
+        textShadow: '0 0 34px rgba(190,0,0,.55), 0 0 4px rgba(0,0,0,.9), 0 6px 18px rgba(0,0,0,.9)' }}>
+        <Highlight text={hd.title} hl={hd.hl || []} color={th.subHl} />
+      </div>
+    </>
+  );
+};
+
 const Highlight: React.FC<{ text: string; hl: string[]; color: string }> = ({ text, hl, color }) => {
   if (!hl.length) return <>{text}</>;
   const re = new RegExp(`(${hl.map((h) => h.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'g');
@@ -201,7 +228,9 @@ const Highlight: React.FC<{ text: string; hl: string[]; color: string }> = ({ te
 };
 
 export const ArcV: React.FC<PlanA> = (plan) => {
-  useFonts(plan.fonts, plan.shots.map((s) => s.label + s.title + s.caption + s.credit).join('') + plan.subs.map((s) => s.text).join(''));
+  useFonts(plan.fonts, plan.shots.map((s) => s.label + s.title + s.caption + s.credit).join('') + plan.subs.map((s) => s.text).join('')
+    + (plan.head ? plan.head.label + plan.head.title : '') + (plan.hook?.text || '') + (plan.cards || []).map((c) => c.text).join(''), plan.display);
+  const disp = plan.display ? `"${plan.display}", ${SERIF}` : undefined;
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const t = frame / fps;
@@ -243,12 +272,16 @@ export const ArcV: React.FC<PlanA> = (plan) => {
       {th.backdrop ? <AbsoluteFill style={{ opacity: mix }}><Backdrop p={sh.pics[0]} t={t} sh={sh} filter={th.backdropFilter} /></AbsoluteFill> : null}
       {th.wash && out ? <Wash p={out.pics[0]} t={t} sh={out} o={th.wash * (1 - mix)} /> : null}
       {th.wash ? <Wash p={sh.pics[0]} t={t} sh={sh} o={th.wash * mix} /> : null}
-      {/* header: bar, label (place / kind of document), title */}
+      {/* header: bar, label (place / kind of document), title — or the fixed header, and the label small over the picture */}
+      {plan.head ? (sh.label ? (
+        <div style={{ position: 'absolute', left: sh.pics[0].box[0] + 4, top: sh.pics[0].box[1] - 50 + lift * 0.4, opacity: head * mix, fontFamily: SANS, fontWeight: 500, fontSize: 30, lineHeight: 1.2, color: th.label, letterSpacing: '0.04em', whiteSpace: 'nowrap', textShadow: th.titleShadow }}>{sh.label}</div>
+      ) : null) : (<>
       <div style={{ position: 'absolute', left: M + 3, top: sh.bar, width: 92 * (0.4 + 0.6 * head), height: 6, opacity: head, background: th.bar }} />
       {sh.label ? (
         <div style={{ position: 'absolute', left: M + 3, top: sh.bar + 38 + lift * 0.6, opacity: head, fontFamily: SANS, fontWeight: 500, fontSize: 40, lineHeight: 1.25, color: th.label, letterSpacing: '0.02em', whiteSpace: 'nowrap', textShadow: th.titleShadow }}>{sh.label}</div>
       ) : null}
       <div style={{ position: 'absolute', left: M, top: sh.bar + 135 - 0.2 * sh.titleSize + lift, opacity: head, fontFamily: SERIF, fontWeight: 700, fontSize: sh.titleSize, lineHeight: 1.25, color: th.title, letterSpacing: '0.02em', whiteSpace: 'nowrap', textShadow: th.titleShadow }}>{sh.title}</div>
+      </>)}
       {out ? <AbsoluteFill style={{ opacity: 1 - mix }}>
         {out.pics.map((p, i) => <PicView key={i} p={p} t={t} sh={out} th={th} marks={out.marks.filter((m) => m.on === i)} />)}
       </AbsoluteFill> : null}
@@ -268,12 +301,13 @@ export const ArcV: React.FC<PlanA> = (plan) => {
         <div style={{ position: 'absolute', left: M + 3, right: M, top: 1745, opacity: out && out.credit !== sh.credit ? mix : 1, fontFamily: SANS, fontWeight: 400, fontSize: 25, lineHeight: 1.3, color: th.credit, letterSpacing: '0.05em' }}>{sh.credit}</div>
       ) : null}
       {intro ? <Intro it={intro} t={t} th={th} on={introOn} /> : null}
-      {hk ? <Hook hk={hk} t={t} on={hookOn} box={plan.shots[0].pics[0].box} color={th.subHl} /> : null}
-      {card && !hk ? <Hook hk={card} t={t} on={cardOn} box={sh.pics[0].box} color={th.subHl} /> : null}
+      {plan.head ? <Head hd={plan.head} font={disp || SERIF} th={th} /> : null}
+      {hk ? <Hook hk={hk} t={t} on={hookOn} box={plan.shots[0].pics[0].box} color={th.subHl} font={disp} /> : null}
+      {card && !hk ? <Hook hk={card} t={t} on={cardOn} box={sh.pics[0].box} color={th.subHl} font={disp} /> : null}
       {sub ? (
         <div style={{ position: 'absolute', left: 50, right: 50, top: (intro ? 1500 : sh.subY) + (1 - cue) * 16, opacity: 0.25 + 0.75 * cue, textAlign: 'center' }}>
           {sub.text.split('\n').map((l, i) => (
-            <div key={i} style={{ fontFamily: SANS, fontWeight: th.subWeight, fontSize: 52, lineHeight: 1.46, color: th.sub, letterSpacing: th.outline ? '0.02em' : '0.04em', textShadow: th.outline ? outlineOf(th.outline) : th.subShadow }}>
+            <div key={i} style={{ fontFamily: SANS, fontWeight: plan.subSize ? 900 : th.subWeight, fontSize: plan.subSize || 52, lineHeight: plan.subSize ? 1.38 : 1.46, color: th.sub, letterSpacing: th.outline ? '0.02em' : '0.04em', textShadow: th.outline ? outlineOf(plan.subSize ? th.outline + 1 : th.outline) : th.subShadow }}>
               <Highlight text={l} hl={sub.hl || []} color={th.subHl} />
             </div>
           ))}

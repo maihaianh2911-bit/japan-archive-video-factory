@@ -53,7 +53,7 @@ if len(picks['scenes']) != len(scenes_in):
 picked = [[E.expand(p, f'cảnh {si}, ảnh {j}') for j, p in enumerate(ps['shots'], 1)] for si, ps in enumerate(picks['scenes'], 1)]
 
 # ---- subtitles: a spoken line becomes one cue of up to two rows, or two cues when it is too long
-ROW = 17   # characters per row (50 px)
+ROW = 15 if spec.get('head') else 17   # characters per row (52 px subtitles; 60 px with the fixed header, owner 19/11)
 PUNCT, PART = '、。」？！', 'をにへはがでとものやて'   # て: 〜として|受け継ぐ
 def is_kana(c): return '぀' <= c <= 'ゟ'
 def breaks(t):
@@ -217,6 +217,13 @@ if spec.get('intro'):
              'mid': round(at_time(it.get('name_at', 2)) - 0.15, 3), 'e': round(at_time(it.get('until', 3)) - 0.15, 3),
              'credit': it.get('credit', '')}
 extra = {}
+# the fixed header (owner 19/11, a legend video they sent: "phần hình ảnh chưa đẹp, nhất là phần chữ"): the video's
+# title stays at the top the whole time, in a brush font (Yuji Boku) as the hook and the cards; subtitles 60 px.
+# script.json "head": {"label": "怖い都市伝説", "title": "口裂け女の真実", "hl": ["真実"]}
+if spec.get('head'):
+    hd = spec['head']
+    extra['head'] = {'label': str(hd.get('label', '')), 'title': str(hd.get('title', '')), 'hl': hd.get('hl', [])}
+    extra['display'] = 'Yuji Boku'; extra['subSize'] = 60
 if STYLE == 'horror':   # film grain (one noise picture, moved every frame) and a low boom on every card and on the intro's pick
     Image.fromarray(np.random.RandomState(7).randint(40, 216, (2160, 1280)).astype(np.uint8), 'L').convert('RGB').save(f'{pub}/{base}/grain.jpg', quality=80)
     extra['grain'] = f'{base}/grain.jpg'

@@ -2,7 +2,8 @@
 """Add the Japanese fonts a plan needs. Usage: fonts.py <plan.json> <fontsource_dir> <public_dir>
 
 <fontsource_dir> holds the unpacked npm packages @fontsource-variable/noto-serif-jp and noto-sans-jp (folders
-noto-serif-jp/ and noto-sans-jp/). Only the unicode-range chunks that contain characters of this video are
+noto-serif-jp/ and noto-sans-jp/), and @fontsource/yuji-boku (yuji-boku/), added only for a plan with
+"display": "Yuji Boku" (the brush titles of the legend videos, owner 19/11). Only the unicode-range chunks that contain characters of this video are
 copied to <public_dir>/arc/fonts/ and listed in plan["fonts"] (ArcV registers them with FontFace).
 """
 import json, os, re, shutil, sys
@@ -11,7 +12,9 @@ plan_path, src, pub = sys.argv[1], sys.argv[2], sys.argv[3]
 plan = json.load(open(plan_path, encoding='utf-8'))
 chars = set(json.dumps(plan, ensure_ascii=False)) | set('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789—・「」『』（）、。 　')
 os.makedirs(f'{pub}/arc/fonts', exist_ok=True); out = []
-for fam, pkg in [('Noto Serif JP', 'noto-serif-jp'), ('Noto Sans JP', 'noto-sans-jp')]:
+fams = [('Noto Serif JP', 'noto-serif-jp'), ('Noto Sans JP', 'noto-sans-jp')]
+if plan.get('display') == 'Yuji Boku': fams.append(('Yuji Boku', 'yuji-boku'))
+for fam, pkg in fams:
     base = os.path.join(src, pkg)
     for blk in re.findall(r'@font-face\s*{(.*?)}', open(f'{base}/index.css').read(), re.S):
         f = re.search(r"url\(\./files/([^)]+\.woff2)\)", blk).group(1)

@@ -72,13 +72,17 @@ r60 = subprocess.run([sys.executable, os.path.join(S, 'build.py'), job, pub, N, 
 assert r60.returncode != 0 and 'dưới 60 giây' in r60.stderr, r60.stderr   # owner's rule: under 60 s nothing is rendered
 fast = json.load(open(os.path.join(job, 'script.json'), encoding='utf-8')); fast['pace'] = 'fast'
 fast.update({'loudness': -14.7, 'style': 'horror', 'intro': {'title': '最恐の都市伝説\\n四選', 'pick': 2, 'name_at': 2, 'until': 3, 'items': [
-    {'img': 'site', 'name': '一'}, {'img': 'pano', 'name': '二'}, {'img': 'pillar', 'name': '三'}, {'img': 'site', 'name': '四'}]}})
+    {'img': 'site', 'name': '一'}, {'img': 'pano', 'name': '二'}, {'img': 'pillar', 'name': '三'}, {'img': 'site', 'name': '四'}]},
+    'head': {'label': '怖い都市伝説', 'title': '口裂け女の真実', 'hl': ['真実']}})
 jf = os.path.join(tmp, 'jobfast'); shutil.copytree(job, jf); json.dump(fast, open(os.path.join(jf, 'script.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 run(sys.executable, os.path.join(S, 'build.py'), jf, pub, N, imgsrc, os.path.join(tmp, 'outfast'))
 pf = json.load(open(os.path.join(tmp, 'outfast', 'plan.json'), encoding='utf-8')); d_fast = pf['duration']
 # horror look + the series' board (owner 18/11): the item named on line 2 lights up, the board ends when line 3 starts
 assert pf['theme'] == 'horror' and pf['intro']['pick'] == 1 and len(pf['intro']['items']) == 4 and 0 < pf['intro']['mid'] < pf['intro']['e']
 assert abs(pf['intro']['e'] - (pf['voice'][2]['s'] - 0.15)) < 0.01 and pf['intro']['title'] == '最恐の都市伝説\n四選'
+# the fixed header (owner 19/11): title at the top in the brush font, subtitles 60 px in rows of at most 16 characters
+assert pf['head']['title'] == '口裂け女の真実' and pf['display'] == 'Yuji Boku' and pf['subSize'] == 60
+assert max(len(r) for x in pf['subs'] for r in x['text'].split('\n')) <= 16, [x['text'] for x in pf['subs']]
 assert os.path.getsize(os.path.join(pub, pf['grain'])) > 50000 and os.path.getsize(os.path.join(pub, pf['sfx'])) > 100000
 run(sys.executable, os.path.join(S, 'preview.py'), jf, rend, os.path.join(tmp, 'outfast', 'preview.jpg'))
 plan = json.load(open(plan_p, encoding='utf-8'))
