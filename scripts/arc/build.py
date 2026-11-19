@@ -135,6 +135,11 @@ def motion(v, aspect, box_aspect, k, drift):
     return {'from': [round(x, 5) for x in a], 'to': [round(x, 5) for x in b]}
 
 
+# one fixed frame (owner 19/11, "ko chia theo cảnh, làm liền mạch"): script.json "frame": "fixed" puts every moving
+# picture in the same box (1000 × 1030), filled edge to edge (a taller picture is cropped a little above its middle),
+# so the pictures dissolve into each other in one place instead of boxes changing size from line to line
+FIXED = spec.get('frame') == 'fixed'
+FA = L.MAX_W / L.MAX_H
 shots = []
 for si, (sc, ps) in enumerate(zip(scenes_in, picks['scenes'])):
     a, b = sc['lines']; s0 = 0.0 if si == 0 else starts[a] - 0.15
@@ -157,8 +162,15 @@ for si, (sc, ps) in enumerate(zip(scenes_in, picks['scenes'])):
         # a wide picture fills a squarer box and pans across, others push in or pull out; directions alternate
         moving = (STYLE != 'classic' and len(pics) == 1 and not p.get('still') and not p.get('zoom') and not p.get('marks')
                   and p.get('move', True) is not False)   # "move": false keeps a shot as before
-        box_aspects = [L.fill_aspect(aspects[0])] if moving else aspects
-        lay = L.shot_layout(box_aspects, caption=bool(p.get('caption')))
+        if moving and FIXED:
+            if aspects[0] < FA * 0.98:
+                w, h = img_size(main['img']); x0, y0, x1, y1 = main['view']
+                main['view'] = L.fit_view([x0, y0, x1, y0 + (y1 - y0) * 0.8], FA, w, h); aspects[0] = FA
+            box_aspects = [FA]
+        else:
+            box_aspects = [L.fill_aspect(aspects[0])] if moving else aspects
+        cap = '' if moving and FIXED else p.get('caption', '')   # the fixed frame has no caption row under the picture
+        lay = L.shot_layout(box_aspects, caption=bool(cap))
         boxes = []
         for q, box, asp in zip(pics, lay['boxes'], aspects):
             w, h = img_size(q['img'])
@@ -179,7 +191,7 @@ for si, (sc, ps) in enumerate(zip(scenes_in, picks['scenes'])):
         if z: boxes[0]['drift'] = 0
         shots.append({'s': round(s, 3), 'e': round(e, 3), 'scene': si + 1, 'shot': j + 1,
                       'label': p.get('label', sc.get('label', '')), 'title': title, 'titleSize': L.title_size(title, opening=not shots),
-                      'caption': p.get('caption', ''), 'credit': p.get('credit', ''), 'bar': lay['bar'], 'captionY': lay['caption'],
+                      'caption': cap, 'credit': p.get('credit', ''), 'bar': lay['bar'], 'captionY': lay['caption'],
                       'subY': lay['sub'], 'pics': boxes, 'marks': marks,
                       **({'edit': p['edit']} if p.get('edit') else {})})   # only read by the preview and the shot sheet
 
@@ -202,6 +214,9 @@ for c in spec.get('cards', []):
     k = int(c['at']); s_ = round(max(0.0, at_time(c['at']) - 0.15), 3)
     e_ = s_ + max(1.6, min(3.0, dur[k] + 0.35))
     own = next((x for x in shots if x['s'] - 0.01 <= s_ < x['e']), None)   # a card never runs over the next picture
+    fd = min(1.2, max(0.0, float(spec.get('fade', 0))))
+    if own and fd and s_ < own['s'] + 0.6 * fd:   # with a dissolve, the card hits once its picture is mostly in
+        s_ = round(own['s'] + 0.6 * fd, 3); e_ = max(e_, s_ + 1.6)
     if own and own['e'] - s_ >= 0.8: e_ = min(e_, own['e'] - 0.05)
     cards.append({'text': str(c['text']).replace('\\n', '\n'), 's': s_, 'e': round(e_, 3), 'hl': c.get('hl', [])})
 # intro (owner 18/11: one hook shared by the videos of a series, as the board of the sample they sent): a 2×2 board of
@@ -234,6 +249,8 @@ if STYLE == 'horror':   # film grain (one noise picture, moved every frame) and 
             boom = np.zeros(int(2.2 * mg.SR)); mg.add(boom, mg.kick(1.0), 0); mg.add(boom, mg.tom(46, 0.9), 0.01)
             mg.add(fx, mg.reverb(boom, secs=2.0, wet=0.45), h_)
         mg.write_wav(f'{pub}/{base}/sfx.wav', fx / (np.abs(fx).max() or 1) * 0.9); extra['sfx'] = f'{base}/sfx.wav'
+if FIXED: extra['frame'] = 'fixed'
+if spec.get('bright'): extra['bright'] = True   # owner 19/11 "làm cho video sáng hơn": the dark look lighter (ArcV)
 plan = {'duration': total, 'theme': STYLE, **({'hook': hook} if hook else {}), **({'cards': cards} if cards else {}),
         **({'intro': intro} if intro else {}), **extra, 'loudness': max(-20.0, min(-11.0, float(spec.get('loudness', -15)))), 'fade': min(1.2, max(0.0, float(spec.get('fade', 0)))), 'shots': shots, 'subs': subs, 'voice': voice, 'music': f'{base}/bed.wav',
         'musicVolume': spec.get('music_volume', 0.16), 'fonts': []}

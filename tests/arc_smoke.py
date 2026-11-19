@@ -73,7 +73,7 @@ assert r60.returncode != 0 and 'dưới 60 giây' in r60.stderr, r60.stderr   # 
 fast = json.load(open(os.path.join(job, 'script.json'), encoding='utf-8')); fast['pace'] = 'fast'
 fast.update({'loudness': -14.7, 'style': 'horror', 'intro': {'title': '最恐の都市伝説\\n四選', 'pick': 2, 'name_at': 2, 'until': 3, 'items': [
     {'img': 'site', 'name': '一'}, {'img': 'pano', 'name': '二'}, {'img': 'pillar', 'name': '三'}, {'img': 'site', 'name': '四'}]},
-    'head': {'label': '怖い都市伝説', 'title': '口裂け女の真実', 'hl': ['真実']}})
+    'head': {'label': '怖い都市伝説', 'title': '口裂け女の真実', 'hl': ['真実']}, 'frame': 'fixed', 'bright': True})
 jf = os.path.join(tmp, 'jobfast'); shutil.copytree(job, jf); json.dump(fast, open(os.path.join(jf, 'script.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 run(sys.executable, os.path.join(S, 'build.py'), jf, pub, N, imgsrc, os.path.join(tmp, 'outfast'))
 pf = json.load(open(os.path.join(tmp, 'outfast', 'plan.json'), encoding='utf-8')); d_fast = pf['duration']
@@ -83,6 +83,12 @@ assert abs(pf['intro']['e'] - (pf['voice'][2]['s'] - 0.15)) < 0.01 and pf['intro
 # the fixed header (owner 19/11): title at the top in the brush font, subtitles 60 px in rows of at most 16 characters
 assert pf['head']['title'] == '口裂け女の真実' and pf['display'] == 'Yuji Boku' and pf['subSize'] == 60
 assert max(len(r) for x in pf['subs'] for r in x['text'].split('\n')) <= 16, [x['text'] for x in pf['subs']]
+# one fixed frame (owner 19/11, "làm liền mạch"): every moving picture in the same 1000 × 1030 box, filled
+mv = [x['pics'][0] for x in pf['shots'] if x['pics'][0].get('move')]
+assert pf['frame'] == 'fixed' and pf['bright'] is True and len(mv) >= 2 and all(q['box'] == mv[0]['box'] for q in mv) and abs(mv[0]['box'][2] - 1000) < 1, [q['box'] for q in mv]
+for q in mv:
+    for v in (q['move']['from'], q['move']['to']):
+        assert abs((v[2] - v[0]) * q['w'] / ((v[3] - v[1]) * q['h']) - q['box'][2] / q['box'][3]) < 0.02, (v, q['box'])
 assert os.path.getsize(os.path.join(pub, pf['grain'])) > 50000 and os.path.getsize(os.path.join(pub, pf['sfx'])) > 100000
 run(sys.executable, os.path.join(S, 'preview.py'), jf, rend, os.path.join(tmp, 'outfast', 'preview.jpg'))
 plan = json.load(open(plan_p, encoding='utf-8'))
@@ -125,7 +131,7 @@ mv3 = sh[3]['pics'][0]['move']; assert abs((mv3['to'][2] - mv3['to'][0]) - (mv3[
 assert any(s['hl'] == ['円を描く'] for s in plan['subs']) and plan['fade'] == 0.6
 assert plan['loudness'] == -15.0 and pf['loudness'] == -14.7   # script.json "loudness" reaches the final encode
 assert plan['hook']['text'] == '一万二千年前の\n謎の遺跡' and 2.0 <= plan['hook']['e'] <= sh[0]['e']   # the hook stays over the first picture
-cd = plan['cards'][0]; assert abs(cd['s'] - sh[2]['s']) < 0.05 and 1.6 <= cd['e'] - cd['s'] <= 3.0 and cd['text'] == '第2位\n円形の石柱'   # a countdown card
+cd = plan['cards'][0]; assert abs(cd['s'] - (sh[2]['s'] + 0.6 * plan['fade'])) < 0.05 and 1.6 <= cd['e'] - cd['s'] <= 3.0 and cd['text'] == '第2位\n円形の石柱'   # a countdown card
 for sb in plan['subs']:
     r = sb['text'].split('\n'); assert len(r) <= 2 and max(map(len, r)) <= 19, sb['text']
 assert ''.join(s['text'].replace('\n', '') for s in plan['subs']) == ''.join(lines)

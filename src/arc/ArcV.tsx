@@ -25,9 +25,11 @@ export type PlanA = { duration: number; shots: Shot[]; subs: Sub[]; voice: { s: 
   intro?: { title: string; items: { src: string; w: number; h: number; name: string }[]; pick: number; mid: number; e: number; credit?: string };
   grain?: string; sfx?: string;
   // the fixed header of the legend videos (owner 19/11): label + title at the top for the whole video, brush font
-  head?: { label: string; title: string; hl?: string[] }; display?: string; subSize?: number };
+  head?: { label: string; title: string; hl?: string[] }; display?: string; subSize?: number;
+  frame?: 'fixed' /* one picture frame for the whole video, pictures dissolve in it (owner 19/11: "làm liền mạch") */;
+  bright?: boolean /* the dark look lighter (owner 19/11: "làm cho video sáng hơn") */ };
 
-type Theme = { wash?: number; grade?: string; backdropFilter?: string; vig?: boolean; outline?: number; shake?: boolean; bg: string; bgCss?: string; bar: string; label: string; title: string; sub: string; subHl: string; subShadow: string; credit: string;
+type Theme = { vigA?: number; wash?: number; grade?: string; backdropFilter?: string; vig?: boolean; outline?: number; shake?: boolean; bg: string; bgCss?: string; bar: string; label: string; title: string; sub: string; subHl: string; subShadow: string; credit: string;
   ring: string; frame: string; mat: number; shadow: string; backdrop: boolean; subWeight: number; titleShadow: string };
 export const THEMES: Record<string, Theme> = {
   warm: { bg: '#1b1410', bar: '#e9be86', label: '#f0c995', title: '#fff6e6', sub: '#fffaf0', subHl: '#f2c67f',
@@ -95,7 +97,7 @@ const PicView: React.FC<{ p: PicBox; t: number; sh: Shot; th: Theme; marks: Mark
     <div style={{ position: 'absolute', left: x - m, top: y - m, width: bw + 2 * m, height: bh + 2 * m, background: m ? '#fbf8f1' : 'transparent', boxShadow: th.shadow, border: th.frame, boxSizing: 'content-box', marginLeft: -1, marginTop: -1 }}>
       <div style={{ position: 'absolute', left: m, top: m, width: bw, height: bh, overflow: 'hidden', background: '#000' }}>
         <Img src={staticFile(p.src)} style={{ position: 'absolute', left: -v0 * p.w * sx, top: -v1 * p.h * sy, width: p.w * sx, height: p.h * sy, maxWidth: 'none', filter: th.grade }} />
-        {th.vig ? <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 75% 75% at 50% 50%, rgba(0,0,0,0) 45%, rgba(0,0,0,.62) 100%)' }} /> : null}
+        {th.vig ? <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 75% 75% at 50% 50%, rgba(0,0,0,0) 45%, rgba(0,0,0,${th.vigA ?? 0.62}) 100%)' }} /> : null}
         <svg width={bw} height={bh} style={{ position: 'absolute', left: 0, top: 0 }}>
           {marks.filter((mk) => t >= mk.s).map((mk, i) => {
             const X = (f: number) => ((f - v0) / (v2 - v0)) * bw, Y = (f: number) => ((f - v1) / (v3 - v1)) * bh;
@@ -234,7 +236,10 @@ export const ArcV: React.FC<PlanA> = (plan) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const t = frame / fps;
-  const th = THEMES[plan.theme || 'paper'] || THEMES.paper;
+  const th0 = THEMES[plan.theme || 'paper'] || THEMES.paper;
+  // brighter (owner 19/11): pictures near their own colours, lighter edges, a less black background
+  const th: Theme = plan.bright && th0.grade ? { ...th0, grade: 'saturate(.8) contrast(1.06) brightness(1.04)', vigA: 0.3,
+    backdropFilter: 'blur(40px) saturate(.55) brightness(.5)', bgCss: 'radial-gradient(ellipse 95% 70% at 50% 42%, #3a1414 0%, #1a0b0b 55%, #0a0505 100%)' } : th0;
   if (!plan.shots.length) return <AbsoluteFill style={{ backgroundColor: th.bg }} />;
   const idx = Math.max(0, plan.shots.findIndex((s) => t >= s.s && t < s.e));
   const sh = plan.shots.find((s) => t >= s.s && t < s.e) || plan.shots[plan.shots.length - 1];
@@ -264,7 +269,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
   const hitAt = card ? card.s : plan.intro && t >= plan.intro.mid ? plan.intro.mid : -9;
   const sk = th.shake && t - hitAt < 0.33 ? 1 - (t - hitAt) / 0.33 : 0;
   const shake = sk > 0 ? `translate(${(rnd(frame) - 0.5) * 22 * sk}px, ${(rnd(frame + 7) - 0.5) * 22 * sk}px) scale(${1 + 0.03 * sk})` : undefined;
-  const settle = prev && same(prev, sh) ? 1 : 1 + 0.03 * (1 - easeOut((t - sh.s) / 0.5));
+  const settle = (prev && same(prev, sh)) || plan.frame === 'fixed' ? 1 : 1 + 0.03 * (1 - easeOut((t - sh.s) / 0.5));
   const cue = sub ? easeOut((t - sub.s) / 0.2) : 1;
   return (
     <AbsoluteFill style={{ background: th.bgCss || th.bg, transform: shake }}>
@@ -273,7 +278,7 @@ export const ArcV: React.FC<PlanA> = (plan) => {
       {th.wash && out ? <Wash p={out.pics[0]} t={t} sh={out} o={th.wash * (1 - mix)} /> : null}
       {th.wash ? <Wash p={sh.pics[0]} t={t} sh={sh} o={th.wash * mix} /> : null}
       {/* header: bar, label (place / kind of document), title — or the fixed header, and the label small over the picture */}
-      {plan.head ? (sh.label ? (
+      {plan.head ? (sh.label && plan.frame !== 'fixed' ? (
         <div style={{ position: 'absolute', left: sh.pics[0].box[0] + 4, top: sh.pics[0].box[1] - 50 + lift * 0.4, opacity: head * mix, fontFamily: SANS, fontWeight: 500, fontSize: 30, lineHeight: 1.2, color: th.label, letterSpacing: '0.04em', whiteSpace: 'nowrap', textShadow: th.titleShadow }}>{sh.label}</div>
       ) : null) : (<>
       <div style={{ position: 'absolute', left: M + 3, top: sh.bar, width: 92 * (0.4 + 0.6 * head), height: 6, opacity: head, background: th.bar }} />
@@ -317,8 +322,8 @@ export const ArcV: React.FC<PlanA> = (plan) => {
         <AbsoluteFill style={{ overflow: 'hidden', pointerEvents: 'none' }}>
           <Img src={staticFile(plan.grain)} style={{ position: 'absolute', left: -Math.floor(rnd(frame) * 200), top: -Math.floor(rnd(frame + 0.5) * 240), width: 1280, height: 2160, maxWidth: 'none',
             opacity: 0.13, mixBlendMode: 'overlay', transform: `scale(${frame % 2 ? 1 : -1}, ${frame % 4 < 2 ? 1 : -1})`, transformOrigin: '640px 1080px' }} />
-          <AbsoluteFill style={{ background: 'radial-gradient(ellipse 85% 70% at 50% 46%, rgba(0,0,0,0) 48%, rgba(0,0,0,.72) 100%)' }} />
-          <AbsoluteFill style={{ background: '#000', opacity: 0.07 * rnd(frame * 1.7) * (rnd(Math.floor(frame / 9)) > 0.72 ? 1.6 : 0.5) }} />
+          <AbsoluteFill style={{ background: 'radial-gradient(ellipse 85% 70% at 50% 46%, rgba(0,0,0,0) 48%, rgba(0,0,0,${plan.bright ? 0.45 : 0.72}) 100%)' }} />
+          <AbsoluteFill style={{ background: '#000', opacity: (plan.bright ? 0.04 : 0.07) * rnd(frame * 1.7) * (rnd(Math.floor(frame / 9)) > 0.72 ? 1.6 : 0.5) }} />
         </AbsoluteFill>
       ) : null}
       {plan.sfx ? <Audio src={staticFile(plan.sfx)} volume={0.55} /> : null}

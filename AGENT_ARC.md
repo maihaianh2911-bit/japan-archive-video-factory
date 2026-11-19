@@ -384,6 +384,12 @@ issue 12 (口裂け女): keep to it.
   (a red label between thin lines, the title large in the brush font Yuji Boku with a red glow); the hook and the
   cards use the same brush font, subtitles are 60 px (rows of ≤ 15–16 characters) and each shot's label is small
   over its picture. Without `head` a video keeps the look of issues 12–13.
+- **One frame, brighter** (owner 19/11 on the trial: "ko chia theo cảnh, làm liền mạch" and "làm cho video sáng
+  hơn"): `"frame": "fixed"` puts every moving picture in the same 1000 × 1030 box, filled edge to edge (a taller
+  picture is cropped a little above its middle, a wider one pans), with no per-shot label, so the pictures dissolve
+  into each other in one place (`"fade": 0.6`); a card then hits once its picture is mostly in. `"bright": true`
+  lightens the dark look (pictures near their own colours, lighter edges). Issue 14 uses `head` + `frame` +
+  `bright`: the look for the next legend videos.
 - **Look**: `"style": "horror"` (black with a dark red glow, pictures darkened and cold with dark edges, film
   grain, white outlined subtitles, blood-red key words), `"pace": "fast"`, `"fade": 0.3`, about one picture per
   line, the motion of §2; `"music": {"style": "tension", "mode": "minor", "bpm": 66, "energy": 0.3}`.
