@@ -5,16 +5,15 @@
    on-screen text are in Japanese (tiếng Nhật). A script that arrives in another language is translated faithfully into Japanese (tiếng Nhật)
    first. Never a voice or text of another language: check the language of `lines` and the voice before the voice
    step, and again on the finished video. A video in the wrong language is not delivered: fix it and render again.
-2. **No video under 60 seconds.** Before the voice step, estimate the length from the script (use the seconds per
+2. **No video under 61 seconds** (owner, 19/11/2026: "ra lại luật mới, chỉ còn luật tối thiểu 61s": the only length rule, no upper limit). Before the voice step, estimate the length from the script (use the seconds per
    line of this channel's earlier videos); after the voice step, read the real length of the speech (the machine
-   comment gives it). If the video would be under 60 seconds, **write the script longer** (more true facts and
-   detail on the same subject, in the owner's tone, nothing invented) until it passes 60 seconds, tell the owner on
+   comment gives it). If the video would be under 61 seconds, **write the script longer** (more true facts and
+   detail on the same subject, in the owner's tone, nothing invented) until it reaches 61 seconds, tell the owner on
    the issue what was added, and only then go on. This is the one exception to "never change the owner's script".
-   Never render or deliver a video under 60 seconds. Only exception: a trial or sample video — the owner says so,
+   Never render or deliver a video under 61 seconds. Only exception: a trial or sample video — the owner says so,
    or the issue title or notes say `thử`, `mẫu`, `test` or `demo`.
-3. **Every video is vertical (1080×1920) and 80–160 seconds long** (owner, 18/11/2026: "tất cả các kênh đều làm
-   dạng dọc, 80-160s thôi"). Write the script for that length: under 80 s add true scenes and details of the same
-   story (never padding), over 160 s cut repetition. Trial or sample videos are the exception, as in rule 2.
+3. **Every video is vertical (1080×1920)** (owner, 18/11/2026). Its length has only rule 2, at least 61 seconds: the
+   80–160 s range of 18/11/2026 is lifted (owner, 19/11/2026: "ra lại luật mới, chỉ còn luật tối thiểu 61s").
 
 Read `docs/HANDOVER.md` first (the owner, their standing decisions, the current state), then `AGENT_ARC.md` (how a
 video is made) and `00-video-mau/HUONG-DAN-EDIT.md` (the owner's editing guide for the approved sample). The owner is
@@ -59,8 +58,8 @@ questions, so do not ask; comments go on the issues (🤖, Vietnamese).
 3. Give the owner the links to the video (view + download), the subtitles, the posting caption (`caption.txt`,
    written by Claude at the picks step, owner 16/11/2026) and the picture credits.
 
-Iron rule (owner, 16/11/2026): **no video under 60 s** — under 60 s nothing is rendered (`build.py` refuses); write
-80–160 s (iron rule 3; `AGENT_ARC.md` §1). Quality first: look at every picture yourself, preview the framing and rings before rendering.
+Iron rule (owner, 19/11/2026: only rule on length): **no video under 61 s** — under 61 s nothing is rendered
+(`build.py` refuses); no upper limit (`AGENT_ARC.md` §1). Quality first: look at every picture yourself, preview the framing and rings before rendering.
 
 ## Changing the pipeline
 Before pushing to `main`: `python3 tests/arc_smoke.py --still`, `python3 -m compileall -q scripts tests`,

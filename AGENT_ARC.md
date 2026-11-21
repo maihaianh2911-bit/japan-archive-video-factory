@@ -2,11 +2,11 @@
 
 > **Iron rules (owner, 16/11/2026; full text at the top of `CLAUDE.md`).** (1) Voice, script lines, subtitles and
 > on-screen text are in **Japanese**, never another language; check before the voice step and on the finished video.
-> (2) **No video under 60 seconds**: estimate before the voice step and read the real speech length after it; if it
-> would be under 60 seconds, write the script longer (true facts on the same subject, nothing invented), say on the
-> issue what was added, then go on. Never render or deliver under 60 seconds, except a trial or sample video (the
+> (2) **No video under 61 seconds** (the only length rule, no upper limit; owner, 19/11/2026): estimate before the voice step and read the real speech length after it; if it
+> would be under 61 seconds, write the script longer (true facts on the same subject, nothing invented), say on the
+> issue what was added, then go on. Never render or deliver under 61 seconds, except a trial or sample video (the
 > owner says so, or the title or notes say `thử`, `mẫu`, `test`, `demo`).
-> (3) **Vertical, 80–160 seconds** (owner, 18/11/2026: all channels): write the script for that length.
+> (3) **Vertical** (1080×1920). The only length rule is (2), at least 61 s; the 80–160 s range is lifted (owner, 19/11/2026).
 
 The owner (Vietnamese, not technical) opens an issue `[Lịch sử] …` with a script (Vietnamese or Japanese). The
 result is a vertical short (1080×1920, 30 fps) laid out exactly as the approved sample
@@ -40,7 +40,7 @@ the shot sheet → `arc-done`. `arc-fix`: the owner commented. `arc-failed`: a m
 
 ## 1. `arc-plan` → `arc/<N>/script.json`
 A `[Truyền thuyết]` issue (Japanese urban legends and horror stories) follows the same steps with the rules of §5
-(one story, 80–160 s, a hook, the dark look, pictures from the whole web).
+(one story, at least 61 s, a hook, the dark look, pictures from the whole web).
 Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and the owner's comments.
 ```json
 {"title": "ギョベクリ・テペ", "voice": "clone_190",
@@ -66,12 +66,11 @@ Read the issue form (Chủ đề, Kịch bản, Giọng đọc, Ghi chú) and th
   ranges `[first, last]` follow each other and cover every line from 1 to the last (the render stops otherwise).
   `title` ≤ 10 characters, the hook of the idea (`約1万2千年前`, `円形に並ぶ石柱`, `なぜ、ここに石柱を？`). An optional `label` is a
   default for the shots; usually the label is set per shot in picks.json.
-- Length — **iron rule (owner, 16/11): no video under 60 s.** Under 60 s `build.py` refuses to render. Write
-  80–160 s (owner, 18/11/2026, iron rule 3): ≈ 520–1050 characters (measured on issues 1–5: ~0.15 s per character,
+- Length — **iron rule (owner, 19/11/2026: the only length rule): no video under 61 s, no upper limit.** Under 61 s
+  `build.py` refuses to render. 61 s ≈ 400 characters (measured on issues 1–5: ~0.15 s per character,
   pauses included, + ~1.7 s).
   The owner's script too short → add a few factual, picturable sentences (say which in your comment). At arc-pick,
-  `preview.py` warns when the video is under 60 s: add lines then, in the same push as picks.json. Never over
-  160 s (iron rule 3).
+  `preview.py` warns when the video is under 61 s: add lines then, in the same push as picks.json.
 - `tts`: kana for names and rare readings the voice may misread (`prompts/readings.json` is applied to every line).
 - `style`: `paper` (default, chosen by the owner 13/11: ivory archive paper, ink-brown text, the picture as a print
   with a white mat and soft shadow, red rings), `warm` (the shot's own picture, blurred and darkened, fills the
@@ -349,7 +348,7 @@ The owner sent a foreign "8 urban legends" video and asked to **learn how its sc
 Japanese counterpart; its pictures they found ugly ("tao lấy ý tưởng thôi"). What they approved, step by step, on
 issue 12 (口裂け女): keep to it.
 - **A series, one story per video** ("ko để video bị loãng"): e.g. 「最恐の都市伝説 四選」 = four issues
-  `[Truyền thuyết] <name> — <series>（n）`, each 80–160 s (iron rule 3, owner 18/11/2026).
+  `[Truyền thuyết] <name> — <series>（n）`, each at least 61 s (iron rule 2, owner 19/11/2026).
 - **In a chat the owner approves the script before anything is made**, and for the first video of a new series or
   look, a **20-second trial** before the full render (render it yourself from `picks.json` kept off `main`:
   `prep.py`, `build.py`, `fonts.py`, `npx remotion render … --frames=0-599 --public-dir=…`). Rejected drafts
