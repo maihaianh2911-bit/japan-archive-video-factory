@@ -1,0 +1,1448 @@
+{
+ "duration": 60.64,
+ "theme": "paper",
+ "fade": 0.35,
+ "shots": [
+  {
+   "s": 0.0,
+   "e": 3.055,
+   "scene": 1,
+   "shot": 1,
+   "label": "鳥山石燕が描いた河童（江戸時代）",
+   "title": "本気で調べた妖怪",
+   "titleSize": 112,
+   "caption": "",
+   "credit": "Wikimedia Commons / Public domain",
+   "bar": 150.0,
+   "captionY": null,
+   "subY": 1500.0,
+   "pics": [
+    {
+     "src": "arc/7/img/sekien.jpg",
+     "w": 1061,
+     "h": 1400,
+     "box": [
+      149.7,
+      420.0,
+      780.6,
+      1030
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0.1,
+       0.05,
+       0.9,
+       0.85
+      ]
+     }
+    }
+   ],
+   "marks": [],
+   "edit": "troi-cham"
+  },
+  {
+   "s": 3.055,
+   "e": 6.579,
+   "scene": 1,
+   "shot": 2,
+   "label": "河童の図「水虎十二品之図」",
+   "title": "本気で調べた妖怪",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Juntaku / Public domain",
+   "bar": 165.0,
+   "captionY": null,
+   "subY": 1485.0,
+   "pics": [
+    {
+     "src": "arc/7/img/juni.jpg",
+     "w": 1920,
+     "h": 1318,
+     "box": [
+      40.0,
+      435.0,
+      1000,
+      1000.0
+     ],
+     "view": [
+      0.31354,
+      0,
+      1,
+      1
+     ],
+     "drift": 0,
+     "move": {
+      "from": [
+       0.31354,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.68646,
+       1
+      ]
+     }
+    }
+   ],
+   "marks": [],
+   "edit": "toan-canh"
+  },
+  {
+   "s": 6.579,
+   "e": 11.292,
+   "scene": 2,
+   "shot": 1,
+   "label": "江戸時代の写本に描かれた河童",
+   "title": "一八二〇年",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Wikimedia Commons / Public domain",
+   "bar": 269.6,
+   "captionY": null,
+   "subY": 1472,
+   "pics": [
+    {
+     "src": "arc/7/img/enko.jpg",
+     "w": 1400,
+     "h": 1107,
+     "box": [
+      40.0,
+      539.6,
+      1000,
+      790.7
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0
+    }
+   ],
+   "marks": [],
+   "edit": "so-lieu"
+  },
+  {
+   "s": 11.292,
+   "e": 20.211,
+   "scene": 2,
+   "shot": 2,
+   "label": "同時代の河童の図「水虎十二品之図」",
+   "title": "水虎考略",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Juntaku / Public domain",
+   "bar": 321.8,
+   "captionY": null,
+   "subY": 1472,
+   "pics": [
+    {
+     "src": "arc/7/img/juni.jpg",
+     "w": 1920,
+     "h": 1318,
+     "box": [
+      40.0,
+      591.8,
+      1000,
+      686.5
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0
+    }
+   ],
+   "marks": [
+    {
+     "s": 14.606,
+     "box": [
+      0.44,
+      0.2,
+      0.6,
+      0.37
+     ],
+     "shape": "ellipse",
+     "on": 0
+    },
+    {
+     "s": 16.692,
+     "box": [
+      0.79,
+      0.5,
+      0.97,
+      0.92
+     ],
+     "shape": "ellipse",
+     "on": 0
+    }
+   ],
+   "edit": "khoanh"
+  },
+  {
+   "s": 20.211,
+   "e": 24.684,
+   "scene": 2,
+   "shot": 3,
+   "label": "土佐の河童「シバテン」の絵",
+   "title": "水虎考略",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Wikimedia Commons / Public domain",
+   "bar": 165.0,
+   "captionY": null,
+   "subY": 1485.0,
+   "pics": [
+    {
+     "src": "arc/7/img/shibaten.jpg",
+     "w": 1400,
+     "h": 1143,
+     "box": [
+      40.0,
+      435.0,
+      1000,
+      1000.0
+     ],
+     "view": [
+      0,
+      0,
+      0.81643,
+      1
+     ],
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.81643,
+       1
+      ],
+      "to": [
+       0.18357,
+       0,
+       1,
+       1
+      ]
+     }
+    }
+   ],
+   "marks": [],
+   "edit": "troi-cham"
+  },
+  {
+   "s": 24.684,
+   "e": 26.899,
+   "scene": 3,
+   "shot": 1,
+   "label": "きゅうりを抱えた河童の根付（19世紀）",
+   "title": "きゅうりと相撲",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "The Metropolitan Museum of Art / CC0",
+   "bar": 150.0,
+   "captionY": null,
+   "subY": 1500.0,
+   "pics": [
+    {
+     "src": "arc/7/img/cuke.jpg",
+     "w": 2134,
+     "h": 3200,
+     "box": [
+      196.6,
+      420.0,
+      686.9,
+      1030
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0
+    }
+   ],
+   "marks": [
+    {
+     "s": 25.672,
+     "box": [
+      0.37,
+      0.5,
+      0.85,
+      0.75
+     ],
+     "shape": "ellipse",
+     "on": 0
+    }
+   ],
+   "edit": "khoanh"
+  },
+  {
+   "s": 26.899,
+   "e": 28.618,
+   "scene": 3,
+   "shot": 2,
+   "label": "歌川国芳の浮世絵（河童と組み合う）",
+   "title": "きゅうりと相撲",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Wikimedia Commons / Public domain",
+   "bar": 150.0,
+   "captionY": null,
+   "subY": 1500.0,
+   "pics": [
+    {
+     "src": "arc/7/img/rokusuke.jpg",
+     "w": 1074,
+     "h": 1600,
+     "box": [
+      194.3,
+      420.0,
+      691.4,
+      1030
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0.1,
+       0.05,
+       0.9,
+       0.85
+      ]
+     }
+    }
+   ],
+   "marks": [],
+   "edit": "troi-cham"
+  },
+  {
+   "s": 28.618,
+   "e": 32.011,
+   "scene": 3,
+   "shot": 3,
+   "label": "鳥山石燕が描いた河童",
+   "title": "きゅうりと相撲",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Wikimedia Commons / Public domain",
+   "bar": 150.0,
+   "captionY": null,
+   "subY": 1500.0,
+   "pics": [
+    {
+     "src": "arc/7/img/sekien.jpg",
+     "w": 1061,
+     "h": 1400,
+     "box": [
+      149.7,
+      420.0,
+      780.6,
+      1030
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0
+    }
+   ],
+   "marks": [
+    {
+     "s": 29.541,
+     "box": [
+      0.38,
+      0.55,
+      0.62,
+      0.72
+     ],
+     "shape": "ellipse",
+     "on": 0
+    }
+   ],
+   "edit": "khoanh"
+  },
+  {
+   "s": 32.011,
+   "e": 36.158,
+   "scene": 3,
+   "shot": 4,
+   "label": "かっぱ巻き（きゅうりの細巻き）",
+   "title": "きゅうりと相撲",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "石焼ビビンバ / CC BY-SA 4.0",
+   "bar": 290.0,
+   "captionY": null,
+   "subY": 1472,
+   "pics": [
+    {
+     "src": "arc/7/img/maki.jpg",
+     "w": 1920,
+     "h": 1440,
+     "box": [
+      40.0,
+      560.0,
+      1000,
+      750.0
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0
+    }
+   ],
+   "marks": [
+    {
+     "s": 33.147,
+     "box": [
+      0.7,
+      0.1,
+      0.95,
+      0.68
+     ],
+     "shape": "ellipse",
+     "on": 0
+    }
+   ],
+   "edit": "khoanh"
+  },
+  {
+   "s": 36.158,
+   "e": 40.938,
+   "scene": 4,
+   "shot": 1,
+   "label": "水中で河童と戦う武者（浮世絵）",
+   "title": "水の怖さ",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Wikimedia Commons / Public domain",
+   "bar": 150.0,
+   "captionY": null,
+   "subY": 1500.0,
+   "pics": [
+    {
+     "src": "arc/7/img/takagi.jpg",
+     "w": 1920,
+     "h": 2806,
+     "box": [
+      187.6,
+      420.0,
+      704.8,
+      1030
+     ],
+     "view": [
+      0.1,
+      0.05,
+      0.9,
+      0.85
+     ],
+     "drift": 0,
+     "move": {
+      "from": [
+       0.1,
+       0.05,
+       0.9,
+       0.85
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
+    }
+   ],
+   "marks": [],
+   "edit": "troi-cham"
+  },
+  {
+   "s": 40.938,
+   "e": 46.301,
+   "scene": 4,
+   "shot": 2,
+   "label": "川にひそむ川太郎（1788年）",
+   "title": "水の怖さ",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Wikimedia Commons / Public domain",
+   "bar": 150.0,
+   "captionY": null,
+   "subY": 1500.0,
+   "pics": [
+    {
+     "src": "arc/7/img/river.jpg",
+     "w": 1873,
+     "h": 2577,
+     "box": [
+      165.7,
+      420.0,
+      748.6,
+      1030
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0
+    }
+   ],
+   "marks": [],
+   "edit": "dung-yen"
+  },
+  {
+   "s": 46.301,
+   "e": 47.889,
+   "scene": 5,
+   "shot": 1,
+   "label": "『北斎漫画』八編",
+   "title": "恐れと親しみ",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "The Metropolitan Museum of Art / CC0",
+   "bar": 165.0,
+   "captionY": null,
+   "subY": 1485.0,
+   "pics": [
+    {
+     "src": "arc/7/img/manga.jpg",
+     "w": 2671,
+     "h": 1862,
+     "box": [
+      40.0,
+      435.0,
+      1000,
+      1000.0
+     ],
+     "view": [
+      0.30288,
+      0,
+      1,
+      1
+     ],
+     "drift": 0,
+     "move": {
+      "from": [
+       0.30288,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.69712,
+       1
+      ]
+     }
+    }
+   ],
+   "marks": [],
+   "edit": "toan-canh"
+  },
+  {
+   "s": 47.889,
+   "e": 49.776,
+   "scene": 5,
+   "shot": 2,
+   "label": "葛飾北斎が描いた河童",
+   "title": "恐れと親しみ",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Wikimedia Commons / Public domain",
+   "bar": 165.0,
+   "captionY": null,
+   "subY": 1485.0,
+   "pics": [
+    {
+     "src": "arc/7/img/hokusai.jpg",
+     "w": 1400,
+     "h": 1051,
+     "box": [
+      40.0,
+      435.0,
+      1000,
+      1000.0
+     ],
+     "view": [
+      0,
+      0,
+      0.75071,
+      1
+     ],
+     "drift": 0,
+     "move": {
+      "from": [
+       0,
+       0,
+       0.75071,
+       1
+      ],
+      "to": [
+       0.24929,
+       0,
+       1,
+       1
+      ]
+     }
+    }
+   ],
+   "marks": [],
+   "edit": "troi-cham"
+  },
+  {
+   "s": 49.776,
+   "e": 51.504,
+   "scene": 5,
+   "shot": 3,
+   "label": "曹源寺（かっぱ寺・東京）",
+   "title": "恐れと親しみ",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Jeanjung212 / CC BY-SA 4.0",
+   "bar": 165.0,
+   "captionY": null,
+   "subY": 1485.0,
+   "pics": [
+    {
+     "src": "arc/7/img/dera.jpg",
+     "w": 1920,
+     "h": 1440,
+     "box": [
+      40.0,
+      435.0,
+      1000,
+      1000.0
+     ],
+     "view": [
+      0.25,
+      0,
+      1,
+      1
+     ],
+     "drift": 0,
+     "move": {
+      "from": [
+       0.25,
+       0,
+       1,
+       1
+      ],
+      "to": [
+       0,
+       0,
+       0.75,
+       1
+      ]
+     }
+    }
+   ],
+   "marks": [],
+   "edit": "toan-canh"
+  },
+  {
+   "s": 51.504,
+   "e": 54.054,
+   "scene": 5,
+   "shot": 4,
+   "label": "「水虎十二品之図」の河童の手",
+   "title": "恐れと親しみ",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Juntaku / Public domain",
+   "bar": 321.8,
+   "captionY": null,
+   "subY": 1472,
+   "pics": [
+    {
+     "src": "arc/7/img/juni.jpg",
+     "w": 1920,
+     "h": 1318,
+     "box": [
+      40.0,
+      591.8,
+      1000,
+      686.5
+     ],
+     "view": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "drift": 0
+    }
+   ],
+   "marks": [
+    {
+     "s": 52.329,
+     "box": [
+      0.74,
+      0.8,
+      0.86,
+      0.93
+     ],
+     "shape": "ellipse",
+     "on": 0
+    }
+   ],
+   "edit": "khoanh"
+  },
+  {
+   "s": 54.054,
+   "e": 60.64,
+   "scene": 5,
+   "shot": 5,
+   "label": "曹源寺の河童像",
+   "title": "恐れと親しみ",
+   "titleSize": 90,
+   "caption": "",
+   "credit": "Jeanjung212 / CC BY-SA 4.0",
+   "bar": 150.0,
+   "captionY": null,
+   "subY": 1500.0,
+   "pics": [
+    {
+     "src": "arc/7/img/statue.jpg",
+     "w": 1920,
+     "h": 2560,
+     "box": [
+      153.8,
+      420.0,
+      772.5,
+      1030
+     ],
+     "view": [
+      0.11,
+      0.06,
+      0.89,
+      0.84
+     ],
+     "drift": 0,
+     "move": {
+      "from": [
+       0.11,
+       0.06,
+       0.89,
+       0.84
+      ],
+      "to": [
+       0,
+       0,
+       1,
+       1
+      ]
+     }
+    }
+   ],
+   "marks": [],
+   "edit": "ket"
+  }
+ ],
+ "subs": [
+  {
+   "s": 0.1,
+   "e": 3.055,
+   "text": "川や沼に住み、\n頭にお皿をのせた妖怪、河童。",
+   "hl": [
+    "頭にお皿"
+   ]
+  },
+  {
+   "s": 3.055,
+   "e": 6.579,
+   "text": "江戸時代の人々は、この河童を\n本気で調べようとしました。",
+   "hl": [
+    "本気で調べよう"
+   ]
+  },
+  {
+   "s": 6.579,
+   "e": 9.418,
+   "text": "一八二〇年、\n学者の古賀侗庵は、",
+   "hl": []
+  },
+  {
+   "s": 9.388,
+   "e": 11.322,
+   "text": "各地の目撃談や\n絵を集めて、",
+   "hl": []
+  },
+  {
+   "s": 11.292,
+   "e": 13.714,
+   "text": "『水虎考略』という\n本にまとめています。",
+   "hl": [
+    "水虎考略"
+   ]
+  },
+  {
+   "s": 13.714,
+   "e": 15.984,
+   "text": "そこには、\n亀のような甲羅を持つもの、",
+   "hl": [
+    "甲羅"
+   ]
+  },
+  {
+   "s": 15.954,
+   "e": 17.784,
+   "text": "全身が\n毛におおわれたものなど、",
+   "hl": [
+    "毛におおわれた"
+   ]
+  },
+  {
+   "s": 17.754,
+   "e": 20.211,
+   "text": "さまざまな姿の河童が\n描かれています。",
+   "hl": []
+  },
+  {
+   "s": 20.211,
+   "e": 22.473,
+   "text": "九州の「ガラッパ」、\n東北の「メドチ」など、",
+   "hl": [
+    "ガラッパ"
+   ]
+  },
+  {
+   "s": 22.443,
+   "e": 24.684,
+   "text": "地方ごとに\n違う呼び名もありました。",
+   "hl": []
+  },
+  {
+   "s": 24.684,
+   "e": 26.929,
+   "text": "言い伝えでは、\n河童はきゅうりが好きで、",
+   "hl": [
+    "きゅうり"
+   ]
+  },
+  {
+   "s": 26.899,
+   "e": 28.618,
+   "text": "相撲をとるのが大好き。",
+   "hl": [
+    "相撲"
+   ]
+  },
+  {
+   "s": 28.618,
+   "e": 32.011,
+   "text": "頭の皿の水がこぼれると、\n力が抜けてしまうといいます。",
+   "hl": [
+    "皿の水"
+   ]
+  },
+  {
+   "s": 32.011,
+   "e": 34.353,
+   "text": "きゅうりの細巻きを\n「かっぱ巻き」と呼ぶのも、",
+   "hl": [
+    "かっぱ巻き"
+   ]
+  },
+  {
+   "s": 34.323,
+   "e": 36.158,
+   "text": "この\n好物にちなんだものです。",
+   "hl": []
+  },
+  {
+   "s": 36.158,
+   "e": 38.983,
+   "text": "一方で、川に近づく子どもを\n水に引きずり込む、",
+   "hl": [
+    "引きずり込む"
+   ]
+  },
+  {
+   "s": 38.953,
+   "e": 40.938,
+   "text": "恐ろしい存在でもありました。",
+   "hl": []
+  },
+  {
+   "s": 40.938,
+   "e": 42.931,
+   "text": "水の事故から子どもを\n守るために、",
+   "hl": [
+    "水の事故"
+   ]
+  },
+  {
+   "s": 42.901,
+   "e": 46.301,
+   "text": "大人たちが語り伝えたのではないか、\nという説もあります。",
+   "hl": []
+  },
+  {
+   "s": 46.301,
+   "e": 49.776,
+   "text": "葛飾北斎も、『北斎漫画』に\n河童の姿を描いています。",
+   "hl": [
+    "北斎漫画"
+   ]
+  },
+  {
+   "s": 49.776,
+   "e": 51.534,
+   "text": "今も各地のお寺には、",
+   "hl": []
+  },
+  {
+   "s": 51.504,
+   "e": 54.054,
+   "text": "「河童の手」\nと伝わるミイラが残されています。",
+   "hl": [
+    "河童の手"
+   ]
+  },
+  {
+   "s": 54.054,
+   "e": 56.568,
+   "text": "河童は、水とともに\n暮らしてきた日本人の、",
+   "hl": []
+  },
+  {
+   "s": 56.538,
+   "e": 60.34,
+   "text": "恐れと親しみが\n生んだ存在なのかもしれません。",
+   "hl": [
+    "恐れと親しみ"
+   ]
+  }
+ ],
+ "voice": [
+  {
+   "s": 0.25,
+   "src": "arc/7/voice/line_01.mp3"
+  },
+  {
+   "s": 3.205,
+   "src": "arc/7/voice/line_02.mp3"
+  },
+  {
+   "s": 6.729,
+   "src": "arc/7/voice/line_03.mp3"
+  },
+  {
+   "s": 9.538,
+   "src": "arc/7/voice/line_04.mp3"
+  },
+  {
+   "s": 11.442,
+   "src": "arc/7/voice/line_05.mp3"
+  },
+  {
+   "s": 13.864,
+   "src": "arc/7/voice/line_06.mp3"
+  },
+  {
+   "s": 16.104,
+   "src": "arc/7/voice/line_07.mp3"
+  },
+  {
+   "s": 17.904,
+   "src": "arc/7/voice/line_08.mp3"
+  },
+  {
+   "s": 20.361,
+   "src": "arc/7/voice/line_09.mp3"
+  },
+  {
+   "s": 22.593,
+   "src": "arc/7/voice/line_10.mp3"
+  },
+  {
+   "s": 24.834,
+   "src": "arc/7/voice/line_11.mp3"
+  },
+  {
+   "s": 27.049,
+   "src": "arc/7/voice/line_12.mp3"
+  },
+  {
+   "s": 28.768,
+   "src": "arc/7/voice/line_13.mp3"
+  },
+  {
+   "s": 32.161,
+   "src": "arc/7/voice/line_14.mp3"
+  },
+  {
+   "s": 34.473,
+   "src": "arc/7/voice/line_15.mp3"
+  },
+  {
+   "s": 36.308,
+   "src": "arc/7/voice/line_16.mp3"
+  },
+  {
+   "s": 39.103,
+   "src": "arc/7/voice/line_17.mp3"
+  },
+  {
+   "s": 41.088,
+   "src": "arc/7/voice/line_18.mp3"
+  },
+  {
+   "s": 43.051,
+   "src": "arc/7/voice/line_19.mp3"
+  },
+  {
+   "s": 46.451,
+   "src": "arc/7/voice/line_20.mp3"
+  },
+  {
+   "s": 49.926,
+   "src": "arc/7/voice/line_21.mp3"
+  },
+  {
+   "s": 51.654,
+   "src": "arc/7/voice/line_22.mp3"
+  },
+  {
+   "s": 54.204,
+   "src": "arc/7/voice/line_23.mp3"
+  },
+  {
+   "s": 56.688,
+   "src": "arc/7/voice/line_24.mp3"
+  }
+ ],
+ "music": "arc/7/bed.wav",
+ "musicVolume": 0.16,
+ "fonts": [
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-49-wght-normal.woff2",
+   "range": "U+4f57-4f58,U+4f5a-4f5b,U+4f5d-4f5f,U+4f63-4f64,U+4f69-4f6a,U+4f6c,U+4f6e-4f71,U+4f76-4f7e,U+4f81-4f85,U+4f88-4f8a,U+4f8c,U+4f8e-4f90,U+4f92-4f94,U+4f96-4f9a,U+4f9e-4fa0,U+4fab,U+4fad,U+4faf,U+4fb2,U+4fb7,U+4fb9,U+4fbb-4fbe,U+4fc0-4fc1,U+4fc4-4fc6,U+4fc8-4fc9,U+4fcb-4fd4,U+4fd8,U+4fda-4fdc,U+4fdf-4fe0,U+4fe2,U+4fe4-4fe6,U+4fef-4ff2,U+4ff6,U+4ffc-5002,U+5004-5007,U+500a,U+500c,U+500e-5011,U+5013-5014,U+5016-5018,U+501a-501e,U+5021-5023,U+5025-502a,U+502c-502e,U+5030,U+5032-5033,U+5035,U+5039,U+503b,U+5040-5043,U+5045-5048,U+504a,U+504c,U+504e,U+5050-5053,U+5055-5057,U+5059-505a,U+505f-5060,U+5062-5063,U+5066-5067,U+506a,U+506c-506d,U+5070-5072,U+5077-5078,U+5080-5081,U+5083-5086,U+5088,U+508a,U+508e-5090,U+5092-5096,U+509a-509c,U+509e-50a3,U+50aa,U+50ad,U+50af-50b4,U+50b9-50bb,U+50bd,U+50c0,U+50c2-50c4,U+50c7,U+50c9-50ca,U+50cc,U+50ce,U+50d0-50d1,U+50d3-50d4,U+50d6,U+50d8-50d9,U+50dc"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-66-wght-normal.woff2",
+   "range": "U+2020,U+3003,U+3231,U+4e9b,U+4f3d,U+4f47,U+51b6,U+51dc,U+53e1,U+5bc5,U+602f,U+60bc,U+61c9,U+633d,U+637b,U+6492,U+65fa,U+660f,U+66f0,U+6703,U+681e,U+6876,U+6893,U+6912,U+698e,U+6c7d,U+714c,U+7169,U+71d5,U+725f,U+72d7,U+745b,U+74dc,U+75e2,U+7891,U+7897,U+7dcb,U+810a,U+8218,U+8339,U+840e,U+852d,U+8823,U+8a0a,U+9089,U+919c,U+971c,U+9ad9,U+ff4a,U+ff5a"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-71-wght-normal.woff2",
+   "range": "U+af,U+2465,U+2517,U+33a1,U+4f10,U+50c5,U+51b4,U+5384,U+5606,U+5bb0,U+5cac,U+5ee3,U+618e,U+61f2,U+62c9,U+66ab,U+66f9,U+6816,U+6960,U+6b3e,U+6f20,U+7078,U+72d0,U+73ed,U+7ad9,U+7b1b,U+7be4,U+7d62,U+7f51,U+80b4,U+80f4,U+8154,U+85fb,U+865c,U+8702,U+895f,U+8aed,U+8b90,U+8ced,U+8fbf,U+91d8,U+9418,U+9583,U+9591,U+9813,U+982c,U+9bd6,U+ff46,U+ff7f,U+ff88"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-77-wght-normal.woff2",
+   "range": "U+2207,U+25ef,U+309c,U+4e4f,U+5146,U+51dd,U+5351,U+540a,U+5629,U+5eb5,U+5f04,U+5f13,U+60dc,U+6212,U+63b4,U+642c,U+6627,U+66a6,U+66c7,U+66fd,U+674e,U+6b96,U+6c4e,U+6df3,U+6e67,U+6f84,U+72fc,U+733f,U+7c97,U+7db1,U+7e4d,U+816b,U+82d1,U+84cb,U+854e,U+8607,U+86c7,U+871c,U+8776,U+8a89,U+8fc4,U+91a4,U+9285,U+9685,U+9903,U+9b31,U+9f13,U+ff42,U+ff74,U+ff91"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-82-wght-normal.woff2",
+   "range": "U+2103,U+5049,U+52b1,U+5320,U+5553,U+572d,U+58c7,U+5b5d,U+5bc2,U+5de3,U+5e61,U+5f80,U+61a9,U+67d0,U+67f4,U+6c88,U+6ca1,U+6ce5,U+6d78,U+6e9c,U+6f54,U+731b,U+73b2,U+74a7,U+74f6,U+75e9,U+7b20,U+7c8b,U+7f72,U+809d,U+8108,U+82b3,U+82bd,U+84b8,U+84c4,U+88c2,U+8ae6,U+8ef8,U+902e,U+9065,U+9326,U+935b,U+938c,U+9676,U+9694,U+96f7,U+9ed9,U+ff48,U+ff4c,U+ff81"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-83-wght-normal.woff2",
+   "range": "U+2500,U+3008-3009,U+4ead,U+4f0f,U+4fca,U+53eb,U+543e,U+57a2,U+5cf0,U+5e8f,U+5fe0,U+61b2,U+62d8,U+6442,U+64b2,U+6589,U+659c,U+67f1,U+68c4,U+6cb8,U+6d12,U+6de1,U+6fe1,U+70c8,U+723d,U+73e0,U+7656,U+773a,U+7948,U+7b87,U+7c92,U+7d3a,U+7e1b,U+7e4a,U+819a,U+8358,U+83c5,U+84bc,U+864e,U+8912,U+8c9e,U+8d05,U+92fc,U+9396,U+98fd,U+99d2,U+ff64,U+ff7a,U+ff83"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-85-wght-normal.woff2",
+   "range": "U+25c7,U+3007,U+504f,U+507d,U+51a0,U+52a3,U+5410,U+5510,U+559a,U+5782,U+582a,U+5c0a,U+5c3f,U+5c48,U+5f6b,U+6176,U+622f,U+6279,U+62bd,U+62dd,U+65ed,U+67b6,U+6817,U+6850,U+6d6a,U+6deb,U+6ea2,U+6edd,U+6f5c,U+72e9,U+73a9,U+7573,U+76bf,U+7950,U+7956,U+7f8a,U+7ffc,U+80a2,U+80c3,U+83ca,U+8a02,U+8a13,U+8df5,U+9375,U+983b,U+99b4,U+ff4e,U+ff71,U+ff89,U+ff97"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-86-wght-normal.woff2",
+   "range": "U+24,U+2022,U+2212,U+221f,U+2665,U+4ecf,U+5100,U+51cd,U+52d8,U+5378,U+53f6,U+574a,U+5982,U+5996,U+5c1a,U+5e1d,U+5f84,U+609f,U+61a7,U+61f8,U+6398,U+63ee,U+6676,U+6691,U+6eb6,U+7126,U+71e5,U+7687,U+7965,U+7d17,U+80a1,U+8107,U+8266,U+85a6,U+8987,U+8ca2,U+8cab,U+8e0a,U+9042,U+95c7,U+9810,U+9867,U+98fc,U+ff52-ff54,U+ff61,U+ff77,U+ff98-ff99"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-87-wght-normal.woff2",
+   "range": "U+b0,U+226a,U+2462,U+4e39,U+4fc3,U+4fd7,U+50be,U+50da,U+5200,U+5211,U+54f2,U+5618,U+596a,U+5b22,U+5bb4,U+5d50,U+60a3,U+63fa,U+658e,U+65e8,U+6669,U+6795,U+679d,U+67a0,U+6b3a,U+6e09,U+757f,U+7cd6,U+7dbe,U+7ffb,U+83cc,U+83f1,U+840c,U+845b,U+8846,U+8972,U+8a34,U+8a50,U+8a87,U+8edf,U+8ff0,U+90a6,U+9154,U+95a3,U+9663,U+9686,U+96c7,U+ff3c,U+ff7c,U+ff8a"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-88-wght-normal.woff2",
+   "range": "U+25bd,U+4e59,U+4ec1,U+4ff3,U+515a,U+518a,U+525b,U+5375,U+552f,U+57a3,U+5b9c,U+5c3d,U+5e3d,U+5e7b,U+5f0a,U+6094,U+6458,U+654f,U+67f3,U+6b8a,U+6bd2,U+6c37,U+6ce1,U+6e56,U+6e7f,U+6ed1,U+6ede,U+6f0f,U+70ad,U+7267,U+7363,U+786c,U+7a42,U+7db2,U+7f85,U+8178,U+829d,U+8896,U+8c5a,U+8cb0,U+8ce2,U+8ed2,U+9047,U+9177,U+970a,U+9ea6,U+ff1b,U+ff31,U+ff39,U+ff80"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-89-wght-normal.woff2",
+   "range": "U+a5,U+4e80,U+4f34,U+4f73,U+4f75,U+511f,U+5192,U+52aa,U+53c8,U+570f,U+57cb,U+596e,U+5d8b,U+5f66,U+5fd9,U+62db,U+62f6,U+6328,U+633f,U+63a7,U+6469,U+6bbf,U+6c41,U+6c57,U+6d44,U+6dbc,U+706f,U+72c2,U+72ed,U+7551,U+75f4,U+7949,U+7e26,U+7fd4,U+8150,U+8af8,U+8b0e,U+8b72,U+8ca7,U+934b,U+9a0e,U+9a12,U+9b42,U+ff41,U+ff43,U+ff45,U+ff49,U+ff4f,U+ff62-ff63"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-90-wght-normal.woff2",
+   "range": "U+4e18,U+4fb5,U+5104,U+52c7,U+5353,U+5374,U+53e5,U+587e,U+594f,U+5a20,U+5de1,U+5f18,U+5fcd,U+6291,U+62ab,U+6355,U+6392,U+63da,U+63e1,U+656c,U+6687,U+68b0-68b1,U+68d2,U+68da,U+6b27,U+6cbc,U+7159,U+7344,U+73cd,U+76df,U+790e,U+7cf8,U+8102,U+88c1,U+8aa0,U+8e0f,U+9178,U+92ad,U+9670,U+96c5,U+9cf4,U+9db4,U+ff3e,U+ff6f,U+ff72,U+ff78,U+ff7d,U+ff84,U+ff8c"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-93-wght-normal.woff2",
+   "range": "U+21d2,U+25ce,U+300a-300b,U+4e89,U+4e9c,U+4ea1,U+5263,U+53cc,U+5426,U+5869,U+5947,U+598a,U+5999,U+5e55,U+5e72,U+5e79,U+5fae,U+5fb9,U+602a,U+6163,U+624d,U+6749,U+6c5a,U+6cbf,U+6d45,U+6dfb,U+6e7e,U+708e,U+725b,U+7763,U+79c0,U+7bc4,U+7c89,U+7e01,U+7e2e,U+8010,U+8033,U+8c6a,U+8cc3,U+8f1d,U+8f9b,U+8fb2,U+907f,U+90f7,U+9707,U+9818,U+9b3c,U+ff0a,U+ff4d"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-94-wght-normal.woff2",
+   "range": "U+2015,U+2190,U+4e43,U+5019,U+5247,U+52e7,U+5438,U+54b2,U+55ab,U+57f7,U+5bd2,U+5e8a,U+5ef6,U+6016,U+60b2,U+6162,U+6319,U+6551,U+6607,U+66b4,U+675f,U+67d4,U+6b20,U+6b53,U+6ce3,U+719f,U+75b2,U+770b,U+7720,U+77ac,U+79d2,U+7af9,U+7d05,U+7dca,U+8056,U+80f8,U+81f3,U+8352,U+885d,U+8a70,U+8aa4,U+8cbc,U+900f,U+9084,U+91e3,U+9451,U+96c4,U+99c6,U+9ad4,U+ff70"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-95-wght-normal.woff2",
+   "range": "U+2193,U+25b2,U+4e4b,U+516d,U+51c4,U+529f,U+52c9,U+5360,U+5442,U+5857,U+5915,U+59eb,U+5a9b,U+5c3b,U+6012,U+61b6,U+62b1,U+6311,U+6577,U+65e2,U+65ec,U+6613,U+6790,U+6cb9,U+7372,U+76ae,U+7d5e,U+7fcc,U+88ab,U+88d5,U+8caf,U+8ddd,U+8ecd,U+8f38,U+8f9e,U+8feb,U+9063,U+90f5,U+93e1,U+968a,U+968f,U+98fe,U+9ec4,U+ff1d,U+ff27,U+ff2a,U+ff36,U+ff3b,U+ff3d,U+ffe5"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-97-wght-normal.woff2",
+   "range": "U+7e,U+b4,U+25c6,U+2661,U+4e92,U+4eee,U+4ffa,U+5144,U+5237,U+5287,U+52b4,U+58c1,U+5bff,U+5c04,U+5c06,U+5e95,U+5f31,U+5f93,U+63c3,U+640d,U+6557,U+6614,U+662f,U+67d3,U+690d,U+6bba,U+6e6f,U+72af,U+732b,U+7518,U+7ae0,U+7ae5,U+7af6,U+822a,U+89e6,U+8a3a,U+8a98,U+8cb8,U+8de1,U+8e8d,U+95d8,U+961c,U+96a3,U+96ea,U+9bae,U+ff20,U+ff22,U+ff29,U+ff2b-ff2c"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-98-wght-normal.woff2",
+   "range": "U+25cb,U+4e71,U+4f59,U+50d5,U+520a,U+5217,U+5230,U+523a-523b,U+541b,U+5439,U+5747,U+59c9,U+5bdf,U+5c31,U+5de8,U+5e7c,U+5f69,U+6050,U+60d1,U+63cf,U+663c,U+67c4,U+6885,U+6c38,U+6d6e,U+6db2,U+6df7,U+6e2c,U+6f5f,U+7532,U+76e3-76e4,U+7701,U+793c,U+79f0,U+7a93,U+7d00,U+7de0,U+7e54,U+8328,U+8840,U+969c,U+96e8,U+9811,U+9aea,U+9b5a,U+ff24,U+ff2e,U+ff57"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-99-wght-normal.woff2",
+   "range": "U+2191,U+505c,U+52e4,U+5305,U+535a,U+56e0,U+59bb,U+5acc,U+5b09,U+5b87,U+5c90,U+5df1,U+5e2d,U+5e33,U+5f3e,U+6298,U+6383,U+653b,U+6697,U+6804,U+6a39,U+6cca,U+6e90,U+6f2b,U+702c,U+7206,U+7236,U+7559,U+7565,U+7591,U+75c7,U+75db,U+7b4b,U+7bb1,U+7d99,U+7fbd,U+8131,U+885b,U+8b1d,U+8ff7,U+9003,U+9045,U+96a0,U+9732,U+990a,U+99d0,U+9e97,U+9f62,U+ff25,U+ff2d"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-100-wght-normal.woff2",
+   "range": "U+4e08,U+4f9d,U+5012,U+514d,U+51b7,U+5275,U+53ca,U+53f8,U+5584,U+57fc,U+5b9d,U+5bfa,U+5c3e,U+5f01,U+5fb4,U+5fd7,U+606f,U+62e1,U+6563,U+6674,U+6cb3,U+6d3e,U+6d74,U+6e1b,U+6e2f,U+718a,U+7247,U+79d8,U+7d14,U+7d66,U+7d71,U+7df4,U+7e41,U+80cc,U+8155,U+83d3,U+8a95,U+8ab2,U+8ad6,U+8ca1,U+9000,U+9006,U+9678,U+97d3,U+9808,U+98ef,U+9a5a,U+9b45,U+ff23,U+ff30"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-101-wght-normal.woff2",
+   "range": "U+25bc,U+3012,U+4ef2,U+4f0a,U+516b,U+5373,U+539a,U+53b3,U+559c,U+56f0,U+5727,U+5742,U+5965,U+59ff,U+5bc6,U+5dfb,U+5e45,U+5ead,U+5fb3,U+6211,U+6253,U+639b,U+63a8,U+6545,U+6575,U+6628,U+672d,U+68a8,U+6bdb,U+6d25,U+707d,U+767e,U+7834,U+7b46,U+7bc9,U+8074,U+82e6,U+8349,U+8a2a,U+8d70,U+8da3,U+8fce,U+91cc,U+967d,U+97ff,U+9996,U+ff1c,U+ff2f,U+ff32,U+ff34"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-102-wght-normal.woff2",
+   "range": "U+3d,U+5e,U+25cf,U+4e0e,U+4e5d,U+4e73,U+4e94,U+4f3c,U+5009,U+5145,U+51ac,U+5238,U+524a,U+53f3,U+547c,U+5802,U+5922,U+5a66,U+5c0e,U+5de6,U+5fd8,U+5feb,U+6797,U+685c,U+6b7b,U+6c5f-6c60,U+6cc9,U+6ce2,U+6d17,U+6e21,U+7167,U+7642,U+76db,U+8001,U+821e,U+8857,U+89d2,U+8b1b,U+8b70,U+8cb4,U+8cde,U+8f03,U+8f2a,U+968e,U+9b54,U+9e7f,U+9ebb,U+ff05,U+ff33"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-103-wght-normal.woff2",
+   "range": "U+500d,U+5074,U+50cd,U+5175,U+52e2,U+5352,U+5354,U+53f2,U+5409,U+56fa,U+5a18,U+5b88,U+5bdd,U+5ca9,U+5f92,U+5fa9,U+60a9,U+623f,U+6483,U+653f,U+666f,U+66ae,U+66f2,U+6a21,U+6b66,U+6bcd,U+6d5c,U+796d,U+7a4d,U+7aef,U+7b56,U+7b97,U+7c4d,U+7e04,U+7fa9,U+8377,U+83dc,U+83ef,U+8535,U+8863,U+88cf,U+88dc,U+8907,U+8acb,U+90ce,U+91dd,U+ff0b,U+ff0d,U+ff19,U+ff65"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-104-wght-normal.woff2",
+   "range": "U+4e01,U+4e21,U+4e38,U+52a9,U+547d,U+592e,U+5931,U+5b63,U+5c40,U+5dde,U+5e78,U+5efa,U+5fa1,U+604b,U+6075,U+62c5,U+632f,U+6a19,U+6c0f,U+6c11,U+6c96,U+6e05,U+70ba,U+71b1,U+7387,U+7403,U+75c5,U+77ed,U+795d,U+7b54,U+7cbe,U+7d19,U+7fa4,U+8089,U+81f4,U+8208,U+8336,U+8457,U+8a33,U+8c4a,U+8ca0,U+8ca8,U+8cc0,U+9014,U+964d,U+9803,U+983c,U+98db,U+ff17,U+ff21"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-105-wght-normal.woff2",
+   "range": "U+25,U+25a0,U+4e26,U+4f4e,U+5341,U+56f2,U+5bbf,U+5c45,U+5c55,U+5c5e,U+5dee,U+5e9c,U+5f7c,U+6255,U+627f,U+62bc,U+65cf,U+661f,U+666e,U+66dc,U+67fb,U+6975,U+6a4b,U+6b32,U+6df1,U+6e29,U+6fc0,U+738b,U+7686,U+7a76,U+7a81,U+7c73,U+7d75,U+7dd2,U+82e5,U+82f1,U+85ac,U+888b,U+899a,U+8a31,U+8a8c,U+8ab0,U+8b58,U+904a,U+9060,U+9280,U+95b2,U+984d,U+9ce5,U+ff18"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-106-wght-normal.woff2",
+   "range": "U+30f6,U+50ac,U+5178,U+51e6,U+5224,U+52dd,U+5883,U+5897,U+590f,U+5a5a,U+5bb3,U+5c65,U+5e03,U+5e2b,U+5e30,U+5eb7,U+6271,U+63f4,U+64ae,U+6574,U+672b,U+679a,U+6a29-6a2a,U+6ca2,U+6cc1,U+6d0b,U+713c,U+74b0,U+7981,U+7a0b,U+7bc0,U+7d1a,U+7d61,U+7fd2,U+822c,U+8996,U+89aa,U+8cac,U+8cbb,U+8d77,U+8def,U+9020,U+9152,U+9244,U+9662,U+967a,U+96e3,U+9759,U+ff16"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-107-wght-normal.woff2",
+   "range": "U+23,U+3c,U+2192,U+4e45,U+4efb,U+4f50,U+4f8b,U+4fc2,U+5024,U+5150,U+5272,U+5370,U+53bb,U+542b,U+56db,U+56e3,U+57ce,U+5bc4,U+5bcc,U+5f71,U+60aa,U+6238,U+6280,U+629c,U+6539,U+66ff,U+670d,U+677e-677f,U+6839,U+69cb,U+6b4c,U+6bb5,U+6e96,U+6f14,U+72ec,U+7389,U+7814,U+79cb,U+79d1,U+79fb,U+7a0e,U+7d0d,U+85e4,U+8d64,U+9632,U+96e2,U+9805,U+99ac,U+ff1e"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-108-wght-normal.woff2",
+   "range": "U+2605-2606,U+301c,U+4e57,U+4fee,U+5065,U+52df,U+533b,U+5357,U+57df,U+58eb,U+58f0,U+591c,U+592a-592b,U+5948,U+5b85,U+5d0e,U+5ea7,U+5ff5,U+6025,U+63a1,U+63a5,U+63db,U+643a,U+65bd,U+671d,U+68ee,U+6982,U+6b73,U+6bd4,U+6d88,U+7570,U+7b11,U+7d76,U+8077,U+8217,U+8c37,U+8c61,U+8cc7,U+8d85,U+901f,U+962a,U+9802,U+9806,U+9854,U+98f2,U+9928,U+99c5,U+9ed2"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-109-wght-normal.woff2",
+   "range": "U+266a,U+4f11,U+533a,U+5343,U+534a,U+53cd,U+5404,U+56f3,U+5b57-5b58,U+5bae,U+5c4a,U+5e0c,U+5e2f,U+5eab,U+5f35,U+5f79,U+614b,U+6226,U+629e,U+65c5,U+6625,U+6751,U+6821,U+6b69,U+6b8b,U+6bce,U+6c42,U+706b,U+7c21,U+7cfb,U+805e,U+80b2,U+82b8,U+843d,U+8853,U+88c5,U+8a3c,U+8a66,U+8d8a,U+8fba,U+9069,U+91cf,U+9752,U+975e,U+9999,U+ff0f-ff10,U+ff14-ff15"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-110-wght-normal.woff2",
+   "range": "U+40,U+4e86,U+4e95,U+4f01,U+4f1d,U+4fbf,U+5099,U+5171,U+5177,U+53cb,U+53ce,U+53f0,U+5668,U+5712,U+5ba4,U+5ca1,U+5f85,U+60f3,U+653e,U+65ad,U+65e9,U+6620,U+6750,U+6761,U+6b62,U+6b74,U+6e08,U+6e80,U+7248,U+7531,U+7533,U+753a,U+77f3,U+798f,U+7f6e,U+8449,U+88fd,U+89b3,U+8a55,U+8ac7,U+8b77,U+8db3,U+8efd,U+8fd4,U+9031-9032,U+9580,U+9589,U+96d1,U+985e"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-111-wght-normal.woff2",
+   "range": "U+2b,U+d7,U+300e-300f,U+4e07,U+4e8c,U+512a,U+5149,U+518d,U+5236,U+52b9,U+52d9,U+5468,U+578b,U+57fa,U+5b8c,U+5ba2,U+5c02,U+5de5,U+5f37,U+5f62,U+623b,U+63d0,U+652f,U+672a,U+6848,U+6d41,U+7136,U+7537,U+754c,U+76f4,U+79c1,U+7ba1,U+7d44,U+7d4c,U+7dcf,U+7dda,U+7de8,U+82b1,U+897f,U+8ca9,U+8cfc,U+904e,U+9664,U+982d,U+9858,U+98a8,U+9a13,U+ff13,U+ff5c"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-112-wght-normal.woff2",
+   "range": "U+4e16,U+4e3b,U+4ea4,U+4ee4,U+4f4d,U+4f4f,U+4f55,U+4f9b,U+5317,U+5358,U+53c2,U+53e4,U+548c,U+571f,U+59cb,U+5cf6,U+5e38,U+63a2,U+63b2,U+6559,U+662d,U+679c,U+6c7a,U+72b6,U+7523,U+767d,U+770c,U+7a2e,U+7a3f,U+7a7a,U+7b2c,U+7b49,U+7d20,U+7d42,U+8003,U+8272,U+8a08,U+8aac,U+8cb7,U+8eab,U+8ee2,U+9054-9055,U+90fd,U+914d,U+91cd,U+969b,U+97f3,U+984c,U+ff06"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-113-wght-normal.woff2",
+   "range": "U+26,U+5f,U+2026,U+203b,U+4e09,U+4eac,U+4ed5,U+4fa1,U+5143,U+5199,U+5207,U+539f,U+53e3,U+53f7,U+5411,U+5473,U+5546,U+55b6,U+5929,U+597d,U+5bb9,U+5c11,U+5c4b,U+5ddd,U+5f97,U+5fc5,U+6295,U+6301,U+6307,U+671b,U+76f8,U+78ba,U+795e,U+7d30,U+7d39,U+7d9a,U+89e3,U+8a00,U+8a73,U+8a8d,U+8a9e,U+8aad,U+8abf,U+8cea,U+8eca,U+8ffd,U+904b,U+9650,U+ff11-ff12"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-114-wght-normal.woff2",
+   "range": "U+3e,U+3005,U+4e0d,U+4e88,U+4ecb,U+4ee3,U+4ef6,U+4fdd,U+4fe1,U+500b,U+50cf,U+5186,U+5316,U+53d7,U+540c,U+544a,U+54e1,U+5728,U+58f2,U+5973,U+5b89,U+5c71,U+5e02,U+5e97,U+5f15,U+5fc3,U+5fdc,U+601d,U+611b,U+611f,U+671f,U+6728,U+6765,U+683c,U+6b21,U+6ce8,U+6d3b,U+6d77,U+7530,U+7740,U+7acb,U+7d50,U+826f,U+8f09,U+8fbc,U+9001,U+9053,U+91ce,U+9762,U+98df"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-115-wght-normal.woff2",
+   "range": "U+7c,U+3080,U+4ee5,U+5148,U+516c,U+521d,U+5225,U+529b,U+52a0,U+53ef,U+56de,U+56fd,U+5909,U+591a,U+5b66,U+5b9f,U+5bb6,U+5bfe,U+5e73,U+5e83,U+5ea6,U+5f53,U+6027,U+610f,U+6210,U+6240,U+660e,U+66f4,U+66f8,U+6709,U+6771,U+697d,U+69d8,U+6a5f,U+6c34,U+6cbb,U+73fe,U+756a,U+7684,U+771f,U+793a,U+7f8e,U+898f,U+8a2d,U+8a71,U+8fd1,U+9078,U+9577,U+96fb,U+ff5e"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-116-wght-normal.woff2",
+   "range": "U+a9,U+3010-3011,U+30e2,U+4e0b,U+4eca,U+4ed6,U+4ed8,U+4f53,U+4f5c,U+4f7f,U+53d6,U+540d,U+54c1,U+5730,U+5916,U+5b50,U+5c0f,U+5f8c,U+624b,U+6570,U+6587,U+6599,U+691c,U+696d,U+6cd5,U+7269,U+7279,U+7406,U+767a-767b,U+77e5,U+7d04,U+7d22,U+8005,U+80fd,U+81ea,U+8868,U+8981,U+89a7,U+901a,U+9023,U+90e8,U+91d1,U+9332,U+958b,U+96c6,U+9ad8,U+ff1a,U+ff1f"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-117-wght-normal.woff2",
+   "range": "U+4e,U+a0,U+3000,U+300c-300d,U+4e00,U+4e0a,U+4e2d,U+4e8b,U+4eba,U+4f1a,U+5165,U+5168,U+5185,U+51fa,U+5206,U+5229,U+524d,U+52d5,U+5408,U+554f,U+5831,U+5834,U+5927,U+5b9a,U+5e74,U+5f0f,U+60c5,U+65b0,U+65b9,U+6642,U+6700,U+672c,U+682a,U+6b63,U+6c17,U+7121,U+751f,U+7528,U+753b,U+76ee,U+793e,U+884c,U+898b,U+8a18,U+9593,U+95a2,U+ff01,U+ff08-ff09"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-118-wght-normal.woff2",
+   "range": "U+21-22,U+27-2a,U+2c-3b,U+3f,U+41-4d,U+4f-5d,U+61-7b,U+7d,U+ab,U+ae,U+b2-b3,U+b7,U+bb,U+c9,U+cd,U+d6,U+d8,U+dc,U+e0-e5,U+e7-ed,U+ef,U+f1-f4,U+f6,U+f8,U+fa,U+fc-fd,U+103,U+14d,U+1b0,U+300-301,U+1ebf,U+1ec7,U+2013-2014,U+201c-201d,U+2039-203a,U+203c,U+2048-2049,U+2113,U+2122,U+65e5,U+6708,U+70b9"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-119-wght-normal.woff2",
+   "range": "U+20,U+2027,U+3001-3002,U+3041-307f,U+3081-308f,U+3091-3093,U+3099-309a,U+309d-309e,U+30a1-30e1,U+30e3-30ed,U+30ef-30f0,U+30f2-30f4,U+30fb-30fe,U+ff0c,U+ff0e"
+  },
+  {
+   "family": "Noto Serif JP",
+   "file": "arc/fonts/noto-serif-jp-latin-wght-normal.woff2",
+   "range": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-49-wght-normal.woff2",
+   "range": "U+4f57-4f58,U+4f5a-4f5b,U+4f5d-4f5f,U+4f63-4f64,U+4f69-4f6a,U+4f6c,U+4f6e-4f71,U+4f76-4f7e,U+4f81-4f85,U+4f88-4f8a,U+4f8c,U+4f8e-4f90,U+4f92-4f94,U+4f96-4f9a,U+4f9e-4fa0,U+4fab,U+4fad,U+4faf,U+4fb2,U+4fb7,U+4fb9,U+4fbb-4fbe,U+4fc0-4fc1,U+4fc4-4fc6,U+4fc8-4fc9,U+4fcb-4fd4,U+4fd8,U+4fda-4fdc,U+4fdf-4fe0,U+4fe2,U+4fe4-4fe6,U+4fef-4ff2,U+4ff6,U+4ffc-5002,U+5004-5007,U+500a,U+500c,U+500e-5011,U+5013-5014,U+5016-5018,U+501a-501e,U+5021-5023,U+5025-502a,U+502c-502e,U+5030,U+5032-5033,U+5035,U+5039,U+503b,U+5040-5043,U+5045-5048,U+504a,U+504c,U+504e,U+5050-5053,U+5055-5057,U+5059-505a,U+505f-5060,U+5062-5063,U+5066-5067,U+506a,U+506c-506d,U+5070-5072,U+5077-5078,U+5080-5081,U+5083-5086,U+5088,U+508a,U+508e-5090,U+5092-5096,U+509a-509c,U+509e-50a3,U+50aa,U+50ad,U+50af-50b4,U+50b9-50bb,U+50bd,U+50c0,U+50c2-50c4,U+50c7,U+50c9-50ca,U+50cc,U+50ce,U+50d0-50d1,U+50d3-50d4,U+50d6,U+50d8-50d9,U+50dc"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-66-wght-normal.woff2",
+   "range": "U+2020,U+3003,U+3231,U+4e9b,U+4f3d,U+4f47,U+51b6,U+51dc,U+53e1,U+5bc5,U+602f,U+60bc,U+61c9,U+633d,U+637b,U+6492,U+65fa,U+660f,U+66f0,U+6703,U+681e,U+6876,U+6893,U+6912,U+698e,U+6c7d,U+714c,U+7169,U+71d5,U+725f,U+72d7,U+745b,U+74dc,U+75e2,U+7891,U+7897,U+7dcb,U+810a,U+8218,U+8339,U+840e,U+852d,U+8823,U+8a0a,U+9089,U+919c,U+971c,U+9ad9,U+ff4a,U+ff5a"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-71-wght-normal.woff2",
+   "range": "U+af,U+2465,U+2517,U+33a1,U+4f10,U+50c5,U+51b4,U+5384,U+5606,U+5bb0,U+5cac,U+5ee3,U+618e,U+61f2,U+62c9,U+66ab,U+66f9,U+6816,U+6960,U+6b3e,U+6f20,U+7078,U+72d0,U+73ed,U+7ad9,U+7b1b,U+7be4,U+7d62,U+7f51,U+80b4,U+80f4,U+8154,U+85fb,U+865c,U+8702,U+895f,U+8aed,U+8b90,U+8ced,U+8fbf,U+91d8,U+9418,U+9583,U+9591,U+9813,U+982c,U+9bd6,U+ff46,U+ff7f,U+ff88"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-77-wght-normal.woff2",
+   "range": "U+2207,U+25ef,U+309c,U+4e4f,U+5146,U+51dd,U+5351,U+540a,U+5629,U+5eb5,U+5f04,U+5f13,U+60dc,U+6212,U+63b4,U+642c,U+6627,U+66a6,U+66c7,U+66fd,U+674e,U+6b96,U+6c4e,U+6df3,U+6e67,U+6f84,U+72fc,U+733f,U+7c97,U+7db1,U+7e4d,U+816b,U+82d1,U+84cb,U+854e,U+8607,U+86c7,U+871c,U+8776,U+8a89,U+8fc4,U+91a4,U+9285,U+9685,U+9903,U+9b31,U+9f13,U+ff42,U+ff74,U+ff91"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-82-wght-normal.woff2",
+   "range": "U+2103,U+5049,U+52b1,U+5320,U+5553,U+572d,U+58c7,U+5b5d,U+5bc2,U+5de3,U+5e61,U+5f80,U+61a9,U+67d0,U+67f4,U+6c88,U+6ca1,U+6ce5,U+6d78,U+6e9c,U+6f54,U+731b,U+73b2,U+74a7,U+74f6,U+75e9,U+7b20,U+7c8b,U+7f72,U+809d,U+8108,U+82b3,U+82bd,U+84b8,U+84c4,U+88c2,U+8ae6,U+8ef8,U+902e,U+9065,U+9326,U+935b,U+938c,U+9676,U+9694,U+96f7,U+9ed9,U+ff48,U+ff4c,U+ff81"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-83-wght-normal.woff2",
+   "range": "U+2500,U+3008-3009,U+4ead,U+4f0f,U+4fca,U+53eb,U+543e,U+57a2,U+5cf0,U+5e8f,U+5fe0,U+61b2,U+62d8,U+6442,U+64b2,U+6589,U+659c,U+67f1,U+68c4,U+6cb8,U+6d12,U+6de1,U+6fe1,U+70c8,U+723d,U+73e0,U+7656,U+773a,U+7948,U+7b87,U+7c92,U+7d3a,U+7e1b,U+7e4a,U+819a,U+8358,U+83c5,U+84bc,U+864e,U+8912,U+8c9e,U+8d05,U+92fc,U+9396,U+98fd,U+99d2,U+ff64,U+ff7a,U+ff83"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-85-wght-normal.woff2",
+   "range": "U+25c7,U+3007,U+504f,U+507d,U+51a0,U+52a3,U+5410,U+5510,U+559a,U+5782,U+582a,U+5c0a,U+5c3f,U+5c48,U+5f6b,U+6176,U+622f,U+6279,U+62bd,U+62dd,U+65ed,U+67b6,U+6817,U+6850,U+6d6a,U+6deb,U+6ea2,U+6edd,U+6f5c,U+72e9,U+73a9,U+7573,U+76bf,U+7950,U+7956,U+7f8a,U+7ffc,U+80a2,U+80c3,U+83ca,U+8a02,U+8a13,U+8df5,U+9375,U+983b,U+99b4,U+ff4e,U+ff71,U+ff89,U+ff97"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-86-wght-normal.woff2",
+   "range": "U+24,U+2022,U+2212,U+221f,U+2665,U+4ecf,U+5100,U+51cd,U+52d8,U+5378,U+53f6,U+574a,U+5982,U+5996,U+5c1a,U+5e1d,U+5f84,U+609f,U+61a7,U+61f8,U+6398,U+63ee,U+6676,U+6691,U+6eb6,U+7126,U+71e5,U+7687,U+7965,U+7d17,U+80a1,U+8107,U+8266,U+85a6,U+8987,U+8ca2,U+8cab,U+8e0a,U+9042,U+95c7,U+9810,U+9867,U+98fc,U+ff52-ff54,U+ff61,U+ff77,U+ff98-ff99"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-87-wght-normal.woff2",
+   "range": "U+b0,U+226a,U+2462,U+4e39,U+4fc3,U+4fd7,U+50be,U+50da,U+5200,U+5211,U+54f2,U+5618,U+596a,U+5b22,U+5bb4,U+5d50,U+60a3,U+63fa,U+658e,U+65e8,U+6669,U+6795,U+679d,U+67a0,U+6b3a,U+6e09,U+757f,U+7cd6,U+7dbe,U+7ffb,U+83cc,U+83f1,U+840c,U+845b,U+8846,U+8972,U+8a34,U+8a50,U+8a87,U+8edf,U+8ff0,U+90a6,U+9154,U+95a3,U+9663,U+9686,U+96c7,U+ff3c,U+ff7c,U+ff8a"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-88-wght-normal.woff2",
+   "range": "U+25bd,U+4e59,U+4ec1,U+4ff3,U+515a,U+518a,U+525b,U+5375,U+552f,U+57a3,U+5b9c,U+5c3d,U+5e3d,U+5e7b,U+5f0a,U+6094,U+6458,U+654f,U+67f3,U+6b8a,U+6bd2,U+6c37,U+6ce1,U+6e56,U+6e7f,U+6ed1,U+6ede,U+6f0f,U+70ad,U+7267,U+7363,U+786c,U+7a42,U+7db2,U+7f85,U+8178,U+829d,U+8896,U+8c5a,U+8cb0,U+8ce2,U+8ed2,U+9047,U+9177,U+970a,U+9ea6,U+ff1b,U+ff31,U+ff39,U+ff80"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-89-wght-normal.woff2",
+   "range": "U+a5,U+4e80,U+4f34,U+4f73,U+4f75,U+511f,U+5192,U+52aa,U+53c8,U+570f,U+57cb,U+596e,U+5d8b,U+5f66,U+5fd9,U+62db,U+62f6,U+6328,U+633f,U+63a7,U+6469,U+6bbf,U+6c41,U+6c57,U+6d44,U+6dbc,U+706f,U+72c2,U+72ed,U+7551,U+75f4,U+7949,U+7e26,U+7fd4,U+8150,U+8af8,U+8b0e,U+8b72,U+8ca7,U+934b,U+9a0e,U+9a12,U+9b42,U+ff41,U+ff43,U+ff45,U+ff49,U+ff4f,U+ff62-ff63"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-90-wght-normal.woff2",
+   "range": "U+4e18,U+4fb5,U+5104,U+52c7,U+5353,U+5374,U+53e5,U+587e,U+594f,U+5a20,U+5de1,U+5f18,U+5fcd,U+6291,U+62ab,U+6355,U+6392,U+63da,U+63e1,U+656c,U+6687,U+68b0-68b1,U+68d2,U+68da,U+6b27,U+6cbc,U+7159,U+7344,U+73cd,U+76df,U+790e,U+7cf8,U+8102,U+88c1,U+8aa0,U+8e0f,U+9178,U+92ad,U+9670,U+96c5,U+9cf4,U+9db4,U+ff3e,U+ff6f,U+ff72,U+ff78,U+ff7d,U+ff84,U+ff8c"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-93-wght-normal.woff2",
+   "range": "U+21d2,U+25ce,U+300a-300b,U+4e89,U+4e9c,U+4ea1,U+5263,U+53cc,U+5426,U+5869,U+5947,U+598a,U+5999,U+5e55,U+5e72,U+5e79,U+5fae,U+5fb9,U+602a,U+6163,U+624d,U+6749,U+6c5a,U+6cbf,U+6d45,U+6dfb,U+6e7e,U+708e,U+725b,U+7763,U+79c0,U+7bc4,U+7c89,U+7e01,U+7e2e,U+8010,U+8033,U+8c6a,U+8cc3,U+8f1d,U+8f9b,U+8fb2,U+907f,U+90f7,U+9707,U+9818,U+9b3c,U+ff0a,U+ff4d"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-94-wght-normal.woff2",
+   "range": "U+2015,U+2190,U+4e43,U+5019,U+5247,U+52e7,U+5438,U+54b2,U+55ab,U+57f7,U+5bd2,U+5e8a,U+5ef6,U+6016,U+60b2,U+6162,U+6319,U+6551,U+6607,U+66b4,U+675f,U+67d4,U+6b20,U+6b53,U+6ce3,U+719f,U+75b2,U+770b,U+7720,U+77ac,U+79d2,U+7af9,U+7d05,U+7dca,U+8056,U+80f8,U+81f3,U+8352,U+885d,U+8a70,U+8aa4,U+8cbc,U+900f,U+9084,U+91e3,U+9451,U+96c4,U+99c6,U+9ad4,U+ff70"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-95-wght-normal.woff2",
+   "range": "U+2193,U+25b2,U+4e4b,U+516d,U+51c4,U+529f,U+52c9,U+5360,U+5442,U+5857,U+5915,U+59eb,U+5a9b,U+5c3b,U+6012,U+61b6,U+62b1,U+6311,U+6577,U+65e2,U+65ec,U+6613,U+6790,U+6cb9,U+7372,U+76ae,U+7d5e,U+7fcc,U+88ab,U+88d5,U+8caf,U+8ddd,U+8ecd,U+8f38,U+8f9e,U+8feb,U+9063,U+90f5,U+93e1,U+968a,U+968f,U+98fe,U+9ec4,U+ff1d,U+ff27,U+ff2a,U+ff36,U+ff3b,U+ff3d,U+ffe5"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-97-wght-normal.woff2",
+   "range": "U+7e,U+b4,U+25c6,U+2661,U+4e92,U+4eee,U+4ffa,U+5144,U+5237,U+5287,U+52b4,U+58c1,U+5bff,U+5c04,U+5c06,U+5e95,U+5f31,U+5f93,U+63c3,U+640d,U+6557,U+6614,U+662f,U+67d3,U+690d,U+6bba,U+6e6f,U+72af,U+732b,U+7518,U+7ae0,U+7ae5,U+7af6,U+822a,U+89e6,U+8a3a,U+8a98,U+8cb8,U+8de1,U+8e8d,U+95d8,U+961c,U+96a3,U+96ea,U+9bae,U+ff20,U+ff22,U+ff29,U+ff2b-ff2c"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-98-wght-normal.woff2",
+   "range": "U+25cb,U+4e71,U+4f59,U+50d5,U+520a,U+5217,U+5230,U+523a-523b,U+541b,U+5439,U+5747,U+59c9,U+5bdf,U+5c31,U+5de8,U+5e7c,U+5f69,U+6050,U+60d1,U+63cf,U+663c,U+67c4,U+6885,U+6c38,U+6d6e,U+6db2,U+6df7,U+6e2c,U+6f5f,U+7532,U+76e3-76e4,U+7701,U+793c,U+79f0,U+7a93,U+7d00,U+7de0,U+7e54,U+8328,U+8840,U+969c,U+96e8,U+9811,U+9aea,U+9b5a,U+ff24,U+ff2e,U+ff57"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-99-wght-normal.woff2",
+   "range": "U+2191,U+505c,U+52e4,U+5305,U+535a,U+56e0,U+59bb,U+5acc,U+5b09,U+5b87,U+5c90,U+5df1,U+5e2d,U+5e33,U+5f3e,U+6298,U+6383,U+653b,U+6697,U+6804,U+6a39,U+6cca,U+6e90,U+6f2b,U+702c,U+7206,U+7236,U+7559,U+7565,U+7591,U+75c7,U+75db,U+7b4b,U+7bb1,U+7d99,U+7fbd,U+8131,U+885b,U+8b1d,U+8ff7,U+9003,U+9045,U+96a0,U+9732,U+990a,U+99d0,U+9e97,U+9f62,U+ff25,U+ff2d"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-100-wght-normal.woff2",
+   "range": "U+4e08,U+4f9d,U+5012,U+514d,U+51b7,U+5275,U+53ca,U+53f8,U+5584,U+57fc,U+5b9d,U+5bfa,U+5c3e,U+5f01,U+5fb4,U+5fd7,U+606f,U+62e1,U+6563,U+6674,U+6cb3,U+6d3e,U+6d74,U+6e1b,U+6e2f,U+718a,U+7247,U+79d8,U+7d14,U+7d66,U+7d71,U+7df4,U+7e41,U+80cc,U+8155,U+83d3,U+8a95,U+8ab2,U+8ad6,U+8ca1,U+9000,U+9006,U+9678,U+97d3,U+9808,U+98ef,U+9a5a,U+9b45,U+ff23,U+ff30"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-101-wght-normal.woff2",
+   "range": "U+25bc,U+3012,U+4ef2,U+4f0a,U+516b,U+5373,U+539a,U+53b3,U+559c,U+56f0,U+5727,U+5742,U+5965,U+59ff,U+5bc6,U+5dfb,U+5e45,U+5ead,U+5fb3,U+6211,U+6253,U+639b,U+63a8,U+6545,U+6575,U+6628,U+672d,U+68a8,U+6bdb,U+6d25,U+707d,U+767e,U+7834,U+7b46,U+7bc9,U+8074,U+82e6,U+8349,U+8a2a,U+8d70,U+8da3,U+8fce,U+91cc,U+967d,U+97ff,U+9996,U+ff1c,U+ff2f,U+ff32,U+ff34"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-102-wght-normal.woff2",
+   "range": "U+3d,U+5e,U+25cf,U+4e0e,U+4e5d,U+4e73,U+4e94,U+4f3c,U+5009,U+5145,U+51ac,U+5238,U+524a,U+53f3,U+547c,U+5802,U+5922,U+5a66,U+5c0e,U+5de6,U+5fd8,U+5feb,U+6797,U+685c,U+6b7b,U+6c5f-6c60,U+6cc9,U+6ce2,U+6d17,U+6e21,U+7167,U+7642,U+76db,U+8001,U+821e,U+8857,U+89d2,U+8b1b,U+8b70,U+8cb4,U+8cde,U+8f03,U+8f2a,U+968e,U+9b54,U+9e7f,U+9ebb,U+ff05,U+ff33"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-103-wght-normal.woff2",
+   "range": "U+500d,U+5074,U+50cd,U+5175,U+52e2,U+5352,U+5354,U+53f2,U+5409,U+56fa,U+5a18,U+5b88,U+5bdd,U+5ca9,U+5f92,U+5fa9,U+60a9,U+623f,U+6483,U+653f,U+666f,U+66ae,U+66f2,U+6a21,U+6b66,U+6bcd,U+6d5c,U+796d,U+7a4d,U+7aef,U+7b56,U+7b97,U+7c4d,U+7e04,U+7fa9,U+8377,U+83dc,U+83ef,U+8535,U+8863,U+88cf,U+88dc,U+8907,U+8acb,U+90ce,U+91dd,U+ff0b,U+ff0d,U+ff19,U+ff65"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-104-wght-normal.woff2",
+   "range": "U+4e01,U+4e21,U+4e38,U+52a9,U+547d,U+592e,U+5931,U+5b63,U+5c40,U+5dde,U+5e78,U+5efa,U+5fa1,U+604b,U+6075,U+62c5,U+632f,U+6a19,U+6c0f,U+6c11,U+6c96,U+6e05,U+70ba,U+71b1,U+7387,U+7403,U+75c5,U+77ed,U+795d,U+7b54,U+7cbe,U+7d19,U+7fa4,U+8089,U+81f4,U+8208,U+8336,U+8457,U+8a33,U+8c4a,U+8ca0,U+8ca8,U+8cc0,U+9014,U+964d,U+9803,U+983c,U+98db,U+ff17,U+ff21"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-105-wght-normal.woff2",
+   "range": "U+25,U+25a0,U+4e26,U+4f4e,U+5341,U+56f2,U+5bbf,U+5c45,U+5c55,U+5c5e,U+5dee,U+5e9c,U+5f7c,U+6255,U+627f,U+62bc,U+65cf,U+661f,U+666e,U+66dc,U+67fb,U+6975,U+6a4b,U+6b32,U+6df1,U+6e29,U+6fc0,U+738b,U+7686,U+7a76,U+7a81,U+7c73,U+7d75,U+7dd2,U+82e5,U+82f1,U+85ac,U+888b,U+899a,U+8a31,U+8a8c,U+8ab0,U+8b58,U+904a,U+9060,U+9280,U+95b2,U+984d,U+9ce5,U+ff18"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-106-wght-normal.woff2",
+   "range": "U+30f6,U+50ac,U+5178,U+51e6,U+5224,U+52dd,U+5883,U+5897,U+590f,U+5a5a,U+5bb3,U+5c65,U+5e03,U+5e2b,U+5e30,U+5eb7,U+6271,U+63f4,U+64ae,U+6574,U+672b,U+679a,U+6a29-6a2a,U+6ca2,U+6cc1,U+6d0b,U+713c,U+74b0,U+7981,U+7a0b,U+7bc0,U+7d1a,U+7d61,U+7fd2,U+822c,U+8996,U+89aa,U+8cac,U+8cbb,U+8d77,U+8def,U+9020,U+9152,U+9244,U+9662,U+967a,U+96e3,U+9759,U+ff16"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-107-wght-normal.woff2",
+   "range": "U+23,U+3c,U+2192,U+4e45,U+4efb,U+4f50,U+4f8b,U+4fc2,U+5024,U+5150,U+5272,U+5370,U+53bb,U+542b,U+56db,U+56e3,U+57ce,U+5bc4,U+5bcc,U+5f71,U+60aa,U+6238,U+6280,U+629c,U+6539,U+66ff,U+670d,U+677e-677f,U+6839,U+69cb,U+6b4c,U+6bb5,U+6e96,U+6f14,U+72ec,U+7389,U+7814,U+79cb,U+79d1,U+79fb,U+7a0e,U+7d0d,U+85e4,U+8d64,U+9632,U+96e2,U+9805,U+99ac,U+ff1e"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-108-wght-normal.woff2",
+   "range": "U+2605-2606,U+301c,U+4e57,U+4fee,U+5065,U+52df,U+533b,U+5357,U+57df,U+58eb,U+58f0,U+591c,U+592a-592b,U+5948,U+5b85,U+5d0e,U+5ea7,U+5ff5,U+6025,U+63a1,U+63a5,U+63db,U+643a,U+65bd,U+671d,U+68ee,U+6982,U+6b73,U+6bd4,U+6d88,U+7570,U+7b11,U+7d76,U+8077,U+8217,U+8c37,U+8c61,U+8cc7,U+8d85,U+901f,U+962a,U+9802,U+9806,U+9854,U+98f2,U+9928,U+99c5,U+9ed2"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-109-wght-normal.woff2",
+   "range": "U+266a,U+4f11,U+533a,U+5343,U+534a,U+53cd,U+5404,U+56f3,U+5b57-5b58,U+5bae,U+5c4a,U+5e0c,U+5e2f,U+5eab,U+5f35,U+5f79,U+614b,U+6226,U+629e,U+65c5,U+6625,U+6751,U+6821,U+6b69,U+6b8b,U+6bce,U+6c42,U+706b,U+7c21,U+7cfb,U+805e,U+80b2,U+82b8,U+843d,U+8853,U+88c5,U+8a3c,U+8a66,U+8d8a,U+8fba,U+9069,U+91cf,U+9752,U+975e,U+9999,U+ff0f-ff10,U+ff14-ff15"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-110-wght-normal.woff2",
+   "range": "U+40,U+4e86,U+4e95,U+4f01,U+4f1d,U+4fbf,U+5099,U+5171,U+5177,U+53cb,U+53ce,U+53f0,U+5668,U+5712,U+5ba4,U+5ca1,U+5f85,U+60f3,U+653e,U+65ad,U+65e9,U+6620,U+6750,U+6761,U+6b62,U+6b74,U+6e08,U+6e80,U+7248,U+7531,U+7533,U+753a,U+77f3,U+798f,U+7f6e,U+8449,U+88fd,U+89b3,U+8a55,U+8ac7,U+8b77,U+8db3,U+8efd,U+8fd4,U+9031-9032,U+9580,U+9589,U+96d1,U+985e"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-111-wght-normal.woff2",
+   "range": "U+2b,U+d7,U+300e-300f,U+4e07,U+4e8c,U+512a,U+5149,U+518d,U+5236,U+52b9,U+52d9,U+5468,U+578b,U+57fa,U+5b8c,U+5ba2,U+5c02,U+5de5,U+5f37,U+5f62,U+623b,U+63d0,U+652f,U+672a,U+6848,U+6d41,U+7136,U+7537,U+754c,U+76f4,U+79c1,U+7ba1,U+7d44,U+7d4c,U+7dcf,U+7dda,U+7de8,U+82b1,U+897f,U+8ca9,U+8cfc,U+904e,U+9664,U+982d,U+9858,U+98a8,U+9a13,U+ff13,U+ff5c"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-112-wght-normal.woff2",
+   "range": "U+4e16,U+4e3b,U+4ea4,U+4ee4,U+4f4d,U+4f4f,U+4f55,U+4f9b,U+5317,U+5358,U+53c2,U+53e4,U+548c,U+571f,U+59cb,U+5cf6,U+5e38,U+63a2,U+63b2,U+6559,U+662d,U+679c,U+6c7a,U+72b6,U+7523,U+767d,U+770c,U+7a2e,U+7a3f,U+7a7a,U+7b2c,U+7b49,U+7d20,U+7d42,U+8003,U+8272,U+8a08,U+8aac,U+8cb7,U+8eab,U+8ee2,U+9054-9055,U+90fd,U+914d,U+91cd,U+969b,U+97f3,U+984c,U+ff06"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-113-wght-normal.woff2",
+   "range": "U+26,U+5f,U+2026,U+203b,U+4e09,U+4eac,U+4ed5,U+4fa1,U+5143,U+5199,U+5207,U+539f,U+53e3,U+53f7,U+5411,U+5473,U+5546,U+55b6,U+5929,U+597d,U+5bb9,U+5c11,U+5c4b,U+5ddd,U+5f97,U+5fc5,U+6295,U+6301,U+6307,U+671b,U+76f8,U+78ba,U+795e,U+7d30,U+7d39,U+7d9a,U+89e3,U+8a00,U+8a73,U+8a8d,U+8a9e,U+8aad,U+8abf,U+8cea,U+8eca,U+8ffd,U+904b,U+9650,U+ff11-ff12"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-114-wght-normal.woff2",
+   "range": "U+3e,U+3005,U+4e0d,U+4e88,U+4ecb,U+4ee3,U+4ef6,U+4fdd,U+4fe1,U+500b,U+50cf,U+5186,U+5316,U+53d7,U+540c,U+544a,U+54e1,U+5728,U+58f2,U+5973,U+5b89,U+5c71,U+5e02,U+5e97,U+5f15,U+5fc3,U+5fdc,U+601d,U+611b,U+611f,U+671f,U+6728,U+6765,U+683c,U+6b21,U+6ce8,U+6d3b,U+6d77,U+7530,U+7740,U+7acb,U+7d50,U+826f,U+8f09,U+8fbc,U+9001,U+9053,U+91ce,U+9762,U+98df"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-115-wght-normal.woff2",
+   "range": "U+7c,U+3080,U+4ee5,U+5148,U+516c,U+521d,U+5225,U+529b,U+52a0,U+53ef,U+56de,U+56fd,U+5909,U+591a,U+5b66,U+5b9f,U+5bb6,U+5bfe,U+5e73,U+5e83,U+5ea6,U+5f53,U+6027,U+610f,U+6210,U+6240,U+660e,U+66f4,U+66f8,U+6709,U+6771,U+697d,U+69d8,U+6a5f,U+6c34,U+6cbb,U+73fe,U+756a,U+7684,U+771f,U+793a,U+7f8e,U+898f,U+8a2d,U+8a71,U+8fd1,U+9078,U+9577,U+96fb,U+ff5e"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-116-wght-normal.woff2",
+   "range": "U+a9,U+3010-3011,U+30e2,U+4e0b,U+4eca,U+4ed6,U+4ed8,U+4f53,U+4f5c,U+4f7f,U+53d6,U+540d,U+54c1,U+5730,U+5916,U+5b50,U+5c0f,U+5f8c,U+624b,U+6570,U+6587,U+6599,U+691c,U+696d,U+6cd5,U+7269,U+7279,U+7406,U+767a-767b,U+77e5,U+7d04,U+7d22,U+8005,U+80fd,U+81ea,U+8868,U+8981,U+89a7,U+901a,U+9023,U+90e8,U+91d1,U+9332,U+958b,U+96c6,U+9ad8,U+ff1a,U+ff1f"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-117-wght-normal.woff2",
+   "range": "U+4e,U+a0,U+3000,U+300c-300d,U+4e00,U+4e0a,U+4e2d,U+4e8b,U+4eba,U+4f1a,U+5165,U+5168,U+5185,U+51fa,U+5206,U+5229,U+524d,U+52d5,U+5408,U+554f,U+5831,U+5834,U+5927,U+5b9a,U+5e74,U+5f0f,U+60c5,U+65b0,U+65b9,U+6642,U+6700,U+672c,U+682a,U+6b63,U+6c17,U+7121,U+751f,U+7528,U+753b,U+76ee,U+793e,U+884c,U+898b,U+8a18,U+9593,U+95a2,U+ff01,U+ff08-ff09"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-118-wght-normal.woff2",
+   "range": "U+21-22,U+27-2a,U+2c-3b,U+3f,U+41-4d,U+4f-5d,U+61-7b,U+7d,U+ab,U+ae,U+b2-b3,U+b7,U+bb,U+c9,U+cd,U+d6,U+d8,U+dc,U+e0-e5,U+e7-ed,U+ef,U+f1-f4,U+f6,U+f8,U+fa,U+fc-fd,U+103,U+14d,U+1b0,U+300-301,U+1ebf,U+1ec7,U+2013-2014,U+201c-201d,U+2039-203a,U+203c,U+2048-2049,U+2113,U+2122,U+65e5,U+6708,U+70b9"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-119-wght-normal.woff2",
+   "range": "U+20,U+2027,U+3001-3002,U+3041-307f,U+3081-308f,U+3091-3093,U+3099-309a,U+309d-309e,U+30a1-30e1,U+30e3-30ed,U+30ef-30f0,U+30f2-30f4,U+30fb-30fe,U+ff0c,U+ff0e"
+  },
+  {
+   "family": "Noto Sans JP",
+   "file": "arc/fonts/noto-sans-jp-latin-wght-normal.woff2",
+   "range": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+  }
+ ]
+}

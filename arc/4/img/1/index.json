@@ -1,0 +1,703 @@
+[
+ {
+  "k": 1,
+  "query": "openverse: Hoei crater",
+  "results": [
+   {
+    "source": "openverse/flickr",
+    "title": "富士山宝永火口 Mt. Fuji Hoei Crater",
+    "page": "https://www.flickr.com/photos/29989965@N00/33601092984",
+    "thumb": "https://live.staticflickr.com/4171/33601092984_865ec33feb_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "ume-y",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 768,
+    "file": "1-1.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Mount Fuji, Japan",
+    "page": "https://www.flickr.com/photos/37472264@N04/48263460861",
+    "thumb": "https://live.staticflickr.com/65535/48263460861_5ceaabded7_b.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "europeanspaceagency",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 1024,
+    "file": "1-2.jpg"
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "query": "openverse: Hoeizan Mount Fuji",
+  "results": []
+ },
+ {
+  "k": 3,
+  "query": "commons: Hōei crater",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Mount Hoei and Second Crater of Hoei.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Mount_Hoei_and_Second_Crater_of_Hoei.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Mount_Hoei_and_Second_Crater_of_Hoei.jpg/1920px-Mount_Hoei_and_Second_Crater_of_Hoei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Alpsdake",
+    "date": "Taken on 2 July 2018, 16:49:31",
+    "description": "Mount Hoei and Second Crater of Hoei in Gotemba, Shizuoka Prefecture, Japan.",
+    "width": 4000,
+    "height": 6000,
+    "file": "3-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Second Crater Rim of Hoei.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Second_Crater_Rim_of_Hoei.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Second_Crater_Rim_of_Hoei.jpg/1920px-Second_Crater_Rim_of_Hoei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Alpsdake",
+    "date": "Taken on 2 July 2018, 17:02:39",
+    "description": "Mount Hōei seen from Second Crater Rim of Hōei in Gotenba, Shizuoka Prefecture, Japan.",
+    "width": 6000,
+    "height": 4000,
+    "file": "3-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Second Crater of Hoei.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Second_Crater_of_Hoei.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Second_Crater_of_Hoei.jpg/1920px-Second_Crater_of_Hoei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Alpsdake",
+    "date": "Taken on 2 July 2018, 16:50:47",
+    "description": "Second Crater of Hōei in Gotemba, Shizuoka Prefecture, Japan.",
+    "width": 6000,
+    "height": 4000,
+    "file": "3-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "1st Hoei Crater s2.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:1st_Hoei_Crater_s2.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/1st_Hoei_Crater_s2.jpg/1920px-1st_Hoei_Crater_s2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Alpsdake",
+    "date": "Taken on 3 July 2018, 09:25:39",
+    "description": "1st Hoei Crater in Gotemba, Shizuoka Prefecture, Japan.",
+    "width": 6000,
+    "height": 4000,
+    "file": "3-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "1st Hoei Crater s3.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:1st_Hoei_Crater_s3.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/1st_Hoei_Crater_s3.jpg/1920px-1st_Hoei_Crater_s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Alpsdake",
+    "date": "Taken on 26 August 2017, 09:26:22",
+    "description": "1st Hoei Crater in Gotemba, Shizuoka Prefecture, Japan.",
+    "width": 6000,
+    "height": 4000,
+    "file": "3-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "1st Hoei Crater s4.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:1st_Hoei_Crater_s4.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/1st_Hoei_Crater_s4.jpg/1920px-1st_Hoei_Crater_s4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Alpsdake",
+    "date": "Taken on 26 August 2017, 09:35:43",
+    "description": "1st Hoei Crater and wall with Koenigia weyrichii and Artemisia pedunculosa in Gotemba, Shizuoka Prefecture, Japan.",
+    "width": 4000,
+    "height": 6000,
+    "file": "3-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Hoei Crater s4 - cropped.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Hoei_Crater_s4_-_cropped.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Hoei_Crater_s4_-_cropped.jpg/1920px-Hoei_Crater_s4_-_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Alpsdake",
+    "date": "Taken on 26 August 2017, 09:35:43",
+    "description": "1st Hoei Crater, Koenigia weyrichii and Artemisia pedunculosa in Gotemba, Shizuoka Prefecture, Japan.",
+    "width": 4000,
+    "height": 1925,
+    "file": "3-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "1st Hoei Crater.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:1st_Hoei_Crater.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/1st_Hoei_Crater.jpg/1920px-1st_Hoei_Crater.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Alpsdake",
+    "date": "Taken on 3 July 2018, 08:53:13",
+    "description": "1st Hoei Crater in Gotemba, Shizuoka Prefecture, Japan.",
+    "width": 6000,
+    "height": 4000,
+    "file": "3-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 4,
+  "query": "commons: Hoei eruption 1707",
+  "results": [
+   {
+    "source": "commons",
+    "title": "宝永大噴火を描いた絵図「夜ルの景気」(静岡県沼津市土屋博氏所蔵).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:%E5%AE%9D%E6%B0%B8%E5%A4%A7%E5%99%B4%E7%81%AB%E3%82%92%E6%8F%8F%E3%81%84%E3%81%9F%E7%B5%B5%E5%9B%B3%E3%80%8C%E5%A4%9C%E3%83%AB%E3%81%AE%E6%99%AF%E6%B0%97%E3%80%8D(%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B2%BC%E6%B4%A5%E5%B8%82%E5%9C%9F%E5%B1%8B%E5%8D%9A%E6%B0%8F%E6%89%80%E8%94%B5).jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/38/%E5%AE%9D%E6%B0%B8%E5%A4%A7%E5%99%B4%E7%81%AB%E3%82%92%E6%8F%8F%E3%81%84%E3%81%9F%E7%B5%B5%E5%9B%B3%E3%80%8C%E5%A4%9C%E3%83%AB%E3%81%AE%E6%99%AF%E6%B0%97%E3%80%8D%28%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B2%BC%E6%B4%A5%E5%B8%82%E5%9C%9F%E5%B1%8B%E5%8D%9A%E6%B0%8F%E6%89%80%E8%94%B5%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "内閣府 防災担当",
+    "date": "2022-12-04",
+    "description": "宝永噴火を描いた絵図「夜ルの景気」(静岡県沼津市土屋博氏所蔵)[1]",
+    "width": 1636,
+    "height": 1141,
+    "file": "4-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Result map of Sakawa-river overflow after the Hoei eruption.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Result_map_of_Sakawa-river_overflow_after_the_Hoei_eruption.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/15/Result_map_of_Sakawa-river_overflow_after_the_Hoei_eruption.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "富士山防災協議会 (the Mt.Fuji Volcano Disaster Management Conference); Miya.m added the URL and the information to the Map and uploaded under the permission of the Cabi",
+    "date": "中間報告〔平成14年6月12日〕（the interim report was released on 2002-6-1",
+    "description": "ja:富士山宝永噴火後の酒匂川の洪水氾濫実績図； The result map of Sakawa-river overflow disaster after the 1707 Hoei eruption of Fuji Volcano",
+    "width": 750,
+    "height": 450,
+    "file": "4-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Volcanic-ash-downfall map of Mt.Fuji Hoei-eruption01.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Volcanic-ash-downfall_map_of_Mt.Fuji_Hoei-eruption01.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Volcanic-ash-downfall_map_of_Mt.Fuji_Hoei-eruption01.jpg/1920px-Volcanic-ash-downfall_map_of_Mt.Fuji_Hoei-eruption01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY 4.0",
+    "artist": "富士山防災協議会 (Mt. Fuji Disaster Prevention Council); Miya.m added the URL and the information to the Map and uploaded under the permission of the Cabinet Office of ",
+    "date": "中間報告〔平成14年6月12日〕（the interim report was released on 2002-6-1",
+    "description": "Ashfall distribution map for examining disaster prevention measures (Mt. Fuji Hoei eruption)",
+    "width": 1935,
+    "height": 1364,
+    "file": "4-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "富士山宝永噴火之図.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E5%A3%AB%E5%B1%B1%E5%AE%9D%E6%B0%B8%E5%99%B4%E7%81%AB%E4%B9%8B%E5%9B%B3.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/3/3f/%E5%AF%8C%E5%A3%AB%E5%B1%B1%E5%AE%9D%E6%B0%B8%E5%99%B4%E7%81%AB%E4%B9%8B%E5%9B%B3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "静岡県御殿場市滝口文夫氏所蔵",
+    "date": "2024-07-28",
+    "description": "富士山宝永噴火之図（静岡県御殿場市滝口文夫氏所蔵）",
+    "width": 1768,
+    "height": 1374,
+    "file": "4-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Predicative map of Mt.Fuji volcanic-ash-fall.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Predicative_map_of_Mt.Fuji_volcanic-ash-fall.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/08/Predicative_map_of_Mt.Fuji_volcanic-ash-fall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "富士山防災協議会 (the Mt.Fuji Volcano Disaster Management Conference); Miya.m added the URL and the information to the Map and uploaded under the permission of the Cabi",
+    "date": "富士山ハザードマップ検討委員会報告書 平成16年6月 (released 2004-6- )",
+    "description": "富士山降灰可能性図（The predicative map of the volcanic-ash-fall of Mt.Fuji)",
+    "width": 720,
+    "height": 550,
+    "file": "4-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "奥の間の長火鉢.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:%E5%A5%A5%E3%81%AE%E9%96%93%E3%81%AE%E9%95%B7%E7%81%AB%E9%89%A2.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/%E5%A5%A5%E3%81%AE%E9%96%93%E3%81%AE%E9%95%B7%E7%81%AB%E9%89%A2.jpg/1920px-%E5%A5%A5%E3%81%AE%E9%96%93%E3%81%AE%E9%95%B7%E7%81%AB%E9%89%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "北アルプス天然水",
+    "date": "11 October 2021, 09:01:49",
+    "description": "宝永大噴火の火山灰が使われていた長火鉢",
+    "width": 4160,
+    "height": 3120,
+    "file": "4-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "HokusaiHoeizan.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:HokusaiHoeizan.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/95/HokusaiHoeizan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Hokusai",
+    "date": "19th centurydate QS:P,+1850-00-00T00:00:00Z/7",
+    "description": "Estampe ukiyo-e, partie du recueil \"Cent vues du Mont Fuji\"",
+    "width": 660,
+    "height": 473,
+    "file": "4-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "HokusaiHoeizanDetail.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:HokusaiHoeizanDetail.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a1/HokusaiHoeizanDetail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Hokusai",
+    "date": "19th centurydate QS:P,+1850-00-00T00:00:00Z/7",
+    "description": "Estampe ukiyo-e, partie du recueil \"Cent vues du Mont Fuji\", détail",
+    "width": 660,
+    "height": 527,
+    "file": "4-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 5,
+  "query": "openverse: Fuji volcanic sand Subashiri",
+  "results": []
+ },
+ {
+  "k": 6,
+  "query": "met: Hokusai One Hundred Views of Mount Fuji",
+  "results": [
+   {
+    "source": "met",
+    "title": "Storm below Mount Fuji (Sanka no haku u), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "page": "https://www.metmuseum.org/art/collection/search/36492",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP140976.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Katsushika Hokusai",
+    "date": "ca. 1830–32",
+    "description": "Japan, Woodblock print; ink and color on paper",
+    "width": 1969,
+    "height": 1336,
+    "file": "6-1.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Hundred Views of Fuji",
+    "page": "https://www.metmuseum.org/art/collection/search/57849",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/LC-JIB_158_a_c_a_004_crd.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Katsushika Hokusai",
+    "date": "1834–35",
+    "description": "Japan, Ink on paper",
+    "width": 4000,
+    "height": 3253,
+    "file": "6-2.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Ushibori in Hitachi Province (Jōshū Ushibori), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "page": "https://www.metmuseum.org/art/collection/search/56132",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP141010.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Katsushika Hokusai",
+    "date": "ca. 1830–32",
+    "description": "Japan, Woodblock print; ink and color on paper",
+    "width": 3813,
+    "height": 2722,
+    "file": "6-3.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Mount Fuji of the Bamboo Grove, from One Hundred Views of Mount Fuji (Fugaku Hyakkei nihen)",
+    "page": "https://www.metmuseum.org/art/collection/search/57552",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/JIB19_1_001.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Katsushika Hokusai 葛飾北斎",
+    "date": "1835",
+    "description": "Japan, Two volumes; woodblock print; ink on paper",
+    "width": 2236,
+    "height": 3001,
+    "file": "6-4.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Fujimigahara in Owari Province (Bishū Fujimigahara), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "page": "https://www.metmuseum.org/art/collection/search/56787",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP141033.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Katsushika Hokusai",
+    "date": "ca. 1830–32",
+    "description": "Japan, Woodblock print; ink and color on paper",
+    "width": 1950,
+    "height": 1341,
+    "file": "6-5.jpg"
+   },
+   {
+    "source": "met",
+    "title": "South Wind, Clear Sky (Gaifū kaisei), also known as Red Fuji, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "page": "https://www.metmuseum.org/art/collection/search/36490",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP141062.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Katsushika Hokusai",
+    "date": "ca. 1830–32",
+    "description": "Japan, Woodblock print; ink and color on paper",
+    "width": 3865,
+    "height": 2665,
+    "file": "6-6.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Sazai Hall at the Temple of the Five Hundred Arhats (Gohyaku Rakanji Sazaidō), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "page": "https://www.metmuseum.org/art/collection/search/55740",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP141079.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Katsushika Hokusai",
+    "date": "ca. 1830–32",
+    "description": "Japan, Woodblock print; ink and color on paper",
+    "width": 3893,
+    "height": 2620,
+    "file": "6-7.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Reflection in Lake at Misaka in Kai Province (Kōshū Misaka suimen), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei",
+    "page": "https://www.metmuseum.org/art/collection/search/54868",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP141064.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Katsushika Hokusai",
+    "date": "ca. 1830–32",
+    "description": "Japan, Woodblock print; ink and color on paper",
+    "width": 3834,
+    "height": 2516,
+    "file": "6-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 7,
+  "query": "aic: Hokusai Fuji",
+  "results": []
+ },
+ {
+  "k": 8,
+  "query": "commons: Hokusai Hoeizan",
+  "results": []
+ },
+ {
+  "k": 9,
+  "query": "commons: Arai Hakuseki",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Arai Hakuseki - Japanischer Gelehrter.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Arai_Hakuseki_-_Japanischer_Gelehrter.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Arai_Hakuseki_-_Japanischer_Gelehrter.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "",
+    "description": "The Japanese scholar Arai Hakuseki (1657-1725)",
+    "width": 1321,
+    "height": 1402,
+    "file": "9-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Arai Hakuseki.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Arai_Hakuseki.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Arai_Hakuseki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "有朋堂書店",
+    "date": "1914-01-24",
+    "description": "Arai Hakuseki (新井 白石) was a Confucianist, scholar, academic, administrator, writer and politician in Japan during the middle of Edo Period.",
+    "width": 951,
+    "height": 1063,
+    "file": "9-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "The statue of Hakuseki Arai in the garden of Kururi castle, Chiba pref., Japan.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:The_statue_of_Hakuseki_Arai_in_the_garden_of_Kururi_castle,_Chiba_pref.,_Japan.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/00/The_statue_of_Hakuseki_Arai_in_the_garden_of_Kururi_castle%2C_Chiba_pref.%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "Hisi21",
+    "date": "2012-11-04 14:00:00",
+    "description": "久留里城二の丸資料館前に立つ新井白石像",
+    "width": 1467,
+    "height": 1100,
+    "file": "9-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Kyōdō risshi no motoi, Arai Hakuseki.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ky%C5%8Dd%C5%8D_risshi_no_motoi,_Arai_Hakuseki.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Ky%C5%8Dd%C5%8D_risshi_no_motoi%2C_Arai_Hakuseki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Toshikata Mizuno",
+    "date": "明治21年出版",
+    "description": "Arai Hakuseki, from the series Instruction in the Fundamentals of Success, Woodblock print",
+    "width": 1824,
+    "height": 2683,
+    "file": "9-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Arai Hakuseki2.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Arai_Hakuseki2.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/db/Arai_Hakuseki2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown author",
+    "date": "Unknown date",
+    "description": "he Japanese scholar Arai Hakuseki (1657-1725)",
+    "width": 602,
+    "height": 661,
+    "file": "9-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Bukubukudo Book Shop6.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bukubukudo_Book_Shop6.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Bukubukudo_Book_Shop6.jpg/1920px-Bukubukudo_Book_Shop6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Mr.ちゅらさん",
+    "date": "1 November 2026 17:37:38",
+    "description": "Bukubukudo Book Shop",
+    "width": 4320,
+    "height": 3240,
+    "file": "9-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Sairan Igen.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Sairan_Igen.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Sairan_Igen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Arai Hakuseki",
+    "date": "before 1810",
+    "description": "Sairan Igen - Autor Arai Hakuseki",
+    "width": 705,
+    "height": 581,
+    "file": "9-7.jpg"
+   }
+  ]
+ },
+ {
+  "k": 10,
+  "query": "loc: Mount Fuji",
+  "results": []
+ },
+ {
+  "k": 11,
+  "query": "openverse: Mount Fuji winter",
+  "results": [
+   {
+    "source": "openverse/rawpixel",
+    "title": "Mount Fuji Winter (late 17th-early",
+    "page": "https://www.rawpixel.com/image/10140869/mount-fuji-the-winter-late-17th-early-18th-century-edo-kano-tsunenobu",
+    "thumb": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvZmlsZXMvd2Vic2l0ZS8yMDIzLTA0L3dhbTIyNzMxLWltYWdlLmpwZw.jpg",
+    "license": "CC0",
+    "artist": "",
+    "date": "",
+    "description": "",
+    "width": 1798,
+    "height": 1120,
+    "file": "11-1.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Mount Fuji",
+    "page": "https://www.flickr.com/photos/40422902@N00/22380777074",
+    "thumb": "https://live.staticflickr.com/5806/22380777074_2428faeb77_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "skyseeker",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "11-2.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Fuji sky",
+    "page": "https://www.flickr.com/photos/40422902@N00/22585240418",
+    "thumb": "https://live.staticflickr.com/662/22585240418_bfb84da84a_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "skyseeker",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "11-3.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Niepce's bench (original )",
+    "page": "https://www.flickr.com/photos/53941347@N00/3551626273",
+    "thumb": "https://live.staticflickr.com/3401/3551626273_147740280c_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "jonespointfilm",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 817,
+    "file": "11-4.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Rain above the twin mountains in the far-far distance",
+    "page": "https://www.flickr.com/photos/53941347@N00/3909773596",
+    "thumb": "https://live.staticflickr.com/2425/3909773596_30984a1b7c_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "jonespointfilm",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 818,
+    "file": "11-5.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Mt. Fuji / 富士山(ふじさん)",
+    "page": "https://www.flickr.com/photos/13910409@N05/3121538767",
+    "thumb": "https://live.staticflickr.com/3288/3121538767_77df350115_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "TANAKA Juuyoh (田中十洋)",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 635,
+    "file": "11-6.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "あけましておめでとうございます_Mount. Fuji in rose pink",
+    "page": "https://www.flickr.com/photos/9802162@N03/5315466701",
+    "thumb": "https://live.staticflickr.com/5004/5315466701_58b0862c87_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "midorisyu",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 661,
+    "file": "11-7.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "Sakura and Mt. Fuji / 桜(さくら)と富士山(ふじさん)",
+    "page": "https://www.flickr.com/photos/13910409@N05/3295550999",
+    "thumb": "https://live.staticflickr.com/3646/3295550999_6cbd2890d8_b.jpg",
+    "license": "CC BY 2.0",
+    "artist": "TANAKA Juuyoh (田中十洋)",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 683,
+    "file": "11-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 12,
+  "query": "loc: map Edo",
+  "results": []
+ },
+ {
+  "k": 13,
+  "query": "openverse: Fuji crater aerial",
+  "results": []
+ },
+ {
+  "k": 14,
+  "query": "commons: Hoei earthquake",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Hoei earthquake monument, Susaki.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Hoei_earthquake_monument,_Susaki.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Hoei_earthquake_monument%2C_Susaki.JPG/1920px-Hoei_earthquake_monument%2C_Susaki.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY 3.0",
+    "artist": "As6022014",
+    "date": "2013-07-10",
+    "description": "Hoei earthquake tsunami monument, Susaki",
+    "width": 2592,
+    "height": 1944,
+    "file": "14-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "1707Hoei earthquake intensity.png",
+    "page": "https://commons.wikimedia.org/wiki/File:1707Hoei_earthquake_intensity.png",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/cd/1707Hoei_earthquake_intensity.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "As6022014",
+    "date": "2011-10-14",
+    "description": "1707Hoei earthquake intensity",
+    "width": 512,
+    "height": 512,
+    "file": "14-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Hoei earthquake monument, Ochi.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Hoei_earthquake_monument,_Ochi.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Hoei_earthquake_monument%2C_Ochi.JPG/1920px-Hoei_earthquake_monument%2C_Ochi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY 3.0",
+    "artist": "As6022014",
+    "date": "2013-07-10",
+    "description": "Hoei earthquake monument, Ochi",
+    "width": 2592,
+    "height": 1944,
+    "file": "14-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Kure Kumano Hoei-Ansei.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Kure_Kumano_Hoei-Ansei.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Kure_Kumano_Hoei-Ansei.JPG/1920px-Kure_Kumano_Hoei-Ansei.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "As6022014",
+    "date": "2012-06-14",
+    "description": "Kure Kumano jinja shrine monument",
+    "width": 2592,
+    "height": 1944,
+    "file": "14-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Asakawa-kannnondo-hoei.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Asakawa-kannnondo-hoei.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Asakawa-kannnondo-hoei.jpg/1920px-Asakawa-kannnondo-hoei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "As6022014",
+    "date": "2011-07-21",
+    "description": "Asakawa kannnondo (hoei tsunami monument)",
+    "width": 2592,
+    "height": 1944,
+    "file": "14-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Tomoura-Oiwa-keicho-hoei.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Tomoura-Oiwa-keicho-hoei.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Tomoura-Oiwa-keicho-hoei.jpg/1920px-Tomoura-Oiwa-keicho-hoei.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "As6022014",
+    "date": "2011-07-19",
+    "description": "Tomoura Oiwa keicho-hoei tsunami monument",
+    "width": 2592,
+    "height": 1944,
+    "file": "14-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "View of the extinct volcano Ashitakayama.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:View_of_the_extinct_volcano_Ashitakayama.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1d/View_of_the_extinct_volcano_Ashitakayama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Utagawa Hiroshige",
+    "date": "Published in 1855",
+    "description": "\"Famous Places of the Fifty-three Stations of the Tōkaidō (GojūSanTsugi-MeishoZu'e), No. 14, Hara\". Mt. Fuji and Mt. Ashitaka from Hara.",
+    "width": 1685,
+    "height": 2534,
+    "file": "14-7.jpg"
+   }
+  ]
+ }
+]

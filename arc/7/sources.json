@@ -1,0 +1,509 @@
+{
+ "pictures": [
+  {
+   "name": "sekien",
+   "src": "1/13-1.jpg",
+   "title": "Kappa jap myth.jpg",
+   "artist": "Toriyama Sekien (Japanese, *1712, †1788)",
+   "date": "Unknown date",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Kappa_jap_myth.jpg"
+  },
+  {
+   "name": "juni",
+   "src": "1/3-1.jpg",
+   "title": "Illustrated Guide to 12 Types of Kappa.jpg",
+   "artist": "Juntaku",
+   "date": "circa 1850",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Illustrated_Guide_to_12_Types_of_Kappa.jpg"
+  },
+  {
+   "name": "enko",
+   "src": "1/4-4.jpg",
+   "title": "Ehon atsumegusa Enko.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "Edo period ?",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Ehon_atsumegusa_Enko.jpg"
+  },
+  {
+   "name": "shibaten",
+   "src": "1/4-3.jpg",
+   "title": "Shinsensei ichidaiki Shibaten.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "Edo period ?",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Shinsensei_ichidaiki_Shibaten.jpg"
+  },
+  {
+   "name": "cuke",
+   "src": "1/5-1.jpg",
+   "title": "Kappa with a cucumber",
+   "artist": "Japan",
+   "date": "19th century",
+   "license": "CC0 (The Met Open Access)",
+   "page": "https://www.metmuseum.org/art/collection/search/59126"
+  },
+  {
+   "name": "rokusuke",
+   "src": "2/11-3.jpg",
+   "title": "Print (BM 2008,3037.21220).jpg",
+   "artist": "Print artist:Utagawa Kuniyoshi (歌川国芳)",
+   "date": "19thC(mid)",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Print_(BM_2008,3037.21220).jpg"
+  },
+  {
+   "name": "maki",
+   "src": "2/8-4.jpg",
+   "title": "Hosomaki-zushi (sushi).jpg",
+   "artist": "石焼ビビンバ",
+   "date": "2022-03-19",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hosomaki-zushi_(sushi).jpg"
+  },
+  {
+   "name": "takagi",
+   "src": "2/11-2.jpg",
+   "title": "Takagi Toranosuke capturing a kappa underwater in the Tamura river.jpg",
+   "artist": "",
+   "date": "",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Takagi_Toranosuke_capturing_a_kappa_underwater_in_the_Tamura_river.jpg"
+  },
+  {
+   "name": "river",
+   "src": "1/4-1.jpg",
+   "title": "Masayoshi(1788)-Yōkai chakutōchō-fol04a-kawataro.jpg",
+   "artist": "Kitao Masayoshi",
+   "date": "1788",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Masayoshi(1788)-Y%C5%8Dkai_chakut%C5%8Dch%C5%8D-fol04a-kawataro.jpg"
+  },
+  {
+   "name": "manga",
+   "src": "1/8-5.jpg",
+   "title": "Transmitting the Spirit, Revealing the Form of Things: Hokusai Sketchbooks, volume 8 (Denshin kaishu: Hokusai manga, hachihen)",
+   "artist": "Katsushika Hokusai",
+   "date": "1817",
+   "license": "CC0 (The Met Open Access)",
+   "page": "https://www.metmuseum.org/art/collection/search/57685"
+  },
+  {
+   "name": "hokusai",
+   "src": "2/3-1.jpg",
+   "title": "Hokusai kappa.jpg",
+   "artist": "Katsushika Hokusai",
+   "date": "",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Hokusai_kappa.jpg"
+  },
+  {
+   "name": "dera",
+   "src": "1/12-2.jpg",
+   "title": "Kappa-dera Temple.jpg",
+   "artist": "Jeanjung212",
+   "date": "2017-01-29 16:47:04",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kappa-dera_Temple.jpg"
+  },
+  {
+   "name": "statue",
+   "src": "1/12-3.jpg",
+   "title": "Kappa-dera Temple Kappa statue.jpg",
+   "artist": "Jeanjung212",
+   "date": "2017-01-29 16:49:14",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kappa-dera_Temple_Kappa_statue.jpg"
+  }
+ ],
+ "shots": [
+  {
+   "scene": 1,
+   "shot": 1,
+   "start": 0.0,
+   "end": 3.055,
+   "said": [
+    "川や沼に住み、頭にお皿をのせた妖怪、河童。"
+   ],
+   "label": "鳥山石燕が描いた河童（江戸時代）",
+   "title": "本気で調べた妖怪",
+   "image": "sekien",
+   "page": "https://commons.wikimedia.org/wiki/File:Kappa_jap_myth.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "mở bằng tranh kappa cổ"
+  },
+  {
+   "scene": 1,
+   "shot": 2,
+   "start": 3.055,
+   "end": 6.579,
+   "said": [
+    "江戸時代の人々は、この河童を本気で調べようとしました。"
+   ],
+   "label": "河童の図「水虎十二品之図」",
+   "title": "本気で調べた妖怪",
+   "image": "juni",
+   "page": "https://commons.wikimedia.org/wiki/File:Illustrated_Guide_to_12_Types_of_Kappa.jpg",
+   "credit": "Juntaku / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "người Edo nghiêm túc điều tra: một bản tranh kappa"
+  },
+  {
+   "scene": 2,
+   "shot": 1,
+   "start": 6.579,
+   "end": 11.292,
+   "said": [
+    "一八二〇年、学者の古賀侗庵は、",
+    "各地の目撃談や絵を集めて、"
+   ],
+   "label": "江戸時代の写本に描かれた河童",
+   "title": "一八二〇年",
+   "image": "enko",
+   "page": "https://commons.wikimedia.org/wiki/File:Ehon_atsumegusa_Enko.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "so-lieu",
+   "why": "câu có năm 1820, các lời kể và tranh vẽ"
+  },
+  {
+   "scene": 2,
+   "shot": 2,
+   "start": 11.292,
+   "end": 20.211,
+   "said": [
+    "『水虎考略』という本にまとめています。",
+    "そこには、亀のような甲羅を持つもの、",
+    "全身が毛におおわれたものなど、",
+    "さまざまな姿の河童が描かれています。"
+   ],
+   "label": "同時代の河童の図「水虎十二品之図」",
+   "title": "水虎考略",
+   "image": "juni",
+   "page": "https://commons.wikimedia.org/wiki/File:Illustrated_Guide_to_12_Types_of_Kappa.jpg",
+   "credit": "Juntaku / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 14.606,
+     "box": [
+      0.44,
+      0.2,
+      0.6,
+      0.37
+     ]
+    },
+    {
+     "at_s": 16.692,
+     "box": [
+      0.79,
+      0.5,
+      0.97,
+      0.92
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "tranh cùng thời; khoanh con có mai và con có lông"
+  },
+  {
+   "scene": 2,
+   "shot": 3,
+   "start": 20.211,
+   "end": 24.684,
+   "said": [
+    "九州の「ガラッパ」、東北の「メドチ」など、",
+    "地方ごとに違う呼び名もありました。"
+   ],
+   "label": "土佐の河童「シバテン」の絵",
+   "title": "水虎考略",
+   "image": "shibaten",
+   "page": "https://commons.wikimedia.org/wiki/File:Shinsensei_ichidaiki_Shibaten.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "tên gọi khác theo vùng: kappa ở Tosa gọi là Shibaten"
+  },
+  {
+   "scene": 3,
+   "shot": 1,
+   "start": 24.684,
+   "end": 26.899,
+   "said": [
+    "言い伝えでは、河童はきゅうりが好きで、"
+   ],
+   "label": "きゅうりを抱えた河童の根付（19世紀）",
+   "title": "きゅうりと相撲",
+   "image": "cuke",
+   "page": "https://www.metmuseum.org/art/collection/search/59126",
+   "credit": "The Metropolitan Museum of Art / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 25.672,
+     "box": [
+      0.37,
+      0.5,
+      0.85,
+      0.75
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "kappa thích dưa leo: khoanh quả dưa"
+  },
+  {
+   "scene": 3,
+   "shot": 2,
+   "start": 26.899,
+   "end": 28.618,
+   "said": [
+    "相撲をとるのが大好き。"
+   ],
+   "label": "歌川国芳の浮世絵（河童と組み合う）",
+   "title": "きゅうりと相撲",
+   "image": "rokusuke",
+   "page": "https://commons.wikimedia.org/wiki/File:Print_(BM_2008,3037.21220).jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "kappa mê vật nhau: tranh người vật với kappa"
+  },
+  {
+   "scene": 3,
+   "shot": 3,
+   "start": 28.618,
+   "end": 32.011,
+   "said": [
+    "頭の皿の水がこぼれると、力が抜けてしまうといいます。"
+   ],
+   "label": "鳥山石燕が描いた河童",
+   "title": "きゅうりと相撲",
+   "image": "sekien",
+   "page": "https://commons.wikimedia.org/wiki/File:Kappa_jap_myth.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 29.541,
+     "box": [
+      0.38,
+      0.55,
+      0.62,
+      0.72
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "đĩa nước trên đầu: khoanh đầu kappa"
+  },
+  {
+   "scene": 3,
+   "shot": 4,
+   "start": 32.011,
+   "end": 36.158,
+   "said": [
+    "きゅうりの細巻きを「かっぱ巻き」と呼ぶのも、",
+    "この好物にちなんだものです。"
+   ],
+   "label": "かっぱ巻き（きゅうりの細巻き）",
+   "title": "きゅうりと相撲",
+   "image": "maki",
+   "page": "https://commons.wikimedia.org/wiki/File:Hosomaki-zushi_(sushi).jpg",
+   "credit": "石焼ビビンバ / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 33.147,
+     "box": [
+      0.7,
+      0.1,
+      0.95,
+      0.68
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "kappa-maki: khoanh cuộn dưa leo"
+  },
+  {
+   "scene": 4,
+   "shot": 1,
+   "start": 36.158,
+   "end": 40.938,
+   "said": [
+    "一方で、川に近づく子どもを水に引きずり込む、",
+    "恐ろしい存在でもありました。"
+   ],
+   "label": "水中で河童と戦う武者（浮世絵）",
+   "title": "水の怖さ",
+   "image": "takagi",
+   "page": "https://commons.wikimedia.org/wiki/File:Takagi_Toranosuke_capturing_a_kappa_underwater_in_the_Tamura_river.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "kappa kéo người xuống nước: tranh đánh nhau với kappa dưới nước"
+  },
+  {
+   "scene": 4,
+   "shot": 2,
+   "start": 40.938,
+   "end": 46.301,
+   "said": [
+    "水の事故から子どもを守るために、",
+    "大人たちが語り伝えたのではないか、という説もあります。"
+   ],
+   "label": "川にひそむ川太郎（1788年）",
+   "title": "水の怖さ",
+   "image": "river",
+   "page": "https://commons.wikimedia.org/wiki/File:Masayoshi(1788)-Y%C5%8Dkai_chakut%C5%8Dch%C5%8D-fol04a-kawataro.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "dung-yen",
+   "why": "giữ trẻ khỏi chết đuối: kappa rình ở bờ sông"
+  },
+  {
+   "scene": 5,
+   "shot": 1,
+   "start": 46.301,
+   "end": 47.889,
+   "said": [
+    "葛飾北斎も、『北斎漫画』に河童の姿を描いています。"
+   ],
+   "label": "『北斎漫画』八編",
+   "title": "恐れと親しみ",
+   "image": "manga",
+   "page": "https://www.metmuseum.org/art/collection/search/57685",
+   "credit": "The Metropolitan Museum of Art / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nhắc Hokusai Manga: cuốn sách thật"
+  },
+  {
+   "scene": 5,
+   "shot": 2,
+   "start": 47.889,
+   "end": 49.776,
+   "said": [],
+   "label": "葛飾北斎が描いた河童",
+   "title": "恐れと親しみ",
+   "image": "hokusai",
+   "page": "https://commons.wikimedia.org/wiki/File:Hokusai_kappa.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "kappa do Hokusai vẽ"
+  },
+  {
+   "scene": 5,
+   "shot": 3,
+   "start": 49.776,
+   "end": 51.504,
+   "said": [
+    "今も各地のお寺には、"
+   ],
+   "label": "曹源寺（かっぱ寺・東京）",
+   "title": "恐れと親しみ",
+   "image": "dera",
+   "page": "https://commons.wikimedia.org/wiki/File:Kappa-dera_Temple.jpg",
+   "credit": "Jeanjung212 / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "chùa còn giữ 'tay kappa': chùa Kappa-dera"
+  },
+  {
+   "scene": 5,
+   "shot": 4,
+   "start": 51.504,
+   "end": 54.054,
+   "said": [
+    "「河童の手」と伝わるミイラが残されています。"
+   ],
+   "label": "「水虎十二品之図」の河童の手",
+   "title": "恐れと親しみ",
+   "image": "juni",
+   "page": "https://commons.wikimedia.org/wiki/File:Illustrated_Guide_to_12_Types_of_Kappa.jpg",
+   "credit": "Juntaku / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 52.329,
+     "box": [
+      0.74,
+      0.8,
+      0.86,
+      0.93
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "'tay kappa': khoanh hình bàn tay trong tranh"
+  },
+  {
+   "scene": 5,
+   "shot": 5,
+   "start": 54.054,
+   "end": 60.64,
+   "said": [
+    "河童は、水とともに暮らしてきた日本人の、",
+    "恐れと親しみが生んだ存在なのかもしれません。"
+   ],
+   "label": "曹源寺の河童像",
+   "title": "恐れと親しみ",
+   "image": "statue",
+   "page": "https://commons.wikimedia.org/wiki/File:Kappa-dera_Temple_Kappa_statue.jpg",
+   "credit": "Jeanjung212 / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "ket",
+   "why": "kết: tượng kappa ở chùa, vừa sợ vừa thân"
+  }
+ ]
+}

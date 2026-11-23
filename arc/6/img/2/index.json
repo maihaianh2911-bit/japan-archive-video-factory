@@ -1,0 +1,441 @@
+[
+ {
+  "k": 1,
+  "query": "commons: Nihon Shoki Tanaka manuscript",
+  "results": []
+ },
+ {
+  "k": 2,
+  "query": "commons: 日本書紀 写本",
+  "results": []
+ },
+ {
+  "k": 3,
+  "query": "commons: Nihon Shoki",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Postscript from The Age of Gods chapter, The Chronicles of Japan (1286).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Postscript_from_The_Age_of_Gods_chapter,_The_Chronicles_of_Japan_(1286).jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/94/Postscript_from_The_Age_of_Gods_chapter%2C_The_Chronicles_of_Japan_%281286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Urabe Kanekata",
+    "date": "1286",
+    "description": "Postscript of The Age of Gods, chapters from The Chronicles of Japan (日本書紀神代巻, Nihon Shoki jindai-kan)",
+    "width": 1536,
+    "height": 691,
+    "file": "3-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nihon Shoki 15 April 683.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nihon_Shoki_15_April_683.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/03/Nihon_Shoki_15_April_683.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "PHGCOM",
+    "date": "2008",
+    "description": "Nihon_Shoki_15_April entry of 683 CE, 11th century edition.",
+    "width": 1408,
+    "height": 2184,
+    "file": "3-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nihonshoki tanaka version.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nihonshoki_tanaka_version.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/98/Nihonshoki_tanaka_version.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "9th century",
+    "description": "A page from the Tanaka version of the Nihon Shoki",
+    "width": 1472,
+    "height": 632,
+    "file": "3-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nihongi by Aston djvu 358.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nihongi_by_Aston_djvu_358.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Nihongi_by_Aston_djvu_358.jpg/1920px-Nihongi_by_Aston_djvu_358.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "William George Aston",
+    "date": "1896",
+    "description": "Misasagi of Ingiō Tennō.",
+    "width": 3585,
+    "height": 2352,
+    "file": "3-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nihongi by Aston djvu 041.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nihongi_by_Aston_djvu_041.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Nihongi_by_Aston_djvu_041.jpg/1920px-Nihongi_by_Aston_djvu_041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "William George Aston",
+    "date": "1896",
+    "description": "Izanagi and Izanami on the Floating Bridge of Heaven.",
+    "width": 1964,
+    "height": 958,
+    "file": "3-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nihongi by Aston volume 2 djvu 283.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nihongi_by_Aston_volume_2_djvu_283.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nihongi_by_Aston_volume_2_djvu_283.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "William George Aston",
+    "date": "1896",
+    "description": "Battering-engine.",
+    "width": 783,
+    "height": 723,
+    "file": "3-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nihongi by Aston djvu 164.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nihongi_by_Aston_djvu_164.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Nihongi_by_Aston_djvu_164.jpg/1920px-Nihongi_by_Aston_djvu_164.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "William George Aston",
+    "date": "1896",
+    "description": "Shrine at Ise.",
+    "width": 2004,
+    "height": 1444,
+    "file": "3-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Nihongi by Aston djvu 009.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Nihongi_by_Aston_djvu_009.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Nihongi_by_Aston_djvu_009.jpg/1920px-Nihongi_by_Aston_djvu_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "William George Aston",
+    "date": "1896",
+    "description": "Izanami.",
+    "width": 2332,
+    "height": 3175,
+    "file": "3-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 4,
+  "query": "commons: Uraga shrine Ine",
+  "results": []
+ },
+ {
+  "k": 5,
+  "query": "commons: 宇良神社",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Urashima-jinja.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima-jinja.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Urashima-jinja.JPG/1920px-Urashima-jinja.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "東照大権現 (talk)",
+    "date": "2010-08-09",
+    "description": "浦嶋神社 正面 2010年8月9日撮影",
+    "width": 4000,
+    "height": 3000,
+    "file": "5-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ura-jinja (Ine), torii.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ura-jinja_(Ine),_torii.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Ura-jinja_%28Ine%29%2C_torii.jpg/1920px-Ura-jinja_%28Ine%29%2C_torii.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC0",
+    "artist": "Saigen Jiro",
+    "date": "2017-05-05 13:38:52",
+    "description": "宇良神社 鳥居",
+    "width": 6016,
+    "height": 4000,
+    "file": "5-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ine Urashima-jinja 2021-04 ac (5).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(5).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Ine_Urashima-jinja_2021-04_ac_%285%29.jpg/1920px-Ine_Urashima-jinja_2021-04_ac_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021-04",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。拝殿。",
+    "width": 5994,
+    "height": 3987,
+    "file": "5-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Mishima Issei monument 2021-04 ac.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Mishima_Issei_monument_2021-04_ac.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Mishima_Issei_monument_2021-04_ac.jpg/1920px-Mishima_Issei_monument_2021-04_ac.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021-04",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。境内にある「三嶋一聲之碑」。",
+    "width": 5897,
+    "height": 3920,
+    "file": "5-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ine Urashima-jinja 2021-04 ac.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Ine_Urashima-jinja_2021-04_ac.jpg/1920px-Ine_Urashima-jinja_2021-04_ac.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021-04",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。宝物資料室。",
+    "width": 5679,
+    "height": 3775,
+    "file": "5-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ine Urashima-jinja 2021-04 ac (3).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(3).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Ine_Urashima-jinja_2021-04_ac_%283%29.jpg/1920px-Ine_Urashima-jinja_2021-04_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021-04",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。蓬山の庭。",
+    "width": 5880,
+    "height": 3910,
+    "file": "5-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ine Urashima-jinja 2021-04 ac (2).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(2).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Ine_Urashima-jinja_2021-04_ac_%282%29.jpg/1920px-Ine_Urashima-jinja_2021-04_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021-04",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。拝殿。",
+    "width": 5887,
+    "height": 3915,
+    "file": "5-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ine Urashima-jinja 2021-04 ac (7).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(7).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Ine_Urashima-jinja_2021-04_ac_%287%29.jpg/1920px-Ine_Urashima-jinja_2021-04_ac_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021-04",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。拝殿。",
+    "width": 5700,
+    "height": 3790,
+    "file": "5-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 6,
+  "query": "commons: Urashima-jinja",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Ine Urashima-jinja 2021-04 ac (1).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(1).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Ine_Urashima-jinja_2021-04_ac_%281%29.jpg/1920px-Ine_Urashima-jinja_2021-04_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021-04",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。鳥居。",
+    "width": 5942,
+    "height": 3951,
+    "file": "6-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ine Urashima-jinja 2021-04 ac (6).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(6).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Ine_Urashima-jinja_2021-04_ac_%286%29.jpg/1920px-Ine_Urashima-jinja_2021-04_ac_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021-04",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。拝殿。",
+    "width": 5922,
+    "height": 3938,
+    "file": "6-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ine Urashima-jinja 2021-04 ac (8).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(8).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ine_Urashima-jinja_2021-04_ac_%288%29.jpg/1920px-Ine_Urashima-jinja_2021-04_ac_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021-04",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。力石。",
+    "width": 5715,
+    "height": 3800,
+    "file": "6-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ine Urashima-jinja 2021-04 ac (4).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ine_Urashima-jinja_2021-04_ac_(4).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Ine_Urashima-jinja_2021-04_ac_%284%29.jpg/1920px-Ine_Urashima-jinja_2021-04_ac_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Asturio Cantabrio",
+    "date": "2021",
+    "description": "京都府与謝郡伊根町本庄浜191にある浦嶋神社（宇良神社）。本殿。",
+    "width": 5985,
+    "height": 3979,
+    "file": "6-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Urashima-jinja Main Sanctuary 001.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima-jinja_Main_Sanctuary_001.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Urashima-jinja_Main_Sanctuary_001.jpg/1920px-Urashima-jinja_Main_Sanctuary_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Naokijp",
+    "date": "2018-06-17",
+    "description": "京都府与謝郡伊根町にある浦嶋神社の本殿と中殿",
+    "width": 3264,
+    "height": 2448,
+    "file": "6-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Urashima-jinja Worship Hall 001.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima-jinja_Worship_Hall_001.jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Urashima-jinja_Worship_Hall_001.jpg/1920px-Urashima-jinja_Worship_Hall_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 4.0",
+    "artist": "Naokijp",
+    "date": "2018-06-17",
+    "description": "京都府与謝郡伊根町にある浦嶋神社の拝殿",
+    "width": 3264,
+    "height": 2448,
+    "file": "6-6.jpg"
+   }
+  ]
+ },
+ {
+  "k": 7,
+  "query": "commons: Ura shrine Kyotango",
+  "results": []
+ },
+ {
+  "k": 8,
+  "query": "commons: Urashima Taro handscroll Bodleian",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Urashima Taro handscroll from Bodleian Library 1.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_1.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Urashima_Taro_handscroll_from_Bodleian_Library_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "Unknown authorUnknown author",
+    "date": "between 1590 and 1620date QS:P,+1500-00-00T00:00:00Z/6,P1319",
+    "description": "Urashima the fisherman in his boat, saving a turtle's life and returning it to the water. Japanese handscroll or emakimono of a Japanese folk tale of the fisherman Urashima Taro, having saved a turtle’s life, transported to Horai, a Turtle palace as the guest of Princess Otohime. On his return he fi",
+    "width": 1280,
+    "height": 752,
+    "file": "8-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Urashima Taro handscroll from Bodleian Library 8.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_8.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/03/Urashima_Taro_handscroll_from_Bodleian_Library_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "Unknown authorUnknown author",
+    "date": "between 1590 and 1620date QS:P,+1500-00-00T00:00:00Z/6,P1319",
+    "description": "Urashima's return to his village. Many years have passed. No residents remember him, all of his contemporaries are dead. Japanese handscroll or emakimono of a Japanese folk tale of the fisherman Urashima Taro, having saved a turtle’s life, transported to Horai, a Turtle palace as the guest of Prince",
+    "width": 1067,
+    "height": 813,
+    "file": "8-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Urashima Taro handscroll from Bodleian Library 4.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_4.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Urashima_Taro_handscroll_from_Bodleian_Library_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "Unknown authorUnknown author",
+    "date": "between 1590 and 1620date QS:P,+1500-00-00T00:00:00Z/6,P1319",
+    "description": "The season of summer in the kingdom under the sea; Urashima walking on a bridge with the queen Otohime Japanese handscroll or emakimono of a Japanese folk tale of the fisherman Urashima Taro, having saved a turtle’s life, transported to Horai, a Turtle palace as the guest of Princess Otohime. On his",
+    "width": 1060,
+    "height": 742,
+    "file": "8-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Urashima Taro handscroll from Bodleian Library 3.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_3.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/02/Urashima_Taro_handscroll_from_Bodleian_Library_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "Unknown authorUnknown author",
+    "date": "between 1590 and 1620date QS:P,+1500-00-00T00:00:00Z/6,P1319",
+    "description": "The season of spring in the kingdom under the sea; cherry blossom on the trees. Japanese handscroll or emakimono of a Japanese folk tale of the fisherman Urashima Taro, having saved a turtle’s life, transported to Horai, a Turtle palace as the guest of Princess Otohime. On his return he finds that m",
+    "width": 1408,
+    "height": 748,
+    "file": "8-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Urashima Taro handscroll from Bodleian Library 6.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_6.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Urashima_Taro_handscroll_from_Bodleian_Library_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "Unknown authorUnknown author",
+    "date": "between 1590 and 1620date QS:P,+1500-00-00T00:00:00Z/6,P1319",
+    "description": "The season of winter in the kingdom under the sea; snow on the palace gardens. Japanese handscroll or emakimono of a Japanese folk tale of the fisherman Urashima Taro, having saved a turtle’s life, transported to Horai, a Turtle palace as the guest of Princess Otohime. On his return he finds that ma",
+    "width": 1060,
+    "height": 742,
+    "file": "8-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Urashima Taro handscroll from Bodleian Library 7.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_7.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Urashima_Taro_handscroll_from_Bodleian_Library_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "Unknown authorUnknown author",
+    "date": "between 1590 and 1620date QS:P,+1500-00-00T00:00:00Z/6,P1319",
+    "description": "Urashima's departure. Weeping, Otohime gives Urashima a box or casket that will bring him luck, but warns him not to open it. Urashima sails away in his boat. Japanese handscroll or emakimono of a Japanese folk tale of the fisherman Urashima Taro, having saved a turtle's life, transported to Horai, ",
+    "width": 1040,
+    "height": 752,
+    "file": "8-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Urashima Taro handscroll from Bodleian Library 9.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_9.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Urashima_Taro_handscroll_from_Bodleian_Library_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "Unknown authorUnknown author",
+    "date": "between 1590 and 1620date QS:P,+1500-00-00T00:00:00Z/6,P1319",
+    "description": "Urashima mourning the loss of his family and friends. He opens the box or casket and the spell is broken; smoke is released, returning him to his real age, and he dies. Japanese handscroll or emakimono of a Japanese folk tale of the fisherman Urashima Taro, having saved a turtle’s life, transported ",
+    "width": 1040,
+    "height": 814,
+    "file": "8-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Urashima Taro handscroll from Bodleian Library 10.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Urashima_Taro_handscroll_from_Bodleian_Library_10.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/51/Urashima_Taro_handscroll_from_Bodleian_Library_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 4.0",
+    "artist": "Unknown authorUnknown author",
+    "date": "between 1590 and 1620date QS:P,+1500-00-00T00:00:00Z/6,P1319",
+    "description": "The funeral of Urashima; villagers gather around his house. In the background, upper right, the tortoise can be seen. Japanese handscroll or emakimono of a Japanese folk tale of the fisherman Urashima Taro, having saved a turtle’s life, transported to Horai, a Turtle palace as the guest of Princess ",
+    "width": 1456,
+    "height": 760,
+    "file": "8-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 9,
+  "query": "commons: Yoshitoshi Urashima",
+  "results": []
+ }
+]

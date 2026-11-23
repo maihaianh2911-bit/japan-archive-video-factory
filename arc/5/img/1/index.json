@@ -1,0 +1,548 @@
+[
+ {
+  "k": 1,
+  "query": "met: firemen",
+  "results": [
+   {
+    "source": "met",
+    "title": "[Two Firemen (?) with Axes]",
+    "page": "https://www.metmuseum.org/art/collection/search/291930",
+    "thumb": "https://images.metmuseum.org/CRDImages/ph/original/DP700468.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Unknown",
+    "date": "late 1850s–60s",
+    "description": "Tintype",
+    "width": 3887,
+    "height": 2543,
+    "file": "1-1.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Fireman's jacket",
+    "page": "https://www.metmuseum.org/art/collection/search/64506",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/232157.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Japan",
+    "date": "19th century",
+    "description": "Japan, Quilted dye-patterned plain-weave cotton",
+    "width": 568,
+    "height": 618,
+    "file": "1-2.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Maybe the firemen really shouldn't leave just yet, from 'News of the day,' published in \"Le Charivari\"",
+    "page": "https://www.metmuseum.org/art/collection/search/755311",
+    "thumb": "https://images.metmuseum.org/CRDImages/dp/original/DP877495.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Honoré Daumier",
+    "date": "October 4, 1866",
+    "description": "Lithograph on wove paper; third state of three (Delteil)",
+    "width": 2831,
+    "height": 3706,
+    "file": "1-3.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Jacket with Dragon and Mount Fuji",
+    "page": "https://www.metmuseum.org/art/collection/search/53908",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/1999_247_2_B.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Japan",
+    "date": "19th century",
+    "description": "Japan, Cotton",
+    "width": 900,
+    "height": 705,
+    "file": "1-4.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Fireman",
+    "page": "https://www.metmuseum.org/art/collection/search/57985",
+    "thumb": "https://images.metmuseum.org/CRDImages/as/original/DP148993.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Utagawa Yoshitora",
+    "date": "ca. 1858",
+    "description": "Japan, Woodblock print; ink and color on paper",
+    "width": 2803,
+    "height": 3935,
+    "file": "1-5.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Fireman, from the Occupations for Women series (N166) for Old Judge and Dogs Head Cigarettes",
+    "page": "https://www.metmuseum.org/art/collection/search/400784",
+    "thumb": "https://images.metmuseum.org/CRDImages/dp/original/DP823289.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Goodwin & Company",
+    "date": "1887",
+    "description": "Commercial color lithograph",
+    "width": 1538,
+    "height": 2817,
+    "file": "1-6.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Fireman, France, 1853, from the Military Series (N224) issued by Kinney Tobacco Company to promote Sweet Caporal Cigarettes",
+    "page": "https://www.metmuseum.org/art/collection/search/725139",
+    "thumb": "https://images.metmuseum.org/CRDImages/dp/original/DPB874152.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Kinney Brothers Tobacco Company",
+    "date": "1888",
+    "description": "Commercial color lithograph",
+    "width": 445,
+    "height": 880,
+    "file": "1-7.jpg"
+   },
+   {
+    "source": "met",
+    "title": "Paris Fireman, French Army, 1886, from the Military Series (N224) issued by Kinney Tobacco Company to promote Sweet Caporal Cigarettes",
+    "page": "https://www.metmuseum.org/art/collection/search/725202",
+    "thumb": "https://images.metmuseum.org/CRDImages/dp/original/DPB874192.jpg",
+    "license": "CC0 (The Met Open Access)",
+    "artist": "Kinney Brothers Tobacco Company",
+    "date": "1888",
+    "description": "Commercial color lithograph",
+    "width": 465,
+    "height": 881,
+    "file": "1-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 2,
+  "query": "met: fireman matoi",
+  "results": []
+ },
+ {
+  "k": 3,
+  "query": "loc: Japanese firemen",
+  "results": []
+ },
+ {
+  "k": 4,
+  "query": "loc: Japanese fire brigade",
+  "results": [],
+  "error": "HTTP Error 429: Too Many Requests"
+ },
+ {
+  "k": 5,
+  "query": "openverse: matoi Edo firefighter",
+  "results": [
+   {
+    "source": "openverse/smithsonian_cooper_hewitt_museum",
+    "title": "Matoi Motif",
+    "page": "https://collection.cooperhewitt.org/view/objects/asitem/id/155951",
+    "thumb": "https://ids.si.edu/ids/deliveryService?id=CHSDM-4DE1CDD39B992-000001",
+    "license": "CC0",
+    "artist": "",
+    "date": "",
+    "description": "",
+    "width": 4000,
+    "height": 2656,
+    "file": "5-1.jpg"
+   }
+  ]
+ },
+ {
+  "k": 6,
+  "query": "openverse: dezomeshiki ladder",
+  "results": []
+ },
+ {
+  "k": 7,
+  "query": "openverse: dezome-shiki Tokyo",
+  "results": [
+   {
+    "source": "openverse/flickr",
+    "title": "110628-N-SF508-101.JPG",
+    "page": "https://www.flickr.com/photos/36614130@N06/5895959352",
+    "thumb": "https://live.staticflickr.com/5305/5895959352_7e1185ac9d_b.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Commander, U.S. 7th Fleet",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 681,
+    "file": "7-1.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "110628-N-SF508-035.JPG",
+    "page": "https://www.flickr.com/photos/36614130@N06/5895955642",
+    "thumb": "https://live.staticflickr.com/5063/5895955642_cf868c1f10_b.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Commander, U.S. 7th Fleet",
+    "date": "",
+    "description": "",
+    "width": 681,
+    "height": 1024,
+    "file": "7-2.jpg"
+   },
+   {
+    "source": "openverse/flickr",
+    "title": "110628-N-SF508-068.JPG",
+    "page": "https://www.flickr.com/photos/36614130@N06/5895957156",
+    "thumb": "https://live.staticflickr.com/5307/5895957156_d7a620ebea_b.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Commander, U.S. 7th Fleet",
+    "date": "",
+    "description": "",
+    "width": 1024,
+    "height": 681,
+    "file": "7-3.jpg"
+   }
+  ]
+ },
+ {
+  "k": 8,
+  "query": "commons: Great fire of Meireki",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Meireki fire.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Meireki_fire.JPG",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Meireki_fire.JPG/1920px-Meireki_fire.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "Public domain",
+    "artist": "田代幸春",
+    "date": "1814",
+    "description": "Contemporary handscroll of the Great Fire of Meireki. Owned by Edo-Tokyo Museum.",
+    "width": 3375,
+    "height": 1340,
+    "file": "8-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Stupa of The Great Fire of Meireki 20100214.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Stupa_of_The_Great_Fire_of_Meireki_20100214.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Stupa_of_The_Great_Fire_of_Meireki_20100214.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "Tobosha (逃亡者)",
+    "date": "2010-02-14",
+    "description": "Stupa of the \"Great_Fire_of_Meireki\" (明暦大火供養塔) in Honmyōji",
+    "width": 540,
+    "height": 500,
+    "file": "8-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Montanus-Meireki-Fire-Edo.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Montanus-Meireki-Fire-Edo.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/68/Montanus-Meireki-Fire-Edo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "WolfgangMichel",
+    "date": "2013-07-12 00:57:27",
+    "description": "The Great Fire in Edo 1657. Engraving in Arnold Montanus: Gedenkwaerdige Gesantschappen der Oostindische Maatschappy in't Vereenigde Nederland aan de Kaisaren van Japan. 1669. (Collection W. Michel, Fukuoka)",
+    "width": 1462,
+    "height": 1104,
+    "file": "8-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Meireki Taika sign sign.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Meireki_Taika_sign_sign.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/02/Meireki_Taika_sign_sign.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Fg2",
+    "date": "11 November 2006 (upload date)",
+    "description": "Plaque for Great Fire of Meireki memorial among other historical sites at Honmyo-ji in Sugamo, Toshima Ward, Tokyo, Japan",
+    "width": 1500,
+    "height": 1154,
+    "file": "8-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Meireki Brand 1657.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Meireki_Brand_1657.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/0/09/Meireki_Brand_1657.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 4.0",
+    "artist": "Fraxinus2",
+    "date": "2016-07-23",
+    "description": "Meireki fire at Edo 1657",
+    "width": 1295,
+    "height": 1444,
+    "file": "8-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Eko-in.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Eko-in.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Eko-in.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "date": "17th centurydate QS:P,+1650-00-00T00:00:00Z/7",
+    "description": "Ekoin temple with earthmound for the Meiriki deaths",
+    "width": 901,
+    "height": 1200,
+    "file": "8-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "明暦の大火供養塔.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:%E6%98%8E%E6%9A%A6%E3%81%AE%E5%A4%A7%E7%81%AB%E4%BE%9B%E9%A4%8A%E5%A1%94.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/5f/%E6%98%8E%E6%9A%A6%E3%81%AE%E5%A4%A7%E7%81%AB%E4%BE%9B%E9%A4%8A%E5%A1%94.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 4.0",
+    "artist": "椿玄",
+    "date": "2020-05-08",
+    "description": "Great Fire of Meireki memorial at HZonmyo-ji in Toshima Ward, Tokyo, Japan",
+    "width": 1330,
+    "height": 998,
+    "file": "8-7.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Meireki fire woodblock.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Meireki_fire_woodblock.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/59/Meireki_fire_woodblock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "Heineken, Ty &amp; Kiyoko",
+    "date": "",
+    "description": "Edo citizens trying to escape advancing flames with their chests on wheels during the great Meireki fire of 1657. Woodblock print from the Musashi Abumi published in 1661.",
+    "width": 800,
+    "height": 532,
+    "file": "8-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 9,
+  "query": "commons: Meireki fire scroll",
+  "results": []
+ },
+ {
+  "k": 10,
+  "query": "europeana: Japanese firemen",
+  "results": [
+   {
+    "source": "europeana",
+    "title": "Japanese_firemen from \"Round the world with General Grant. A narrative of the visit of General U. S. Grant ... to various countries ... in 1877, 1878, 1879. To ",
+    "page": "https://www.europeana.eu/item/2059209/5516_11272159086_9f37322b67_o_jpg",
+    "thumb": "https://farm6.staticflickr.com/5516/11272159086_9f37322b67_o.jpg",
+    "license": "Public domain",
+    "artist": "The British Library",
+    "date": "",
+    "description": "The British Library",
+    "width": 1596,
+    "height": 1201,
+    "file": "10-1.jpg"
+   }
+  ]
+ },
+ {
+  "k": 11,
+  "query": "aic: firemen",
+  "results": []
+ },
+ {
+  "k": 12,
+  "query": "cleveland: fire Edo",
+  "results": [
+   {
+    "source": "cleveland",
+    "title": "Sudden Shower over Shin-Ōhashi Bridge and Atake, from One Hundred Famous Views of Edo",
+    "page": "https://clevelandart.org/art/1921.318",
+    "thumb": "https://openaccess-cdn.clevelandart.org/1921.318/1921.318_print.jpg",
+    "license": "CC0 (Cleveland Museum of Art)",
+    "artist": "Utagawa Hiroshige (Japanese, 1797–1858)",
+    "date": "1857",
+    "description": "Print",
+    "width": 2285,
+    "height": 3400,
+    "file": "12-1.jpg"
+   },
+   {
+    "source": "cleveland",
+    "title": "Firefighter's Suit (Kaji shōzoku)",
+    "page": "https://clevelandart.org/art/2020.423",
+    "thumb": "https://openaccess-cdn.clevelandart.org/2020.423/2020.423_print.jpg",
+    "license": "CC0 (Cleveland Museum of Art)",
+    "artist": "Japan, Edo period (1615–1868)",
+    "date": "late 1700s",
+    "description": "Textile",
+    "width": 3400,
+    "height": 3206,
+    "file": "12-2.jpg"
+   },
+   {
+    "source": "cleveland",
+    "title": "Sash for a Firefighter's Suit (Kaji shōzoku)",
+    "page": "https://clevelandart.org/art/2020.423.c",
+    "thumb": "https://openaccess-cdn.clevelandart.org/2020.423.c/2020.423.c_print.jpg",
+    "license": "CC0 (Cleveland Museum of Art)",
+    "artist": "Japan, Edo period (1615–1868)",
+    "date": "late 1700s",
+    "description": "Textile",
+    "width": 3400,
+    "height": 799,
+    "file": "12-3.jpg"
+   },
+   {
+    "source": "cleveland",
+    "title": "Plastron or Frontpiece for a Firefighter's Suit (Kaji shōzoku)",
+    "page": "https://clevelandart.org/art/2020.423.b",
+    "thumb": "https://openaccess-cdn.clevelandart.org/2020.423.b/2020.423.b_print.jpg",
+    "license": "CC0 (Cleveland Museum of Art)",
+    "artist": "Japan, Edo period (1615–1868)",
+    "date": "late 1700s",
+    "description": "Textile",
+    "width": 2499,
+    "height": 3400,
+    "file": "12-4.jpg"
+   },
+   {
+    "source": "cleveland",
+    "title": "Pleasure Boat on the Sumida River",
+    "page": "https://clevelandart.org/art/1985.262",
+    "thumb": "https://openaccess-cdn.clevelandart.org/1985.262/1985.262_print.jpg",
+    "license": "CC0 (Cleveland Museum of Art)",
+    "artist": "Teisai Hokuba (Japanese, 1771–1844)",
+    "date": "1800s",
+    "description": "Painting",
+    "width": 3400,
+    "height": 2461,
+    "file": "12-5.jpg"
+   },
+   {
+    "source": "cleveland",
+    "title": "Poem by Minamoto no Muneyuki from the series One Hundred Poems by One Hundred Poets Explained by the Nurse",
+    "page": "https://clevelandart.org/art/1985.327",
+    "thumb": "https://openaccess-cdn.clevelandart.org/1985.327/1985.327_print.jpg",
+    "license": "CC0 (Cleveland Museum of Art)",
+    "artist": "Katsushika Hokusai (Japanese, 1760–1849)",
+    "date": "1835–36",
+    "description": "Print",
+    "width": 3400,
+    "height": 2363,
+    "file": "12-6.jpg"
+   },
+   {
+    "source": "cleveland",
+    "title": "Square Dish with Design of Plovers over Waves",
+    "page": "https://clevelandart.org/art/1966.365",
+    "thumb": "https://openaccess-cdn.clevelandart.org/1966.365/1966.365_print.jpg",
+    "license": "CC0 (Cleveland Museum of Art)",
+    "artist": "Ogata Kōrin (Japanese, 1658–1716), Ogata Kenzan (Japanese, 1663–1743)",
+    "date": "c. 1700",
+    "description": "Ceramic",
+    "width": 3400,
+    "height": 2060,
+    "file": "12-7.jpg"
+   },
+   {
+    "source": "cleveland",
+    "title": "Portrait of Kinokuniya Bunzaemon",
+    "page": "https://clevelandart.org/art/1985.276",
+    "thumb": "https://openaccess-cdn.clevelandart.org/1985.276/1985.276_print.jpg",
+    "license": "CC0 (Cleveland Museum of Art)",
+    "artist": "Utagawa Toyokuni (Japanese, 1769–1825)",
+    "date": "early 1800s",
+    "description": "Painting",
+    "width": 1031,
+    "height": 3400,
+    "file": "12-8.jpg"
+   }
+  ]
+ },
+ {
+  "k": 13,
+  "query": "commons: Ōoka Tadasuke",
+  "results": [
+   {
+    "source": "commons",
+    "title": "Oooka tadasuke.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Oooka_tadasuke.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/26/Oooka_tadasuke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "不詳",
+    "date": "不詳",
+    "description": "大岡忠相像、国立国会図書館蔵",
+    "width": 1536,
+    "height": 2048,
+    "file": "13-1.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ooka Tadasuke.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ooka_Tadasuke.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ooka_Tadasuke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "Public domain",
+    "artist": "Kabuki actor Suketakaya Takasuke as Ooka Tadasuke, by Chikashige, published October 16, 1880 by Bunsuke Tsujioka. Tadasuke was a popular historical figure. See ",
+    "date": "1880-10-16",
+    "description": "Kabuki actor Suketakaya Takasuke as Ooka Tadasuke, by Chikashige, published October 16, 1880 by Bunsuke Tsujioka",
+    "width": 425,
+    "height": 600,
+    "file": "13-2.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Ooka-ke bosho.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Ooka-ke_bosho.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/87/Ooka-ke_bosho.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "J.K",
+    "date": "2003-09-30 14:32:28",
+    "description": "神奈川県茅ヶ崎市の浄見寺にある大岡家墓所 Ōoka-ke bosho (Graveyard of Ōoka family)",
+    "width": 1600,
+    "height": 1200,
+    "file": "13-3.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Oka-tadasuke-byo (Toyokawa-inari, Tokyo).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Oka-tadasuke-byo_(Toyokawa-inari,_Tokyo).jpg",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Oka-tadasuke-byo_%28Toyokawa-inari%2C_Tokyo%29.jpg/1920px-Oka-tadasuke-byo_%28Toyokawa-inari%2C_Tokyo%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "license": "CC BY-SA 3.0",
+    "artist": "KENPEI",
+    "date": "2010-04-28",
+    "description": "豊川稲荷東京別院 大岡忠相廟",
+    "width": 2448,
+    "height": 3264,
+    "file": "13-4.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Japanese crest Oooka shippou of Oooka Tadasuke.png",
+    "page": "https://commons.wikimedia.org/wiki/File:Japanese_crest_Oooka_shippou_of_Oooka_Tadasuke.png",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Japanese_crest_Oooka_shippou_of_Oooka_Tadasuke.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 3.0",
+    "artist": "Mukai",
+    "date": "2009-03-08",
+    "description": "大岡七宝（おおおかしっぽう）は、日本の家紋「七宝紋」の一種である。大岡氏が用いたが、この図案のものは、特に大岡越前守忠相が用いた。",
+    "width": 500,
+    "height": 500,
+    "file": "13-5.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Bound Jizo.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Bound_Jizo.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/67/Bound_Jizo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY 2.5",
+    "artist": "No machine-readable author provided. SteveofCaley assumed (based on copyright claims).",
+    "date": "26 March 2006 (original upload date)",
+    "description": "Personal photograph of bound jizo from Narihira-san Tosen Temple (業平山東泉寺南蔵院), Katsushika, Tokyo. the \"Bound Jizo\" discussed in the Case of the Bound Jizo of Ōoka Tadasuke, a wise and famous judge in Edo",
+    "width": 575,
+    "height": 1655,
+    "file": "13-6.jpg"
+   },
+   {
+    "source": "commons",
+    "title": "Mon Ooka.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Mon_Ooka.jpg",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Mon_Ooka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "license": "CC BY-SA 4.0",
+    "artist": "Fraxinus2",
+    "date": "2015-03-23",
+    "description": "大岡七宝",
+    "width": 472,
+    "height": 472,
+    "file": "13-7.jpg"
+   }
+  ]
+ },
+ {
+  "k": 14,
+  "query": "openverse: Edo Tokyo Museum matoi",
+  "results": []
+ }
+]

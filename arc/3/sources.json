@@ -1,0 +1,443 @@
+{
+ "pictures": [
+  {
+   "name": "kw",
+   "src": "1/11-1.jpg",
+   "title": "Kawaraban-of-1855-Ansei-Edo-earthquake.png",
+   "artist": "A news broadsheet “Kawaraban”, 1855",
+   "date": "1855-11-11",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Kawaraban-of-1855-Ansei-Edo-earthquake.png"
+  },
+  {
+   "name": "victims",
+   "src": "1/11-4.jpg",
+   "title": "Victims who lost their homes in the Ansei Edo Earthquake, sleeping in the open, woodblock print, 1855 AD - Edo-Tokyo Museum - Sumida, Tokyo, Japan - DSC06718.jp",
+   "artist": "Daderot",
+   "date": "2016-09-06 03:13:37",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Victims_who_lost_their_homes_in_the_Ansei_Edo_Earthquake,_sleeping_in_the_open,_woodblock_print,_1855_AD_-_Edo-Tokyo_Museum_-_Sumida,_Tokyo,_Japan_-_DSC06718.jpg"
+  },
+  {
+   "name": "city",
+   "src": "1/3-3.jpg",
+   "title": "Namazu-e - Kashima absent-minded.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "Edo - 1855",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Namazu-e_-_Kashima_absent-minded.jpg"
+  },
+  {
+   "name": "stone",
+   "src": "1/10-1.jpg",
+   "title": "“Kanameishi” in Kashima Shrine.JPG",
+   "artist": "そらみみ",
+   "date": "2014-03-08 12:00:46",
+   "license": "CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%E2%80%9CKanameishi%E2%80%9D_in_Kashima_Shrine.JPG"
+  },
+  {
+   "name": "pin",
+   "src": "1/3-1.jpg",
+   "title": "Takemikazuchi-pins-Namazu-with-Kaname-ishi-spirit-stone-1855.png",
+   "artist": "Unknown (Edo Period, 1855)",
+   "date": "1855-10-14",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Takemikazuchi-pins-Namazu-with-Kaname-ishi-spirit-stone-1855.png"
+  },
+  {
+   "name": "cloud",
+   "src": "1/2-8.jpg",
+   "title": "NDL-DC 1303392-Unknown Artist-（無題）-crd.jpg",
+   "artist": "",
+   "date": "",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303392-Unknown_Artist-%EF%BC%88%E7%84%A1%E9%A1%8C%EF%BC%89-crd.jpg"
+  },
+  {
+   "name": "crowd",
+   "src": "2/2-4.jpg",
+   "title": "Namazu 1.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "1855",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Namazu_1.jpg"
+  },
+  {
+   "name": "sumo",
+   "src": "1/2-7.jpg",
+   "title": "NDL-DC 1303398-Unknown Artist-見たて大地震角力取くみ-crd.jpg",
+   "artist": "",
+   "date": "",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303398-Unknown_Artist-%E8%A6%8B%E3%81%9F%E3%81%A6%E5%A4%A7%E5%9C%B0%E9%9C%87%E8%A7%92%E5%8A%9B%E5%8F%96%E3%81%8F%E3%81%BF-crd.jpg"
+  },
+  {
+   "name": "taiji",
+   "src": "2/2-5.jpg",
+   "title": "鯰退治.jpg",
+   "artist": "Unknown authorUnknown author",
+   "date": "1855年",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:%E9%AF%B0%E9%80%80%E6%B2%BB.jpg"
+  },
+  {
+   "name": "daikoku",
+   "src": "1/11-7.jpg",
+   "title": "Namazu4.jpg",
+   "artist": "AnonymousUnknown author",
+   "date": "Edo - Ansei 2, month 10 = Nov. 1855",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:Namazu4.jpg"
+  },
+  {
+   "name": "yonaoshi",
+   "src": "2/1-1.jpg",
+   "title": "NDL1302131 世直し鯰の情.jpg",
+   "artist": "",
+   "date": "",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL1302131_%E4%B8%96%E7%9B%B4%E3%81%97%E9%AF%B0%E3%81%AE%E6%83%85.jpg"
+  },
+  {
+   "name": "horse",
+   "src": "1/2-6.jpg",
+   "title": "NDL-DC 1303375-Unknown Artist-（神馬）-crd.jpg",
+   "artist": "",
+   "date": "",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303375-Unknown_Artist-%EF%BC%88%E7%A5%9E%E9%A6%AC%EF%BC%89-crd.jpg"
+  },
+  {
+   "name": "ebisu",
+   "src": "1/2-1.jpg",
+   "title": "NDL-DC 1303372-Unknown Artist-恵比寿天申訳之記-crd.jpg",
+   "artist": "",
+   "date": "",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303372-Unknown_Artist-%E6%81%B5%E6%AF%94%E5%AF%BF%E5%A4%A9%E7%94%B3%E8%A8%B3%E4%B9%8B%E8%A8%98-crd.jpg"
+  }
+ ],
+ "shots": [
+  {
+   "scene": 1,
+   "shot": 1,
+   "start": 0.0,
+   "end": 14.52,
+   "said": [
+    "安政二年、一八五五年の秋の夜。",
+    "江戸の町を、大きな地震が襲いました。",
+    "地震が起きたのは、夜の十時ごろ。",
+    "被害は、隅田川沿いの下町で特に大きかったといいます。",
+    "家々は倒れ、火事が広がり、"
+   ],
+   "label": "瓦版「大地震」（1855年）",
+   "title": "安政の大地震",
+   "image": "kw",
+   "page": "https://commons.wikimedia.org/wiki/File:Kawaraban-of-1855-Ansei-Edo-earthquake.png",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": {
+    "to": [
+     0.08,
+     0.12,
+     0.52,
+     0.88
+    ],
+    "at": 4.0,
+    "dur": 1.8
+   },
+   "marks": []
+  },
+  {
+   "scene": 1,
+   "shot": 2,
+   "start": 14.52,
+   "end": 17.247,
+   "said": [
+    "一万人近くが亡くなったともいわれます。"
+   ],
+   "label": "家を失った人々を描いた錦絵",
+   "title": "安政の大地震",
+   "image": "victims",
+   "page": "https://commons.wikimedia.org/wiki/File:Victims_who_lost_their_homes_in_the_Ansei_Edo_Earthquake,_sleeping_in_the_open,_woodblock_print,_1855_AD_-_Edo-Tokyo_Museum_-_Sumida,_Tokyo,_Japan_-_DSC06718.jpg",
+   "credit": "Daderot / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 2,
+   "shot": 1,
+   "start": 17.247,
+   "end": 22.366,
+   "said": [
+    "当時の人々は、",
+    "地震は地下に住む大鯰が暴れて起きると信じていました。"
+   ],
+   "label": "鯰絵（1855年）",
+   "title": "地下の大鯰",
+   "image": "city",
+   "page": "https://commons.wikimedia.org/wiki/File:Namazu-e_-_Kashima_absent-minded.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": [
+    0.0,
+    0.0,
+    1.0,
+    0.62
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 2,
+   "shot": 2,
+   "start": 22.366,
+   "end": 24.594,
+   "said": [
+    "ふだんは鹿島神宮の神さまが、"
+   ],
+   "label": "鹿島神宮の要石（茨城県）",
+   "title": "地下の大鯰",
+   "image": "stone",
+   "page": "https://commons.wikimedia.org/wiki/File:%E2%80%9CKanameishi%E2%80%9D_in_Kashima_Shrine.JPG",
+   "credit": "そらみみ / CC BY-SA 3.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 2,
+   "shot": 3,
+   "start": 24.594,
+   "end": 26.839,
+   "said": [
+    "要石で鯰を押さえています。"
+   ],
+   "label": "鯰絵「要石で鯰を押さえる神」",
+   "title": "地下の大鯰",
+   "image": "pin",
+   "page": "https://commons.wikimedia.org/wiki/File:Takemikazuchi-pins-Namazu-with-Kaname-ishi-spirit-stone-1855.png",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 25.283,
+     "box": [
+      0.3,
+      0.3,
+      0.65,
+      0.64
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 2,
+   "shot": 4,
+   "start": 26.839,
+   "end": 32.856,
+   "said": [
+    "ところが地震が起きたのは旧暦の十月、",
+    "神さまたちが出雲へ出かける「神無月」でした。"
+   ],
+   "label": "鯰絵（1855年）",
+   "title": "地下の大鯰",
+   "image": "cloud",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303392-Unknown_Artist-%EF%BC%88%E7%84%A1%E9%A1%8C%EF%BC%89-crd.jpg",
+   "credit": "国立国会図書館 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 30.88,
+     "box": [
+      0.03,
+      0.02,
+      0.21,
+      0.64
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 2,
+   "shot": 5,
+   "start": 32.856,
+   "end": 39.653,
+   "said": [
+    "留守のすきに、鯰が暴れたというわけです。",
+    "鹿島の神さまが、馬で急いで戻ってくる姿も描かれています。"
+   ],
+   "label": "鯰絵「留守の間の大地震」",
+   "title": "地下の大鯰",
+   "image": "city",
+   "page": "https://commons.wikimedia.org/wiki/File:Namazu-e_-_Kashima_absent-minded.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 33.848,
+     "box": [
+      0.38,
+      0.55,
+      0.8,
+      0.93
+     ]
+    },
+    {
+     "at_s": 37.433,
+     "box": [
+      0.66,
+      0.41,
+      0.97,
+      0.6
+     ]
+    }
+   ]
+  },
+  {
+   "scene": 3,
+   "shot": 1,
+   "start": 39.653,
+   "end": 44.471,
+   "said": [
+    "地震のあと、",
+    "江戸では鯰を描いた「鯰絵」が次々と売り出されました。"
+   ],
+   "label": "鯰絵（1855年）",
+   "title": "鯰絵",
+   "image": "crowd",
+   "page": "https://commons.wikimedia.org/wiki/File:Namazu_1.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 2,
+   "start": 44.471,
+   "end": 48.586,
+   "said": [
+    "地震から数日のうちに、町には鯰絵があふれたといいます。"
+   ],
+   "label": "鯰絵（1855年）",
+   "title": "鯰絵",
+   "image": "horse",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303375-Unknown_Artist-%EF%BC%88%E7%A5%9E%E9%A6%AC%EF%BC%89-crd.jpg",
+   "credit": "国立国会図書館 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 3,
+   "start": 48.586,
+   "end": 51.499,
+   "said": [
+    "その数は、二百種類以上ともいわれます。"
+   ],
+   "label": "鯰絵「見たて大地震角力取くみ」",
+   "title": "鯰絵",
+   "image": "sumo",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303398-Unknown_Artist-%E8%A6%8B%E3%81%9F%E3%81%A6%E5%A4%A7%E5%9C%B0%E9%9C%87%E8%A7%92%E5%8A%9B%E5%8F%96%E3%81%8F%E3%81%BF-crd.jpg",
+   "credit": "国立国会図書館 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 4,
+   "start": 51.499,
+   "end": 55.381,
+   "said": [
+    "そのほとんどは、作者の名前もない、急いで刷られた絵でした。"
+   ],
+   "label": "鯰絵「恵比寿天申訳之記」",
+   "title": "鯰絵",
+   "image": "ebisu",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303372-Unknown_Artist-%E6%81%B5%E6%AF%94%E5%AF%BF%E5%A4%A9%E7%94%B3%E8%A8%B3%E4%B9%8B%E8%A8%98-crd.jpg",
+   "credit": "国立国会図書館 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 5,
+   "start": 55.381,
+   "end": 58.237,
+   "said": [
+    "怒った町の人々が鯰をこらしめる絵もあれば、"
+   ],
+   "label": "鯰絵「鯰退治」",
+   "title": "鯰絵",
+   "image": "taiji",
+   "page": "https://commons.wikimedia.org/wiki/File:%E9%AF%B0%E9%80%80%E6%B2%BB.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 3,
+   "shot": 6,
+   "start": 58.237,
+   "end": 62.701,
+   "said": [
+    "復興の仕事で、町の人々にお金が回り、",
+    "それを喜ぶ絵もあります。"
+   ],
+   "label": "鯰絵「地震よけの歌」",
+   "title": "鯰絵",
+   "image": "daikoku",
+   "page": "https://commons.wikimedia.org/wiki/File:Namazu4.jpg",
+   "credit": "Wikimedia Commons / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  },
+  {
+   "scene": 4,
+   "shot": 1,
+   "start": 62.701,
+   "end": 69.646,
+   "said": [
+    "鯰絵は、恐ろしい災害を笑いに変えて、",
+    "人々が立ち直るための力だったのかもしれません。"
+   ],
+   "label": "鯰絵「世直し鯰の情」",
+   "title": "笑いの力",
+   "image": "yonaoshi",
+   "page": "https://commons.wikimedia.org/wiki/File:NDL1302131_%E4%B8%96%E7%9B%B4%E3%81%97%E9%AF%B0%E3%81%AE%E6%83%85.jpg",
+   "credit": "国立国会図書館 / Public domain",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": []
+  }
+ ]
+}

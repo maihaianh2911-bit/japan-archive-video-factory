@@ -1,0 +1,476 @@
+{
+ "pictures": [
+  {
+   "name": "dogu",
+   "src": "1/16-2.jpg",
+   "title": "青森県つがる市木造亀ヶ岡出土 遮光器土偶-2.JPG",
+   "artist": "Saigen Jiro",
+   "date": "2017-11-03",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E6%A3%AE%E7%9C%8C%E3%81%A4%E3%81%8C%E3%82%8B%E5%B8%82%E6%9C%A8%E9%80%A0%E4%BA%80%E3%83%B6%E5%B2%A1%E5%87%BA%E5%9C%9F_%E9%81%AE%E5%85%89%E5%99%A8%E5%9C%9F%E5%81%B6-2.JPG"
+  },
+  {
+   "name": "face",
+   "src": "1/16-4.jpg",
+   "title": "Dogu jomon period japan.jpg",
+   "artist": "davide ferro",
+   "date": "2009-10-15 15:48",
+   "license": "CC BY 2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dogu_jomon_period_japan.jpg"
+  },
+  {
+   "name": "site",
+   "src": "1/17-1.jpg",
+   "title": "Kamegaoka2.jpg",
+   "artist": "MChew",
+   "date": "2019-07-12",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kamegaoka2.jpg"
+  },
+  {
+   "name": "back",
+   "src": "1/16-5.jpg",
+   "title": "青森県つがる市木造亀ヶ岡出土 遮光器土偶-3.JPG",
+   "artist": "Saigen Jiro",
+   "date": "2025-10-18",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E6%A3%AE%E7%9C%8C%E3%81%A4%E3%81%8C%E3%82%8B%E5%B8%82%E6%9C%A8%E9%80%A0%E4%BA%80%E3%83%B6%E5%B2%A1%E5%87%BA%E5%9C%9F_%E9%81%AE%E5%85%89%E5%99%A8%E5%9C%9F%E5%81%B6-3.JPG"
+  },
+  {
+   "name": "tnm",
+   "src": "1/9-7.jpg",
+   "title": "Tokyo National Museum: Honkan",
+   "artist": "Gary Lee Todd, Ph.D.",
+   "date": "",
+   "license": "CC0",
+   "page": "https://www.flickr.com/photos/101561334@N08/26530786671"
+  },
+  {
+   "name": "goggle",
+   "src": "1/10-1.jpg",
+   "title": "Inuit Goggles",
+   "artist": "cambridgebayweather",
+   "date": "",
+   "license": "CC BY-SA 2.0",
+   "page": "https://www.flickr.com/photos/49502561@N00/5614348542"
+  },
+  {
+   "name": "lacma",
+   "src": "1/8-3.jpg",
+   "title": "Dogu LACMA M.58.9.6",
+   "artist": "Fæ",
+   "date": "",
+   "license": "CC BY 2.0",
+   "page": "https://www.flickr.com/photos/50398299@N08/16217266628"
+  },
+  {
+   "name": "tatsuuma",
+   "src": "1/17-5.jpg",
+   "title": "亀ヶ岡遺跡出土 土偶 (辰馬考古資料館蔵).JPG",
+   "artist": "Saigen Jiro",
+   "date": "2023.8.27",
+   "license": "Public domain",
+   "page": "https://commons.wikimedia.org/wiki/File:%E4%BA%80%E3%83%B6%E5%B2%A1%E9%81%BA%E8%B7%A1%E5%87%BA%E5%9C%9F_%E5%9C%9F%E5%81%B6_(%E8%BE%B0%E9%A6%AC%E8%80%83%E5%8F%A4%E8%B3%87%E6%96%99%E9%A4%A8%E8%94%B5).JPG"
+  },
+  {
+   "name": "met",
+   "src": "1/16-1.jpg",
+   "title": "Dogū Figurine Final Jōmon Period.jpg",
+   "artist": "Unknown",
+   "date": "2016-05-10",
+   "license": "CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dog%C5%AB_Figurine_Final_J%C5%8Dmon_Period.jpg"
+  },
+  {
+   "name": "dalbera",
+   "src": "1/3-1.jpg",
+   "title": "Dogû, figurine Jômon (Musée national de Tokyo, Japon)",
+   "artist": "dalbera",
+   "date": "",
+   "license": "CC BY 2.0",
+   "page": "https://www.flickr.com/photos/72746018@N00/30731815257"
+  },
+  {
+   "name": "exhibit",
+   "src": "1/16-3.jpg",
+   "title": "Dogūs exhibited at the Isedotai Jomonkan Museum.jpg",
+   "artist": "掬茶",
+   "date": "2021-05-05 12:58:42",
+   "license": "CC BY-SA 4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dog%C5%ABs_exhibited_at_the_Isedotai_Jomonkan_Museum.jpg"
+  },
+  {
+   "name": "frags",
+   "src": "1/4-5.jpg",
+   "title": "Jomon Period Dogu Clay Figurines",
+   "artist": "Gary Lee Todd, Ph.D.",
+   "date": "",
+   "license": "CC0",
+   "page": "https://www.flickr.com/photos/101561334@N08/26530296491"
+  }
+ ],
+ "shots": [
+  {
+   "scene": 1,
+   "shot": 1,
+   "start": 0.0,
+   "end": 7.156,
+   "said": [
+    "青森県で見つかった、三千年前の不思議な土の人形。",
+    "大きな目は、まるでゴーグルをかけているようです。"
+   ],
+   "label": "遮光器土偶（亀ヶ岡遺跡出土）",
+   "title": "三千年前の土の人形",
+   "image": "dogu",
+   "page": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E6%A3%AE%E7%9C%8C%E3%81%A4%E3%81%8C%E3%82%8B%E5%B8%82%E6%9C%A8%E9%80%A0%E4%BA%80%E3%83%B6%E5%B2%A1%E5%87%BA%E5%9C%9F_%E9%81%AE%E5%85%89%E5%99%A8%E5%9C%9F%E5%81%B6-2.JPG",
+   "credit": "Saigen Jiro / Public domain",
+   "view": [
+    0.0,
+    0.02,
+    1.0,
+    0.98
+   ],
+   "detail": null,
+   "zoom": {
+    "to": [
+     0.2,
+     0.1,
+     0.8,
+     0.42
+    ],
+    "at": 2.0,
+    "dur": 1.6
+   },
+   "marks": [],
+   "edit": "tai-lieu-zoom",
+   "why": "câu 1 giới thiệu cả bức tượng, câu 2 nói về đôi mắt: cho thấy cả tượng rồi phóng vào mắt"
+  },
+  {
+   "scene": 2,
+   "shot": 1,
+   "start": 7.156,
+   "end": 11.818,
+   "said": [
+    "これは「遮光器土偶」。",
+    "縄文時代の終わりごろに作られました。"
+   ],
+   "label": "遮光器土偶（縄文時代晩期）",
+   "title": "遮光器土偶",
+   "image": "face",
+   "page": "https://commons.wikimedia.org/wiki/File:Dogu_jomon_period_japan.jpg",
+   "credit": "davide ferro / CC BY 2.0",
+   "view": [
+    0.18,
+    0.0,
+    0.84,
+    0.95
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "can-canh",
+   "why": "câu gọi tên tượng: nhìn sát khuôn mặt, có chữ ghi cách đọc tên"
+  },
+  {
+   "scene": 2,
+   "shot": 2,
+   "start": 11.818,
+   "end": 16.187,
+   "said": [
+    "一番有名なものは、明治時代に亀ヶ岡遺跡で見つかりました。"
+   ],
+   "label": "亀ヶ岡遺跡（青森県つがる市）",
+   "title": "遮光器土偶",
+   "image": "site",
+   "page": "https://commons.wikimedia.org/wiki/File:Kamegaoka2.jpg",
+   "credit": "MChew / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nhắc nơi tìm thấy: cho thấy di chỉ Kamegaoka"
+  },
+  {
+   "scene": 2,
+   "shot": 3,
+   "start": 16.187,
+   "end": 19.915,
+   "said": [
+    "高さは三十四センチほど。中は空洞になっています。"
+   ],
+   "label": "遮光器土偶（後ろ姿）",
+   "title": "高さ34センチ",
+   "image": "back",
+   "page": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E6%A3%AE%E7%9C%8C%E3%81%A4%E3%81%8C%E3%82%8B%E5%B8%82%E6%9C%A8%E9%80%A0%E4%BA%80%E3%83%B6%E5%B2%A1%E5%87%BA%E5%9C%9F_%E9%81%AE%E5%85%89%E5%99%A8%E5%9C%9F%E5%81%B6-3.JPG",
+   "credit": "Saigen Jiro / Public domain",
+   "view": [
+    0.04,
+    0.0,
+    0.96,
+    1.0
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "so-lieu",
+   "why": "câu có con số chiều cao: tiêu đề đổi thành con số"
+  },
+  {
+   "scene": 2,
+   "shot": 4,
+   "start": 19.915,
+   "end": 23.408,
+   "said": [
+    "今は東京国立博物館に収められています。"
+   ],
+   "label": "東京国立博物館 本館",
+   "title": "遮光器土偶",
+   "image": "tnm",
+   "page": "https://www.flickr.com/photos/101561334@N08/26530786671",
+   "credit": "Gary Lee Todd / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nhắc bảo tàng đang giữ tượng"
+  },
+  {
+   "scene": 3,
+   "shot": 1,
+   "start": 23.408,
+   "end": 27.383,
+   "said": [
+    "「遮光器」とは、北極の人々が使う雪よけの眼鏡のこと。"
+   ],
+   "label": "イヌイットの雪よけ眼鏡",
+   "title": "雪よけの眼鏡",
+   "image": "goggle",
+   "page": "https://www.flickr.com/photos/49502561@N00/5614348542",
+   "credit": "cambridgebayweather / CC BY-SA 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "dung-yen",
+   "why": "chiếc kính tuyết thật: để yên cho người xem nhìn khe hẹp"
+  },
+  {
+   "scene": 3,
+   "shot": 2,
+   "start": 27.383,
+   "end": 31.087,
+   "said": [
+    "目の形がその眼鏡に似ていたので、この名前がつきました。"
+   ],
+   "label": "雪よけ眼鏡と土偶の目",
+   "title": "雪よけの眼鏡",
+   "image": "goggle",
+   "page": "https://www.flickr.com/photos/49502561@N00/5614348542",
+   "credit": "cambridgebayweather / CC BY-SA 2.0 ・ davide ferro / CC BY 2.0",
+   "view": null,
+   "detail": {
+    "img": "face",
+    "view": [
+     0.2,
+     0.3,
+     0.8,
+     0.68
+    ]
+   },
+   "zoom": null,
+   "marks": [],
+   "edit": "so-sanh",
+   "why": "câu nói mắt tượng giống chiếc kính: đặt hai thứ cạnh nhau"
+  },
+  {
+   "scene": 4,
+   "shot": 1,
+   "start": 31.087,
+   "end": 38.113,
+   "said": [
+    "やがて、「宇宙服を着た宇宙人だ」という説まで広まりました。",
+    "丸くふくらんだ体や肩が、宇宙服に見えたのです。"
+   ],
+   "label": "遮光器土偶（ロサンゼルス郡立美術館）",
+   "title": "宇宙人なのか？",
+   "image": "lacma",
+   "page": "https://www.flickr.com/photos/50398299@N08/16217266628",
+   "credit": "Fæ / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "troi-cham",
+   "why": "lời đồn người ngoài hành tinh: tấm ảnh nền tối, vai phồng như áo vũ trụ, cho trôi chậm để ngắm"
+  },
+  {
+   "scene": 4,
+   "shot": 2,
+   "start": 38.113,
+   "end": 42.867,
+   "said": [
+    "しかし研究者の多くは、",
+    "閉じた目を大きく表したものだと考えています。"
+   ],
+   "label": "亀ヶ岡遺跡出土の土偶（辰馬考古資料館）",
+   "title": "宇宙人なのか？",
+   "image": "tatsuuma",
+   "page": "https://commons.wikimedia.org/wiki/File:%E4%BA%80%E3%83%B6%E5%B2%A1%E9%81%BA%E8%B7%A1%E5%87%BA%E5%9C%9F_%E5%9C%9F%E5%81%B6_(%E8%BE%B0%E9%A6%AC%E8%80%83%E5%8F%A4%E8%B3%87%E6%96%99%E9%A4%A8%E8%94%B5).JPG",
+   "credit": "Saigen Jiro / Public domain",
+   "view": [
+    0.2,
+    0.08,
+    0.8,
+    0.42
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 40.383,
+     "box": [
+      0.29,
+      0.18,
+      0.49,
+      0.27
+     ]
+    },
+    {
+     "at_s": 40.383,
+     "box": [
+      0.52,
+      0.18,
+      0.72,
+      0.27
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "câu nói mắt là mắt nhắm: khoanh đôi mắt có một đường kẻ ngang"
+  },
+  {
+   "scene": 4,
+   "shot": 3,
+   "start": 42.867,
+   "end": 46.724,
+   "said": [
+    "胸やお腹のふくらみから、女性の姿だという見方もあります。"
+   ],
+   "label": "遮光器土偶（縄文時代晩期）",
+   "title": "宇宙人なのか？",
+   "image": "met",
+   "page": "https://commons.wikimedia.org/wiki/File:Dog%C5%AB_Figurine_Final_J%C5%8Dmon_Period.jpg",
+   "credit": "Wikimedia Commons / CC0",
+   "view": [
+    0.03,
+    0.05,
+    0.97,
+    0.66
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "can-canh",
+   "why": "câu nhắc ngực và bụng: cắt sát vào thân tượng"
+  },
+  {
+   "scene": 5,
+   "shot": 1,
+   "start": 46.724,
+   "end": 50.584,
+   "said": [
+    "そして不思議なことに、この土偶は左足が欠けています。"
+   ],
+   "label": "遮光器土偶（東京国立博物館）",
+   "title": "欠けた左足",
+   "image": "dalbera",
+   "page": "https://www.flickr.com/photos/72746018@N00/30731815257",
+   "credit": "dalbera / CC BY 2.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [
+    {
+     "at_s": 48.75,
+     "box": [
+      0.5,
+      0.7,
+      0.95,
+      0.97
+     ]
+    }
+   ],
+   "edit": "khoanh",
+   "why": "câu nói tượng mất chân trái: khoanh đúng chỗ chân bị mất khi giọng đọc nhắc"
+  },
+  {
+   "scene": 5,
+   "shot": 2,
+   "start": 50.584,
+   "end": 53.823,
+   "said": [
+    "土偶の多くは、こうして壊れた姿で見つかります。"
+   ],
+   "label": "伊勢堂岱縄文館の土偶（秋田県）",
+   "title": "欠けた左足",
+   "image": "exhibit",
+   "page": "https://commons.wikimedia.org/wiki/File:Dog%C5%ABs_exhibited_at_the_Isedotai_Jomonkan_Museum.jpg",
+   "credit": "掬茶 / CC BY-SA 4.0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "toan-canh",
+   "why": "câu nói nhiều tượng được tìm thấy khi đã vỡ: một tủ trưng bày toàn tượng vỡ"
+  },
+  {
+   "scene": 5,
+   "shot": 3,
+   "start": 53.823,
+   "end": 58.255,
+   "said": [
+    "病気やけがの身代わりに、",
+    "わざと壊したのではないか、という説もあります。"
+   ],
+   "label": "土偶のかけら（縄文時代）",
+   "title": "欠けた左足",
+   "image": "frags",
+   "page": "https://www.flickr.com/photos/101561334@N08/26530296491",
+   "credit": "Gary Lee Todd / CC0",
+   "view": null,
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "dung-yen",
+   "why": "giả thuyết cố ý đập vỡ: các mảnh vỡ, để yên cho người xem nhìn"
+  },
+  {
+   "scene": 6,
+   "shot": 1,
+   "start": 58.255,
+   "end": 66.137,
+   "said": [
+    "けれど、本当の答えは、まだわかっていません。",
+    "三千年前の人々は、この目で何を見ていたのでしょうか。"
+   ],
+   "label": "遮光器土偶（亀ヶ岡遺跡出土）",
+   "title": "残された謎",
+   "image": "dogu",
+   "page": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E6%A3%AE%E7%9C%8C%E3%81%A4%E3%81%8C%E3%82%8B%E5%B8%82%E6%9C%A8%E9%80%A0%E4%BA%80%E3%83%B6%E5%B2%A1%E5%87%BA%E5%9C%9F_%E9%81%AE%E5%85%89%E5%99%A8%E5%9C%9F%E5%81%B6-2.JPG",
+   "credit": "Saigen Jiro / Public domain",
+   "view": [
+    0.1,
+    0.06,
+    0.9,
+    0.5
+   ],
+   "detail": null,
+   "zoom": null,
+   "marks": [],
+   "edit": "ket",
+   "why": "câu hỏi kết về đôi mắt: quay lại đôi mắt của bức tượng nổi tiếng nhất"
+  }
+ ]
+}
